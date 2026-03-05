@@ -112,6 +112,16 @@ Examples:
         help="Show detailed progress including model output",
     )
     parser.add_argument(
+        "--trace",
+        action="store_true",
+        help="Record a full pipeline trace (inputs, tool calls, thinking, usage) to a JSON file",
+    )
+    parser.add_argument(
+        "--trace-output",
+        metavar="FILE",
+        help="Path for the trace JSON file (default: <output-stem>_trace.json or trace_<run-id>.json)",
+    )
+    parser.add_argument(
         "--list-dimensions",
         action="store_true",
         help="Print all available cultural dimensions and exit",
@@ -261,6 +271,7 @@ def main() -> None:
             dimension=dimension,
             params=params,
             verbose=args.verbose,
+            trace=args.trace,
         )
     except Exception as exc:
         console.print(f"\n[red]Pipeline error:[/red] {exc}")
@@ -273,11 +284,13 @@ def main() -> None:
     console.print()
     _display_result(result, params)
 
-    # Save
+    # Save result
     if args.output:
         output_path = Path(args.output)
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
+        # Exclude the tracer object from the JSON payload
+        meta = {k: v for k, v in result.metadata.items() if k != "tracer"}
         payload = {
             "culture": result.culture,
             "dimension": result.dimension.model_dump(),
@@ -290,7 +303,7 @@ def main() -> None:
             },
             "verification": result.verification.model_dump(),
             "metadata": {
-                **result.metadata,
+                **meta,
                 "refinement_iterations": result.refinement_iterations,
             },
         }
@@ -301,6 +314,23 @@ def main() -> None:
         console.print(
             f"\n[green]✓[/green] Result saved to [cyan]{output_path}[/cyan]"
         )
+
+    # Save trace
+    if args.trace:
+        tracer = result.metadata.get("tracer")
+        if tracer is not None:
+            if args.trace_output:
+                trace_path = Path(args.trace_output)
+            elif args.output:
+                stem = Path(args.output).stem
+                trace_path = Path(args.output).parent / f"{stem}_trace.json"
+            else:
+                trace_path = Path(f"trace_{tracer.run_id[:8]}.json")
+
+            tracer.save(trace_path)
+            console.print(
+                f"[green]✓[/green] Trace saved to [cyan]{trace_path}[/cyan]"
+            )
 
 
 if __name__ == "__main__":

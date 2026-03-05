@@ -10,8 +10,11 @@ and return two JSON code blocks in its text response:
 Adaptive thinking is enabled on all calls for maximum quality.
 """
 
+from __future__ import annotations
+
 import json
 import re
+from typing import TYPE_CHECKING
 
 import anthropic
 
@@ -22,6 +25,9 @@ from src.prompts import (
     get_generation_prompt,
     get_refinement_prompt,
 )
+
+if TYPE_CHECKING:
+    from src.tracer import PipelineTracer
 
 
 # ---------------------------------------------------------------------------
@@ -96,6 +102,7 @@ def _parse_generation_response(
 def _stream_generation(
     user_prompt: str,
     verbose: bool = False,
+    tracer: "PipelineTracer | None" = None,
 ) -> str:
     """
     Run a streaming generation call and return the full text response.
@@ -120,6 +127,15 @@ def _stream_generation(
 
         response = stream.get_final_message()
 
+    if tracer is not None:
+        tracer.increment_api_calls()
+        tracer.add_usage(
+            input_tokens=response.usage.input_tokens,
+            output_tokens=response.usage.output_tokens,
+        )
+        from src.tracer import extract_trace_data
+        extract_trace_data(response.content, tracer)
+
     text_parts = [b.text for b in response.content if b.type == "text"]
     return "\n\n".join(text_parts)
 
@@ -134,12 +150,13 @@ def generate_example(
     params: GenerationParams,
     research_context: str,
     verbose: bool = False,
+    tracer: "PipelineTracer | None" = None,
 ) -> GeneratedExample:
     """
     Phase 2: Generate a training example based on research context.
     """
     user_prompt = get_generation_prompt(culture, dimension, params, research_context)
-    text = _stream_generation(user_prompt, verbose=verbose)
+    text = _stream_generation(user_prompt, verbose=verbose, tracer=tracer)
     content, elements = _parse_generation_response(text)
 
     return GeneratedExample(
@@ -158,6 +175,7 @@ def refine_example(
     verification_dict: dict,
     research_context: str,
     verbose: bool = False,
+    tracer: "PipelineTracer | None" = None,
 ) -> GeneratedExample:
     """
     Phase 4: Refine the example based on verification feedback.
@@ -165,7 +183,7 @@ def refine_example(
     user_prompt = get_refinement_prompt(
         culture, dimension, params, example.content, verification_dict, research_context
     )
-    text = _stream_generation(user_prompt, verbose=verbose)
+    text = _stream_generation(user_prompt, verbose=verbose, tracer=tracer)
     content, elements = _parse_generation_response(text)
 
     return GeneratedExample(

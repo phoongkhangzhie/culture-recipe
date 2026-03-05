@@ -7,6 +7,10 @@ validated evaluation scores from the model.
 Adaptive thinking is enabled for careful, reasoned assessment.
 """
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import anthropic
 
 from config import config
@@ -18,6 +22,9 @@ from src.models import (
 )
 from src.prompts import VERIFICATION_SYSTEM_PROMPT, get_verification_prompt
 
+if TYPE_CHECKING:
+    from src.tracer import PipelineTracer
+
 
 def verify_example(
     culture: str,
@@ -26,6 +33,7 @@ def verify_example(
     example: GeneratedExample,
     research_context: str,
     verbose: bool = False,
+    tracer: "PipelineTracer | None" = None,
 ) -> VerificationOutput:
     """
     Phase 3: Evaluate the training example and return structured scores.
@@ -51,6 +59,15 @@ def verify_example(
         messages=[{"role": "user", "content": user_prompt}],
         output_format=VerificationOutput,
     )
+
+    if tracer is not None:
+        tracer.increment_api_calls()
+        tracer.add_usage(
+            input_tokens=response.usage.input_tokens,
+            output_tokens=response.usage.output_tokens,
+        )
+        from src.tracer import extract_trace_data
+        extract_trace_data(response.content, tracer)
 
     result: VerificationOutput = response.parsed_output
 

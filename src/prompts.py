@@ -118,10 +118,12 @@ def get_research_prompt(
     culture: str,
     dimension: CultureDimension,
     params: GenerationParams,
+    focus_query: str = "",
 ) -> str:
     topic_clause = f" specifically around '{params.topic}'" if params.topic else ""
+    focus_clause = f"\n\n**Research focus**: {focus_query}" if focus_query else ""
     return f"""\
-Research {culture} culture's relationship with the following cultural dimension{topic_clause}:
+Research {culture} culture's relationship with the following cultural dimension{topic_clause}:{focus_clause}
 
 **Dimension**: {dimension.name}
 **Description**: {dimension.description}
