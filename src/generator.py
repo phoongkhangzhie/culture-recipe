@@ -160,8 +160,6 @@ def generate_example(
     content, elements = _parse_generation_response(text)
 
     return GeneratedExample(
-        example_type=params.example_type,
-        output_format=params.output_format,
         content=content,
         cultural_elements=elements,
     )
@@ -187,8 +185,6 @@ def refine_example(
     content, elements = _parse_generation_response(text)
 
     return GeneratedExample(
-        example_type=params.example_type,
-        output_format=params.output_format,
         content=content,
         cultural_elements=elements,
     )

@@ -1,12 +1,7 @@
 import json
 
-from src.models import (
-    CultureDimension,
-    ExampleLength,
-    ExampleType,
-    GenerationParams,
-    OutputFormat,
-)
+from src.models import CultureDimension, GenerationParams
+
 
 # ---------------------------------------------------------------------------
 # System prompts
@@ -33,8 +28,9 @@ When researching:
 GENERATION_SYSTEM_PROMPT = """\
 You are an expert in cross-cultural LLM alignment and training data generation.
 
-Your role is to create high-quality, culturally authentic training examples that \
-help AI systems understand and appropriately respond within diverse cultural contexts.
+Your role is to create high-quality, culturally authentic multi-turn chat training \
+examples that help AI systems understand and appropriately respond within diverse \
+cultural contexts.
 
 Core principles:
 1. Cultural authenticity — use realistic names, places, and scenarios from the culture.
@@ -62,52 +58,6 @@ Scoring guide (0-10):
 
 Set is_approved = true ONLY if overall_score >= 7.0 and no critical issues.\
 """
-
-
-# ---------------------------------------------------------------------------
-# Helper: format schema for the requested output format
-# ---------------------------------------------------------------------------
-
-_FORMAT_SCHEMAS: dict[str, str] = {
-    OutputFormat.OPENAI: """\
-{
-  "messages": [
-    {"role": "system", "content": "..."},
-    {"role": "user",   "content": "..."},
-    {"role": "assistant", "content": "..."}
-  ]
-}""",
-    OutputFormat.OPENAI
-    + "_preference": """\
-{
-  "prompt":   [{"role": "user", "content": "..."}],
-  "chosen":   [{"role": "assistant", "content": "..."}],
-  "rejected": [{"role": "assistant", "content": "..."}]
-}""",
-    OutputFormat.ALPACA: """\
-{
-  "instruction": "...",
-  "input": "...",
-  "output": "..."
-}""",
-    OutputFormat.SHAREGPT: """\
-{
-  "conversations": [
-    {"from": "human", "value": "..."},
-    {"from": "gpt",   "value": "..."}
-  ]
-}""",
-    OutputFormat.RAW: '{"text": "..."}',
-}
-
-
-def _get_format_schema(params: GenerationParams) -> str:
-    if (
-        params.output_format == OutputFormat.OPENAI
-        and params.example_type == ExampleType.PREFERENCE_PAIR
-    ):
-        return _FORMAT_SCHEMAS[OutputFormat.OPENAI + "_preference"]
-    return _FORMAT_SCHEMAS[params.output_format]
 
 
 # ---------------------------------------------------------------------------
@@ -147,7 +97,6 @@ Please search for and synthesise:
 7. **Regional/generational variations** — Important differences within {culture} culture.
 
 Target language for the training example: {params.language}
-Example type to be generated: {params.example_type.value}
 
 Please synthesise your findings into a comprehensive cultural brief.\
 """
@@ -157,50 +106,20 @@ Please synthesise your findings into a comprehensive cultural brief.\
 # Generation prompt
 # ---------------------------------------------------------------------------
 
-_LENGTH_GUIDE: dict[ExampleLength, str] = {
-    ExampleLength.SHORT: "50–150 words per turn or response section",
-    ExampleLength.MEDIUM: "150–350 words per turn or response section",
-    ExampleLength.LONG: "350–700 words per turn or response section",
-}
-
-_TYPE_TEMPLATES: dict[ExampleType, str] = {
-    ExampleType.CONVERSATION: (
-        "a natural {num_turns}-turn dialogue between people in a {culture} cultural context"
-    ),
-    ExampleType.QA: (
-        "a question-answer pair set in a {culture} cultural context, where the "
-        "answer demonstrates culturally appropriate knowledge or behaviour"
-    ),
-    ExampleType.INSTRUCTION: (
-        "an instruction-following task embedded in {culture} cultural context — "
-        "the instruction and response should both reflect cultural norms"
-    ),
-    ExampleType.STORY: (
-        "a short narrative or anecdote (2–4 paragraphs) depicting {culture} "
-        "cultural values in action"
-    ),
-    ExampleType.PREFERENCE_PAIR: (
-        "two assistant responses to the same user prompt — one culturally aligned "
-        "with {culture} values (chosen) and one culturally misaligned or generic (rejected), "
-        "with a brief rationale for each"
-    ),
-}
-
-
 def get_generation_prompt(
     culture: str,
     dimension: CultureDimension,
     params: GenerationParams,
     research_context: str,
 ) -> str:
-    type_desc = _TYPE_TEMPLATES[params.example_type].format(
-        culture=culture, num_turns=params.num_turns
+    topic_hint = (
+        f"\n- **Topic hint** (optional starting point): {params.topic}"
+        if params.topic
+        else ""
     )
-    format_schema = _get_format_schema(params)
-
     return f"""\
-Using the cultural research below, generate an authentic training example for \
-LLM cultural alignment.
+Using the cultural research below, generate an authentic multi-turn chat training \
+example for LLM cultural alignment.
 
 ## Cultural Research Context
 
@@ -213,9 +132,27 @@ LLM cultural alignment.
 - **Culture**: {culture}
 - **Dimension**: {dimension.name} — {dimension.description}
 - **Language**: {params.language}
-- **Example Type**: Create {type_desc}
-- **Length per section**: {_LENGTH_GUIDE[params.length]}
-{f"- **Specific topic**: {params.topic}" if params.topic else ""}
+- **Format**: Multi-turn conversation between a user and an AI assistant{topic_hint}
+
+## Your Task
+
+Choose a realistic, culturally grounded scenario in which a user seeks help from an \
+AI assistant. The task can be anything — advice, planning, problem-solving, creative \
+writing, language help, navigating a social situation, etc. — as long as:
+
+1. It arises naturally from {culture} cultural life.
+2. The conversation authentically illustrates the **{dimension.name}** dimension.
+3. Both user and assistant responses reflect culturally appropriate communication norms.
+
+Decide how many turns best serve the scenario (typically 3–8 exchanges).
+
+Calibrate the length of each assistant response to what the moment calls for:
+- **Brief and direct** when the answer is simple, factual, or socially expected to be concise.
+- **Longer and more developed** when the situation calls for explanation, cultural context, \
+  emotional support, step-by-step guidance, or nuanced reasoning.
+
+Avoid padding or filler — every sentence in an assistant turn should add value. A one-line \
+reply and a multi-paragraph response can both be correct, depending on the scenario.
 
 ## Output Instructions
 
@@ -223,21 +160,31 @@ Return **two JSON code blocks** in your response:
 
 **Block 1 — The training example** (follow this schema exactly):
 ```json
-{format_schema}
+{{
+  "messages": [
+    {{"role": "system", "content": "..."}},
+    {{"role": "user", "content": "..."}},
+    {{"role": "assistant", "content": "..."}},
+    {{"role": "user", "content": "..."}},
+    {{"role": "assistant", "content": "..."}}
+  ]
+}}
 ```
+The `system` turn is optional — include it only if it adds useful cultural framing \
+for the assistant. There must be at least two user/assistant exchanges.
 
-**Block 2 — Cultural elements** (a JSON array of strings listing the specific \
-cultural elements you incorporated):
+**Block 2 — Cultural elements** (a JSON array listing what you incorporated):
 ```json
 ["element 1", "element 2", ...]
 ```
 
 ### Quality checklist before submitting:
-- Cultural elements feel organic, not forced or stereotyped.
-- Names, places, and scenarios are authentic to {culture} culture.
-- The language register (formal/informal, direct/indirect) matches the cultural context.
-- The dimension '{dimension.name}' is clearly — but naturally — expressed.
-- The example would be genuinely useful for teaching an LLM about {culture} culture.\
+- The scenario feels authentic, not contrived or stereotyped.
+- Names, places, and references are specific to {culture}.
+- The assistant's tone and style match culturally appropriate communication norms.
+- The **{dimension.name}** dimension surfaces organically through the dialogue.
+- Each assistant response is exactly as long as it needs to be — no padding, no truncation.
+- The full exchange would genuinely teach an LLM about {culture} culture.\
 """
 
 
@@ -258,14 +205,15 @@ def get_verification_prompt(
         else research_context
     )
     return f"""\
-Evaluate this LLM training example for cultural authenticity and training quality.
+Evaluate this multi-turn chat LLM training example for cultural authenticity and \
+training quality.
 
 ## Evaluation Context
 
 - **Target Culture**: {culture}
 - **Cultural Dimension**: {dimension.name} — {dimension.description}
 - **Language**: {params.language}
-- **Example Type**: {params.example_type.value}
+- **Format**: Multi-turn chat (user ↔ assistant)
 
 ## Cultural Research (Ground Truth)
 
@@ -318,12 +266,11 @@ def get_refinement_prompt(
         if len(research_context) > 1800
         else research_context
     )
-    format_schema = _get_format_schema(params)
     issues_str = "; ".join(verification.get("issues", [])) or "None specified."
     suggestions_str = "; ".join(verification.get("suggestions", [])) or "None specified."
 
     return f"""\
-Improve the following training example based on evaluation feedback.
+Improve the following multi-turn chat training example based on evaluation feedback.
 
 ## Original Example
 
@@ -351,17 +298,27 @@ Improve the following training example based on evaluation feedback.
 ## Requirements
 
 - Culture: {culture} | Dimension: {dimension.name} | Language: {params.language}
-- Format: {params.output_format.value} | Type: {params.example_type.value}
-{f"- Topic: {params.topic}" if params.topic else ""}
+- Format: Multi-turn chat (user ↔ assistant)
+{f"- Topic hint: {params.topic}" if params.topic else ""}
 
 ## Task
 
 Create an improved version that addresses every issue and implements the suggestions. \
+You may adjust the scenario, number of turns, or dialogue content as needed. \
+Calibrate the length of each assistant response to what the moment calls for — brief \
+when the answer is simple or directness is culturally appropriate, longer when \
+explanation, emotional support, or nuanced guidance is needed. Avoid padding. \
 Return the same two JSON code blocks as before:
 
 **Block 1 — Improved training example**:
 ```json
-{format_schema}
+{{
+  "messages": [
+    {{"role": "system", "content": "..."}},
+    {{"role": "user", "content": "..."}},
+    {{"role": "assistant", "content": "..."}}
+  ]
+}}
 ```
 
 **Block 2 — Updated cultural elements list**:

@@ -1,37 +1,11 @@
-from enum import Enum
 from typing import Any, Optional
 
 from pydantic import BaseModel, Field
 
 
-class ExampleType(str, Enum):
-    CONVERSATION = "conversation"
-    QA = "qa"
-    INSTRUCTION = "instruction"
-    STORY = "story"
-    PREFERENCE_PAIR = "preference_pair"
-
-
-class OutputFormat(str, Enum):
-    ALPACA = "alpaca"
-    SHAREGPT = "sharegpt"
-    OPENAI = "openai"
-    RAW = "raw"
-
-
-class ExampleLength(str, Enum):
-    SHORT = "short"
-    MEDIUM = "medium"
-    LONG = "long"
-
-
 class GenerationParams(BaseModel):
     language: str = "English"
-    example_type: ExampleType = ExampleType.CONVERSATION
-    output_format: OutputFormat = OutputFormat.OPENAI
-    length: ExampleLength = ExampleLength.MEDIUM
     topic: Optional[str] = None
-    num_turns: int = Field(default=2, ge=1, le=20)
 
 
 class CultureDimension(BaseModel):
@@ -74,12 +48,18 @@ class VerificationOutput(BaseModel):
 
 
 class GeneratedExample(BaseModel):
-    """The processed training example."""
+    """The processed multi-turn chat training example."""
 
-    example_type: ExampleType
-    output_format: OutputFormat
-    content: dict[str, Any]
+    content: dict[str, Any]       # always {"messages": [...]}
     cultural_elements: list[str]
+
+
+class ExampleRecord(BaseModel):
+    """One complete generate → verify → (refine → verify)* cycle."""
+
+    example: GeneratedExample
+    verification: VerificationOutput
+    refinement_iterations: int = 0
 
 
 class GenerationResult(BaseModel):
@@ -89,7 +69,5 @@ class GenerationResult(BaseModel):
     dimension: CultureDimension
     params: GenerationParams
     research_summary: str
-    example: GeneratedExample
-    verification: VerificationOutput
-    refinement_iterations: int = 0
+    records: list[ExampleRecord]   # one or more examples per dimension
     metadata: dict[str, Any] = Field(default_factory=dict)
