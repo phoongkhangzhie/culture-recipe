@@ -27,6 +27,7 @@ class Config:
     # Refinement loop
     quality_threshold: float = 7.0
     max_refinement_iterations: int = 3
+    max_examples_per_dimension: int = 5
 
 
 config = Config()

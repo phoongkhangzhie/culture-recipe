@@ -200,8 +200,8 @@ You have five tools:
 Work autonomously. You decide how many times to research, generate, verify, and how many examples to produce.
 
 **Number of examples per dimension:**
-Generate one example by default. Generate multiple examples when the dimension has distinct \
-sub-aspects that each deserve their own scenario — for example:
+Generate one example by default. Generate multiple examples (up to {config.max_examples_per_dimension}) \
+when the dimension has distinct sub-aspects that each deserve their own scenario — for example:
   - A "religious observance" dimension might warrant separate examples for different major \
 holidays or rituals.
   - A "workplace hierarchy" dimension might benefit from both a junior–senior and a \
@@ -209,7 +209,7 @@ cross-department scenario.
   - A "gift-giving etiquette" dimension might have business and personal contexts that differ \
 enough to each deserve an example.
 Do not generate multiple examples for trivial variations. Only add another example when it \
-would genuinely teach something distinct about the culture.
+would genuinely teach something distinct about the culture. Hard limit: {config.max_examples_per_dimension} examples maximum.
 
 To generate multiple examples: after verifying an approved example, call commit_example to \
 archive it, then generate_training_example again for the next sub-aspect. Call finish when \
@@ -426,6 +426,13 @@ def run_pipeline(
                     "error": (
                         "No verified example to commit. "
                         "Call generate_training_example and verify_training_example first."
+                    )
+                }
+            if len(completed_records) >= config.max_examples_per_dimension:
+                return {
+                    "error": (
+                        f"Maximum of {config.max_examples_per_dimension} examples per dimension reached. "
+                        "Call finish to submit the examples you have."
                     )
                 }
             record = ExampleRecord(
