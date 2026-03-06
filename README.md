@@ -40,7 +40,7 @@ Input (culture, dimension, params)
 │                                                             │
 │   ┌─────────────────┐                                       │
 │   │ commit_example  │  archive current example, start next  │
-│   │ (optional)      │  sub-aspect (e.g. different holiday)  │
+│   │ (optional, ≤5)  │  sub-aspect (e.g. different holiday)  │
 │   └─────────────────┘                                       │
 │                                                             │
 │   ┌─────────────────┐                                       │
@@ -57,6 +57,7 @@ A typical run might look like:
 
 But the agent may research more, skip refinement if quality is already high, or
 produce only one example — it decides based on the dimension's complexity.
+Maximum of **5 examples per dimension** (configurable via `max_examples_per_dimension` in [config.py](config.py)).
 
 ## Setup
 
@@ -141,8 +142,9 @@ api_base_url = "http://localhost:8000/v1"   # vLLM endpoint
 model = "Qwen/Qwen2.5-7B-Instruct"          # model served by vLLM
 research_model = "Qwen/Qwen2.5-7B-Instruct" # can differ from main model
 
-quality_threshold = 7.0          # minimum overall score to approve (0–10)
-max_refinement_iterations = 3    # maximum refine attempts per example
+quality_threshold = 7.0            # minimum overall score to approve (0–10)
+max_refinement_iterations = 3      # maximum refine attempts per example
+max_examples_per_dimension = 5     # hard cap on examples the agent can produce
 orchestrator_max_tokens = 2500   # token budget for the agentic loop
 generation_max_tokens = 4000
 verification_max_tokens = 2000
