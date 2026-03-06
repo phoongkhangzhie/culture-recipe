@@ -12,36 +12,51 @@ Given a **culture**, a **cultural dimension**, and **generation parameters**, th
 
 ## Architecture
 
+The agent decides its own workflow. It has five tools and chooses when and how
+many times to call each one:
+
 ```
 Input (culture, dimension, params)
         │
         ▼
-┌───────────────┐   web_search   ┌──────────────────────────┐
-│  Phase 1      │ ─────────────► │  DuckDuckGo (client-side) │
-│  Research     │ ◄───────────── │  tool-use loop            │
-└───────┬───────┘                └──────────────────────────┘
-        │ research_summary (condensed text)
+┌─────────────────────────────────────────────────────────────┐
+│                    Orchestrating Agent                       │
+│                  (local model via vLLM)                      │
+│                                                             │
+│   ┌─────────────────┐   calls   ┌───────────────────────┐  │
+│   │ research_culture │ ────────► │ DuckDuckGo search     │  │
+│   │  (any # times)  │ ◄──────── │ (client-side tool)    │  │
+│   └─────────────────┘  results  └───────────────────────┘  │
+│                                                             │
+│   ┌──────────────────────┐                                  │
+│   │ generate_training_   │  fresh generation or refinement  │
+│   │ example (any # times)│  depending on prior feedback     │
+│   └──────────────────────┘                                  │
+│                                                             │
+│   ┌──────────────────────┐                                  │
+│   │ verify_training_     │  JSON-mode → VerificationOutput  │
+│   │ example (any # times)│  scores + issues + suggestions   │
+│   └──────────────────────┘                                  │
+│                                                             │
+│   ┌─────────────────┐                                       │
+│   │ commit_example  │  archive current example, start next  │
+│   │ (optional)      │  sub-aspect (e.g. different holiday)  │
+│   └─────────────────┘                                       │
+│                                                             │
+│   ┌─────────────────┐                                       │
+│   │     finish      │  submit all committed examples        │
+│   └─────────────────┘                                       │
+└─────────────────────────────────────────────────────────────┘
+        │
         ▼
-┌───────────────┐
-│  Phase 2      │  Local model via vLLM
-│  Generate     │  → JSON code blocks parsed from text response
-└───────┬───────┘
-        │ GeneratedExample
-        ▼
-┌───────────────┐
-│  Phase 3      │  Local model via vLLM
-│  Verify       │  → JSON-mode output → VerificationOutput (Pydantic)
-└───────┬───────┘
-        │ score < threshold?
-        ▼
-┌───────────────┐
-│  Phase 4      │  Repeat up to max_refinement_iterations times
-│  Refine       │
-└───────┬───────┘
-        │ approved? → commit_example → generate another sub-aspect?
-        ▼
-  GenerationResult (JSON, one or more ExampleRecords)
+  GenerationResult (one or more ExampleRecords)
 ```
+
+A typical run might look like:
+`research → research → generate → verify → generate (refine) → verify → commit → generate → verify → finish`
+
+But the agent may research more, skip refinement if quality is already high, or
+produce only one example — it decides based on the dimension's complexity.
 
 ## Setup
 
