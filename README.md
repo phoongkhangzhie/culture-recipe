@@ -20,13 +20,13 @@ Input (culture, dimension, params)
         │
         ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Orchestrating Agent                       │
-│                  (local model via vLLM)                      │
+│                    Orchestrating Agent                      │
+│                  (local model via vLLM)                     │
 │                                                             │
-│   ┌─────────────────┐   calls   ┌───────────────────────┐  │
-│   │ research_culture │ ────────► │ DuckDuckGo search     │  │
-│   │  (any # times)  │ ◄──────── │ (client-side tool)    │  │
-│   └─────────────────┘  results  └───────────────────────┘  │
+│   ┌──────────────────┐   calls   ┌──────────────────────┐   │
+│   │ research_culture │ ────────► │ DuckDuckGo search    │   │
+│   │  (any # times)   │ ◄──────── │ (client-side tool)   │   │
+│   └──────────────────┘  results  └──────────────────────┘   │
 │                                                             │
 │   ┌──────────────────────┐                                  │
 │   │ generate_training_   │  fresh generation or refinement  │
