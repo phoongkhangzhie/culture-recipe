@@ -26,6 +26,7 @@ echo "[$(date)] vLLM log: ${VLLM_LOG}"
 
 vllm serve "${VLLM_MODEL}" \
     --port "${VLLM_PORT}" \
+    --dtype bfloat16 \
     --enable-auto-tool-choice \
     --tool-call-parser hermes \
     > "${VLLM_LOG}" 2>&1 &
