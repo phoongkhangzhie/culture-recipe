@@ -8,13 +8,18 @@ load_dotenv()
 
 @dataclass
 class Config:
-    anthropic_api_key: str = field(
-        default_factory=lambda: os.environ.get("ANTHROPIC_API_KEY", "")
+    # Local LLM server (vLLM / Ollama / LM Studio — any OpenAI-compatible endpoint)
+    api_base_url: str = field(
+        default_factory=lambda: os.environ.get("API_BASE_URL", "http://localhost:8000/v1")
     )
-    model: str = "claude-opus-4-6"
+    model: str = "Qwen/Qwen2.5-7B-Instruct"
+    research_model: str = "Qwen/Qwen2.5-7B-Instruct"
     # Research phase
     research_max_tokens: int = 8000
-    max_research_continuations: int = 5
+    max_research_continuations: int = 2
+    research_summary_max_tokens: int = 1500  # max tokens for each summarised research chunk
+    # Orchestrator (agentic loop) — kept lower to limit token accumulation
+    orchestrator_max_tokens: int = 2500
     # Generation phase
     generation_max_tokens: int = 4000
     # Verification phase

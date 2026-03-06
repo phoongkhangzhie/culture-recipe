@@ -1,9 +1,10 @@
 """
 Autonomous cultural alignment training example generator.
 
-Claude decides the workflow — it can research multiple times, generate,
-verify, and refine, producing one or more examples per dimension before
-calling finish() when satisfied with the coverage.
+Uses an OpenAI-compatible API (Ollama) for the agentic loop. The local model
+decides the workflow — it can research multiple times, generate, verify, and
+refine, producing one or more examples per dimension before calling finish()
+when satisfied with the coverage.
 
 Tools exposed to the orchestrating agent:
   research_culture          — web-search-backed cultural context gathering
@@ -16,9 +17,10 @@ Tools exposed to the orchestrating agent:
 from __future__ import annotations
 
 import json
+import time
 from typing import Any
 
-import anthropic
+import openai
 from rich.console import Console
 
 from config import config
@@ -30,7 +32,7 @@ from src.models import (
     GenerationParams,
     GenerationResult,
 )
-from src.researcher import research_cultural_context
+from src.researcher import research_cultural_context, summarize_research
 from src.tracer import PipelineTracer
 from src.verifier import verify_example
 
@@ -38,111 +40,126 @@ console = Console()
 
 
 # ---------------------------------------------------------------------------
-# Tool schemas
+# Tool schemas (OpenAI function-calling format)
 # ---------------------------------------------------------------------------
 
 def _get_tools() -> list[dict]:
     return [
         {
-            "name": "research_culture",
-            "description": (
-                "Search the web for cultural context about the target culture and dimension. "
-                "Call this at least once before generating, and again for more specific angles. "
-                "All results are accumulated and used by subsequent tool calls."
-            ),
-            "input_schema": {
-                "type": "object",
-                "properties": {
-                    "focus_query": {
-                        "type": "string",
-                        "description": (
-                            "The specific cultural aspect to research, "
-                            "e.g. 'Japanese gift-giving norms in business settings' "
-                            "or 'power distance in Southeast Asian workplaces'."
-                        ),
-                    }
+            "type": "function",
+            "function": {
+                "name": "research_culture",
+                "description": (
+                    "Search the web for cultural context about the target culture and dimension. "
+                    "Call this at least once before generating, and again for more specific angles. "
+                    "All results are accumulated and used by subsequent tool calls."
+                ),
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "focus_query": {
+                            "type": "string",
+                            "description": (
+                                "The specific cultural aspect to research, "
+                                "e.g. 'Japanese gift-giving norms in business settings' "
+                                "or 'power distance in Southeast Asian workplaces'."
+                            ),
+                        }
+                    },
+                    "required": ["focus_query"],
+                    "additionalProperties": False,
                 },
-                "required": ["focus_query"],
-                "additionalProperties": False,
             },
         },
         {
-            "name": "generate_training_example",
-            "description": (
-                "Generate a culturally-grounded multi-turn chat training example for cultural alignment "
-                "using all research gathered so far. "
-                "You choose the scenario and task — it can be anything (advice, planning, problem-solving, "
-                "creative writing, navigating a social situation, etc.) as long as it arises naturally from "
-                "the target culture and illustrates the specified cultural dimension. "
-                "You also decide the number of conversation turns (typically 3–8). "
-                "The purpose is to produce high-quality cultural alignment training data that teaches "
-                "an LLM to respond authentically within this cultural context. "
-                "For the first attempt leave feedback empty. "
-                "For subsequent attempts pass the issues and suggestions from the last verification "
-                "so the example can be improved."
-            ),
-            "input_schema": {
-                "type": "object",
-                "properties": {
-                    "feedback": {
-                        "type": "string",
-                        "description": (
-                            "Issues and improvement suggestions from the last verification. "
-                            "Leave empty for the initial generation or when starting a fresh example."
-                        ),
-                    }
+            "type": "function",
+            "function": {
+                "name": "generate_training_example",
+                "description": (
+                    "Generate a culturally-grounded multi-turn chat training example for cultural alignment "
+                    "using all research gathered so far. "
+                    "You choose the scenario and task — it can be anything (advice, planning, problem-solving, "
+                    "creative writing, navigating a social situation, etc.) as long as it arises naturally from "
+                    "the target culture and illustrates the specified cultural dimension. "
+                    "You also decide the number of conversation turns (typically 3–8). "
+                    "The purpose is to produce high-quality cultural alignment training data that teaches "
+                    "an LLM to respond authentically within this cultural context. "
+                    "For the first attempt leave feedback empty. "
+                    "For subsequent attempts pass the issues and suggestions from the last verification "
+                    "so the example can be improved."
+                ),
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "feedback": {
+                            "type": "string",
+                            "description": (
+                                "Issues and improvement suggestions from the last verification. "
+                                "Leave empty for the initial generation or when starting a fresh example."
+                            ),
+                        }
+                    },
+                    "required": [],
+                    "additionalProperties": False,
                 },
-                "required": [],
-                "additionalProperties": False,
             },
         },
         {
-            "name": "verify_training_example",
-            "description": (
-                "Evaluate the most recently generated cultural alignment training example. "
-                "Returns cultural accuracy, linguistic authenticity, dimension relevance, "
-                "and training quality scores (each 0–10), plus specific issues and suggestions. "
-                "Always call this after generate_training_example."
-            ),
-            "input_schema": {
-                "type": "object",
-                "properties": {},
-                "required": [],
-                "additionalProperties": False,
+            "type": "function",
+            "function": {
+                "name": "verify_training_example",
+                "description": (
+                    "Evaluate the most recently generated cultural alignment training example. "
+                    "Returns cultural accuracy, linguistic authenticity, dimension relevance, "
+                    "and training quality scores (each 0–10), plus specific issues and suggestions. "
+                    "Always call this after generate_training_example."
+                ),
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                    "additionalProperties": False,
+                },
             },
         },
         {
-            "name": "commit_example",
-            "description": (
-                "Archive the current verified training example and prepare to generate another one. "
-                "Call this after verify_training_example when you want to produce an additional example "
-                "covering a different sub-aspect of the dimension (e.g., a different religious holiday, "
-                "a different social context, a different scenario type). "
-                "The current example is saved; you can then call generate_training_example again "
-                "to create a fresh example for the next sub-aspect. "
-                "Only call this if you genuinely need another example — do not call it and then "
-                "immediately call finish without generating anything new."
-            ),
-            "input_schema": {
-                "type": "object",
-                "properties": {},
-                "required": [],
-                "additionalProperties": False,
+            "type": "function",
+            "function": {
+                "name": "commit_example",
+                "description": (
+                    "Archive the current verified training example and prepare to generate another one. "
+                    "Call this after verify_training_example when you want to produce an additional example "
+                    "covering a different sub-aspect of the dimension (e.g., a different religious holiday, "
+                    "a different social context, a different scenario type). "
+                    "The current example is saved; you can then call generate_training_example again "
+                    "to create a fresh example for the next sub-aspect. "
+                    "Only call this if you genuinely need another example — do not call it and then "
+                    "immediately call finish without generating anything new."
+                ),
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                    "additionalProperties": False,
+                },
             },
         },
         {
-            "name": "finish",
-            "description": (
-                f"Submit all generated cultural alignment training examples and end the session. "
-                f"Call this when you are satisfied with the examples produced. "
-                f"The current verified example (if any) will be automatically included. "
-                f"You must have called verify_training_example at least once before calling finish."
-            ),
-            "input_schema": {
-                "type": "object",
-                "properties": {},
-                "required": [],
-                "additionalProperties": False,
+            "type": "function",
+            "function": {
+                "name": "finish",
+                "description": (
+                    f"Submit all generated cultural alignment training examples and end the session. "
+                    f"Call this when you are satisfied with the examples produced. "
+                    f"The current verified example (if any) will be automatically included. "
+                    f"You must have called verify_training_example at least once before calling finish."
+                ),
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                    "additionalProperties": False,
+                },
             },
         },
     ]
@@ -229,12 +246,13 @@ def run_pipeline(
     params: GenerationParams,
     verbose: bool = False,
     trace: bool = False,
+    trace_path: "str | None" = None,
 ) -> GenerationResult:
     """
     Run the autonomous cultural alignment training example generation agent.
 
-    The orchestrating Claude decides when to research, generate, verify, refine,
-    and whether to produce multiple examples — calling finish() when done.
+    The orchestrating local model decides when to research, generate, verify,
+    refine, and whether to produce multiple examples — calling finish() when done.
     """
     tracer: PipelineTracer | None = None
     if trace:
@@ -242,9 +260,10 @@ def run_pipeline(
             culture=culture,
             dimension_key=dimension.name,
             params=params.model_dump(),
+            live_path=trace_path,
         )
 
-    client = anthropic.Anthropic(api_key=config.anthropic_api_key)
+    client = openai.OpenAI(base_url=config.api_base_url, api_key="vllm")
 
     # ------------------------------------------------------------------
     # Mutable state shared with the tool executor (via closures)
@@ -284,17 +303,20 @@ def run_pipeline(
                 verbose=verbose, tracer=tracer,
                 focus_query=focus_query,
             )
-            accumulated_research.append(result)
+            # Summarise to keep the accumulated context compact
+            summary = summarize_research(result, culture, dimension)
+            accumulated_research.append(summary)
+            total_chars = sum(len(r) for r in accumulated_research)
             if tracer:
                 tracer.end_phase(
-                    output=result[:500] + "…" if len(result) > 500 else result
+                    output=summary[:500] + "…" if len(summary) > 500 else summary
                 )
             console.print(
                 f"  [green]✓[/green] Research done "
-                f"([dim]{len(result):,} chars — "
-                f"total context: {sum(len(r) for r in accumulated_research):,} chars[/dim])"
+                f"([dim]{len(result):,} chars → summarised to {len(summary):,} — "
+                f"total context: {total_chars:,} chars[/dim])"
             )
-            return result
+            return summary
 
         # ---- generate_training_example --------------------------------
         elif tool_name == "generate_training_example":
@@ -325,7 +347,7 @@ def run_pipeline(
                 )
 
             if current_example is not None and current_verification is not None and feedback:
-                # Refinement path — pass the previous verification scores/issues
+                # Refinement path
                 example = refine_example(
                     culture, dimension, params,
                     current_example,
@@ -334,7 +356,7 @@ def run_pipeline(
                     verbose=verbose, tracer=tracer,
                 )
             else:
-                # Fresh generation (first attempt or new example after commit)
+                # Fresh generation
                 example = generate_example(
                     culture, dimension, params, combined_research,
                     verbose=verbose, tracer=tracer,
@@ -473,9 +495,13 @@ def run_pipeline(
         f"Please produce cultural alignment training example(s) for "
         f"**{culture}** culture, dimension: **{dimension.name}**."
     )
-    messages: list[dict] = [{"role": "user", "content": user_message}]
 
-    # Safety cap: generous but finite
+    # OpenAI format: system message is the first entry in messages list
+    messages: list[dict] = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_message},
+    ]
+
     max_iterations = config.max_refinement_iterations * 6 + 10
 
     console.print(
@@ -490,59 +516,84 @@ def run_pipeline(
             {"culture": culture, "dimension": dimension.name},
         )
 
+    def _create_with_backoff(**kwargs):
+        """Call client.chat.completions.create with exponential backoff on rate-limit errors."""
+        delay = 60
+        for attempt in range(5):
+            try:
+                return client.chat.completions.create(**kwargs)
+            except openai.RateLimitError:
+                if attempt == 4:
+                    raise
+                console.print(
+                    f"\n  [yellow]Rate limit hit — waiting {delay}s before retry "
+                    f"(attempt {attempt + 1}/5)…[/yellow]"
+                )
+                time.sleep(delay)
+                delay = min(delay * 2, 300)
+
     iteration = 0
     for iteration in range(max_iterations):
-        response = client.messages.create(
+        response = _create_with_backoff(
             model=config.model,
-            max_tokens=config.generation_max_tokens,
-            system=system_prompt,
-            thinking={"type": "adaptive"},
+            max_tokens=config.orchestrator_max_tokens,
             tools=_get_tools(),
+            tool_choice="auto",
             messages=messages,
         )
 
         if tracer:
             tracer.increment_api_calls()
             tracer.add_usage(
-                input_tokens=response.usage.input_tokens,
-                output_tokens=response.usage.output_tokens,
+                input_tokens=response.usage.prompt_tokens,
+                output_tokens=response.usage.completion_tokens,
             )
-            from src.tracer import extract_trace_data
-            extract_trace_data(response.content, tracer)
 
-        if verbose:
-            for block in response.content:
-                if getattr(block, "type", None) == "text" and block.text.strip():
-                    console.print(f"\n  [dim italic]{block.text.strip()}[/dim italic]")
+        choice = response.choices[0]
 
-        tool_use_blocks = [
-            b for b in response.content if getattr(b, "type", None) == "tool_use"
-        ]
-        messages.append({"role": "assistant", "content": response.content})
+        if verbose and choice.message.content:
+            console.print(f"\n  [dim italic]{choice.message.content.strip()}[/dim italic]")
 
-        if response.stop_reason == "end_turn" or not tool_use_blocks:
+        # Build assistant message for history
+        assistant_msg: dict = {"role": "assistant", "content": choice.message.content}
+        if choice.message.tool_calls:
+            assistant_msg["tool_calls"] = [
+                {
+                    "id": tc.id,
+                    "type": "function",
+                    "function": {
+                        "name": tc.function.name,
+                        "arguments": tc.function.arguments,
+                    },
+                }
+                for tc in choice.message.tool_calls
+            ]
+        messages.append(assistant_msg)
+
+        # No tool calls → model is done thinking
+        if choice.finish_reason == "stop" or not choice.message.tool_calls:
             break
 
         # Execute all tool calls in this turn
-        tool_results = []
-        for block in tool_use_blocks:
-            result = execute_tool(
-                block.name,
-                json.loads(json.dumps(block.input, default=str)),
-            )
-            tool_results.append(
-                {
-                    "type": "tool_result",
-                    "tool_use_id": block.id,
-                    "content": (
-                        json.dumps(result, ensure_ascii=False, default=str)
-                        if isinstance(result, (dict, list))
-                        else str(result)
-                    ),
-                }
+        for tc in choice.message.tool_calls:
+            try:
+                tool_input = json.loads(tc.function.arguments)
+            except (json.JSONDecodeError, TypeError):
+                tool_input = {}
+
+            result = execute_tool(tc.function.name, tool_input)
+
+            result_str = (
+                json.dumps(result, ensure_ascii=False, default=str)
+                if isinstance(result, (dict, list))
+                else str(result)
             )
 
-        messages.append({"role": "user", "content": tool_results})
+            messages.append({
+                "role": "tool",
+                "tool_call_id": tc.id,
+                "content": result_str,
+            })
 
         if finished:
             break

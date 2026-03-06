@@ -74,7 +74,13 @@ class PipelineTracer:
     Thread safety: not considered — the pipeline is single-threaded.
     """
 
-    def __init__(self, culture: str, dimension_key: str, params: dict) -> None:
+    def __init__(
+        self,
+        culture: str,
+        dimension_key: str,
+        params: dict,
+        live_path: "str | Path | None" = None,
+    ) -> None:
         self.run_id: str = str(uuid.uuid4())
         self.started_at: str = _now_iso()
         self.culture: str = culture
@@ -84,6 +90,8 @@ class PipelineTracer:
         self._current: PhaseTrace | None = None
         # Track wall-clock start of current phase (monotonic is not serialisable)
         self._phase_start_ts: float | None = None
+        # If set, the trace is flushed to this path after every end_phase call
+        self._live_path: Path | None = Path(live_path) if live_path else None
 
     # ------------------------------------------------------------------
     # Phase lifecycle
@@ -109,6 +117,8 @@ class PipelineTracer:
         self._phases.append(self._current)
         self._current = None
         self._phase_start_ts = None
+        if self._live_path is not None:
+            self.save(self._live_path)
 
     # ------------------------------------------------------------------
     # Recording helpers (called while a phase is active)
@@ -190,71 +200,16 @@ class PipelineTracer:
 
 
 # ---------------------------------------------------------------------------
-# Content-block extraction utility
+# Content-block extraction utility (OpenAI-compatible)
 # ---------------------------------------------------------------------------
 
-def extract_trace_data(content: list, tracer: "PipelineTracer") -> None:
+def extract_trace_data(content: Any, tracer: "PipelineTracer") -> None:
     """
-    Walk a response content list and record thinking blocks and tool calls
-    into the active phase of *tracer*.
+    No-op stub retained for call-site compatibility.
 
-    Handles: thinking, server_tool_use, web_search_tool_result, text.
+    Tool calls and usage are recorded directly in the pipeline modules
+    (researcher, generator, verifier, agent) via tracer.record_tool_call()
+    and tracer.add_usage(). This function is no longer needed but kept to
+    avoid import errors if called from legacy paths.
     """
-    # First pass: collect tool use blocks (query/input side)
-    tool_use_map: dict[str, dict] = {}
-    for block in content:
-        btype = getattr(block, "type", None)
-
-        if btype == "thinking":
-            tracer.record_thinking(getattr(block, "thinking", ""))
-
-        elif btype == "server_tool_use":
-            tid = getattr(block, "id", None)
-            name = getattr(block, "name", "unknown_tool")
-            raw_input = getattr(block, "input", {})
-            # Input may be a dict or a JSON string
-            if isinstance(raw_input, str):
-                try:
-                    raw_input = json.loads(raw_input)
-                except json.JSONDecodeError:
-                    pass
-            tracer.record_tool_call(tool=name, input_data=raw_input, tool_use_id=tid)
-            tool_use_map[tid] = {"tool": name, "input": raw_input}
-
-        elif btype == "web_search_tool_result":
-            tid = getattr(block, "tool_use_id", None)
-            raw_content = getattr(block, "content", None)
-            # Content is often a list of result objects with .url / .title / .text
-            result_summary = _summarise_search_results(raw_content)
-            tracer.update_last_tool_result(tool_use_id=tid, result=result_summary)
-
-
-def _summarise_search_results(content: Any) -> Any:
-    """Convert web_search_tool_result content into a JSON-serialisable summary."""
-    if content is None:
-        return None
-    if isinstance(content, str):
-        return content
-    if isinstance(content, list):
-        summaries = []
-        for item in content:
-            if hasattr(item, "url") or hasattr(item, "title"):
-                summaries.append(
-                    {
-                        "url": getattr(item, "url", None),
-                        "title": getattr(item, "title", None),
-                        "snippet": (getattr(item, "text", None) or "")[:300],
-                    }
-                )
-            elif isinstance(item, dict):
-                summaries.append(
-                    {
-                        "url": item.get("url"),
-                        "title": item.get("title"),
-                        "snippet": str(item.get("text", ""))[:300],
-                    }
-                )
-            else:
-                summaries.append(str(item)[:200])
-        return summaries
-    return str(content)[:500]
+    pass

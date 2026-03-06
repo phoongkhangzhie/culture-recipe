@@ -240,9 +240,20 @@ def _run_single(args, params: GenerationParams) -> None:
     console.print(Panel("\n".join(lines), title="[bold blue]culture-recipe[/bold blue]",
                         border_style="blue"))
 
+    live_trace_path = None
+    if args.trace and args.output:
+        live_trace_path = str(
+            Path(args.output).parent / f"{Path(args.output).stem}_trace.json"
+        )
+        console.print(
+            f"[dim]Live trace → {live_trace_path} (tail -f to watch)[/dim]"
+        )
+
     try:
-        result = run_pipeline(args.culture, dimension, params,
-                              verbose=args.verbose, trace=args.trace)
+        result = run_pipeline(
+            args.culture, dimension, params,
+            verbose=args.verbose, trace=args.trace, trace_path=live_trace_path,
+        )
     except Exception as exc:
         console.print(f"\n[red]Pipeline error:[/red] {exc}")
         if args.verbose:
@@ -339,10 +350,14 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
                 f"[cyan]{dim_key}[/cyan]  [dim]{dimension.name}[/dim]"
             )
 
+            live_trace_path = None
+            if args.trace:
+                live_trace_path = str(output_dir / f"{dim_key}_trace.json")
+
             try:
                 result = run_pipeline(
                     args.culture, dimension, params,
-                    verbose=args.verbose, trace=args.trace,
+                    verbose=args.verbose, trace=args.trace, trace_path=live_trace_path,
                 )
             except Exception as exc:
                 console.print(f"  [red]✗ Failed:[/red] {exc}")

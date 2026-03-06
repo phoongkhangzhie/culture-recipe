@@ -2,12 +2,10 @@
 Phase 2 — Generation
 Phase 4 — Refinement
 
-Both phases ask Claude to generate a training example (or an improved one)
+Both phases ask the model to generate a training example (or an improved one)
 and return two JSON code blocks in its text response:
   Block 1: the training example in the requested format
   Block 2: a JSON array of cultural elements incorporated
-
-Adaptive thinking is enabled on all calls for maximum quality.
 """
 
 from __future__ import annotations
@@ -16,7 +14,7 @@ import json
 import re
 from typing import TYPE_CHECKING
 
-import anthropic
+import openai
 
 from config import config
 from src.models import CultureDimension, GeneratedExample, GenerationParams
@@ -45,7 +43,6 @@ def _extract_json_blocks(text: str) -> list[dict | list]:
         try:
             blocks.append(json.loads(raw))
         except json.JSONDecodeError:
-            # Skip malformed blocks
             pass
     return blocks
 
@@ -55,7 +52,6 @@ def _fallback_parse(text: str) -> dict:
     Last-resort parser: find the first {...} object in the text.
     Used when no ```json block is present.
     """
-    # Greedy match of a top-level JSON object
     match = re.search(r"\{[\s\S]*\}", text)
     if match:
         try:
@@ -87,7 +83,6 @@ def _parse_generation_response(
     if not content:
         content = _fallback_parse(text)
     if not elements:
-        # Try to find a plain bullet list of elements
         bullet_lines = re.findall(r"^[-*•]\s+(.+)", text, re.MULTILINE)
         if bullet_lines:
             elements = bullet_lines
@@ -96,48 +91,39 @@ def _parse_generation_response(
 
 
 # ---------------------------------------------------------------------------
-# Shared streaming call
+# Shared generation call
 # ---------------------------------------------------------------------------
 
-def _stream_generation(
+def _call_generation(
     user_prompt: str,
     verbose: bool = False,
     tracer: "PipelineTracer | None" = None,
 ) -> str:
     """
-    Run a streaming generation call and return the full text response.
+    Run a generation call via OpenAI-compatible API and return the text response.
     """
-    client = anthropic.Anthropic(api_key=config.anthropic_api_key)
+    client = openai.OpenAI(base_url=config.api_base_url, api_key="vllm")
 
-    with client.messages.stream(
+    response = client.chat.completions.create(
         model=config.model,
         max_tokens=config.generation_max_tokens,
-        system=GENERATION_SYSTEM_PROMPT,
-        thinking={"type": "adaptive"},
-        messages=[{"role": "user", "content": user_prompt}],
-    ) as stream:
-        if verbose:
-            for event in stream:
-                etype = getattr(event, "type", None)
-                if etype == "content_block_delta":
-                    delta = getattr(event, "delta", None)
-                    if delta and delta.type == "text_delta":
-                        print(delta.text, end="", flush=True)
-            print()
-
-        response = stream.get_final_message()
+        messages=[
+            {"role": "system", "content": GENERATION_SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt},
+        ],
+    )
 
     if tracer is not None:
         tracer.increment_api_calls()
         tracer.add_usage(
-            input_tokens=response.usage.input_tokens,
-            output_tokens=response.usage.output_tokens,
+            input_tokens=response.usage.prompt_tokens,
+            output_tokens=response.usage.completion_tokens,
         )
-        from src.tracer import extract_trace_data
-        extract_trace_data(response.content, tracer)
 
-    text_parts = [b.text for b in response.content if b.type == "text"]
-    return "\n\n".join(text_parts)
+    content = response.choices[0].message.content or ""
+    if verbose:
+        print(content)
+    return content
 
 
 # ---------------------------------------------------------------------------
@@ -156,7 +142,7 @@ def generate_example(
     Phase 2: Generate a training example based on research context.
     """
     user_prompt = get_generation_prompt(culture, dimension, params, research_context)
-    text = _stream_generation(user_prompt, verbose=verbose, tracer=tracer)
+    text = _call_generation(user_prompt, verbose=verbose, tracer=tracer)
     content, elements = _parse_generation_response(text)
 
     return GeneratedExample(
@@ -181,7 +167,7 @@ def refine_example(
     user_prompt = get_refinement_prompt(
         culture, dimension, params, example.content, verification_dict, research_context
     )
-    text = _stream_generation(user_prompt, verbose=verbose, tracer=tracer)
+    text = _call_generation(user_prompt, verbose=verbose, tracer=tracer)
     content, elements = _parse_generation_response(text)
 
     return GeneratedExample(

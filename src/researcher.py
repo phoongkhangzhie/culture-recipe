@@ -1,15 +1,19 @@
 """
 Phase 1 — Research.
 
-Uses Anthropic's built-in web_search_20260209 server-side tool to gather
-cultural context.  Handles pause_turn continuation for multi-round searches.
+Uses DuckDuckGo as a client-side web search tool via OpenAI-compatible API
+(Ollama). Runs a tool-use loop: the model calls web_search as needed, then
+synthesises findings into a cultural brief.
 """
 
 from __future__ import annotations
 
+import json
+import time
 from typing import TYPE_CHECKING
 
-import anthropic
+import openai
+from duckduckgo_search import DDGS
 
 from config import config
 from src.models import CultureDimension, GenerationParams
@@ -18,8 +22,47 @@ from src.prompts import RESEARCH_SYSTEM_PROMPT, get_research_prompt
 if TYPE_CHECKING:
     from src.tracer import PipelineTracer
 
-# The web-search tool declaration (server-side, no schema required)
-_WEB_SEARCH_TOOL = {"type": "web_search_20260209", "name": "web_search"}
+# Web search tool definition (OpenAI function-calling format)
+_WEB_SEARCH_TOOL = {
+    "type": "function",
+    "function": {
+        "name": "web_search",
+        "description": (
+            "Search the web for information about a topic. "
+            "Returns snippets from the top results."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "The search query",
+                }
+            },
+            "required": ["query"],
+        },
+    },
+}
+
+
+def _do_web_search(query: str, max_results: int = 5) -> str:
+    """Execute a DuckDuckGo search and return formatted results."""
+    try:
+        with DDGS() as ddgs:
+            results = list(ddgs.text(query, max_results=max_results))
+    except Exception as exc:
+        return f"Search failed: {exc}"
+
+    if not results:
+        return "No results found."
+
+    parts = []
+    for r in results:
+        title = r.get("title", "")
+        href = r.get("href", "")
+        body = r.get("body", "")
+        parts.append(f"**{title}**\n{href}\n{body}")
+    return "\n\n---\n\n".join(parts)
 
 
 def research_cultural_context(
@@ -33,98 +76,153 @@ def research_cultural_context(
     """
     Search the web for cultural context and return a synthesised brief.
 
-    Uses streaming so progress is visible; handles the pause_turn stop reason
-    that occurs when the server-side search loop reaches its iteration limit.
+    Runs an OpenAI-compatible tool-use loop with DuckDuckGo as the search
+    backend. The model decides how many searches to perform before synthesising.
     """
-    client = anthropic.Anthropic(api_key=config.anthropic_api_key)
+    client = openai.OpenAI(base_url=config.api_base_url, api_key="vllm")
     user_prompt = get_research_prompt(culture, dimension, params, focus_query=focus_query)
 
-    # Initial message history
-    messages: list[dict] = [{"role": "user", "content": user_prompt}]
+    messages: list[dict] = [
+        {"role": "system", "content": RESEARCH_SYSTEM_PROMPT},
+        {"role": "user", "content": user_prompt},
+    ]
 
-    last_response = None
+    def _create_with_backoff(**kwargs):
+        delay = 60
+        for attempt in range(5):
+            try:
+                return client.chat.completions.create(**kwargs)
+            except openai.RateLimitError:
+                if attempt == 4:
+                    raise
+                print(
+                    f"  [research] Rate limit — waiting {delay}s (attempt {attempt + 1}/5)…",
+                    flush=True,
+                )
+                time.sleep(delay)
+                delay = min(delay * 2, 300)
 
-    for iteration in range(config.max_research_continuations + 1):
-        if verbose and iteration > 0:
-            print(f"  [research] Continuing search (round {iteration})…")
+    last_content = ""
 
-        with client.messages.stream(
-            model=config.model,
+    for _iteration in range(config.max_research_continuations + 1):
+        response = _create_with_backoff(
+            model=config.research_model,
             max_tokens=config.research_max_tokens,
-            system=RESEARCH_SYSTEM_PROMPT,
-            thinking={"type": "adaptive"},
             tools=[_WEB_SEARCH_TOOL],
+            tool_choice="auto",
             messages=messages,
-        ) as stream:
-            if verbose:
-                _print_research_stream(stream)
-
-            last_response = stream.get_final_message()
+        )
 
         if tracer is not None:
             tracer.increment_api_calls()
             tracer.add_usage(
-                input_tokens=last_response.usage.input_tokens,
-                output_tokens=last_response.usage.output_tokens,
+                input_tokens=response.usage.prompt_tokens,
+                output_tokens=response.usage.completion_tokens,
             )
-            from src.tracer import extract_trace_data
-            extract_trace_data(last_response.content, tracer)
 
-        if last_response.stop_reason == "end_turn":
+        choice = response.choices[0]
+
+        # Capture any text the model produced
+        if choice.message.content:
+            last_content = choice.message.content
+
+        # Build assistant message for history
+        assistant_msg: dict = {"role": "assistant", "content": choice.message.content}
+        if choice.message.tool_calls:
+            assistant_msg["tool_calls"] = [
+                {
+                    "id": tc.id,
+                    "type": "function",
+                    "function": {
+                        "name": tc.function.name,
+                        "arguments": tc.function.arguments,
+                    },
+                }
+                for tc in choice.message.tool_calls
+            ]
+        messages.append(assistant_msg)
+
+        # No tool calls → model has synthesised its answer
+        if not choice.message.tool_calls:
             break
 
-        if last_response.stop_reason == "pause_turn":
-            # Server-side loop hit its limit — re-send to continue.
-            # Do NOT add a new user message; the API resumes automatically
-            # when it sees a trailing server_tool_use block.
-            messages = [
-                {"role": "user", "content": user_prompt},
-                {"role": "assistant", "content": last_response.content},
-            ]
-            continue
+        # Execute each tool call and add results to the conversation
+        for tc in choice.message.tool_calls:
+            if tc.function.name == "web_search":
+                try:
+                    args = json.loads(tc.function.arguments)
+                    query = args.get("query", "")
+                except (json.JSONDecodeError, AttributeError):
+                    query = str(tc.function.arguments)
 
-        # Any other stop reason — accept what we have
-        break
+                if verbose:
+                    print(f"\n  [web_search] Searching: {query}", flush=True)
 
-    if last_response is None:
-        return "Research could not be completed."
+                result = _do_web_search(query)
 
-    text_parts = [
-        block.text
-        for block in last_response.content
-        if block.type == "text"
-    ]
-    return "\n\n".join(text_parts) if text_parts else "Research summary unavailable."
+                if tracer is not None:
+                    tracer.record_tool_call(
+                        tool="web_search",
+                        input_data={"query": query},
+                        tool_use_id=tc.id,
+                        result=result[:500],
+                    )
+
+                messages.append({
+                    "role": "tool",
+                    "tool_call_id": tc.id,
+                    "content": result,
+                })
+
+    return last_content if last_content else "Research summary unavailable."
 
 
 # ---------------------------------------------------------------------------
-# Verbose stream printer
+# Research summariser
 # ---------------------------------------------------------------------------
 
-def _print_research_stream(stream: anthropic.MessageStream) -> None:
-    """Print text deltas and search-query notifications while streaming."""
-    in_text = False
-    for event in stream:
-        etype = getattr(event, "type", None)
+def summarize_research(
+    raw_research: str,
+    culture: str,
+    dimension: CultureDimension,
+) -> str:
+    """
+    Condense a raw research result into a compact cultural briefing.
 
-        if etype == "content_block_start":
-            block = getattr(event, "content_block", None)
-            if block is None:
-                continue
-            if block.type == "text":
-                in_text = True
-            elif block.type == "server_tool_use" and block.name == "web_search":
-                # The query shows up in block.input once the block closes;
-                # print a placeholder for now
-                print("\n  [web_search] Searching…", flush=True)
-                in_text = False
+    Uses the research model to keep it lightweight.
+    """
+    if not raw_research.strip():
+        return raw_research
 
-        elif etype == "content_block_delta":
-            delta = getattr(event, "delta", None)
-            if delta and delta.type == "text_delta" and in_text:
-                print(delta.text, end="", flush=True)
+    client = openai.OpenAI(base_url=config.api_base_url, api_key="vllm")
+    prompt = (
+        f"You are condensing web-search research for a cultural training data project.\n\n"
+        f"Culture: {culture}\n"
+        f"Dimension: {dimension.name} — {dimension.description}\n\n"
+        f"Summarise the research below into a concise briefing (≤400 words) that preserves "
+        f"the most important cultural norms, practices, anecdotes, and nuances relevant to "
+        f"the dimension. Keep specific examples and culturally distinctive details; drop "
+        f"generic or off-topic content.\n\n"
+        f"RESEARCH:\n{raw_research}"
+    )
 
-        elif etype == "content_block_stop":
-            in_text = False
+    delay = 60
+    for attempt in range(5):
+        try:
+            response = client.chat.completions.create(
+                model=config.research_model,
+                max_tokens=config.research_summary_max_tokens,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            return response.choices[0].message.content or raw_research[:6000]
+        except openai.RateLimitError:
+            if attempt == 4:
+                return raw_research[:6000]
+            print(
+                f"  [summarise] Rate limit — waiting {delay}s (attempt {attempt + 1}/5)…",
+                flush=True,
+            )
+            time.sleep(delay)
+            delay = min(delay * 2, 300)
 
-    print()  # trailing newline
+    return raw_research[:6000]
