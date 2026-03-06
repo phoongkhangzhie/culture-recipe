@@ -4,10 +4,11 @@ An agentic system that generates culturally-aligned LLM training examples.
 
 Given a **culture**, a **cultural dimension**, and **generation parameters**, the agent:
 
-1. **Searches the web** for relevant cultural information (Anthropic web-search tool)
+1. **Searches the web** for relevant cultural information (DuckDuckGo, client-side)
 2. **Generates** a training example grounded in that research
 3. **Verifies** quality and cultural accuracy with structured scoring
 4. **Refines** the example iteratively until it meets the quality threshold
+5. **Repeats** for additional sub-aspects of the dimension if warranted
 
 ## Architecture
 
@@ -16,20 +17,20 @@ Input (culture, dimension, params)
         │
         ▼
 ┌───────────────┐   web_search   ┌──────────────────────────┐
-│  Phase 1      │ ─────────────► │  Anthropic web_search     │
-│  Research     │ ◄───────────── │  (server-side tool)       │
+│  Phase 1      │ ─────────────► │  DuckDuckGo (client-side) │
+│  Research     │ ◄───────────── │  tool-use loop            │
 └───────┬───────┘                └──────────────────────────┘
-        │ research_context (text)
+        │ research_summary (condensed text)
         ▼
 ┌───────────────┐
-│  Phase 2      │  claude-opus-4-6 + adaptive thinking
+│  Phase 2      │  Local model via vLLM
 │  Generate     │  → JSON code blocks parsed from text response
 └───────┬───────┘
         │ GeneratedExample
         ▼
 ┌───────────────┐
-│  Phase 3      │  claude-opus-4-6 + adaptive thinking
-│  Verify       │  → messages.parse() → VerificationOutput (Pydantic)
+│  Phase 3      │  Local model via vLLM
+│  Verify       │  → JSON-mode output → VerificationOutput (Pydantic)
 └───────┬───────┘
         │ score < threshold?
         ▼
@@ -37,16 +38,31 @@ Input (culture, dimension, params)
 │  Phase 4      │  Repeat up to max_refinement_iterations times
 │  Refine       │
 └───────┬───────┘
+        │ approved? → commit_example → generate another sub-aspect?
         ▼
-  GenerationResult (JSON)
+  GenerationResult (JSON, one or more ExampleRecords)
 ```
 
 ## Setup
 
 ```bash
-pip install -r requirements.txt
-cp .env.example .env
-# Edit .env and add your ANTHROPIC_API_KEY
+# Install dependencies
+uv sync   # or: pip install -r requirements.txt
+
+# Start vLLM (requires a GPU)
+pip install vllm
+vllm serve Qwen/Qwen2.5-7B-Instruct \
+    --enable-auto-tool-choice \
+    --tool-call-parser hermes
+
+# No API key required — everything runs locally
+```
+
+The pipeline connects to vLLM's OpenAI-compatible endpoint at
+`http://localhost:8000/v1` by default. Override via environment variable:
+
+```bash
+export API_BASE_URL=http://localhost:8000/v1
 ```
 
 ## Usage
@@ -55,21 +71,19 @@ cp .env.example .env
 # List all available cultural dimensions
 python main.py --list-dimensions
 
-# Minimal example
-python main.py --culture Japanese --dimension power_distance
+# Single dimension
+python main.py --culture Japanese --dimension guest_hospitality
 
-# Full options
-python main.py \
-  --culture Nigerian \
-  --dimension hospitality \
-  --language English \
-  --example-type conversation \
-  --output-format sharegpt \
-  --length medium \
-  --num-turns 3 \
-  --topic "welcoming a first-time guest" \
-  --output output.json \
-  --verbose
+# Single dimension with output saved
+python main.py --culture Nigerian --dimension hospitality --output result.json --verbose
+
+# Multiple specific dimensions
+python main.py --culture Brazilian \
+  --dimensions power_distance,collectivism,guest_hospitality \
+  --output-dir ./output/brazilian
+
+# All 139 dimensions (resumable — skips already-completed ones)
+python main.py --culture Japanese --all-dimensions --output-dir ./output/japanese
 ```
 
 ## Parameters
@@ -77,15 +91,79 @@ python main.py \
 | Flag | Default | Description |
 |---|---|---|
 | `--culture` | — | Target culture (e.g. `Japanese`, `Nigerian`) |
-| `--dimension` | — | Dimension key from `--list-dimensions` |
-| `--language` | `English` | Language for the example |
-| `--example-type` | `conversation` | `conversation`, `qa`, `instruction`, `story`, `preference_pair` |
-| `--output-format` | `openai` | `openai`, `alpaca`, `sharegpt`, `raw` |
-| `--length` | `medium` | `short`, `medium`, `long` |
-| `--num-turns` | `2` | Dialogue turns (for `conversation` type) |
-| `--topic` | — | Optional specific topic within the dimension |
-| `--output` | — | Save result to a JSON file |
-| `--verbose` | false | Stream model output to stdout |
+| `--dimension` | — | Single dimension key from `--list-dimensions` |
+| `--dimensions` | — | Comma-separated list of dimension keys |
+| `--all-dimensions` | — | Run all 139 dimensions sequentially |
+| `--language` | `English` | Language for the generated examples |
+| `--topic` | — | Optional topic hint for the agent |
+| `--output` | — | Save single-dimension result to a JSON file |
+| `--output-dir` | — | Directory for multi-dimension results (one file per dimension) |
+| `--verbose` | false | Show detailed agent output |
+| `--trace` | false | Record a full pipeline trace alongside each result |
+
+## Running on SLURM
+
+Use the provided [run.slurm](run.slurm) script. It starts vLLM in the background,
+waits for Uvicorn's `"Application startup complete."` log line (confirming the model
+is fully loaded), runs the pipeline, then shuts down vLLM cleanly.
+
+```bash
+# Single dimension
+sbatch --export=ALL,CULTURE=Korean,DIMENSION=filial_piety,OUTPUT_DIR=./output/korean run.slurm
+
+# All dimensions — edit run.slurm to use --all-dimensions
+sbatch --export=ALL,CULTURE=Korean,OUTPUT_DIR=./output/korean run.slurm
+```
+
+vLLM logs are written to `logs/vllm-<jobid>.log` separately from the SLURM job log.
+
+## Configuration
+
+Edit [config.py](config.py) to change the model or tune token budgets:
+
+```python
+api_base_url = "http://localhost:8000/v1"   # vLLM endpoint
+model = "Qwen/Qwen2.5-7B-Instruct"          # model served by vLLM
+research_model = "Qwen/Qwen2.5-7B-Instruct" # can differ from main model
+
+quality_threshold = 7.0          # minimum overall score to approve (0–10)
+max_refinement_iterations = 3    # maximum refine attempts per example
+orchestrator_max_tokens = 2500   # token budget for the agentic loop
+generation_max_tokens = 4000
+verification_max_tokens = 2000
+research_max_tokens = 8000
+research_summary_max_tokens = 1500
+```
+
+## Output Format
+
+Each result file contains one or more `ExampleRecord` objects — the agent decides
+whether a dimension warrants multiple examples (e.g. separate examples for different
+religious holidays within a single dimension).
+
+```json
+{
+  "culture": "Japanese",
+  "dimension": { "name": "guest_hospitality", ... },
+  "params": { "language": "English" },
+  "records": [
+    {
+      "example": {
+        "content": { "messages": [ ... ] },
+        "cultural_elements": ["omotenashi", "slippers", "green tea"]
+      },
+      "verification": {
+        "overall_score": 8.5,
+        "is_approved": true,
+        "issues": [],
+        "suggestions": []
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": { "model": "Qwen/Qwen2.5-7B-Instruct", "agentic_iterations": 6 }
+}
+```
 
 ## Available Dimensions
 
@@ -331,44 +409,3 @@ Run `python main.py --list-dimensions` to see the full list.
 | `culturally_sensitive_topics` | Culturally Sensitive Topics |
 | `ethnicity_assumptions` | Ethnicity Assumptions |
 | `cultural_stereotyping` | Cultural Stereotyping |
-
-## Output Format Examples
-
-**OpenAI** (`--output-format openai`)
-```json
-{
-  "messages": [
-    {"role": "system",    "content": "..."},
-    {"role": "user",      "content": "..."},
-    {"role": "assistant", "content": "..."}
-  ]
-}
-```
-
-**Alpaca** (`--output-format alpaca`)
-```json
-{"instruction": "...", "input": "...", "output": "..."}
-```
-
-**ShareGPT** (`--output-format sharegpt`)
-```json
-{"conversations": [{"from": "human", "value": "..."}, {"from": "gpt", "value": "..."}]}
-```
-
-## Configuration
-
-Edit [config.py](config.py) to tune thresholds and token budgets:
-
-```python
-quality_threshold = 7.0          # minimum overall score to approve (0–10)
-max_refinement_iterations = 3    # maximum refine attempts per example
-research_max_tokens = 8000
-generation_max_tokens = 4000
-verification_max_tokens = 2000
-```
-
-## Model
-
-Uses **claude-opus-4-6** with `thinking: {type: "adaptive"}` on all phases.
-The web-search tool (`web_search_20260209`) is fully server-side — no external
-search API key required.
