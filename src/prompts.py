@@ -4,6 +4,23 @@ from src.models import CultureDimension, GenerationParams
 
 
 # ---------------------------------------------------------------------------
+# System prompt template for generated training examples
+# ---------------------------------------------------------------------------
+
+def get_example_system_prompt(culture: str) -> str:
+    """
+    The system message embedded in every generated training example.
+    Kept intentionally simple so the model focuses on the cultural content,
+    not on crafting a system prompt.
+    """
+    return (
+        f"You are a helpful AI assistant with deep knowledge of {culture} culture. "
+        f"Represent the values, communication styles, and lived experience of {culture} "
+        f"people in your responses."
+    )
+
+
+# ---------------------------------------------------------------------------
 # System prompts
 # ---------------------------------------------------------------------------
 
@@ -162,7 +179,7 @@ Return **two JSON code blocks** in your response:
 ```json
 {{
   "messages": [
-    {{"role": "system", "content": "..."}},
+    {{"role": "system", "content": "{get_example_system_prompt(culture)}"}},
     {{"role": "user", "content": "..."}},
     {{"role": "assistant", "content": "..."}},
     {{"role": "user", "content": "..."}},
@@ -170,8 +187,8 @@ Return **two JSON code blocks** in your response:
   ]
 }}
 ```
-The `system` turn is optional — include it only if it adds useful cultural framing \
-for the assistant. There must be at least two user/assistant exchanges.
+The `system` message is required and must be exactly as shown above. \
+There must be at least two user/assistant exchanges.
 
 **Block 2 — Cultural elements** (a JSON array listing what you incorporated):
 ```json
@@ -314,7 +331,7 @@ Return the same two JSON code blocks as before:
 ```json
 {{
   "messages": [
-    {{"role": "system", "content": "..."}},
+    {{"role": "system", "content": "{get_example_system_prompt(culture)}"}},
     {{"role": "user", "content": "..."}},
     {{"role": "assistant", "content": "..."}}
   ]
