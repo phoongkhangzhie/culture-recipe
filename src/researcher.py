@@ -13,7 +13,7 @@ import time
 from typing import TYPE_CHECKING
 
 import openai
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 
 from config import config
 from src.models import CultureDimension, GenerationParams

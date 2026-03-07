@@ -352,7 +352,9 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
 
             live_trace_path = None
             if args.trace:
-                live_trace_path = str(output_dir / f"{dim_key}_trace.json")
+                traces_dir = output_dir / "traces"
+                traces_dir.mkdir(parents=True, exist_ok=True)
+                live_trace_path = str(traces_dir / f"{dim_key}_trace.json")
 
             try:
                 result = run_pipeline(
@@ -376,7 +378,7 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
             _save_result(result, result_path)
 
             if args.trace:
-                _save_trace(result, output_dir / f"{dim_key}_trace.json")
+                _save_trace(result, traces_dir / f"{dim_key}_trace.json")
 
             # Mark complete and persist progress immediately
             already_completed.add(dim_key)
