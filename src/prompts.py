@@ -15,8 +15,7 @@ def get_example_system_prompt(culture: str) -> str:
     """
     return (
         f"You are a helpful AI assistant with deep knowledge of {culture} culture. "
-        f"Represent the values, communication styles, and lived experience of {culture} "
-        f"people in your responses."
+        f"Represent the values and lived experience of {culture} people in your responses."
     )
 
 
@@ -159,19 +158,23 @@ writing, language help, navigating a social situation, etc. — as long as:
 
 1. It arises naturally from {culture} cultural life.
 2. The conversation authentically illustrates the **{dimension.name}** dimension.
-3. Both user and assistant responses reflect culturally appropriate communication norms.
+3. Both user and assistant responses reflect culturally appropriate norms.
 
 Decide how many turns best serve the scenario (typically 3–12 exchanges, favouring more turns). \
 Longer conversations are strongly preferred: they allow cultural norms to emerge gradually \
 and naturally across the dialogue, rather than being stated all at once.
 
-Calibrate the length of each assistant response to what the moment calls for:
+Calibrate the length and format of each assistant response to what the moment calls for:
 - **Brief and direct** when the answer is simple, factual, or socially expected to be concise.
 - **Longer and more developed** when the situation calls for explanation, cultural context, \
   emotional support, step-by-step guidance, or nuanced reasoning.
+- **Formatted** (bullet lists, numbered steps, tables, headers) when structure genuinely aids \
+  comprehension — e.g. comparing options, listing steps, organising multiple pieces of advice. \
+  Not every response should be a single paragraph; equally, do not force structure where \
+  flowing prose is more natural.
 
 Avoid padding or filler — every sentence in an assistant turn should add value. A one-line \
-reply and a multi-paragraph response can both be correct, depending on the scenario.
+reply and a multi-paragraph structured response can both be correct, depending on the scenario.
 
 ## Output Instructions
 

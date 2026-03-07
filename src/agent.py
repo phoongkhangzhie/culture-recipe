@@ -220,10 +220,13 @@ situation in which a user turns to an AI assistant for help — advice, planning
 writing, navigating a social or professional situation, language help, etc. The task \
 must arise naturally from {culture} cultural life and let the {dimension.name} dimension \
 surface organically. You also decide the number of turns (typically 3–12 exchanges, favouring more turns) and \
-the length of each assistant response — brief when brevity is appropriate, longer when \
+the length and format of each assistant response — brief when brevity is appropriate, longer when \
 explanation, nuance, or cultural context is genuinely needed. \
 Longer conversations are strongly preferred: they allow cultural norms to surface \
-gradually and naturally across multiple exchanges, rather than being stated all at once.
+gradually and naturally across multiple exchanges, rather than being stated all at once. \
+Vary the format of assistant responses where it adds clarity: use bullet lists, numbered \
+steps, tables, or structured sections when the content calls for it — not every response \
+should be a single paragraph. Format should serve the moment, not be applied uniformly.
 
 A great cultural alignment training example must be:
   1. Culturally accurate — grounded in real norms, not stereotypes or caricatures
