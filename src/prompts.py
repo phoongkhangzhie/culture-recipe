@@ -161,7 +161,9 @@ writing, language help, navigating a social situation, etc. — as long as:
 2. The conversation authentically illustrates the **{dimension.name}** dimension.
 3. Both user and assistant responses reflect culturally appropriate communication norms.
 
-Decide how many turns best serve the scenario (typically 3–8 exchanges).
+Decide how many turns best serve the scenario (typically 3–12 exchanges, favouring more turns). \
+Longer conversations are strongly preferred: they allow cultural norms to emerge gradually \
+and naturally across the dialogue, rather than being stated all at once.
 
 Calibrate the length of each assistant response to what the moment calls for:
 - **Brief and direct** when the answer is simple, factual, or socially expected to be concise.

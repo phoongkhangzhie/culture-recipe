@@ -219,9 +219,11 @@ When generating, **you choose the task and scenario** for the chat. Pick any rea
 situation in which a user turns to an AI assistant for help — advice, planning, creative \
 writing, navigating a social or professional situation, language help, etc. The task \
 must arise naturally from {culture} cultural life and let the {dimension.name} dimension \
-surface organically. You also decide the number of turns (typically 3–8 exchanges) and \
+surface organically. You also decide the number of turns (typically 3–12 exchanges, favouring more turns) and \
 the length of each assistant response — brief when brevity is appropriate, longer when \
-explanation, nuance, or cultural context is genuinely needed.
+explanation, nuance, or cultural context is genuinely needed. \
+Longer conversations are strongly preferred: they allow cultural norms to surface \
+gradually and naturally across multiple exchanges, rather than being stated all at once.
 
 A great cultural alignment training example must be:
   1. Culturally accurate — grounded in real norms, not stereotypes or caricatures
