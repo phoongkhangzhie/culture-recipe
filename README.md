@@ -28,7 +28,7 @@ culture-recipe/
     │   ├── researcher.py          # DuckDuckGo web research
     │   ├── prompts.py             # All prompt templates
     │   ├── models.py              # Pydantic data models
-    │   ├── taxonomy.py            # 139 cultural dimensions
+    │   ├── taxonomy.py            # cultural dimensions
     │   └── tracer.py              # Pipeline tracing
     └── finetune/                  # Fine-tuning pipeline (TRL + PEFT)
         ├── prepare_data.py        # Flatten output JSONs → training JSONL
