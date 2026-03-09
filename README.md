@@ -124,7 +124,7 @@ python main.py generate --culture Brazilian \
   --dimensions power_distance,collectivism,guest_hospitality \
   --output-dir ./output/brazilian
 
-# All 139 dimensions (resumable — skips already-completed ones)
+# All dimensions (resumable — skips already-completed ones)
 python main.py generate --culture Japanese --all-dimensions --output-dir ./output/japanese
 
 # Implicit cultural context mode
@@ -152,7 +152,7 @@ given culture even when the cultural background is not stated.
 | `--culture` | — | Target culture (e.g. `Japanese`, `Nigerian`) |
 | `--dimension` | — | Single dimension key from `--list-dimensions` |
 | `--dimensions` | — | Comma-separated list of dimension keys |
-| `--all-dimensions` | — | Run all 139 dimensions sequentially |
+| `--all-dimensions` | — | Run all dimensions sequentially |
 | `--language` | `English` | Language for the generated examples |
 | `--topic` | — | Optional topic hint for the agent |
 | `--implicit-culture` | false | User messages written as a natural insider; assistant responds with shared cultural assumptions |
@@ -293,7 +293,7 @@ religious holidays within a single dimension).
 ## Available Dimensions
 
 Dimensions are drawn from the **CultureScope** taxonomy (3 layers, 7 categories, 20 Topic Aspects).
-Each fine-grained dimension is a standalone queryable topic — **139 dimensions** in total.
+Each fine-grained dimension is a standalone queryable topic.
 Run `python main.py --list-dimensions` to see the full list.
 
 ### Layer 1 — Institutional Norms › Geography & Customs › Population and Geography
