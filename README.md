@@ -100,7 +100,24 @@ python main.py --culture Brazilian \
 
 # All 139 dimensions (resumable — skips already-completed ones)
 python main.py --culture Japanese --all-dimensions --output-dir ./output/japanese
+
+# Implicit cultural context mode
+python main.py --culture Japanese --dimension guest_hospitality --implicit-culture
 ```
+
+### Implicit cultural context mode
+
+By default, training examples may include user messages that explicitly signal the user's
+cultural background (e.g. naming local places, referencing cultural practices by name as
+explanations). With `--implicit-culture`, the agent generates user messages the way a
+**natural insider** of the target culture would write them — cultural markers appear
+organically because they are natural to the speaker, not because the user is performing
+or announcing their culture to an AI.
+
+The assistant responds with **culturally shared assumptions** rather than explaining
+the culture back to the user, as if both parties simply share that background. This
+produces training data that teaches the model to respond appropriately to users from a
+given culture even when the cultural background is not stated.
 
 ## Parameters
 
@@ -112,6 +129,7 @@ python main.py --culture Japanese --all-dimensions --output-dir ./output/japanes
 | `--all-dimensions` | — | Run all 139 dimensions sequentially |
 | `--language` | `English` | Language for the generated examples |
 | `--topic` | — | Optional topic hint for the agent |
+| `--implicit-culture` | false | User messages written as a natural insider; assistant responds with shared cultural assumptions |
 | `--output` | — | Save single-dimension result to a JSON file |
 | `--output-dir` | — | Directory for multi-dimension results (one file per dimension) |
 | `--verbose` | false | Show detailed agent output |
