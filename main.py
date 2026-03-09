@@ -73,6 +73,11 @@ Multi-dimension examples (resumable):
                         help="Language for the generated examples (default: English)")
     parser.add_argument("--topic", metavar="TEXT",
                         help="Optional topic hint — the agent may use this as inspiration")
+    parser.add_argument("--implicit-culture", action="store_true",
+                        help=(
+                            "Generate examples where user queries carry no explicit cultural markers. "
+                            "The assistant responds as if it knows the user is from the target culture."
+                        ))
 
     # ---- Output ----
     out_group = parser.add_mutually_exclusive_group()
@@ -237,6 +242,8 @@ def _run_single(args, params: GenerationParams) -> None:
     ]
     if params.topic:
         lines.append(f"[bold]Topic hint:[/bold]     {params.topic}")
+    if params.implicit_culture:
+        lines.append("[bold]Mode:[/bold]           Implicit culture (user queries carry no cultural markers)")
     console.print(Panel("\n".join(lines), title="[bold blue]culture-recipe[/bold blue]",
                         border_style="blue"))
 
@@ -455,7 +462,11 @@ def main() -> None:
         )
         sys.exit(1)
 
-    params = GenerationParams(language=args.language, topic=args.topic)
+    params = GenerationParams(
+        language=args.language,
+        topic=args.topic,
+        implicit_culture=args.implicit_culture,
+    )
 
     if is_multi:
         _run_multi(args, params, dim_keys)

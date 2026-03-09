@@ -133,6 +133,26 @@ def get_generation_prompt(
         if params.topic
         else ""
     )
+    implicit_mode_note = (
+        f"\n- **Mode**: Implicit cultural context — see task instructions below"
+        if params.implicit_culture
+        else ""
+    )
+    implicit_task_block = (
+        f"""\
+
+**Implicit cultural context mode.**
+Write user messages the way a natural insider of {culture} culture would write them — \
+using culturally specific language, references, and norms organically, without \
+explicitly announcing or performing their cultural background (e.g. avoid "As a {culture} \
+person, I..." framing). Cultural markers should appear because they are natural to the \
+speaker, not because they are signalling culture to an AI. \
+The assistant should respond with culturally shared assumptions — as if both parties \
+simply share that background — rather than explaining or reflecting the culture back at \
+the user."""
+        if params.implicit_culture
+        else ""
+    )
     return f"""\
 Using the cultural research below, generate an authentic multi-turn chat training \
 example for LLM cultural alignment.
@@ -148,7 +168,7 @@ example for LLM cultural alignment.
 - **Culture**: {culture}
 - **Dimension**: {dimension.name} — {dimension.description}
 - **Language**: {params.language}
-- **Format**: Multi-turn conversation between a user and an AI assistant{topic_hint}
+- **Format**: Multi-turn conversation between a user and an AI assistant{topic_hint}{implicit_mode_note}
 
 ## Your Task
 
@@ -159,6 +179,7 @@ writing, language help, navigating a social situation, etc. — as long as:
 1. It arises naturally from {culture} cultural life.
 2. The conversation authentically illustrates the **{dimension.name}** dimension.
 3. Both user and assistant responses reflect culturally appropriate norms.
+{implicit_task_block}
 
 Decide how many turns best serve the scenario (typically 3–12 exchanges, favouring more turns). \
 Longer conversations are strongly preferred — more turns let cultural norms emerge gradually \
@@ -208,7 +229,8 @@ There must be at least two user/assistant exchanges.
 - The assistant's tone and style match culturally appropriate communication norms.
 - The **{dimension.name}** dimension surfaces organically through the dialogue.
 - Each assistant response is exactly as long as it needs to be — no padding, no truncation.
-- The full exchange would genuinely teach an LLM about {culture} culture.\
+- The full exchange would genuinely teach an LLM about {culture} culture.
+{f"- (Implicit mode) User messages use cultural language naturally, as an insider would — without announcing or performing their cultural identity." if params.implicit_culture else ""}\
 """
 
 
@@ -238,6 +260,7 @@ training quality.
 - **Cultural Dimension**: {dimension.name} — {dimension.description}
 - **Language**: {params.language}
 - **Format**: Multi-turn chat (user ↔ assistant)
+{f"- **Mode**: Implicit cultural context — user messages should use cultural language naturally, as an insider would, without explicitly stating their background. Penalise any user turn that announces or performs cultural identity (e.g. 'As a {culture} person, I...'). The assistant should respond with culturally shared assumptions, not explanations directed at an outsider." if params.implicit_culture else ""}
 
 ## Cultural Research (Ground Truth)
 
@@ -323,7 +346,10 @@ Improve the following multi-turn chat training example based on evaluation feedb
 
 - Culture: {culture} | Dimension: {dimension.name} | Language: {params.language}
 - Format: Multi-turn chat (user ↔ assistant)
-{f"- Topic hint: {params.topic}" if params.topic else ""}
+{f"- Topic hint: {params.topic}" if params.topic else ""}\
+{f"""- Mode: Implicit cultural context — user messages use culturally specific language naturally, \
+as an insider would, without announcing their background. The assistant responds with shared \
+cultural assumptions rather than explaining the culture back to the user.""" if params.implicit_culture else ""}
 
 ## Task
 

@@ -219,7 +219,16 @@ When generating, **you choose the task and scenario** for the chat. Pick any rea
 situation in which a user turns to an AI assistant for help — advice, planning, creative \
 writing, navigating a social or professional situation, language help, etc. The task \
 must arise naturally from {culture} cultural life and let the {dimension.name} dimension \
-surface organically. You also decide the number of turns (typically 3–12 exchanges, favouring more turns) and \
+surface organically.{("""
+
+**Implicit cultural context mode is ON.**
+Write user messages the way a natural insider of """ + culture + """ culture would write them — \
+using culturally specific language, references, and norms organically, without \
+explicitly announcing or performing their cultural background ("As a """ + culture + """ person, \
+I..."). Cultural markers should appear because they are natural to the speaker, not \
+because they are signalling culture to an AI. The assistant should respond with \
+culturally shared assumptions rather than explaining the culture back to the user — \
+as if both parties simply share that background.""") if params.implicit_culture else ""} You also decide the number of turns (typically 3–12 exchanges, favouring more turns) and \
 the length and format of each assistant response. \
 Longer conversations are strongly preferred — more turns let cultural norms surface gradually \
 and naturally across the dialogue, rather than being stated all at once. \

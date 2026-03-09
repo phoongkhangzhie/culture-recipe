@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field
 class GenerationParams(BaseModel):
     language: str = "English"
     topic: Optional[str] = None
+    implicit_culture: bool = False
 
 
 class CultureDimension(BaseModel):
