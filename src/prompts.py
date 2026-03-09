@@ -161,20 +161,22 @@ writing, language help, navigating a social situation, etc. — as long as:
 3. Both user and assistant responses reflect culturally appropriate norms.
 
 Decide how many turns best serve the scenario (typically 3–12 exchanges, favouring more turns). \
-Longer conversations are strongly preferred: they allow cultural norms to emerge gradually \
+Longer conversations are strongly preferred — more turns let cultural norms emerge gradually \
 and naturally across the dialogue, rather than being stated all at once.
 
-Calibrate the length and format of each assistant response to what the moment calls for:
-- **Brief and direct** when the answer is simple, factual, or socially expected to be concise.
-- **Longer and more developed** when the situation calls for explanation, cultural context, \
-  emotional support, step-by-step guidance, or nuanced reasoning.
-- **Formatted** (bullet lists, numbered steps, tables, headers) when structure genuinely aids \
-  comprehension — e.g. comparing options, listing steps, organising multiple pieces of advice. \
-  Not every response should be a single paragraph; equally, do not force structure where \
-  flowing prose is more natural.
+Calibrate the length of **each individual assistant response** to what the moment calls for:
+- **Brief and direct** when the answer is simple, factual, or the culture expects conciseness. \
+  A one-line reply, a short acknowledgment, or a quick follow-up question is often the most \
+  natural response. Do not pad it.
+- **Longer and more developed** when the situation genuinely calls for explanation, cultural \
+  context, emotional support, step-by-step guidance, or nuanced reasoning.
+- **Formatted** (bullet lists, numbered steps, tables, headers) only when structure genuinely \
+  aids comprehension — e.g. comparing options, listing steps, organising multiple pieces of \
+  advice. Do not force structure where flowing prose or a single sentence is more natural.
 
-Avoid padding or filler — every sentence in an assistant turn should add value. A one-line \
-reply and a multi-paragraph structured response can both be correct, depending on the scenario.
+Avoid padding or filler — every sentence must add value. A one-line reply and a multi-paragraph \
+structured response can both be correct, depending on the scenario. Mixing short and long \
+responses across turns is realistic and desirable.
 
 ## Output Instructions
 
@@ -327,9 +329,10 @@ Improve the following multi-turn chat training example based on evaluation feedb
 
 Create an improved version that addresses every issue and implements the suggestions. \
 You may adjust the scenario, number of turns, or dialogue content as needed. \
-Calibrate the length of each assistant response to what the moment calls for — brief \
-when the answer is simple or directness is culturally appropriate, longer when \
-explanation, emotional support, or nuanced guidance is needed. Avoid padding. \
+Calibrate the length of each individual assistant response to what the moment calls for — \
+short and direct when the answer is simple or cultural norms expect brevity, longer when \
+explanation, emotional support, or nuanced guidance is genuinely needed. \
+Mix short and long responses across turns to keep the conversation natural. Avoid padding. \
 Return the same two JSON code blocks as before:
 
 **Block 1 — Improved training example**:

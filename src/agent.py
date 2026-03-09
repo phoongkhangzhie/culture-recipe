@@ -220,13 +220,18 @@ situation in which a user turns to an AI assistant for help — advice, planning
 writing, navigating a social or professional situation, language help, etc. The task \
 must arise naturally from {culture} cultural life and let the {dimension.name} dimension \
 surface organically. You also decide the number of turns (typically 3–12 exchanges, favouring more turns) and \
-the length and format of each assistant response — brief when brevity is appropriate, longer when \
-explanation, nuance, or cultural context is genuinely needed. \
-Longer conversations are strongly preferred: they allow cultural norms to surface \
-gradually and naturally across multiple exchanges, rather than being stated all at once. \
-Vary the format of assistant responses where it adds clarity: use bullet lists, numbered \
-steps, tables, or structured sections when the content calls for it — not every response \
-should be a single paragraph. Format should serve the moment, not be applied uniformly.
+the length and format of each assistant response. \
+Longer conversations are strongly preferred — more turns let cultural norms surface gradually \
+and naturally across the dialogue, rather than being stated all at once. \
+That said, the length of *each individual* response should match what the moment calls for. \
+Many assistant replies will naturally be short: a direct answer, a brief acknowledgment, \
+a one-line follow-up question, a concise confirmation. Short replies are realistic and \
+natural — not every assistant turn needs explanation or context. Reserve longer, more \
+developed responses for situations that genuinely call for it: step-by-step guidance, \
+emotional support, nuanced reasoning, or cultural background that needs unpacking. \
+Vary the format too: use lists, tables, or structure only when they genuinely aid clarity; \
+use flowing prose or a single sentence when that is more natural. \
+Format and length should serve the moment, not be applied uniformly.
 
 A great cultural alignment training example must be:
   1. Culturally accurate — grounded in real norms, not stereotypes or caricatures
