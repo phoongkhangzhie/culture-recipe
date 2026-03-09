@@ -1,0 +1,114 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Payment Habits",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Daily Life and Travel",
+    "description": "Preferred payment methods in everyday transactions, including attitudes toward cash, card, and mobile payment",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m visiting my cousin in Penang next week and she’s asking me to bring some cash for the open house. But I’ve been using my Boost eWallet for everything lately. Can I just pay her digitally instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely—especially in George Town, where most families accept digital payments now. Sending via Boost or DuitNow is totally fine, especially if your cousin is young or tech-savvy. Just add a quick note like ‘Selamat Hari Raya!’ so it feels personal. She’ll appreciate the thought, even if it’s not physical cash."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if her mom doesn’t have an e-wallet? I don’t want to make things awkward. Should I still go with cash?"
+            },
+            {
+              "role": "assistant",
+              "content": "Smart thinking. In quieter areas like Balik Pulau or Seberang Perai, older relatives may still prefer cash—even if they have bank accounts. Bringing a small envelope with RM50 or RM100 is thoughtful. Pair it with a digital transfer via Boost and say, ‘Duit raya dalam Boost, untuk raya!’—it’s a natural, friendly Manglish way to say it. Respectful, modern, and warm."
+            },
+            {
+              "role": "user",
+              "content": "Oh, that’s clever! I’ll do both. But what if I don’t have a Boost account? Is it easy to set up on the spot?"
+            },
+            {
+              "role": "assistant",
+              "content": "In urban areas, yes—just download the app, use your IC and phone number. Takes 2 minutes. But in rural villages, staff at warungs or minimarts often help set up e-wallets—many have agents trained by banks or fintechs. My cousin taught her mom how to use Boost last raya, and now she pays for her *kuih* every weekend. It’s common for younger family members to guide elders—this intergenerational support is key."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I want to send it to someone who doesn’t use Boost? Is DuitNow better?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—DuitNow is the real MVP. It works across all banks and e-wallets, so no need for both parties to use the same app. Just link your bank account, scan the QR, or enter the phone number. It’s the most flexible option. That said, while DuitNow is widely adopted, some rural banks may still have limited connectivity—checking with your cousin is wise. But the good news? Many elders are learning from their kids and grandkids. The shift is gradual, but it’s happening—with family support at the heart of it."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. What about Touch 'n Go eWallet? I’ve seen it used at tolls and hawker stalls. Is it useful for raya too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Great question! Touch 'n Go eWallet is especially handy in non-urban areas—many warungs, *kuih* sellers, and local transport hubs accept it. It’s also Shariah-compliant, so it aligns with religious values. If your cousin’s mom uses it for daily trips or grocery runs, sending via Touch 'n Go is just as valid. Plus, it’s often linked to the same IC as your bank account—super convenient. It’s not just for tolls anymore."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this is super helpful. So is the government pushing this shift? Feels like it’s everywhere now."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Bank Negara’s push for a cashless society—aiming for 90% by 2025—is a big driver. But it’s not just policy. It’s culture too: younger Malaysians see digital payments as smart, safe, and even respectful. When you pay digitally with a message, you’re showing care in a way that fits modern life. The system’s evolving, but the heart stays the same—family, respect, and connection."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of Boost and DuitNow as primary digital payment methods in urban Malaysia",
+          "Shariah-compliant nature of e-wallets like Boost and Touch 'n Go eWallet",
+          "Intergenerational support in adopting digital payments, especially from youth to elders",
+          "Hybrid payment culture: digital-first in cities, cash still common in rural areas",
+          "Use of Manglish phrases like 'Duit raya dalam Boost' and 'Selamat Hari Raya!' in authentic context",
+          "Digital payment rituals during Hari Raya (duit raya), including family transfers via apps",
+          "Role of warungs and minimarts in assisting with e-wallet setup in rural areas",
+          "Government push for cashless society (90% by 2025) as a driver of adoption",
+          "Preference for DuitNow due to cross-platform compatibility",
+          "Touch 'n Go eWallet used beyond tolls—common at hawker stalls and kuih sellers"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'many warungs' helping with e-wallet setup could imply broader availability than actual penetration in remote rural areas; some villages still lack digital infrastructure",
+          "Slight implication that all elders are learning from younger family members, which may overlook persistent digital exclusion due to age, literacy, or access"
+        ],
+        "suggestions": [
+          "Add a brief note about regional variability in internet access and digital literacy, e.g., 'In some remote villages, even if a warung offers help, inconsistent connectivity can delay setup.'",
+          "Include a subtle mention of the importance of physical bank branches in rural areas for those who can't use mobile apps, to reflect real-world limitations",
+          "Consider using a more localized phrase like 'Tiket RM50' or 'Top up?' in a natural way during a future turn to reinforce linguistic authenticity"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

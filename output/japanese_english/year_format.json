@@ -1,0 +1,405 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Year Format",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether years are written in full four-digit form or abbreviated two-digit form in different contexts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm writing a formal letter to my local city office to apply for a community grant. Should I write the year as '24' or '2024' in the application?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal documents like a grant application to a city office, you should use the full four-digit year—2024—rather than the abbreviated '24'. Using the full form avoids any ambiguity, especially since '24' could be mistaken for 1924 or 2024 in official records. This is particularly important in public administration, where precision is expected."
+            },
+            {
+              "role": "user",
+              "content": "I see. What about if I'm writing a casual email to a friend about a festival I attended last week? Can I just say 'last year' or '24'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in casual communication with friends, using '24' or 'last year' is perfectly natural and common—especially in text messages or social media. Many Japanese people, especially younger ones, write '24' in informal chats. But be mindful: if the context is unclear (e.g., if you're writing months later), it’s better to specify '2024' or '令和6年' to avoid confusion."
+            },
+            {
+              "role": "user",
+              "content": "Ah, I remember seeing '令和6年' on signs at the train station. Is that the same as 2024?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. '令和6年' (Reiwa 6) is the imperial era year corresponding to 2024. It’s still widely used in official signage, public announcements, and government documents. While the Gregorian calendar is standard in daily life, the Gengo system reinforces national identity and continuity. In formal contexts, you’ll often see '令和6年' written in full, not abbreviated."
+            },
+            {
+              "role": "user",
+              "content": "So if I'm writing a historical essay for school, should I use '2024' or '令和6年'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a school essay—especially one with historical or cultural themes—using '令和6年' is more appropriate and respectful of Japanese context. It shows awareness of national traditions and the cultural significance of the era system. However, you might also include the Gregorian year in parentheses the first time you mention it, like '令和6年 (2024)', to help readers unfamiliar with the Gengo system."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So the choice really depends on the audience and setting—formal vs. casual, official vs. personal?"
+            },
+            {
+              "role": "assistant",
+              "content": "Precisely. The year format isn’t just about convenience—it reflects deeper cultural values like respect for hierarchy, clarity, and social awareness. In Japan, choosing the right format signals that you understand context, avoid ambiguity, and show consideration for your audience. That’s why even small details like date writing matter so much."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of full four-digit year (2024) in formal administrative contexts",
+          "Use of two-digit abbreviation (24) in informal, casual communication",
+          "Prevalence of the imperial era (Gengo) system in official signage and documents",
+          "Contextual sensitivity in year formatting to avoid ambiguity",
+          "Cultural value of clarity, precision, and social awareness in communication",
+          "Preference for '令和6年' in formal and public settings",
+          "Dual calendar usage (Gregorian and Gengo) with appropriate context-based selection",
+          "Nuanced understanding of generational differences in calendar preference"
+        ],
+        "issues": [
+          "Minor: The assistant does not explicitly mention that '令和6年' is typically written in kanji (令和六) in formal documents, though this is a subtle detail not essential for general understanding.",
+          "Slight risk of overgeneralization: The example implies that '24' is universally acceptable in casual messages, but in some very conservative or older circles, even informal writing may avoid two-digit years. However, this is a minor nuance not critical to the core message."
+        ],
+        "suggestions": [
+          "Add a brief note about the visual form of '令和6年' (e.g., written in kanji as 令和六年) in formal documents to enhance authenticity.",
+          "Include a subtle mention that while younger people use '24' freely, older generations may still prefer full years or Gengo, reinforcing generational variation.",
+          "Consider adding a short example of how '令和6年' is used in a real-world context (e.g., a train station announcement) to ground the explanation further."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm writing a formal letter to my local city office to apply for a community grant. I need to include the date, but I'm not sure how to write the year. Should I use '24' or '2024'? The application form says 'Year/Month/Day'."
+            },
+            {
+              "role": "assistant",
+              "content": "In formal contexts like official applications, it's best to use the full four-digit year—2024—rather than the abbreviated '24'. Using '24' might seem too casual and could be seen as careless, especially in government or public-facing documents. Even though '24' is common in newspapers or casual messages, here clarity and precision are essential to avoid any ambiguity, such as confusion with 1924 or 2024."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I noticed some official notices in the city bulletin use '令和6年' instead. Should I use that instead of 2024?"
+            },
+            {
+              "role": "assistant",
+              "content": "That's a great observation. In Japan, the imperial era (Gengo) system—like 令和6年—is commonly used in formal public documents, signage, and official announcements. However, for your grant application, you should check the form’s instructions carefully. If it specifies 'Year/Month/Day' without mentioning the era, it’s safer to use the Gregorian calendar with four digits: 2024. Some institutions accept both, but consistency with the form’s format is key to avoid delays or rejections."
+            },
+            {
+              "role": "user",
+              "content": "What if I want to write a thank-you note to a senior community leader after the meeting? Would it be okay to write '24年' then?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a personal thank-you note to a senior figure, using '24年' would be acceptable—especially if the context is clear and the tone is warm but respectful. Since it’s informal and personal, brevity is appreciated. However, if you’re including the note in a formal record or sending it via official channels, it’s better to write '2024年' or even '令和6年' to show proper formality. The key is matching the level of respect and context—this reflects the cultural value of *tatemae* (appropriate public behavior) in communication."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So in my social media post about the event, I can just say '24' right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. On social media, especially among peers or in casual posts, '24' is perfectly natural and widely used—especially by younger generations. Platforms like X (formerly Twitter) and Instagram in Japan often feature dates like '24年' in captions or event posts. As long as the audience is clear and the context is informal, this abbreviation is not only acceptable but expected for efficiency and flow."
+            },
+            {
+              "role": "user",
+              "content": "Thanks so much. I feel much more confident now. One last thing—should I use '2024' in my résumé if I'm listing a past internship?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, for a résumé—especially one submitted to a company or institution—always use the full four-digit year: 2024. This applies to all professional documents, including job applications, academic records, and contracts. Using '24' might be interpreted as lacking attention to detail, which could affect your credibility. In Japan, precision in formal documents is a sign of respect and reliability, so the full form is the standard choice."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of full four-digit year (2024) in formal, official, and professional contexts",
+          "Acceptance of two-digit abbreviation (24) in informal, personal, and digital communication",
+          "Prevalence of the imperial era (Gengo) system (令和6年) in public and official documents",
+          "Context-sensitive appropriateness of date formats based on audience and purpose",
+          "Cultural value of precision and clarity in formal settings as a reflection of respect and reliability",
+          "Nuanced understanding of generational and platform-based differences in date formatting"
+        ],
+        "issues": [
+          "Minor: The assistant uses '24年' in the social media example without specifying the full '令和6年' or '2024年'—though this is acceptable in informal contexts, it could be clarified that '24年' in Japanese writing typically implies '2024年' in modern usage, avoiding ambiguity",
+          "Slight overgeneralization: While '24' is common on social media, some older users or formal platforms may still prefer '2024'—but this is a minor nuance not critical to the core message"
+        ],
+        "suggestions": [
+          "Add a brief clarification in the social media response: 'In Japanese, '24年' typically means 2024 in modern contexts, so it’s widely understood—just ensure the audience is familiar with the current era.'",
+          "Consider including a subtle note about the era transition (2019) to reinforce awareness of the Gengo system’s relevance, even if not directly asked",
+          "Use a slightly more conversational tone in the final response to better reflect natural Japanese English-speaking style (e.g., 'No worries—just make sure it’s clear to your readers')"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm writing a formal letter to my local city office about a property tax issue. Should I write the year as '24' or '2024' in the header?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal correspondence like this, especially with government offices, it's best to use the full four-digit year—2024—rather than the abbreviated '24'. Using '24' might seem casual or even careless in official documents, which could unintentionally affect how your request is perceived."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I’ve noticed many official notices here in Tokyo use '令和6年' instead of '2024'. Should I use that format instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a great observation. In Japan, official documents often use the imperial era (Gengo) system—so '令和6年' (Reiwa 6) is actually preferred in formal contexts. Since the Reiwa era began in 2019, '令和6年' clearly refers to 2024. Using this format shows cultural awareness and respect for institutional conventions."
+            },
+            {
+              "role": "user",
+              "content": "So I should write '令和6年' at the top, but still include '2024' in parentheses for clarity?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful, but in most cases, you don’t need to include the Gregorian year in parentheses. The '令和6年' format is standard and widely understood by public offices. Adding '2024' could come across as redundant or even suggest uncertainty. The key is consistency and using the expected format—official documents rarely mix formats unless there’s a specific reason."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What if I’m writing a personal email to a friend about the same tax issue? Can I just say '24年' then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in casual communication with friends, using '24年' is perfectly natural and common—especially in messages, social media, or informal notes. It’s concise and fits the tone of everyday conversation. Just be careful not to use it in any document that might be shared publicly or submitted officially."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this helps a lot. I was worried I’d make a cultural mistake, especially since I’ve seen older people write '令和6年' on signs, but younger people just say '24'."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re right—there’s a generational shift in how people use dates. Older generations and formal institutions still strongly favor the full or Gengo formats, while younger people are more likely to use '24' in digital spaces. But the underlying principle remains: context matters. Choosing the right format isn’t just about accuracy—it’s about showing respect, clarity, and awareness of social nuance, which is deeply valued in Japanese communication."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of four-digit year (2024) in formal government correspondence",
+          "Preference for imperial era (Gengo) format (令和6年) in official documents",
+          "Avoidance of two-digit abbreviations (24) in formal contexts",
+          "Acceptance of '24年' in informal, personal communication",
+          "Generational differences in date format usage",
+          "Cultural value placed on clarity, precision, and contextual appropriateness in writing",
+          "Avoidance of redundancy (e.g., not mixing Gengo and Gregorian years unnecessarily)"
+        ],
+        "issues": [
+          "Minor: The assistant could briefly acknowledge that '令和6年' is typically written in kanji, not romaji, in formal documents—though this is not critical in an English-language example.",
+          "Slight ambiguity: The assistant does not explicitly clarify that '令和6年' is only used in Japan and not in international contexts, but this is not a significant issue given the target audience."
+        ],
+        "suggestions": [
+          "In future examples, include a brief note about the visual presentation (e.g., '令和6年' is written in kanji, not 'Reiwa 6') to reinforce script-level authenticity.",
+          "Consider adding a subtle mention of how digital systems (e.g., government websites) often display both '令和6年' and '2024' for accessibility, which reflects real-world hybrid usage.",
+          "Highlight that even in informal settings, '24年' is typically written with the character '年'—not just '24'—to maintain cultural consistency."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm writing a formal letter to my local city office to apply for a community garden permit. Should I write the year as '24' or '2024' in the application? I’ve seen both in newspapers and on official forms."
+            },
+            {
+              "role": "assistant",
+              "content": "In formal applications like this, it's best to use the full four-digit year—2024—especially when submitting to government offices. While '24' is common in casual contexts like news headlines or social media, using abbreviated years in official documents can be seen as careless, particularly if it creates ambiguity (e.g., between 1924 and 2024). Since this is a legal and administrative submission, clarity and precision are essential."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I noticed that some official forms actually use '令和6年' instead of '2024'. Should I use that instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s correct—many official Japanese documents use the imperial era (Gengo) system, especially for public notices, legal forms, and municipal correspondence. In this case, you’d write '令和6年' (Reiwa 6). It’s not just a stylistic choice; it reflects national identity and continuity. However, if you’re unsure whether the form expects the Gengo system, check the header or instructions. If it uses '2024' in the example, follow that format. When in doubt, using '2024' is safe and universally understood."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So for a formal letter, I should write '2024年' or '令和6年'—but not '24年'. Is that right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. In formal writing, avoid '24年'—it’s too abbreviated and could be misinterpreted, especially in documents that might be archived or reviewed years later. '2024年' is clear and neutral, while '令和6年' carries cultural weight and is appropriate for official or public-facing materials. The key is context: if you're writing to a city office, especially for a permit, precision matters. Using the full form shows respect for the process and attention to detail—values deeply rooted in Japanese professional and civic culture."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll use '令和6年' since the city’s website uses that format in their announcements. I just wanted to make sure I wasn’t being too formal or too casual."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re thinking in the right way—this kind of awareness is very Japanese. Choosing '令和6年' shows you’re attuned to context and hierarchy, which is exactly what’s expected in formal communication. It’s not about being overly formal; it’s about showing consideration for the recipient and the system. Your attention to detail will be noticed and appreciated. Well done."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.76,
+        "cultural_elements_verified": [
+          "Use of full four-digit year (2024) in formal administrative contexts",
+          "Preference for imperial era (Gengo) system (令和6年) in official documents",
+          "Avoidance of two-digit abbreviations (24) in formal or ambiguous contexts",
+          "Context sensitivity in year formatting based on formality and audience",
+          "Cultural value of precision, clarity, and respect in official communication",
+          "Awareness of generational and institutional differences in calendar usage",
+          "Nuanced understanding of 'tatemae' and social appropriateness in written formality"
+        ],
+        "issues": [
+          "Minor: The assistant could briefly acknowledge that '2024年' is also acceptable in digital government systems even when '令和6年' is used, to reflect real-world coexistence of formats.",
+          "Slight overgeneralization: The phrase 'it’s not just a stylistic choice' might imply the Gengo system is always mandatory, when in practice, some forms still use Gregorian calendar—though the example correctly notes checking instructions."
+        ],
+        "suggestions": [
+          "Add a brief note that while '令和6年' is preferred in many official contexts, some digital forms or internal systems may still expect '2024'—so always verify the specific format used on the application form.",
+          "Include a sentence acknowledging that younger generations or digital platforms may use '24' more freely, but caution against this in formal submissions.",
+          "Consider adding a subtle nod to the cultural concept of 'omotenashi' (hospitality) or 'wa' (harmony) as underlying values that inform the preference for clarity and respect in formal writing."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm writing a formal letter to my local city office to apply for a community garden permit. Should I write the year as '24' or '2024' in the application?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal application like this, it's best to use the full four-digit year—2024—especially since it's a legal and administrative document. Using '24' might be seen as too casual, and in official contexts, clarity is essential to avoid any ambiguity, especially if the document is archived or reviewed later."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I noticed that even some official websites use '令和6年' instead of '2024'. Should I use that instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a good point. In Japan, many official documents—especially those from government offices—use the imperial era (Gengo) system. Since we're in the Reiwa era, 2024 is 令和6年. For your application, you can write it as 令和6年, but only if the form or instructions specifically allow it. If the form has a field for 'year' in numerical format, stick with 2024. If it's a free-text section, 令和6年 is perfectly appropriate and even preferred in formal contexts."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I'm writing a quick message to a friend about meeting at the garden next week, can I just say '24年' then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. In casual conversations—especially with friends or in messages—using '24年' is perfectly natural and common. It’s concise and widely understood in informal settings like social media, text messages, or handwritten notes. Just be mindful that if you’re referring to something historical or time-sensitive (like a past event), you might want to clarify—e.g., '24年' could be ambiguous if the conversation spans decades."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve also seen people write 'Reiwa 6' in English on social media. Is that acceptable?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in bilingual or international contexts—like social media posts or emails with foreign contacts—it’s common and acceptable to write 'Reiwa 6' in English. It shows cultural awareness while being accessible. However, in fully Japanese-language documents, you’d still use 令和6年. The key is matching the format to the audience and context—this reflects the Japanese value of appropriateness (*tatemae*), where the right expression depends on who you're speaking to and where you are."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of full four-digit year (2024) in formal administrative contexts",
+          "Preference for imperial era (Gengo) system (令和6年) in official documents",
+          "Context-sensitive use of two-digit year (24年) in informal communication",
+          "Awareness of ambiguity in abbreviated years, especially across decades",
+          "Acceptance of 'Reiwa 6' in bilingual/international contexts",
+          "Cultural value of appropriateness (*tatemae*) in language choice"
+        ],
+        "issues": [
+          "Minor ambiguity in the assistant’s phrasing: 'if the form has a field for year in numerical format, stick with 2024'—this could be misinterpreted as a strict rule, when in fact some official forms in Japan may accept 令和6年 even in structured fields. A more nuanced note on form-specific conventions would improve accuracy.",
+          "The assistant does not explicitly mention that the imperial era system is not used in all official documents—some digital or international-facing forms may default to Gregorian calendar, so the recommendation should reflect that variability."
+        ],
+        "suggestions": [
+          "Add a brief note that while 令和6年 is preferred in formal Japanese documents, some official forms (especially digital ones or those with international audiences) may expect or allow 2024—so checking the specific form’s instructions is key.",
+          "Clarify that the use of 令和6年 is not universal in all government contexts; for example, some digital portals or multilingual forms may default to Gregorian calendar, reflecting practicality over tradition.",
+          "Consider including a small example of a historical ambiguity (e.g., '24年' could mean 1924 or 2024) to reinforce the risk of abbreviation in time-sensitive contexts."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

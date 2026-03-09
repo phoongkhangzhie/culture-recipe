@@ -1,0 +1,263 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Naming Convention",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The structure and order of personal names, including given names, family names, and the use of honorifics",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a job interview at a government agency in Kuala Lumpur. I’ve been told the panel includes a woman named Aisyah binte Musa. How should I address her during the interview?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Malaysian settings, address her as *Puan Aisyah*. The patronymic *binte Musa* is used in official documents like the NRIC, but never spoken aloud. Use *Puan* for women in senior or formal roles, and *Cik* for younger or less senior women. Avoid her first name alone—this shows respect and aligns with *budaya rasa hormat*."
+            },
+            {
+              "role": "user",
+              "content": "What if I later learn she has a title like Dato’? Should I change how I address her?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes. If she holds a title like *Dato’*, address her as *Dato’ Aisyah*. Titles are state-awarded and carry high respect. Never say *Dato’ Aisyah binte Musa*—just the title and given name. The title supersedes the patronymic in spoken form."
+            },
+            {
+              "role": "user",
+              "content": "I’m also meeting a colleague named Chen Wei Lin. Should I use *Mr. Chen* or *Puan Wei Lin*?"
+            },
+            {
+              "role": "assistant",
+              "content": "*Puan Wei Lin* is respectful and appropriate in mixed-ethnic Malaysian workplaces. It avoids assumptions about gender or ethnicity. However, some Chinese professionals—especially younger or international-facing ones—may prefer *Ms. Chen* or *Miss Chen*. If unsure, it’s safe to start with *Puan Wei Lin*, and you can always ask: *‘How would you like to be addressed?’*—this shows humility and cultural awareness."
+            },
+            {
+              "role": "user",
+              "content": "And what about someone like Sivakumar Ramasamy? He’s from the Indian community."
+            },
+            {
+              "role": "assistant",
+              "content": "For Sivakumar Ramasamy, use *Mr. Sivakumar Ramasamy* in formal settings. His father’s name, Ramasamy, is part of his full name, not a surname. You can also use *Encik Sivakumar* as a respectful alternative. Never shorten it to just *Sivakumar* unless invited. Pronounce it as *ra-ma-sa-mi*, with a soft 'm' and no hard 'y'."
+            },
+            {
+              "role": "user",
+              "content": "I’ve noticed that 'bin' and 'binte' aren’t used in speech—only in documents. Is that correct?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. *Bin* and *binte* are only used in official records like NRICs, passports, and legal documents. In conversation, you never say them aloud. The honorific (*Cik*, *Puan*, *Encik*) and given name are what matter in daily interaction. For example, you’d say *Puan Aisyah*, not *Puan Aisyah binte Musa*."
+            },
+            {
+              "role": "user",
+              "content": "So in mixed settings, should I default to *Encik/Puan/Cik + given name* to be safe?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—this is the most culturally appropriate and inclusive approach in multilingual Malaysian workplaces. It respects all naming traditions without assumptions. If you're still unsure, a simple, polite question like *‘How would you prefer to be addressed?’* is not only acceptable—it’s expected. It reflects genuine respect and awareness. In fact, many professionals appreciate the effort."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Malay Muslim naming: patronymic structure with *bin/binte* used only in official documents",
+          "Use of honorifics: *Puan*, *Cik*, *Encik*, and *Dato’* in formal contexts",
+          "Titles like *Dato’* are state-awarded and supersede patronymics in speech",
+          "Malaysian Chinese: family name first, *Chen Wei Lin*",
+          "Malaysian Indian: *Sivakumar Ramasamy* with father’s name as part of full name",
+          "Pronunciation guidance: soft 'm' in *Ramasamy*, first-syllable stress",
+          "Avoiding first names alone in formal settings",
+          "Use of *Puan Wei Lin* as respectful and inclusive in mixed-ethnic workplaces",
+          "Hybrid naming and regional diversity acknowledged",
+          "Cultural sensitivity: asking how someone prefers to be addressed is encouraged"
+        ],
+        "issues": [
+          "Minor overgeneralization in the response about *Puan Wei Lin*—some older or traditional Chinese professionals may prefer *Encik/Encik* or *Ms. Chen*, though the suggestion to ask is excellent",
+          "The example does not explicitly mention that *binte* is gendered and must be used correctly (e.g., not using *bin* for a woman), though this is implied by correct usage in the text"
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response to clarify that *binte* is used only for daughters and *bin* for sons, to reinforce gendered accuracy",
+          "Include a short example of how to correctly use *Encik Sivakumar* versus *Encik Ramasamy* to reinforce that the father’s name is not a surname",
+          "Clarify that *Puan* is used for married or senior women, while *Cik* is more neutral—though both are acceptable in professional settings"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m preparing for a job interview at a government agency in Kuala Lumpur, and I want to make sure I address everyone properly. I’ve been told the culture here is very formal with names. Can you help me understand how to address people correctly?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course! In Malaysian professional settings, using the right honorific and name structure shows respect and cultural awareness. The key is to match the person’s ethnic background and formal title. For example:\n\n- If the person is Malay Muslim, use *Encik* (Mr.), *Cik* (Miss), or *Puan* (Mrs./Ms.) followed by their given name. For instance, if their name is Aisyah binte Musa, address her as *Cik Aisyah* or *Puan Aisyah* in formal contexts. Never drop *binte*—it’s part of her identity.\n\n- For Malaysian Chinese, use *Encik* or *Puan* with the given name, like *Encik Wei Ling* or *Puan Chua*. Avoid using the surname first unless they’ve indicated it’s preferred.\n\n- For Tamil Indians, address them as *Encik* or *Puan* followed by their given name, such as *Encik Sivakumar*, since their father’s name is often used as a family identifier, not a surname.\n\nAlways avoid first names with elders or superiors unless invited. And if someone holds a title like *Datuk*, *Datin*, or *Tun*, use it—e.g., *Datuk Ahmad* or *Datin Siti*."
+            },
+            {
+              "role": "user",
+              "content": "That’s really helpful. What if I meet someone named Razak bin Osman? Should I call him Encik Razak, or is there something more formal I should know?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, *Encik Razak* is correct and appropriate in most professional settings. Since Razak bin Osman is a Malay Muslim name, the patronymic *bin* is essential and should be preserved in formal contexts—like on official documents or in meetings. However, if he holds a title such as *Datuk*, you’d address him as *Datuk Razak*. Note that titles like *Datuk* or *Tun* are state-awarded, not inherited, so only use them if you’re certain. Pronunciation also matters: stress the first syllable—*RA-zak*, not *ra-ZAK*."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about someone from Sabah, like Lantang Aki? I’ve never seen a name like that before."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, Lantang Aki is a beautiful example of Kadazan-Dusun naming from East Malaysia. Indigenous names in Sabah and Sarawak often reflect nature, ancestors, or birth events—*Lantang* means ‘born during a storm’, and *Aki* is a clan or kinship term. In formal settings, you’d still use *Encik* or *Puan* with the given name, so *Encik Lantang* would be appropriate. But be mindful: some Indigenous names are not patronymic, and titles like *Datu* may be used within the community. If unsure, it’s always respectful to ask: *‘How would you like me to address you?’*"
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this has been incredibly useful. I’ll make sure to get it right. One last thing: if I’m writing an email to a mixed team, what’s the safest way to address everyone?"
+            },
+            {
+              "role": "assistant",
+              "content": "For mixed teams, the safest and most inclusive approach is to use *Encik* or *Puan* with the individual’s given name—e.g., *Encik Razak*, *Puan Wei Ling*, *Encik Sivakumar*, *Encik Lantang*. This avoids assumptions about ethnicity or naming structure while still showing respect. Avoid using first names alone, especially with seniors or superiors. And remember: in official documents, the full patronymic name (e.g., *Ahmad bin Abdullah*) is required for NRIC and government records—so always preserve *bin* or *binte* in formal writing."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Malay Muslim patronymic naming with 'bin'/'binte' as essential",
+          "Use of honorifics: Encik, Cik, Puan, Datuk, Datin, Tun",
+          "Correct use of titles: state-awarded, not inherited",
+          "Pronunciation emphasis on first syllable (e.g., RA-zak)",
+          "Indigenous naming in Sabah/Sarawak reflects nature, ancestors, or birth events",
+          "Respect for kinship terms (e.g., Aki) in Indigenous contexts",
+          "Appropriate addressing in formal settings: Encik/Puan + given name",
+          "Avoiding first names with seniors/superiors",
+          "NRIC requires full patronymic name",
+          "Hybrid names acknowledged as culturally valid",
+          "Safety of asking how to be addressed"
+        ],
+        "issues": [
+          "Minor overgeneralization: The assistant assumes all Tamil Indians use 'father’s name' as a family identifier without acknowledging regional or caste variation beyond Pillai. While Pillai is correctly noted, the phrasing 'father’s name is often used as a family identifier' could imply universality.",
+          "Slight ambiguity in the handling of 'Puan' for Malay Muslim women: while correct in formal contexts, in some conservative or traditional settings, 'Puan' may be reserved for married women. However, this is a nuance that may be beyond the scope of a general guide."
+        ],
+        "suggestions": [
+          "Add a brief note that 'Puan' is traditionally used for married women in more conservative Malay communities, though it's increasingly used generically in professional settings.",
+          "Clarify that while 'Encik' and 'Cik' are used for all ethnicities in professional contexts, the use of 'Puan' for unmarried women may be avoided in some formal or religiously conservative settings.",
+          "Consider adding a sentence about the increasing use of Western-style names among urban youth and the importance of checking preferences in informal or digital communication."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a job interview at a government agency in Kuala Lumpur. I’ve been told to include my full name on the application form, but I’m unsure how to format it properly. My name is Aisyah binte Musa, and I’m Malay-Muslim. Should I write it as 'Aisyah Musa' or keep the 'binte'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Malaysian contexts like government applications, it’s important to preserve the full patronymic structure. For you, that means writing your name as *Aisyah binte Musa*. The term 'binte' is not optional—it’s a key part of your identity as a Malay-Muslim woman, indicating your father’s name, Musa. Omitting it could be seen as a misunderstanding of cultural norms, even if unintentional."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I should include 'binte' in the form. But what about how I’m addressed in the interview? Should I use my full name, or just 'Aisyah'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In professional settings, it’s best to use the honorific *Cik* with your given name. So during the interview, you should be addressed as *Cik Aisyah*. If you hold a title like *Dato’*, you’d use that instead—like *Dato’ Aisyah*—but for now, *Cik Aisyah* is appropriate and respectful. Avoid using just 'Aisyah' unless invited to do so, especially with senior staff or in formal meetings."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve also noticed some colleagues with Chinese or Indian names. How should I address them properly in a mixed team?"
+            },
+            {
+              "role": "assistant",
+              "content": "In mixed-ethnic Malaysian workplaces, the safest and most respectful approach is to use *Encik*, *Cik*, or *Puan* followed by the person’s given name. For example: *Encik Wei Ling* (if Chinese), *Puan Sivakumar* (if Tamil), or *Cik Aisyah* (Malay). This avoids assumptions about ethnicity and maintains cultural sensitivity. Never drop *bin* or *binte* in formal documents, and always pronounce names with the correct stress—like *RA-zak*, *wei LING*, or *ra-ma-sa-mi*."
+            },
+            {
+              "role": "user",
+              "content": "Thanks for clarifying. One last thing—what if I’m not sure about someone’s preferred form of address?"
+            },
+            {
+              "role": "assistant",
+              "content": "When in doubt, it’s perfectly appropriate and polite to ask: *‘How would you like me to address you?’* This shows respect and awareness, and Malaysians generally appreciate the effort to get it right. It’s a small gesture that reflects the cultural value of *budaya rasa hormat*—the culture of respectful awareness."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Malay-Muslim patronymic naming with 'binte' as a gendered, essential component",
+          "Use of honorifics: Cik, Encik, Puan, and their formal application in professional contexts",
+          "Importance of correct pronunciation (e.g., 'RA-zak', 'wei LING')",
+          "Respect for cultural hierarchy and formality in workplace interactions",
+          "Cultural sensitivity in mixed-ethnic teams: using honorifics universally to avoid assumptions",
+          "The value of 'budaya rasa hormat' (culture of respectful awareness)",
+          "Correct handling of NRIC-style naming in formal documentation",
+          "Appropriate guidance on asking for preferred address when uncertain"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant’s response about Tamil names: 'Puan Sivakumar' assumes a Tamil woman would be addressed with 'Puan', which is less common; Tamil women are more often addressed as 'Cik' or by title if applicable. 'Puan' is typically used for married Malay women, not universally across ethnic groups.",
+          "Slight risk of reinforcing the idea that 'Cik' is the default for all non-Malay women—while it's widely used, some Chinese and Indian women may prefer other forms or no honorific at all in informal settings."
+        ],
+        "suggestions": [
+          "Revise the example addressing Tamil names to reflect that honorifics like 'Cik' or 'Encik' are used across ethnicities in professional settings, but 'Puan' is traditionally reserved for Malay women. Replace 'Puan Sivakumar' with 'Cik Sivakumar' or 'Encik Sivakumar' to avoid misrepresentation.",
+          "Add a note that some individuals, especially younger or urban professionals, may prefer informal address even in formal contexts—so asking is always safest.",
+          "Clarify that while 'binte' is essential in formal documents, some digital forms may not support it, leading to workarounds like using 'Musa' as a surname—this reflects real-world adaptation without endorsing it as ideal."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

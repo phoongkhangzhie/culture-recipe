@@ -1,0 +1,109 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Academic Major Selection",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Education and Knowledge",
+    "description": "Social, familial, and economic influences on students' choices of academic fields and areas of study",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m in my final year of high school and I’ve been accepted to Seoul National University’s College of Humanities. I’m really excited, but my parents are upset. They say I should’ve applied to medicine or engineering instead. My dad even said, 'A degree in literature won’t get you a job, and you’ll bring shame to the family.' I don’t know what to do."
+            },
+            {
+              "role": "assistant",
+              "content": "I hear how heavy that feels. In Korea, choosing a major isn’t just about passion—it’s tied to family honor, long-term stability, and years of pressure that start early. Many students begin private tutoring (hagwons) in math and science as young as elementary school, especially in urban areas. Your parents aren’t just worried about jobs—they’re concerned about social standing. In Korean culture, 'face' (면면) matters deeply: a child becoming a doctor or engineer is seen as a family achievement. Humanities, while respected, are often viewed as less secure, especially given the tough job market for graduates in these fields."
+            },
+            {
+              "role": "user",
+              "content": "I know they mean well, but I’ve always loved writing and storytelling. I’ve been publishing short stories online, and some people actually read them. I even got a small grant from a youth creative program. But when I told my mom, she said, 'That’s nice, but it’s not a real career.' I feel like I’m choosing between being true to myself and not disappointing them."
+            },
+            {
+              "role": "assistant",
+              "content": "That tension is real—and more common than you think. Many students today are quietly pushing back against the old model. Burnout from constant studying, anxiety before Suneung, the fear of failure—it’s not just a stereotype. But there’s a shift: more young people are blending passion with practicality. You’re not alone."
+            },
+            {
+              "role": "user",
+              "content": "How do I even start talking to them about this? I don’t want to argue, but I also don’t want to give up on my dream. I’ve been thinking about majoring in Korean Literature but minoring in Information and Communications. That way, I could still apply for jobs in publishing, media, or tech content. Would that make them more okay with it?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a smart move—and exactly what many students are doing now. Pairing a humanities major with a technical minor shows you’re not rejecting stability. At SNU, which is part of the SKY group (Seoul National, Korea, and Yonsei)—the top three universities in Korea—there’s growing support for interdisciplinary paths. The Career Development Center offers internships with Kakao, Naver, and KBS, and programs like SNU’s Interdisciplinary Humanities Program help students combine literature with digital media, data, and tech. There’s also government-backed support: the K-Content Creation Fund has helped youth like you launch creative careers in digital storytelling and content production."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve seen some of those stories online—people who studied philosophy but now work in UX design or AI ethics. But I’m still nervous. What if I fail? What if I end up in a dead-end job and regret not listening to them?"
+            },
+            {
+              "role": "assistant",
+              "content": "Fear of failure is normal—especially when your future feels judged by your whole family. But here’s the truth: the idea that one choice defines your life is changing. Even at SKY universities, students are encouraged to explore. The job market is shifting—content, digital storytelling, cultural tech—these fields are growing fast. The real risk isn’t choosing literature. It’s not trying at all. That said, it’s worth noting: access to these paths isn’t equal. Students from rural areas or less-resourced families may face more barriers—fewer hagwons, less networking, fewer internship opportunities. But with initiative, you can still build your way in. You’re not alone in this climb."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Academic major selection in Korea is deeply influenced by family honor and social prestige",
+          "The term 'SKY' refers to Seoul National University, Korea University, and Yonsei University—the top three universities in Korea",
+          "Private tutoring (hagwons) often begins in elementary school, especially in STEM subjects",
+          "Humanities and arts are often stigmatized as 'soft' or impractical, despite growing interest among younger generations",
+          "The national college entrance exam (Suneung) heavily shapes long-term career trajectories",
+          "Family 'face' (면면) is a central cultural value influencing major choices",
+          "Interdisciplinary paths are increasingly supported, especially at top universities like SNU",
+          "SNU’s Interdisciplinary Humanities Program bridges literature with digital media and technology",
+          "Government initiatives like the K-Content Creation Fund support youth in creative and tech-driven fields",
+          "Regional disparities exist: students from rural or less-resourced backgrounds face greater barriers to accessing opportunities"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.275,
+        "cultural_elements_verified": [
+          "The emphasis on family honor ('face' or 면면) in academic choices",
+          "The societal hierarchy of majors (STEM > business/law > humanities/arts)",
+          "The role of hagwons (private academies) in early STEM preparation",
+          "The high stakes of the Suneung exam and its impact on major selection",
+          "The perception of humanities as 'soft' or impractical despite growing interest",
+          "The shift among Gen Z toward interdisciplinary paths and creative careers",
+          "The existence of government and university support for creative fields (e.g., K-Content Creation Fund, SNU’s Interdisciplinary Humanities Program)",
+          "The reality of unequal access based on socioeconomic background (rural vs. urban, resource availability)",
+          "The increasing value of combining humanities with technical skills (e.g., Korean Literature + Information and Communications)"
+        ],
+        "issues": [
+          "Minor risk of oversimplifying the generational shift—while accurate, the narrative slightly downplays the persistence of strong traditional expectations, especially in non-urban areas.",
+          "The term 'SKY' is used without explanation; while common among Koreans, it may be unclear to non-Korean audiences in training data. However, since the target language is English and the assistant is expected to be culturally knowledgeable, this is acceptable in context.",
+          "The mention of 'Kakao, Naver, and KBS' as internship hosts is accurate but could be slightly expanded to reflect that these are major players in tech and media—though the current phrasing is sufficient for the context."
+        ],
+        "suggestions": [
+          "Consider briefly defining 'SKY' or 'Suneung' on first use for international training data clarity, even if the assistant is culturally knowledgeable.",
+          "Add a sentence acknowledging that while interdisciplinary paths are growing, many families still view pure humanities degrees as risky—this would reinforce the tension without undermining the progressive angle.",
+          "Include a brief mention of the emotional toll of academic pressure (e.g., mental health challenges) to deepen the cultural realism, especially in the assistant’s final response."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

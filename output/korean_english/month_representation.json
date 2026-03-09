@@ -1,0 +1,110 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Month Representation",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether months are written numerically, as abbreviations, or spelled out in full",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing a formal business proposal for a client in Seoul, and I need to include the submission deadline. Should I write 'June 30, 2025' or use the Korean format?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Korean business contexts, always use the full Hangul format: 2025년 6월 30일. Avoid English month abbreviations like 'Jun' or 'June'—they’re considered unprofessional and inconsistent with cultural norms of precision and respect. This standard applies to emails, contracts, and official documents."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if I’m sending a quick message to my colleague via KakaoTalk to confirm the deadline? Can I shorten it to '6/30'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even in casual KakaoTalk messages, it's best to use '6월 30일'. While very informal chats among close friends might occasionally use '6/30', especially in quick exchanges, this is not recommended for any semi-official or professional context. The full Hangul form remains the expected standard—even among peers."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’m also writing a school event announcement for a middle school in Busan. Should I use the full format there too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—school announcements are formal public communications. Always use 2025년 6월 30일. This reflects the cultural emphasis on consistency and respect in education. Teachers and students are taught from elementary school to use full Hangul month names, so it’s expected across all official materials, regardless of location."
+            },
+            {
+              "role": "user",
+              "content": "I see. So even if the deadline is just for a class project, it still needs to be '6월' and not 'Jun'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The formality isn’t about the event’s scale—it’s about cultural consistency. Whether it’s a class project, a school festival, or a national notice, using '6월' is the expected standard. Even among younger users, '4/5' might appear in very informal chats, but it’s not considered proper. The norm is clear: always use Hangul. And remember—formal contexts require 존댓말 (honorifics) too, which complements the respectful tone of full date formats."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. How do digital tools support this cultural norm?"
+            },
+            {
+              "role": "assistant",
+              "content": "Great question. Korean digital platforms—KakaoTalk, Naver, Google Calendar, and smartphone keyboards—default to displaying full Hangul month names. While you can bypass auto-correction by switching to non-Korean input modes, the system strongly encourages Hangul usage. This isn’t just design—it’s cultural infrastructure. Technology reinforces the norm, making Hangul the natural, expected choice in every context."
+            },
+            {
+              "role": "user",
+              "content": "Is there any regional variation, like in rural areas versus Seoul?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good point. While the standard remains consistent nationwide—full Hangul format in all formal contexts—urban areas like Seoul tend to enforce it more strictly, especially in professional settings. In rural or less formal communities, you might see slightly more flexibility in very casual digital messages, but even there, English abbreviations like 'Jun' are never used. The cultural norm is uniform, though application may vary slightly by context and generation."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of full Hangul month names (e.g., 6월) in formal contexts",
+          "Avoidance of English abbreviations (e.g., Jun, June) in all written Korean contexts",
+          "Consistency of format across formal documents, school announcements, and digital platforms",
+          "Cultural emphasis on precision, respect, and harmony in date representation",
+          "Role of education in reinforcing full Hangul usage from elementary level",
+          "Digital infrastructure (KakaoTalk, Naver, Google Calendar) defaulting to Hangul",
+          "Regional and generational nuances without compromising core cultural norms",
+          "Connection between formal writing and honorifics (존댓말) in professional settings"
+        ],
+        "issues": [
+          "Minor: The assistant's tone in the final response ('Great question') is slightly more casual than typical in formal Korean professional discourse, though not inaccurate. This is a subtle linguistic nuance rather than a cultural error."
+        ],
+        "suggestions": [
+          "Slightly adjust the tone in the last response to reflect a more measured, slightly more reserved phrasing (e.g., 'That is correct' instead of 'Great question') to better match formal Korean communication style, especially in educational or professional contexts.",
+          "Consider adding a brief mention of the historical pronunciation (e.g., 6월 = yoo-wol) in the first response to enrich linguistic authenticity, though not required for this dimension."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 11,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

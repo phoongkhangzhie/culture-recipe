@@ -1,0 +1,97 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Alcohol Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural norms around offering, accepting, or declining alcoholic beverages in social and dining settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m attending my first business dinner in Tokyo next week with my team and our senior client. I’ve never been to a formal izakaya before. What should I know about drinking alcohol? I don’t drink much, but I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "In Japanese business settings, alcohol rituals are about respect, harmony, and group flow—not how much you drink. The key is showing humility through gesture, not volume. The host or senior person never pours their own drink. If you're junior, you may be expected to pour for others—this is a quiet way of showing deference, even if it feels unfamiliar."
+            },
+            {
+              "role": "user",
+              "content": "So if I’m offered a drink, I should take it with both hands? What if I don’t want to drink at all?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—always accept with both hands, even if you're not drinking. This shows respect. If you can’t drink, gently touch the rim with your fingers, smile, and say 'chotto' or 'sore wa… iya desu.' A light reason like 'I’m on medication' or 'early meeting tomorrow' is perfectly acceptable and widely understood. No need to over-explain."
+            },
+            {
+              "role": "user",
+              "content": "And what about drinking? Should I sip slowly or finish it all at once?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s customary to finish the glass in one go. Sipping slowly or leaving a small amount can be seen as disengaged. After you finish, the host or senior person will likely refill your glass—especially in izakayas. This rhythm is part of the shared experience, not a test of endurance. Also, avoid over-pouring: glasses are typically filled only about 80% full, which shows consideration and prevents spills—especially important when pouring for others."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if the host pours for everyone, I should wait for them to pour for me first, and then pour for the next person in line?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The host or senior person never pours their own drink. If they don’t pour for you, the most junior person—by age, position, or tenure—typically pours for the next senior. But it’s not always rigid: subtle cues like eye contact, posture, or who’s already pouring guide the flow. It’s about awareness, not a strict rule. One more thing: in some traditional or formal izakayas, you might see the two-step pour for nigori sake—cloudy, unfiltered sake—where it’s first poured into a small cup before being transferred to your glass. This is a thoughtful gesture, but not universal. Most places pour directly. Don’t worry if you don’t see it—your presence and attention matter more than perfect form. Also, while drinking culture has historically been male-dominated, younger generations—especially in business—are increasingly inclusive, with more women participating. The focus is on mutual respect, not gender roles."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The host or senior person never pours their own drink",
+          "Junior individuals pour for seniors as a sign of deference",
+          "Accepting drinks with both hands shows respect",
+          "Subtle refusal using 'chotto' or 'sore wa… iya desu' with a polite excuse",
+          "Finishing the drink in one go is customary",
+          "Glasses are typically filled to about 80% to prevent spills",
+          "The two-step pour for nigori sake as a thoughtful gesture",
+          "Awareness of social cues over rigid rules in pouring order",
+          "Increasing inclusivity of women in modern business drinking culture",
+          "Use of humor and humility over performance in ritual"
+        ],
+        "issues": [
+          "Minor overgeneralization about gender roles: while noting progress, the phrasing 'historically male-dominated' could be slightly more nuanced—e.g., 'traditionally more male-centric'—to reflect that gender norms are context-dependent and evolving, not monolithic.",
+          "The phrase 'don’t worry if you don’t see it' may slightly downplay the significance of the nigori pour in certain traditional settings, though this is a minor point given the context of a first-time business dinner."
+        ],
+        "suggestions": [
+          "Add a brief note about the importance of not over-pouring when pouring for others—emphasizing that overfilling is seen as inconsiderate, especially when serving seniors.",
+          "Clarify that while the two-step pour is elegant and meaningful, it’s not expected in most modern izakayas; this helps prevent over-idealization of tradition.",
+          "Include a gentle reminder about non-verbal cues: maintaining eye contact, slight bowing, and attentive listening are as important as physical gestures in showing respect."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 13,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

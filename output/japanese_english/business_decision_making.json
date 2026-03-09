@@ -1,0 +1,249 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Business Decision-Making",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "How decisions are reached in business settings—individually by a leader, by group consensus, or through hierarchical approval",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing to present a new digital workflow proposal to my team at a mid-sized manufacturing firm in Osaka. I’ve been told that decisions here take time and that silence during meetings is meaningful. How should I approach this to ensure it’s well-received without causing tension?"
+            },
+            {
+              "role": "assistant",
+              "content": "In many traditional Osaka firms, decisions emerge through *nemawashi*—informal groundwork before formal meetings. Start by discussing your idea casually with key people: your supervisor, the production lead, and two senior engineers. A tea session or after-work drink works better than a formal meeting. Use gentle phrases like 'Kore wa yoi desu ga…' to raise concerns—this shows respect without direct opposition. Note: while this is common in established departments, younger or globally oriented teams may be more direct, especially if they use English in daily work."
+            },
+            {
+              "role": "user",
+              "content": "I’ve already shared the draft with my manager via email. He replied with a simple 'OK' and no comments. Should I follow up?"
+            },
+            {
+              "role": "assistant",
+              "content": "A single 'OK' is usually not agreement—it’s polite acknowledgment. In Japanese business, silence after a proposal isn’t awkward; it’s contemplation. The real signal comes later. Wait 3–5 days, then send a soft follow-up: 'Kore wa yoi desu ga, kōshō ni narimasen ka?'—'This is good, but might it not be better?' This invites reflection without pressure. Remember: even after 'OK,' a *ringi-sho* revision cycle often follows. Don’t assume final approval."
+            },
+            {
+              "role": "user",
+              "content": "What if someone in the meeting doesn’t speak up but seems hesitant? Should I ask them directly?"
+            },
+            {
+              "role": "assistant",
+              "content": "No—directly calling out someone can disrupt *wa*. If someone hesitates—slight pause, looking down, soft nod—don’t address it. Instead, reframe: 'Kono yō ni shite mo, shirazu ni tsukau no wa muzukashii desu'—'It’s hard to use without knowing.' This opens space for others to reflect. The real agreement shows when no one objects after a pause."
+            },
+            {
+              "role": "user",
+              "content": "So the decision is made when no one says no?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—precisely. In Japanese business, consensus isn’t declared; it’s implied. A decision is made when no one speaks up, when silence settles, and when *ringi-sho* revisions stop. Your role isn’t to persuade, but to create harmony. The most effective proposals feel inevitable, not imposed. Let the process unfold."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Nemawashi as informal pre-decision consultation",
+          "Silence as contemplation and implied agreement",
+          "Use of indirect language like 'Kore wa yoi desu ga…' to express hesitation",
+          "Ringi-sho as a formal approval process with iterative revisions",
+          "Avoiding direct confrontation to preserve wa (harmony)",
+          "Soft reframing of concerns instead of direct questioning",
+          "The concept that consensus is implied, not declared",
+          "Cultural nuance of 'OK' as polite acknowledgment, not approval",
+          "Respect for hierarchy and seniority in decision-making",
+          "The role of non-verbal cues like pauses, downcast eyes, and soft nods"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'many traditional Osaka firms' could imply a monolithic culture; better to acknowledge regional variation and modern hybridity.",
+          "The phrase 'Kore wa yoi desu ga…' is used correctly but could be more contextually precise—'Kore wa yoi desu ga, kōshō ni narimasen ka?' is a stronger example of indirect prompting.",
+          "Slight risk of reinforcing the 'silent Japanese' stereotype by not emphasizing that younger, internationalized teams may use more direct communication—though this is partially addressed in the first response."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s first response about how younger professionals or international teams may use English to bypass indirectness, reinforcing the modern evolution mentioned in the briefing.",
+          "Replace 'Kore wa yoi desu ga…' with a more specific and culturally resonant phrase like 'Kore wa yoi desu ga, kōshō ni narimasen ka?' in the first response to improve authenticity.",
+          "Include a subtle reminder that while silence is meaningful, it is not always universal—especially in cross-cultural or younger teams—so context matters.",
+          "Consider adding a sentence about *tatemae* (public face) and *honne* (true feelings) to deepen the psychological layer of indirect communication."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing to present a new product feature to our Tokyo-based team. I’ve drafted the proposal, but I’m worried it might be too direct. How should I approach the presentation to align with our team’s decision-making culture?"
+            },
+            {
+              "role": "assistant",
+              "content": "First, consider that the decision isn’t made in the meeting—it’s already been shaped through *nemawashi*. Before the formal presentation, you should have quietly discussed the idea with key stakeholders: your senior manager, the lead engineer, and the marketing lead. Even small informal chats over tea or during after-work *nomikai* can build psychological ownership.\n\nWhen presenting, avoid saying ‘I propose’ or ‘Let’s do this.’ Instead, frame it as a suggestion: ‘This approach might help improve user retention, though we should consider the impact on development timelines.’ Use *keigo* and pause after your point—silence is not awkward, it’s thoughtful.\n\nIf someone doesn’t respond, that’s often agreement. A junior may nod slowly or look down—this isn’t disengagement, it’s respect. Don’t rush to fill silence."
+            },
+            {
+              "role": "user",
+              "content": "What if someone raises a concern during the meeting? I don’t want to seem confrontational, but I also need to address it."
+            },
+            {
+              "role": "assistant",
+              "content": "If someone expresses hesitation, respond with *tatemae*—a polite, indirect acknowledgment. For example: ‘I understand this could be challenging from your perspective. I’ll consider that point carefully.’\n\nAvoid saying ‘No, that won’t work.’ Instead, use phrases like: ‘Kore wa yoi desu ga…’ (This is good, but…), followed by a gentle suggestion. You might say: ‘It would be ideal if we could test this with a small user group first—what do you think?’\n\nThis reframes the concern as a collaborative refinement, not a rejection. The goal isn’t to win the argument—it’s to maintain *wa* and keep the group moving forward."
+            },
+            {
+              "role": "user",
+              "content": "And after the meeting? Should I follow up immediately?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait. After the meeting, send a *ringi-sho*—a formal written proposal—circulating it through the hierarchy. Include space for comments, and don’t expect immediate feedback. People may take days to review, and edits may be minimal: a single ‘OK’ or a quiet revision.\n\nSilence after circulation is a sign of alignment. If no one objects, the decision has been made. Pushing for a reply too soon can disrupt the rhythm. Let the process unfold naturally—this is how trust and legitimacy are built."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Nemawashi (pre-decision informal consultation)",
+          "Ringi-sho (formal written proposal with multi-level approval)",
+          "Silence as agreement in meetings",
+          "Indirect expression of disagreement using 'Kore wa yoi desu ga...' and polite reframing",
+          "Use of keigo (honorifics) to soften tone and maintain respect",
+          "Nonverbal cues (pauses, slow nods, looking down) as signals of acceptance",
+          "Tatemae (public face) and emotional restraint in group settings",
+          "Cultural emphasis on alignment over speed and harmony over conflict",
+          "Gradual decision-making process rooted in *wa* (harmony)",
+          "Delayed feedback and iterative revision in formal processes"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Nemawashi as pre-decision informal consultation",
+          "Ringi-sho as formal written proposal with hierarchical circulation",
+          "Silence as tacit agreement in meetings",
+          "Use of keigo and indirect phrasing (e.g., 'I understand this could be challenging')",
+          "Tatemae and maintenance of wa (harmony) over direct confrontation",
+          "Non-verbal cues like slow nods and avoiding eye contact as signs of respect",
+          "Gradual, process-oriented decision-making with emphasis on trust and legitimacy",
+          "Cultural nuance that consensus ≠ unanimity, and silence is not awkward"
+        ],
+        "issues": [
+          "Minor overgeneralization: The mention of 'after-work nomikai' as a setting for nemawashi, while plausible, risks reinforcing the stereotype that informal discussions only happen in social drinking contexts. Nemawashi can occur in neutral or work-related settings too.",
+          "The use of the phrase 'Kore wa yoi desu ga…' is linguistically accurate but may be slightly too formal for a casual suggestion in a meeting. A more natural equivalent in context might be 'Sore wa yoi desu ga, kore kara nai to…' (That’s good, but we might need to consider…), which better reflects the subtle, collaborative tone."
+        ],
+        "suggestions": [
+          "Replace 'after-work nomikai' with a broader reference to 'informal settings such as tea breaks, hallway conversations, or post-meeting discussions' to avoid over-reliance on drinking culture.",
+          "Slightly rephrase the Japanese phrase example to reflect more natural spoken usage in a business context, such as 'Sore wa yoi desu ga, kore kara nai to…' to better match real-world indirectness.",
+          "Add a brief note about how younger Japanese professionals in global companies may use English to express concerns more directly, acknowledging modern hybrid practices without undermining core cultural norms."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing to present a new digital workflow proposal to my team at a mid-sized manufacturing firm in Osaka. I’ve been told that decisions here take time, and I want to avoid causing friction. How should I approach this without seeming pushy?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Osaka, especially in established firms, it’s wise to let the process unfold naturally. Begin by sharing your idea informally—over tea or during a casual hallway conversation—with key colleagues, particularly those who influence the team’s direction. This is *nemawashi*. Don’t pitch the full plan yet; just say, 'I’ve been thinking about how we might streamline reporting—would this be something worth exploring?' Listen more than you speak. If someone raises a concern, thank them and say, 'I’ll consider that carefully.'"
+            },
+            {
+              "role": "user",
+              "content": "What if I sense hesitation? Should I push for feedback or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait. Hesitation is not refusal—it’s a signal to deepen *nemawashi*. If someone looks down or pauses, don’t press. Instead, say, 'I understand this might need more thought. I’ll prepare a draft and share it quietly with a few people first.' Then circulate a *ringi-sho*—a formal written proposal—via email. Include space for comments, but don’t expect immediate replies. One week later, send a gentle follow-up: 'I’ve incorporated some suggestions—would you mind reviewing the updated version?'"
+            },
+            {
+              "role": "user",
+              "content": "I’ve sent the *ringi-sho* and received three comments, all minor. One senior manager hasn’t responded for five days. Should I follow up?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—but gently. Send a short note: 'I hope you’re well. I’m finalizing the proposal and wanted to kindly check if you have any thoughts. I truly value your perspective.' If they still don’t reply, don’t escalate. Silence after this kind of check-in is often interpreted as tacit agreement. In Japanese business, the decision is made not when someone says yes—but when no one says no."
+            },
+            {
+              "role": "user",
+              "content": "So I should assume it’s approved?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, if the *ringi-sho* has circulated through all levels, and there are no objections or major revisions, it’s safe to proceed. The absence of resistance—especially from senior staff—is the real signal. The next step is to announce the plan quietly: 'We’ll begin implementing the new workflow next month, based on team input.' This frames it as collective ownership, not your initiative."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Nemawashi as informal pre-decision consultation",
+          "Ringi-sho as formal written proposal with iterative feedback",
+          "Silence as tacit agreement in decision-making",
+          "Use of indirect language and polite phrasing to avoid confrontation",
+          "Emphasis on harmony (*wa*), consensus over unanimity, and collective ownership",
+          "Respect for hierarchy and seniority in decision flow",
+          "Gradual escalation of formality (informal → written → implementation)",
+          "Senior silence interpreted as approval",
+          "Tatemae (public face) and Gaman (endurance) as cultural underpinnings"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'Osaka' as monolithic—regional nuances (e.g., Osaka's more direct tone vs. Tokyo's formality) are not acknowledged, though not critical in this context",
+          "The phrase 'I truly value your perspective' is slightly Western in tone; a more authentically Japanese phrasing might be 'Your insights are deeply appreciated' or 'I would be honored by your guidance', though the sentiment is appropriate"
+        ],
+        "suggestions": [
+          "Add a brief note acknowledging regional variation: 'While Osaka firms value efficiency, the core principles of nemawashi and ringi-sho remain consistent across Japan.'",
+          "Replace 'I truly value your perspective' with a more honorific phrasing such as 'I deeply respect your input' or 'Your guidance is invaluable' to better reflect keigo norms",
+          "Consider adding a subtle nod to the emotional labor involved—e.g., 'This process requires patience, as the team may need time to reflect internally without verbal confirmation'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

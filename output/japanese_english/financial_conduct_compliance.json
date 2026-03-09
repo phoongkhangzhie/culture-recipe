@@ -1,0 +1,114 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Financial Conduct and Compliance",
+    "category": "Institutional Norms > Regulation & Policy > Financial Market Rules",
+    "description": "Rules governing how financial entities must behave, including anti-money laundering requirements and consumer protection standards",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m a foreign entrepreneur setting up a fintech startup in Tokyo. I need to open a corporate bank account, but the bank keeps asking for more documents. My co-founder is frustrated—he says we’ve already sent everything. Should we push harder or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "I understand the frustration. In Japan, repeated document requests stem from strict FSA compliance—especially for foreign entities, where the deficiency rate is 30% higher due to subtle mismatches. This isn’t personal; it’s about *wa* (harmony) and *shinrai* (trust) through precision."
+            },
+            {
+              "role": "user",
+              "content": "But we’ve submitted everything: articles of incorporation, shareholder IDs, bank statements. Why keep asking? Is there a way to speed this up?"
+            },
+            {
+              "role": "assistant",
+              "content": "Often, it’s not missing documents, but technical issues. A small error—like a missing *hanko* (official seal), incorrect *kōshō* (certified translation stamp by a notary or licensed translator), or My Number formatting—can trigger a recheck. Many rural branches in Hokkaido and Okinawa still rely on paper-based KYC due to infrastructure limitations."
+            },
+            {
+              "role": "user",
+              "content": "So what should we do next? Can we escalate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Escalation rarely helps—compliance officers report directly to the board and have final authority. Instead, send a polite, clear email: *『資料の再提出について、ご確認のほど、よろしくお願いいたします。』* This is standard, respectful, and culturally appropriate."
+            },
+            {
+              "role": "user",
+              "content": "What if they still don’t accept it? We’re on a tight funding timeline."
+            },
+            {
+              "role": "assistant",
+              "content": "If delays continue, hire a local compliance consultant. They’ll help align your documents with FSA e-KYC rules—especially for My Number disclosures, notarized source-of-funds letters, and correct *kōshō* placement. Crucially, they can also conduct *nemawashi* with internal stakeholders, a common practice to build quiet consensus before formal submissions."
+            },
+            {
+              "role": "user",
+              "content": "What about *反社会的勢力* screening? Is that part of this?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—*hanzai* (anti-social forces) screening is mandatory. Banks must verify that no known yakuza-linked individuals or entities are involved in your startup. This includes reviewing shareholder backgrounds and business partners. It’s not just legal—it’s a cultural expectation of societal responsibility."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So the real issue is preparation, not attitude?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. In Japan, compliance is quiet dedication—*gaman* isn’t just endurance, it’s doing things right, even when it takes time. Avoid overusing *恐縮ではございますが*—it’s reserved for deep apologies, not routine requests. Use clear, respectful phrasing like *『ご確認お願いいたします。』* in emails. In person, slightly more direct but still polite phrasing is common."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.85,
+        "cultural_elements_verified": [
+          "Strict KYC requirements for foreign entities with higher deficiency rates",
+          "Use of My Number, hanko, and kōshō in document verification",
+          "Compliance officers reporting directly to the board with absolute authority",
+          "Cultural emphasis on *wa* (harmony), *shinrai* (trust), and *gaman* (endurance)",
+          "Mandatory *hanzai* (anti-social forces) screening for financial institutions",
+          "Regional differences in KYC implementation (e.g., rural paper-based systems)",
+          "Use of *nemawashi* for building consensus before formal submissions",
+          "Indirect communication style in compliance contexts",
+          "Appropriate use of keigo in formal business communication"
+        ],
+        "issues": [
+          "The phrase *『ご確認お願いいたします。』* is correctly used in context, but the assistant could clarify that this is typically used in written, formal correspondence rather than spoken interaction—though this is minor.",
+          "The suggestion to avoid overusing *恐縮ではございますが* is accurate, but the explanation could be more nuanced: it's not just about overuse, but about appropriate context—e.g., using it for genuine apologies, not routine requests. The current phrasing slightly oversimplifies.",
+          "While *nemawashi* is correctly mentioned, the example lacks a brief explanation of how it operates in practice (e.g., informal discussions with internal stakeholders, not formal escalation), which would enhance cultural depth."
+        ],
+        "suggestions": [
+          "Add a brief clarification that *nemawashi* is an informal, pre-emptive process to build consensus—often conducted quietly among senior staff before formal submission.",
+          "Enhance the explanation of *恐縮ではございますが* by noting that it’s reserved for expressions of deep apology or humility, and should not be used in routine polite requests.",
+          "Consider including a subtle mention of how younger staff may question delays, reflecting generational tension mentioned in the briefing—e.g., 'Some newer team members may ask why it’s taking so long, but it’s important to respect the process.'",
+          "Clarify that while e-KYC is mandated, many rural branches still use paper-based systems, and this transition is ongoing—this reinforces the regional variation point."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 13
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 3,
+    "examples_produced": 1
+  }
+}

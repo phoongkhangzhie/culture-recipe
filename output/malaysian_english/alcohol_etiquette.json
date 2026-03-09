@@ -1,0 +1,106 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Alcohol Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural norms around offering, accepting, or declining alcoholic beverages in social and dining settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m attending a friend’s dinner party in Petaling Jaya this weekend. She’s Malay Muslim, and I’m not sure what to do about drinks. Should I bring alcohol as a gift, or is that a bad idea?"
+            },
+            {
+              "role": "assistant",
+              "content": "Avoid bringing alcohol—it’s best to err on the side of caution. In Malay Muslim households, even well-intentioned gifts of alcohol can cause discomfort, especially if the host is observant. Instead, bring something thoughtful and non-alcoholic: a fruit basket with local tropical fruits like rambutan or mangosteen, a jar of premium honey, or a nice tea set. These show respect without crossing cultural lines."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if the host offers alcohol during the meal? I don’t drink myself, but I don’t want to seem rude if others are drinking."
+            },
+            {
+              "role": "assistant",
+              "content": "If alcohol is offered, a polite decline is perfectly fine. Just say, 'Terima kasih, saya tak minum' with a smile and a soft wave of the hand—no need to explain. It’s common for non-Muslims to drink while Muslims abstain, especially in mixed groups. The key is to keep it quiet and respectful. Don’t draw attention to it."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What if I’m at a business dinner in KL with both Muslim and non-Muslim colleagues? Should I wait to see what others do before drinking?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—observe first. Many Muslim professionals in urban Malaysia choose not to drink, especially in group settings, but others may do so in private or social contexts. It’s best not to assume. If Muslim colleagues decline, it’s respectful to do the same. A simple 'Terima kasih, saya tak minum' is expected and appreciated. Avoid asking, 'You’re not drinking?'—that puts people on the spot. Respect personal boundaries, whether religious or personal. Never assume based on ethnicity. And remember: even in non-Muslim settings, don’t pressure others to drink—your restraint shows respect."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I’m visiting a friend in Sarawak, and they offer tuak during a family gathering? I’ve never tried it before. Should I accept?"
+            },
+            {
+              "role": "assistant",
+              "content": "Tuak holds deep cultural and ceremonial significance in many Dayak communities, often shared during family gatherings or rituals. If offered by elders, it’s generally polite to accept—even just a small sip. Say, 'Boleh saya cuba sikit?' with a smile. It’s natural and respectful. Wait for the host or elders to pour first, and begin drinking only after they do. Don’t over-pour or over-drink. Observing cues—like who is served first or how much is poured—shows attentiveness to tradition. Your respect matters more than your comfort. And remember: never pressure anyone else to drink, even in non-Muslim settings—cultural respect is about listening, not assuming."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Avoid bringing alcohol to Malay Muslim households as a gift due to religious sensitivity",
+          "Polite refusal of alcohol with 'Terima kasih, saya tak minum' is culturally appropriate and expected",
+          "Use a soft hand wave when declining alcohol to avoid drawing attention",
+          "Observe others' behavior in mixed-group settings before deciding whether to drink",
+          "Never assume someone's drinking habits based on ethnicity or religion",
+          "Tuak is a culturally significant drink in Dayak communities and should be accepted respectfully with 'Boleh saya cuba sikit?'",
+          "Wait for elders or hosts to pour first during ceremonial drinking moments",
+          "Avoid pressuring others to drink, even in non-Muslim or social settings",
+          "Cultural respect is shown through attentiveness, not assumption or personal preference"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Avoiding alcohol gifts in Malay Muslim households due to religious sensitivity",
+          "Polite refusal of alcohol using 'Terima kasih, saya tak minum' and hand wave",
+          "Respect for Muslim non-consumption in mixed social and business settings",
+          "Observing others before drinking in business contexts to avoid assumptions",
+          "Cultural significance of tuak in Dayak communities in Sarawak",
+          "Importance of waiting for elders to pour first and accepting with respect",
+          "Avoiding pressure on others to drink, regardless of context",
+          "Regional variation in alcohol etiquette between Peninsular Malaysia and East Malaysia"
+        ],
+        "issues": [
+          "Minor overgeneralization in the business dinner scenario: not all Muslim professionals abstain in group settings—some may drink privately. The response could acknowledge that while abstention is common, it’s not universal.",
+          "Slight simplification of the 'no need to explain' advice—while true in many cases, some Malaysians may offer brief, neutral explanations like 'Saya sedang berpuasa' (I'm fasting) if the context allows, though this is not expected."
+        ],
+        "suggestions": [
+          "Add a nuance in the business dinner response: 'While many Muslim professionals abstain in group settings, others may drink in private or social contexts—observe the group dynamic rather than assuming based on ethnicity.'",
+          "Include a brief note that while accepting tuak is respectful, one should not feel obligated to drink more than a small sip, especially if unfamiliar with the drink’s strength.",
+          "Consider adding a gentle reminder that cultural respect includes listening to individual preferences, not just group norms—e.g., 'Even if others drink, it’s okay to stay non-drinking; your choice is valid.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 9
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 24,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

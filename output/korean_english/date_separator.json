@@ -1,0 +1,175 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Date and Number Separator",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Characters used to separate date or number components, such as slashes, hyphens, periods, or commas",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I'm filling out a visa application for South Korea and I'm unsure about the date format. Should I use 2024/04/05 or 2024.04.05? I've seen both online."
+            },
+            {
+              "role": "assistant",
+              "content": "For official digital forms like visa applications, always use **2024.04.05** with periods. This is the only accepted format in automated Korean government systems. Slashes (/) are not supported and may cause rejection or processing delays. The system is designed to parse YYYY.MM.DD strictly—deviations, even small ones, can trigger errors."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So periods are mandatory in digital forms. But what about texting a friend to confirm a meeting? Can I write 24.4.5 or 2024-04-05?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—on smartphones and messaging apps, 24.4.5 or 2024-04-05 are common and acceptable in casual chats. However, be mindful: younger people use this freely, but older generations or more formal contexts may see it as too casual. For safety, especially in intergenerational communication, full form (2024.04.05) is better."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. One more thing—how should I write large numbers in a financial statement? Should I use 1,000,000 or say '일천만'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal documents like financial reports, use commas: 1,000,000. This is standard in business, media, and official publications. In spoken Korean, numbers are grouped by traditional units—'만' (10,000), '억' (100,000,000)—so you’d say '일천만' (10 million). The written form ensures precision; the spoken form reflects cultural numeracy."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. So if I’m writing a letter to my boss about a project deadline, should I use 2024.05.15 and 2,500,000 won?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—use **2024.05.15** and **2,500,000** in a professional letter. For currency, write **2,500,000 KRW** or **₩2,500,000** to be precise. In formal documents, the symbol or code is preferred over 'won' alone. This reflects attention to detail and respect for hierarchy—key values in Korean workplace culture."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—should I ever write dates with '년', '월', '일'? Like 2024년 4월 5일?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—but only in printed, handwritten, or formal letters, contracts, or ceremonial documents. In digital forms (like online visa applications), you must use the numeric format: 2024.04.05. The full Korean form adds formality and cultural authenticity, especially when addressing elders or officials, but it’s not accepted in automated systems. Always check the context—formality matters."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Korean official forms require YYYY.MM.DD format with periods",
+          "Slashes (/) are not used in formal Korean digital systems",
+          "Hyphens (-) and abbreviated dates (24.4.5) are acceptable in informal messaging",
+          "Commas are used as thousand separators in formal financial writing",
+          "Traditional units (만, 억) are used in spoken Korean for large numbers",
+          "Full Korean date format (2024년 4월 5일) is used in formal/handwritten documents but not in digital forms",
+          "Currency should be written as 2,500,000 KRW or ₩2,500,000 in formal contexts",
+          "Context determines formality: digital vs. handwritten, intergenerational communication"
+        ],
+        "issues": [
+          "Minor: The phrase 'this reflects attention to detail and respect for hierarchy' in the final response slightly overgeneralizes—while accurate, it could be softened to avoid reinforcing stereotypes about Korean culture being solely about hierarchy. A more nuanced phrasing would acknowledge cultural values without reducing them to a single trait."
+        ],
+        "suggestions": [
+          "Refine the final response to say: 'Using precise formats like 2024.05.15 and ₩2,500,000 shows attention to detail, which is valued in professional Korean communication—especially when addressing superiors or in official documentation.' This maintains accuracy while avoiding overgeneralization.",
+          "Consider adding a brief note about regional variations (e.g., some older systems may still use different formats), though this is not critical given the example's focus on standard practice.",
+          "In future examples, include a subtle mention of how digital form fields are often pre-filled with YYYY.MM.DD templates, reinforcing why this format is standard."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm filling out a visa application for South Korea and I'm unsure about the date format. Should I use slashes like 04/05/1990, or is there a standard format I should follow?"
+            },
+            {
+              "role": "assistant",
+              "content": "For official documents like visa applications, always use YYYY.MM.DD with periods. So your birth date should be 1990.04.05. Slashes are not standard in Korea and may cause confusion—especially in digital systems that expect the period format. This consistency is built into government portals, banking apps, and smartphone input methods."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about my monthly income? I earn 5,500,000 won. Should I write it as 5,500,000 or 550만?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal documents—tax forms, visa applications, bank statements—use commas: 5,500,000 won. This matches official records and ensures clarity. While spoken Korean uses '만' (e.g., '오십오만 원'), that’s for conversation, not written submissions. Stick with commas for professionalism."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I also need to include my passport expiry date. I’ve seen some online forms use hyphens like 2028-03-12. Is that acceptable?"
+            },
+            {
+              "role": "assistant",
+              "content": "No—hyphens are not used in official digital forms. The standard is strictly YYYY.MM.DD. Korean smartphone keyboards default to this format, and government portals like the Immigration Service’s system enforce it. Using hyphens may trigger validation errors or appear unprofessional."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’m also helping my younger cousin with a school project on Korean culture. Should I teach them to write dates with periods too, or is it okay to use hyphens in informal school work?"
+            },
+            {
+              "role": "assistant",
+              "content": "For school projects, if it's informal—like a casual poster or class presentation—hyphens (e.g., 2024-04-05) are fine for simplicity. But if it's a formal submission—like a report to a teacher, a competition entry, or a digital presentation—use YYYY.MM.DD. Even in school, showing attention to format reflects cultural respect and precision. And while some older people may write dates without separators (e.g., 20240405), that’s discouraged in any formal or semi-formal context. The period format is now the norm across all official systems, from tax offices to public apps."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of periods (.) as standard date separators in formal Korean contexts like visa applications and government portals",
+          "Preference for YYYY.MM.DD format in official digital systems and documents",
+          "Rejection of slashes (/) and hyphens (-) in formal settings due to potential confusion or non-standard status",
+          "Use of commas (,) for thousand separation in financial figures in formal written contexts",
+          "Preference for traditional units (만, 억) in spoken Korean, but not in formal written submissions",
+          "Context-sensitive formatting: distinction between formal submissions and informal school work",
+          "Cultural emphasis on precision, consistency, and formality in official documentation"
+        ],
+        "issues": [
+          "Minor: The phrase 'even in school, showing attention to format reflects cultural respect and precision' slightly overgeneralizes—some informal school projects may not require strict adherence, though the intent is correct.",
+          "Slight overstatement in 'the period format is now the norm across all official systems'—while overwhelmingly true, some legacy systems or older documents may still use other formats, though this is rare."
+        ],
+        "suggestions": [
+          "Consider adding a brief note about the historical shift from no separators or hyphens to the current period standard in digital systems, to deepen context.",
+          "In future examples, include a subtle mention of how younger Koreans might use hyphens in text messages, reinforcing the generational and contextual nuance.",
+          "Clarify that while '550만' is acceptable in spoken Korean, it is never used in formal documents—this reinforces the written vs. spoken divide."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 24,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

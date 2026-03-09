@@ -1,0 +1,111 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Opening Gifts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Whether gifts are opened immediately in front of the giver or set aside to be opened privately later",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses. When guiding users, acknowledge cultural context and avoid implying universal applicability—especially when the user is not Japanese."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to a friend’s house for her birthday next weekend. She’s been really kind to me lately, and I want to bring a small gift. But I’m not sure how to handle opening it during the party. Should I open it right away when she gives it to me?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Japan, it’s customary to receive a gift with both hands and a slight bow, then place it aside without opening it in front of the giver. Opening it immediately can seem impolite—it might make the giver feel self-conscious, especially if your reaction is too enthusiastic or too quiet. The focus is on the thought behind the gift, not its value."
+            },
+            {
+              "role": "user",
+              "content": "So I should just keep it in my bag and open it later? What if she asks me to open it right there? I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "If she invites you to open it, you can politely decline with something like, 'Thank you so much—I’d like to appreciate it in private.' This keeps the moment respectful and private. Many people open gifts at home, often taking a photo to send later—a quiet, thoughtful way to show gratitude."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. So the gift’s value isn’t really the point—what matters is the thought behind it, right? I should focus on expressing gratitude, not the item itself."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The heart of the gesture is *kansha*—gratitude rooted in mindfulness and respect. In Japanese culture, the act of receiving is as meaningful as giving. Delaying the opening honors that intention. Even among close friends, this is common, especially in more formal or respectful settings. The key is showing that you value the giver’s effort, not the price tag. This reflects *enryo*—the cultural value of restraint and sensitivity to others’ feelings."
+            },
+            {
+              "role": "user",
+              "content": "I really appreciate this. I’ll bring a small handmade bookmark—something simple but meaningful. I’ll thank her sincerely, keep it in my bag, and open it later at home. Then I’ll send her a message with a photo. That feels right."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a beautiful choice. A handmade bookmark reflects personal care—exactly the kind of gesture that resonates deeply in Japanese culture. By opening it later and sending a photo, you’re practicing *omotenashi*—thoughtful hospitality that puts the other person’s feelings first. Just to clarify: since you’re not Japanese, this guidance is tailored to help you navigate Japanese cultural norms with respect, not to suggest they apply universally. In formal settings—like business meetings or New Year visits (*hatsumōde*)—this etiquette is even more emphasized, where gifts are received with quiet gratitude and opened only later, often with a follow-up note. Your awareness, intention, and respect for *wa*—harmony in relationships—are what truly matter."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Receiving gifts with both hands and a slight bow",
+          "Not opening gifts in front of the giver",
+          "Placing gifts aside without immediate inspection",
+          "Expressing gratitude with sincerity and restraint",
+          "Opening gifts privately at home",
+          "Sending a follow-up photo or message after opening",
+          "Valuing thought and effort over material worth",
+          "Practicing *kansha* (gratitude) and *enryo* (restraint)",
+          "Respecting social hierarchy and formality in gift-giving",
+          "Reflecting *omotenashi* (thoughtful hospitality)",
+          "Maintaining *wa* (harmony) through mindful social conduct",
+          "Using subtle, non-verbal cues to show appreciation"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Gifts are received with both hands and a slight bow",
+          "Gifts are not opened immediately in front of the giver",
+          "Opening gifts in public may be seen as impolite or embarrassing",
+          "Gifts are typically opened privately, often at home",
+          "The focus is on the thought and effort behind the gift, not its material value",
+          "Gratitude (*kansha*) and restraint (*enryo*) are central values",
+          "Follow-up actions like sending a photo are culturally appropriate and respectful",
+          "The practice is especially strong in formal or hierarchical settings (e.g., business, *hatsumōde*)",
+          "Even among close friends, delaying opening is common and expected",
+          "The concept of *omotenashi* (thoughtful hospitality) is appropriately applied",
+          "The distinction between cultural norms and universal applicability is clearly acknowledged"
+        ],
+        "issues": [
+          "Minor: The phrase 'quiet, thoughtful way to show gratitude' could be slightly more nuanced—consider specifying that the photo is often sent as a delayed, respectful acknowledgment, not just a casual update.",
+          "Slight risk of overgeneralization in the phrase 'even among close friends, this is common'—while accurate in many contexts, some younger or more casual peer groups may open gifts together. However, the example correctly frames this as 'especially in more formal or respectful settings,' which mitigates the risk."
+        ],
+        "suggestions": [
+          "Consider adding a brief note about regional or generational variation (e.g., urban youth may be more relaxed), to reinforce that cultural norms exist on a spectrum.",
+          "In future examples, include a subtle mention of *giri* (social obligation) as a context for why the formality persists, especially in business settings.",
+          "Use a slightly more formal register in the assistant’s final response when referencing *hatsumōde* or business etiquette to reflect the gravity of those contexts."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 11,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

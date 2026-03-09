@@ -1,0 +1,282 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Naming Convention",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The structure and order of personal names, including given names, family names, and the use of honorifics",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a business meeting with a Korean client next week. I’ve been told to address them formally, but I’m not sure how to get the names right. My contact’s name is Kim Min-jun. Should I call him 'Min-jun' or 'Kim'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Korean business culture, it's important to use the family name first and include an appropriate honorific. Since Min-jun is likely a senior or professional contact, you should address him as 'Kim-nim' — the 'nim' suffix shows respect and is standard in formal or professional settings. Calling him 'Min-jun' directly would be considered too informal and could unintentionally signal disrespect, especially if he's older or in a higher position."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I see. So if I meet someone younger, say a colleague around my age, would it be okay to use just 'Min-jun' or 'Min-jun-ssi'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even with someone your age, it’s safest to start with 'Min-jun-ssi' unless they explicitly invite you to use a more casual form. The '-ssi' suffix is polite and neutral, widely used in daily interactions. In Korean culture, we maintain social distance through language, even among peers. Only when there’s mutual agreement — often signaled by a smile or a light comment like 'We’re close now, so call me Min-jun' — would it be appropriate to drop the honorific. Until then, 'Min-jun-ssi' is the respectful norm."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about if I’m writing an email? Should I use 'Kim Min-jun-nim' or just 'Min-jun Kim'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal written communication, such as business emails, you should always use the surname first, followed by the given name, and include the honorific. So the correct format is 'Kim Min-jun-nim'. Writing 'Min-jun Kim' would be incorrect and might be perceived as unfamiliar with Korean conventions — especially in a professional context. It’s not just about order; it reflects your awareness of hierarchy and respect, which are central to Korean workplace culture."
+            },
+            {
+              "role": "user",
+              "content": "I’ve also heard some Koreans use Western names abroad, like 'John Kim'. Should I use that if I’m meeting someone in an international setting?"
+            },
+            {
+              "role": "assistant",
+              "content": "Western names like 'John Kim' are typically used only in international or foreign contexts — for example, when working with global teams or in English-speaking environments. In Korea, or during a formal meeting with a Korean client, you should never use a Western name unless explicitly invited to do so. Using 'John' instead of 'Kim Min-jun-nim' in a Korean setting can come across as dismissive of cultural identity or unaware of local norms. It’s best to stick with the Korean name order and honorifics unless the person themselves introduces their Western name first."
+            },
+            {
+              "role": "user",
+              "content": "Thank you — this is really helpful. One last thing: if I’m introducing a Korean colleague to a foreign team, should I say 'This is Min-jun Kim' or 'This is Kim Min-jun'?"
+            },
+            {
+              "role": "assistant",
+              "content": "When introducing a Korean colleague to a foreign audience, it’s best to say 'This is Kim Min-jun' — maintaining the Korean naming order — but you can add a brief note to help others understand: 'Kim is his family name, and Min-jun is his given name.' This preserves cultural accuracy while being considerate of international listeners. Avoid saying 'Min-jun Kim' unless you’re certain the audience is familiar with Western conventions. Respect for naming structure is a subtle but powerful way to show cultural sensitivity."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.825,
+        "cultural_elements_verified": [
+          "Family name (surname) comes first in Korean names (e.g., Kim Min-jun)",
+          "Use of honorifics (-nim, -ssi, -ah) is essential and context-dependent",
+          "Kim-nim is appropriate for seniors or professionals in formal settings",
+          "Min-jun-ssi is the polite, neutral form for peers or strangers",
+          "Western-style names (e.g., John Kim) are used only in international contexts, not domestically",
+          "Formal written communication (e.g., emails) uses surname-first order with honorifics",
+          "Introducing Koreans to foreigners should preserve Korean name order with clarification",
+          "Misuse of Western name order (e.g., Min-jun Kim) in Korean contexts is culturally inappropriate"
+        ],
+        "issues": [
+          "Minor: The phrase 'we’re close now, so call me Min-jun' is slightly Westernized in phrasing; a more authentic Korean expression might be '지금은 이름으로 부르셔도 돼요' (You can call me by my name now), but this is a very small stylistic nuance and does not undermine accuracy.",
+          "The example assumes Min-jun is a male name, which is accurate, but does not address that Min-jun can be used for both genders (though more common for males). This is a minor oversight but not critical."
+        ],
+        "suggestions": [
+          "Consider adding a brief note about gender-neutral naming practices in Korean culture (e.g., Min-jun is commonly used for males but not exclusively), to further enhance cultural nuance.",
+          "In the response about introducing colleagues, consider including a subtle reminder that the honorific may be dropped only after explicit permission, reinforcing the cultural emphasis on consent and hierarchy.",
+          "To improve linguistic authenticity further, use more natural Korean-English code-switching cues (e.g., 'Kim-nim' with a brief explanation like 'that’s how we show respect to seniors') in the assistant’s tone, though the current version is already very strong."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a job interview at a Korean tech company in Seoul. I’ve been told I should use formal address, but I’m not sure how to refer to the hiring manager. Her name is Park Soo-jin. Should I call her 'Soo-jin' or 'Park Soo-jin'? And what honorific should I use?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a formal interview setting in Korea, you should always use the full name with an appropriate honorific. Since she is a senior professional and likely in a leadership role, the most respectful way to address her is 'Park Soo-jin-nim'. The '-nim' suffix shows deference and is standard in professional contexts, especially when meeting someone for the first time. Using just 'Soo-jin' or 'Park Soo-jin' without a suffix would be considered too casual or even disrespectful."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I’ve noticed some younger employees at international companies sometimes use first names even with seniors. Should I follow that trend here?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a good observation, but it’s important to distinguish between internationalized workplaces and traditional Korean corporate culture. In most domestic Korean companies, especially in formal or hierarchical environments like tech firms in Seoul, the use of honorifics is non-negotiable. Even if younger colleagues use first names among themselves, you should maintain formal address during an interview to show cultural awareness and respect. The company will likely interpret your choice of 'Park Soo-jin-nim' as a sign of maturity and professionalism."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What if I meet her again later, like in a follow-up meeting? Could I use a different form of address then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—this is a key point. In Korean culture, the level of formality can shift based on mutual trust and established rapport. If Park Soo-jin-nim invites you to use a less formal address—such as 'Soo-jin-ssi' or even just 'Soo-jin'—that would be a sign she considers you a trusted colleague. But you should never initiate that shift yourself. Always wait for her to signal it. Until then, keep using 'Park Soo-jin-nim' in every interaction."
+            },
+            {
+              "role": "user",
+              "content": "What about other team members? One of them is a junior colleague named Lee Min-ho. Should I call him 'Min-ho-ssi' or 'Lee Min-ho-ssi'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a peer or junior colleague like Lee Min-ho, using 'Lee Min-ho-ssi' is perfectly appropriate and polite. The '-ssi' suffix is neutral and widely used in daily workplace interactions. You can also use 'Min-ho-ssi' if you're already on a first-name basis, but only after he has invited you to do so. Never call a junior colleague by their first name without '-ssi' unless you’ve been explicitly given permission. In Korean workplaces, even minor slips in address can signal social misstep."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps. One last thing: I’ve been told some Koreans use Western names abroad. Should I expect Park Soo-jin to go by 'Soo-jin' or 'Soo-jin Park' in international settings?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common misconception. While some Koreans may adopt Western names for use in global business or academic contexts—like 'Soo-jin Kim' when working with Western partners—this is not how they are addressed in Korea. In domestic or formal Korean settings, her name will always be Park Soo-jin-nim. Using 'Soo-jin' alone or 'Soo-jin Park' in a Korean interview would be seen as dismissive of cultural norms. It’s best to stick with the Korean naming order and honorifics unless explicitly told otherwise."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.8,
+        "cultural_elements_verified": [
+          "Family name (Park) comes before given name (Soo-jin) in formal address",
+          "Use of '-nim' honorific for senior professionals in formal settings",
+          "Use of '-ssi' for peers or junior colleagues",
+          "Prohibition against using first names without honorifics for seniors",
+          "Cultural significance of honorifics as markers of respect and hierarchy",
+          "Formality shifts only initiated by the senior party",
+          "Western-style names (e.g., Soo-jin Park) are used abroad but not in domestic Korean contexts",
+          "Importance of surname-first naming in Korean culture"
+        ],
+        "issues": [
+          "Minor: The term 'Park Soo-jin-nim' is technically correct, but in very formal or traditional contexts, the honorific may be attached to the full name as 'Park Soo-jin-nim' — this is accurate, but some native speakers might slightly prefer 'Park-nim' when the given name is not needed. However, this is a nuance not critical enough to lower the score.",
+          "Slight overgeneralization in the assistant’s response about 'most domestic Korean companies' — while largely accurate, some modern tech startups in Seoul may use more relaxed norms. However, the response correctly emphasizes that formal address is expected in formal interviews, which is the key context."
+        ],
+        "suggestions": [
+          "Add a brief note about the optional use of 'Park-nim' in extremely formal or ceremonial contexts (e.g., academic or governmental settings) to reflect even deeper cultural nuance.",
+          "Clarify that in some intergenerational or familial contexts, 'Soo-jin-ah' may be used by close relatives or very senior family members, but this is irrelevant in professional settings and should not be introduced unless asked.",
+          "Consider including a sentence about the importance of pronunciation (e.g., correct syllabic stress on 'Soo-jin' vs. 'Soo-jin') to enhance linguistic authenticity, though this is beyond the scope of naming convention per se."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a job interview at a Korean tech company in Seoul, and I want to make sure I’m respectful in how I address people. I met someone named Kim Min-jun during a networking event, and I’d like to write a follow-up email. Should I call him 'Min-jun' or 'Kim-nim'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal professional settings, especially with someone you’ve just met, it’s best to use 'Kim-nim'—surname first with the honorific '-nim'. This shows respect for hierarchy, which remains central in Korean workplace culture. Using 'Min-jun' directly, even if he introduced himself that way, can seem too informal unless he explicitly invites you to do so."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I’ve noticed some Koreans use their given names in international meetings—like calling each other 'Min-jun' or 'Soo-jin'. Should I follow that if he’s used to it?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a good observation. In globalized or multicultural environments—especially in tech startups or international teams—some Koreans may use given names like 'Min-jun' or 'Soo-jin', often with '-ssi' (e.g., 'Min-jun-ssi') to maintain politeness. However, this is typically reserved for peer-level interactions or informal team settings. In initial professional encounters, especially with seniors, 'Kim-nim' remains the safer, more respectful choice unless invited otherwise."
+            },
+            {
+              "role": "user",
+              "content": "What about a female colleague named Lee Soo-jin? Should I use 'Lee-ssi' or 'Soo-jin-ssi'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Both 'Lee-ssi' and 'Soo-jin-ssi' are appropriate in professional settings. 'Lee-ssi' is the standard, neutral option—safe and widely accepted. 'Soo-jin-ssi' is common among peers or in younger, more informal workplaces. Avoid using just 'Soo-jin'—that would be too casual. The choice often reflects relationship depth and workplace culture, not gender."
+            },
+            {
+              "role": "user",
+              "content": "And what about a junior colleague named Park Ji-hoon? Can I call him 'Ji-hoon'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even with junior colleagues, it’s best to use 'Park-ssi' or 'Ji-hoon-ssi' unless you’ve clearly established a close, informal rapport. In modern Korean workplaces—especially in tech startups—'Ji-hoon-ssi' is increasingly common, even among younger employees. But avoid using just 'Ji-hoon'—that would be too abrupt. The honorific '-ssi' is essential for maintaining respect."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. So it’s less about strict hierarchy and more about context and relationship?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Korean naming and address practices are rooted in respect, but they’re evolving. In traditional settings, hierarchy is strict. In modern, especially globalized workplaces—particularly in Seoul’s tech scene—there’s more flexibility. Generational differences matter too: younger professionals often prefer less formal address, even with honorifics. The key is observation and adaptability. Start formal, watch how others interact, and adjust accordingly."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—some Koreans use Western names like 'John Kim' in international meetings. Is that acceptable?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, but only in specific contexts. Korean professionals may use Western-style names (e.g., 'John Kim') during international meetings or with foreign colleagues as a gesture of cross-cultural ease. However, this is never used in domestic or formal Korean settings. In Korea, the full Korean name—surname first—is always used in official or respectful communication. Using a Western name in a Korean context can be seen as inappropriate or dismissive of cultural identity."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps me understand the nuance. I’ll use 'Kim-nim' and 'Lee-ssi' for now, and keep an eye on how people address each other in future interactions."
+            },
+            {
+              "role": "assistant",
+              "content": "I wish you all the best in your interview. Your thoughtful approach to cultural norms will make a positive impression. With your awareness and respect, you’re well-prepared to engage meaningfully in a Korean professional environment."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Surname-first name order in Korean names (e.g., Kim Min-jun)",
+          "Use of honorifics '-nim' for respect toward seniors or superiors",
+          "Use of '-ssi' as a polite, neutral form of address in professional settings",
+          "Distinction between formal and informal address based on relationship and context",
+          "Cultural preference for Korean names in domestic settings, even among bilingual Koreans",
+          "Contextual flexibility in modern workplaces, especially in tech and international environments",
+          "The importance of observing others' behavior to adapt address forms appropriately",
+          "The limited use of Western-style names (e.g., 'John Kim') in Korea, reserved for international contexts"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'modern Seoul tech scene' as uniformly informal—some traditional or larger firms still maintain strict hierarchy, though the example acknowledges this through nuance.",
+          "The term 'Western-style names' could be slightly misleading; it's more accurate to say 'anglicized names' or 'foreign names adopted for international use', as 'Western-style' may imply a broader cultural framework than intended."
+        ],
+        "suggestions": [
+          "Clarify that while 'John Kim' may be used internationally, it's typically not a person’s official name in Korea—rather, it's a temporary, context-specific identifier. Emphasize that Koreans usually have a single, culturally consistent name in domestic settings.",
+          "Add a brief note about how honorifics can be omitted only in very close familial or peer relationships, reinforcing that their presence is a sign of cultural literacy.",
+          "Consider including a sentence about the role of age and seniority in determining honorific use, even among peers—e.g., someone older than you may still be addressed with '-nim' even if they’re a colleague."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Name Origin",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural, religious, and historical sources from which personal names are drawn",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm helping my cousin choose a name for her newborn son. She’s Korean, and her family has strong ties to the Gyeongju Kim clan. She wants something meaningful—something that reflects tradition, but also feels modern. Can you help?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. For a Gyeongju Kim family, using a generational character (*jung-ja*) like 'Jae' (재), meaning 'talent' or 'gift,' honors ancestral lineage across generations. It’s a quiet but enduring way to affirm clan identity."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. She’s thinking of 'Jae' as the first syllable. What about the second character? She wants something strong but not rigid—something with depth and warmth."
+            },
+            {
+              "role": "assistant",
+              "content": "Jae-min (재민) is a thoughtful choice. The character '민' (min) means 'people'—not 'intelligent' (which is the different Hanja '敏'). In Confucian tradition, this reflects the ideal of leadership through service and care, rooted in the principle of benevolent governance. It’s a name that values humility and responsibility."
+            },
+            {
+              "role": "user",
+              "content": "I see—so '민' is about people, not intelligence. That clears up a confusion I had. But she’s still concerned about Hanja meanings—she doesn’t want anything with negative connotations. Is there any risk with '민'?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, '민' carries no negative connotation. It’s consistently associated with community, compassion, and moral duty. While some may interpret it through modern lenses like 'minjung' (the people), its core meaning in naming has long been tied to Confucian ideals of service. Families often consult elders or a *jung-sa* to confirm the correct Hanja, especially in lineages with deep roots."
+            },
+            {
+              "role": "user",
+              "content": "That reassures her. She also likes the idea of nature symbolism—something that reflects harmony with the world. Are there characters that blend Confucian virtue with natural imagery?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—'Jae-seon' (재선) is a strong option. '선' (seon) means 'majestic mountain' or 'excellence,' drawing from the *I Ching* and symbolizing stability, integrity, and moral height. It’s a name that feels grounded and timeless—perfect for someone who values quiet strength and wisdom."
+            },
+            {
+              "role": "user",
+              "content": "She’s leaning toward 'Jae-min' now. But she’s wondering—some of her friends use Western names like 'Evan' or 'Liam.' Is 'Jae-min' still relevant today?"
+            },
+            {
+              "role": "assistant",
+              "content": "Very much so. 'Jae-min' is modern in sound, traditional in depth. It’s used by professionals, artists, educators, and younger generations. The real strength is that it carries intention—more than a name, it’s a legacy of virtue and care. Choosing it honors heritage without stepping away from contemporary identity."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—how is 'Min' pronounced? I’ve heard it sound different in some regions."
+            },
+            {
+              "role": "assistant",
+              "content": "In standard Korean, '민' is pronounced 'min'—like 'mint' with a soft 'm'. In some southern dialects, it may sound slightly more nasal, like 'mim', but the meaning stays the same. The pronunciation doesn’t affect the cultural weight—what matters is the intention behind the name."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of generational naming convention (*jung-ja*) in Gyeongju Kim clan",
+          "Meaning of 'Jae' (재) as 'talent' or 'gift' in Confucian context",
+          "Correct interpretation of '민' (min) as 'people' and its Confucian association with benevolent governance",
+          "Distinction between Hanja characters '敏' (intelligent) and '民' (people)",
+          "Role of elders or *jung-sa* in confirming Hanja for names",
+          "Nature symbolism in names (e.g., 'seon' as 'majestic mountain')",
+          "Influence of classical texts like the *I Ching*",
+          "Modern relevance of traditional names like 'Jae-min'",
+          "Regional pronunciation variation (e.g., southern dialects) without affecting meaning"
+        ],
+        "issues": [
+          "Minor risk of oversimplification in describing '민' as exclusively tied to 'people'—it can also carry connotations of 'common folk' or 'the masses' in political contexts (e.g., *minjung*), though this is not a core issue in naming",
+          "Slight ambiguity in the explanation of 'Jae-seon'—'선' (seon) as 'majestic mountain' is correct, but the direct link to *I Ching* is not clearly sourced; the *I Ching* does reference mountains (e.g., *Gen* hexagram), but the name's derivation is more commonly from literary or poetic usage"
+        ],
+        "suggestions": [
+          "Clarify that while '민' is not negative, its use in names is context-sensitive—e.g., it’s avoided in some conservative families due to its association with mass movements in modern history",
+          "Add a brief note that 'Jae-seon' is often chosen for its poetic resonance in classical Korean literature, not just the *I Ching*, to strengthen cultural grounding",
+          "Include a mention of how Hanja selection is sometimes guided by *moksa* (birth chart compatibility) in more traditional families, though this is less common today"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

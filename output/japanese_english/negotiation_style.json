@@ -1,0 +1,114 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Negotiation Style",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Whether the dominant approach to business negotiation is direct or indirect, competitive or collaborative, quick or deliberate",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a business meeting with a Japanese partner next week. My team wants to finalize the contract terms quickly—can you help me draft a clear, direct proposal?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Japanese business culture, speed can be misread as impatience. Instead of a direct proposal, focus on relationship-building first. If appropriate, a modest, culturally thoughtful gift—such as seasonal wagashi from Kyoto or handcrafted ceramics from a recognized region like Mashiko—can symbolize respect. Present it with a slight bow and a simple, sincere expression like 'This is a small token of our appreciation.' Avoid anything flashy or mass-produced. Gift-giving should be timely and context-appropriate—ideally during an initial meeting or after a significant milestone, not during formal negotiations unless part of a pre-established ritual."
+            },
+            {
+              "role": "user",
+              "content": "But we’ve already sent the draft terms. They haven’t responded in three days. Should I follow up with a reminder?"
+            },
+            {
+              "role": "assistant",
+              "content": "Avoid direct follow-ups. Wait at least 5–7 business days. If you must send a gentle nudge, use a soft, respectful tone: 'We hope this message finds you well. We’re looking forward to your feedback when convenient.' In English correspondence, it’s acceptable to use 'Mr. Tanaka,' but never use first names—even informally. Japanese business partners typically expect formal titles, even in English, to maintain appropriate distance and respect."
+            },
+            {
+              "role": "user",
+              "content": "I see. So if they say 'We will consider it,' does that mean they’re likely to say no?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not necessarily—but it’s a signal to pause. 'We will consider it' is often tatemae (public stance), not honne (true feelings). True alignment may emerge subtly—through a quiet 'Hai, sou desu ne' (Yes, that’s right), a slight nod, or delayed confirmation. The goal is harmony, not immediate clarity. Directness can disrupt group cohesion."
+            },
+            {
+              "role": "user",
+              "content": "So how should I respond if they come back with minor revisions later?"
+            },
+            {
+              "role": "assistant",
+              "content": "Respond with gratitude and humility: 'Thank you for your careful review, Mr. Tanaka. We truly appreciate your attention to detail and will align with your feedback promptly.' This reinforces wa (harmony). The goal isn’t speed—it’s trust. A respectful, well-timed response strengthens the relationship far more than a rushed contract."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—how do junior staff or intermediaries fit into this process?"
+            },
+            {
+              "role": "assistant",
+              "content": "Junior staff often act as intermediaries, presenting options in a neutral tone. Their feedback reflects senior consensus, not independent judgment. Pay close attention to tone, timing, and who speaks—this reveals the group’s true stance. This layered communication preserves hierarchy and group harmony. Final authority rests with senior leaders, even if they remain silent during discussions."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Indirect communication through pauses, non-verbal cues, and ambiguous phrases like 'We will consider it'",
+          "Use of modest, culturally appropriate gifts (e.g., seasonal wagashi, regional ceramics) at appropriate times",
+          "Avoidance of first names in English correspondence; use of formal titles like 'Mr. Tanaka'",
+          "Respect for hierarchical structure and the role of intermediaries in conveying group consensus",
+          "Recognition that silence and delayed responses are culturally normal, not rejection",
+          "Emphasis on harmony (wa) over speed or directness in negotiation",
+          "Understanding of the ringi-sho process as a formal, multi-layered approval system requiring internal consensus",
+          "Cultural appropriateness of gift-giving—timing, modesty, and authenticity matter"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Indirect communication through silence and ambiguous phrases like 'We will consider it'",
+          "Use of gift-giving (wagashi, ceramics) as a gesture of respect and relationship-building",
+          "Importance of formal titles (e.g., 'Mr. Tanaka') and avoidance of first names",
+          "Hierarchy and role of junior staff as intermediaries reflecting senior consensus",
+          "Delayed decision-making due to ringi-sho and internal consensus",
+          "Value of harmony (wa) over speed and directness",
+          "Non-verbal cues (nod, tone) as indicators of true intent",
+          "Soft, respectful language in follow-ups to avoid pressure"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in suggesting 'wagashi from Kyoto' or 'ceramics from Mashiko' as universally appropriate gifts—specific regional items should be context-sensitive and not assumed to be standard for all Japanese business interactions",
+          "The phrase 'This is a small token of our appreciation' is accurate but could be slightly more natural in Japanese context; a more authentic phrasing might include a brief, humble expression like 'We hope this small gift brings you joy' with a bow",
+          "The use of 'Hai, sou desu ne' is correct but could be clarified as a subtle, low-key agreement rather than a definitive confirmation—contextual nuance is present but could be emphasized further"
+        ],
+        "suggestions": [
+          "Add a brief note that gift-giving should be avoided if the company has a strict no-gift policy or if it’s culturally inappropriate in the specific industry or region",
+          "Clarify that while 'We will consider it' often signals hesitation, it may also reflect genuine deliberation—context and timing matter more than a fixed interpretation",
+          "Suggest that if a foreigner receives minor revisions later, they should not assume the process is complete; further rounds of feedback are common and expected",
+          "Include a subtle reminder that even in English, honorifics should be used consistently and never dropped, even in informal exchanges"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

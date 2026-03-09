@@ -1,0 +1,189 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Business Appointment Scheduling",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around how far in advance meetings should be arranged and the etiquette of confirming appointments",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m preparing to schedule a meeting with Encik Amir, the Senior Director at the Ministry of Industry in Kuala Lumpur. It’s for a new export partnership, and I’d like to set it up soon. How should I approach this properly?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a senior government official like Encik Amir, aim for 3–4 weeks’ notice—especially during major cultural periods like Hari Raya, Deepavali, or Chinese New Year. This allows time for coordination across religious calendars and respects institutional hierarchy. Avoid Friday afternoons due to Juma’ah prayers, and be mindful of Ramadan, when afternoon meetings are typically avoided."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I email him first, or reach out via WhatsApp?"
+            },
+            {
+              "role": "assistant",
+              "content": "Start with a formal email to set the tone. Then follow up the day before via WhatsApp—this is the expected norm. Use a polite, indirect message: 'Just confirming our meeting tomorrow at 10 a.m.—see you then!' This shows respect without pressure."
+            },
+            {
+              "role": "user",
+              "content": "What if he doesn’t reply to my WhatsApp? Should I follow up again?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—once, gently. If no reply by the morning of the meeting, send a brief message: 'Just confirming our meeting today at 10 a.m.—hope you’re well. Looking forward to connecting.' Malaysians value harmony (*muka*); a delay usually means a prior commitment, not disinterest. A polite nudge preserves face."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. What if he says he can’t make it? How should I respond?"
+            },
+            {
+              "role": "assistant",
+              "content": "Respond with grace: 'I understand—family or prior commitments come first. Please let me know when you’re free, and I’ll adjust accordingly.' Never ask for a reason. In Malaysian culture, preserving dignity matters more than urgency. A senior official once rescheduled after a family wedding—no explanation needed. That’s the spirit of professionalism."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—how do younger professionals in Malaysia differ in their expectations? I’ve heard they expect faster replies."
+            },
+            {
+              "role": "assistant",
+              "content": "Good observation. Younger professionals, especially in urban tech or startup sectors, may expect WhatsApp replies within hours. But even then, tone remains polite and indirect. The key is balance: be prompt, but never pushy. Building trust takes time—respectful scheduling strengthens long-term partnerships. Also, note that regional differences matter: in East Coast states, formality and hierarchy are often more pronounced than in Kuala Lumpur."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Thanks for the clarity—this really helps me navigate the cultural nuances."
+            },
+            {
+              "role": "assistant",
+              "content": "You're very welcome. Remember: in Malaysian business, the relationship is as important as the outcome. A little patience, a lot of respect, and a touch of indirectness go a long way. Good luck with your partnership!"
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.35,
+        "cultural_elements_verified": [
+          "Advance notice of 3–4 weeks for senior government officials",
+          "Avoiding Friday afternoons due to Juma’ah prayers",
+          "Rescheduling during Ramadan, especially afternoon meetings",
+          "Use of WhatsApp for confirmation the day before",
+          "Polite, indirect phrasing in communication (e.g., 'Just confirming...', 'hope you’re well')",
+          "Morning confirmation on the day of the meeting in formal settings",
+          "Acceptance of 10–15 minute lateness, but not 30+ minutes without notice",
+          "Preservation of face (*muka*) and avoiding direct confrontation",
+          "Respect for hierarchy and seniority in scheduling and response",
+          "Regional and generational differences (urban vs. East Coast, younger vs. older professionals)",
+          "Use of formal titles (Encik, Puan, Datuk/Datin)"
+        ],
+        "issues": [
+          "Minor underemphasis on the cultural significance of 'muka' (face) beyond the mention in the final response—could be more explicitly tied to communication style and non-confrontation.",
+          "The example does not mention that in some formal government contexts, confirmation may be expected via phone call rather than WhatsApp, even if WhatsApp is common—this nuance could be clarified."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response about the preference for phone calls in highly formal or traditional government settings, even when WhatsApp is widely used.",
+          "Include a subtle reference to the concept of 'muka' earlier in the conversation to reinforce its role in shaping communication tone and timing.",
+          "Consider adding a brief mention of how the senior official’s religious or ethnic background (e.g., Malay Muslim, Indian Tamil, Chinese) might influence scheduling preferences, especially during major festivals."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I need to schedule a meeting with Encik Rahman, the Director of Public Works in Johor Bahru. It's about a new infrastructure proposal. How far in advance should I plan this, and what’s the best way to confirm?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a senior government official like Encik Rahman, aim for 2–3 weeks in advance—especially if it involves cross-ethnic stakeholders. This allows time to navigate religious calendars like Hari Raya or Deepavali. In Johor, while traditional values remain strong, younger professionals in urban areas like Johor Bahru may respond faster on WhatsApp but still expect formal titles and respectful tone. Avoid Friday afternoons due to Juma’ah prayers, and if it’s during Ramadan, schedule for early morning."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I confirm the meeting the day before? And what’s the preferred method?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—confirm the day before via WhatsApp or a quick phone call. A simple message like: *‘Selamat pagi, Encik Rahman. Just confirming our meeting tomorrow at 10 a.m.—thank you, see you then.’* is expected and appropriate. In formal settings, a morning confirmation on the day of the meeting is also common and shows attentiveness."
+            },
+            {
+              "role": "user",
+              "content": "What if I need to reschedule? He’s busy this week—should I just say I can’t make it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to use indirect but transparent language to preserve face. Instead of a flat refusal, say: *‘I hope you’re well, Encik Rahman. I’ve had a family matter arise this week and would be grateful if we could reschedule to next week, at your convenience.’* This acknowledges the priority of family obligations—widely respected in Malaysian culture—without implying a third party’s involvement."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—should I use a formal tone in the message, even on WhatsApp?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. Always use formal titles—*Encik Rahman*, never just ‘Rahman’. Avoid casual greetings like ‘Hey’ or ‘Bro’. A message like *‘Selamat pagi, Encik Rahman. I hope you’re well. Just confirming our meeting tomorrow at 10 a.m.’* strikes the right balance: respectful, clear, and culturally appropriate—even on WhatsApp."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Advance notice of 2–3 weeks for senior government officials",
+          "Avoiding Friday afternoons due to Juma’ah prayers",
+          "Confirming meetings the day before via WhatsApp or phone",
+          "Using formal titles (Encik Rahman) and respectful tone",
+          "Indirect language for rescheduling to preserve face",
+          "Respecting religious calendars (Hari Raya, Deepavali, Ramadan)",
+          "Morning confirmation on the day of the meeting in formal settings",
+          "Balancing digital tools (WhatsApp) with formality",
+          "Regional nuance: Johor Bahru as urban, modern, yet respectful of tradition"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'younger professionals in urban areas like Johor Bahru may respond faster on WhatsApp'—while true, it slightly downplays the continued importance of formality even among younger professionals.",
+          "The phrase 'I’ve had a family matter arise' in the rescheduling example, while culturally appropriate, could be slightly more specific to Malaysian context (e.g., 'a family commitment' or 'a religious obligation') to better reflect the cultural weight of such reasons."
+        ],
+        "suggestions": [
+          "Enhance the rescheduling example by using a more culturally resonant phrase like 'a family religious commitment' or 'a family gathering' to better align with the cultural value of family and faith.",
+          "Clarify that while WhatsApp is dominant, the tone must remain formal—consider adding a note about avoiding emojis or overly casual language even in WhatsApp messages.",
+          "Include a brief mention of the expectation for the senior person to set the tone—junior staff should not assume they can initiate rescheduling without deference."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

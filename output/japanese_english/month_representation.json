@@ -1,0 +1,385 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Month Representation",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether months are written numerically, as abbreviations, or spelled out in full",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal letter to submit to my company's HR department about a leave request. I need to write the date as 'April 15, 2024' in Japanese style. How should I format it properly?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Japanese business correspondence, you should write the date using full kanji for the month. For April 15, 2024, the correct format is 「令和6年4月15日」. The year is written in the current era (Reiwa), and the month must be spelled out in kanji as 4月—never as '4/15' or 'Apr'. This shows respect for formality and attention to detail, which is expected in official documents."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I'm writing an internal memo to my team about a meeting scheduled for May 10, can I use '5/10' instead? It’s not a public document, just a quick reminder in the group chat."
+            },
+            {
+              "role": "assistant",
+              "content": "Even in internal group chats, it's best to use the full kanji format when clarity is important—especially in professional settings. For May 10, write 「5月10日」. While some younger colleagues may use '5/10' in casual messages, using the full form maintains professionalism and avoids ambiguity. If the message is urgent or informal, a brief '5/10' might be acceptable, but in Japanese workplace culture, consistency in formality is valued—even in small interactions."
+            },
+            {
+              "role": "user",
+              "content": "I see. What if I'm writing a personal email to my grandmother to tell her about a family event on June 8? Should I still use 6月8日, or can I be more casual?"
+            },
+            {
+              "role": "assistant",
+              "content": "In personal messages to elders like your grandmother, using the full kanji form—「6月8日」—is actually more respectful and appropriate. It shows care and attention, even in informal settings. Japanese culture places high value on politeness toward seniors, and using the full month name conveys that consideration. A simple '6/8' might seem too casual or even careless in this context. So yes, write it out fully to honor the relationship."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. One last thing—what if I'm writing a bilingual report for a Japanese and international team? Should I use 'June' or '6月'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In bilingual documents, it's best to use the Japanese form—「6月」—in the main text, especially if the document is intended for Japanese readers. If you include the Roman alphabet (e.g., June) for clarity, do so only in footnotes or sidebars, and never as a replacement. For example: 「6月（June）」. Using 'June' in the main body, especially in formal or official contexts, can appear unprofessional or culturally tone-deaf. The priority is preserving Japanese linguistic integrity, even in mixed-language settings."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of full kanji (4月, 5月, 6月) in formal and semi-formal contexts",
+          "Preference for kanji over numerics (e.g., 4/15) in professional and respectful communication",
+          "Avoidance of Roman alphabet abbreviations (e.g., Apr, June) in native Japanese writing",
+          "Cultural emphasis on respect toward elders (e.g., using full form in messages to grandmother)",
+          "Distinction between formal and informal registers, even in internal or personal communication",
+          "Correct era designation (令和6年) for 2024 in formal contexts",
+          "Proper handling of bilingual documents: kanji as primary, Roman alphabet only in supplementary notes"
+        ],
+        "issues": [
+          "Minor: The assistant uses 'Reiwa' in parentheses in the first response, which is accurate but slightly redundant—native speakers would typically just write '令和6年' without transliteration unless addressing non-Japanese readers. However, this is not an error and is contextually appropriate.",
+          "Slight overgeneralization in the second response: 'some younger colleagues may use 5/10'—while true, the phrasing could be slightly more nuanced to reflect that even younger generations often default to 5月10日 in professional digital spaces unless the context is extremely casual (e.g., a private group chat with close peers)."
+        ],
+        "suggestions": [
+          "In the second response, rephrase to: 'While some younger colleagues might use 5/10 in very informal group chats, using 5月10日 maintains professionalism and aligns with cultural expectations of consistency.' This better reflects generational nuance without undermining the core principle.",
+          "In the final response, consider adding a brief note about the use of 'June' in titles or headings for international audiences, as long as it's clearly secondary (e.g., '6月 (June) の会議')—this would further reinforce the bilingual handling nuance.",
+          "Avoid using the word 'unprofessional' in the final response; while accurate, it's a strong judgment. Replace with 'may be perceived as less formal' or 'could be seen as less respectful in official settings' for more balanced tone."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal letter to submit my resignation from my job at a Tokyo-based design firm. I need to include the date of my last working day, which is May 30th. Should I write it as '5/30' or '5月30日'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Japanese correspondence, especially for resignation letters or official documents, it's essential to use the full kanji form: 5月30日. Writing it as '5/30' may appear too casual or even careless in a professional context. Using the full month name shows respect for the recipient and adherence to formal standards."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I’ve noticed some colleagues in our team use '5/30' in internal Slack messages. Is that acceptable in informal settings?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in informal digital communication—like internal team chats, quick reminders, or personal notes—it’s common and acceptable to use the numeric format, such as '5/30'. The context makes the month clear, and brevity is valued. However, even in informal settings, many people still prefer the full kanji when writing dates involving elders, superiors, or in documents that might be shared widely."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about using 'May' or 'May 30'? I’ve seen some international forms that use English month names."
+            },
+            {
+              "role": "assistant",
+              "content": "Using Romanized month names like 'May' or 'Feb' is generally avoided in native Japanese writing, even in bilingual documents. In formal Japanese contexts, such as resignation letters, business reports, or official notices, the use of English month names is considered unprofessional and out of place. If you're submitting a document in Japanese, always use the kanji form—5月30日—regardless of whether the rest of the content is in English."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. So for my resignation letter, I should write '平成35年5月30日' if I’m using the old era, or '令和7年5月30日' for the current one?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. If you're writing in the current era, '令和7年5月30日' is correct. The full format—era, year, month, and day in kanji—reflects precision and respect. This level of formality is expected in resignation letters, especially when addressed to senior management or HR. It demonstrates attention to detail and cultural awareness, which are highly valued in Japanese professional culture."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Full kanji month names (e.g., 5月) are required in formal Japanese documents like resignation letters",
+          "Numeric formats (e.g., 5/30) are acceptable in informal digital communication like Slack",
+          "Romanized month names (e.g., May, Feb) are inappropriate in native Japanese writing, even in bilingual contexts",
+          "Era-based dating (e.g., 令和7年) is standard in formal Japanese documents",
+          "Contextual sensitivity in date formatting reflects deeper cultural values of respect, precision, and hierarchy"
+        ],
+        "issues": [
+          "Minor: The example uses '平成35年' as a hypothetical future date (current era is Reiwa, and Heisei ended in 2019). While this is not a factual error in the context of illustrating format, it could confuse learners about current era usage. However, since the assistant correctly uses '令和7年' for the current era, this is not a major issue.",
+          "Slight overgeneralization in the second assistant response: 'many people still prefer the full kanji'—while accurate, it could be clarified that this preference is stronger among older generations or in high-stakes contexts. However, this does not undermine the overall correctness."
+        ],
+        "suggestions": [
+          "Clarify that '平成35年' is a hypothetical future date to avoid confusion about era timelines, even if the example is illustrative.",
+          "Consider adding a brief note about the transition from Heisei to Reiwa (2019) in training materials to reinforce temporal accuracy.",
+          "Include a subtle mention of generational differences in digital communication habits (e.g., younger professionals using numerics more freely) to enhance nuance without overcomplicating the example."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm helping my friend prepare a job application for a mid-sized company in Kyoto. She’s writing her resume and wants to include her internship dates. Should she write the months using numbers like '4/15–6/30' or use kanji like '4月15日–6月30日'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a formal job application in Japan, it’s best to use the full kanji form for months—so '4月15日–6月30日' is the appropriate choice. Using numerical formats like '4/15' may seem convenient, but in official documents, it can appear too casual or even careless, especially in a competitive job market where attention to detail reflects professionalism."
+            },
+            {
+              "role": "user",
+              "content": "But she’s used to writing dates with slashes in her personal notes and emails. Is it really that big a deal if she uses '4/15' in the resume? She’s worried it might look overly formal or stiff."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common concern, but in Japanese professional culture, formality isn’t about stiffness—it’s about respect and precision. Even if she’s comfortable with slashes in personal messages, switching to full kanji in formal documents shows she understands context and hierarchy. Using '4/15' on a resume might unintentionally signal a lack of cultural awareness, especially since many hiring managers are trained to notice such details. It’s not about being overly rigid—it’s about demonstrating that she can adapt her communication to the situation."
+            },
+            {
+              "role": "user",
+              "content": "What about using Roman letters like 'Apr 15 – Jun 30'? She saw some international companies use that in their job postings."
+            },
+            {
+              "role": "assistant",
+              "content": "Roman letters like 'Apr' or 'Jun' are generally avoided in native Japanese writing, even in international companies based in Japan. While some bilingual materials might include them for clarity, they’re not used in formal Japanese documents like resumes. If your friend uses 'Apr' in her application, it would stand out as foreign or unprofessional—especially in a domestic company. The standard remains full kanji: '4月15日–6月30日'. This is not just tradition—it’s a signal of cultural fluency."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So even though younger people often use slashes in casual texts, she should still use full kanji in her resume. Is there any situation where a numeric format would be acceptable?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—numeric formats like '4/15' are perfectly acceptable in informal contexts: personal messages, group chats with friends, calendar entries on smartphones, or internal team notes. But even then, many Japanese people still prefer the full form when clarity is key—like when scheduling with elders or in professional groups. The rule of thumb is: if the audience might be older, unfamiliar, or if the document is public-facing, use kanji. If it’s a quick note to a close friend, numerics are fine. But for job applications? Always full kanji."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Full kanji (e.g., 4月) is preferred in formal documents like job applications",
+          "Numeric formats (e.g., 4/15) are acceptable in informal contexts but not in formal ones",
+          "Roman letters (e.g., Apr, Jun) are avoided in native Japanese formal writing",
+          "Use of kanji reflects respect, precision, and cultural fluency in professional settings",
+          "Context determines appropriateness: formality, audience, and public vs. private nature of communication",
+          "Younger generations may use numerics casually, but still revert to kanji in formal contexts"
+        ],
+        "issues": [
+          "Minor: The term 'stiff' in the assistant's second response may carry a slightly negative connotation not fully aligned with Japanese cultural values—'formal' is preferred over 'stiff' in professional contexts. However, this is a subtle nuance and does not undermine the core message.",
+          "Slight overgeneralization in the final response: 'many Japanese people still prefer the full form when clarity is key'—while accurate, it could be more precisely framed as 'common practice among professionals and elders' to reflect social hierarchy more explicitly."
+        ],
+        "suggestions": [
+          "Replace 'stiff' with 'professional' or 'appropriate' to better align with Japanese cultural values around formality as a sign of respect, not rigidity.",
+          "Clarify that the preference for kanji in clarity-critical situations is especially strong in intergenerational or hierarchical communication (e.g., with seniors or superiors).",
+          "Consider adding a brief mention of how the use of kanji also aids in avoiding ambiguity (e.g., 1/2 could mean January 2 or February 1), reinforcing the practical rationale behind the cultural norm."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal letter to submit my resignation from my company. I'm not sure how to write the date properly. Should I use 'April 15, 2024' or '4/15'? I want it to look professional."
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Japanese business correspondence, it's important to use the full kanji month name rather than numbers or Roman letters. For your resignation letter, you should write the date as '令和6年4月15日' (Reiwa 6, April 15). Using '4/15' would be considered too casual for this context, even if it's common in internal notes or personal messages."
+            },
+            {
+              "role": "user",
+              "content": "I see. So even in the body of the letter, I shouldn’t use '4/15' if I’m referring to the month? What if I’m writing to a younger colleague or in a more informal email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even in internal or semi-formal communication, it's still better to use the full kanji form—'4月'—when clarity and respect are important. For example, in an email to a younger colleague, you might write '4月の予定について' (Regarding the schedule for April) rather than '4/15' or 'Apr'. Using '4/15' could still seem careless, especially if the recipient is a senior or if the content is part of a record. The exception is in very casual settings—like a quick text to a close friend—where '15日' alone may suffice if the month is obvious."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I’m writing a resignation letter, I should also avoid abbreviations like 'Apr' or '4M' entirely?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Abbreviations like 'Apr' or '4M' are not used in native Japanese writing, especially in formal or professional contexts. Even in bilingual documents, the full kanji form '4月' is standard. Using Roman abbreviations—even in a document that includes English—can signal a lack of cultural awareness and may undermine your professionalism. Stick to '令和6年4月15日' for formal letters, and '4月15日' for internal documents where the year is already clear."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—what if I’m writing a personal note to my supervisor, thanking them for their guidance? Can I use '4/15' then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even in a personal note to a supervisor, it’s best to maintain formality. Use '4月15日' instead of '4/15'. The month is still part of a respectful, polished communication. In Japanese culture, the way you write matters—it reflects your attention to detail and respect for hierarchy. So while the tone can be warmer, the format should remain appropriate. A small gesture like using the full month name shows thoughtfulness and cultural sensitivity."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Full kanji month names (e.g., 4月) are preferred in formal and professional contexts",
+          "Numeric formats like '4/15' are acceptable in casual or internal communication but inappropriate in formal documents",
+          "Abbreviations (e.g., Apr, 4M) are not used in native Japanese writing, especially in formal or professional settings",
+          "Use of Roman letters in Japanese formal documents signals lack of cultural awareness",
+          "Even in semi-formal or personal notes to superiors, full month names are expected to maintain respect and professionalism",
+          "The transition from historical eras (e.g., Heisei → Reiwa) is correctly referenced in formal date formatting"
+        ],
+        "issues": [
+          "Minor: The example uses '令和6年4月15日' without specifying that '令和' is only valid from May 2019 onward. Since the year is 2024, this is correct, but if used in a training example with a different year, it could mislead. However, this is not an issue here.",
+          "Slight overgeneralization in the assistant's final response: 'Even in a personal note to a supervisor, it’s best to maintain formality'—while accurate in most cases, some very close supervisor-employee relationships in younger generations might allow for slightly more relaxed writing. Still, the guidance remains culturally appropriate and safe."
+        ],
+        "suggestions": [
+          "Consider adding a brief note in training data documentation about era transitions (e.g., Heisei ended in 2019, Reiwa began) to reinforce temporal accuracy.",
+          "In future examples, include a contrast between formal letter vs. internal memo vs. personal text to further illustrate register differences.",
+          "Clarify that while '4月15日' is correct, '4/15' is never used in native Japanese writing—even in informal notes—unless in very specific digital contexts like calendar apps, where it's understood as shorthand."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal letter to submit to my company's HR department about a leave request. It's for the period from April 10th to April 15th. Should I write the dates using numbers like '4/10' or should I spell out the month in kanji?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal business correspondence in Japan, it's essential to use the full kanji form for months. For your letter, you should write '4月10日' instead of '4/10'. Using the numeric format like '4/10' would be considered too casual and could undermine the professionalism of your request, especially in official documents."
+            },
+            {
+              "role": "user",
+              "content": "I see. So even though I'm writing in English, should I still use the Japanese kanji? The company is multinational, but the HR department is based in Tokyo."
+            },
+            {
+              "role": "assistant",
+              "content": "Even in bilingual contexts, when addressing Japanese institutions or departments in Japan—especially in formal documents like leave requests—it's standard to use Japanese script for dates. So you should write '4月10日' and '4月15日' in the Japanese section of your letter. If you're including an English version, you can add the Romanized date in parentheses, like 'April 10th (4月10日)', but the primary format must be in kanji. This shows respect for local conventions and attention to detail."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about if I’m sending a quick email to my team leader who’s in Osaka? I just want to say I’ll be out next week. Can I use '4/12' then?"
+            },
+            {
+              "role": "assistant",
+              "content": "In internal, informal communication with colleagues—especially in digital messages like email or chat—it’s acceptable to use the numeric format like '4/12', especially if the month is already clear from context. However, even in casual messages, using '4月12日' is still preferred, particularly when communicating with seniors or in professional settings. It reflects consideration and proper etiquette. So while '4/12' isn’t strictly wrong in a quick message, '4月12日' is more appropriate and shows cultural awareness."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve also seen some younger people use 'Apr' or 'Feb' in their social media posts. Is that okay in those contexts?"
+            },
+            {
+              "role": "assistant",
+              "content": "In personal, informal digital spaces like social media or messaging apps, you might see Roman abbreviations like 'Apr' or 'Feb' used—especially among younger generations. However, this is still relatively rare in native Japanese writing and is typically limited to bilingual or international contexts. In purely Japanese content, even informal posts tend to use kanji (e.g., 4月) or full numerals (e.g., 4月12日). Using 'Apr' in a Japanese-language post would feel out of place and might suggest a lack of familiarity with native writing norms. So while it may be understood, it’s not considered natural or polished."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps. So to summarize: full kanji for formal documents, numerics are okay in quick internal messages, and Roman letters should be avoided unless in international bilingual materials."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Your summary captures the core principle: clarity, formality, and respect for context. In Japanese culture, the way we write dates reflects deeper values—attention to hierarchy, precision, and appropriateness. Using the right format isn’t just about correctness; it’s a way of showing respect to the recipient and the situation. Stick with 4月10日 in formal writing, 4/10 in quick internal messages (though 4月10日 is still better), and avoid Roman letters in native Japanese text. You’re on the right track."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.78,
+        "cultural_elements_verified": [
+          "Full kanji (e.g., 4月) is required in formal business documents",
+          "Numeric format (e.g., 4/10) is acceptable in informal internal communication",
+          "Roman letter abbreviations (e.g., Apr, Feb) are rare and inappropriate in native Japanese writing",
+          "Use of kanji in bilingual contexts reflects respect for local norms",
+          "Preference for kanji even in casual digital messages when showing respect or formality",
+          "Cultural values of precision, hierarchy, and appropriateness in written communication"
+        ],
+        "issues": [
+          "Minor: The assistant uses '4/10' in the first response without explicitly noting that it's only acceptable in informal contexts—though the broader context clarifies this, it could be slightly more precise.",
+          "Slight overgeneralization in the final summary: '4/10 in quick internal messages (though 4月10日 is still better)'—while accurate, it might benefit from emphasizing that '4月10日' is the preferred standard even in internal messages unless brevity is critical."
+        ],
+        "suggestions": [
+          "In the first response, explicitly state that '4/10' is only acceptable in informal, non-official, and contextually clear settings to reinforce the hierarchy of formality.",
+          "Add a brief note about the use of Arabic numerals in digital calendars (e.g., in iCalendar or Outlook) where '4/10' is common but still considered less formal than kanji.",
+          "Consider including a mention of how the choice of format can signal social awareness—e.g., using kanji when writing to seniors or superiors, even in internal messages, to show deference."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

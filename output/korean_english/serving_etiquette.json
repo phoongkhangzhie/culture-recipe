@@ -1,0 +1,106 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Serving Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms around offering and serving food and drink to guests, including order of service, refills, and insistence",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my friend Min-joo’s family for the first time this weekend, and I’m nervous about how to behave during dinner. They’re offering soju and food, and I don’t want to offend anyone. Can you guide me on the proper etiquette?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course—this is a meaningful moment of connection. The host, usually the eldest or most senior person, will serve others before themselves. When they pour soju, they’ll often use both hands—a quiet but powerful sign of respect. You should accept the drink with both hands too, even if it’s just a small sip. This gesture shows you honor the moment and the person serving you."
+            },
+            {
+              "role": "user",
+              "content": "What if I don’t want to drink more soju? I’m not a big drinker, and I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s completely okay. If offered a refill, gently wave your hand over the cup with a soft smile and say, '정말 고마워요, 이 정도면 충분해요.' This is the most natural and polite way to decline. A small bow or respectful nod works too—keep your eyes soft and your expression warm. In Korean culture, sincerity is shown not just through words, but through gentle eye contact and a calm, appreciative presence."
+            },
+            {
+              "role": "user",
+              "content": "And what about food? I’ve heard you shouldn’t eat from the top of the bowl. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes. Always eat from the side of the rice or soup bowl—never from the center or top. That’s reserved for the host. Also, leave a little food on your plate. It’s a sign of respect and harmony. An empty plate might imply the host didn’t serve enough, which could unintentionally cause concern. So, keeping a small amount is the safer, more respectful choice."
+            },
+            {
+              "role": "user",
+              "content": "So I should let the host refill my cup after I drink?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Never pour your own drink. The host or a senior guest will refill it after you take a sip. A small nod or a quiet '감사합니다' is perfect. The host will notice and adjust accordingly—Korean hosts are very observant of guests’ cues."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So accepting a little more food or drink is about showing respect, not just being polite?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—more than politeness, it’s about *jeong*, the deep emotional bond between people. The host offers with care, and accepting even a small bite or sip shows you’re present and engaged. If food is offered again, taking just one grain of rice can be enough to maintain the flow. It’s not about consumption—it’s about shared presence. The host may say ‘조금만 더 드세요’ to keep the warmth going. A small sip or bite honors that spirit of care and connection. And if they keep offering even after your polite refusal, it’s not pressure—it’s *jeong*. Just gently acknowledge it with a smile and a soft '정말 고마워요'—you’re showing you see their kindness, and that’s what matters most. Remember: a warm smile, soft eyes, and a calm tone carry more weight than words alone."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Host serves guests before themselves, especially elders or seniors",
+          "Serving with both hands is a sign of respect",
+          "Guests should not refill their own drinks",
+          "Refusing a refill should be done gently with indirect language",
+          "Leaving a small amount of food on the plate is respectful",
+          "Eating from the side of the bowl, not the center, is proper",
+          "Use of phrases like '정말 고마워요, 이 정도면 충분해요' for polite refusal",
+          "Emphasis on *jeong* (emotional connection) as the core of hospitality",
+          "Hosts are observant and respond to subtle cues",
+          "Small gestures like a nod or soft smile carry cultural weight"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: The example assumes the host is always the eldest, which is common but not universal—some families may have younger hosts who are still respected. However, this is a minor nuance and does not undermine accuracy.",
+          "The phrase '정말 고마워요, 이 정도면 충분해요' is natural and accurate, but in very formal or traditional settings, a more deferential phrasing like '정말 고맙습니다, 이 정도면 충분해요' might be preferred. However, the current version is still acceptable in most contexts."
+        ],
+        "suggestions": [
+          "Add a brief note about regional variations (e.g., Seoul vs. rural areas) to reinforce cultural nuance without overcomplicating.",
+          "Include a subtle mention of the host’s role in monitoring the guest’s comfort level—this reinforces the observational nature of Korean hospitality.",
+          "Consider adding a sentence about the use of honorifics in speech (e.g., using -요 vs. -습니다) depending on the host’s age and relationship to the guest, to deepen linguistic authenticity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 10
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 25,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

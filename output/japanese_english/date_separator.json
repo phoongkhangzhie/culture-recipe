@@ -1,0 +1,371 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Date and Number Separator",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Characters used to separate date or number components, such as slashes, hyphens, periods, or commas",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "raw": "```json\n{\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"I'm preparing a formal business proposal for a client in Tokyo, and I need to include the submission date. I wrote it as 4/5/2024—does that look correct in Japanese business context?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"In Japanese business writing, the date format must be standardized to avoid confusion. The correct format is YYYY/MM/DD, so your date should be written as 2024/04/05. Using 4/5/2024 could be misinterpreted—especially in official documents—because the month and day order might be read differently depending on the reader’s cultural background. Using the full four-digit year and zero-padded months and days ensures clarity and professionalism.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Got it. I’ll adjust that. Also, I’m listing the company’s annual revenue as 10,000,000,000 yen. Should I write it with commas or use kanji?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"In formal Japanese financial documents, commas are not used as thousand separators. Instead, the traditional system with 'man' (万) and 'oku' (億) is preferred. For your example, 10,000,000,000 yen should be written as 100億円 (hyaku oku en). This format is standard in reports, contracts, and official presentations. Using Arabic numerals with 'man' and 'oku' maintains both precision and cultural authenticity. If you're writing in a more ceremonial or traditional context, you might use kanji numerals (e.g., 百億円), but for business proposals, the mixed format with Arabic numerals and kanji units is most appropriate.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Thank you—this is very helpful. One last thing: I saw a train schedule online with a date like 2024-04-05. Is that acceptable in Japan?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"In official Japanese contexts like train schedules, government forms, or digital systems, the forward slash (/) is the only accepted date separator. The format 2024/04/05 is correct. Hyphens (-) are generally avoided in formal writing and are typically reserved for technical contexts such as URLs, file names, or internal coding. Using a hyphen in a formal document like a business proposal or application could appear unprofessional or out of place, even if the date is technically clear. Always stick to YYYY/MM/DD with slashes for consistency and cultural alignment.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"I see. So to summarize: always use YYYY/MM/DD with slashes, avoid hyphens and commas, and use 'man' or 'oku' for large numbers. Is that right?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Exactly. To recap:  \n- Use YYYY/MM/DD with forward slashes (e.g., 2024/04/05).  \n- Never use hyphens (-) or periods (.) as date separators—those are reserved for technical or informal contexts.  \n- For large numbers, use the traditional units: 万 (man) for ten thousand, 億 (oku) for one hundred million.  \n- Arabic numerals are standard in business and digital contexts; kanji numerals are reserved for formal or ceremonial writing.  \nThis precision isn’t just about rules—it reflects the Japanese cultural value of clarity, respect for structure, and attention to detail in professional and public life.\"\n    }\n  ]\n}\n```"
+        },
+        "cultural_elements": [
+          "Use YYYY/MM/DD with forward slashes (e.g., 2024/04/05).  ",
+          "Never use hyphens (-) or periods (.) as date separators—those are reserved for technical or informal contexts.  ",
+          "For large numbers, use the traditional units: 万 (man) for ten thousand, 億 (oku) for one hundred million.  ",
+          "Arabic numerals are standard in business and digital contexts; kanji numerals are reserved for formal or ceremonial writing.  "
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Standard date format in Japan is YYYY/MM/DD using forward slashes",
+          "Hyphens are avoided in formal writing and reserved for technical contexts",
+          "Periods are used only as decimal points, not as separators",
+          "Large numbers use 'man' (万) and 'oku' (億) instead of commas",
+          "Arabic numerals are standard in business and digital contexts",
+          "Kanji numerals are used in ceremonial or traditional contexts",
+          "Zero-padding in months and days (e.g., 04, 05) enhances clarity in formal writing",
+          "Cultural emphasis on precision, structure, and professionalism in formal documentation"
+        ],
+        "issues": [
+          "Minor: The assistant's final summary could briefly acknowledge that while the YYYY/MM/DD format is standard, some informal digital platforms (e.g., social media) may occasionally use hyphens—though this is not recommended in formal contexts. However, this is a nuance not essential to the core training objective.",
+          "Slight overgeneralization: The claim that 'kanji numerals are reserved for formal or ceremonial writing' could be refined—kanji numerals are still used in some financial contexts (e.g., checks, invoices) in combination with Arabic numerals, though the mixed format is more common. Still, the example does not misrepresent this."
+        ],
+        "suggestions": [
+          "Include a brief note in the assistant’s response about the occasional use of hyphens in informal digital contexts (e.g., social media) to acknowledge real-world variation without undermining the rule, for greater nuance.",
+          "Consider adding a short example of a formal document (e.g., a bank statement or government form) that uses the correct format to reinforce authenticity.",
+          "In future examples, include a contrast between formal and informal usage (e.g., train schedule vs. personal message) to deepen the cultural dimension of context sensitivity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm trying to fill out a government form for a residency permit renewal in Tokyo, but I'm not sure about the date format. I wrote my birth date as 4/5/2000. Is that correct?"
+            },
+            {
+              "role": "assistant",
+              "content": "In official Japanese documents, dates are formatted as YYYY/MM/DD using forward slashes. Your date should be written as 2000/04/05. Writing it as 4/5/2000 could cause confusion because the order isn't standardized in Japan—this format is typically used in Western countries and may be misinterpreted or rejected without comment."
+            },
+            {
+              "role": "user",
+              "content": "Ah, I see. So if I'm listing the date of my visa application, should I write it as 2024/04/05? And what about numbers—like my annual income? I wrote it as 10,000,000 yen. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, 2024/04/05 is correct for the application date. For numbers, Japanese formal writing avoids commas entirely. Instead, large numbers use traditional units: 10,000 yen is 一万円, and 10,000,000 yen is 一千万円. In official forms, you'd write it as 一千万円. Arabic numerals like 10000000 are acceptable in digital systems, but only when formatted without commas—so 10000000 is fine, but 10,000,000 is not."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I should never use hyphens or periods as separators either? I’ve seen them in some online forms—like 2024-04-05 or 2024.04.05."
+            },
+            {
+              "role": "assistant",
+              "content": "Correct. Hyphens and periods are not used in formal Japanese date formatting. Hyphens are reserved for technical contexts like URLs or file names, and periods are strictly decimal points (e.g., 3.14). Using them in dates—like 2024-04-05—may be technically readable but appears unprofessional in official or bureaucratic settings. Stick to YYYY/MM/DD with forward slashes to maintain clarity and cultural alignment."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—what if I’m writing a letter to my local ward office? Should I use kanji for the date, like 2024年4月5日?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in formal written correspondence—especially letters to government offices—using kanji for the date is appropriate and expected. So 2024年4月5日 is perfectly correct. It conveys respect and formality. However, in digital forms or online applications, stick to the numeric format: 2024/04/05. The choice depends on context: kanji for handwritten or formal letters, Arabic numerals with slashes for digital and official submissions."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Standard Japanese date format is YYYY/MM/DD using forward slashes",
+          "Use of kanji for dates in formal written correspondence (e.g., 2024年4月5日)",
+          "Avoidance of commas as thousand separators in formal writing",
+          "Use of traditional units (万, 億) for large numbers in formal contexts",
+          "Hyphens and periods not used as date separators in official settings",
+          "Decimal point usage restricted to periods (e.g., 3.14)",
+          "Contextual distinction between digital forms (numeric) and formal letters (kanji)"
+        ],
+        "issues": [
+          "Minor: The assistant's phrasing 'appears unprofessional' in the final response is slightly subjective but acceptable in context; native speakers would understand the nuance.",
+          "Slight overgeneralization in the second response: 'Arabic numerals like 10000000 are acceptable in digital systems'—while true, in many official digital forms, even Arabic numerals are expected to be formatted without commas, and some systems may reject non-standard input. This could be clarified."
+        ],
+        "suggestions": [
+          "Clarify that while Arabic numerals without commas are accepted in digital systems, some online forms may have strict input validation—e.g., rejecting 10000000 if it lacks formatting guidance.",
+          "Add a brief note about regional or institutional variation (e.g., some local offices may accept 2024年4月5日 in digital forms, but it's safer to use YYYY/MM/DD).",
+          "Include a small example of how 10,000,000 yen would be written in a formal letter: 一千万円 (not 10000000円), to reinforce context-specific usage."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm trying to fill out a visa application form for Japan, and I'm not sure about the date format. Should I write it as 04/05/2024 or 2024/04/05? I've seen both online, but I don't want to make a mistake."
+            },
+            {
+              "role": "assistant",
+              "content": "In Japan, the correct date format for official documents is YYYY/MM/DD — so 2024/04/05. Using this format ensures clarity and avoids confusion, especially since the month-day order differs from Western conventions. Writing it as 04/05/2024 might be misinterpreted, even if you mean April 5th, because Japanese systems prioritize year-month-day sequence."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about numbers? I need to list my annual income. Should I write 1,200,000 or 120万? And should I use commas?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Japanese contexts, commas are not used as thousand separators. Instead, numbers are expressed using the traditional units: 万 (man) for ten thousand and 億 (oku) for one hundred million. So, 1,200,000 should be written as 120万. This is standard in financial documents, tax forms, and official correspondence. Using Arabic numerals with 万 is perfectly appropriate — just avoid commas entirely."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I also saw some forms with dates written in kanji, like 2024年4月5日. When should I use that instead of numbers?"
+            },
+            {
+              "role": "assistant",
+              "content": "The kanji format — 2024年4月5日 — is used in more formal or handwritten contexts, such as legal documents, contracts, or invitations. In digital forms or official applications, the numeric format YYYY/MM/DD is preferred and expected. However, if you're writing a letter by hand or filling out a ceremonial form, using the kanji version adds respect and formality. For your visa application, stick with 2024/04/05."
+            },
+            {
+              "role": "user",
+              "content": "One last thing — I noticed some people use hyphens in dates, like 2024-04-05. Is that acceptable?"
+            },
+            {
+              "role": "assistant",
+              "content": "Hyphens are generally avoided in formal Japanese writing. They’re typically reserved for technical contexts like URLs, file names, or programming. In official documents, dates should use forward slashes only — never hyphens or periods. So, 2024/04/05 is correct; 2024-04-05 would be considered informal or inappropriate in this context."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of YYYY/MM/DD date format in official documents",
+          "Avoidance of hyphens (-) as date separators in formal writing",
+          "Use of forward slash (/) as the sole accepted date separator",
+          "Preference for 万 (man) and 億 (oku) over commas in number formatting",
+          "Avoidance of commas (,) as thousand separators in formal contexts",
+          "Use of kanji characters (年, 月, 日) in formal or handwritten documents",
+          "Cultural emphasis on precision and clarity in formal communication",
+          "Contextual appropriateness of formatting based on medium (digital vs. handwritten)",
+          "Implicit hierarchy and respect embedded in correct formatting conventions",
+          "Realistic scenario involving visa application with authentic cultural friction points"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Standard date format in Japan is YYYY/MM/DD",
+          "Use of forward slash (/) as the only accepted date separator in official contexts",
+          "Avoidance of hyphens (-) and periods (.) as date separators",
+          "Use of 万 (man) and 億 (oku) for large number representation instead of commas",
+          "Arabic numerals are standard in formal documents, with kanji used in ceremonial or handwritten contexts",
+          "Year-month-day order reflects cultural emphasis on clarity and hierarchy",
+          "Kanji date format (2024年4月5日) is appropriate for formal/handwritten documents but not digital forms"
+        ],
+        "issues": [
+          "Minor: The assistant could briefly mention that while 万 is standard, it is often used in combination with Arabic numerals (e.g., 120万), which is already correctly stated, but could be reinforced as a key convention.",
+          "Slight risk of overgeneralization: The statement that 'hyphens are generally avoided' is accurate, but in some digital systems (e.g., Japanese websites or apps), hyphens may appear in URLs or internal data formats — though not in user-facing form inputs. This nuance is not critical but could be clarified."
+        ],
+        "suggestions": [
+          "Add a brief note that in some digital systems, hyphens may appear in backend data or URLs, but never in user-input fields for official forms.",
+          "Include a sentence emphasizing that the use of 万 and 億 is not just stylistic but deeply rooted in Japan’s traditional counting system, reinforcing cultural continuity.",
+          "Consider adding a small example of how 1,200,000 is written in different contexts (e.g., 120万 in a bank statement vs. 1200000 in a database) to reinforce contextual appropriateness."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm trying to fill out a government form for a residence permit renewal, but I'm not sure about the date format. Should I write it as 04/05/2024 or 2024/04/05?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Japan, official documents use the YYYY/MM/DD format—so 2024/04/05 is correct. Writing it as 04/05/2024 could be misread, especially since the month-day order differs from Western conventions. Using the year-first structure avoids confusion and shows attention to formal standards."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the income section? I need to write 120,000 yen. Should I use a comma, like 120,000?"
+            },
+            {
+              "role": "assistant",
+              "content": "No commas are used in Japanese number formatting. Instead, you’d write it as 十二万円 (jūniman en) in kanji for formal documents, or numerically as 120000. For larger amounts, like 10 million yen, you’d write 一千万円 or 10000000. The traditional units 'man' (万) and 'oku' (億) are preferred in official contexts."
+            },
+            {
+              "role": "user",
+              "content": "I see. So if I’m writing a letter to my local ward office, should I use kanji numerals or Arabic numerals?"
+            },
+            {
+              "role": "assistant",
+              "content": "For formal letters to government offices, Arabic numerals are standard and acceptable—especially in the income or date fields. However, if the letter is more ceremonial, like a formal petition or a traditional invitation, kanji numerals (e.g., 一, 二, 三) may be used for aesthetic and respectful effect. Stick to Arabic numerals in official forms unless otherwise specified."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—can I use a hyphen in the date, like 2024-04-05?"
+            },
+            {
+              "role": "assistant",
+              "content": "Hyphens are generally avoided in formal Japanese writing. They’re associated with technical contexts like URLs or file names. In official documents, train schedules, or bank statements, only forward slashes (/) are used as date separators. Using a hyphen might make your form appear informal or technically careless."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Standard Japanese date format is YYYY/MM/DD with forward slash",
+          "Use of Arabic numerals in official documents and forms",
+          "Avoidance of commas as thousand separators in Japanese number formatting",
+          "Use of 'man' (万) and 'oku' (億) units for large numbers in formal contexts",
+          "Kanji numerals (e.g., 一, 二, 三) used in ceremonial or traditional writing",
+          "Hyphens avoided in formal writing; associated with technical or informal contexts",
+          "Periods used only as decimal points, not as separators",
+          "Year-first date order prevents ambiguity and reflects cultural emphasis on clarity and hierarchy"
+        ],
+        "issues": [
+          "Minor: The assistant mentions 'jūniman en' (十二万円) as an option in formal documents, but in actual government forms, Arabic numerals (120000) are almost universally used—even in formal contexts. While kanji is acceptable in some ceremonial letters, stating it as standard for formal documents may mislead. A more precise phrasing would clarify that Arabic numerals are the norm in official forms, and kanji is reserved for specific traditional or aesthetic purposes.",
+          "Slight overgeneralization: The assistant says 'stick to Arabic numerals unless otherwise specified'—this is accurate, but could be strengthened by noting that even in formal letters, Arabic numerals are preferred for numbers related to data (income, dates, IDs), while kanji may appear in phrases like '第3回' (the third time) or '三日目' (the third day) for stylistic reasons."
+        ],
+        "suggestions": [
+          "Revise the response to clarify that while kanji numerals (十二万円) are grammatically correct and culturally appropriate in certain ceremonial or traditional contexts, they are not standard in official forms—Arabic numerals (120000) are the default and expected in all government documentation.",
+          "Add a brief note that in formal Japanese writing, numbers like '10000' are often written as '一万' only in literary or poetic contexts, not in administrative forms.",
+          "Include a subtle distinction: kanji numerals are used for ordinal numbers in titles (e.g., 第一, 第二), but not for amounts in official forms.",
+          "Consider adding a small example of a formal letter where kanji numerals might appear (e.g., '本年は三億円の予算が割り当てられました'—this year, three hundred million yen was allocated) to illustrate context-specific usage without overgeneralizing."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm trying to fill out a government application for a resident registration update, but I'm not sure about the date format. I wrote my birth date as 4/5/2000. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Japan, the standard date format for official documents is YYYY/MM/DD, so your date should be written as 2000/04/05. Writing it as 4/5/2000 could be misinterpreted—especially since the month and day are reversed from the Japanese convention. This is a common mistake for foreign applicants, so it's good you're checking."
+            },
+            {
+              "role": "user",
+              "content": "Ah, I see. So I should always use four digits for the year and leading zeros for month and day? What about using hyphens or periods instead of slashes?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, always use four digits for the year and leading zeros for single-digit months and days—so April 5 becomes 04 and 05. As for separators, only forward slashes (/) are used in formal and official contexts. Hyphens (-) and periods (.) are not standard; they’re typically reserved for technical or informal uses like URLs or file names. Using a hyphen or period in a government form might cause confusion or delay processing."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Also, I need to include my annual income. It’s 1,250,000 yen. Should I write that with a comma?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Japanese financial writing, commas are not used as thousand separators. Instead, large numbers are expressed using traditional units: 1,250,000 yen is written as 125万円 (125 man-en). For numbers over 10,000, the 'man' (万) unit is standard—so 10,000 is 一万, 100,000 is 十万, and so on. This reflects a long-standing cultural and numerical tradition."
+            },
+            {
+              "role": "user",
+              "content": "So if my income were 1.2 billion yen, how would that be written?"
+            },
+            {
+              "role": "assistant",
+              "content": "1.2 billion yen would be written as 12億円 (12 oku-en). The 'oku' (億) unit represents 100 million, so 12億 = 1.2 billion. This system is still widely used in official documents, news reports, and even in everyday conversation when discussing large sums. It’s not just a formality—it’s a way of expressing scale with cultural precision."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. That’s really helpful. I’ll make sure to use 2000/04/05 and 125万円 for my application. Is there anything else I should watch out for when filling out forms?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—always double-check the formatting of dates and numbers. Even small inconsistencies can signal a lack of familiarity with formal conventions, which may prompt additional review. The attention to detail reflects respect for the system and the people who process the forms. When in doubt, follow the format used in official examples—like those on the Ministry of Justice website or local city hall portals. Consistency is key."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Standard Japanese date format is YYYY/MM/DD with forward slashes",
+          "Use of leading zeros for month and day (e.g., 04, 05)",
+          "Avoidance of hyphens and periods in official dates",
+          "Use of 'man' (万) and 'oku' (億) for large numbers instead of commas",
+          "Formal financial writing uses kanji numerals and traditional units",
+          "Cultural emphasis on precision, consistency, and respect for formal systems in official contexts"
+        ],
+        "issues": [
+          "Minor: The assistant refers to 'kanji numerals' in the context of numbers (e.g., 一, 二), but in the response, it uses Arabic numerals (125万円) which is correct for modern financial writing. While this is accurate, the explanation could clarify that Arabic numerals are standard in most official contexts, and kanji numerals are reserved for ceremonial or stylistic use—though this is not a significant error.",
+          "Slight overgeneralization: The assistant states that 'commas are not used' in all contexts. While true in formal writing, some digital systems (e.g., spreadsheets or internal databases) may use commas, though they are not accepted in official submissions. This nuance is minor and does not undermine accuracy."
+        ],
+        "suggestions": [
+          "Clarify in the response that while kanji numerals (一, 二, 三) are used in traditional or poetic contexts, modern official documents use Arabic numerals (1, 2, 3) paired with 'man' and 'oku' units.",
+          "Add a brief note that in some digital forms, users might see placeholders with commas, but these should be replaced with the correct Japanese format before submission.",
+          "Consider including a small example of a traditional vs. modern number format (e.g., 一万 vs. 10000) to reinforce the cultural distinction."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

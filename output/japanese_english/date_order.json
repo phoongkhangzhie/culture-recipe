@@ -1,0 +1,398 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Date Order Convention",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "The sequence of day, month, and year components in written date representations (e.g., DD/MM/YYYY vs MM/DD/YYYY)",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal invitation for my aunt's 60th birthday celebration in Tokyo. The event is on April 5th, 2025. I want to make sure the date is written correctly in Japanese. Should I write it as 4月5日 or something more formal?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal invitation in Japan, use the full date format with the nengō (era name). Since 2025 is the 7th year of Reiwa, write it as: 令和七年四月五日. This format is standard in official and ceremonial contexts, reflecting Japan’s cultural emphasis on hierarchy, continuity, and contextual clarity."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I should write it in kanji, not numbers? And is the year-first order important?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—use kanji for all components: 令和七年四月五日. No spaces between the elements. The year comes first, then month, then day. This order isn’t just a rule—it reflects a cultural mindset: placing the broader context (the year) before the specific (the day). Reversing it, like 5日（4月）, is inappropriate even in informal notes, as it disrupts the expected logical flow."
+            },
+            {
+              "role": "user",
+              "content": "I see. What if I'm sending a digital message to a younger cousin who lives abroad? Can I use a simpler format like 2025/04/05?"
+            },
+            {
+              "role": "assistant",
+              "content": "In digital messages to younger relatives abroad, 2025/04/05 is acceptable if clarity is prioritized—especially in shared calendars or multilingual platforms. However, if the message is part of a family announcement or shared in a Japanese context (e.g., a group LINE chat), it’s best to stick with 令和七年四月五日 to maintain cultural consistency and respect for tradition. The key is context: when communicating within Japanese cultural frameworks, formality matters."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—what if I accidentally wrote it as 5/4/2025 in a draft? Would that be seen as a serious mistake?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Japanese documents, 5/4/2025 is considered inappropriate—it’s not just a formatting error, but a breach of cultural expectation. It signals unfamiliarity with local conventions and may undermine credibility in official or ceremonial settings. However, in international digital exchanges with non-Japanese audiences, especially in casual emails or shared calendars, it’s often tolerated as long as the meaning is clear. The key is consistency: avoid mixing formats within a single document. And remember: in formal writing, never use spaces or punctuation—write it as 令和七年四月五日, not 2025年 4月 5日."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. How would this date be spoken aloud in a formal setting?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal announcements—like at a ceremony or in a reading aloud—this date would be pronounced as: *Reiwa nana-nen shi-gatsu go-nichi*. The full words are used: 令和 (Reiwa), 七年 (nana-nen), 四月 (shi-gatsu), 五日 (go-nichi). This spoken form reinforces the cultural weight of the format and is standard in public and ceremonial contexts."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "year-month-day order (YYYY年MM月DD日)",
+          "use of nengō (era name) in formal contexts",
+          "kanji-only format with no spaces or punctuation",
+          "pronunciation of full date as 'Reiwa nana-nen shi-gatsu go-nichi' in formal settings",
+          "context-dependent appropriateness of simplified formats like 2025/04/05",
+          "avoidance of reversed or mixed date formats",
+          "cultural significance of placing broader context (year) before specific details (day)",
+          "shared understanding in informal speech vs. strict formality in official writing"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.78,
+        "cultural_elements_verified": [
+          "Date order follows year-month-day (YYYY年MM月DD日)",
+          "Use of nengō (Reiwa) in formal contexts",
+          "Formal format required in invitations, ceremonies, and official documents",
+          "Kanji used for all components (no numerals)",
+          "No spaces or punctuation in formal writing",
+          "Spoken form uses full words: Reiwa nana-nen shi-gatsu go-nichi",
+          "Contextual flexibility in informal vs formal settings",
+          "Cultural significance of hierarchical date order (context before detail)",
+          "Generational and situational variation in format usage",
+          "Strict avoidance of Western date formats (DD/MM/YYYY or MM/DD/YYYY) in formal contexts"
+        ],
+        "issues": [
+          "Minor: The assistant uses '2025/04/05' in the digital message example without explicitly noting that even in informal digital contexts, Japanese users often prefer full kanji formats like 令和7年4月5日 in culturally relevant group chats (e.g., LINE), even if younger generations use numbers. The suggestion to use '2025/04/05' is accurate but slightly underemphasizes the cultural preference for kanji in Japanese digital communication.",
+          "Slight risk of overgeneralization: The assistant states that '5/4/2025 is inappropriate even in informal notes'—while technically correct in formal writing, in *very* casual Japanese notes (e.g., personal sticky notes), abbreviated formats like '5日（4月）' are sometimes seen, though not in formal or public-facing materials. This is a minor nuance, but worth noting."
+        ],
+        "suggestions": [
+          "Clarify that in digital messaging (e.g., LINE), even among youth, the full kanji format 令和7年4月5日 is still preferred for family events and cultural occasions—numbers like '2025/04/05' are more common in international or non-Japanese contexts.",
+          "Add a brief note that while '5日（4月）' is acceptable in *very* informal personal notes, it is never used in formal or public-facing materials and should be avoided in any context where cultural respect is expected.",
+          "Consider including a subtle mention of the difference between '年' (nen) and '年' (nichi) in spoken form—though the assistant correctly uses 'nana-nen', a brief note on why 'nen' is used (as the year unit) could reinforce linguistic depth."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal invitation for my aunt's 60th birthday celebration in Tokyo next month. I want to make sure the date is written correctly in Japanese. The event is on April 15, 2025. How should I write it?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal invitation in Japan, you should write the date using the year-month-day order with kanji and the nengō (era name). Since 2025 is the 7th year of Reiwa, the correct format is: 令和7年4月15日. This follows the cultural norm of placing the most comprehensive context first—the era and year—before the specific month and day."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I include the day of the week too? And is it okay to use Arabic numerals instead of kanji?"
+            },
+            {
+              "role": "assistant",
+              "content": "Including the day of the week is customary in formal invitations, especially for events like milestone birthdays. You can add it as: 令和7年4月15日（土曜日）. As for numerals, while Arabic numbers are acceptable in some digital contexts, formal documents such as invitations, contracts, or official announcements should use kanji characters for the full date. Using 令和7年4月15日 maintains the appropriate level of respect and cultural authenticity."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll use the kanji version. Is this format also used in business emails or official letters?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. In all formal Japanese contexts—business correspondence, government notices, legal documents, and school assignments—the format 令和7年4月15日 is standard. The use of the nengō system reinforces national identity and historical continuity. Even in digital systems like government portals or train schedules, the year-month-day order with kanji is consistently applied. Avoiding Western formats like 4/15/2025 or 15/4/2025 is essential to maintain professionalism and cultural accuracy."
+            },
+            {
+              "role": "user",
+              "content": "I see. So even if I'm writing to an international friend, I should still use the Japanese format for the formal invite?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, especially if the invitation is intended as a formal cultural document. While international partners may be familiar with Western formats, using the Japanese standard demonstrates respect for local customs. In mixed contexts, you might include a note in English afterward (e.g., 'April 15, 2025'), but the primary date should remain in the traditional format. This reflects the cultural value of contextual clarity and hierarchical structure."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.78,
+        "cultural_elements_verified": [
+          "Use of year-month-day order (YYYY年MM月DD日)",
+          "Inclusion of nengō (令和7年) for formal contexts",
+          "Use of kanji characters (年, 月, 日) in formal writing",
+          "Day of the week in parentheses (土曜日) as customary in formal invitations",
+          "Preference for kanji over Arabic numerals in formal documents",
+          "Consistency across formal contexts (invitations, business, government)",
+          "Cultural value of hierarchical structure and contextual clarity in date formatting",
+          "Respect for tradition even in international communication"
+        ],
+        "issues": [
+          "Minor: The assistant could briefly acknowledge that while Arabic numerals are acceptable in informal digital contexts (e.g., LINE), their use in formal documents is discouraged—though this is already implied in the response.",
+          "Slight overgeneralization: The claim that 'even in digital systems like government portals... the year-month-day order with kanji is consistently applied' may not hold in all user-facing interfaces (e.g., some online forms allow MM/DD/YYYY input), though the backend and official print materials do follow the correct format. This is a nuance but not a critical error."
+        ],
+        "suggestions": [
+          "Add a brief note about the distinction between digital input systems (which may accept Western formats) and official output (which uses Japanese format), to prevent overgeneralization.",
+          "Consider mentioning that in some bilingual contexts (e.g., international hotels or events), the Western format may be included in parentheses after the Japanese one, but only as a secondary element—this would further reinforce the cultural hierarchy of the date format.",
+          "To enhance training quality, future examples could include a contrast between formal and informal usage (e.g., texting vs. official documents) to deepen the model's contextual sensitivity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal invitation for my sister's wedding next year. I want to make sure the date is written correctly in Japanese. The ceremony is on April 5th, 2025. What’s the proper way to write this in a traditional invitation?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Japanese invitations, especially for weddings, the date should be written in the year-month-day order using kanji and the nengō (era name). Since 2025 is the 7th year of the Reiwa era, the correct format is: 令和7年4月5日. This reflects the cultural emphasis on hierarchy and context—placing the broader historical period (the year) first, followed by the month and day."
+            },
+            {
+              "role": "user",
+              "content": "Should I include the full year in kanji, or is it okay to use numbers? Also, would this be acceptable in a digital invitation sent via email?"
+            },
+            {
+              "role": "assistant",
+              "content": "For traditional or formal invitations—especially printed ones—always use kanji: 令和7年4月5日. The use of full characters (年, 月, 日) is essential and signals respect and formality. In digital invitations, the same format is preferred, especially if the audience is primarily Japanese or if the tone is ceremonial. While some younger people may use 2025年4月5日 in casual messages, in formal contexts like weddings, sticking to the nengō and kanji format maintains cultural authenticity and avoids appearing careless."
+            },
+            {
+              "role": "user",
+              "content": "I see. What if I’m sending a reminder to overseas guests who might be used to MM/DD/YYYY? Should I write it differently for them?"
+            },
+            {
+              "role": "assistant",
+              "content": "For international guests, you may include a brief clarification in parentheses, such as (April 5, 2025), but the primary date should still be written in the standard Japanese format: 令和7年4月5日. This respects Japanese cultural norms while being considerate of cross-cultural understanding. Using Western formats like 4/5/2025 or 04/05/2025 in the main text would be seen as unprofessional or culturally inauthentic in a Japanese context, even if understood."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So the key is consistency with the year-first, nengō-based format, even in digital spaces?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The year-first structure isn’t just a convention—it’s a reflection of Japan’s cultural values: order, continuity, and shared context. Whether on a wedding invitation, train schedule, or official document, the format 令和7年4月5日 is the expected standard. Maintaining it shows respect for tradition and reinforces a sense of collective identity, even in modern settings."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Use of nengō (Reiwa 7) in formal contexts",
+          "Year-month-day order (YYYY年MM月DD日)",
+          "Use of kanji characters (年, 月, 日) in formal writing",
+          "Preference for nengō over seireki in ceremonial and traditional settings",
+          "Cultural significance of hierarchical date structure reflecting order and continuity",
+          "Acceptance of minor adaptations (e.g., parentheses for international guests) without compromising core format",
+          "Distinction between formal (kanji, nengō) and informal (seireki, digital) usage based on context"
+        ],
+        "issues": [
+          "Minor: The phrase 'full characters (年, 月, 日) is essential' could be slightly improved to 'must be used' to better reflect the absolute requirement in formal writing.",
+          "Slight nuance: While the example correctly avoids Western formats, it could more explicitly mention that even in digital invitations, platforms like official government websites or corporate portals enforce YYYY年MM月DD日, reinforcing institutional standardization."
+        ],
+        "suggestions": [
+          "Add a brief note about the legal and institutional enforcement of the format (e.g., 'This format is mandated in official documents by the Ministry of Internal Affairs and Communications').",
+          "Clarify that while youth may use seireki in casual LINE messages, the use of 2025年4月5日 in a wedding invitation—even digital—would still be acceptable in modern Japan, though nengō is preferred for tradition.",
+          "Consider including a sentence on the visual layout: in formal invitations, the date is often placed at the top center, written in large kanji, reinforcing its ceremonial weight."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal invitation for my cousin's wedding next year. The ceremony is on April 5th, 2025. I want to make sure the date is written correctly in Japanese. Should I write it as 4月5日, or do I need to include the year and era?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal wedding invitation in Japan, you should write the date using the full year-month-day format with the nengō (era name). Since 2025 is the 7th year of Reiwa, the correct format is: 令和7年4月5日. This follows the cultural convention of placing the most significant context—here, the era—first, which reflects respect for tradition and hierarchical clarity in formal writing."
+            },
+            {
+              "role": "user",
+              "content": "I see. So even though the Gregorian calendar is used in daily life, the era name is still essential in formal documents like invitations? What if I’m sending this to an international guest who might not understand '令和'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, the nengō remains culturally essential in formal contexts—even for international guests. While you may include the Gregorian year in parentheses for clarity (e.g., 令和7年4月5日（2025年）), the primary format must retain the Japanese structure. This isn’t just about precision—it’s a sign of cultural respect. Many Japanese people will still use the nengō in official documents even when communicating with foreigners, as it reflects national identity and continuity. The date order (year-month-day) is equally important: never write it as 5月4日 or 4/5/2025 in formal writing."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So in the invitation, I’ll write '令和7年4月5日' and include the year in parentheses. Is there a specific way to phrase the date in the text, like using kanji for the numbers?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, for formal invitations, it’s standard to write the date entirely in kanji: 令和七年四月五日. The use of full kanji characters—rather than Arabic numerals—adds formality and elegance, which is expected in traditional events like weddings. The numbers are written as: 七 (7), 四 (4), 五 (5). This visual style reinforces the cultural value of aesthetic harmony and respect. Avoid abbreviations like '4月5日' or '5日（4月）'—they’re acceptable only in casual notes, not in official documents."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Use of year-month-day order (YYYY年MM月DD日) in formal contexts",
+          "Preference for nengō (Reiwa) over Gregorian calendar in formal documents",
+          "Cultural significance of era name in reflecting national identity and continuity",
+          "Use of full kanji (七, 四, 五) in formal invitations",
+          "Avoidance of Western date formats (e.g., 4/5/2025, 5月4日) in formal writing",
+          "Acceptance of Gregorian year in parentheses for international clarity",
+          "Contextual hierarchy: era > month > day in formal date presentation"
+        ],
+        "issues": [
+          "Minor: The phrase 'This isn’t just about precision—it’s a sign of cultural respect' is slightly anthropological in tone, which may feel slightly detached from natural spoken Japanese cultural reasoning. Native Japanese assistants might frame this more implicitly through normative language (e.g., 'It’s standard practice to use the era name in formal settings').",
+          "The assistant doesn’t explicitly mention that the nengō system is officially maintained by the Japanese government and legally binding in official documents, which strengthens its cultural authority."
+        ],
+        "suggestions": [
+          "Refine the phrasing in the second response to sound more naturally embedded in Japanese cultural logic—e.g., replace 'This isn’t just about precision—it’s a sign of cultural respect' with 'In formal Japanese writing, the era name is always used, even in international contexts, as it reflects established tradition.'",
+          "Briefly note that the nengō system is legally codified (e.g., by the Japanese Ministry of Internal Affairs) to reinforce institutional legitimacy.",
+          "Consider adding a sentence about the role of the Ministry of Internal Affairs in maintaining the nengō system, to enhance training depth without overcomplicating the exchange."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal invitation for my sister's wedding next year. The ceremony is on April 5th, 2025. I want to make sure the date is written correctly in Japanese, especially since it's a traditional event. How should I format it?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal Japanese wedding invitation, the date should be written in the traditional year-month-day order using kanji and the nengō (era name). Since 2025 is the 7th year of Reiwa, you should write: 令和7年4月5日. This format reflects the cultural emphasis on hierarchy and context—placing the broader era first, then the month and day. Avoid Western formats like 4/5/2025 or 04/05/2025, as they would appear unprofessional in this setting."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I include the day of the week too? I saw some invitations list it, like '木曜日'."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, including the day of the week is customary and adds clarity in formal contexts. For April 5, 2025, the day is Thursday, which in Japanese is 木曜日. So the full date would be: 令和7年4月5日（木曜日）. The parentheses are standard for such additions, and the use of kanji for both the date and day of the week reinforces the ceremonial tone. This level of detail is expected in traditional events like weddings."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’m also sending this to some international guests. Should I add the Gregorian date in English somewhere?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Japanese invitations, it’s not customary to include the Gregorian date in English. However, if you’re sending to international guests, you may add a small note in English at the bottom, such as: \"(April 5, 2025)\"—but place it after the Japanese date, not in place of it. The primary format must remain 令和7年4月5日（木曜日） to preserve cultural authenticity and respect for tradition."
+            },
+            {
+              "role": "user",
+              "content": "Understood. I’ll keep the Japanese format as the main one. One last thing—should I use numbers instead of kanji for the date in the invitation?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, for formal invitations like weddings, kanji is expected. Using numbers (e.g., 2025年4月5日) would appear too casual or modern. The use of full kanji—令和7年4月5日—signals respect, formality, and cultural continuity. This is especially important in traditional events where every detail reflects the family’s values and social standing."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of nengō (Reiwa 7) in formal context",
+          "Year-month-day order (YYYY年MM月DD日) in official documents",
+          "Use of kanji characters for dates and days of the week",
+          "Cultural preference for hierarchical structure in date formatting",
+          "Avoidance of Western date formats (MM/DD/YYYY or DD/MM/YYYY) in formal settings",
+          "Contextual adaptation for international guests without compromising formality",
+          "Cultural expectation of precision and formality in traditional events like weddings",
+          "Implicit understanding of shared cultural knowledge (no need to explain nengō to domestic audience)"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 10.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 10.0,
+        "cultural_elements_verified": [
+          "Use of year-month-day order (YYYY年MM月DD日)",
+          "Inclusion of nengō (令和7年) for formal contexts",
+          "Use of kanji (年, 月, 日) rather than numerals",
+          "Parenthetical inclusion of day of the week (木曜日)",
+          "Preference for traditional format over Western formats in formal settings",
+          "Distinction between formal (kanji) and informal (numbers) usage",
+          "Cultural rationale: hierarchy, context, tradition, and formality",
+          "Proper handling of international guests with supplementary English note"
+        ],
+        "issues": [],
+        "suggestions": [],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}
