@@ -73,7 +73,7 @@ echo "[$(date)] vLLM is ready (waited ${elapsed}s)."
 # ---------------------------------------------------------------------------
 # 3. Run the pipeline
 # ---------------------------------------------------------------------------
-python main.py \
+python main.py generate \
     --culture "${CULTURE}" \
     --all-dimensions \
     --output-dir "${OUTPUT_DIR}" \

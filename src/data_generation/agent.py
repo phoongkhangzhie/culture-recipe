@@ -24,17 +24,17 @@ import openai
 from rich.console import Console
 
 from config import config
-from src.generator import generate_example, refine_example
-from src.models import (
+from .generator import generate_example, refine_example
+from .models import (
     CultureDimension,
     ExampleRecord,
     GeneratedExample,
     GenerationParams,
     GenerationResult,
 )
-from src.researcher import research_cultural_context, summarize_research
-from src.tracer import PipelineTracer
-from src.verifier import verify_example
+from .researcher import research_cultural_context, summarize_research
+from .tracer import PipelineTracer
+from .verifier import verify_example
 
 console = Console()
 

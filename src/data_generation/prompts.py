@@ -1,6 +1,6 @@
 import json
 
-from src.models import CultureDimension, GenerationParams
+from .models import CultureDimension, GenerationParams
 
 
 # ---------------------------------------------------------------------------
