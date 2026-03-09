@@ -12,8 +12,8 @@ class Config:
     api_base_url: str = field(
         default_factory=lambda: os.environ.get("API_BASE_URL", "http://localhost:8000/v1")
     )
-    model: str = "Qwen/Qwen2.5-7B-Instruct"
-    research_model: str = "Qwen/Qwen2.5-7B-Instruct"
+    model: str = "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507"
+    research_model: str = "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507"
     # Research phase
     research_max_tokens: int = 8000
     max_research_continuations: int = 2

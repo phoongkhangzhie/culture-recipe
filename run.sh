@@ -11,9 +11,10 @@ fi
 
 CULTURE="$1"
 OUTPUT_DIR="$2"
+TENSOR_PARALLEL="$3"
 
 VLLM_PORT=8000
-VLLM_MODEL="Qwen/Qwen2.5-7B-Instruct"
+VLLM_MODEL="/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507"
 VLLM_LOG="logs/vllm-$$.log"
 WAIT_TIMEOUT=2700   # seconds before giving up (45 min covers large model loads)
 WAIT_INTERVAL=10    # poll interval in seconds
@@ -29,6 +30,7 @@ echo "[$(date)] vLLM log: ${VLLM_LOG}"
 
 vllm serve "${VLLM_MODEL}" \
     --port "${VLLM_PORT}" \
+    --tensor-parallel "${TENSOR_PARALLEL}" \
     --dtype bfloat16 \
     --enable-auto-tool-choice \
     --tool-call-parser hermes \

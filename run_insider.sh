@@ -1,18 +1,22 @@
 #!/bin/bash
-#SBATCH --job-name=culture-recipe
-#SBATCH --gres=gpu:1
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=32G
-#SBATCH --time=8:00:00
-#SBATCH --output=logs/slurm-%j.log
-#SBATCH --error=logs/slurm-%j.log
+# Usage: ./run.sh <culture> <output-dir>
+#   e.g. ./run.sh Japanese ./output/japanese
 
 set -e
 
+if [ $# -lt 2 ]; then
+    echo "Usage: $0 <culture> <output-dir>"
+    exit 1
+fi
+
+CULTURE="$1"
+OUTPUT_DIR="$2"
+TENSOR_PARALLEL="$3"
+
 VLLM_PORT=8000
-VLLM_MODEL="Qwen/Qwen2.5-7B-Instruct"
-VLLM_LOG="logs/vllm-${SLURM_JOB_ID}.log"
-WAIT_TIMEOUT=1800   # seconds before giving up (30 min covers large model loads)
+VLLM_MODEL="/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507"
+VLLM_LOG="logs/vllm-$$.log"
+WAIT_TIMEOUT=2700   # seconds before giving up (45 min covers large model loads)
 WAIT_INTERVAL=10    # poll interval in seconds
 READY_MARKER="Application startup complete."
 
@@ -26,6 +30,7 @@ echo "[$(date)] vLLM log: ${VLLM_LOG}"
 
 vllm serve "${VLLM_MODEL}" \
     --port "${VLLM_PORT}" \
+    --tensor-parallel "${TENSOR_PARALLEL}" \
     --dtype bfloat16 \
     --enable-auto-tool-choice \
     --tool-call-parser hermes \
@@ -42,12 +47,10 @@ echo "[$(date)] Waiting for vLLM to finish loading model..."
 
 elapsed=0
 while true; do
-    # Check if the ready marker has appeared in the log
     if grep -q "${READY_MARKER}" "${VLLM_LOG}" 2>/dev/null; then
         break
     fi
 
-    # Abort early if the vLLM process itself has died
     if ! kill -0 "${VLLM_PID}" 2>/dev/null; then
         echo "[$(date)] ERROR: vLLM process (PID ${VLLM_PID}) exited unexpectedly."
         echo "[$(date)] Last 20 lines of vLLM log:"
@@ -68,12 +71,14 @@ done
 echo "[$(date)] vLLM is ready (waited ${elapsed}s)."
 
 # ---------------------------------------------------------------------------
-# 3. Run the pipeline  — pass any extra args via sbatch --export or hardcode
+# 3. Run the pipeline
 # ---------------------------------------------------------------------------
 python main.py \
-    --culture "${CULTURE:-Japanese}" \
-    --dimension "${DIMENSION:-guest_hospitality}" \
-    --output-dir "${OUTPUT_DIR:-./output}" \
+    --culture "${CULTURE}" \
+    --all-dimensions \
+    --output-dir "${OUTPUT_DIR}" \
+    --implicit-culture \
+    --trace \
     --verbose
 
 # ---------------------------------------------------------------------------
