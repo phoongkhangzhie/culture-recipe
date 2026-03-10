@@ -4,10 +4,10 @@
 
 set -e
 
-if [ $# -lt 2 ]; then
-    echo "Usage: $0 <culture> <output-dir>"
-    exit 1
-fi
+# if [ $# -lt 2 ]; then
+#     echo "Usage: $0 <culture> <output-dir>"
+#     exit 1
+# fi
 
 TENSOR_PARALLEL="$1"
 

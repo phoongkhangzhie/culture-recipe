@@ -1,0 +1,112 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Basic Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Foundational rules of polite social behavior and conduct in everyday interpersonal interactions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "The wedding’s this weekend, and I’m nervous about how to behave around the elders. Aunty’s been asking about my plans—she said I must come with good heart and proper respect."
+            },
+            {
+              "role": "assistant",
+              "content": "Just greet everyone with a warm smile and a firm handshake. If you’re close to Aunty, a slight bow with your hand over your heart is nice—especially in Yoruba circles. She’ll see you’re trying, and that’s what matters most."
+            },
+            {
+              "role": "user",
+              "content": "What about food? I don’t want to overeat, but I also don’t want to seem rude when they keep offering."
+            },
+            {
+              "role": "assistant",
+              "content": "Take a little, even if you’re full. Leave a bit on your plate—it shows you appreciate the effort. If they press for seconds, say, ‘I’ve had enough, thank you,’ but if they insist, just take a small bit and say, ‘I’ll enjoy this one.’"
+            },
+            {
+              "role": "user",
+              "content": "Should I speak first, or wait for the elders?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always wait. Listen first—never interrupt. If an elder’s talking, lower your head slightly. If they’re seated, stay standing until they sit. And don’t touch anyone’s head—it’s just something we all understand."
+            },
+            {
+              "role": "user",
+              "content": "I just want to fit in, not be the one making things awkward."
+            },
+            {
+              "role": "assistant",
+              "content": "Just be present. Watch how your cousins greet people, how they carry themselves. You’ll pick it up naturally. That’s how we keep the family together—by being there, not by knowing every rule."
+            },
+            {
+              "role": "user",
+              "content": "And dress? I’m thinking of a clean dress—will that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "A clean dress is fine—some Yoruba families like buba and iro, but others keep it simple and neat. Just keep it modest and respectful. The key is showing you care, not how fancy you look."
+            },
+            {
+              "role": "user",
+              "content": "If Aunty asks how I am, should I say I’m fine even if I’m not?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—politeness comes first. Say you’re fine, even if you’re tired or stressed. That’s how we keep the peace. They’ll ask again later if they’re really concerned."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Greeting elders with warmth, handshake, and respect (e.g., 'Aunty')",
+          "Respect for elders through deference in speech, posture, and seating",
+          "Avoiding head-touching as a cultural taboo",
+          "Hospitality norms: accepting food, leaving a little on the plate, polite refusal",
+          "Indirect communication style: softening refusals, avoiding direct confrontation",
+          "Modesty in public behavior and dress, especially in formal or religious settings",
+          "Use of culturally grounded phrases like 'good heart', 'I’ve had enough, thank you', 'I’ll enjoy this one'",
+          "Emphasis on presence and observation over rule memorization as a path to belonging"
+        ],
+        "issues": [
+          "Minor risk of regional overgeneralization: suggesting 'buba and iro' as a universal Yoruba expectation, though it's contextually appropriate and not presented as mandatory",
+          "The phrase 'just something we all understand' in the assistant's response, while natural, slightly risks implying universal knowledge without acknowledging diversity across ethnic groups (e.g., Hausa, Igbo, Yoruba) — though this is mitigated by the broader context of shared values"
+        ],
+        "suggestions": [
+          "Consider adding a subtle nod to regional diversity in dress (e.g., 'Some families prefer traditional wear, others go for neat, modern outfits—what matters is respect') to reinforce cultural pluralism without overcomplicating",
+          "In future examples, include a brief, natural reference to a specific cultural practice (e.g., a Yoruba greeting ritual) to deepen authenticity without overloading",
+          "Ensure that any mention of 'Yoruba circles' is balanced with inclusive language that doesn't imply it's the only or default model"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 8
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

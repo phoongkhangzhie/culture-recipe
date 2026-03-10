@@ -1,0 +1,192 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Gender Social Compliance",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Gender Roles",
+    "description": "Social pressures to conform to culturally expected gender behaviors, roles, and presentations",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to attend my cousin’s wedding next month in Hanoi. My younger sister, Linh, is supposed to help me prepare the traditional offerings for the ancestral altar, but she’s been stressed lately—she just started a new job in a tech company and says she doesn’t have time. I’m worried that if she doesn’t help, people will say we’re not respectful, especially since our family is known for being very traditional. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "In most Vietnamese families, especially traditional or conservative ones, sons typically lead the *cúng ông bà* ritual during major events like weddings. Daughters often assist—especially in preparing food, arranging items, or lighting incense—but rarely take the lead. That said, this is shifting, particularly in urban families like yours in Hanoi, where younger women are increasingly involved in meaningful ways, even if not in formal leadership roles."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I’m still worried—my aunt already said something last time when Linh wore a short dress to a family gathering. She said, 'You’re not a girl from the city—you’re a daughter of the village. What will people say?' I don’t want Linh to feel like she has to choose between being professional and being respectful. How can I support her without causing tension?"
+            },
+            {
+              "role": "assistant",
+              "content": "That comment reflects a real tension—especially for young women in Hanoi who navigate both modern careers and traditional expectations. Even in the city, elders may still view certain modern outfits as too bold, especially during formal family rituals. But it’s not just about location—it’s about perception. A simple, modest long tunic with a subtle pattern is often seen as respectful and culturally aware, even by conservative relatives."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I think I’ll talk to my aunt like you said. I also want to make sure Linh feels supported. Maybe I can help her prepare the offerings together this weekend—just us two. Would that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—doing it together is perfect. It’s not about who leads, but about shared presence. Invite her to tell you how your grandmother used to prepare the offerings. That way, she’s not just following steps—she’s connecting with her heritage in a way that feels meaningful to her."
+            },
+            {
+              "role": "user",
+              "content": "I’m realizing that respect isn’t just about how we dress or who leads the ritual. It’s about showing up with care, even if we do things differently. Is that something elders might understand over time?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. *Hiếu thảo* isn’t just about obedience—it’s about harmony, intention, and quiet dignity. When a daughter helps her sister prepare offerings with care, or a son listens to his sister’s stories before lighting incense, that’s *hiếu thảo* in practice. Elders often value that more than outward conformity. It’s not about tradition as a checklist—it’s about heart. And over time, many come to see that respect can grow in new forms."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Gendered expectations in ancestor worship rituals (sons typically lead, daughters assist)",
+          "The evolving role of daughters in urban Vietnamese families during traditional ceremonies",
+          "Subtle social pressure on young women to conform to modest dress, even in Hanoi",
+          "Perception of 'modernity' vs. 'tradition' in clothing choices during formal family events",
+          "The concept of *hiếu thảo* as care, presence, and family harmony—not just ritual compliance",
+          "The importance of intergenerational dialogue and shared participation in maintaining cultural continuity",
+          "The cultural weight of elder opinions and the role of compromise in preserving family harmony"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Gendered expectations in ancestral rituals (*cúng ông bà*) with sons traditionally leading and daughters assisting",
+          "The cultural tension between modern professional roles and traditional expectations for young Vietnamese women",
+          "The use of regional identity (city vs. village) to enforce traditional dress norms",
+          "The significance of *hiếu thảo* (filial piety) as emotional and relational care, not just obedience",
+          "The value placed on quiet dignity, harmony, and intention over rigid conformity in cultural expression",
+          "The role of intergenerational storytelling and shared participation in preserving cultural continuity"
+        ],
+        "issues": [
+          "Minor risk of oversimplifying urban-rural divide—while the example correctly notes that traditional expectations persist in cities, the contrast between 'city' and 'village' could inadvertently reinforce a stereotype about rural conservatism; however, this is contextually appropriate given the anecdotal source material.",
+          "The assistant does not explicitly name the honorifics used in addressing elders (e.g., *bác*, *chị*, *anh*), though their use is implicitly reflected in tone and respectfulness—this is acceptable in English output but could be strengthened with brief cultural annotation."
+        ],
+        "suggestions": [
+          "Consider adding a brief, naturalistic mention of honorifics in context (e.g., 'When speaking to your aunt, using *chị* instead of her first name would show respect, especially if she’s older') to deepen linguistic authenticity.",
+          "In future examples, include a subtle reference to male emotional suppression (e.g., a man avoiding crying at a family event) to balance gendered expectations across both sexes, as per the research.",
+          "Explicitly name *tính hiếu thảo* and *cúng ông bà* in the assistant’s response when first introduced to reinforce cultural literacy in training data."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to attend my cousin’s wedding in Hanoi next month, and I’m worried about how to behave properly. My younger sister is getting married, and I want to make a good impression, but I’m not sure what’s expected of me as a woman in the family. I’ve been thinking about wearing a modern dress—something stylish but not too short. But my aunt said, ‘Maybe a more traditional outfit would be better for the occasion, don’t you think?’ I didn’t expect that, and I’m not sure how to respond. Should I wear an áo dài, even though I’m not from the countryside?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wearing an áo dài is a thoughtful choice—many young women in Hanoi wear it not because they’re following tradition, but because they’re honoring it with their own heart. It’s not about being ‘traditional’ or ‘modern’—it’s about showing respect through care. A modest, well-fitted áo dài in soft red, ivory, or navy with subtle patterns is perfectly appropriate, even in the city. Your aunt’s suggestion comes from love, not judgment. You’re not expected to be a relic of the past—you’re part of the family’s living story."
+            },
+            {
+              "role": "user",
+              "content": "That helps. I’ve been thinking about helping with the wedding prep—like organizing the guest list and helping my mother cook. But I’m not sure if I should take the lead. My older cousin, who’s a man, is already handling the invitations and seating. Should I just stay in the background, or is it okay to step in?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can step in—especially with the food and altar. These are your quiet strengths. In many Hanoi families, women manage the heart of the wedding behind the scenes: cooking *bánh chưng*, arranging the ancestral table, checking guest lists with care. It’s not about taking over—it’s about showing up with purpose. Use *em* when speaking to elders, and say things like *‘Em nghĩ có nên thêm một bàn cho bác họ bên ngoại?’* (I think we should add a table for Auntie from the maternal side?). That kind of gentle initiative is respected, not seen as overstepping."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll wear a modest áo dài and focus on helping with the food and altar. I’ll also make sure to speak softly and not interrupt elders. But… what if I’m asked to give a toast? I’ve never done that before, and I’m nervous. I don’t want to embarrass myself or my family."
+            },
+            {
+              "role": "assistant",
+              "content": "Nervousness is normal—and that’s okay. In Vietnamese weddings, women’s toasts are rarely long or loud. They’re warm, personal, and full of care. If asked, start with gratitude: *‘Cảm ơn mọi người đã đến chung vui cùng gia đình trong ngày hạnh phúc này.’* Then share one simple, heartfelt moment: *‘Em gái tôi luôn là người bạn thân, và em tin rằng em sẽ luôn hạnh phúc bên người chồng yêu thương.’* End with a blessing: *‘Chúc hai vợ chồng sống vui vẻ, sum vầy, và luôn nhớ về cội nguồn.’* Speak slowly. Look at your sister or parents—not the crowd. You don’t need to be perfect. You just need to be present."
+            },
+            {
+              "role": "user",
+              "content": "One more thing… I’ve noticed that my male cousin seems really stressed—quiet, not laughing much, even though he’s the one in charge. He’s been staying up late and barely eating. Is that normal? I feel like he’s trying to hold everything together, but I’m not sure how to help without overstepping."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, what you’re seeing is common—and it’s not weakness. In Vietnamese families, men are often expected to be strong, composed, and in control, even when they’re overwhelmed. They may smile through stress, avoid showing fatigue, or downplay their feelings to keep the family calm. This isn’t about being cold—it’s about fulfilling a role that’s deeply valued, even when it’s heavy.\n\nYou can help quietly: bring him a warm drink, say *‘Anh nghỉ ngơi một chút đi, em lo phần này.’* (Brother, take a break, I’ll handle this.) Small gestures like that mean more than words. You’re not fixing him—you’re honoring his burden while giving him space to breathe. That kind of care is quietly powerful."
+            },
+            {
+              "role": "user",
+              "content": "I’ve also noticed that my younger cousin, who’s a woman, is helping with the seating chart and even talking to the vendors. She’s confident, but not loud. Is that unusual? I thought women were supposed to be more reserved."
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all—this is part of how Vietnamese families are changing. Younger urban couples and women are redefining roles without breaking tradition. It’s not about rejecting the past, but carrying it forward in new ways. A woman can be gentle in voice and strong in action—she can lead quietly, manage details with care, and still be seen as respectful. Your cousin isn’t being bold—she’s being capable. In fact, many modern families now see women’s quiet leadership as a sign of wisdom, not defiance. The real strength is in being both kind and capable."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Wearing an áo dài as a modern urban woman is a gesture of respect, not a performance of tradition",
+          "Women’s roles in weddings are often behind-the-scenes but deeply valued—cooking, altar preparation, guest list management",
+          "Using honorifics like *em* and speaking softly shows deference and respect, especially to elders",
+          "Toasts by women are expected to be brief, heartfelt, and personal—authenticity is valued over polish",
+          "Men are culturally expected to be stoic and composed during family events, even when stressed",
+          "Quiet gestures of care—like offering a drink or taking over a task—carry deep respect and are meaningful",
+          "Younger women in urban Hanoi are increasingly taking on leadership roles in family events without losing cultural grace",
+          "The ideal woman is gentle, attentive, and nurturing—but her quiet authority in managing family affairs is deeply respected"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "The expectation for women to prioritize modesty and harmony in public settings",
+          "The role of women in managing wedding preparations, especially food and ancestral altar arrangements",
+          "Use of honorifics like 'em' and 'anh/chị' to show respect to elders and relatives",
+          "Men being expected to be stoic and composed, even under stress, as a sign of strength",
+          "The subtle pressure on women to conform to traditional appearance standards, especially in formal family events",
+          "The evolving role of younger urban women in taking on leadership roles quietly and respectfully",
+          "The cultural value of filial piety and family continuity in wedding rituals",
+          "The distinction between traditional and modern expressions of cultural respect, particularly through clothing like the áo dài"
+        ],
+        "issues": [
+          "Minor risk of oversimplifying the urban-rural divide in dress expectations—while the example correctly notes that city women may wear modern styles, the suggestion that wearing a short skirt would be inappropriate in a family wedding could reinforce outdated norms if not contextualized as a specific generational or regional tension rather than universal rule.",
+          "The use of Vietnamese phrases in the assistant's responses is accurate and contextually appropriate, but the translation in parentheses is slightly redundant for a training example meant to simulate authentic interaction—better to use the original language only, with minimal translation unless the context demands it."
+        ],
+        "suggestions": [
+          "Replace the parenthetical translations (e.g., 'I think we should add a table for Auntie from the maternal side?') with natural integration of Vietnamese phrases without translation, to better simulate real multilingual cultural context and avoid over-explanation in training data.",
+          "Add a brief note in the system prompt or metadata to clarify that the assistant is simulating a culturally nuanced, generational-aware perspective—acknowledging that while traditional norms persist, younger urban Vietnamese are actively redefining gender roles with dignity and respect.",
+          "Consider including a subtle mention of the increasing acceptance of emotional expression in men, especially in younger generations, to further reflect the dynamic evolution of gender compliance in modern Vietnam."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 7
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Travel Habits",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Daily Life and Travel",
+    "description": "Patterns of domestic and international travel, commuting preferences, and common modes of transportation",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m heading to Busan next weekend for a family reunion during Chuseok. I want to take the KTX but I’m not sure about the best time to leave from Seoul. Should I go early morning or midday? Also, do I need to book in advance?"
+            },
+            {
+              "role": "assistant",
+              "content": "Book ahead—Chuseok is peak season, and KTX S trains and Green class seats sell out fast. The 7:30 AM departure from Seoul Station is your best bet. You’ll arrive by 10:30, beat the traffic, and have time to settle in before dinner. The 8 AM train? That’s packed—especially Green class, which families often splurge on for the extra legroom and quiet space during long trips. If you wait, you might only get a standing ticket, even on the 8 AM run."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll grab an early seat. Should I bring snacks or is there enough on the train? And what about the silent zone? I don’t want to be rude."
+            },
+            {
+              "role": "assistant",
+              "content": "Bring a small bag—most people do. The café car exists, but it’s pricey and often runs out. Rice balls or dried seaweed are perfect. For the silent zone, look for the ear icon sign—usually in the 3rd or 4th carriage. It’s called '조용실', and it’s strictly observed during peak hours. Avoid opening sealed thermoses there, and keep voices low. No phone calls, and avoid noisy eating. Outside rush hours, a quiet chat with family is fine if you’re not near it."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ve heard about the T-money card for transit—can I use it on the KTX too? And should I get a reserved seat or just a regular one?"
+            },
+            {
+              "role": "assistant",
+              "content": "T-money only works for subway and buses—no KTX. Use the KTX app or a station machine; it’s fast and supports KakaoPay, credit cards, and mobile wallets. Always reserve a seat—especially during holidays. Families often confirm seat assignments in advance so everyone stays together. The app lets you pick specific seats, so you can sit as a group. It’s standard practice. Oh, and if you’re coming from downtown Seoul, you might even hop on a Ttareun Bike to get to Seoul Station—super convenient for short hops between subway stops and terminals."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—my mom’s bringing a small suitcase and a thermos of soup. Is that okay? I don’t want to cause trouble on the train."
+            },
+            {
+              "role": "assistant",
+              "content": "You’ll be fine—just keep it small and tidy. The thermos won’t be an issue if it’s sealed, but avoid opening it in the silent zone. When approaching stops like Daejeon or Daegu, stand near the doors in advance—everyone does. Doors close fast, so be ready. A little soup is okay, but keep it quiet and contained. Most people bring a commuter bag with snacks and a change of clothes—just like your mom’s suitcase—because travel can be long and unpredictable. And hey, if you’re in Seoul, Ttareun Bike is a real lifesaver for getting to stations quickly—especially during rush hour."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Peak travel during Chuseok with high demand for KTX tickets",
+          "Preference for early morning KTX departures to avoid crowds",
+          "Mandatory advance booking for KTX, especially Green class",
+          "Strict adherence to silent zones (조용실) on KTX trains",
+          "Use of sealed thermoses and quiet behavior in silent zones",
+          "Common practice of bringing snacks and personal items on long trips",
+          "Use of commuter bags with snacks, change of clothes, and small pillows",
+          "T-money card not valid on KTX, only for subway and buses",
+          "Use of KTX app, KakaoPay, and mobile wallets for ticketing",
+          "Family coordination of seat assignments to stay together",
+          "Ttareun Bike for short-distance transit to stations",
+          "Standing near doors in advance for quick boarding",
+          "Cultural expectation of personal preparedness during travel"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant refers to 'the 8 AM train? That’s packed—especially Green class'—but in context, this is a valid observation. No factual error, but could be slightly refined to avoid implying that Green class is always packed, as it depends on the day and train type.",
+          "Slight overgeneralization: 'Most people do' when referring to bringing a small bag—while accurate, it's better to frame it as a common practice rather than a universal norm to avoid overstatement."
+        ],
+        "suggestions": [
+          "Refine phrasing around Green class availability to avoid implying it's always sold out—e.g., 'Green class fills up fast, especially on weekends and holidays.'",
+          "Use more nuanced language like 'many travelers bring' instead of 'most people do' to reflect cultural variation without overgeneralizing.",
+          "Consider adding a brief mention of the KTX’s high punctuality and on-time performance as a cultural expectation, reinforcing the broader value of reliability."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 7
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

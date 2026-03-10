@@ -1,0 +1,185 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Seating Etiquette for Guests and Hosts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Rules and customs governing where guests and hosts sit relative to each other in social settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s house for Hari Raya dinner this weekend—there’s my uncle who just returned from Mecca, my aunt who’s been in the family for decades, and a few cousins from Singapore. We’re all from different backgrounds—my cousin’s wife is Indian, and my uncle is Malay. Should I just pick a spot near the table, or wait for someone to guide me?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for the host to guide you—don’t pick a seat right away. In most Malaysian homes, especially during Hari Raya, the elder guests are seated first. Uncle will likely take the head of the table, and Auntie will sit beside him. The host—your cousin’s wife—will be at his left, as is customary. She’ll make space for everyone, so just follow her lead."
+            },
+            {
+              "role": "user",
+              "content": "Ah, okay. So if I see my cousin’s wife pointing to a seat near the front, should I take it even if it’s not the very head?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially if she’s gesturing or saying something like, ‘This one’s for you, it’s the best view.’ She might even pretend to hesitate, saying, ‘No, you sit first—this is your home.’ That’s how we show respect without making anyone feel awkward. Don’t rush, but don’t hesitate either."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the cousins from Singapore? They’re younger than me, but they’ve been overseas a long time. Should I let them sit first?"
+            },
+            {
+              "role": "assistant",
+              "content": "Age matters, but so does experience. Even though they’re younger, they’ve been away for years—so we give them extra respect. They’ll be seated with the elders, not just because of age, but because of their journey. It’s a quiet way of saying, ‘We remember you’re part of us, even when you’re far.’"
+            },
+            {
+              "role": "user",
+              "content": "And when do we start eating? I don’t want to be the first one to touch the food."
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for the host or the elder to begin. If Uncle starts eating, that’s your cue. Sometimes the host will serve elders first—watch who gets the first plate. It’s not about hunger; it’s about harmony. Everyone eats together, but not before the right moment."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Seating is guided by age, seniority, and respect for elders, even in mixed-ethnicity families",
+          "The host often sits to the left of the honored guest (e.g., elder or hajj returnee)",
+          "Guests are seated before the host as a sign of hospitality",
+          "Subtle cues like gestures, hesitation, or polite phrases ('You sit first—this is your home') signal seating permission",
+          "Overseas relatives, especially those returning after long absence, are given deference as a cultural gesture of belonging",
+          "Eating begins only after the elder or host starts, reinforcing collective harmony",
+          "Cultural norms vary by ethnic group but are often blended in urban Malaysian homes",
+          "Honorifics like 'Uncle', 'Auntie', or 'Cousin' are used naturally in informal family settings",
+          "Respect is shown through action, not words—silence, observation, and timing matter"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.9,
+        "cultural_elements_verified": [
+          "Guests should wait for the host to guide seating",
+          "Elder guests (especially those returning from Mecca) are seated at the head of the table",
+          "Host sits to the left of the guest of honor in Malay tradition",
+          "Host may gesture or offer a seat with polite resistance to show humility",
+          "Seating reflects hierarchy, age, and social status",
+          "Respect is shown through deference, not direct confrontation",
+          "Eating begins only after the elder or host starts",
+          "Symbolic seating for diaspora family members (e.g., those who’ve been overseas)",
+          "Cultural hybridity in multi-ethnic Malaysian homes during Hari Raya"
+        ],
+        "issues": [
+          "Minor omission of specific honorifics (e.g., 'Encik', 'Puan') in dialogue, though not critical given the context",
+          "Slight overgeneralization of 'host sits to the left'—in some Indian or Chinese homes, the host may sit opposite or to the side; the example could acknowledge variation without undermining the core norm"
+        ],
+        "suggestions": [
+          "Incorporate a brief, natural use of honorifics (e.g., 'Encik Uncle' or 'Puan Auntie') in the assistant’s response to enhance authenticity",
+          "Add a subtle nod to regional or ethnic variation (e.g., 'In Malay homes, the host sits to the left—but in Indian homes, it might be different') to reflect the multi-ethnic reality without over-explaining",
+          "Consider having the user express mild hesitation or confusion in a culturally natural way (e.g., 'I’m not sure where to sit—should I go to the front?') to better simulate insider hesitation"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s house for Hari Raya dinner this weekend, and I want to make sure I don’t mess up the seating. It’s a big family gathering, and I’m not sure where to sit. My uncle’s visiting from Johor, and he’s the eldest on my dad’s side. Should I just pick a seat near the front?"
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t pick a seat right away—wait for the host to guide you. The head seat is for your uncle, especially since he’s the eldest and visiting. He’ll probably be seated facing the main door, near the front. You should sit to his right, not opposite or beside him unless invited. The host will likely point you to a spot near the edge or slightly behind—those are the usual places for younger cousins. If someone offers you a seat, accept it with a quiet 'Terima kasih' and don’t argue. It’s not about comfort—it’s about showing respect through your placement."
+            },
+            {
+              "role": "user",
+              "content": "Oh right, I remember now. My cousin tried to sit in the front earlier when we were setting up, but my aunt gently moved her to the side. I thought she was just being practical, but now I see it was about hierarchy. What if I accidentally sit in the host’s seat—like the one near the kitchen?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s the one spot to avoid unless you’re explicitly told to. The host’s seat is usually near the kitchen or main door, and it’s reserved for the person in charge of the gathering. Even if it looks empty, don’t take it. If you’re unsure, wait until the host takes their seat first. They’ll often stand until everyone’s seated—especially elders. If you’re still unsure, just sit near the back with the younger ones. No one will notice, and you’ll be safe. The real sign of respect isn’t where you sit, but how you wait for the lead."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I should also wait for the host to start eating before I do, right? And use my right hand for food?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Wait for the host to take the first bite—especially if your uncle is there. That’s the cue. And yes, always use your right hand for eating, especially in Muslim homes. If you’re serving yourself, keep your left hand tucked away. It’s not just hygiene—it’s part of the respect. When your uncle offers you food, say 'Terima kasih' and accept it with both hands if it’s a formal gesture. Small things like that matter more than you think."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Guests wait for the host to indicate seating",
+          "Elders are seated at the head or front position",
+          "Host sits to the immediate left of the guest of honor",
+          "Avoid the host’s seat (near kitchen/main door)",
+          "Use of honorifics and polite expressions (e.g. 'Terima kasih')",
+          "Right hand used for eating in Muslim households",
+          "Waiting for the host to begin eating before starting",
+          "Subtle cues and unspoken rules guide behavior",
+          "Family hierarchy and age-based seating in multi-ethnic Malaysian homes",
+          "Cultural continuity in religious and family gatherings (Hari Raya)",
+          "Informal but respectful seating in urban settings with traditional undercurrents"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Guests should not claim the head seat; elders or honored guests are seated first",
+          "The host sits to the immediate left of the guest of honor in Malay tradition",
+          "Avoiding the host’s seat (near kitchen/main door) unless explicitly invited",
+          "Waiting for the host to sit and eat first as a sign of respect",
+          "Use of 'Terima kasih' and right-hand eating in Muslim homes",
+          "Seating by age, status, and relationship in family gatherings",
+          "Younger members typically sit at the edges or behind elders",
+          "Hosts may remain standing until all guests are seated, especially in formal settings",
+          "Subtle cues like not arguing over seating reflect cultural values of harmony and face preservation"
+        ],
+        "issues": [
+          "The assistant’s second response mentions 'sit to his right'—this is accurate in Malay tradition, but in some Chinese or Indian Malaysian contexts, the host may sit opposite or to the side. While the example focuses on Malay custom, the lack of nuance about inter-ethnic variation in multi-ethnic Malaysian homes could be misleading if generalized. However, since the user specifies a Hari Raya dinner (predominantly Malay), this is contextually appropriate.",
+          "The assistant doesn’t acknowledge that in some urban or younger generations, seating may be more flexible—though this is minor given the formal context of Hari Raya."
+        ],
+        "suggestions": [
+          "Add a brief, natural mention of inter-ethnic variation in seating (e.g., 'In Chinese homes, elders often sit at the front, but the host might sit opposite to show humility') to reinforce cultural pluralism, especially since the user is attending a family gathering with possible mixed heritage.",
+          "Include a subtle cue like 'Your cousin might have been moved because the front seats are reserved for elders' to reinforce the cultural logic without over-explaining.",
+          "Consider having the assistant use a Malay honorific like 'Encik' when referring to the uncle if the context implies formality, to deepen linguistic authenticity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 13,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}
