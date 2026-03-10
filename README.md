@@ -187,6 +187,43 @@ python main.py finetune prepare-data \
     --split 0.9        # also writes train_val.jsonl
 ```
 
+**Top-k example selection**
+
+When a dimension has more than one generated example, `--topk` keeps only the
+best K per dimension according to a scoring strategy. The default strategy
+(`perplexity`) scores each candidate by the mean NLL of its assistant turns
+under the target model — higher NLL means the model finds the example more
+surprising and therefore more valuable for training.
+
+```bash
+# Keep the single hardest example per dimension (perplexity-based)
+python main.py finetune prepare-data \
+    --input-dirs ./output/* \
+    --output train.jsonl \
+    --approved-only \
+    --topk 1 \
+    --selection-strategy perplexity \
+    --selection-model Qwen/Qwen2.5-7B-Instruct \
+    --split 0.9
+
+# Random baseline (no model needed)
+python main.py finetune prepare-data \
+    --input-dirs ./output/* \
+    --output train.jsonl \
+    --topk 1 \
+    --selection-strategy random
+```
+
+| Flag | Default | Description |
+|---|---|---|
+| `--topk K` | — | Keep at most K examples per dimension; omit to keep all |
+| `--selection-strategy` | `perplexity` | Scoring strategy: `perplexity` or `random` |
+| `--selection-model` | — | Model for perplexity scoring (HuggingFace ID or local path; loaded via vLLM) |
+
+All candidates that require scoring are batched into a single vLLM call for
+efficiency. Adding a new strategy requires only registering a function with the
+`@_register("name")` decorator in [prepare_data.py](src/finetune/prepare_data.py).
+
 ### 2 — Fine-tune
 
 **LoRA** (recommended — lower memory, faster):
