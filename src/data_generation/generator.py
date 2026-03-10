@@ -17,15 +17,15 @@ from typing import TYPE_CHECKING
 import openai
 
 from config import config
-from src.models import CultureDimension, GeneratedExample, GenerationParams
-from src.prompts import (
+from .models import CultureDimension, GeneratedExample, GenerationParams
+from .prompts import (
     GENERATION_SYSTEM_PROMPT,
     get_generation_prompt,
     get_refinement_prompt,
 )
 
 if TYPE_CHECKING:
-    from src.tracer import PipelineTracer
+    from .tracer import PipelineTracer
 
 
 # ---------------------------------------------------------------------------

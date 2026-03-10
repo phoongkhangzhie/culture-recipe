@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 """
-culture-recipe — CLI entry point.
+culture-recipe — unified CLI entry point.
 
-Generates culturally-aligned LLM chat training examples via a multi-phase
-agentic pipeline (research → generate → verify → refine).
+Data generation:
+  python main.py generate --culture Japanese --dimension power_distance
+  python main.py generate --culture Japanese --all-dimensions --output-dir ./results/japanese
+  python main.py generate --list-dimensions
 
-The output is always a multi-turn chat (user ↔ AI assistant). The agent
-autonomously chooses the scenario, task, and number of turns.
-
-Single-dimension mode:
-  python main.py --culture Japanese --dimension power_distance --output result.json
-
-Multi-dimension mode (resumable):
-  python main.py --culture Japanese --all-dimensions --output-dir ./results/japanese
-  python main.py --culture Japanese --dimensions power_distance,hospitality --output-dir ./results
+Fine-tuning:
+  python main.py finetune prepare-data --input-dirs ./output/japanese_english --output train.jsonl
+  python main.py finetune train --model Qwen/Qwen2.5-7B-Instruct --train-file train.jsonl --lora
+  python main.py finetune merge-lora --base-model Qwen/Qwen2.5-7B-Instruct --lora-dir ./checkpoints/lora --output-dir ./checkpoints/lora-merged
 """
 
+import argparse
 import json
 import sys
 from datetime import datetime, timezone
@@ -26,41 +24,38 @@ from rich.panel import Panel
 from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn
 from rich.syntax import Syntax
 
-from src.agent import run_pipeline
-from src.models import GenerationParams, GenerationResult
-from src.taxonomy import CULTURAL_DIMENSIONS, get_dimension
+from src.data_generation.agent import run_pipeline
+from src.data_generation.models import GenerationParams, GenerationResult
+from src.data_generation.taxonomy import CULTURAL_DIMENSIONS, get_dimension
 
 console = Console()
 
 
 # ---------------------------------------------------------------------------
-# Argument parsing
+# generate subcommand — argument parser
 # ---------------------------------------------------------------------------
 
-def _build_parser():
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        prog="culture-recipe",
-        description="Generate culturally-aligned LLM chat training examples.",
+def _build_generate_parser(subparsers):
+    gen = subparsers.add_parser(
+        "generate",
+        help="Generate culturally-aligned LLM training examples.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
+        description="Run the agentic data generation pipeline.",
         epilog="""\
-Single-dimension examples:
-  python main.py --culture Japanese --dimension power_distance
-  python main.py --culture Nigerian --dimension hospitality --output result.json
-
-Multi-dimension examples (resumable):
-  python main.py --culture Japanese --all-dimensions --output-dir ./results/japanese
-  python main.py --culture Brazilian --dimensions individualism,hospitality --output-dir ./out
-  python main.py --list-dimensions
+Examples:
+  python main.py generate --culture Japanese --dimension power_distance
+  python main.py generate --culture Nigerian --dimension hospitality --output result.json
+  python main.py generate --culture Japanese --all-dimensions --output-dir ./results/japanese
+  python main.py generate --culture Brazilian --dimensions power_distance,collectivism --output-dir ./out
+  python main.py generate --list-dimensions
 """,
     )
 
     # ---- Target ----
-    parser.add_argument("--culture", metavar="NAME",
-                        help="Target culture, e.g. 'Japanese', 'Nigerian', 'Brazilian'")
+    gen.add_argument("--culture", metavar="NAME",
+                     help="Target culture, e.g. 'Japanese', 'Nigerian', 'Brazilian'")
 
-    dim_group = parser.add_mutually_exclusive_group()
+    dim_group = gen.add_mutually_exclusive_group()
     dim_group.add_argument("--dimension", metavar="KEY",
                            help="Single cultural dimension key")
     dim_group.add_argument("--dimensions", metavar="KEY,KEY,...",
@@ -69,36 +64,78 @@ Multi-dimension examples (resumable):
                            help="Run all available dimensions sequentially (resumable)")
 
     # ---- Generation ----
-    parser.add_argument("--language", default="English", metavar="LANG",
-                        help="Language for the generated examples (default: English)")
-    parser.add_argument("--topic", metavar="TEXT",
-                        help="Optional topic hint — the agent may use this as inspiration")
-    parser.add_argument("--implicit-culture", action="store_true",
-                        help=(
-                            "Generate examples where user queries carry no explicit cultural markers. "
-                            "The assistant responds as if it knows the user is from the target culture."
-                        ))
+    gen.add_argument("--language", default="English", metavar="LANG",
+                     help="Language for the generated examples (default: English)")
+    gen.add_argument("--topic", metavar="TEXT",
+                     help="Optional topic hint — the agent may use this as inspiration")
+    gen.add_argument("--implicit-culture", action="store_true",
+                     help=(
+                         "User messages written as a natural insider of the culture; "
+                         "assistant responds with culturally shared assumptions."
+                     ))
 
     # ---- Output ----
-    out_group = parser.add_mutually_exclusive_group()
+    out_group = gen.add_mutually_exclusive_group()
     out_group.add_argument("--output", metavar="FILE",
                            help="Save single-dimension result to a JSON file")
     out_group.add_argument("--output-dir", metavar="DIR",
-                           help="Directory to save multi-dimension results (one file per dimension)")
+                           help="Directory for multi-dimension results (one file per dimension)")
 
     # ---- Misc ----
-    parser.add_argument("--verbose", action="store_true",
-                        help="Show detailed progress including model output")
-    parser.add_argument("--trace", action="store_true",
-                        help="Record a full pipeline trace to a JSON file alongside each result")
-    parser.add_argument("--list-dimensions", action="store_true",
-                        help="Print all available cultural dimensions and exit")
+    gen.add_argument("--verbose", action="store_true",
+                     help="Show detailed progress including model output")
+    gen.add_argument("--trace", action="store_true",
+                     help="Record a full pipeline trace alongside each result")
+    gen.add_argument("--list-dimensions", action="store_true",
+                     help="Print all available cultural dimensions and exit")
 
-    return parser
+    return gen
 
 
 # ---------------------------------------------------------------------------
-# Dimension listing
+# finetune subcommand — argument parsers
+# ---------------------------------------------------------------------------
+
+def _build_finetune_parser(subparsers):
+    from src.finetune import prepare_data, train, merge_lora
+
+    ft = subparsers.add_parser(
+        "finetune",
+        help="Fine-tune a model on generated culture-recipe data.",
+        description="Fine-tuning pipeline: prepare data, train (full FT or LoRA), merge adapter.",
+    )
+    ft_sub = ft.add_subparsers(dest="finetune_cmd", metavar="COMMAND")
+    ft_sub.required = True
+
+    # ---- prepare-data ----
+    prep = ft_sub.add_parser(
+        "prepare-data",
+        help="Flatten output JSONs into a training JSONL.",
+        description=prepare_data.__doc__,
+    )
+    prepare_data.add_arguments(prep)
+
+    # ---- train ----
+    tr = ft_sub.add_parser(
+        "train",
+        help="SFT fine-tuning (full or LoRA) on culture-recipe data.",
+        description=train.__doc__,
+    )
+    train.add_arguments(tr)
+
+    # ---- merge-lora ----
+    mg = ft_sub.add_parser(
+        "merge-lora",
+        help="Merge a LoRA adapter into its base model.",
+        description=merge_lora.__doc__,
+    )
+    merge_lora.add_arguments(mg)
+
+    return ft
+
+
+# ---------------------------------------------------------------------------
+# generate helpers
 # ---------------------------------------------------------------------------
 
 def _print_dimensions() -> None:
@@ -117,12 +154,7 @@ def _print_dimensions() -> None:
     console.print(table)
 
 
-# ---------------------------------------------------------------------------
-# Result serialisation helpers
-# ---------------------------------------------------------------------------
-
 def _result_payload(result: GenerationResult) -> dict:
-    """Convert a GenerationResult to a JSON-serialisable dict."""
     meta = {k: v for k, v in result.metadata.items() if k != "tracer"}
     return {
         "culture": result.culture,
@@ -155,10 +187,6 @@ def _save_trace(result: GenerationResult, path: Path) -> None:
         tracer.save(path)
 
 
-# ---------------------------------------------------------------------------
-# Progress tracking (multi-dimension)
-# ---------------------------------------------------------------------------
-
 _PROGRESS_FILE = "progress.json"
 
 
@@ -175,10 +203,6 @@ def _save_progress(output_dir: Path, progress: dict) -> None:
     with open(output_dir / _PROGRESS_FILE, "w", encoding="utf-8") as fh:
         json.dump(progress, fh, ensure_ascii=False, indent=2)
 
-
-# ---------------------------------------------------------------------------
-# Display helpers
-# ---------------------------------------------------------------------------
 
 def _display_result(result: GenerationResult) -> None:
     n = len(result.records)
@@ -223,10 +247,6 @@ def _display_result(result: GenerationResult) -> None:
                 console.print(f"  • {issue}")
 
 
-# ---------------------------------------------------------------------------
-# Single-dimension run
-# ---------------------------------------------------------------------------
-
 def _run_single(args, params: GenerationParams) -> None:
     try:
         dimension = get_dimension(args.dimension)
@@ -252,9 +272,7 @@ def _run_single(args, params: GenerationParams) -> None:
         live_trace_path = str(
             Path(args.output).parent / f"{Path(args.output).stem}_trace.json"
         )
-        console.print(
-            f"[dim]Live trace → {live_trace_path} (tail -f to watch)[/dim]"
-        )
+        console.print(f"[dim]Live trace → {live_trace_path} (tail -f to watch)[/dim]")
 
     try:
         result = run_pipeline(
@@ -282,20 +300,14 @@ def _run_single(args, params: GenerationParams) -> None:
             console.print(f"[green]✓[/green] Trace saved to [cyan]{trace_path}[/cyan]")
 
 
-# ---------------------------------------------------------------------------
-# Multi-dimension run (sequential, resumable)
-# ---------------------------------------------------------------------------
-
 def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Load or initialise progress
     progress = _load_progress(output_dir)
     already_completed: set[str] = set(progress.get("completed", []))
     failed: set[str] = set(progress.get("failed", []))
 
-    # Initialise progress file on first run
     if not progress:
         progress = {
             "culture": args.culture,
@@ -380,14 +392,12 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
                                             "failed": list(failed)})
                 continue
 
-            # Save result
             result_path = output_dir / f"{dim_key}.json"
             _save_result(result, result_path)
 
             if args.trace:
                 _save_trace(result, traces_dir / f"{dim_key}_trace.json")
 
-            # Mark complete and persist progress immediately
             already_completed.add(dim_key)
             failed.discard(dim_key)
             progress_bar.advance(task)
@@ -405,7 +415,6 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
                 f"avg score: [{score_colour}]{avg_score:.1f}/10[/{score_colour}][/dim]"
             )
 
-    # Final summary
     remaining_failed = [k for k in failed if k in dim_keys]
     console.print(
         f"\n[bold]Done.[/bold]  "
@@ -417,24 +426,15 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
         console.print("[dim]Re-run the same command to retry failed dimensions.[/dim]")
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
-
-def main() -> None:
-    parser = _build_parser()
-    args = parser.parse_args()
-
+def _run_generate(args) -> None:
     if args.list_dimensions:
         _print_dimensions()
         return
 
-    # Validate culture
     if not args.culture:
         console.print("[red]Error:[/red] --culture is required.")
         sys.exit(1)
 
-    # Resolve which dimensions to run
     if args.all_dimensions:
         dim_keys = list(CULTURAL_DIMENSIONS.keys())
     elif args.dimensions:
@@ -448,12 +448,9 @@ def main() -> None:
         )
         sys.exit(1)
 
-    # Multi-dimension requires --output-dir; single dimension can use --output
     is_multi = len(dim_keys) > 1 or args.all_dimensions or args.dimensions
     if is_multi and not args.output_dir:
-        console.print(
-            "[red]Error:[/red] Multi-dimension runs require --output-dir DIR."
-        )
+        console.print("[red]Error:[/red] Multi-dimension runs require --output-dir DIR.")
         sys.exit(1)
     if not is_multi and args.output_dir:
         console.print(
@@ -472,6 +469,48 @@ def main() -> None:
         _run_multi(args, params, dim_keys)
     else:
         _run_single(args, params)
+
+
+def _run_finetune(args) -> None:
+    from src.finetune import prepare_data, train, merge_lora
+
+    if args.finetune_cmd == "prepare-data":
+        prepare_data.run(args)
+    elif args.finetune_cmd == "train":
+        train.run(args)
+    elif args.finetune_cmd == "merge-lora":
+        merge_lora.run(args)
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        prog="culture-recipe",
+        description="Generate culturally-aligned LLM training data and fine-tune models.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""\
+Commands:
+  generate      Run the agentic data generation pipeline
+  finetune      Fine-tune a model on generated data
+
+Run `python main.py <command> --help` for command-specific options.
+""",
+    )
+    subparsers = parser.add_subparsers(dest="command", metavar="COMMAND")
+    subparsers.required = True
+
+    _build_generate_parser(subparsers)
+    _build_finetune_parser(subparsers)
+
+    args = parser.parse_args()
+
+    if args.command == "generate":
+        _run_generate(args)
+    elif args.command == "finetune":
+        _run_finetune(args)
 
 
 if __name__ == "__main__":

@@ -14,16 +14,16 @@ from typing import TYPE_CHECKING
 import openai
 
 from config import config
-from src.models import (
+from .models import (
     CultureDimension,
     GeneratedExample,
     GenerationParams,
     VerificationOutput,
 )
-from src.prompts import VERIFICATION_SYSTEM_PROMPT, get_verification_prompt
+from .prompts import VERIFICATION_SYSTEM_PROMPT, get_verification_prompt
 
 if TYPE_CHECKING:
-    from src.tracer import PipelineTracer
+    from .tracer import PipelineTracer
 
 # JSON schema appended to the system prompt so the model knows what to output
 _VERIFICATION_JSON_SCHEMA = """

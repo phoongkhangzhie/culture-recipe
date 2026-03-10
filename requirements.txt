@@ -1,6 +1,15 @@
+# Data generation
 vllm
 openai>=2.0.0
 ddgs>=9.0.0
 pydantic>=2.0.0
 python-dotenv>=1.0.0
 rich>=13.0.0
+
+# Fine-tuning (optional — only needed for src/finetune/)
+torch>=2.3.0
+transformers>=4.45.0
+trl>=0.11.0
+peft>=0.13.0
+accelerate>=0.34.0
+datasets>=2.20.0

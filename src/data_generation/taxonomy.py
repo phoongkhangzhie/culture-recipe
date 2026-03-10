@@ -7,7 +7,7 @@ CultureScope fine-grained dimension list.
 Structure: Layer > Category > Topic Aspect > Fine-grained Dimension
 """
 
-from src.models import CultureDimension
+from .models import CultureDimension
 
 CULTURAL_DIMENSIONS: dict[str, CultureDimension] = {
 

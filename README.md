@@ -10,6 +10,32 @@ Given a **culture**, a **cultural dimension**, and **generation parameters**, th
 4. **Refines** the example iteratively until it meets the quality threshold
 5. **Repeats** for additional sub-aspects of the dimension if warranted
 
+## Repository Structure
+
+```
+culture-recipe/
+├── main.py                        # CLI entry point for data generation
+├── config.py                      # Shared configuration
+├── run.sh                         # Data generation script (starts vLLM + runs pipeline)
+├── run_insider.sh                 # Same as run.sh but with --implicit-culture
+├── finetune.sh                    # Fine-tuning script (train + optional LoRA merge)
+├── requirements.txt               # All dependencies (generation + fine-tuning)
+└── src/
+    ├── data_generation/           # Agentic data generation pipeline
+    │   ├── agent.py               # Orchestrating agent (tool-use loop)
+    │   ├── generator.py           # Training example generation & refinement
+    │   ├── verifier.py            # Structured quality scoring
+    │   ├── researcher.py          # DuckDuckGo web research
+    │   ├── prompts.py             # All prompt templates
+    │   ├── models.py              # Pydantic data models
+    │   ├── taxonomy.py            # cultural dimensions
+    │   └── tracer.py              # Pipeline tracing
+    └── finetune/                  # Fine-tuning pipeline (TRL + PEFT)
+        ├── prepare_data.py        # Flatten output JSONs → training JSONL
+        ├── train.py               # SFTTrainer (full FT or LoRA)
+        └── merge_lora.py          # Merge LoRA adapter into base model
+```
+
 ## Architecture
 
 The agent decides its own workflow. It has five tools and chooses when and how
@@ -85,24 +111,24 @@ export API_BASE_URL=http://localhost:8000/v1
 
 ```bash
 # List all available cultural dimensions
-python main.py --list-dimensions
+python main.py generate --list-dimensions
 
 # Single dimension
-python main.py --culture Japanese --dimension guest_hospitality
+python main.py generate --culture Japanese --dimension guest_hospitality
 
 # Single dimension with output saved
-python main.py --culture Nigerian --dimension hospitality --output result.json --verbose
+python main.py generate --culture Nigerian --dimension hospitality --output result.json --verbose
 
 # Multiple specific dimensions
-python main.py --culture Brazilian \
+python main.py generate --culture Brazilian \
   --dimensions power_distance,collectivism,guest_hospitality \
   --output-dir ./output/brazilian
 
-# All 139 dimensions (resumable — skips already-completed ones)
-python main.py --culture Japanese --all-dimensions --output-dir ./output/japanese
+# All dimensions (resumable — skips already-completed ones)
+python main.py generate --culture Japanese --all-dimensions --output-dir ./output/japanese
 
 # Implicit cultural context mode
-python main.py --culture Japanese --dimension guest_hospitality --implicit-culture
+python main.py generate --culture Japanese --dimension guest_hospitality --implicit-culture
 ```
 
 ### Implicit cultural context mode
@@ -126,7 +152,7 @@ given culture even when the cultural background is not stated.
 | `--culture` | — | Target culture (e.g. `Japanese`, `Nigerian`) |
 | `--dimension` | — | Single dimension key from `--list-dimensions` |
 | `--dimensions` | — | Comma-separated list of dimension keys |
-| `--all-dimensions` | — | Run all 139 dimensions sequentially |
+| `--all-dimensions` | — | Run all dimensions sequentially |
 | `--language` | `English` | Language for the generated examples |
 | `--topic` | — | Optional topic hint for the agent |
 | `--implicit-culture` | false | User messages written as a natural insider; assistant responds with shared cultural assumptions |
@@ -137,19 +163,83 @@ given culture even when the cultural background is not stated.
 
 ## Running on SLURM
 
-Use the provided [run.slurm](run.slurm) script. It starts vLLM in the background,
-waits for Uvicorn's `"Application startup complete."` log line (confirming the model
-is fully loaded), runs the pipeline, then shuts down vLLM cleanly.
+Use [run.sh](run.sh) for data generation on a SLURM node. It starts vLLM in the
+background, waits for Uvicorn's `"Application startup complete."` log line (confirming
+the model is fully loaded), runs the pipeline, then shuts down vLLM cleanly.
 
 ```bash
-# Single dimension
-sbatch --export=ALL,CULTURE=Korean,DIMENSION=filial_piety,OUTPUT_DIR=./output/korean run.slurm
-
-# All dimensions — edit run.slurm to use --all-dimensions
-sbatch --export=ALL,CULTURE=Korean,OUTPUT_DIR=./output/korean run.slurm
+sbatch run.sh Japanese ./output/japanese
 ```
 
-vLLM logs are written to `logs/vllm-<jobid>.log` separately from the SLURM job log.
+vLLM logs are written to `logs/vllm-<pid>.log` separately from the SLURM job log.
+
+## Fine-tuning
+
+### 1 — Prepare training data
+
+Flatten the generated output files into a single JSONL:
+
+```bash
+python main.py finetune prepare-data \
+    --input-dirs ./output/japanese_english ./output/korean_english \
+    --output train.jsonl \
+    --approved-only \
+    --split 0.9        # also writes train_val.jsonl
+```
+
+### 2 — Fine-tune
+
+**LoRA** (recommended — lower memory, faster):
+```bash
+python main.py finetune train \
+    --model Qwen/Qwen2.5-7B-Instruct \
+    --train-file train.jsonl \
+    --val-file   train_val.jsonl \
+    --output-dir ./checkpoints/lora \
+    --lora --lora-r 16 --lora-alpha 32
+```
+
+**Full fine-tuning**:
+```bash
+python main.py finetune train \
+    --model Qwen/Qwen2.5-7B-Instruct \
+    --train-file train.jsonl \
+    --output-dir ./checkpoints/full
+```
+
+**Multi-GPU** (via `accelerate`):
+```bash
+accelerate launch src/finetune/train.py --model ... --train-file ... --lora ...
+```
+
+### 3 — Merge LoRA adapter (LoRA only)
+
+```bash
+python main.py finetune merge-lora \
+    --base-model Qwen/Qwen2.5-7B-Instruct \
+    --lora-dir   ./checkpoints/lora \
+    --output-dir ./checkpoints/lora-merged
+```
+
+The merged checkpoint can be served directly with vLLM.
+
+### Using finetune.sh
+
+[finetune.sh](finetune.sh) wraps steps 2 and 3 into a single convenience script:
+
+```bash
+# LoRA fine-tuning (default)
+./finetune.sh train.jsonl ./checkpoints/lora
+
+# Full fine-tuning
+LORA=false ./finetune.sh train.jsonl ./checkpoints/full
+
+# LoRA + auto-merge after training
+MERGE_AFTER=true ./finetune.sh train.jsonl ./checkpoints/lora
+
+# With validation file and custom hyperparams
+VAL_FILE=train_val.jsonl EPOCHS=5 LR=1e-4 ./finetune.sh train.jsonl ./checkpoints/lora
+```
 
 ## Configuration
 
@@ -203,7 +293,7 @@ religious holidays within a single dimension).
 ## Available Dimensions
 
 Dimensions are drawn from the **CultureScope** taxonomy (3 layers, 7 categories, 20 Topic Aspects).
-Each fine-grained dimension is a standalone queryable topic — **139 dimensions** in total.
+Each fine-grained dimension is a standalone queryable topic.
 Run `python main.py --list-dimensions` to see the full list.
 
 ### Layer 1 — Institutional Norms › Geography & Customs › Population and Geography

@@ -16,11 +16,11 @@ import openai
 from ddgs import DDGS
 
 from config import config
-from src.models import CultureDimension, GenerationParams
-from src.prompts import RESEARCH_SYSTEM_PROMPT, get_research_prompt
+from .models import CultureDimension, GenerationParams
+from .prompts import RESEARCH_SYSTEM_PROMPT, get_research_prompt
 
 if TYPE_CHECKING:
-    from src.tracer import PipelineTracer
+    from .tracer import PipelineTracer
 
 # Web search tool definition (OpenAI function-calling format)
 _WEB_SEARCH_TOOL = {
