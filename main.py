@@ -64,8 +64,8 @@ Examples:
                            help="Run all available dimensions sequentially (resumable)")
 
     # ---- Generation ----
-    gen.add_argument("--language", default="English", metavar="LANG",
-                     help="Language for the generated examples (default: English)")
+    gen.add_argument("--native-language", action="store_true",
+                     help="Generate conversations in the culture's native language (default: English)")
     gen.add_argument("--topic", metavar="TEXT",
                      help="Optional topic hint — the agent may use this as inspiration")
     gen.add_argument("--implicit-culture", action="store_true",
@@ -257,7 +257,7 @@ def _run_single(args, params: GenerationParams) -> None:
     lines = [
         f"[bold]Culture:[/bold]        {args.culture}",
         f"[bold]Dimension:[/bold]      {dimension.name}  [dim]({dimension.category})[/dim]",
-        f"[bold]Language:[/bold]       {params.language}",
+        f"[bold]Language:[/bold]       {'Native' if params.native_language else 'English'}",
         f"[bold]Format:[/bold]         Multi-turn chat (agent chooses task & turns)",
     ]
     if params.topic:
@@ -311,7 +311,7 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
     if not progress:
         progress = {
             "culture": args.culture,
-            "language": params.language,
+            "native_language": params.native_language,
             "topic": params.topic,
             "dimensions": dim_keys,
             "completed": [],
@@ -327,7 +327,7 @@ def _run_multi(args, params: GenerationParams, dim_keys: list[str]) -> None:
         Panel(
             "\n".join([
                 f"[bold]Culture:[/bold]    {args.culture}",
-                f"[bold]Language:[/bold]   {params.language}",
+                f"[bold]Language:[/bold]   {'Native' if params.native_language else 'English'}",
                 f"[bold]Format:[/bold]     Multi-turn chat (agent chooses task & turns)",
                 f"[bold]Dimensions:[/bold] {len(dim_keys)} total  "
                 f"[dim]({skipped} already done, {len(pending)} remaining)[/dim]",
@@ -460,7 +460,7 @@ def _run_generate(args) -> None:
         sys.exit(1)
 
     params = GenerationParams(
-        language=args.language,
+        native_language=args.native_language,
         topic=args.topic,
         implicit_culture=args.implicit_culture,
     )

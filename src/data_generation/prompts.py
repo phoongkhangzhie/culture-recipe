@@ -112,7 +112,7 @@ Please search for and synthesise:
    shifts in recent generations.
 7. **Regional/generational variations** — Important differences within {culture} culture.
 
-Target language for the training example: {params.language}
+Target language for the training example: {"the native language of " + culture if params.native_language else "English (native words/phrases are fine where natural)"}
 
 Please synthesise your findings into a comprehensive cultural brief.\
 """
@@ -167,7 +167,7 @@ example for LLM cultural alignment.
 
 - **Culture**: {culture}
 - **Dimension**: {dimension.name} — {dimension.description}
-- **Language**: {params.language}
+- **Language**: {"Native " + culture + " language — write the entire conversation in the native language of " + culture if params.native_language else "English — the bulk of the conversation must be in English; native words, phrases, or expressions are welcome where they arise naturally, but do not conduct the conversation entirely in the native language"}
 - **Format**: Multi-turn conversation between a user and an AI assistant{topic_hint}{implicit_mode_note}
 
 ## Your Task
@@ -258,7 +258,7 @@ training quality.
 
 - **Target Culture**: {culture}
 - **Cultural Dimension**: {dimension.name} — {dimension.description}
-- **Language**: {params.language}
+- **Language**: {"Native " + culture + " language — the conversation should be written in the native language of " + culture if params.native_language else "English — the bulk of the conversation must be in English; occasional native words or phrases are acceptable and natural, but penalise if the conversation is conducted entirely in the native language"}
 - **Format**: Multi-turn chat (user ↔ assistant)
 {f"- **Mode**: Implicit cultural context — user messages should use cultural language naturally, as an insider would, without explicitly stating their background. Penalise any user turn that announces or performs cultural identity (e.g. 'As a {culture} person, I...'). The assistant should respond with culturally shared assumptions, not explanations directed at an outsider." if params.implicit_culture else ""}
 
@@ -278,7 +278,7 @@ Score each dimension 0–10 and provide:
 1. **cultural_accuracy_score** — How accurately does this reflect {culture} culture's \
    approach to {dimension.name}? Penalise stereotypes or factual errors.
 2. **linguistic_authenticity_score** — Is the language natural for this cultural \
-   context? Would native speakers find it believable?
+   context? Would native speakers find it believable? {"Penalise if the conversation is not written in the native language of " + culture + "." if params.native_language else "Penalise if the conversation is conducted entirely in the native language rather than English."}
 3. **dimension_relevance_score** — How effectively and naturally does this illustrate \
    {dimension.name}?
 4. **training_quality_score** — Would a model trained on this develop accurate, \
@@ -344,7 +344,7 @@ Improve the following multi-turn chat training example based on evaluation feedb
 
 ## Requirements
 
-- Culture: {culture} | Dimension: {dimension.name} | Language: {params.language}
+- Culture: {culture} | Dimension: {dimension.name} | Language: {"native " + culture + " language throughout" if params.native_language else "English (native words/phrases welcome where natural, but not an entirely native-language conversation)"}
 - Format: Multi-turn chat (user ↔ assistant)
 {f"- Topic hint: {params.topic}" if params.topic else ""}\
 {f"""- Mode: Implicit cultural context — user messages use culturally specific language naturally, \

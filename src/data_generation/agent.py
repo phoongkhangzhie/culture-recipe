@@ -187,7 +187,7 @@ Target specification:
   Dimension:    {dimension.name}
   Category:     {dimension.category}
   Description:  {dimension.description}
-  Language:     {params.language}
+  Language:     {"Native " + culture + " language throughout" if params.native_language else "English — native words or phrases are welcome where they arise naturally, but the conversation must NOT be conducted entirely in the native language"}
   Format:       Multi-turn chat (user ↔ AI assistant){topic_line}
 
 You have five tools:

@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 
 
 class GenerationParams(BaseModel):
-    language: str = "English"
+    native_language: bool = False
     topic: Optional[str] = None
     implicit_culture: bool = False
 

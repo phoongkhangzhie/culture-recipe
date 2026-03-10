@@ -153,7 +153,7 @@ given culture even when the cultural background is not stated.
 | `--dimension` | — | Single dimension key from `--list-dimensions` |
 | `--dimensions` | — | Comma-separated list of dimension keys |
 | `--all-dimensions` | — | Run all dimensions sequentially |
-| `--language` | `English` | Language for the generated examples |
+| `--native-language` | false | Generate in the culture's native language; default is English (native words/phrases welcome naturally) |
 | `--topic` | — | Optional topic hint for the agent |
 | `--implicit-culture` | false | User messages written as a natural insider; assistant responds with shared cultural assumptions |
 | `--output` | — | Save single-dimension result to a JSON file |
