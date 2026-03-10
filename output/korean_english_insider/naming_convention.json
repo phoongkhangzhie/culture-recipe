@@ -1,0 +1,166 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Naming Convention",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The structure and order of personal names, including given names, family names, and the use of honorifics",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing a recommendation letter for my research project, and I need to address Professor Park. I’ve always called her 'Park 교수님' in class—should I keep that in the letter?"
+            },
+            {
+              "role": "assistant",
+              "content": "In English, use 'Professor Park'—no Hangul, no '님'. Keep the tone formal and respectful. Start with 'Dear Professor Park,' and use humble, deferential language: 'I respectfully submit this recommendation.' The honorific is in the tone and structure, not the script."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. What about a third-year student in my department who helped me with the group project? He’s older, and I’m a second-year. Should I call him 'Park Hyung'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—if you're male and he's a male peer. 'Park Hyung' is correct for same-generation males. If you're female, use 'Park Unni'. But remember: only use 'Hyung/Unni' for peers. For seniors (sunbae), use 'Sunbae'—never 'Hyung'."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what if I’m texting a close friend in the same department, Lee Ji-hyun? We’ve been in the same lab since freshman year. Can I just say 'Ji-hyun'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—'Ji-hyun' is perfectly natural among close friends who’ve known each other for years. But in semi-formal settings—like group messages or lab emails—many still add 'ssi' (e.g., 'Ji-hyun-ssi') as a sign of mutual respect, not stiffness. It’s not redundant; it’s politeness in context. The choice depends on your closeness and the setting—café talk vs. shared workspace."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I just want to get the tone right—like, not too stiff, not too casual."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Context is everything. Among peers, you can drop 'ssi' in casual speech, but including it in writing or shared workspaces shows care. For seniors, always use 'Sunbae'—no 'ssi' needed, but the title itself carries respect. In English, say 'Dear Sunbae' or 'Respectfully, [Your Name]'—no Hangul, just the honorific. The cultural nuance lives in the relationship, not the script."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Family name first in Korean names (e.g., Park, not Ji-hyun)",
+          "Use of honorifics like 'Hyung', 'Unni', 'Sunbae' based on age and relationship",
+          "Distinction between formal (Jondaemal) and informal (Banmal) speech levels",
+          "Contextual use of 'ssi' as a sign of mutual respect in semi-formal settings",
+          "Respectful address of seniors (Sunbae) without 'ssi' but with title",
+          "Tone and structure conveying respect in written communication, even without Hangul",
+          "Natural progression from formal to informal based on closeness and setting"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'Ji-hyun' is acceptable among close friends, but in some conservative or older peer groups, even close friends may retain 'ssi' in written or shared contexts. The example could acknowledge regional or generational variation more explicitly.",
+          "Slight ambiguity in the assistant’s final response: 'Respectfully, [Your Name]' is culturally appropriate, but in Korean-influenced English, 'With sincere regards' or 'Warm regards' might be more natural in Western-style letters—though 'Respectfully' is acceptable in academic contexts."
+        ],
+        "suggestions": [
+          "Add a brief note on generational differences: younger Koreans in urban areas may use 'ssi' less frequently even in semi-formal settings, while older or more traditional peers may insist on it.",
+          "Clarify that 'Sunbae' is used in both academic and workplace contexts, and that the term itself implies deference—no need for additional honorifics like '님' in Korean, but in English, 'Sunbae' can be used directly with a title like 'Dear Sunbae'.",
+          "Include an example of how a Korean would write a salutation in an email to a senior: 'Dear Sunbae, I hope this message finds you well.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing my first formal email to Professor Lee Ji-hyun. How should I address her in the greeting? I’ve seen people use '교수님' but I’m not sure if it’s correct to use the English word 'Professor' in the same sentence."
+            },
+            {
+              "role": "assistant",
+              "content": "Always use '이 교수님'—no need to translate or mix in English. '교수님' is the standard and expected form. Using 'Professor' even once breaks the linguistic flow and can seem unnatural, especially in formal writing. This is jondaemal (honorific speech), which is required when addressing superiors. Just say '안녕하세요, 이 교수님.'"
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about when I’m writing to my lab senior, who’s been here two years? We’ve called each other 'Hyung' in casual chats, but I’m unsure if that’s okay in an email."
+            },
+            {
+              "role": "assistant",
+              "content": "In a formal email, even to a senior, use '이 선배님'. The honorific '-님' is essential—it shows respect without losing the relationship context. 'Hyung' is fine only in informal spoken settings, like quick messages or after-hours conversations. In writing, especially when requesting help or reporting work, '선배님' with '-님' is the norm."
+            },
+            {
+              "role": "user",
+              "content": "Got it. One more thing—how should I introduce myself in a group meeting? Should I say 'Kim Min-su' or 'Min-su Kim'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always say '김민수입니다'—family name first. That’s how it’s done in Korea, even in meetings. Saying 'Min-su Kim' sounds like you're mimicking Western style and can signal unfamiliarity with local norms. If you're not fully confident in pronunciation, just say '안녕하세요, 김민수입니다'—it’s still correct and widely accepted. The structure is natural, and most people will understand."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Family name first in all formal contexts",
+          "Use of honorific '-님' with titles and names",
+          "Jondaemal (honorific speech) required for superiors and formal settings",
+          "Avoid mixing English terms with Korean honorifics in formal writing",
+          "Seniority and age-based terms (e.g., 선배님, Hyung) are context-sensitive and not interchangeable across settings",
+          "Self-deprecation and humility in speech (e.g., using '입니다' instead of '이야') reflect cultural norms",
+          "Non-native speakers are expected to follow structural norms even if pronunciation isn't perfect"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Family name first in personal introductions (김민수입니다)",
+          "Use of honorific '-님' in formal contexts (이 교수님, 이 선배님)",
+          "Distinction between formal written communication and informal spoken terms (Hyung vs. 선배님)",
+          "Preference for native Korean terms over anglicized equivalents (no use of 'Professor')",
+          "Proper use of speech levels (jondaemal) in formal writing",
+          "Cultural expectation of respect through naming and address in professional/academic settings"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant's final response: 'Saying Min-su Kim sounds like you're mimicking Western style' could be slightly reductive—some bilingual Koreans may use Western name order in multilingual settings without implying unfamiliarity, though it's less common in formal Korean contexts.",
+          "The assistant does not explicitly mention that '김민수입니다' is not just a naming convention but also a grammatical structure involving the copula '입니다', which reinforces formality—this nuance could be subtly included for deeper linguistic authenticity."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s final response about the grammatical function of '입니다' as part of formal self-introduction, to reinforce linguistic depth without over-explaining.",
+          "Slightly soften the phrasing about Western name order to reflect nuance: e.g., 'While Min-su Kim may be used in some international contexts, in Korea, 김민수입니다 is the expected and natural form.'",
+          "Consider including a subtle example of a native speaker’s internalized reasoning (e.g., 'Most Koreans would instinctively say 김민수, not Min-su Kim, because it reflects how names are structured in Korean grammar and social context') to enhance implicit cultural modeling."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 3,
+    "examples_produced": 2
+  }
+}

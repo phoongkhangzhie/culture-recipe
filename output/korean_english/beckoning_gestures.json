@@ -1,0 +1,104 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Beckoning Gestures",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Communication Style",
+    "description": "Culturally specific hand or finger gestures used to call or beckon another person, which vary widely across cultures",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm visiting Seoul for a business meeting next week and I'm worried about making a cultural mistake. I’ve heard that gestures can be tricky—especially how to call someone. I don’t want to accidentally offend my host, who’s a senior executive at a major company."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful concern—especially in Korean professional culture, where nonverbal cues carry deep weight. One of the most important things to know is how you gesture to call someone. Using your index finger to beckon—curling it toward yourself—is considered highly disrespectful, even rude. It’s seen as commanding someone like a servant or animal, and can cause serious discomfort, especially toward elders or superiors. This gesture is widely avoided in formal or public settings."
+            },
+            {
+              "role": "user",
+              "content": "Oh no, I didn’t know that. I’ve been using that gesture all my life—like when I want a waiter or someone to come over. How should I do it instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "The respectful alternative is to use a palm-down, open-hand wave. Keep your hand flat, fingers together, and gently wave it downward—like a soft, inviting motion. This is the standard, polite way to summon someone in Korea, used in offices, restaurants, and even by family members calling children."
+            },
+            {
+              "role": "user",
+              "content": "So even if I’m calling a colleague or a server, I should avoid the finger-curl completely?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Even in casual settings, it’s best to avoid the index-finger beckon unless you're with very close, younger siblings or pets in a private home. In public or professional spaces—like cafes, subway stations, or shared offices—the open-hand wave is the only appropriate choice. I’ve heard of foreign businesspeople using the finger-curl to call a Korean assistant, and it caused visible discomfort. The assistant later explained that it felt disrespectful and out of place, similar to how one might call a pet."
+            },
+            {
+              "role": "user",
+              "content": "That’s really eye-opening. I’ll definitely practice the palm-down wave. Is there anything else I should keep in mind for nonverbal communication during the meeting?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—Korean communication is deeply rooted in respect, hierarchy, and emotional sensitivity, known as *jeong* (정). Avoid direct eye contact with superiors, especially at first. A slight bow when greeting is polite, and let the senior person speak first. Never point with your finger—use an open hand instead, even when indicating something on a screen or map. These small behaviors show awareness of status and emotional nuance, which are highly valued in professional settings. While younger generations may be more relaxed in informal contexts, the expectation of respect remains strong in business environments. In fact, many Korean professionals still internalize these norms through family, school, and workplace culture, even as society evolves. The core principle—prioritizing harmony and avoiding embarrassment—remains central."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "index finger beckoning (curling toward self) is considered highly disrespectful in formal and intergenerational contexts",
+          "palm-down open-hand wave is the appropriate and polite alternative for summoning someone",
+          "avoid direct eye contact with superiors as a sign of respect",
+          "slight bowing upon greeting is a culturally appropriate gesture",
+          "use open hand instead of finger-pointing to indicate objects or directions",
+          "cultural value of 'jeong' (정) – emotional sensitivity and relational harmony – underpins nonverbal communication",
+          "respect for hierarchy is maintained even in informal interactions among younger generations in professional settings",
+          "nonverbal etiquette is taught early in Korean schools and reinforced through family and social norms"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "The index-finger beckon ('jip-ji') is considered highly disrespectful in formal or public settings in Korea",
+          "The palm-down open-hand wave ('jip-jeon') is the culturally appropriate alternative for beckoning",
+          "The gesture is taboo when used toward elders, superiors, or strangers",
+          "The gesture is avoided even in casual contexts unless with very close, younger siblings or pets",
+          "The cultural sensitivity is rooted in respect, hierarchy, and indirect communication",
+          "The anecdote about a foreign businessperson causing discomfort aligns with documented cultural experiences",
+          "The broader context of *jeong* (emotional connection), bowing, and avoiding direct eye contact is accurately tied to professional etiquette"
+        ],
+        "issues": [
+          "Minor: The term 'jip-ji' and 'jip-jeon' are not standard in English-language cultural resources and may be perceived as invented or overly literal. However, since they are used in context with explanation and are not presented as formal terms in Korean, this does not constitute a factual error.",
+          "Slight overgeneralization in the final response: 'many Korean professionals still internalize these norms' — while accurate, could be softened to 'many continue to observe' to avoid implying universal adherence"
+        ],
+        "suggestions": [
+          "Replace 'jip-ji' and 'jip-jeon' with descriptive phrases like 'index-finger curl' and 'palm-down wave' in future training examples to avoid introducing potentially unverified or non-standard transliterations",
+          "Consider adding a brief note on regional or generational variation (e.g., younger urban Koreans may be more relaxed in informal settings) to further nuance the response",
+          "Include a short example of the gesture in action (e.g., 'imagine gently waving your flat hand downward, like calling a child from another room') to enhance clarity for visual learners"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 15,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

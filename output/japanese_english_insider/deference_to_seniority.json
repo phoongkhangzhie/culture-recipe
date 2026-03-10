@@ -1,0 +1,112 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Deference to Senior in Business",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Norms for showing respect to more senior or higher-ranking participants in a business meeting",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for the quarterly review with the Tokyo office. I’m unsure how to proceed with the senior from Tokyo—what’s the right way to sit, speak, and show respect without overstepping?"
+            },
+            {
+              "role": "assistant",
+              "content": "The senior will take the shinsho seat—head of the table, facing the entrance. Wait for them to be seated before taking your place to their right. Don’t speak until invited. When they pause after a long sentence, that’s your cue. A slight nod and a quiet 'Hai, wakarimashita' shows you’re listening. Keep your posture composed, slightly bowed—eyes down, not averted. Silence isn’t empty; it’s respectful."
+            },
+            {
+              "role": "user",
+              "content": "Should I bring anything after the meeting? I’ve heard about omiyage, but I’m not sure what’s appropriate for someone so senior."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—something small from Osaka, like a box of Dotonbori tea or kuidaore sweets. Present it with both hands right after the meeting ends. Say, 'Otsukaresama deshita. Koko kara o-miyage o okurimashita. Yoroshiku onegaishimasu.' Keep it simple. The gesture speaks louder than the gift."
+            },
+            {
+              "role": "user",
+              "content": "What if I want to speak but don’t know if it’s my turn? I don’t want to interrupt, but I also don’t want to seem uninvolved."
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for a natural pause—especially after a full sentence or a moment of reflection. Then, say 'Shitsurei shimasu' to begin. If you’re unsure, a soft 'Chotto, iikomimashou ka?' works too. Don’t rush. A quiet moment isn’t awkward—it’s thoughtful."
+            },
+            {
+              "role": "user",
+              "content": "And the business card? I want to do it right."
+            },
+            {
+              "role": "assistant",
+              "content": "Always present it with both hands, face forward. After they take it, glance at their name briefly and say 'Arigatou gozaimasu' or 'Hai, wakarimashita.' Never place it in your back pocket—keep it in a clean, visible case. Use 'watakushi' when introducing yourself. Small things show care."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The senior takes the shinsho seat—head of the table, facing the entrance",
+          "Junior staff wait for the senior to be seated before taking their place to the right",
+          "Silence during senior’s speech is respectful, not disengaged",
+          "A slight nod and 'Hai, wakarimashita' signal attentive listening",
+          "Wait for a natural pause—especially after a full sentence—before speaking",
+          "Use 'Shitsurei shimasu' or 'Chotto, iikomimashou ka?' to signal intent to speak",
+          "Present business cards with both hands, face forward, and keep them in a visible case",
+          "Use 'watakushi' instead of 'watashi' in formal settings",
+          "Offer omiyage after the meeting with 'Koko kara o-miyage o okurimashita. Yoroshiku onegaishimasu.'",
+          "Maintain a composed, slightly bowed posture—eyes down, not averted"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.85,
+        "cultural_elements_verified": [
+          "Seating arrangement with senior in shinsho (front-right) position",
+          "Waiting for senior to be seated before taking one's place",
+          "Speaking only after being invited, using cues like pauses",
+          "Use of 'Hai, wakarimashita' to acknowledge understanding",
+          "Posture: composed, slightly bowed, eyes down",
+          "Silence as respectful, not awkward",
+          "Omiyage from Osaka (Dotonbori tea, kuidaore sweets) as appropriate gift",
+          "Presenting omiyage with both hands, using 'Otsukaresama deshita' and 'Yoroshiku onegaishimasu'",
+          "Using 'Shitsurei shimasu' to begin speaking",
+          "Soft, non-confrontational phrases like 'Chotto, iikomimashou ka?'",
+          "Business card exchange with both hands, face forward, no back pocket placement",
+          "Use of 'watakushi' for self-reference in formal settings",
+          "Brief glance at card after receiving, saying 'Arigatou gozaimasu' or 'Hai, wakarimashita'"
+        ],
+        "issues": [
+          "The user’s first message includes 'I’m preparing for the quarterly review with the Tokyo office'—this is a minor issue of over-explanation. While not explicitly stating cultural identity, it frames the context too transactionally. A more authentic insider would assume the setting and not state the purpose so directly.",
+          "The assistant’s use of 'watakushi' in the business card response is accurate, but the phrase 'Small things show care' is slightly too Western in tone—could be replaced with a more culturally embedded phrase like 'Kotae no nai hajimari mo, kyoukai no yōshu' (Even unspoken beginnings reflect respect), though this is a minor stylistic issue."
+        ],
+        "suggestions": [
+          "Revise the user’s first message to be more implicitly contextual—e.g., 'The Tokyo team is coming in, and I’m not sure how to behave in the meeting.' This avoids framing the query as a checklist and better reflects insider awareness.",
+          "Replace 'Small things show care' with a more culturally resonant closing line such as 'Kotae no nai hajimari mo, kyoukai no yōshu' or 'Tsumi no nai shikata ga, daiji na koto da.'",
+          "Consider adding a subtle reference to *kansatsu* (gut feeling) or *shizukana shūshin* (quiet attentiveness) to reinforce the cultural nuance that respect is demonstrated through intuition, not just rules."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

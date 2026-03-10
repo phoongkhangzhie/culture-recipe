@@ -1,0 +1,102 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "National Holidays",
+    "category": "Institutional Norms > Geography & Customs > Dates of Significance",
+    "description": "State-designated public holidays commemorating historical, political, or civic milestones",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning a trip to Bangkok in April and want to experience something meaningful during Chakri Day. I’ve heard it’s a big day—what should I do respectfully?"
+            },
+            {
+              "role": "assistant",
+              "content": "Chakri Day on April 6 honors the founding of the Chakri Dynasty by King Rama I in 1782—a pivotal moment that established Bangkok as Thailand’s capital. The day is solemn and deeply respectful. Major ceremonies occur at the Grand Palace, starting early with flag-raising and floral offerings. Public access opens around 8 a.m., and the atmosphere is quiet and reverent. Dress modestly: long pants or a skirt, and cover your shoulders. While many locals wear traditional *pha nung* or *sabai*, visitors are not expected to—modest, respectful clothing is sufficient. Avoid loud behavior, and never touch or point at royal symbols. The spirit of the day reflects *kreng jai*—thoughtful consideration for others—and humility in honoring national heritage."
+            },
+            {
+              "role": "user",
+              "content": "What about Songkran? I’ve seen videos of water fights in Bangkok—should I join in? Is it okay to splash older people?"
+            },
+            {
+              "role": "assistant",
+              "content": "Songkran (April 13–15) is joyful and full of *sanuk*, but respect is key. Public water fights in areas like Khao San Road are lively and open to visitors—but never splash elders, monks, or those in formal attire. Instead, gently pour water from a bowl or cup over their hands as a gesture of respect. This act, combined with a slight bow and palms together (*wai*), symbolizes purification and gratitude. Wearing a *pha nung* or *sabai* is thoughtful but not required. In rural areas, the celebration is more spiritual, with temple visits and merit-making. In Bangkok, it’s festive—but always balance fun with mindfulness. The true spirit is *sanuk* with *kreng jai*."
+            },
+            {
+              "role": "user",
+              "content": "I’m also visiting in December. Is King’s Birthday a good time to be in Thailand? What’s the mood like?"
+            },
+            {
+              "role": "assistant",
+              "content": "December 5 is one of Thailand’s most solemn days. The mood is quiet, respectful, and deeply reflective. Royal purple and gold dominate—symbols of dignity and honor. White is also widely seen, but not as a color of mourning. In this context, white represents purity and solemnity in royal commemoration. You’ll see portraits of the late King Bhumibol Adulyadej draped in white, a sign of deep respect, not grief. Many people visit temples early to chant prayers, make merit, or donate to royal foundations. Avoid loud music, commercial events, or casual attire. Even as a visitor, showing respect—like removing shoes at temples, bowing slightly when greeting elders, or observing silence—means a great deal. The day is about honoring a shared memory, not celebration. The atmosphere is peaceful, and many locals spend it in quiet reflection."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Chakri Day (April 6) commemorates the founding of the Chakri Dynasty and Bangkok as the capital",
+          "Solemn ceremonies at the Grand Palace include flag-raising and floral offerings",
+          "Modest attire with covered shoulders is required at royal sites",
+          "White on King’s Birthday symbolizes purity and respect, not mourning",
+          "Royal purple and gold are dominant colors on King’s Birthday",
+          "Gentle water offering with *wai* is respectful during Songkran",
+          "Never splash elders, monks, or those in formal attire during Songkran",
+          "King’s Birthday is a day of quiet reflection, merit-making, and national unity",
+          "*Kreng jai* (thoughtful consideration) is central to respectful behavior",
+          "Traditional *pha nung* and *sabai* are worn by locals, but modest clothing is sufficient for visitors"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Chakri Day commemorates the founding of the Chakri Dynasty in 1782",
+          "Ceremonies at the Grand Palace include flag-raising and floral offerings",
+          "Modest dress is expected on national holidays, especially around royal sites",
+          "Traditional attire like *pha nung* and *sabai* is worn by locals as a sign of respect",
+          "Respect for elders and monks during Songkran is emphasized",
+          "Water pouring as a gesture of respect during Songkran is accurate",
+          "King’s Birthday (December 5) is solemn and reflective, not celebratory",
+          "Royal purple and gold are symbolic colors; white represents purity and solemnity",
+          "Temple visits, merit-making, and donations to royal foundations are common practices",
+          "The concept of *kreng jai* (thoughtful consideration) is appropriately referenced",
+          "The balance between *sanuk* (fun) and *kreng jai* (respect) is well illustrated"
+        ],
+        "issues": [
+          "Minor inaccuracy: The statement that 'white is also widely seen, but not as a color of mourning' could be slightly misleading. While white is not associated with mourning in Thai culture (unlike in some Western cultures), it is deeply tied to Buddhist ritual and mourning in religious contexts. However, in the context of King’s Birthday, white is used symbolically for purity and respect, not mourning, so this is contextually acceptable.",
+          "Slight overgeneralization: The claim that 'white is not as a color of mourning' may benefit from nuance—white is not used for funerals in the same way as black in Western cultures, but it is still associated with death and loss in Buddhist contexts. However, this is not a critical error in the given context."
+        ],
+        "suggestions": [
+          "Clarify that while white is not used for mourning in the same way as in Western cultures, it is still a color of solemnity and purity in Buddhist contexts, especially during royal commemorations.",
+          "Consider adding a brief note on the significance of *wai* as a gesture of respect during the King’s Birthday, reinforcing its cultural importance.",
+          "To enhance training quality, include a subtle mention of how younger generations may observe these holidays differently, reflecting evolving cultural dynamics without undermining tradition."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

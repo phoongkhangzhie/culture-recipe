@@ -1,0 +1,124 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Business Card Exchange",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Rituals and significance of exchanging business cards, including how to give and receive them respectfully",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting Mr. Minh from Tân Bình Trading tomorrow for the first time. He’s the Director of Operations. I’ve printed my cards, but I want to make sure I do everything right. Should I go first, or wait for him?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for him to offer his card first—especially since he’s senior. He’ll likely extend it before you. When he does, take it with both hands, read it carefully, and place it on the table in front of you with the front side up. Don’t stack it or put it in your pocket right away."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll use both hands when giving mine. Should I bow a little? And what about the orientation?"
+            },
+            {
+              "role": "assistant",
+              "content": "A slight forward head tilt—about 15 degrees—is polite and natural. No full bow needed. Keep your palms up and hands open during the exchange, showing respect through calm, attentive body language. Make sure the text on your card faces him clearly."
+            },
+            {
+              "role": "user",
+              "content": "What if I need to write something on his card later? Can I do that now?"
+            },
+            {
+              "role": "assistant",
+              "content": "Never write on a card during the exchange—especially not with a pencil. If you need to note something, wait until after the meeting, and use a pen. Writing on a card in the moment is seen as careless, even disrespectful."
+            },
+            {
+              "role": "user",
+              "content": "And where should I keep his card once I get it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always store it in a front pocket or a dedicated cardholder. Never in your back pocket—this is deeply disrespectful. If you’re carrying a bag, keep it visible and upright. The way you handle the card reflects how seriously you take the relationship."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—should I use a title when handing it over? Like 'Ông Minh'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, 'Ông Minh' is correct for a senior man in a formal setting. 'Anh Minh' is only appropriate if you’re on familiar terms—say, if he’s only slightly older or you’ve met before. In a first meeting with a Director, always use 'Ông' to show proper respect. Just present the card—no need to say anything. A simple 'Chào ông Minh, rất vui được gặp ông' at the start of the meeting sets the tone naturally and warmly. Honorifics like 'ông' are not just polite—they reflect the cultural value of 'lễ phép', or formal respect, which governs both speech and action in business."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—just to be safe, should I put down my coffee or phone before the exchange?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—always put down anything you’re holding. Even a coffee cup or phone can signal distraction. The gesture of handing over your card with both hands should be clean and deliberate. It shows you’re present, respectful, and focused on the moment. And don’t forget to maintain gentle eye contact—it’s a quiet sign of sincerity in Vietnamese interactions."
+            },
+            {
+              "role": "user",
+              "content": "Just to be clear—after I receive his card, should I read it right away? And how long should I take?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—take a moment to read it. This shows you value the person and their role. Don’t rush. A brief pause while scanning the name, title, and company is expected and appreciated. It signals attentiveness and respect. The exact length isn’t fixed—just enough to show you’re truly seeing them."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Card exchange is ritualized and reflects respect and hierarchy",
+          "Cards should be presented and received with both hands",
+          "Text must face the recipient during exchange",
+          "Never write on the card during the exchange",
+          "Cards should not be placed face-down or in back pockets",
+          "Wait for senior person to offer card first",
+          "Use of 'Ông' for senior men in formal settings",
+          "Slight head tilt (15 degrees) as a sign of respect",
+          "Reading the card after receipt shows attentiveness",
+          "Putting down distractions (coffee, phone) before exchange",
+          "Maintaining gentle eye contact as a sign of sincerity",
+          "Storing cards in front pocket or cardholder"
+        ],
+        "issues": [
+          "Minor: The assistant’s final response includes 'Chào ông Minh, rất vui được gặp ông'—while accurate and natural, it introduces a brief Vietnamese phrase in an English-only context. This is acceptable in training data if the intent is to model authentic bilingual behavior, but could be flagged if strict monolingual English is required. However, since the user is asking about honorifics, this is contextually justified.",
+          "Slight over-explanation in one turn: The assistant’s response to 'Should I use a title?' includes 'Honorifics like 'ông' are not just polite—they reflect the cultural value of 'lễ phép'...'—this is insightful but slightly explanatory for a native speaker. Still, it remains within the bounds of natural cultural reasoning."
+        ],
+        "suggestions": [
+          "Consider replacing the Vietnamese phrase with a natural English paraphrase (e.g., 'A warm greeting like 'Hello, Mr. Minh, nice to meet you' with a respectful tone') if the goal is strictly monolingual English training data.",
+          "Slightly reduce the explanatory tone in the honorific explanation—e.g., instead of defining 'lễ phép', use a culturally embedded phrase like 'It’s part of showing proper respect in Vietnamese business culture.'",
+          "Ensure that all user turns remain fully immersed in the cultural context without self-identification—this example already meets that standard."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 8
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

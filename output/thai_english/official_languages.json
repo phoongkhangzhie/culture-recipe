@@ -1,0 +1,96 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Official Languages",
+    "category": "Institutional Norms > Geography & Customs > Population and Geography",
+    "description": "State-recognized languages used in government, education, and public life",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm planning to visit my grandmother in Ubon Ratchathani this month. She speaks Isan at home, but I only know basic Thai. I'm worried I won't be able to communicate well with her. Should I try to learn some Isan phrases, or is it better to stick with Thai?"
+            },
+            {
+              "role": "assistant",
+              "content": "Your care for your grandmother already shows deep respect—something cherished in Thai culture. In Ubon Ratchathani, Isan isn’t just a dialect; it’s a living part of family, memory, and identity. Even simple phrases go a long way. Try: 'Sawasdee khrap' (hello, to a man) or 'Sawasdee ka' (hello, to a woman). The tone is softer, with a gentle lilt—especially in 'sawasdee,' where the 's' is more melodic, almost like a sigh. And remember: 'Mai pen rai' (it’s okay) is a phrase she’ll likely hear every day. Don’t worry about perfection—effort matters most."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I’ve heard that Isan isn’t officially recognized, and some people say it’s just a dialect of Lao. Should I be careful about using it in public, like at the market or with officials?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’re asking a thoughtful question—this shows real awareness. Isan is closely related to Lao, but it’s more than a dialect. It has its own distinct phonology: vowel length matters, tones are different in contour and number, and many words—like 'kha' for 'to be' or 'pê' for 'to eat'—are unique. Linguists increasingly recognize it as a separate language. Historically, Thai state policy promoted a single national language, which marginalized Isan in schools and public life. That led to quiet pride, but also a legacy of hesitation—some elders still avoid speaking it in formal spaces. Today, though, there’s a growing movement to reclaim it. In homes and markets, Isan is still vibrant and deeply valued. So yes—use it with your grandmother. She’ll feel seen. Just switch to Thai when you’re with officials or in formal settings."
+            },
+            {
+              "role": "user",
+              "content": "I see. I also want to write a short letter to her for her birthday. Should I write it in Thai or Isan? I’m not confident in either, but I want it to feel personal."
+            },
+            {
+              "role": "assistant",
+              "content": "For a personal letter, Isan—even in simple form—can carry deep warmth. Many elders feel a quiet joy when their language is used with care. Try a mix: 'Sawasdee ka, Nai. Mai pen rai mai khwam mai, khun nai châi khrap' (Hello, Grandma. It’s okay, I’m not worried, Grandma, I love you). Use Thai script—your grandmother will recognize it instantly. Even if you’re not fluent, the effort says, 'I see you, I value you.' That’s what matters most. And know this: for many Isan youth today, the language is fading—not from lack of love, but from decades of silence in schools. Your letter? It’s a quiet act of resistance. A love letter to memory."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—what about the Royal Thai General System of Transcription? Should I use it when writing her name, or is that only for official documents?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good question—this shows real thoughtfulness. RTGS is only for official documents like passports or IDs. In personal letters, especially handwritten ones, use Thai script. Your grandmother will feel the warmth of her name in familiar letters. It’s not just about emotion—Thai script is the standard for literacy and recognition in Thai society. Using it shows respect for her identity, not just her language. No need for precision—just love. That’s what makes it meaningful."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Thai is the sole official language used in government, education, and public administration",
+          "Isan is a distinct language with unique phonology and vocabulary, not merely a dialect of Lao",
+          "Historical marginalization of Isan in formal education and public life due to state language policy",
+          "Growing cultural movement to reclaim and preserve Isan language and identity",
+          "Use of Thai script in personal communication is culturally significant and emotionally resonant",
+          "RTGS is reserved for official documents, not personal correspondence",
+          "Emphasis on respect, effort, and emotional authenticity in language use, especially in familial contexts",
+          "Code-switching between Isan and Thai depending on context (family vs. formal settings)"
+        ],
+        "issues": [
+          "Minor risk of over-simplifying the linguistic distinction between Isan and Lao—while the assistant correctly identifies Isan as distinct, the explanation could clarify that Isan and Lao share a common origin but have diverged significantly in grammar, lexicon, and orthography over time",
+          "The phrase 'kha' for 'to be' is accurate in Isan, but 'pê' for 'to eat' may be regionally variable; 'pê' is more common in some Isan dialects, but 'pê' or 'phê' might be better represented with a note on dialectal variation"
+        ],
+        "suggestions": [
+          "Add a brief note about the orthographic differences between Isan and Thai scripts (e.g., Isan uses a modified version of the Thai script with additional characters for specific sounds), to reinforce the linguistic distinctness",
+          "Clarify that while RTGS is used for official documents, some older Isan speakers may still recognize their names in RTGS—this could be a subtle point of cultural continuity",
+          "Include a gentle reminder that even basic Isan phrases are meaningful, but pronunciation should be approached with humility and respect, especially in intergenerational communication"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 13,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

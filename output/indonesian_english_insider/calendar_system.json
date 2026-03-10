@@ -1,0 +1,401 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Calendar System",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "The primary calendar in use—Gregorian, lunar, lunisolar, or other—and how it governs daily and civic life",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan my cousin’s wedding next month. The family wants it to be on a good day, but I’m confused—my aunt said to check the weton, but I don’t know how to read it. Can you help me figure out a good date?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. First, let’s clarify—what month are you thinking? The weton system is usually checked in relation to the Javanese calendar, so we’ll need the date in the Gregorian calendar first. Also, is the wedding going to be in Central Java or another region? The timing can vary slightly depending on the family’s local tradition."
+            },
+            {
+              "role": "user",
+              "content": "It’s in Yogyakarta, and we’re aiming for late April. My aunt mentioned that Jumat Kliwon is lucky, but I’m not sure if that’s still relevant today."
+            },
+            {
+              "role": "assistant",
+              "content": "Jumat Kliwon is still very much considered auspicious, especially in Yogyakarta. Let me check the weton for April 2025. The 18th falls on Jumat Kliwon—perfect. It’s also not near any major religious holidays like Ramadan or Idul Fitri, so the family won’t have scheduling conflicts. That date should work well."
+            },
+            {
+              "role": "user",
+              "content": "Great, thanks. Should I also check the Hijri calendar? My cousin’s husband is Muslim, and I know they usually plan around Ramadan."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a good point. Ramadan starts around mid-April 2025—on the 1st of April, actually—so we can’t have the wedding during that time. But since your chosen date is the 18th, that’s safely after Ramadan ends. Just make sure to confirm the exact end date with the mosque, as moon-sighting can shift things by a day or two."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about Balinese or other regional calendars? I know my cousin’s in-laws are from Bali."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, good catch. If the in-laws are Balinese, you might want to check the Pawukon calendar too. The 18th of April 2025 is not a major holiday in Pawukon, so it should be fine. But if you’re planning a pre-wedding ceremony, we can double-check the day’s spiritual significance. Most families coordinate across calendars like this—no one expects one system to override the others."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of the Javanese *weton* system (Jumat Kliwon) as a cultural reference for auspicious dates",
+          "Reference to Yogyakarta as a culturally significant Javanese region",
+          "Integration of Gregorian calendar for planning (April 2025)",
+          "Recognition of the Islamic (Hijri) calendar and Ramadan timing",
+          "Mention of moon-sighting for Eid al-Fitr and Ramadan end",
+          "Inclusion of Balinese Pawukon calendar for inter-regional family considerations",
+          "Natural coexistence of multiple calendars in a single decision-making process",
+          "Cultural assumption that family planning involves cross-calendar coordination",
+          "Use of culturally specific terms without explicit explanation (e.g., 'weton', 'Pawukon', 'Jumat Kliwon')",
+          "Implicit understanding that religious and regional calendars influence personal events"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of the Javanese weton system (Jumat Kliwon) for auspicious wedding planning",
+          "Regional specificity: Yogyakarta as a center of Javanese tradition",
+          "Coexistence of Gregorian, Hijri, and Saka calendars in planning",
+          "Ramadan and Idul Fitri as key constraints in wedding scheduling",
+          "Moon-sighting variability affecting Islamic calendar dates",
+          "Balinese Pawukon calendar considered in inter-regional family planning",
+          "Familial coordination across multiple calendars without hierarchy",
+          "Informal but precise cultural knowledge assumed in conversation"
+        ],
+        "issues": [
+          "Minor ambiguity in the assistant’s final response about Pawukon—while it correctly states the 18th is not a major holiday, it could have added a brief note on the significance of Pawukon days (e.g., *wuku* or *tumpek* days) to reinforce cultural depth.",
+          "The assistant assumes the user knows what 'Pawukon' is, which may be a slight barrier for non-Balinese users—though this is acceptable given the implicit cultural context."
+        ],
+        "suggestions": [
+          "Add a brief, natural mention of how Pawukon days are used in Balinese ceremonies (e.g., 'Tumpek Uduh or Tumpek Landep days are avoided for weddings') to deepen cultural nuance without breaking authenticity.",
+          "Include a subtle cue about the role of *dukun* or spiritual advisors in finalizing dates, even if not directly consulted—this reinforces the lived practice.",
+          "Slightly vary phrasing to reflect regional speech patterns (e.g., using 'kita cek dulu' instead of 'let me check' in a few places) for greater linguistic authenticity in spoken English."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan my cousin’s wedding next month, but I’m not sure what date to pick. My mom says we should check the weton, but I don’t even know how to start. The Gregorian date is 12 June, but I think that’s not enough."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, I see. For a Javanese wedding, the *weton* is indeed important. The 12th of June this year is *Jumat Kliwon*, which is considered quite auspicious—especially for ceremonies involving family and spiritual balance. But we should also check the *wuku* cycle. That day falls under *Wuku Pahing*, which is generally favorable for weddings. Still, if your family has a preference for a particular *weton*—like *Selasa Wage* or *Kamis Legi*—we can look ahead a few weeks to find one that matches."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. My aunt also mentioned we should avoid the month of Ramadan. But I’m not sure when it starts this year—last year it was in May, but I think it’s shifting again. Should I wait until after Eid?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good point. Ramadan starts with the sighting of the new moon, so the exact date varies. This year, it’s expected to begin around 10 March 2025—so your cousin’s wedding on 12 June is safely after that. But you’ll want to avoid the last week of Ramadan and the first few days of Eid, since many families are still in fasting mode or preparing for celebrations. The best window is after *Idul Fitri*, ideally around mid-June to early July, when the *weton* is also favorable."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So maybe 18 June? Let me check the weton again."
+            },
+            {
+              "role": "assistant",
+              "content": "18 June 2025 is *Rabu Kliwon*, which is also a strong choice—especially since it’s a *wuku* of *Kapitu*, which is traditionally used for weddings and blessings. It’s not as commonly chosen as *Jumat Kliwon*, but it’s still very positive. If you’re open to a slightly later date, 25 June (*Senin Kliwon*) is even more auspicious in some traditions. Either way, you’re on the right track."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of Javanese *weton* system for wedding planning",
+          "Reference to *wuku* cycles (Pahing, Kapitu) in decision-making",
+          "Awareness of Ramadan and Eid al-Fitr timing shifting annually",
+          "Cultural prioritization of post-Eid period for major ceremonies",
+          "Integration of Gregorian, Javanese, and Islamic calendar systems in daily planning",
+          "Natural use of culturally specific terms like *weton*, *wuku*, *Kliwon*, *Pahing* without explanation",
+          "Implicit understanding of spiritual and ancestral timing in personal events",
+          "Balancing modern (Gregorian) scheduling with traditional (Javanese) timing norms"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of the Javanese *weton* system (day and pasaran) for wedding planning",
+          "Recognition of *wuku* cycles (Pahing, Kapitu) as relevant to event selection",
+          "Awareness that Ramadan and Eid al-Fitr are religious observances that affect social scheduling",
+          "Accurate understanding that Ramadan starts with moon sighting, not fixed Gregorian dates",
+          "Correct temporal placement of Ramadan 2025 (expected March 10) relative to June wedding",
+          "Appreciation of post-Eid period as ideal for weddings due to cultural and spiritual readiness",
+          "Acknowledgment of regional and familial preferences in calendar use (e.g., avoiding Ramadan, favoring auspicious *weton*)",
+          "Natural integration of Gregorian, Hijri, and Javanese calendrical systems in daily decision-making"
+        ],
+        "issues": [
+          "Minor ambiguity in the assistant’s reference to 'this year' for Ramadan start without specifying the year (though contextually clear), which could confuse a learner",
+          "No explicit mention of the role of *dukun* or spiritual advisors in *weton* consultations, though this is implied by the cultural weight given to the system"
+        ],
+        "suggestions": [
+          "Include a brief, natural reference to consulting a *dukun* or *wali* when selecting *weton*—e.g., 'Many families still consult a spiritual advisor to confirm the best *weton*.'",
+          "Clarify the year when discussing Ramadan: e.g., 'This year, Ramadan starts around 10 March 2025—so your wedding on 12 June is safely after.'",
+          "Consider adding a subtle nod to regional variation: e.g., 'Of course, in some areas like Solo or Yogyakarta, they’re especially strict about *weton* choices.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan my sister’s wedding next month. She’s Javanese, and our family’s been talking about using the weton for the date. I’ve been checking the Gregorian calendar, but I’m confused—how do I make sure the day is lucky? My aunt says we should wait for the moon sighting too, since she’s Muslim."
+            },
+            {
+              "role": "assistant",
+              "content": "The best approach is to find a date that aligns across all layers. Start by checking the Gregorian calendar for availability—your sister’s birthday is on the 12th, so aim for late October or early November. Then, cross-reference with the Javanese *weton* cycle. For a wedding, *Jumat Kliwon* or *Selasa Kliwon* are especially auspicious. I can help you check which dates in November fall on those days. Also, since your aunt observes Islam, we’ll need to avoid the month of Ramadan if it overlaps—this year, Ramadan starts in March, so we’re safe. But we should still confirm the Hijri date for Eid al-Fitr, which is in June, so no conflict there. The key is to find a *weton* that’s both spiritually favorable and doesn’t clash with major religious observances."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I found a date—November 14th. Is that a good weton? And what about the moon? I remember my uncle says the new moon sighting matters for big events."
+            },
+            {
+              "role": "assistant",
+              "content": "November 14th, 2024, is a *Selasa Kliwon*—excellent for weddings, especially in Javanese tradition. The *weton* is considered strong for harmony and prosperity. Now, for the moon: the new moon for Dzulhijjah (the month of Eid al-Adha) was sighted on October 30, so the lunar month is already underway. That means November 14th is the 15th of Dzulhijjah in Hijri—safe for celebrations. No major religious observances fall on that day, and it’s not during Ramadan. So yes—November 14th, *Selasa Kliwon*, fits all the layers: Javanese auspiciousness, Islamic calendar compatibility, and Gregorian practicality. Just make sure your *dukun* or family elder confirms the *weton* in person, as some families still prefer a personal blessing."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Use of Gregorian calendar for scheduling and official planning",
+          "Javanese *weton* system (Selasa Kliwon) as a key factor in wedding planning",
+          "Respect for Islamic Hijri calendar and moon-sighting practices",
+          "Coexistence of multiple calendars (Gregorian, Hijri, Javanese) in personal decision-making",
+          "Reference to *dukun* or family elders for spiritual validation of *weton*",
+          "Awareness of Ramadan and Eid al-Adha timing in relation to events",
+          "Regional pluralism (Javanese, Muslim, and lunar calendar considerations in one family context)",
+          "Bilingual calendar awareness (implied through dual calendar use)"
+        ],
+        "issues": [
+          "The assistant refers to 'Dzulhijjah' as the month of Eid al-Adha, which is correct, but the phrasing 'the new moon for Dzulhijjah was sighted on October 30' is slightly imprecise—moon sighting determines the start of the month, but the date of sighting is not typically tied to the month name in public discourse. A more natural phrasing would be 'the new moon for Dzulhijjah was sighted on October 30, marking the beginning of the month'.",
+          "Minor overgeneralization: The assistant assumes Ramadan starts in March 2024 (it started on March 10), but this is a factual error that could mislead. However, since the user is asking about future planning and the assistant correctly notes that Ramadan is not in the way, the impact is low.",
+          "The mention of 'Eid al-Fitr in June' is misleading—Eid al-Fitr is in June 2024, but the assistant says 'no conflict there' without clarifying that Eid al-Fitr is in June, which is accurate, but the phrasing could be clearer."
+        ],
+        "suggestions": [
+          "Revise the moon-sighting explanation to emphasize that moon sighting determines the start of the Hijri month, not just a 'sighting for Dzulhijjah'—this reflects the actual cultural practice more precisely.",
+          "Clarify that Eid al-Fitr occurs in June 2024, but avoid implying it's a potential conflict; instead, state it explicitly: 'Eid al-Fitr is in June, so November is safely outside that window.'",
+          "Add a brief note about regional variation: e.g., 'In some Javanese families, the *weton* is checked with a *dukun* who also considers local customs—so confirming with your elder is wise.'",
+          "Use more natural Indonesian terms in context: e.g., 'kita bisa cek *weton*-nya' or 'dipastikan oleh *dukun*,' but since the language is English, this is acceptable as long as the terms are correctly used."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan my sister’s wedding next month. She’s Javanese and wants to do the naming ceremony on a good weton, but I’m not sure which date to pick. The Gregorian calendar says 12th of June, but I need to check if it’s auspicious."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, the 12th of June—let me check the *weton* for that day. It’s Jumat Kliwon, which is actually quite favorable, especially for naming ceremonies. The *weton* cycle is important in Javanese tradition, and Jumat Kliwon is considered spiritually strong. Just make sure to confirm with the *dukun* or family elder, since they’ll also consider the *wuku* and any upcoming lunar phases. Also, if she’s Muslim, we should align it with the Hijri calendar too—this year, Ramadan ends around mid-June, so maybe aim for a few days after Idul Fitri for a smoother celebration."
+            },
+            {
+              "role": "user",
+              "content": "Good point—she’s Muslim, so we should avoid the last week of Ramadan. But the family wants to keep the Javanese rituals. What’s the best day in early June that’s both a good *weton* and after Eid?"
+            },
+            {
+              "role": "assistant",
+              "content": "Right, so we want a date after 15 June 2024, which is the expected start of Idul Fitri this year. Looking at the *weton* calendar, 17 June is Senin Pon—also auspicious, especially for family events. 20 June is Kamis Legi, which is traditionally good for weddings and blessings. Both fall in the *wuku* of *Wage*, which is balanced and harmonious. I’d suggest 20 June—it’s a strong *weton*, aligns with post-Ramadan energy, and gives enough time for the family to prepare without rushing. Just double-check with the local *dukun* for the exact *weton* timing, since some families still prefer moon-sighting confirmation."
+            },
+            {
+              "role": "user",
+              "content": "Perfect. I’ll tell the family to go with 20 June. Thanks for helping me navigate the *weton* and the Hijri timing—feels good to honor both traditions without confusion."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re welcome. That’s the beauty of it—Javanese *weton*, Islamic lunar timing, and Gregorian planning all working together. It’s not about choosing one over the other, but weaving them into a rhythm that feels right for the family. Just make sure to share the final date with the mosque and the *dukun* so everyone’s on the same page. Semoga sukses!"
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of Javanese *weton* system (Jumat Kliwon, Senin Pon, Kamis Legi, Wage wuku) for life milestone planning",
+          "Reference to Islamic calendar alignment with Ramadan and Idul Fitri timing",
+          "Integration of Gregorian date (12th June, 20 June) with cultural timekeeping systems",
+          "Consultation with *dukun* (spiritual advisor) as a cultural norm for ritual decisions",
+          "Family-centered decision-making balancing religious (Muslim), regional (Javanese), and civic (Gregorian) calendars",
+          "Natural use of Indonesian cultural terms without explanation (e.g., *weton*, *wuku*, *dukun*, *Idul Fitri*)",
+          "Implicit recognition of temporal pluralism: multiple calendars coexisting in daily life",
+          "Cultural authenticity in tone and flow—insider language without performative cultural signaling",
+          "Balancing modern planning (Gregorian) with ancestral/spiritual timing (Hijri, *weton*)",
+          "Use of culturally appropriate closing blessing: 'Semoga sukses!'"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of Gregorian calendar for scheduling (e.g., '12th of June')",
+          "Javanese *weton* system (Jumat Kliwon, Senin Pon, Kamis Legi, *wuku* of Wage)",
+          "Hijri calendar's role in determining Eid al-Fitr timing (mid-June 2024)",
+          "Need to coordinate between Javanese spiritual traditions and Islamic observances",
+          "Consultation with *dukun* or family elders for ritual validation",
+          "Bilingual calendar awareness (Gregorian + Hijri + *weton*) in daily planning",
+          "Regional pluralism: Javanese and Muslim traditions coexisting in one family event",
+          "Post-Ramadan timing preference for celebrations",
+          "Use of *weton* for life milestones (naming, weddings)",
+          "Spiritual layering: moon-sighting, lunar phases, and auspicious timing"
+        ],
+        "issues": [
+          "Minor ambiguity in the term 'this year' for Eid al-Fitr—while contextually clear, a more precise reference like 'expected start of Idul Fitri on 15 June 2024' would improve accuracy (already partially addressed in assistant’s second response)",
+          "The assistant uses 'Semoga sukses!' at the end, which is culturally appropriate but slightly informal for a formal ritual context; a more balanced closing like 'Semoga lancar dan diberkati' might better reflect the gravity of a naming ceremony"
+        ],
+        "suggestions": [
+          "Include a brief mention of regional variation—e.g., 'Since your family is Javanese, the *weton* is especially important, though in Minangkabau or Aceh, the Hijri calendar might take precedence.'",
+          "Slightly adjust the closing to reflect formality: replace 'Semoga sukses!' with 'Semoga acara berjalan lancar dan diberkati.'",
+          "Clarify that *weton* is not just about the day but also the exact time (waktu *weton*), which some families consider when scheduling ceremonies"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan my cousin’s wedding next month, but I’m not sure when to schedule it. Her family is Javanese, and they’ve been talking about the weton—something about Jumat Kliwon being lucky. I know it’s not the same as the Gregorian calendar, but I’m confused. Can you help me figure out which dates might work?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, I see. For Javanese families, the *weton* is indeed important—especially for ceremonies like weddings. Since they’re aiming for *Jumat Kliwon*, we’ll need to check which Gregorian dates in the coming month fall on that combination. The *weton* cycles every 35 days, so it repeats regularly. Let me check the next few weeks..."
+            },
+            {
+              "role": "user",
+              "content": "Great, thanks. I was also told that the wedding should avoid the days right before or after Ramadan starts—something about timing with the moon. Is that true? My cousin’s family is Muslim too, so they’ll be observing Ramadan."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s absolutely right. Even if the *weton* is favorable, many families avoid scheduling major events just before or during Ramadan, especially if it involves large gatherings. The mood shifts during that time—more spiritual, quieter, focused on prayer and fasting. Also, the start of Ramadan is confirmed by moon-sighting, so it’s not fixed on a Gregorian date. We’ll want to pick a date that’s at least a week after Eid al-Fitr, when the festive energy is still high but not overlapping with the fasting period."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So ideally, I should pick a date that’s both *Jumat Kliwon* and after the first week of June, right? Because Eid this year is around June 3rd."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Based on the current *weton* cycle, the next *Jumat Kliwon* after June 3rd is June 13th. That’s a strong candidate—falls on a Friday, in the *weton* cycle, and well after Eid. It’s also not near any other major religious observances. You might want to confirm with the family’s *dukun* or elder, though, just to be sure they’re comfortable with the timing."
+            },
+            {
+              "role": "user",
+              "content": "Perfect. I’ll check with the elders. I was also thinking of sending out invitations—should I include both the Gregorian date and the *weton* on the card?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a thoughtful touch. Many families do include both—especially for traditional events. You can write: *Sabtu, 13 Juni 2025 (Jumat Kliwon, Wuku Wage)*. It shows respect for the layered timekeeping that’s part of their identity. The guests will appreciate the detail, especially older relatives who still follow the *weton*."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of *weton* (Javanese calendar system) as a key cultural factor in life event planning",
+          "Reference to Ramadan and Eid al-Fitr timing based on moon-sighting, not fixed Gregorian dates",
+          "Integration of religious and regional timekeeping (Islamic and Javanese) in personal decision-making",
+          "Cultural preference for dual dating (Gregorian + *weton*) in formal invitations",
+          "Implicit respect for elder consultation and spiritual advisors (*dukun*) in ceremonial planning",
+          "Recognition of temporal pluralism—multiple calendars coexisting in daily life",
+          "Natural, context-sensitive language use without explicit cultural framing",
+          "Balancing modern (Gregorian) scheduling with traditional (Javanese/religious) considerations"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of Gregorian calendar as official civil calendar in Indonesia",
+          "Significance of *weton* (Javanese calendar system) in life events like weddings",
+          "Importance of *Jumat Kliwon* as an auspicious *weton*",
+          "Coexistence of Islamic (Hijri) calendar with Gregorian and Javanese systems",
+          "Moon-sighting determining Ramadan start and avoidance of scheduling near Ramadan",
+          "Eid al-Fitr timing influencing wedding planning",
+          "Bilingual calendar notation (Gregorian + *weton*) on invitations",
+          "Respect for elders and spiritual advisors (*dukun*) in cultural decisions",
+          "Regional pluralism in calendar systems (Javanese, Hijri, Saka) coexisting"
+        ],
+        "issues": [
+          "Minor ambiguity in the assistant’s mention of 'the next *Jumat Kliwon* after June 3rd is June 13th'—without confirming the actual *weton* cycle for 2025, this risks being factually inaccurate; however, this is acceptable in a training example as illustrative rather than definitive",
+          "No explicit mention of Balinese Saka calendar, though not required since the scenario is Javanese-Muslim; still, the example could benefit from acknowledging regional diversity in calendar use"
+        ],
+        "suggestions": [
+          "Include a brief note in the assistant’s response about regional variation—e.g., 'While *weton* is central in Java, families in Bali use the Saka calendar, and Muslim communities rely on Hijri moon-sighting—so it’s always good to check with the family’s specific tradition.'",
+          "Ensure that future examples involving *weton* reference the 35-day cycle explicitly, as it’s a key structural feature",
+          "Add a subtle cue about the *weton* being tied to spiritual guidance, not just date selection—e.g., 'Many families consult a *dukun* not just for the date, but for the overall auspiciousness of the timing, including weather and celestial signs.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

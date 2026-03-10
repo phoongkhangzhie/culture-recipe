@@ -1,0 +1,164 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Year Format",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether years are written in full four-digit form or abbreviated two-digit form in different contexts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku lagi bikin undangan untuk gathering keluarga besar di rumah nenek di Bandung, tanggal 15 Januari. Aku mau tulisnya di WhatsApp group keluarga biar cepat sampai, tapi bingung harus pakai tahun 2024 atau 24. Nanti kan banyak yang tua, kayak kakek-kakek, takutnya salah paham."
+            },
+            {
+              "role": "assistant",
+              "content": "Tenang, itu pertanyaan yang wajar banget. Di grup keluarga yang campuran usia, lebih aman pakai 2024. Biar nggak ada yang bingung, apalagi kalau ada yang mikirnya tahun 1924 atau 2124. Nanti malah kacau."
+            },
+            {
+              "role": "user",
+              "content": "Iya, itu yang aku takutin. Tapi aku juga lihat banyak orang muda di grup itu, kayak adik-adik yang kerja di Jakarta, mereka sering pakai 24 aja. Aku bingung, mungkin aku terlalu hati-hati?"
+            },
+            {
+              "role": "assistant",
+              "content": "Enggak, nggak terlalu hati-hati sama sekali. Kadang di grup keluarga, orang-orang udah ngerti bahwa kalau nulis tanggal, tahunnya selalu lengkap kalau acaranya penting—walau di luar itu sering pakai 24. Jadi, bukan soal usia, tapi konteksnya: ini gathering keluarga besar, bukan sekadar chat santai. Yang muda pun kadang pilih 2024 kalau tahu grupnya banyak yang tua."
+            },
+            {
+              "role": "user",
+              "content": "Oke, berarti aku tulis: 'Gathering keluarga besar di rumah nenek, 15 Januari 2024 jam 10 pagi. Jangan lupa bawa makanan ringan ya!' Aku kira itu cukup jelas?"
+            },
+            {
+              "role": "assistant",
+              "content": "Sangat jelas. Nggak perlu tambahin 'tahun' lagi karena sudah pakai 2024. Jadi, semua orang—dari kakek sampai anak kecil—bisa langsung paham. Kalau mau lebih akrab, bisa tambahin emoji 🌸 atau 🍚, tapi jangan sampe kehilangan kejelasan. Ada yang kirim '23 Januari', terus ada yang tanya, 'tahun 2023 atau 1923?' karena nggak ada konteks lain—jadi mending pakai tahun lengkap biar langsung jelas. Yang penting, konteksnya jelas: ini bukan sekadar chat santai, jadi lebih baik pakai tahun lengkap."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Use of four-digit years (2024) in formal or contextually important family gatherings",
+          "Preference for four-digit years in mixed-age family groups to avoid ambiguity",
+          "Awareness of generational differences in year format usage (younger vs older)",
+          "Context-dependent year formatting: formal/important events vs casual communication",
+          "Reliance on context to resolve ambiguity, especially with two-digit years",
+          "Cultural value placed on clarity over brevity when misinterpretation is possible"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant's second response: 'orang-orang udah ngerti bahwa kalau nulis tanggal, tahunnya selalu lengkap kalau acaranya penting' — while generally true, this implies a universal awareness that may not hold in all family groups; some older users may still expect context or be confused by 2024 in a digital message without prior framing.",
+          "The assistant’s use of 'nggak perlu tambahin 'tahun' lagi karena sudah pakai 2024' could be slightly misleading — while true, it assumes the user knows that '2024' is unambiguous, which is contextually sound but not universally true without additional cues like month/day."
+        ],
+        "suggestions": [
+          "Refine the assistant’s language to reflect nuance: e.g., 'Bisa pakai 2024 biar lebih aman, meski banyak yang nulis 24 di chat santai — tapi di keluarga besar, lebih baik jelas dari awal.' This acknowledges the norm while reinforcing context-based judgment.",
+          "Include a brief example of a real-life confusion scenario (e.g., 'Kadang ada yang nanya, '23 Januari tahun 2023 atau 1923?'') to reinforce the cultural rationale without over-explaining.",
+          "Use more natural speech markers like 'sih' or 'tuh' to enhance authenticity in the assistant’s tone, e.g., 'Bukan soal usia, sih, tapi soal konteksnya — ini acara penting, jadi lebih baik pakai 2024 biar nggak salah paham.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m finalizing the wedding invites for my cousin’s big day next month—23 Januari. I just want to make sure there’s no mix-ups with the year. Should I write it as 23 Januari or 2023 Januari on the formal invite?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always go with 2023 Januari on the formal invite. It’s the safe choice—especially for older family members or anyone who might not catch the two-digit shorthand right away. It shows you’ve thought it through."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. What about the Instagram teaser? I’m posting a photo of the venue with a countdown sticker. Can I just say ‘23 Jan’ there?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, ‘23 Jan’ works fine for Instagram. It’s how most young people in cities post—clean, quick, and fits the visual flow. No one’s gonna confuse it with 1923 when the venue’s in the photo."
+            },
+            {
+              "role": "user",
+              "content": "Good point. But some of my cousins from the village might see it. They’re not as used to the shorthand—should I worry?"
+            },
+            {
+              "role": "assistant",
+              "content": "Totally valid. In rural areas, people still tend to expect the full year, even online. If your post goes to a wide group—city and village alike—just add ‘2023’ in the caption. Keeps everyone on the same page."
+            },
+            {
+              "role": "user",
+              "content": "That’s smart. I’ll put ‘2023’ in the caption but keep ‘23 Jan’ on the sticker so it doesn’t look cluttered. Feels better now—like I’m thinking of everyone."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s how it’s done—balancing what feels natural for everyone, from city to village. The small stuff matters when it’s family."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of full year (2023) in formal invitations to ensure clarity for older generations and formal contexts",
+          "Use of two-digit year (23) in informal digital spaces like Instagram for brevity and visual flow",
+          "Contextual awareness: adjusting format based on audience (urban vs. rural, young vs. older)",
+          "Shared cultural understanding of date formats without needing to explain the rules",
+          "Prioritizing inclusivity by anticipating generational and regional differences in digital literacy",
+          "Balancing aesthetic simplicity with practical clarity in communication"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Four-digit years (2023) are standard in formal contexts like wedding invites",
+          "Two-digit years (23) are common and acceptable in informal digital contexts like Instagram",
+          "Context and audience (urban vs. rural, young vs. older) influence year format preference",
+          "Clarity trumps brevity when ambiguity is possible",
+          "Generational and regional differences in year format usage",
+          "Hybrid formatting (e.g., 23 Jan on sticker, 2023 in caption) is a culturally appropriate compromise"
+        ],
+        "issues": [
+          "Minor: The term 'city and village alike' could slightly reinforce urban-rural binary; more nuanced phrasing like 'across different communities' might better reflect internal diversity",
+          "Slight overgeneralization in 'most young people in cities post—clean, quick, and fits the visual flow'—could be softened to 'many young urban Indonesians use this style'"
+        ],
+        "suggestions": [
+          "Replace 'city and village alike' with 'across diverse communities, including both urban and rural audiences' for greater inclusivity and accuracy",
+          "Consider adding a brief nod to the role of visual context (e.g., 'since the photo shows a modern venue') to reinforce the cultural logic of relying on context for clarity",
+          "Use slightly more varied phrasing for natural speech patterns—e.g., 'It’s totally fine' instead of 'Yes, works fine' for even more authentic tone"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

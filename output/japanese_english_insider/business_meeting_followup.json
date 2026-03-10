@@ -1,0 +1,103 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Business Meeting Follow-Up",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around post-meeting communication, such as follow-up emails, calls, written summaries, or courtesy gifts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "We had the strategy review with Mr. Tanaka from Nihon Kogyo yesterday, and I was supposed to send the summary memo by today. I just realized I haven’t started it yet. What’s the best way to handle this without causing offense?"
+            },
+            {
+              "role": "assistant",
+              "content": "Send a brief email right away. Use a subject line like: 'Follow-up on Q3 Strategy Review – Next Steps.' Start with: 'We sincerely appreciate the opportunity to discuss the Q3 roadmap with Mr. Tanaka-san yesterday. We are finalizing the summary and will send it by tomorrow morning.' Keep it polite, concise, and free of excuses. Have the senior team member review and approve it before sending."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I use the same tone in the email as the memo? And is it okay to mention that we’ll be sending the full version by tomorrow?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—maintain a consistent tone: respectful, humble, and collective. Use formal language, honorifics like *-san*, and avoid contractions. The memo itself should be printed on slightly textured, high-quality paper—often with a subtle company watermark or a small, discreet logo in the corner. A clean layout with minimal borders is ideal, but not strictly 'plain.' Avoid bright colors or flashy design. If delivering in person, use a simple, well-wrapped box with a plain or subtle pattern, and a red or white ribbon if appropriate."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And should I include a gift? If so, how should I handle it?"
+            },
+            {
+              "role": "assistant",
+              "content": "A small, thoughtful gift is appropriate—something regionally authentic, like a premium tea from Kyoto or a handcrafted item from Nagano. Avoid items with the number four, sharp edges, or loud branding. Wrap it neatly in a simple box with a plain or subtle pattern, and use a red or white ribbon if suitable. Present it the same day or next morning, not in the same envelope as the memo. If Mr. Tanaka is present, the senior team member should hand it over with both hands. Include a handwritten thank-you note on plain white paper in neat script—this reflects *kansha*, or gratitude, and strengthens the relationship."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Prompt follow-up email within 24–48 hours using formal, humble tone with honorifics and no contractions",
+          "Use a clear, respectful subject line referencing the meeting’s purpose",
+          "Senior team member must review and approve all communications",
+          "Meeting summaries are formal, collective documents with neutral language, listing attendees by rank",
+          "Documents often feature subtle company watermark or small logo in corner—minimalism is valued but not extreme",
+          "Paper quality is important: slightly textured, high-quality, not 'plain' A4",
+          "Gifts should be regionally authentic, modest, and presented with both hands",
+          "Gift wrapping should be simple with plain or subtle patterns; ribbon color is flexible (red or white preferred, but not mandatory)",
+          "Gift and memo should be delivered separately to maintain formality",
+          "Handwritten thank-you note on plain paper reflects *kansha* (gratitude) and relationship continuity"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 8.8,
+        "overall_score": 8.82,
+        "cultural_elements_verified": [
+          "Prompt follow-up email within 24–48 hours with formal tone and honorifics",
+          "Use of respectful, humble language and avoidance of contractions",
+          "Senior team member's involvement in approval and delivery",
+          "Consistent tone between email and written summary",
+          "High-quality, subtly branded paper for formal documents",
+          "Importance of presentation: neat wrapping, red/white ribbon, plain patterns",
+          "Handwritten thank-you note as expression of *kansha*",
+          "Appropriateness of regionally authentic gifts (Kyoto tea, Nagano crafts)",
+          "Avoidance of taboo items (number four, sharp edges, loud branding)",
+          "Gift delivered separately from memo, presented with both hands by senior member"
+        ],
+        "issues": [
+          "Minor overemphasis on 'slightly textured paper'—while acceptable, it's not a universal standard; some firms use plain high-quality paper. This could risk reinforcing a stereotype about materiality.",
+          "Slight inconsistency in gift timing: suggesting delivery 'the same day or next morning' may be ambiguous—ideally, gift should be delivered within 1–2 business days post-meeting, not necessarily same day, to avoid appearing rushed.",
+          "No mention of *giri* or *omotenashi* as underlying principles—though implied, naming them would strengthen cultural grounding for training purposes."
+        ],
+        "suggestions": [
+          "Replace 'slightly textured paper' with 'high-quality, plain or subtly textured paper' to allow for regional and organizational variation.",
+          "Clarify gift timing: 'Deliver the gift within one or two business days after the meeting, preferably the next morning, to show timely appreciation without haste.'",
+          "Include a brief reference to *giri* (obligation/reciprocity) and *omotenashi* (spirit of hospitality) in the assistant's response to reinforce the cultural logic behind actions.",
+          "Consider adding a note about the gift being presented during a follow-up call or in person, not via courier, unless absolutely necessary—this preserves the personal, face-to-face element central to Japanese business etiquette."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

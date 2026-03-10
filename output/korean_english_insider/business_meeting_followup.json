@@ -1,0 +1,264 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Business Meeting Follow-Up",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around post-meeting communication, such as follow-up emails, calls, written summaries, or courtesy gifts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the project kickoff with the Seoul team, and I need to send a follow-up email by tomorrow morning. The meeting was at 10:30, and I’m still finalizing the action items. Can you help me draft something respectful and thorough? I want to make sure I don’t miss anything, especially since Director Park gave some key feedback on the timeline."
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. Send the email by 10:00 AM tomorrow—within the 24-hour window but not too early. Use a clear, formal subject line: ‘회의 결과 및 후속 조치 안내 – 한국테크 김영수’. Start with a polite opener: ‘안녕하세요, 박정우 차장님, 그리고 서울팀 여러분. 오늘 회의에 참석해 주셔서 진심으로 감사드립니다.’\n\nList key decisions with deference: ‘먼저, 프로젝트 초기 마일스톤은 3월 15일까지로 확정되었으며, 기획팀은 3월 10일까지 기초 설계안을 제출해 주시기 바랍니다.’\n\nAcknowledge Director Park’s input explicitly: ‘차장님께서 언급해주신 리스크 평가 단계를 사전에 별도로 진행해 주시는 것에 대해 깊이 공감하며, 관련 팀과 협의하여 조치할 예정입니다.’\n\nEnd with gratitude: ‘다시 한 번, 오늘의 소중한 시간과 귀중한 조언에 감사드립니다. 앞으로도 잘 부탁드립니다.’\n\nInclude your full name, title, and department in the signature—e.g., ‘김영수, 전략기획본부 차장’. Avoid using English names or company abbreviations. Send before 11 AM on a weekday, and never on weekends or after 6 PM."
+            },
+            {
+              "role": "user",
+              "content": "That’s very helpful. I also thought about sending a small gift to the team—maybe some premium green tea from Jeju? I know it’s not required, but I’d like to show appreciation after such a productive meeting. Should I send it right away, or wait a few days?"
+            },
+            {
+              "role": "assistant",
+              "content": "A thoughtful gesture—Jeju green tea is perfect. Send it 3 to 5 days after the meeting. Too soon feels rushed; too late seems indifferent.\n\nWrap it in red and gold paper—symbolizing respect and good fortune—and present it with both hands. Don’t open it yourself. If sending to the team, deliver it to the office during business hours, not to homes. Have a representative from your side hand it over, ideally with a handwritten note: ‘협업의 시작을 기념하며, 감사의 마음을 담아.’\n\nThis isn’t a transaction—it’s about *jeong*. Keep it modest, no logos, no branding. The gesture is about sincerity, not cost."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll make sure to send the email by 10 AM tomorrow and the tea in a few days. One last thing—should I call Director Park directly to confirm he received the summary, or is email enough?"
+            },
+            {
+              "role": "assistant",
+              "content": "Email is enough—especially since you’ve already acknowledged his input in writing. A call is only needed for urgent or sensitive matters.\n\nIf you do call, initiate from your side. Begin with: ‘안녕하세요, 박정우 차장님. 김영수입니다. 오늘 회의 후 정리된 내용 확인하셨는지요?’ Use formal speech throughout, keep it under five minutes. The fact that you followed up shows respect. Over-communicating can seem pushy—especially in Korean business culture."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Follow-up email within 24 hours, ideally by 10:00 AM the next day",
+          "Use of formal Korean with honorifics (e.g., -yo, -seumnida) in email content",
+          "Explicit acknowledgment of senior participants’ input (e.g., Director Park’s feedback)",
+          "Inclusion of gratitude and deference in tone, especially toward hierarchy",
+          "Appreciation of *jeong* as emotional connection, not transactional",
+          "Gift timing (3–5 days after meeting) and presentation (red/gold wrapping, both hands, no branding)",
+          "Gift delivery during business hours, not to homes, via representative",
+          "Email sufficient for confirmation; call only for urgent matters",
+          "Call protocol: initiate from junior side, formal greeting, concise duration",
+          "Avoidance of English names/abbreviations in formal correspondence"
+        ],
+        "issues": [
+          "Minor inconsistency in name usage: The user is referred to as '김영수' in the assistant’s response, but the initial user message uses 'I' without naming. While this is acceptable in context (as the assistant assumes the user’s identity), it slightly blurs the boundary between role assumption and role-play. However, since the user is clearly acting as a Korean professional in the scenario, this is not a critical error.",
+          "The phrase '협업의 시작을 기념하며, 감사의 마음을 담아' is accurate but could be slightly more formal for a high-level business gift. A more typical phrasing might be '협업의 기반을 다지기 위해 감사의 마음을 담아 전합니다.' However, the current version is still appropriate and authentic."
+        ],
+        "suggestions": [
+          "Consider adding a brief note about the importance of not sending gifts to individuals directly at home—emphasize office delivery and representative handover to reinforce cultural norms.",
+          "Slight enhancement to gift note: Replace '협업의 시작을 기념하며' with '협업의 기반을 다지기 위해' for greater formality and alignment with business context.",
+          "Clarify that the email should be sent from a Korean-language email address (if applicable), as using an English one could signal informality, even if the content is formal."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the final review meeting with the Seoul branch team for the new product launch. The lead from the marketing department, Mr. Park, made several suggestions about the campaign timeline. I need to send a follow-up email by tomorrow morning, but I’m not sure how formal it should be. Should I include everything we discussed, or just the action items?"
+            },
+            {
+              "role": "assistant",
+              "content": "Send it by 10 a.m. at the latest—early enough to show diligence, but not so early it feels rushed. The tone should be formal, with careful use of honorifics throughout. Use a clear subject line like: ‘회의 결과 및 후속 조치 안내 – [Your Company] 김영수’. Include Mr. Park’s suggestions explicitly, even if only to say: ‘당사의 의견을 반영하여 검토하도록 하겠습니다’—that shows you’re taking his input seriously. List all action items with owners and deadlines. End with a brief note of appreciation: ‘당신의 소중한 시간과 지도에 깊이 감사드립니다’—it’s not just a formality; it’s how you honor the relationship."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ll include that. Also, I was thinking—should I send a written summary document too? The project manager mentioned it’s standard after high-level meetings."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a written summary is expected, especially after a strategic meeting. It should be sent by the most senior person present—ideally you or the project lead. List names in order of seniority, and present your team’s input with deference: ‘우리 팀의 의견은 다음과 같습니다’. Include decisions, action items, and a section for appreciation—acknowledging the time and guidance provided. This isn’t just documentation; it’s a quiet expression of respect and continuity."
+            },
+            {
+              "role": "user",
+              "content": "Understood. I’ll draft the summary tonight. One more thing—Mr. Park mentioned the possibility of a small gift after the launch, since we’re now moving into the execution phase. Is that appropriate? What kind of thing would be suitable?"
+            },
+            {
+              "role": "assistant",
+              "content": "A gift is not required, but it’s a meaningful gesture now that the project is formalized. Choose something modest but refined—premium green tea from Jeju, or a box of traditional sweets from a respected local brand. Wrap it in red and gold paper, no labels. Present it with both hands and a slight bow. Leave a note: ‘작은 마음을 전합니다. 앞으로도 많은 지도 부탁드립니다.’ It’s not about the item’s value; it’s about the respect behind the gesture. He’ll likely return the favor in time—this is how trust deepens."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll get the tea from the one in Gyeongbokgung Market. Thanks for walking me through this—feels like I’m finally getting the rhythm of how things work here."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re welcome. A thoughtful follow-up reflects not just diligence, but the depth of your respect for the relationship. The timing, tone, and formality are all part of the unspoken contract in our work culture. Silence after a meeting isn’t indifference—it’s reflection. The right follow-up, when it comes, carries more meaning than a rushed one."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Formal follow-up email sent within 24 hours of a meeting, with honorifics and clear subject line",
+          "Explicit acknowledgment of senior colleagues' input, even when not fully adopted",
+          "Written summary distributed by senior participant, listing names in order of seniority",
+          "Deferential tone when presenting team input, using phrases like '우리 팀의 의견은 다음과 같습니다'",
+          "Appreciation section in summaries, acknowledging time and guidance provided",
+          "Modest, high-quality gift presented with both hands and a slight bow after key milestones",
+          "Gift wrapped in red and gold paper, no labels, accompanied by a handwritten note",
+          "Gifts seen as reciprocal gestures that strengthen relational trust over time",
+          "Silence after a meeting interpreted as reflection, not disengagement",
+          "Follow-up timing and formality viewed as part of an unspoken cultural contract"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Follow-up email within 24 hours, ideally by 10 a.m.",
+          "Use of formal honorifics and polite language in written communication",
+          "Explicit acknowledgment of senior participants' input (e.g., Mr. Park’s suggestions)",
+          "Inclusion of appreciation section in emails and summaries",
+          "Hierarchical naming order in written summaries",
+          "Written summaries as standard after high-level meetings",
+          "Gift-giving (gim) as a gesture of respect, not obligation, especially after key milestones",
+          "Gifts should be modest, high-quality, tastefully wrapped, presented with bow and both hands",
+          "Gift note includes humility and request for continued guidance",
+          "Gift reciprocity as part of relationship-building (jeong)",
+          "Follow-up as a reflection of respect and relational continuity, not just task completion"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant uses English in the response while the user is speaking in English, but the cultural context assumes the user is a Korean professional operating in a Korean business environment. This is acceptable given the language constraint, but the absence of any Korean language examples (e.g., sample email text in Korean) limits authenticity depth. However, since the instruction specifies English as the target language, this is not a critical flaw.",
+          "The phrase 'feels like I’m finally getting the rhythm of how things work here' by the user, while natural, slightly implies outsider status. However, it is framed as a personal realization rather than an explicit cultural identity declaration, so it remains within acceptable bounds."
+        ],
+        "suggestions": [
+          "Include a brief sample email or summary header in Korean (e.g., '회의 결과 및 후속 조치 안내 – [Your Company] 김영수') in the assistant's response to reinforce linguistic authenticity and cultural grounding.",
+          "Consider adding a subtle cue about the importance of not sending the email too early (e.g., 'Avoid sending before 9 a.m. to respect morning routines and seniority') to deepen contextual nuance.",
+          "In future examples, vary the tone of the assistant to reflect different levels of seniority (e.g., junior vs. senior team member) to train for role-based communication differences."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the final review meeting with the Seoul branch on the new retail rollout. The director made several suggestions about the store layout, especially around the customer flow near the entrance. I want to send a follow-up email by tomorrow morning, but I’m not sure how formal it should be. Should I include everything we discussed, or just the key decisions?"
+            },
+            {
+              "role": "assistant",
+              "content": "Send the email by 10 a.m. tomorrow—ideally right after the morning huddle. Use full formal Korean throughout: -seumnida endings, and address the director as ‘이정훈 상무님’. Subject line: ‘회의 결과 및 후속 조치 안내 – [Your Company] 김영수’. Include all key decisions, but frame them with deference: start with ‘이번 회의에서 말씀 주신 사항들을 정리해 드립니다’ and list each action item with clear ownership and deadlines. Explicitly acknowledge the director’s input—e.g., ‘상무님의 소중한 제안을 반영하여 조정할 예정입니다’—to show respect."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ll make sure to include that. Also, I’ve been thinking—should I send a written summary too? The team lead said they’d circulate one, but I’m not sure if I should prepare my own version."
+            },
+            {
+              "role": "assistant",
+              "content": "If you were the note-taker, it’s appropriate to draft a polished summary—especially since the director raised specific points. Send it to the team lead first with a note: ‘상무님의 의견을 반영한 초안을 함께 첨부드립니다’. This shows diligence without overstepping hierarchy. Use formal Korean throughout—no casual language. List senior members first, and present your team’s position with phrases like ‘당사의 의견은 다음과 같습니다’. If the lead is handling it, simply acknowledge receipt and say ‘협조에 감사드립니다’—no need to duplicate effort."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the gift? I remember the director mentioned enjoying premium green tea during the break. Would it be okay to bring a small box next week, maybe with a handwritten note?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—this is thoughtful and appropriate after a high-level meeting. Choose a high-quality, unbranded green tea from a reputable local producer, wrapped in red and gold paper. Present it with both hands, bow slightly, and say: ‘작은 기념품을 준비하여 드렸습니다. 앞으로도 많은 지도를 부탁드립니다’. Avoid mentioning the meeting directly—let the gesture speak. Don’t expect an immediate response or opening. Timing matters: send it after the email and summary, not before. This shows proper sequence in relationship-building."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—should I call the director to confirm they got the email, or is that too pushy?"
+            },
+            {
+              "role": "assistant",
+              "content": "Only if urgent. Otherwise, wait 24–48 hours. Silence isn’t a red flag—it’s part of the rhythm. If you must call, begin with full formality: ‘이정훈 상무님, 안녕하십니까. 김영수입니다. 최근 회의 후 정리된 내용 확인하셨는지요?’ Keep it brief. Pause after asking—let them respond. They’ll appreciate the respect for their time and the ritual of deference."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of formal Korean (-seumnida) in all written follow-ups, including summaries and emails",
+          "Explicit acknowledgment of senior input with deferential phrasing (e.g., '상무님의 소중한 제안을 반영하여')",
+          "Hierarchical ordering in written summaries: senior members listed first",
+          "Gift-giving after high-level meetings as a gesture of *jeong* (emotional connection), with timing and presentation rituals",
+          "Red and gold wrapping for gifts as a sign of respect and auspiciousness",
+          "Presenting gifts with both hands and a slight bow",
+          "Formal phone call etiquette: full greeting with title and self-introduction, even in brief calls",
+          "Avoiding immediate follow-up calls unless urgent; respecting silence as part of relational rhythm",
+          "Polished, formal tone in all post-meeting documents—no casual language or contractions",
+          "Sequence of actions: email first, then summary, then gift, to maintain cultural flow"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Follow-up email within 24 hours, ideally by 10 a.m. the next day",
+          "Use of formal Korean with honorifics (-seumnida, -yo) and respectful address (e.g., '이정훈 상무님')",
+          "Subject line referencing the meeting and including the sender’s name",
+          "Explicit acknowledgment of senior participant’s input (e.g., '상무님의 소중한 제안을 반영하여 조정할 예정입니다')",
+          "Polished written summaries prepared by the note-taker and sent with deference to hierarchy",
+          "Appropriate sequencing: email → summary → gift (not before)",
+          "Gift selection: high-quality, unbranded premium tea, presented in red and gold wrapping",
+          "Gift presentation: both hands, slight bow, polite verbal expression ('작은 기념품을 준비하여 드렸습니다...')",
+          "Avoiding direct mention of the meeting in the gift context",
+          "Silence after follow-up as culturally acceptable—no need to confirm receipt immediately",
+          "Formal phone call protocol: full self-introduction, deferential tone, pause after question"
+        ],
+        "issues": [
+          "Minor: The phrase '작은 기념품을 준비하여 드렸습니다' is slightly more ceremonial than typical for a first post-meeting gift; in many business contexts, a simpler phrase like '감사의 마음을 담아 작은 선물을 준비했습니다' might be more common and less formal.",
+          "Slight over-precision in the timeline: while 24–48 hours is acceptable, the exact 24-hour window is not universally enforced—some senior figures may expect longer silence, especially if they are busy. The example could acknowledge this nuance."
+        ],
+        "suggestions": [
+          "Replace '작은 기념품을 준비하여 드렸습니다' with '감사의 마음을 담아 작은 선물을 준비했습니다' to better reflect natural business gift language.",
+          "Add a brief note in the assistant’s response to the phone call question: 'Note that some senior executives may not respond immediately—even after a day or two—so patience is part of the ritual.'",
+          "Consider including a subtle mention of *jeong* in the gift explanation: e.g., 'This gesture reflects our growing mutual respect and the spirit of *jeong* in our collaboration.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Basic Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Foundational rules of polite social behavior and conduct in everyday interpersonal interactions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting Bangkok for the first time and I want to visit Wat Pho. I’m not sure how to behave properly there—especially since I’ve heard it’s very respectful. Can you help me prepare?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course, Khun. Wat Pho is a revered temple and a place of deep spiritual significance. To show respect, please dress modestly—cover your shoulders and knees. Avoid shorts, tank tops, or anything revealing. Shoes must be removed before entering any building, so wear something easy to take off.\n\nWhen you arrive, walk quietly and keep your voice low. The temple is a space for reflection, and loud behavior is considered disruptive."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. What about taking photos? I’d love to capture the golden Buddha and the temple grounds."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great idea, Khun. You may take photos, but please be mindful. Avoid photographing monks or people in prayer—this can feel intrusive. Never point your camera directly at Buddha statues; shoot from a respectful distance instead.\n\nAnd please don’t use flash in sacred areas. The quiet and stillness are part of the temple’s spirit. If you see someone bowing or performing a wai, it’s a gentle cue to follow their lead. A small wai at the entrance when leaving is a thoughtful way to show gratitude."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What if I accidentally do something wrong—like pointing my feet at a statue? Should I apologize?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, thank you for asking with care, Khun. In Thai culture, we don’t expect perfection—especially from visitors. If you accidentally point your feet at a statue or someone, just gently adjust your posture with a soft smile. A small wai is enough—no need for a formal apology.\n\nThe key is intention. As long as you’re aware and trying your best, people will see your respect. Many Thais appreciate the effort more than flawless behavior. Harmony, not perfection, is what matters most."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—can I touch the Buddha statues or the religious objects?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, Khun. It’s important not to touch any religious objects, including Buddha statues, altars, or offerings. They are considered sacred and should be viewed with reverence, not handled. Even a light brush can be seen as disrespectful. If you’re curious, you can observe from a respectful distance or ask a temple attendant for information—they’re usually happy to share."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The wai – gesture of respect",
+          "Head and feet – sacred body zones",
+          "Modesty and indirect communication",
+          "Public behavior and dignity",
+          "Hierarchy and age respect",
+          "Avoiding direct confrontation",
+          "Respect for sacred spaces and objects",
+          "Non-use of flash in religious areas",
+          "Mindful photography etiquette",
+          "Shoes must be removed before entering temples"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Modest dress code (covering shoulders and knees) at temples",
+          "Removal of shoes before entering temple buildings",
+          "Quiet and respectful behavior in sacred spaces",
+          "Avoiding photography of monks or people in prayer",
+          "Respectful distance when photographing Buddha statues",
+          "Prohibition of using flash in sacred areas",
+          "Wai as a gesture of gratitude and respect",
+          "No need for formal apology for minor accidental breaches",
+          "Emphasis on intention and harmony over perfection",
+          "Prohibition against touching religious objects"
+        ],
+        "issues": [
+          "The assistant uses 'Khun' consistently, which is accurate, but could occasionally include 'Auntie' or 'Uncle' in more informal or elder-directed contexts to reflect hierarchy and age respect more fully.",
+          "While the assistant correctly avoids over-explaining or lecturing, it could subtly reinforce the concept of indirect communication by using more softening language (e.g., 'it might be best to...', 'perhaps you might consider...') in one or two responses to model Thai indirectness more naturally."
+        ],
+        "suggestions": [
+          "In future iterations, incorporate a brief mention of using honorifics like 'Auntie' or 'Uncle' when addressing older locals or temple attendants to reinforce age-based respect.",
+          "Introduce a softening phrase such as 'It might be best to...' or 'Perhaps you could...' when giving advice to model the Thai preference for indirectness and politeness.",
+          "Consider adding a line about not pointing feet at people or religious objects during the photo discussion, to reinforce the head/feet taboo in a natural way."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m visiting Bangkok for the first time and I’m going to a friend’s family dinner at their home. I want to make a good impression. What should I do to be respectful?"
+            },
+            {
+              "role": "assistant",
+              "content": "Sawasdee khrap/kha. Welcome to Bangkok! It’s wonderful that you’re thinking about showing respect—Thai families truly value guests who are mindful and kind. First, always remove your shoes before entering the house, even if no one says anything. It’s a quiet sign of care. When you arrive, greet the elders first with a gentle wai—hands together at chest level, a small bow. If you see an older auntie or uncle, you can say 'Auntie' or 'Uncle' with a smile. Never touch anyone’s head—it’s sacred. And avoid pointing with your finger; use your chin or a soft hand gesture instead."
+            },
+            {
+              "role": "user",
+              "content": "What about the food? I’ve heard not to point chopsticks at people. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s very important. Never stick chopsticks vertically into a bowl of rice—this resembles a funeral offering and is deeply inappropriate. When passing food, use your right hand only; the left is considered unclean. Wait for the eldest person or the host to start eating before you begin. And it’s polite to leave a small amount of food on your plate—even if you’re full—so they know you’re satisfied. If you’re unsure, just smile and say, 'It’s delicious, thank you, kha/khrap,' with a soft tone. A quiet smile often speaks more than words."
+            },
+            {
+              "role": "user",
+              "content": "I’m worried I might accidentally point my feet at someone. How do I sit properly?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a very common concern—and you’re already thinking with care. Always keep your feet tucked under you or placed flat on the floor. Never cross your legs so that your feet point at anyone, especially elders, monks, or religious objects. If you’re sitting on the floor, keep your feet tucked behind you or turned slightly inward. On a chair, avoid stretching your legs out. It’s not just about manners—it’s about honoring the sacredness of the head and the humility of the feet. Even a small adjustment shows deep respect."
+            },
+            {
+              "role": "user",
+              "content": "Thank you so much. One last thing—what if I want to say no to something, like staying longer? How can I do it politely?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s a beautiful question—this is where Thai communication truly shines. Saying 'no' directly is never done. Instead, you’d say something like, 'It might be difficult, kha/khrap,' or 'I’ll need to check with my schedule.' You can also pause, smile gently, and say, 'I’ll think about it,' without committing. A soft smile, a slight wai, and a quiet tone carry more meaning than a firm refusal. Silence is also a powerful way to indicate agreement or hesitation—no words needed. The goal isn’t to say no—it’s to preserve harmony. If you’re truly unable to stay, just say, 'Thank you for the kind invitation, but I need to go. I’ll see you again soon, kha/khrap,' with a warm wai. That’s how respect is truly shown."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "The wai gesture and its hierarchical significance (hands at chest level for elders, forehead for monks)",
+          "The sacredness of the head and impropriety of touching it",
+          "The impoliteness of pointing feet at others, especially elders or religious objects",
+          "The use of indirect communication to decline requests (e.g., 'it might be difficult', 'I’ll think about it')",
+          "The importance of removing shoes before entering a home",
+          "The taboo against sticking chopsticks vertically in rice",
+          "The use of the right hand for passing food and the left hand as unclean",
+          "The practice of leaving a small amount of food on the plate to indicate satisfaction",
+          "The use of honorifics like 'Auntie/Uncle' and 'Khun' for elders and peers",
+          "The value of silence and soft tone in preserving harmony"
+        ],
+        "issues": [
+          "Minor inconsistency in gendered pronouns: 'khrap' is used for males, 'kha' for females; the assistant uses both interchangeably without context. While common in informal settings, this could confuse learners about correct usage. Slight overgeneralization in 'kha/khrap' usage without specifying gender context.",
+          "The phrase 'It’s possible, but I’ll' in the anecdote is truncated and not fully included, which may mislead about the full cultural context of indirect refusal."
+        ],
+        "suggestions": [
+          "Clarify gender-specific usage of 'kha' and 'khrap' in the assistant’s response when addressing a guest, e.g., 'If you’re a woman, say kha; if a man, say khrap'—or use neutral phrasing like 'kha/khrap' with a note on context.",
+          "Complete the anecdote about the unspoken 'no' in the training example to show the full cultural pattern of indirect refusal, including the follow-up behavior of the Thai colleague.",
+          "Add a brief note about temple etiquette (e.g., covering shoulders and knees) when discussing home visits, as it's relevant to the broader cultural context of respect and modesty."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m visiting Bangkok for the first time and I’m going to a temple tomorrow. I want to make sure I do everything right. Can you help me with the etiquette?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course! I’m glad you’re being thoughtful. Dress modestly—cover your shoulders and knees. No shorts, tank tops, or revealing clothes. Remove your shoes before entering any sacred area. That’s essential."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about touching things inside? I saw a Buddha statue and wanted to take a photo."
+            },
+            {
+              "role": "assistant",
+              "content": "Never touch a Buddha statue—ever. Even pointing with your finger is disrespectful. If you want to photograph it, use your chin or hand to gesture gently. And always keep your feet pointed away from the statue. Pointing feet at sacred objects is considered very serious in Thai culture."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about monks? I saw one walking down the street. Should I wai?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not expected in casual encounters. Most Thais don’t wai a monk just for passing by. A quiet nod or a slight pause in movement is more natural and respectful. If you’re offering alms or in a formal setting, then a small wai at chest level is appropriate. But don’t do it just because you see a monk—especially not a forehead-level wai, which is reserved for deep reverence. Also, monks usually don’t respond to wais from strangers. That’s normal—don’t take it personally."
+            },
+            {
+              "role": "user",
+              "content": "I see. What about eye contact? I didn’t want to stare, but I wasn’t sure how to act."
+            },
+            {
+              "role": "assistant",
+              "content": "Good question. Thais often avoid direct eye contact with monks or elders as a sign of respect. Looking down slightly or glancing briefly is more appropriate. It’s not about being rude—it’s about humility and awareness of hierarchy. In temples, people move quietly and keep their voices low. Even a soft smile or a gentle bow can show kindness without overstepping."
+            },
+            {
+              "role": "user",
+              "content": "What if I want to give a donation? How should I do that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. Use your right hand—never the left, as it’s considered unclean. Place the offering on a tray or bowl, and bow slightly. You can say 'Sawasdee kha' if you’re a woman, or 'Sawasdee khrap' if you’re a man—but it’s not required if the monk isn’t speaking. A quiet demeanor and calm presence are more important than words. Monks usually don’t speak back, so just stay respectful and leave quietly."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I accidentally do something wrong? Like, if I point my foot at someone?"
+            },
+            {
+              "role": "assistant",
+              "content": "No need to panic—mistakes happen, and Thais understand that. A gentle smile and a small bow go a long way. The important thing is your intention. But remember: even unintentional foot-pointing is seen as deeply disrespectful because body positioning reflects inner awareness. In temples, always keep your feet covered and avoid crossing legs toward sacred objects. Quietness and calm movement are also signs of respect—Thais often speak softly and move slowly in religious spaces."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Modest dress (cover shoulders and knees) in temples",
+          "Remove shoes before entering sacred spaces",
+          "Never touch Buddha statues or point at them with fingers",
+          "Avoid pointing feet at people, monks, or religious objects",
+          "Wai is context-dependent: not expected in casual encounters with monks",
+          "Use a quiet nod or slight pause instead of wai when passing a monk",
+          "Monks typically do not respond to wais from strangers—this is normal",
+          "Avoid direct eye contact with monks or elders as a sign of respect",
+          "Use right hand for giving or receiving offerings",
+          "Sawasdee kha/khrap is polite but not required in non-verbal interactions",
+          "Speak softly and move calmly in religious settings",
+          "Cultural humility: intention matters more than perfection"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "The wai gesture and its levels of respect (chest vs. forehead)",
+          "The sacredness of the head and impropriety of touching it",
+          "The offensiveness of pointing feet at people or sacred objects",
+          "Modesty and indirect communication norms (e.g., avoiding direct confrontation)",
+          "Dress code for temples (covering shoulders and knees)",
+          "Shoe removal before entering sacred spaces",
+          "Use of right hand for giving offerings, avoiding the left",
+          "Monks not responding to wais from strangers",
+          "Avoiding loud voices and maintaining quiet demeanor in temples",
+          "Importance of intention and humility over perfection in etiquette",
+          "The social significance of subtle, non-confrontational gestures"
+        ],
+        "issues": [
+          "The assistant's explanation of the monk interaction could be slightly more nuanced: while a wai is not expected during casual encounters, many Thais do perform a small wai (at chest level) when passing a monk respectfully, especially if they are aware of the monk’s presence. The statement that 'most Thais don’t wai' may oversimplify and risk implying disengagement where there is often quiet acknowledgment.",
+          "The use of 'Sawasdee kha' and 'Sawasdee khrap' is accurate, but the assistant could clarify that these are greetings, not required for alms-giving. The implication that saying them is optional during alms-giving is correct, but the phrasing might benefit from more context on when they are typically used.",
+          "The assistant could have briefly mentioned that monks are not allowed to touch money directly, so donations are placed on a tray—this adds important context for first-time visitors."
+        ],
+        "suggestions": [
+          "Clarify that while a wai is not expected during casual monk encounters, a respectful pause, slight bow, or quiet nod is common and culturally appropriate—this reflects a more accurate portrayal of everyday Thai behavior.",
+          "Add a brief note about how monks receive alms: donations are placed on a tray or bowl, and monks do not touch the money directly, so the donor should place the offering carefully and step back.",
+          "Include a gentle reminder about maintaining a calm and composed presence—Thais often associate inner stillness with respect in sacred spaces, which reinforces the value of quietness beyond just voice volume."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

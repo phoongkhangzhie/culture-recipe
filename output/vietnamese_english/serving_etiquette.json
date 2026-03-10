@@ -1,0 +1,115 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Serving Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms around offering and serving food and drink to guests, including order of service, refills, and insistence",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for the first time this weekend, and I’m nervous about how to behave during the meal. My cousin said they’ll serve me first, but I don’t want to seem rude if I don’t eat right away. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to care—this shows real respect. In most Vietnamese homes, especially during family meals, the host serves guests first as a sign of honor and care. Accept the serving with a gentle nod and a soft \"Cảm ơn\". Don’t eat right away—wait until everyone has been served. The host may place food directly on your plate with chopsticks, which is a warm gesture of welcome. In traditional settings, guests don’t serve themselves unless invited. But in younger or urban households, it’s becoming more common to serve from communal dishes—so follow the lead of others if you’re unsure."
+            },
+            {
+              "role": "user",
+              "content": "What if they keep offering more food? I don’t want to overeat, but I don’t want to offend them either."
+            },
+            {
+              "role": "assistant",
+              "content": "The repeated offers aren’t about hunger—they’re about inclusion and care. The host wants you to feel welcome, not pressured. You can politely decline with a smile: \"Tôi đã ăn no rồi, cảm ơn anh/chị!\" (I’ve eaten, thank you!). Leaving a small amount on your plate is actually respectful—it shows you’re satisfied. If they insist again, just say \"Thật sự đủ rồi, cảm ơn nhiều!\" (I’m truly full, thank you!) with a warm tone. This ritual isn’t a test—it’s a way of saying, \"We’re glad you’re here.\" In fact, there’s a common story: a guest once refused a second bowl of pho three times, but the host kept bringing it, smiling, until the guest finally accepted—only to realize it was a quiet way of saying, \"You’re one of us now.\""
+            },
+            {
+              "role": "user",
+              "content": "And what about drinks? I noticed they keep refilling my tea cup. Should I stop them?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, don’t stop them. Refilling tea is a quiet act of care and respect. The host or eldest family member often checks your cup throughout the meal. Pouring with both hands is a small but meaningful gesture—it shows humility and gratitude. If you’re done, just leave a little tea in the cup. That’s a polite, unspoken signal. If you want to decline, raise your cup slightly with both hands and say \"Không, cảm ơn\" with a smile. It’s not about the tea—it’s about the connection."
+            },
+            {
+              "role": "user",
+              "content": "Got it. One last thing—should I try to serve myself, or let them do everything?"
+            },
+            {
+              "role": "assistant",
+              "content": "Best to let the host serve you unless they invite you to help yourself. Reaching across the table can be seen as impolite in traditional settings. In rural or deeply traditional households, even communal dishes may not be touched until the host invites guests to serve. But in modern or urban homes, especially with younger families, it’s common to share from communal dishes. Watch how others behave—this is your guide. If you’re offered something, accept with both hands when possible. And remember: when the host places a small portion of rice on your plate, it’s not just food—it’s a quiet welcome. A gesture that says, \"Anh/chị đã như người trong nhà rồi.\""
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Host serves guests first as a sign of honor and care",
+          "Guests should not eat before being served",
+          "Host may place food directly on guest’s plate using chopsticks",
+          "Refusing food multiple times is common; host may insist gently with 'Ăn đi, đừng ngại!'",
+          "Leaving a small amount of food on the plate shows satisfaction",
+          "Refilling drinks (especially tea) is a continuous act of care",
+          "Leaving a little tea in the cup signals you’re done",
+          "Raising cup with both hands to decline a refill is polite",
+          "In traditional homes, communal dishes may not be touched until invited",
+          "Accepting food with both hands shows respect",
+          "The gesture of placing rice on a guest’s plate symbolizes inclusion",
+          "The cultural anecdote of the second bowl of pho reflects ritualized hospitality",
+          "Phrase 'Anh/chị đã như người trong nhà rồi' reflects deep familial warmth"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Host serves guests first, especially elders or honored guests",
+          "Host may place food directly on guest’s plate with chopsticks as a gesture of care",
+          "Guests should not eat before being served",
+          "Repeated food offers are a cultural norm of inclusion, not pressure",
+          "Polite refusal with phrases like 'Tôi đã ăn no rồi, cảm ơn' is appropriate",
+          "Leaving a small amount of food on the plate is respectful",
+          "Refilling drinks (especially tea) is continuous and expected",
+          "Pouring tea with both hands is a sign of respect",
+          "Leaving a small amount of tea in the cup signals completion",
+          "Raising cup with both hands to decline is a culturally appropriate gesture",
+          "In traditional homes, guests do not serve themselves unless invited",
+          "Rice is typically served in a communal bowl; host may place a small amount on guest’s plate as a welcome gesture",
+          "The anecdote about the second bowl of pho reflects authentic cultural ritual"
+        ],
+        "issues": [
+          "Minor inconsistency in pronoun usage: 'anh/chị' is used in the final response, but the user is visiting their cousin—depending on age and gender, 'em' or 'anh/chị' may be contextually more appropriate. However, this is a subtle nuance and does not constitute a critical error.",
+          "The phrase 'Anh/chị đã như người trong nhà rồi' is accurate and culturally resonant, but could be slightly more natural in context—perhaps 'Anh/chị đã như một phần gia đình rồi' would flow better in spoken Vietnamese. Still, the meaning is preserved."
+        ],
+        "suggestions": [
+          "In the final response, consider adjusting the honorific to match the familial relationship more precisely (e.g., 'em' if the user is younger than the cousin).",
+          "To enhance authenticity, include a brief mention of the traditional tea ceremony (e.g., 'The host pours tea with both hands, often from a small pot into delicate cups') to reinforce the ritualistic aspect.",
+          "Clarify that while urban families may allow self-serving, it's still considered respectful to wait for the host’s lead—this reinforces the cultural value of deference."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

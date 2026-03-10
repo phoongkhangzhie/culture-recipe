@@ -1,0 +1,115 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Serving Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms around offering and serving food and drink to guests, including order of service, refills, and insistence",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my friend’s family in Chiang Mai for the first time, and I’m nervous about how to behave during dinner. They’ve been so kind already, but I don’t want to offend anyone. Can you help me understand the right way to accept food and drinks?"
+            },
+            {
+              "role": "assistant",
+              "content": "Your care to learn is already a sign of respect—many Thais appreciate that intention deeply. In Thai homes, the host usually serves guests first, especially the eldest or most senior visitor. When food is placed on your plate, accept it with both hands if possible, especially in traditional or family settings. A soft 'khob khun' (thank you) is perfect. The host may place small portions of each dish on your plate to show generosity and inclusion—this is a sign of warmth, not obligation. Even in urban or younger households, the spirit of hospitality remains central, though the form may feel more relaxed."
+            },
+            {
+              "role": "user",
+              "content": "What about drinks? I noticed my friend’s aunt kept refilling my tea without asking. Should I have said something?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, you did perfectly. Refilling a guest’s drink without asking is a sign of attentiveness and care—it’s not just polite, it’s expected. In Thai culture, guests don’t pour their own drinks; that’s the host’s role. If you’re full, simply place your hand gently over the cup or say 'khob khun' with a soft smile. The host will understand. Avoid drinking from shared pitchers—this is seen as unhygienic. In casual settings, one hand is acceptable, but both hands are preferred when showing respect."
+            },
+            {
+              "role": "user",
+              "content": "I saw the host eat only after everyone else had started. Is that normal?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s very common—especially in traditional or rural homes. The host often waits until the guest has taken the first bite before eating, showing humility and that your comfort comes first. It’s not about hunger; it’s about harmony. In modern or urban families, this may be less formal, but the underlying intention remains: putting the guest first. If you’re unsure, begin eating slowly after your plate is served, and they’ll follow soon after."
+            },
+            {
+              "role": "user",
+              "content": "What if I don’t want another helping of curry? Should I just say no?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to decline gracefully. Say 'kha' with a soft tone and a slight bow—palms together, fingers pointing upward, head slightly lowered. You can also say 'khob khun, kha' to soften the refusal. Repeated offers are not a test of persistence; they’re a cultural performance of care and social bonding. The host may offer again to show continued generosity. A smile, gentle eye contact, and a nod are just as important as words—silence and non-verbal cues carry deep meaning in Thai interaction."
+            },
+            {
+              "role": "user",
+              "content": "After dinner, my friend’s aunt brought out fresh fruit and desserts. Is that common?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Serving fruit or dessert after the meal is a cherished tradition—it’s a final gesture of care and hospitality. The host may offer it with a quiet 'khob khun' or a small bow. Accepting with both hands and a smile shows appreciation. Even if you’re full, it’s kind to accept a small piece—declining too firmly might be seen as rejecting their kindness. This moment often signals the visit is ending warmly, reinforcing the bond between host and guest."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The host serves guests before themselves, especially the eldest or most senior visitor",
+          "Food is accepted with both hands as a sign of respect",
+          "The host refills drinks without asking as a sign of attentiveness",
+          "Guests do not pour their own drinks",
+          "The host often waits to eat until guests have started",
+          "Repeated offers of food are a cultural expression of care and social harmony",
+          "A soft 'kha' with a slight bow and palms together (fingers up) is a graceful way to decline",
+          "Non-verbal cues—smiling, eye contact, subtle nods—are as important as words",
+          "Serving fruit or dessert after the meal is a traditional sign of warmth and closure"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Host serves guest first, especially the eldest or most senior visitor",
+          "Accepting food with both hands is a sign of respect",
+          "Host refills drinks without asking as a sign of attentiveness",
+          "Guests should not pour their own drinks",
+          "Declining food with 'kha' and a hand gesture (palms together, fingers up, slight bow) is appropriate",
+          "Host often waits to eat until guests have started",
+          "Serving fruit or dessert after dinner is a traditional gesture of care",
+          "Avoid drinking from shared pitchers; use individual cups",
+          "Gentle insistence on serving is cultural performance of care, not pressure"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'In urban or younger households, the form may feel more relaxed'—while accurate, could be slightly nuanced to acknowledge that even in urban settings, the underlying principle of prioritizing guests remains strong, even if outward forms vary.",
+          "The phrase 'khob khun' is used correctly, but 'khob khun' is more commonly used in formal or polite contexts; in casual serving scenarios, 'khob khun' may be used, but 'khop khun' (with a 'p' sound) is the standard spelling. However, this is a minor phonetic variation and not a critical error."
+        ],
+        "suggestions": [
+          "Add a brief note about regional variation—e.g., in some rural areas, the host may eat only after all guests have finished, while in urban Bangkok homes, the form may be more relaxed but the intent remains.",
+          "Include a subtle mention of non-verbal cues like soft eye contact and a gentle smile as integral to polite refusal, reinforcing the cultural emphasis on harmony over directness.",
+          "Clarify that while both hands are preferred, one hand is acceptable in casual settings—this avoids overprescribing formality."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

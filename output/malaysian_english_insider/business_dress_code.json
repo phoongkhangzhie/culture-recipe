@@ -1,0 +1,95 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Business Dress Code",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expected attire in professional and business settings, including formal, smart-casual, and industry-specific norms",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m starting a new role at a government-linked company in Kuala Lumpur next week, and I’m not sure what to wear for the first day. I’ve got a navy suit, but I’m thinking about pairing it with a batik blouse instead of a plain white one. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "The navy suit’s perfect—very safe and professional. A batik blouse works, especially if it’s a subtle print in a neutral tone, like muted maroon or forest green. Go for lightweight cotton to stay cool in KL’s heat. Keep the sleeves full or three-quarter, and the neckline modest. A cardigan or tailored blazer over it will keep the look polished. Avoid bold patterns or bright colours—better to stay understated in the first week."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. What about shoes? I’ve got a pair of black loafers—would those work, or should I go for heels?"
+            },
+            {
+              "role": "assistant",
+              "content": "Closed-toe loafers are acceptable, especially if you’re on your feet, but heels are still the default for formal meetings and briefings. If you wear loafers, make sure they’re clean, polished, and not scuffed. Many women opt for heels in government offices—especially during Ramadan or official events—so it’s a safe bet."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ve been wearing a tudung since university, and I’m wondering if it’s expected in this office. I don’t want to stand out."
+            },
+            {
+              "role": "assistant",
+              "content": "In KL’s government-linked companies, wearing a tudung is not just common—it’s the norm. You’ll see many women in your team doing the same, especially during Ramadan or official functions. A simple black or navy pashmina or tudung blends in perfectly. It’s seen as part of professional decorum, not just religious expression."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that’s really reassuring. One last thing—should I avoid wearing anything with patterns during Hari Raya week?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good instinct. During Hari Raya, many wear traditional outfits, but in a business setting, keep it muted. Solid colours or subtle patterns are best. Avoid bright reds, golds, or bold florals—they can feel too festive. A respectful, understated look shows you’re mindful of the context—people notice, and it’s appreciated."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Modesty in business attire for women, including full sleeves and modest necklines",
+          "Acceptance and normalization of tudung in government-linked companies in KL",
+          "Preference for neutral, subtle prints in batik or traditional fabrics in formal settings",
+          "Use of lightweight fabrics like cotton due to climate",
+          "Hierarchy reflected in dress conservatism (implied through tone and advice)",
+          "Respect for religious context during Hari Raya, with muted tones preferred in office settings",
+          "Formal footwear expectations (heels as default, loafers acceptable if polished)",
+          "Cultural sensitivity to avoid overt religious symbols in professional attire"
+        ],
+        "issues": [
+          "The assistant’s response to the tudung question slightly overgeneralizes by stating 'it’s the norm' without acknowledging that some government-linked companies may have more diverse staff or varying levels of religious expression, though this is still within acceptable bounds",
+          "Minor risk of reinforcing a monolithic view of Muslim women’s dress, though the context (KL, government-linked) is accurate and the advice is appropriate"
+        ],
+        "suggestions": [
+          "Add a brief nuance in the tudung response acknowledging that while common, dress norms can vary slightly by department or office culture—e.g., 'Most women in your team will wear it, but if you're unsure, a simple, solid-coloured hijab is always safe.'",
+          "Consider including a subtle mention of regional diversity (e.g., 'In some regional offices, you might see more variation, but in KL’s central offices, this is standard') to reinforce the multicultural nuance without overcomplicating the response"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 11,
+    "research_rounds": 3,
+    "examples_produced": 1
+  }
+}

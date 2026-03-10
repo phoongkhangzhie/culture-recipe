@@ -1,0 +1,160 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Verbal Communication Style",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Communication Style",
+    "description": "The general directness or indirectness of verbal communication in social and professional contexts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing to ask my senior colleague, Thầy Minh, if I can take a few days off for my younger sister’s wedding. I’m worried he’ll say no, and I don’t want to seem disrespectful. How should I phrase it?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to consider the tone—this kind of request needs care. Start with gratitude and acknowledge his time. Try: *‘Thầy ơi, em rất cảm kích vì Thầy luôn dìu dắt em trong công việc. Em đang chuẩn bị cho đám cưới của em gái, và có một vài việc cần em tham gia. Em biết công việc hiện tại đang gấp, nên em không dám chắc là có thể xin nghỉ được. Nếu Thầy thấy phù hợp, em xin phép được nghỉ từ thứ Sáu đến Chủ Nhật, để về quê lo liệu một chút. Em sẽ cố gắng sắp xếp công việc tốt nhất có thể trước khi đi, và nếu có việc gì cần Thầy hỗ trợ từ xa, em sẽ báo ngay.’*"
+            },
+            {
+              "role": "user",
+              "content": "That sounds good, but what if he doesn’t respond right away? I’ve noticed he sometimes just nods or stays quiet. Does that mean he’s okay with it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—silence or a quiet nod from someone senior like Thầy Minh often means acceptance, especially in formal or hierarchical settings. It’s a way to preserve harmony without saying more. But pay attention: if he avoids eye contact, gives a half-smile, or seems distracted, it might signal hesitation. Don’t push for confirmation. Wait a day or two. If he doesn’t raise concerns, it’s safe to proceed. Then follow up with: *‘Cảm ơn Thầy nhiều ạ. Em đã sắp xếp công việc xong, và sẽ báo cáo lại nếu có việc gì cần Thầy hỗ trợ từ xa.’*"
+            },
+            {
+              "role": "user",
+              "content": "What if he says ‘Chắc là được’? Does that really mean yes?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—‘Chắc là được’ (*probably okay*) is a gentle, polite way to approve without full commitment. It’s not a refusal, but a careful ‘yes’ that keeps face and leaves room for flexibility. Don’t ask for a stronger answer—it might make him feel pressured. Just respond with gratitude and humility: *‘Em cảm ơn Thầy rất nhiều ạ. Em sẽ cố gắng sắp xếp tốt nhất có thể, và không để ảnh hưởng đến tiến độ công việc.’*"
+            },
+            {
+              "role": "user",
+              "content": "One more thing—when’s the best time to ask him? I don’t want to pick a bad moment."
+            },
+            {
+              "role": "assistant",
+              "content": "Excellent point. It’s best to ask during a calm moment—not right after a deadline, during a meeting, or when he seems stressed. A quiet afternoon, before lunch, or after a brief pause in conversation is ideal. This shows you’re mindful of his time and workload. In urban workplaces, younger staff may be slightly more direct, but in formal contexts, indirectness and timing remain key. Your awareness of timing itself is a sign of cultural sensitivity."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of indirect refusal through hedging ('em không dám chắc là có thể xin nghỉ được')",
+          "Silence and non-verbal cues (nod, lack of eye contact) as indicators of acceptance or hesitation",
+          "Polite phrasing with gratitude and self-restraint ('em sẽ cố gắng sắp xếp tốt nhất có thể')",
+          "Honorific 'Thầy' used appropriately for a senior male colleague",
+          "Contextual sensitivity around timing and emotional state of the senior figure",
+          "Interpretation of 'Chắc là được' as a polite, non-committal approval",
+          "Emphasis on harmony and face-saving over directness",
+          "Cultural nuance in professional hierarchy and deference"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing urban youth behavior; the example slightly downplays regional and generational variation in communication style (though this is a common challenge in training data)",
+          "The phrase 'em sẽ cố gắng sắp xếp tốt nhất có thể' could be slightly more formal in very hierarchical contexts—'em sẽ nỗ lực hết sức' might carry more weight in high-stakes requests"
+        ],
+        "suggestions": [
+          "Include a brief note in the system prompt about regional and generational variation to prevent overgeneralization in model responses",
+          "Consider adding a follow-up where the assistant acknowledges that younger colleagues might use more direct language in informal settings, but still maintain indirectness in formal ones",
+          "Slightly adjust the final gratitude phrase to include a more traditional deferential structure like 'Em xin chân thành cảm ơn Thầy' for maximum authenticity in formal contexts"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses. Pay close attention to indirect communication, honorific use, non-verbal cues (like silence or timing), and the balance between respect and self-preservation in interactions. Always model both verbal and non-verbal dimensions of communication."
+            },
+            {
+              "role": "user",
+              "content": "I need to ask my supervisor, Thầy Minh, for a week’s extension on the project report. I’m worried he’ll be upset, but I’m still working on the final analysis. How should I phrase it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Thầy ơi, em đang hoàn thiện phần báo cáo, nhưng một số dữ liệu cuối vẫn đang được kiểm tra kỹ lưỡng để đảm bảo độ chính xác. Em hiểu rằng Thầy luôn mong muốn chất lượng cao, nên em xin phép Thầy được thêm vài ngày để hoàn thiện phần phân tích. Em xin cảm ơn Thầy vì luôn kiên nhẫn hướng dẫn em."
+            },
+            {
+              "role": "user",
+              "content": "Would it be better to say 'I can’t finish on time' directly? I don’t want to sound lazy."
+            },
+            {
+              "role": "assistant",
+              "content": "Trực tiếp nói ‘em không làm được’ có thể khiến Thầy nghĩ em thiếu trách nhiệm. Thay vào đó, nên nói ‘em sẽ cố gắng, nhưng chưa chắc làm được’ — câu này thể hiện nỗ lực, vừa giữ được sự khiêm tốn, vừa phù hợp với văn hóa giao tiếp gián tiếp. Trong môi trường làm việc Việt Nam, người ta đánh giá cao sự cẩn trọng và tinh thần trách nhiệm hơn là tốc độ hoàn thành."
+            },
+            {
+              "role": "user",
+              "content": "What if he says nothing? I’ve seen him stay silent when he’s disappointed. Should I say something?"
+            },
+            {
+              "role": "assistant",
+              "content": "Im lặng từ Thầy Minh không nhất thiết là từ chối — đó có thể là dấu hiệu anh ấy đang suy nghĩ, hoặc đang cho em không gian để tự chủ động. Đừng vội hỏi lại. Sau một ngày, em có thể gửi một tin nhắn ngắn: ‘Thầy ơi, em đã kiểm tra lại phần phân tích, và đang cố hoàn thiện. Nếu Thầy có góp ý nào, em rất mong được nghe.’ Lời nhắc nhẹ, đầy tôn trọng, sẽ khiến anh ấy cảm thấy được lắng nghe mà không bị ép phải phản hồi ngay."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of honorific 'Thầy' for a respected supervisor",
+          "Indirect refusal through expressions of effort and uncertainty ('em sẽ cố gắng, nhưng chưa chắc làm được')",
+          "Emphasis on quality over speed as a cultural value",
+          "Silence as a non-verbal cue indicating contemplation or disappointment",
+          "Strategic use of delayed follow-up messages to maintain respect and avoid pressure",
+          "Softening language with phrases like 'em xin phép', 'em rất mong được nghe', and 'cảm ơn Thầy'",
+          "Recognition of context-dependent indirectness (formal work setting vs. informal youth culture)"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant’s second response: while 'em sẽ cố gắng, nhưng chưa chắc làm được' is authentic, it is more common in peer or junior-senior interactions; for a direct request to a supervisor, 'em đang nỗ lực, nhưng có lẽ cần thêm thời gian' might be slightly more natural in formal contexts.",
+          "The phrase 'em xin cảm ơn Thầy vì luôn kiên nhẫn hướng dẫn em' is slightly more formal than needed in a simple request for extension — a simpler 'em cảm ơn Thầy' would feel more natural in this context, unless the relationship is deeply mentor-like."
+        ],
+        "suggestions": [
+          "Refine the second assistant response to use a slightly more contextually appropriate phrasing like 'em đang nỗ lực, nhưng có lẽ cần thêm thời gian' to better reflect formal work communication.",
+          "In the third response, consider simplifying the gratitude to 'em cảm ơn Thầy' unless the mentor-mentee relationship is explicitly close.",
+          "Include a brief note in the system prompt about the importance of matching formality level to the actual relationship (e.g., mentor vs. colleague) to avoid over-formality in casual but respectful interactions."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Financial Regulation Structure",
+    "category": "Institutional Norms > Regulation & Policy > Financial Market Rules",
+    "description": "The institutional framework for financial oversight, including central banks, regulatory bodies, and supervisory authorities",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m a small business owner in Chiang Mai and we’re preparing to launch a new digital payment feature for our customers. I’ve heard about the new FIBA guidelines from the Bank of Thailand, but I’m not sure how to approach compliance. I don’t want to cause any trouble or seem disrespectful to the regulators."
+            },
+            {
+              "role": "assistant",
+              "content": "Your concern reflects *kreng jai*—a deep respect for harmony and responsibility. The Bank of Thailand (BOT) is seen as a trusted, paternal institution. In formal written communications, especially submissions or letters to senior officials, you may use *Phra Khun*—for example, 'Dear Phra Khun the Governor'—but avoid it in casual emails or routine correspondence. Use formal titles like 'The Governor of the Bank of Thailand' in less ceremonial contexts."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. How should I communicate with the BOT if I need clarification? I don’t want to sound like I’m questioning their authority."
+            },
+            {
+              "role": "assistant",
+              "content": "Use respectful phrasing: 'We humbly seek guidance on the FIBA provisions to ensure our compliance aligns with national standards.' Frame it as shared responsibility—'We aim to support financial stability, and your direction helps us do so with care.' This tone is expected and appreciated."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I also worry about how to explain this to my younger staff—they’re more comfortable with fintech apps and don’t always see the value in formal procedures."
+            },
+            {
+              "role": "assistant",
+              "content": "Many young professionals value innovation but still respect structure when it’s meaningful. You might say: 'These rules aren’t just red tape—they’re how we show care for the system that protects us, like how we honor our teachers through *wai khru*. Following them builds trust, not just compliance.' Note: *wai khru* is a cultural metaphor for respect—use it as a teaching tool, not a literal ritual."
+            },
+            {
+              "role": "user",
+              "content": "That’s a powerful way to put it. I’ll use that in our team meeting. One last thing—should I mention the new ESG guidelines too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially for community impact. The SEC frames ESG as 'shared responsibility,' like caring for family and ancestors. Say: 'Just as we preserve our heritage, we must protect our environment and community.' For small businesses, the BOI doesn’t assign liaison officers unless you have a special incentive. Instead, consult local chambers of commerce or industry associations—trusted intermediaries that build relationships through mutual respect."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about submitting documentation? Is there a standard form?"
+            },
+            {
+              "role": "assistant",
+              "content": "There are no pre-filled templates. Each FIBA compliance submission is reviewed individually via the BOT’s regulatory portal. Provide clear, detailed documentation—especially on customer data protection and transaction monitoring. Local financial advisors or credit unions can help you prepare it. Many small businesses rely on them for support, and they’re trusted partners in the system."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—our customers are using PromptPay. Is that acceptable under the new rules?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. PromptPay is not only accepted—it’s encouraged. The BOT promotes digital payment tools like PromptPay as part of Thailand’s modern, inclusive financial future. Embracing them shows both innovation and respect for national progress. You’re doing the right thing by integrating it responsibly."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Use of honorifics like 'Phra Khun' for senior officials in formal contexts",
+          "Emphasis on *kreng jai* (avoidance of conflict) as a driver of compliance",
+          "Respect for hierarchy and indirect communication styles in regulatory engagement",
+          "Framing of ESG as 'shared responsibility' aligned with national values",
+          "Role of local intermediaries (chambers of commerce, credit unions) in supporting compliance",
+          "Use of *wai khru* as a cultural metaphor for respect and mentorship",
+          "Promotion of PromptPay as a national initiative reflecting modernization and inclusion",
+          "Distinction between formal and informal communication registers in institutional settings",
+          "Generational differences in trust toward institutions vs. fintech"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant's final response about 'no pre-filled templates'—while true in principle, the BOT does provide standardized reporting formats for certain compliance areas; a more precise phrasing would improve accuracy.",
+          "The phrase 'you’re doing the right thing by integrating it responsibly' slightly oversimplifies the regulatory scrutiny required for digital payment features, which may involve additional security and monitoring obligations beyond mere acceptance."
+        ],
+        "suggestions": [
+          "Clarify that while templates are not pre-filled, standardized forms exist for specific FIBA compliance categories (e.g., anti-money laundering reporting), and reference the official BOT portal for exact requirements.",
+          "Add a brief note about the need for ongoing monitoring and reporting under FIBA, even after initial approval, to reflect the continuous nature of regulatory engagement.",
+          "Slightly refine the tone in the ESG explanation to emphasize that while framing is collaborative, the SEC does issue enforceable guidelines—balance cultural framing with legal reality."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

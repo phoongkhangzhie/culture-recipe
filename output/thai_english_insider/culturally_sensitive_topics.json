@@ -1,0 +1,87 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Culturally Sensitive Topics",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "Subjects that are considered taboo, divisive, or inappropriate to raise in casual social conversation",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m hosting a small dinner for my friend’s mom from Chiang Mai—she’s very traditional. I was thinking of sharing a few photos of the setup on social media, maybe even a quick kitchen shot. Any tips on what to avoid?"
+            },
+            {
+              "role": "assistant",
+              "content": "Keep the photos simple—no banners, royal symbols, or even subtle references to the King. Even a quiet mention in a caption could be misread. Better to keep things quiet and respectful, not because of silence, but because of care. A clean, warm space speaks volumes without saying a word."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about the invitation? I was thinking of mentioning the King’s birthday since it’s coming up—would that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best not to mention it publicly. Even a small reference can draw attention where none is needed. For a close family like this, it’s enough to simply hold the moment with care—no words required. The gesture speaks louder than any caption."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. And the menu—should I mix Northern and Southern dishes? I want to honor her roots but keep it light."
+            },
+            {
+              "role": "assistant",
+              "content": "A thoughtful mix works beautifully—like Northern *nam prik noom* with a Southern coconut curry. Keep the spice moderate, and be mindful of regional preferences. If there’s an altar, place it respectfully—on a clean, elevated surface. Many families still honor it quietly. The meal will be warm, and the space will feel right—no words needed."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 8.8,
+        "overall_score": 8.82,
+        "cultural_elements_verified": [
+          "Avoidance of royal references in casual social media content",
+          "Respect for the monarchy as a sacred, non-discussable topic",
+          "Emphasis on quiet reverence over explicit mention",
+          "Sensitivity to religious spaces (e.g., altars) and their placement",
+          "Appropriate handling of regional cuisine with cultural nuance",
+          "Preference for implicit gestures over overt statements in social harmony",
+          "Understanding of *kreng jai* (sensitivity to others’ feelings) in interpersonal decisions"
+        ],
+        "issues": [
+          "The assistant’s response to the King’s birthday mention could be slightly more nuanced—while avoiding public mention is correct, the phrasing 'no words needed' may oversimplify the depth of legal and cultural risk, potentially underrepresenting the severity of lèse-majesté concerns.",
+          "The mention of 'many families still honor it quietly' assumes a universal practice without acknowledging regional or generational variation in religious observance, which could risk overgeneralization."
+        ],
+        "suggestions": [
+          "Strengthen the explanation of lèse-majesté risks by subtly conveying that even indirect references can carry legal consequences, not just social ones—e.g., 'Some families choose not to reference public events at all, out of deep respect and awareness of how easily things can be misinterpreted.'",
+          "Add a brief qualifier to regional religious practices: 'Many families, especially in rural or traditional households, still maintain small altars—though this varies by generation and location.'",
+          "Use more culturally embedded metaphors (e.g., 'like a silent prayer in the air') to deepen authenticity without explicit explanation."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

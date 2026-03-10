@@ -1,0 +1,425 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Business Meeting Follow-Up",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around post-meeting communication, such as follow-up emails, calls, written summaries, or courtesy gifts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up a meeting with Mr. Nguyễn Văn Tùng from Tân Phú Trading, and we discussed the joint packaging design for the new Tết campaign. I want to send a follow-up email within the next few hours, but I’m not sure how to structure it properly. He’s the director, and we’re still building the relationship. Should I include the action items directly? Also, would it be okay to send a small gift with the email?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s good that you’re thinking ahead—timing is important. Send the email within the next 24 hours, ideally by tomorrow morning. Use a formal subject line: 'Báo cáo sau cuộc họp – Ông Nguyễn Văn Tùng, Giám đốc'. Start with 'Kính gửi Ông Nguyễn Văn Tùng', and keep the tone respectful but not stiff. Acknowledge his input—something like, 'Chúng tôi xin ghi nhận ý kiến quý báu của Ông về màu sắc và bố cục, đặc biệt là đề xuất sử dụng hình ảnh truyền thống trong thiết kế chính'. Avoid listing tasks directly. Instead, phrase next steps as suggestions: 'Chúng tôi xin đề xuất anh Nguyễn Minh Huy từ bộ phận thiết kế sẽ tiếp tục phát triển bản nháp, nếu Ông thấy phù hợp.'"
+            },
+            {
+              "role": "user",
+              "content": "Got it. So no bullet points or numbered lists? And what about the gift? I brought a box of premium Dragon Phoenix tea from Đà Lạt—would that be appropriate to send with the email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect choice—Dragon Phoenix tea is elegant and well-received. But please don’t send it with the email. Gifts should be presented in person at the end of the meeting or immediately after, not as a post-hoc gesture. If you didn’t give it then, it’s better to wait until the next meeting. Sending it now might seem like an attempt to influence, especially if the relationship isn’t fully established yet. If you’d like, you can mention in the email that you’ve prepared a small token of appreciation for future meetings, but don’t include it in the envelope."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll wait for the next touchpoint. Should I also send a summary document? I have a draft in both Vietnamese and English."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a bilingual summary would be excellent—especially since it was a strategic discussion. Send it as a PDF titled 'Tài liệu tổng hợp cuộc họp ngày 5/4/2025 – Dự án Tết 2026 – Tân Phú Trading'. Include a scanned handwritten note in Vietnamese at the top, even if it’s just a few lines: 'Trân trọng cảm ơn Ông Nguyễn Văn Tùng đã dành thời gian và chia sẻ ý kiến sâu sắc. Chúng tôi rất mong tiếp tục hợp tác trong thời gian tới.' This small personal touch shows sincerity without being excessive."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this is exactly what I needed. One last thing: if Mr. Tùng calls me later today to clarify something, should I answer right away? I’m not sure if I should wait for him to initiate."
+            },
+            {
+              "role": "assistant",
+              "content": "If he calls, answer immediately—don’t let it go to voicemail. But wait for him to speak first. Begin with 'Dạ, anh Tùng ạ', and keep your tone calm and deferential. Don’t rush into explanations. Let him lead the conversation. If it’s about a minor detail, respond briefly: 'Vâng, anh có thể xem lại bản nháp đã gửi, và tôi sẽ gửi thêm tài liệu bổ sung nếu cần.' Keep it under 10 minutes. This isn’t about efficiency—it’s about showing respect through presence and patience."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Follow-up email within 24–48 hours is expected and should use formal Vietnamese salutations",
+          "Tone must be deferential and structured, acknowledging the senior party's contributions",
+          "Action items should be phrased as suggestions rather than direct assignments",
+          "Gifts should be presented in person after the meeting, not sent via email",
+          "Dragon Phoenix tea is an appropriate and culturally resonant gift",
+          "Avoid sending gifts post-meeting if the relationship is still developing",
+          "Bilingual summary documents are valued in formal business contexts",
+          "Handwritten notes in Vietnamese add sincerity and personal touch",
+          "Phone calls from junior parties should be answered immediately, with deference and patience",
+          "Caller should wait for the senior party to speak first and avoid rushing explanations"
+        ],
+        "issues": [
+          "The assistant uses Vietnamese script in the email example (e.g., 'Kính gửi Ông Nguyễn Văn Tùng') while the user is communicating in English—this creates a slight inconsistency in language mode, though acceptable in a bilingual context. However, the use of Vietnamese phrases in an English-only conversation may confuse non-Vietnamese LLMs during training unless clearly contextualized.",
+          "The mention of 'scanned handwritten note in Vietnamese' is culturally accurate but could be misinterpreted by models as requiring a physical scan, which may not be feasible in all digital workflows. A clearer instruction like 'include a brief handwritten note in Vietnamese as a digital signature or attachment' would improve clarity."
+        ],
+        "suggestions": [
+          "Clarify that Vietnamese language use in emails is appropriate only when the recipient is fluent; otherwise, bilingual formatting is preferred.",
+          "Explicitly note that handwritten notes in Vietnamese are symbolic and need not be perfect—authenticity over legibility is valued.",
+          "Add a brief note in the assistant’s response to explain that while the email is in English, the Vietnamese elements (salutations, closing, note) are included to signal cultural respect and relationship-building.",
+          "Consider including a subtle cue that the assistant is adapting to the user’s language (English), but still embedding culturally appropriate Vietnamese expressions where relevant, to model natural code-switching."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the meeting with Mr. Nguyễn Văn Anh from Tân Bình Trading Group. We discussed the joint packaging design for the new Tết campaign. He seemed pleased with our proposal, especially the lotus motif. I want to send a follow-up email today, but I’m not sure how formal it should be. Should I include a summary of the decisions? And what about the action items?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’re right to be thoughtful—timing and tone matter here. Send the email within the next 24 hours, ideally before 11 a.m., so it doesn’t feel rushed. Use a subject line like: 'Báo cáo sau cuộc họp – Ông Nguyễn Văn Anh, Giám đốc, Tân Bình Trading Group'. Start with 'Kính gửi Ông Nguyễn Văn Anh', and keep the language respectful but not stiff. Acknowledge his input: 'Chúng tôi xin ghi nhận ý kiến sâu sắc của Ông về biểu tượng hoa sen, góp phần tạo nên bản sắc văn hóa trong thiết kế'."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I list the next steps? I was thinking of writing: 'Mr. Minh will draft the prototype by Friday'—but that feels too direct."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—better to soften it. Instead of assigning tasks directly, frame it as a suggestion: 'Chúng tôi xin đề xuất anh Minh tiếp tục theo dõi tiến độ bản mẫu, với mong muốn hoàn thành vào cuối tuần này'. That way, it shows initiative without overstepping. Also, include a brief summary in Vietnamese—just three bullet points—highlighting key points from the discussion. Keep it concise, no more than half a page."
+            },
+            {
+              "role": "user",
+              "content": "Good point. Should I attach a PDF with the summary? And should I add a handwritten note? I have a small lacquer box with some local tea from Hanoi—would that be appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, attach the summary as a PDF titled 'Tổng hợp cuộc họp 5/4/2025 – Dự án Tết 2026 – Tân Bình Trading'. Add a scanned handwritten note in Vietnamese on the first page: 'Trân trọng cảm ơn Ông Nguyễn Văn Anh vì sự chia sẻ quý báu trong buổi trao đổi. Chúng tôi rất mong được đồng hành cùng Quý công ty trong mùa lễ hội sắp tới.' As for the tea box—yes, but only if you present it at the end of the meeting, not in the email. If you’re sending it now, it might seem abrupt. Better to wait until the next in-person touchpoint. For now, the note and the summary will carry the weight of goodwill."
+            },
+            {
+              "role": "user",
+              "content": "Understood. I’ll send the email tomorrow morning with the summary and note. I’ll also call Mr. Anh’s assistant to check if he’s available for a quick 5-minute call—just to confirm we’re on the same page. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s acceptable, but only if you first check with your own manager. A junior team member shouldn’t initiate a call with a senior partner unless approved. If you’re authorized, keep the call brief—just to reaffirm respect, not to rehash decisions. Begin with: 'Chị ơi, em là [Your Name] từ [Company], xin phép được gọi điện để cảm ơn Ông Nguyễn Văn Anh vì buổi trao đổi hôm nay. Em có một vài điểm nhỏ muốn xác nhận, nếu anh không bận.' Wait for permission to speak. Don’t rush."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of formal Vietnamese salutations (e.g., 'Kính gửi Ông Nguyễn Văn Anh') in follow-up email",
+          "Indirect phrasing for action items (e.g., 'Chúng tôi xin đề xuất anh Minh tiếp tục...') instead of direct assignment",
+          "Timing of follow-up within 24–48 hours, with preference for morning delivery",
+          "Inclusion of a bilingual written summary in Vietnamese with a handwritten note",
+          "Appropriate use of symbolic gifts (tea from Hanoi, lacquer box) presented during the meeting, not post-meeting",
+          "Hierarchy-sensitive communication: junior party deferring to senior, seeking approval before initiating calls",
+          "Use of respectful titles (e.g., 'Anh', 'Chị') and deferential speech in verbal follow-ups",
+          "Avoidance of direct criticism or abrupt demands; emphasis on harmony and relationship preservation",
+          "Subject line format including recipient’s title and meeting purpose",
+          "Cultural expectation that trust is built incrementally through consistent, respectful follow-up"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Follow-up email within 24–48 hours, preferably before 11 a.m.",
+          "Use of formal Vietnamese salutations like 'Kính gửi Ông Nguyễn Văn Anh'",
+          "Acknowledgment of senior party's input with deferential language",
+          "Softening of action items using indirect phrasing (e.g., 'chúng tôi xin đề xuất')",
+          "Importance of concise, structured written summaries in Vietnamese",
+          "Appropriateness of handwritten notes as a gesture of respect",
+          "Timing and context of gift-giving: not post-email, but ideally during or immediately after meeting",
+          "Hierarchical sensitivity in initiating phone calls—requires approval from superior",
+          "Use of respectful titles (e.g., 'Chị', 'Anh') and deferential speech patterns in verbal communication",
+          "Avoidance of direct assignment of tasks; preference for suggestion-based language"
+        ],
+        "issues": [
+          "The assistant's suggestion to attach a PDF titled 'Tổng hợp cuộc họp 5/4/2025 – Dự án Tết 2026 – Tân Bình Trading' assumes the recipient is comfortable with English in formal documents, which may not be accurate if the recipient is not fluent. While bilingual materials are acceptable, the title should ideally be in Vietnamese only or clearly marked as bilingual to reflect cultural norms.",
+          "The assistant recommends a handwritten note with a specific Vietnamese text, but does not specify that the handwriting should be legible and formal—this could be misinterpreted as casual if poorly executed. A note of this nature should reflect care and precision.",
+          "The user’s mention of a lacquer box with Hanoi tea is handled correctly, but the assistant could have more explicitly warned against using white packaging or gifts with symbolic negative connotations (e.g., clocks), even if not directly mentioned in the example."
+        ],
+        "suggestions": [
+          "Clarify in the assistant response that if the recipient is not fluent in English, all summary documents should be in Vietnamese only, or clearly bilingual with Vietnamese as the primary language.",
+          "Add a brief note advising that handwritten elements should be neat, formal, and preferably written in a traditional script style to convey sincerity and respect.",
+          "Include a subtle reminder to avoid gifts with symbolic negative meanings (e.g., clocks, sharp objects, white packaging) even when discussing them in passing, to reinforce cultural taboos.",
+          "Consider adding a line about the importance of maintaining a consistent tone across all communications—avoiding abruptness or over-enthusiasm, which could be perceived as disrespectful in hierarchical contexts."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the meeting with Mr. Nguyen at the Hanoi Innovation Hub. We discussed the joint pilot project for the smart irrigation system. I want to send a follow-up email within the next 24 hours, but I’m not sure how to phrase it properly. He’s the Director of Agriculture Planning, so I need to be respectful but also show we’re serious about moving forward."
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. Since Mr. Nguyen is senior and holds a leadership position, the email should open with 'Kính gửi Ông Nguyễn Văn A, Giám đốc' and use formal language throughout—no contractions, no casual phrasing. Start by thanking him for his time and insights, especially acknowledging his point about local farmer adoption rates, which he emphasized twice. Then briefly summarize the key agreement: pilot in two northern provinces, with our team handling tech deployment and his office supporting field coordination. Avoid direct action assignments—instead, say something like 'Chúng tôi xin ghi nhận ý kiến của Ông về việc phối hợp với các xã nông nghiệp' to show respect for his authority. End with a polite offer to send a bilingual summary if needed."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I include a handwritten note in Vietnamese with the email? I saw one of our partners do that last month and it seemed to make a difference."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—adding a scanned handwritten note in Vietnamese is a strong signal of sincerity, especially with someone like Mr. Nguyen who values tradition and personal touch. Keep it short: a sentence or two expressing appreciation for the opportunity, and a gentle mention that we’ll prepare a summary document for his review. Don’t overdo it—just enough to show care without being excessive. Also, make sure the subject line includes his title: 'Báo cáo sau cuộc họp – Ông Nguyễn Văn A, Giám đốc'. That small detail shows you’ve observed hierarchy."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the gift? We didn’t bring one during the meeting, but I’d like to send something small now as a token of appreciation. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best to present gifts during or immediately after the meeting, not as a follow-up gesture. Sending one now might seem delayed or even awkward—especially if it’s not tied to a formal milestone. If you’re still keen to show goodwill, a small premium tea set from the Highlands would be appropriate, but only if you’re sending it as a general thank-you, not as a response to the meeting itself. Just make sure it’s wrapped in red or gold paper, not white. And don’t expect a return gift—this is about showing respect, not transactional reciprocity."
+            },
+            {
+              "role": "user",
+              "content": "Understood. I’ll send the email with the handwritten note by tomorrow morning, and I’ll keep the tea set in reserve for the next meeting. One last thing—should I call him afterward to confirm he received it?"
+            },
+            {
+              "role": "assistant",
+              "content": "A phone call isn’t necessary unless there’s a sensitive point to clarify. Since this is a routine follow-up, an email with a handwritten note is sufficient. If you do call, wait for him to invite you to speak first—don’t jump in. Use 'Anh' when addressing him, and keep it under five minutes. The goal isn’t to confirm receipt; it’s to reaffirm respect. Let the email do the work."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Timely follow-up within 24–48 hours is expected and valued",
+          "Formal salutations in Vietnamese (e.g., 'Kính gửi Ông Nguyễn Văn A, Giám đốc') are appropriate",
+          "Use of indirect language for action items (e.g., 'Chúng tôi xin ghi nhận ý kiến của Ông về việc...')",
+          "Handwritten notes in Vietnamese as a sign of sincerity and personal touch",
+          "Gifts should ideally be presented during or immediately after the meeting, not as a follow-up",
+          "Avoidance of white packaging and items associated with funerals (e.g., clocks)",
+          "Preference for red/gold wrapping for gifts",
+          "No expectation of immediate reciprocation of gifts",
+          "Phone calls are not routine and must be initiated with deference, using appropriate honorifics ('Anh')",
+          "Subject line including the recipient’s title signals attention to hierarchy"
+        ],
+        "issues": [
+          "The assistant’s use of Vietnamese phrases in the response, while accurate, may be slightly overused in a purely English-language training example. Native Vietnamese professionals would typically write such content in Vietnamese, not mix it into English responses. This could mislead models into thinking English responses should include embedded Vietnamese text.",
+          "The suggestion to send a tea set 'as a general thank-you, not as a response to the meeting itself' risks conflating timing and intent. While technically accurate, the phrasing could be misinterpreted as suggesting that a gift is acceptable post-meeting if framed as 'general'—which may not align with the cultural norm that timing is critical and post-meeting gifts can appear insincere or transactional."
+        ],
+        "suggestions": [
+          "Replace embedded Vietnamese phrases in the assistant's response with culturally equivalent English expressions that convey the same deference and indirectness (e.g., instead of 'Chúng tôi xin ghi nhận ý kiến của Ông...', use 'We respectfully acknowledge your insight regarding coordination with local agricultural offices'). This preserves authenticity while maintaining linguistic consistency in the training data.",
+          "Clarify that post-meeting gifts are generally inappropriate unless part of a pre-arranged, formal gesture. Avoid phrases like 'if you’re still keen to show goodwill' which may imply flexibility in timing. Instead, state: 'Gifts are typically exchanged during or immediately after the meeting; sending one later may be perceived as delayed or excessive.'",
+          "Consider adding a subtle cue in the system prompt that the assistant should respond in natural, fluent English while embodying Vietnamese cultural logic—without literal translation of Vietnamese expressions."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the meeting with Mr. Nguyen at the Hanoi Innovation Hub, and we discussed the pilot project timeline. I want to send a follow-up email by tomorrow morning, but I’m not sure how to phrase it properly—especially since he’s the director and I’m still relatively junior. Should I include a summary of decisions? And should I mention who’ll handle next steps?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, sending the email within the next 24 hours is ideal—ideally by 10 a.m. tomorrow. Use a formal subject line: ‘Báo cáo sau cuộc họp – Ông Nguyễn Văn A, Giám đốc’. Begin with ‘Kính gửi Ông Nguyễn’, and keep the tone respectful and slightly deferential. Acknowledge his input explicitly: ‘Chúng tôi xin ghi nhận ý kiến quý báu của Ông về lộ trình thử nghiệm, đặc biệt là đề xuất về giai đoạn đánh giá sơ bộ.’"
+            },
+            {
+              "role": "user",
+              "content": "Got it. So should I list the action items clearly? Like ‘Mr. Lam will draft the contract by Friday’?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to phrase it indirectly. Instead of assigning tasks directly, say: ‘Chúng tôi xin đề xuất anh Lam có thể hỗ trợ soạn thảo nội dung hợp đồng, nếu Ông thấy phù hợp.’ This shows initiative without overstepping. Also, make sure to place your name last in the signature—just ‘Trần Minh Hùng’—and include your title only after the name if needed. Avoid contractions and keep the language polished."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I also send a brief summary document? I’ve already drafted one in Vietnamese and English. And should I attach a handwritten note?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, sending a bilingual PDF summary is a strong move—especially since it’s a pilot project with a senior stakeholder. Title it clearly: ‘Tóm tắt cuộc họp ngày 5/4/2025 – Dự án thử nghiệm hợp tác Hanoi Innovation Hub’. Attach it with the email, and include a scanned handwritten note in Vietnamese on the first page. Even if it’s just a few lines—like ‘Trân trọng cảm ơn Ông đã dành thời gian và chia sẻ quý báu’—it adds sincerity. Don’t worry about perfect handwriting; authenticity matters more."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—should I call him after sending the email? He didn’t speak much during the meeting, but I know he’s the one who’ll approve the next phase."
+            },
+            {
+              "role": "assistant",
+              "content": "Only if it’s absolutely necessary. A follow-up call is not expected unless something’s sensitive or urgent. If you do call, wait until the next day and make sure to check with your supervisor first—especially since he’s senior. When you call, start with ‘Chào anh Nguyễn, em là Minh Hùng từ công ty ABC…’ and wait for him to invite you to speak. Keep it under 10 minutes, just to reaffirm respect and openness. Don’t push for confirmation—let him lead the next steps."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Formal email subject line with recipient’s title",
+          "Use of deferential salutation 'Kính gửi Ông Nguyễn'",
+          "Indirect phrasing for action items ('Chúng tôi xin đề xuất anh Lam có thể hỗ trợ...')",
+          "Placement of sender’s name last in email signature",
+          "Bilingual written summary document with clear Vietnamese title",
+          "Inclusion of a handwritten note in Vietnamese (even scanned)",
+          "Avoidance of contractions and casual language",
+          "Hierarchy-sensitive communication: junior party defers to senior",
+          "Cultural expectation of indirectness over direct assignment of tasks",
+          "Timing of follow-up within 24–48 hours, with morning delivery preferred",
+          "Unspoken but implied respect for silence and non-immediate reciprocity",
+          "Avoidance of unscheduled phone calls without hierarchical approval"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.075,
+        "cultural_elements_verified": [
+          "Follow-up email within 24–48 hours is expected and should be formal with deferential tone",
+          "Use of Vietnamese salutations like 'Kính gửi Ông Nguyễn' and respectful language",
+          "Indirect phrasing for assigning responsibilities (e.g., 'Chúng tôi xin đề xuất anh Lam có thể hỗ trợ...')",
+          "Importance of handwritten notes for sincerity, even with imperfect handwriting",
+          "Bilingual summary document is appropriate and valued in formal settings",
+          "Avoiding direct demands or overstepping hierarchy in communication",
+          "Call only if necessary, initiated by junior party, with deference and permission-seeking",
+          "Proper use of honorifics ('Anh Nguyễn') and hierarchical awareness in speech",
+          "Gifts are not expected post-meeting; they are typically given during or immediately after"
+        ],
+        "issues": [
+          "The assistant suggests attaching a handwritten note in Vietnamese on the first page of a bilingual PDF summary. While culturally authentic in spirit, this could be misinterpreted as requiring a physical handwritten element on a digital document, which may not be practical or standard in modern Vietnamese business. A clearer suggestion would be to include a scanned handwritten note as a separate attachment or reference it in the email body.",
+          "The example assumes the user is sending a bilingual summary, which is appropriate, but does not clarify whether the recipient is fluent in English—this could lead to over-reliance on English in contexts where Vietnamese is preferred, especially with senior officials."
+        ],
+        "suggestions": [
+          "Clarify that the handwritten note should be a separate attachment or referenced in the email body, not physically embedded in a digital document, to avoid confusion about workflow.",
+          "Add a brief note in the assistant’s response about assessing the recipient’s language preference (e.g., if Mr. Nguyen is more comfortable in Vietnamese, prioritize the Vietnamese version of the summary).",
+          "Include a subtle reminder that gifts are not sent after the meeting—this is a critical taboo. While not directly addressed in the exchange, the user’s question about a handwritten note could be misconstrued as a substitute for a gift. A brief clarification would prevent cultural misalignment.",
+          "Slightly adjust the call protocol: emphasize that if a call is made, it should be scheduled during business hours and not during lunch or late afternoon, which are culturally sensitive times in Vietnamese business settings."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the meeting with Mr. Nguyễn Văn Anh from Tân Bình Logistics. We discussed the joint distribution pilot in HCMC, and he seemed open to moving forward. I want to send a follow-up email today—what’s the right way to do it without seeming pushy?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’re right to be thoughtful—timing and tone matter a lot. Send the email within the next 24 hours, ideally before 10 a.m. Use a formal subject line: ‘Báo cáo sau cuộc họp – Ông Nguyễn Văn Anh, Giám đốc’. Start with ‘Kính gửi Ông Nguyễn Văn Anh’, and mention that you appreciated his insights on warehouse coordination. Keep the body concise: summarize key points like the pilot timeline and the idea of testing the route in District 7. Avoid direct action assignments—instead, say something like ‘Chúng tôi xin ghi nhận ý kiến của Quý khách về việc lựa chọn điểm tập kết’."
+            },
+            {
+              "role": "user",
+              "content": "Should I include a written summary? I prepared a one-page PDF with the next steps, but I’m not sure if it’s too much."
+            },
+            {
+              "role": "assistant",
+              "content": "A summary is welcome, especially since it was a strategic discussion. But send it as a PDF with a simple title: ‘Tóm tắt cuộc họp ngày 5/4/2025 – Dự án phân phối chung’. In the email, don’t say ‘we will do this’—instead, phrase it as a suggestion: ‘Chúng tôi xin đề xuất ông Nguyễn Văn Anh xem xét phương án điều phối hàng hóa theo lịch trình tuần này’. And include a handwritten note in Vietnamese—just a few lines on a separate page, scanned. Even if it’s not perfect, the personal touch shows sincerity. Don’t forget to list your name last in the signature."
+            },
+            {
+              "role": "user",
+              "content": "What about a phone call? I could call him tomorrow morning to check if he had any questions."
+            },
+            {
+              "role": "assistant",
+              "content": "Better to wait. A call from you would be seen as a bit forward unless you’ve already established a more relaxed rapport. If you do call, make sure to ask permission first: ‘Anh có thể nói chuyện một chút được không ạ?’—and wait for his nod. Keep it under 10 minutes, and focus on reaffirming your appreciation, not logistics. He’ll likely respond with a polite ‘Cảm ơn, tôi đã ghi nhận’ and end the call. That’s enough. The real relationship-building happens through the email, the note, and the gift—not the call."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I actually brought a small tea gift—premium Dragon Phoenix from Đà Lạt. Should I send it now, or wait until the next meeting?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect choice. The tea is appropriate—elegant, not extravagant. Present it at the end of the meeting, not after. If you haven’t already, do it before you leave. He’ll likely refuse once or twice with ‘Không cần đâu, anh’—but you should gently insist: ‘Vì đây là một biểu tượng nhỏ để thể hiện sự trân trọng, anh ạ.’ He’ll accept. Don’t open it in front of you. And don’t expect a return gift right away. The gesture is about respect, not exchange."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Follow-up email within 24–48 hours with formal salutation and deferential tone",
+          "Use of Vietnamese phrases in email (e.g., 'Kính gửi Ông Nguyễn Văn Anh', 'Chúng tôi xin ghi nhận ý kiến')",
+          "Indirect phrasing for action items (e.g., 'xin đề xuất' instead of 'we will')",
+          "Value of handwritten note as a personal touch despite imperfect handwriting",
+          "Proper etiquette around gift-giving: presenting at end of meeting, gentle insistence, not expecting immediate reciprocation",
+          "Appropriateness of premium tea (Dragon Phoenix from Đà Lạt) as a gift",
+          "Avoidance of clocks, sharp objects, white packaging",
+          "Hierarchy-aware communication: junior party should not initiate calls without permission",
+          "Call as a last resort, not routine, with strict limits on duration and purpose",
+          "Emphasis on relationship-building through consistency, not transactional follow-up"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant suggests sending the tea gift 'now' in the final turn, but earlier implies it should have been given 'before you leave'—this could confuse a learner about timing. The example assumes the gift was not yet given, but the user says 'I actually brought a small tea gift', suggesting it was already in hand. The assistant should clarify whether the gift was presented or not.",
+          "Slight overuse of Vietnamese script in the assistant’s responses when the user’s messages are in English—while acceptable for authenticity, it risks reducing accessibility for models trained on mixed-language data. A balance is needed: use of Vietnamese phrases is correct and expected, but over-reliance may hinder generalization."
+        ],
+        "suggestions": [
+          "Clarify the timing of the gift delivery: if the user says they 'brought' the gift, explicitly confirm whether it was presented or not. If not, advise immediate presentation at the end of the meeting, not after. If already presented, adjust the response to reflect that the follow-up is complete.",
+          "Include a brief explanation of why certain Vietnamese phrases are used (e.g., 'Anh ạ' as a respectful suffix) in training data, even if not in the final model output—this supports deeper learning without breaking authenticity.",
+          "Consider adding a subtle cue about language choice: e.g., 'If your recipient is not fluent in Vietnamese, keep the email in English but include a Vietnamese note as a gesture'—this enhances practical adaptability without sacrificing cultural accuracy."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Naming Convention",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The structure and order of personal names, including given names, family names, and the use of honorifics",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing to write a formal letter to a Nigerian academic colleague I’ve never met before. I know her name is Adaobi Okoye, but I’m not sure how to address her properly—should I use 'Dr. Okoye' or 'Prof. Okoye'? And what about the full name structure?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Nigerian professional culture, titles are deeply tied to respect and recognition. If she holds a doctorate, use 'Dr. Adaobi Okoye'. If she’s a professor, 'Prof. Adaobi Okoye' is appropriate. Always place the title before the name in formal writing. Since she’s a woman, 'Prof. Okoye' is correct, but it’s best to confirm her preferred form if possible."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But I’ve seen names like 'Adaobi Nneka Okoye'—is that common? Does that mean she has a middle name, or is it part of her full name?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s very common—especially among Igbo-speaking Nigerians. In many Igbo naming traditions, names are often compound and rich in meaning. 'Adaobi Nneka Okoye' typically means: 'Adaobi' is the primary given name (meaning 'God’s love'), 'Nneka' is a second given name or a name of cultural significance (meaning 'mother is supreme'), and 'Okoye' is the family surname. It’s important to note that in Igbo culture, these aren’t 'middle names' in the Western sense—they’re equally meaningful parts of a person’s identity, often reflecting spiritual values, lineage, or family heritage. In formal writing, you’d still address her as 'Prof. Adaobi Okoye', but use the full name in citations or official listings."
+            },
+            {
+              "role": "user",
+              "content": "What about someone from the Yoruba community? I once met a man named Oluwaseun Adebayo. Is 'Adebayo' his surname, or is it part of his first name?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Yoruba naming, 'Adebayo' is the family surname. His full name—Oluwaseun Adebayo—means 'God’s wealth comes home' in Yoruba. 'Oluwaseun' is the given name, and 'Adebayo' is the family name, passed down through generations. It’s common for Yoruba names to carry poetic or spiritual meaning tied to birth circumstances or parental hopes. In formal settings, you’d address him as 'Dr. Adebayo' if he’s a medical doctor, or 'Mr. Adebayo' if no title applies. Only use 'Chief Oluwaseun Adebayo' if he holds a chieftaincy title—this is a formal honorific earned through recognition or lineage, not assumed based on surname alone."
+            },
+            {
+              "role": "user",
+              "content": "And what about Hausa names? I met someone named Abdullahi Muhammad Sani. How should I address him?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Hausa naming, 'Abdullahi' is the given name (meaning 'servant of God'), 'Muhammad' is his father’s name (patronymic), and 'Sani' is the family surname. If he has completed the Hajj pilgrimage, he may be honored with the title 'Alhaji'—so you’d address him as 'Alhaji Abdullahi Sani' in formal contexts. However, never assume this title without confirmation. In professional settings, 'Mr. Abdullahi Sani' or 'Dr. Abdullahi Sani' (if applicable) is appropriate. The use of honorifics like 'Alhaji' is both religious and social, not automatic."
+            },
+            {
+              "role": "user",
+              "content": "So in all cases, I should avoid using just the first name unless invited? Even in professional settings?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—always. Using only the first name, especially with elders, professionals, or senior colleagues, can be seen as overly familiar or disrespectful. In Nigerian culture, names carry deep significance: they reflect identity, lineage, and social standing. Formality in address is a gesture of respect. A younger colleague might call a senior academic 'Prof. Okoye', but only after being invited to use her first name. The same applies across ethnic groups—wait for an invitation before dropping titles or using first names."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Use of honorifics (Dr., Prof., Alhaji, Chief) tied to education, religious achievement, or social status",
+          "Correct identification of Yoruba naming structure: given name + family surname (e.g., Oluwaseun Adebayo)",
+          "Accurate description of Igbo compound naming with cultural meaning (e.g., Adaobi Nneka Okoye)",
+          "Hausa naming pattern with given name, father’s name (patronymic), and family surname (e.g., Abdullahi Muhammad Sani)",
+          "Emphasis on respect in address: avoiding first names without invitation",
+          "Distinction between formal titles and assumed honorifics (e.g., Alhaji not assumed without confirmation)",
+          "Cultural significance of names reflecting lineage, spirituality, and social values"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant’s response to the Hausa name: while 'Muhammad' is often the father’s name, it can also be a given name in some cases. However, this is a low-impact nuance and does not constitute a factual error.",
+          "The assistant does not explicitly mention that some Nigerians may use a patronymic or matronymic as a middle name in formal contexts, especially in Igbo or Yoruba traditions—though the meaning is correctly conveyed."
+        ],
+        "suggestions": [
+          "Add a brief note that in some cases, especially among the Igbo, the second name may be a matronymic (mother’s name) or a name chosen for spiritual significance, not just a middle name.",
+          "Clarify that while 'Alhaji' is typically post-nominal, it may be used pre-nominally in formal address (e.g., 'Alhaji Abdullahi Sani'), which is common in Northern Nigeria.",
+          "Include a sentence about how naming conventions may vary even within ethnic groups based on religion, urbanization, or education—e.g., some urban Nigerians may adopt Western-style naming with a single given name and surname."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing a formal letter to introduce a new team member at our Lagos-based NGO. Her name is Amina Yusuf, and she’s just been promoted to project coordinator. I want to make sure I address her correctly in the letter. How should I refer to her?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Nigerian contexts, it’s best to use the full name with an appropriate honorific. Since Amina Yusuf has been promoted, you should address her as *Ms. Amina Yusuf* or, more respectfully, *Ms. Amina Yusuf, Project Coordinator*. If she holds a professional title like a degree, include that too—e.g., *Ms. Amina Yusuf, MSc, Project Coordinator*. Avoid using just her first name unless she’s invited you to do so. Using a full name with a title shows respect, especially in professional settings."
+            },
+            {
+              "role": "user",
+              "content": "What if she’s also known as Hajia Amina? I’ve seen that used in some community meetings. Should I include that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, if she’s formally recognized as *Hajia*, it’s appropriate to use that honorific—especially in religious or community contexts. *Hajia* indicates she has completed the Hajj pilgrimage, a significant spiritual achievement in Islam. However, in a formal NGO letter, use *Hajia Amina Yusuf* only if she’s publicly known by that title or if it’s part of her official profile. Otherwise, *Ms. Amina Yusuf* remains the safest and most respectful choice. When in doubt, it’s always best to confirm with her directly—personal preference matters deeply in Nigerian culture."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what if she’s from the Yoruba community? Would the naming structure be different?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good question—but important to clarify: 'Amina' is a common Islamic name across Hausa, Fulani, and other Muslim communities in Nigeria, not typically associated with Yoruba culture. Yoruba names often reflect proverbs, spiritual values, or circumstances at birth, such as *Temitope* (God’s possession) or *Adetola* (crown comes home). But naming patterns vary widely—even within Yoruba communities. Some use just a given name and family name (e.g., *Temitope Adebayo*), while others include a middle name for lineage or birth context (e.g., *Temitope Adetola Adebayo*). There’s no single 'Yoruba' format—what matters most is how the individual identifies and wishes to be addressed."
+            },
+            {
+              "role": "user",
+              "content": "So if I were introducing her to a group of elders in a rural community, would I use a different form of address?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially in rural or elder-led settings, formality and respect are heightened. If Amina is being introduced to elders, you’d use her full name with honorifics: *Hajia Amina Yusuf*, possibly adding her role: *Hajia Amina Yusuf, our new project coordinator*. If she holds a title like *Chief*, *Dr.*, or *Alhaji*, include it if appropriate. Never use only her first name unless she’s explicitly invited you to. In Nigerian culture, names carry identity, lineage, and dignity—using them correctly shows humility and awareness."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if I’m not sure about her background or how she prefers to be addressed?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s the most respectful approach—when in doubt, ask. In multi-ethnic Nigerian contexts, people may identify with multiple cultural layers, and naming preferences can be personal. Some may prefer *Hajia* even if not religiously required; others may not use honorifics at all. The best practice is to confirm her preferred name and title directly—this shows care and cultural sensitivity. In fact, many Nigerians appreciate being asked, as it reflects respect for their autonomy."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll use *Hajia Amina Yusuf, Project Coordinator* in the letter and reach out to her to confirm how she’d like to be addressed."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. That’s exactly the right balance—professional, respectful, and culturally mindful. Confirming with her also demonstrates emotional intelligence, which is highly valued in Nigerian interpersonal dynamics. You’re doing it well."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of full name with honorifics (e.g., Ms., Hajia, Dr.) in formal Nigerian contexts",
+          "Hajia as a post-nominal honorific indicating completion of Hajj pilgrimage",
+          "Variability in Yoruba naming conventions: not all include middle names, and 'Adetola' is not universal",
+          "Amina as a common Islamic name in Hausa and Muslim Nigerian communities, not typically Yoruba",
+          "Importance of self-identification over ethnic assumption in naming and title usage",
+          "Cultural preference for confirming preferred name/title directly, especially in multi-ethnic settings",
+          "Respect for personal autonomy in how one wishes to be addressed, regardless of ethnic or religious background",
+          "Contextual sensitivity: formality increases in community or elder-led settings"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of honorifics like 'Hajia' for women who have completed Hajj",
+          "Distinction between religious/communal titles (Hajia) and formal titles (Ms., Dr.)",
+          "Importance of confirming preferred name and title in Nigerian culture",
+          "Respect for naming as tied to identity, lineage, and dignity",
+          "Variation in naming structures across ethnic groups (Yoruba, Hausa, etc.)",
+          "Preference for full names with titles in formal and elder-led contexts",
+          "Cultural sensitivity around first-name usage without permission"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'Amina' as exclusively Hausa/Fulani—while accurate, it could be clarified that it's also used by non-Hausa Muslims in Nigeria (e.g., in Yoruba-speaking regions), though still not traditionally Yoruba",
+          "The assistant could briefly acknowledge that some Nigerian Muslims may use 'Hajia' informally or self-apply it, though this is not a critical error"
+        ],
+        "suggestions": [
+          "Add a brief note that 'Amina' is widely used across Muslim communities in Nigeria and may be adopted by individuals from non-Hausa backgrounds, especially in urban or inter-ethnic settings",
+          "Include a sentence acknowledging that honorifics like 'Hajia' can sometimes be self-adopted or used with personal significance beyond formal recognition",
+          "Consider adding a short example of a Yoruba name with a patronymic or birth-related meaning to reinforce cultural diversity in naming"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing a formal letter to a professor at the University of Ibadan for a research collaboration. I know her name is Adaobi Okoye, but I’m not sure how to address her properly. Should I just write 'Dear Dr. Okoye'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Nigerian academic culture, it’s best to use the full title and surname in formal correspondence, especially when you’re initiating contact. Since she holds a PhD, you should address her as 'Dear Professor Okoye'—this reflects both her academic standing and the cultural respect for titles. Avoid using just 'Dr. Okoye' unless you’re certain she prefers that form, as 'Professor' is the more formal and widely recognized honorific in university settings here."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if I later get to know her better? Can I start calling her 'Adaobi'?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful question. In Nigerian culture, first-name usage is a sign of closeness and trust, and it’s rarely granted without invitation. Even in academic circles, you’d typically wait for her to say, 'You can call me Adaobi,' or for her to use your first name first. Until then, it’s respectful to continue using 'Professor Okoye'—especially in emails or public settings. If you’re invited to use her first name, it’s often a signal of growing rapport."
+            },
+            {
+              "role": "user",
+              "content": "I see. What about if I’m writing to someone from the North, like a professor in Kano? Would the naming conventions be different?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, there are regional nuances. In Northern Nigeria, especially among the Hausa-speaking communities, names often follow a different structure: given name, father’s name, and family name. For example, a professor might be named *Alhaji Ibrahim Umar Sani*. In formal writing, you’d address him as 'Dear Alhaji Ibrahim Umar Sani'—the honorific 'Alhaji' is used before the name and signifies religious achievement. If he’s a professor, you might also write 'Dear Professor Alhaji Ibrahim Umar Sani' to reflect both status and title. Never use just the first name without permission, even if he’s from the North."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What if I’m writing to a woman who’s a chief in a Yoruba community? How should I address her?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s an excellent example of how honorifics carry deep cultural weight. In Yoruba tradition, titles like *Chief* are not just titles—they’re formal recognition of leadership and lineage. If you’re writing to a woman who holds the title of Chief, you should address her as 'Dear Chief Adebayo' or 'Dear Chief (Full Name)', depending on her full name. For example, if her name is *Bolanle Adeyemi*, and she’s a Chief, you’d write 'Dear Chief Bolanle Adeyemi'. Using the title is essential—it’s a sign of respect and acknowledges her social and cultural role, not just her name."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps. One last thing: what if someone has a double-barreled surname, like *Temitope Adesina-Abiodun*? Should I write her full name in the letter?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. In Nigerian culture, a double-barreled surname like *Adesina-Abiodun* often honors both maternal and paternal lineages, and it’s deeply meaningful. You should always use the full name as it’s given—'Temitope Adesina-Abiodun'—especially in formal contexts. Never shorten it or drop a part. It’s not just a name; it’s a cultural statement of identity and heritage. When in doubt, use the full name as written, and it will show respect and cultural awareness."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Use of 'Professor Okoye' as the preferred formal address for a Nigerian academic",
+          "Respectful hesitation in using first names until invited",
+          "Regional variation in naming: Hausa structure (given name + father’s name + family name)",
+          "Proper use of honorifics like 'Alhaji' in Northern Nigeria",
+          "Cultural significance of the title 'Chief' in Yoruba society",
+          "Recognition of double-barreled surnames as reflecting maternal and paternal lineage",
+          "Emphasis on using full names as given, especially in formal contexts"
+        ],
+        "issues": [
+          "Minor overgeneralization in the Hausa example: 'Alhaji Ibrahim Umar Sani' assumes the father's name is 'Umar' and that 'Sani' is the family name; in some cases, 'Sani' could be a patronymic or clan name, but the structure is broadly accurate.",
+          "The example assumes all Nigerian academics use 'Professor' as the default honorific—while common, some institutions may use 'Dr.' more frequently in initial correspondence, though 'Professor' is indeed preferred in formal academic settings."
+        ],
+        "suggestions": [
+          "Clarify that 'Alhaji' is a title earned through the Hajj pilgrimage and not automatically assumed—this prevents over-attribution of status.",
+          "Add a brief note that in some Igbo communities, patronymics are still used, though less commonly in formal writing today.",
+          "Include a sentence about the importance of checking preferred name usage in official university directories or personal profiles, as some Nigerians may prefer 'Dr.' over 'Professor' in informal contexts."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing a formal letter to introduce a new team leader at my company in Lagos. Her name is Amina Yusuf, and she just got her PhD. I want to make sure I address her correctly. How should I write her name and title?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Nigerian professional and formal contexts, it’s important to use the full name and appropriate title to show respect. Since Amina Yusuf has earned her PhD, you should address her as *Dr. Amina Yusuf*. This format uses her given name, family name, and the academic title. Avoid using just 'Amina' unless she has explicitly invited you to do so. In formal letters, it’s also common to include the title before the name, like 'Dr. Amina Yusuf', especially when she’s being introduced in a professional capacity."
+            },
+            {
+              "role": "user",
+              "content": "What if she’s from the North, like Kano? Would that change how we address her?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful question. If she’s from Kano and part of the Hausa-speaking community, her name might reflect Islamic naming traditions. For example, she could be *Amina Yusuf Sani*, where *Yusuf* is her father’s name and *Sani* is her family name. In that case, you’d still address her as *Dr. Amina Yusuf Sani* in formal writing to preserve the full lineage. However, if she has completed the Hajj pilgrimage, she might be known as *Alhaji Amina Yusuf Sani*—though this honorific is typically used for men. Women who have completed Hajj are often called *Hajia*, so if she holds that title, you’d write *Hajia Dr. Amina Yusuf Sani*. But unless she’s publicly recognized with that honorific, it’s safest to use *Dr. Amina Yusuf Sani* in formal correspondence."
+            },
+            {
+              "role": "user",
+              "content": "I see. What if she’s Yoruba from Oyo? Would the naming structure be different?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, it would. If she’s Yoruba from Oyo, her name might follow a structure like *Amina Oluwaseun Yusuf*. Here, *Amina* is the given name, *Oluwaseun* (meaning 'God’s wealth') could be a middle name reflecting spiritual or cultural significance, and *Yusuf* would be the family name. In formal settings, you’d still address her as *Dr. Amina Oluwaseun Yusuf*. However, if she’s been honored with a traditional title like *Chief*—for instance, if she’s been conferred a chieftaincy title—then you’d use that as well: *Chief Dr. Amina Oluwaseun Yusuf*. But again, only if she has officially received such a title. Otherwise, stick to the academic title and full name to show respect without overstepping."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about Igbo colleagues? I have a colleague named Chinedu Nwankwo. How should I address him in a meeting?"
+            },
+            {
+              "role": "assistant",
+              "content": "For Igbo colleagues, the structure is typically *Given Name + Father’s Name (patronymic)*, so *Chinedu Nwankwo* means 'Chinedu, son of Nwankwo'. In formal settings, you’d address him as *Mr. Chinedu Nwankwo* or simply *Chinedu Nwankwo* if the context is professional but not overly formal. However, if he holds a title like *Oga*—a term of respect often used in informal or semi-formal business settings—you might hear colleagues refer to him as *Oga Chinedu*. But in a formal meeting, it’s best to use *Mr. Chinedu Nwankwo* unless he’s invited you to use a first name or a nickname. Never use just 'Chinedu' in a first meeting unless he’s clearly signaled that’s acceptable."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—what if someone’s name is double-barreled, like *Temitope Adesina-Abiodun*? How do I handle that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Double-barreled names are quite common in Yoruba culture and are used to honor both maternal and paternal lineages—like *Temitope Adesina-Abiodun*, where *Adesina* might be the father’s family name and *Abiodun* the mother’s. In formal writing, you’d use the full name as written: *Dr. Temitope Adesina-Abiodun*. It’s important not to split or shorten it unless the person has given permission. For example, calling her *Temitope Abiodun* would be seen as disrespectful, as it erases part of her heritage. Always preserve the full name and use the appropriate title—*Dr.*, *Prof.*, *Chief*, etc.—based on her qualifications or status. This reflects both cultural awareness and respect for identity."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of Dr. Amina Yusuf in formal contexts with academic titles",
+          "Hausa naming structure with father’s name and family name (e.g., Yusuf Sani)",
+          "Correct use of honorifics: Hajia for women who completed Hajj, Alhaji for men",
+          "Yoruba naming with given name, middle name (spiritual/cultural), and family name (e.g., Amina Oluwaseun Yusuf)",
+          "Chieftaincy titles like Chief used with academic titles (e.g., Chief Dr. Amina Oluwaseun Yusuf)",
+          "Igbo naming structure using patronymic (e.g., Chinedu Nwankwo, son of Nwankwo)",
+          "Use of 'Oga' as a respectful informal title in Igbo business contexts",
+          "Double-barreled names (e.g., Adesina-Abiodun) to represent dual lineage in Yoruba culture",
+          "Emphasis on preserving full names and avoiding truncation without permission"
+        ],
+        "issues": [
+          "Minor inaccuracy: The assistant states 'Alhaji Amina Yusuf Sani' is typically used for men—this is correct—but the phrasing 'Alhaji Amina' could be misleading. The honorific 'Alhaji' is exclusively for men; women are called 'Hajia'. The example correctly distinguishes this, but the phrasing 'Alhaji Amina' in the text might confuse readers. It should be clarified that 'Alhaji' is never used for women.",
+          "Slight overgeneralization: The assistant implies that 'Oga' is used in Igbo contexts. While 'Oga' is widely used in Nigerian English, particularly in Yoruba and Hausa-influenced business culture, it is not strictly an Igbo term. It’s more accurate to say 'Oga' is a pan-Nigerian honorific used in informal business settings, not exclusive to Igbo culture."
+        ],
+        "suggestions": [
+          "Revise the sentence about Alhaji Amina to explicitly state that 'Alhaji' is never used for women and that 'Hajia' is the correct honorific for women who have completed Hajj.",
+          "Clarify that 'Oga' is a widely used pan-Nigerian honorific in informal business settings, not exclusively Igbo, to avoid cultural over-attribution.",
+          "Consider adding a brief note about the importance of checking individual preferences, as some Nigerians may not use traditional names or honorifics, especially in urban or diaspora contexts."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing a formal letter to a professor at the University of Lagos, but I’m not sure how to address her properly. Her name is Adaobi Okoye, and I know she’s a doctor and a professor. Should I write 'Dr. Adaobi Okoye' or 'Prof. Adaobi Okoye'? And what about her full name — does it matter how I structure it?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Nigerian contexts, especially in academic or professional settings, it’s best to use both titles: 'Prof. Dr. Adaobi Okoye'. The order typically places 'Prof.' first because it reflects her academic rank, followed by 'Dr.' if she holds a doctoral degree. This reflects the hierarchical respect for academic achievement in Nigerian institutions. As for her name, 'Adaobi Okoye' is the correct structure: 'Adaobi' is her given name, and 'Okoye' is her family surname. There’s no middle name mentioned here, so you don’t need to include one unless you know it’s part of her official record. Always use the full name unless she’s invited you to use just her first name."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I’ve seen people refer to her as 'Madam Okoye' in meetings. Is that also appropriate? And what if I’m writing to her in a more personal email — like asking for a recommendation?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, 'Madam Okoye' is perfectly appropriate in formal or official meetings — it’s a respectful way to address a woman of seniority, especially in professional or institutional settings. It’s common across Igbo, Yoruba, and Hausa communities, though the tone may vary slightly by region. In a personal email, especially one requesting a recommendation, you’d still begin with 'Dear Prof. Dr. Adaobi Okoye' or 'Dear Madam Okoye' for the same reason: respect for her title and position. Only after she’s explicitly invited you to use her first name — perhaps in a follow-up message or during a personal conversation — should you shift to 'Dear Adaobi'. Using first names too soon can be seen as presumptuous, especially with elders or those in authority."
+            },
+            {
+              "role": "user",
+              "content": "I see. I once met a man named Alhaji Ibrahim Umar at a community event. He was introduced as 'Alhaji Ibrahim Umar'. Should I use 'Alhaji' when addressing him, even in a formal letter?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. In Hausa and other Northern Nigerian contexts, 'Alhaji' is a title of great respect, signifying that the person has completed the Hajj pilgrimage to Mecca. It’s not just a name — it’s a mark of religious devotion and social standing. So, in a formal letter, you should address him as 'Alhaji Ibrahim Umar'. It’s customary to use the honorific before the name, and it’s considered a sign of respect to do so. Even if he’s not a government official or academic, 'Alhaji' carries weight and should be used unless he’s told you otherwise. In informal settings, people might say 'Baba Ibrahim' or 'Uncle Ibrahim', but in formal writing, 'Alhaji' is the correct and respectful form."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing — I’m planning to write a letter to a Yoruba elder named Chief Adekunle Adebayo. How should I address him? Should I use 'Chief' before his name, and does it matter if I use his full name?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, you should definitely use 'Chief' before his name — 'Chief Adekunle Adebayo' — and it’s important to do so. In Yoruba culture, 'Chief' is not just a title; it’s a formal recognition of leadership, lineage, and community standing. It may have been conferred by a traditional council or earned through years of service and respect. Using the title is a sign of cultural awareness and deference. His full name — 'Adekunle Adebayo' — is appropriate to include in formal correspondence. 'Adekunle' means 'Crown has come home', and 'Adebayo' means 'Crown comes with wealth' — both deeply symbolic names that reflect ancestral pride. So, in your letter, begin with 'Dear Chief Adekunle Adebayo', and maintain that form throughout unless he invites you to use a more familiar form later."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of 'Prof. Dr. Adaobi Okoye' in academic contexts with 'Prof.' preceding 'Dr.'",
+          "Correct understanding of Igbo naming structure with 'Adaobi' as given name and 'Okoye' as family surname",
+          "Appropriate use of 'Madam Okoye' as a formal address across ethnic groups",
+          "Accurate representation of 'Alhaji' as a religious honorific in Hausa culture",
+          "Proper use of 'Chief' as a traditional title in Yoruba culture with cultural significance",
+          "Correct interpretation of symbolic meanings in Yoruba names (e.g., 'Adekunle' = 'Crown has come home')",
+          "Emphasis on respect, hierarchy, and permission before using first names",
+          "Recognition of regional variation in naming and honorific usage (Igbo, Yoruba, Hausa)"
+        ],
+        "issues": [
+          "Minor ambiguity in the order of titles: While 'Prof. Dr.' is common in Nigeria, some institutions may prefer 'Dr. Prof.' depending on context. However, this is a regional or institutional nuance, not a factual error.",
+          "Slight overgeneralization that 'Madam Okoye' is used across all ethnic groups without noting regional variation in formality or preference (e.g., Yoruba may prefer 'Madam' only in specific settings)."
+        ],
+        "suggestions": [
+          "Clarify that title order (Prof. Dr. vs Dr. Prof.) may vary by institution or region, and suggest checking official correspondence for consistency.",
+          "Add a brief note about regional preferences — e.g., in some Yoruba communities, 'Madam' may be less common than 'Ma' or 'Aunty' in informal contexts.",
+          "Include a sentence on how names may be changed later in life (e.g., spiritual or social reasons), to reflect the dynamic nature of Nigerian naming."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

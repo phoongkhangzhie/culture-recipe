@@ -1,0 +1,115 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Greetings Between Men",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Physical and verbal norms for greetings between men, including handshakes, hugs, cheek kisses, and bowing",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting my senior colleague, Mr. Kim, for the first time tomorrow at the office. He’s in his late 40s, and I’m a new junior employee—just started last month. What’s the most respectful way to greet him? I want to get it right."
+            },
+            {
+              "role": "assistant",
+              "content": "Begin with a slight bow—about 15–20 degrees—keep your back straight, hands at your sides, and say ‘Annyeonghaseyo, sunbae’ in a calm, respectful tone. This acknowledges hierarchy and shows humility, which is deeply valued in Korean workplaces."
+            },
+            {
+              "role": "user",
+              "content": "Should I offer a handshake? I’ve seen people do it in meetings, but I’m not sure if it’s okay with a senior like Mr. Kim."
+            },
+            {
+              "role": "assistant",
+              "content": "A handshake is acceptable in formal office settings, but only if Mr. Kim initiates it. As the junior, you should wait. If he extends his hand, offer a brief, gentle grip—no pressure, no prolonged contact. Follow it with a small bow to maintain respect. Never initiate a handshake unless he does first."
+            },
+            {
+              "role": "user",
+              "content": "What about body language? I’ve heard men in Korea don’t touch each other much. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—physical contact between men in Korea is generally very restrained, especially across age or status lines. Even among close friends, gestures like shoulder taps or playful punches are rare and only occur in very informal, long-standing peer relationships—like among university students. These are never appropriate with seniors. Avoid any touch beyond a handshake initiated by them. Also, avoid prolonged eye contact during greetings; a slight downward glance while bowing is a sign of humility."
+            },
+            {
+              "role": "user",
+              "content": "What if he says ‘Annyeong’ casually? Should I still respond formally?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—always respond with ‘Annyeonghaseyo, sunbae’, even if he’s casual. Your formality reflects your junior status, not his tone. This subtle consistency preserves respect and hierarchy, which is culturally expected."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if we’re in a traditional setting, like a hanok office or during a company cultural event with older staff?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal or traditional settings—especially with elders or senior leaders—your bow should deepen to about 30 degrees, with a slight head tilt and hands at your sides. This shows heightened respect. However, do not bring your hands together in front of your chest. That gesture is not part of everyday Korean greeting etiquette. It is only used in very specific ceremonial or religious contexts—such as ancestral rites or Buddhist rituals—and should never be used in business or workplace settings. The pause after the greeting is important: a brief silence lets the formality settle. Let the senior set the tone; your role is to follow, not lead."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Slight bow (15–20 degrees) for initial greetings with seniors",
+          "Deeper bow (30 degrees) in formal or traditional settings",
+          "Use of 'Annyeonghaseyo, sunbae' to acknowledge seniority",
+          "Wait for the senior to initiate a handshake",
+          "Brief, gentle handshake only if initiated by the senior",
+          "Avoid physical contact beyond handshake (no shoulder taps, punches, or backslaps)",
+          "Maintain slight downward glance during greeting to show humility",
+          "Do not bring hands together in front of chest in daily greetings",
+          "Reserve hand-together gesture for specific ancestral or religious ceremonies only",
+          "Pause briefly after greeting to allow respect to settle"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Bowing (15–30 degrees) as a core greeting gesture between men, especially in hierarchical contexts",
+          "Use of 'Annyeonghaseyo' and 'sunbae' to show respect and acknowledge seniority",
+          "Handshake is acceptable only if initiated by the senior; junior should not initiate",
+          "Restrained physical contact between men, including avoidance of hugging, cheek kissing, or backslaps",
+          "Contextual variation in bow depth (e.g., deeper bow in traditional or formal settings)",
+          "Avoidance of prolonged eye contact; downward glance as sign of humility",
+          "Response to casual greetings with formal language to maintain hierarchy",
+          "Cultural distinction between everyday greetings and ceremonial gestures (e.g., hands together only in rituals, not in workplaces)"
+        ],
+        "issues": [
+          "Minor: The phrase 'a slight downward glance while bowing' could be slightly overgeneralized—while modest gaze is common, some younger professionals in urban settings may maintain brief eye contact during formal bows. However, this is a nuance not critical to the overall accuracy.",
+          "Slight overemphasis on 'no pressure, no prolonged contact' in handshake—while accurate, it could be softened to reflect that a gentle, firm grip is acceptable if initiated by the senior, as long as it's brief."
+        ],
+        "suggestions": [
+          "Add a brief note about regional or generational variation (e.g., younger urban professionals may use slightly more relaxed norms in informal peer settings), to avoid overgeneralization.",
+          "Consider including a sentence about the role of silence after the greeting—e.g., 'A brief pause after the bow allows the formality to be acknowledged'—which is already well-handled but could be slightly expanded for training clarity.",
+          "Clarify that while hands together is not used in greetings, the gesture is not necessarily seen as 'wrong' in non-greeting contexts—just inappropriate in workplace interactions."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 15,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

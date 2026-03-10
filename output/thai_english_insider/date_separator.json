@@ -1,0 +1,255 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Date and Number Separator",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Characters used to separate date or number components, such as slashes, hyphens, periods, or commas",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to fill out the tax form for my small business, and I’m stuck on the date of registration. I wrote it as 15/04/2024, but the system keeps flagging it. Should I use the Buddhist calendar instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, yes—this is a common mix-up. The system likely expects the Buddhist Era (BE) year. So 15/04/2567 is correct. Use day/month/year format with Arabic numerals and a forward slash—no Roman numerals, no Thai script. That’s the standard for digital forms."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And for the revenue amount—should I write it as 1,250,000 or 1 250 000? I saw both in receipts from the market."
+            },
+            {
+              "role": "assistant",
+              "content": "For official forms, use commas: 1,250,000. That’s the norm in digital systems and avoids confusion. In handwritten notes or local market receipts, spaces like 1 250 000 are common—especially in urban areas—but stick to commas in formal documents. Consistency matters."
+            },
+            {
+              "role": "user",
+              "content": "Right, so 3.14 is okay, but not 3,14? I’ve seen people write it that way in old shop ledgers."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Always use a period for decimals—3.14. A comma might be read as a thousands separator, especially in automated systems. For example, 3,14 could be misread as 314, which changes the value completely. That’s why precision is key in official records."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—my bank statement shows the date as 15/04/2567. Is that acceptable for the form too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s perfect—15/04/2567 is standard across Thai banking and government portals. Just double-check that you’re not mixing CE and BE years elsewhere. If one field says 2567, don’t use 2024 in another. Stick to BE throughout. And if the form has instructions, always follow those—some older systems may still accept Thai script (like 15 เมษายน 2567), especially in rural offices, but digital ones usually want numbers only."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of DD/MM/YYYY format with forward slash (/) for dates in digital forms",
+          "Preference for Buddhist Era (BE) year (2567) in official documents and digital systems",
+          "Use of commas (,) for thousands in formal/official contexts, despite regional use of spaces",
+          "Use of period (.) for decimal points, not commas, to avoid misinterpretation",
+          "Consistency in calendar system (BE) across related fields in official documents",
+          "Awareness of potential confusion between CE and BE years in digital forms",
+          "Recognition that Thai script (e.g., 15 เมษายน 2567) may be used in rural or legacy systems, but Arabic numerals are standard in digital interfaces"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant's response about 'older systems' accepting Thai script—while true in some rural or legacy contexts, it's increasingly rare in modern digital forms; this could risk reinforcing outdated assumptions if not contextualized.",
+          "The assistant does not explicitly acknowledge that some Thai users may still use BE year abbreviations (e.g., 67 instead of 2567) in informal digital contexts, though this is not a major error."
+        ],
+        "suggestions": [
+          "Clarify that while Thai script may appear in some older or rural systems, modern digital forms almost exclusively require Arabic numerals and BE year in full (e.g., 2567), reducing ambiguity.",
+          "Add a brief note that in informal or handwritten contexts (e.g., market receipts), both 1 250 000 and 1,250,000 may be seen, but formal systems expect commas—this reinforces context-dependent norms without overcomplicating.",
+          "Consider including a subtle nuance about the use of spaces in financial reports or technical documents (e.g., in accounting software), which may follow international standards (e.g., ISO 31-0) using spaces as thousands separators—this reflects real-world variation without contradicting the core norm."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m trying to fill out the tax form for my small business, and I’m not sure about the date format. The form says to enter the invoice date, but I’m used to writing it as 15/04/2024. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, 15/04/2024 is correct — that’s the standard format used in official documents. Just keep the day first, then month, then year, with forward slashes."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. And what about the amount? I wrote 12,500.00 baht. Should I keep the comma or use a space instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "In official forms, commas are widely accepted, but many financial institutions and digital platforms now prefer spaces for better readability — like 12 500.00. Either is fine, as long as the decimal is a period."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I saw one form that had the year in Buddhist era — like 2567 instead of 2024. Should I use that for my business records too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, especially for government or formal documents. You might see dates like 15 เมษายน 2567 written in Thai script — that’s the full formal style. For internal records, 2024 is fine, but consistency matters."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing — I noticed some older people write numbers with commas for decimals. I’ve seen 3,14 instead of 3.14. Is that okay in any context?"
+            },
+            {
+              "role": "assistant",
+              "content": "That can cause serious confusion — 3,14 could be read as 314 baht instead of 3.14. In formal or financial contexts, always use a period for decimals. It’s the safest practice, especially with the Revenue Department."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ll double-check all my entries. Appreciate the help — this stuff matters when you’re dealing with the Revenue Department."
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. Clear, consistent formatting goes a long way with official bodies. If you're ever unsure about a form, just take a quick look at the example on the next page — they usually show the correct style."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Use of DD/MM/YYYY format with forward slash separators in official documents",
+          "Preference for full year (2024) or Buddhist Era (2567) in formal contexts",
+          "Use of spaces (12 500.00) over commas (12,500.00) in financial and digital contexts",
+          "Standard use of period (.) for decimal points, not comma",
+          "Avoidance of comma as decimal separator in formal/financial settings to prevent confusion",
+          "Consistency in formatting for official documents like tax forms",
+          "Implicit expectation of local formatting in digital and government systems"
+        ],
+        "issues": [
+          "The assistant’s response to the Buddhist Era question could be slightly more nuanced — while it correctly advises using BE for formal documents, it doesn’t emphasize that Thai script (e.g., 15 เมษายน 2567) is standard in official contexts, which is a key cultural marker. The response could better reflect that the full format is not just preferred but expected in government forms.",
+          "The user’s phrasing 'I’m used to writing it as 15/04/2024' is slightly generic — a more authentic Thai user might say something like 'I’ve been writing it as 15/04/2024 in my records' or 'I’ve seen forms with 15/04/2024' — but this is a minor stylistic issue."
+        ],
+        "suggestions": [
+          "Enhance the assistant’s response on Buddhist Era by explicitly mentioning that official forms often display dates in Thai script (e.g., 15 เมษายน 2567) and that using the BE year in Roman numerals is standard in formal documents, not just acceptable.",
+          "Include a brief reference to the Thai script in the assistant’s reply when discussing formal formats, to reinforce cultural authenticity and contextual accuracy.",
+          "Consider adding a subtle cue about regional variation — e.g., 'In Bangkok and urban areas, you’ll see spaces more often, but in some rural or older systems, commas are still used' — to reflect the nuanced reality without overcomplicating."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to fill out the tax form for my small shop in Bangkok, and I’m stuck on the date of registration. I wrote it as 15/04/2024, but the system keeps flagging it. Should I use the Buddhist calendar instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "For official tax forms in Thailand, they usually expect the full date in Thai script with the Buddhist Era year. So 15 เมษายน 2567 would be correct. The system might be checking for the BE format specifically, even if you entered the Gregorian date numerically. Try entering it as 15/04/2567 — that should match the expected format."
+            },
+            {
+              "role": "user",
+              "content": "Ah, okay — so 15/04/2567 is better than 15/04/2024? I thought most places use the common year now."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, especially for government and financial documents. While 2024 is widely understood, official systems often require the BE year to avoid confusion, especially in older systems or archived records. It’s not just formality — it’s a standard practice. The format stays DD/MM/YYYY with slashes, but the year must be in BE."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the revenue amount? I have 1,234,567.89 baht. Should I write it with commas or spaces?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal documents like tax forms, use commas as thousand separators: 1,234,567.89. That’s the standard in Thai financial systems. Spaces are more common in casual notes or handwritten receipts, but for official entries, commas are expected. Also, make sure the decimal is a period — not a comma — so it’s clear it’s 89 satang, not 89 baht."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — I was worried about mixing up decimals. I’ve seen people write 3,14 for pi, but I didn’t know that could cause issues."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. In Thai contexts, using a comma for decimals can lead to serious confusion — especially in pricing or accounting. A number like 3,14 could be misread as 314 baht instead of 3.14 baht. That’s why the period is strictly used for decimals in official and digital systems. It’s a small thing, but it matters in accuracy."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ll double-check everything before submitting. Appreciate the help — this is my first time doing it myself."
+            },
+            {
+              "role": "assistant",
+              "content": "No problem — it’s normal to feel unsure at first. Just remember: DD/MM/YYYY with slashes, BE year for official forms, commas for thousands, and periods for decimals. You’ve got this."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Thai official documents use DD/MM/YYYY format with forward slashes",
+          "Buddhist Era (BE) year is required in formal and government contexts (e.g., 2567 for 2024)",
+          "Commas are standard for thousand separators in formal financial documents",
+          "Period (.) is used for decimal points in official and digital systems",
+          "Use of spaces for number grouping is common in informal contexts but not in formal submissions",
+          "Confusion between comma and period in decimals is a real risk in financial accuracy"
+        ],
+        "issues": [
+          "The assistant’s response assumes the user is unfamiliar with Thai systems, but the user’s question is phrased as a natural insider (e.g., 'my small shop in Bangkok'), which is appropriate. No identity performance issue.",
+          "Minor: The example does not explicitly mention that Thai script (e.g., 15 เมษายน 2567) is often required in full, but the assistant correctly implies it by referencing the BE format in the context of system validation. This is acceptable since the focus is on numeric formatting.",
+          "No factual errors in date or number formatting rules; all guidance aligns with ground truth."
+        ],
+        "suggestions": [
+          "To further enhance realism, include a brief mention of how digital systems in Thailand (e.g., government portals) often auto-convert or validate BE format, reinforcing the cultural expectation.",
+          "Consider adding a subtle reference to regional variation (e.g., younger users may use 2024 more freely in digital apps), to reflect nuance without undermining official standards.",
+          "In future examples, test the assistant’s ability to handle mixed formats (e.g., 15/04/2024 vs 15/04/2567) in a way that reflects real user frustration or system feedback, deepening contextual authenticity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Urban-Rural Divide",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Household Structures",
+    "description": "Differences in lifestyle, values, opportunities, and cultural norms between urban and rural populations",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m thinking about transferring to a rural branch office in Nagano next month. My boss said it’s a good chance to ‘reconnect with roots,’ but I’ve never lived outside Tokyo. How should I handle the first week? I don’t want to seem out of place."
+            },
+            {
+              "role": "assistant",
+              "content": "Start by observing quietly—people notice if you’re too eager to speak or act. In a village in Nagano, everyone knows each other’s routines. If someone greets you with a nod, return it with a slight bow. Don’t rush into personal talk; even small talk about the weather or the rice harvest is safe. Bring a small gift when visiting someone’s home—tea or sweets are fine, but avoid anything flashy. And if someone offers you food, accept it without hesitation. It’s not polite to refuse."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what about work? In Tokyo, we’d send emails by 9:30 a.m. sharp. Here, I’ve heard meetings start late—sometimes after 10. Should I still be on time?"
+            },
+            {
+              "role": "assistant",
+              "content": "Be on time—but not early. If the meeting’s at 10:15, don’t arrive at 10:00. The rhythm here is more fluid. Also, don’t assume everyone uses digital tools. Some older colleagues still use paper calendars and handwritten notes. Keep a notebook handy. And if you’re invited to help with festival prep, show up even if it’s not on the official schedule—those gatherings are where trust is built. That’s *kōdō* in action: collective effort, no one left behind."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been told the younger people are leaving. How do I fit in without being seen as a ‘city outsider’?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not all quiet harmony—some elders feel the younger generation’s departure is a quiet kind of loss. That’s part of the reality. But you don’t need to fix it. Just be present. Help with chores during a matsuri prep—carrying lanterns, setting up tables. People will notice your effort, not your accent. And if you’re invited to someone’s home for dinner, stay a little longer if invited—people appreciate the company, even if it’s just a quiet chat after dinner. Listen more than you speak. The real connection comes not from what you say, but from how you show up."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Observation and quiet integration as a strategy for fitting in rural communities",
+          "Importance of bowing and respectful non-verbal communication",
+          "Gift-giving etiquette (tea or sweets) in Japanese social interactions",
+          "Politeness in accepting food and hospitality",
+          "Flexible time norms in rural workplaces compared to urban punctuality",
+          "Use of paper-based tools (calendars, notes) in some rural professional settings",
+          "Value of *kōdō* (collective effort) in community activities and festivals",
+          "Social significance of *matsuri* prep and informal participation in building trust",
+          "Respect for elders and intergenerational continuity in rural Japan",
+          "Youth outmigration as a lived reality with emotional resonance in rural communities",
+          "The idea that connection is built through presence and listening, not speech"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing rural Japan—some rural areas (e.g., mountainous regions in Nagano) may have even stronger isolation and slower adoption of modern tools, but this is not a major error given the example's scope",
+          "The term 'kōdō' is used correctly in context, but could be misinterpreted by non-Japanese learners as a formal term; however, its usage here is appropriate and natural in the narrative"
+        ],
+        "suggestions": [
+          "Consider adding a subtle reference to regional dialects or local pride (e.g., 'You’ll hear the Nagano dialect—don’t worry if you don’t catch every word; they’ll understand you’re trying') to deepen authenticity",
+          "Include a brief mention of seasonal awareness (e.g., rice planting or harvest timing) as a cultural touchstone in rural work rhythms",
+          "Slightly vary the tone of the assistant’s responses to reflect generational or gendered nuances (e.g., younger rural workers may be more open to digital tools, while elders prefer analog), to avoid monolithic portrayal"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 10,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

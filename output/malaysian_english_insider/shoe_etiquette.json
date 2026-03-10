@@ -1,0 +1,95 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Shoe Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms about whether to remove shoes before entering a home or other indoor spaces when visiting",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m heading to my cousin’s in Petaling Jaya this weekend for dinner. She mentioned it’s a family thing, and I’ve never been there before. Should I bring anything besides the usual fruit basket?"
+            },
+            {
+              "role": "assistant",
+              "content": "The fruit basket’s perfect—she’ll appreciate that. Just remember to take off your shoes at the door, even if there’s no sign. Most homes here have a mat or rack near the entrance—step on it and leave your shoes there."
+            },
+            {
+              "role": "user",
+              "content": "Oh right, I remember now. My friend from KL told me about that. But what if I forget? Like, if I’m rushing in and don’t notice the mat?"
+            },
+            {
+              "role": "assistant",
+              "content": "No worries—people don’t usually say anything directly. But if you walk in with shoes on, you might catch a quick glance or a soft nudge toward the mat. It’s just the way things are here—no one says it out loud, but everyone knows."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the living room? I’ve seen some homes where they have slippers waiting. Should I wear those?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, definitely. If there are slippers, use them—just pick a clean pair. It’s common in homes with a prayer corner or traditional layout, but even in modern apartments, if there’s a set ready, it’s a quiet signal to respect the space. It’s about keeping things clean and showing care for the host’s home."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that’s super helpful. I don’t want to make a mess or seem careless. I’ve been to a few homes where it wasn’t strictly observed, so I wasn’t sure how important it really is."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s less about rules and more about the vibe—many homes, regardless of ethnicity, follow it as a sign of respect, especially if there’s a mat or slippers waiting. In heritage homes or those with a prayer space, it’s almost automatic. But even in newer apartments, if you see a mat, it’s a cue to step in barefoot. You’ll pick it up after a few visits—once you’ve been a few times, it just feels natural."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Shoe removal at home entrances is expected, especially in homes with a mat or shoe rack",
+          "The practice is often unspoken but culturally understood",
+          "Subtle cues like glances or mats signal the expectation without direct instruction",
+          "Slippers are commonly provided and expected to be used",
+          "The norm is stronger in homes with traditional layouts, prayer spaces, or heritage values",
+          "The practice varies by household but is widely observed across ethnic groups in Malaysia",
+          "The emphasis is on respect, cleanliness, and cultural intuition rather than formal rules"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all Malaysian homes expect shoe removal, though it does acknowledge variation. However, this is mitigated by the nuanced tone and use of 'many homes' and 'if you see a mat'.",
+          "No explicit mention of regional or generational variation beyond 'older generations'—could be slightly expanded for greater nuance, though not required at this level of detail."
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of urban vs. rural or generational differences in one response (e.g., 'Some younger families in KL might be more relaxed, but it’s still polite to check the mat') to reinforce the cultural nuance without over-explaining.",
+          "To further enhance authenticity, use a slightly more colloquial phrase like 'You’ll pick it up after a few visits—once you’ve been a few times, it just feels natural' (already present) or 'It’s like second nature after a while' to mirror natural Malaysian English speech patterns.",
+          "Avoid any phrasing that could imply a single 'correct' way—emphasize situational cues over rigid rules."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 8
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

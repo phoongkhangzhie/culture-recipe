@@ -1,0 +1,391 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Month Representation",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether months are written numerically, as abbreviations, or spelled out in full",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm writing a formal letter to my university professor about my research proposal deadline. I want to make sure the date is written correctly. Should I write '15/3' or 'tháng ba' for March 15th?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal academic writing in Vietnamese, you should always use the full month name: *tháng ba*. Writing '15/3' might be acceptable in casual notes or internal reminders, but in a letter to a professor, clarity and respect are essential. Using 'tháng ba' ensures precision and aligns with professional standards in Vietnamese institutions."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I saw some students in my department writing 'thg 3' in their email subject lines. Is that okay in informal settings?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in informal digital communication—like quick emails to classmates or messages in group chats—using 'thg 3' (short for *tháng ba*) is common and widely understood, especially among younger students. However, it's still best to avoid it in any official or semi-official context. Even in internal departmental announcements, many prefer the full form to maintain consistency and professionalism."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I'm drafting a cover letter for a scholarship application, should I write 'tháng mười hai' even though it's long?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. For scholarship applications, job submissions, or any formal document, using the full month name—like *tháng mười hai*—is not just correct, it’s expected. It shows attention to detail and cultural awareness. In Vietnamese professional culture, the full spelling reflects respect for the recipient and adherence to formal standards. Don’t abbreviate or shorten it, even if it feels verbose."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ve been using '12' in my calendar app, though. Is that okay for personal use?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, using '12' or '15/3' in personal calendars, messaging apps, or with close friends is perfectly natural and common. Digital informality is widely accepted in everyday life. But the key is context: when the stakes are higher—like official documents, presentations, or formal emails—the cultural norm shifts back to full names. This balance between convenience and formality is something many Vietnamese people navigate instinctively."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Full month names (*tháng một*, *tháng ba*, *tháng mười hai*) are required in formal and academic contexts",
+          "Numeric formats like '15/3' are acceptable in informal digital communication",
+          "Abbreviations like 'thg 3' are common among younger people in casual settings but discouraged in formal writing",
+          "Contextual sensitivity is key: formality dictates format",
+          "Use of full names reflects respect, precision, and cultural propriety in professional environments"
+        ],
+        "issues": [
+          "Minor: The term 'thg' is occasionally used in internal documents but is not standard; the assistant correctly cautions against it in formal settings, but could emphasize its limited legitimacy more strongly.",
+          "Slight risk of overgeneralization: While 'thg 3' is common among students, it's not universally accepted even in informal contexts—some may still find it unprofessional."
+        ],
+        "suggestions": [
+          "Add a brief note that 'thg' is not recognized in official education or government materials to reinforce its informal status.",
+          "Include a subtle example of a formal letter with a correctly formatted date (e.g., 'Ngày 15 tháng ba năm 2025') to reinforce proper structure.",
+          "Clarify that while '12' alone is used in calendars, '15/3' is preferred over '15-3' or '3/15' to avoid confusion with US date format."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm writing a formal letter to my university professor to request an extension on my research paper. The deadline is next month, but I’ve been sick. How should I write the date in the letter?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal academic writing in Vietnamese contexts, it's important to use the full month name to maintain clarity and respect. Instead of writing '12' or 'thg 12', you should write 'tháng mười hai' for December. For example: 'Ngày 15 tháng mười hai năm 2024'. This shows attention to detail and cultural propriety, which is especially valued in professional and academic settings."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I’ve seen my friends write dates like '15/3' in group chats. Is that okay for informal messages?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in informal digital communication—like text messages or social media—using numeric formats such as '15/3' for March 15 is perfectly common and widely understood. Younger generations often use this shorthand for speed and convenience. However, it’s important to recognize the context: this format is acceptable only in casual settings. In formal emails, reports, or official correspondence, you should always revert to the full month name to maintain professionalism and avoid ambiguity."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I’m sending a formal email to my professor, I should write the full date, including 'tháng mười hai', even though the month is December?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. For your professor, use the full date: 'Ngày 15 tháng mười hai năm 2024'. This isn’t just about correctness—it reflects cultural values of respect, precision, and formality. Using the full name of the month shows that you take the communication seriously, which strengthens your credibility. In Vietnamese culture, how you write something often communicates as much as what you say."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—what if I’m writing a note to a friend to remind them about a birthday party on the 8th of next month? Should I write '8/1'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a casual note to a friend, yes—'8/1' is perfectly acceptable and commonly used in everyday Vietnamese digital communication. It’s clear, concise, and natural among peers. But if you were writing the same date in a formal invitation or a printed poster, you’d want to write 'Ngày tám tháng một' to maintain the appropriate tone. The key is matching the format to the relationship and context."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.65,
+        "cultural_elements_verified": [
+          "Full month names (e.g., 'tháng mười hai') are standard in formal writing",
+          "Numeric formats like '15/3' are acceptable in informal digital contexts",
+          "Abbreviations like 'thg' are not used in formal or professional settings",
+          "Contextual appropriateness of date formats based on relationship and medium",
+          "Cultural value placed on respect, precision, and formality in academic/professional communication"
+        ],
+        "issues": [
+          "Minor: The phrase 'this isn’t just about correctness—it reflects cultural values...' is slightly elevated in tone but still linguistically authentic and culturally appropriate in a formal educational context.",
+          "No factual inaccuracies or stereotyping; all claims align with research and observed usage patterns."
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of regional variation (e.g., some rural or older communities may prefer full forms even in informal settings) to further enrich nuance.",
+          "Optional: Include a small note on how Vietnamese calendars often use the lunar calendar in cultural contexts, though this is beyond the scope of the current dimension.",
+          "Ensure future examples maintain the same balance between clarity and cultural depth without over-explaining."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I need to write a formal letter to my university professor requesting an extension on my final research paper. The deadline is next Friday, but I’ve been dealing with a family illness. Could you help me draft it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. In Vietnamese academic culture, formality and respect are essential when writing to professors. I’ll help you draft a respectful and clear letter. First, let’s confirm the date: what is the exact due date for your paper? Please provide it in full Vietnamese month format (e.g., tháng mười hai) for accuracy in the letter."
+            },
+            {
+              "role": "user",
+              "content": "The deadline is next Friday, which is March 15. I usually write it as 15/3 in my notes, but I’m not sure if that’s appropriate for a formal letter."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great question—this is a key cultural nuance. In formal writing like academic letters or official documents in Vietnam, you should always use the full month name: *tháng ba*. Writing '15/3' is perfectly fine in casual notes or digital calendars, but in a formal letter, it would be considered too informal and potentially unclear. Using the full name shows respect and precision, which are highly valued in Vietnamese professional and academic settings."
+            },
+            {
+              "role": "user",
+              "content": "I see. So I should write 'tháng ba' instead of '3' or '15/3'. But what about the date format? Should I write it as 15 tháng ba, or 15/3?"
+            },
+            {
+              "role": "assistant",
+              "content": "Excellent follow-up. In formal Vietnamese writing, the correct format is: **15 tháng ba**. This means '15 of March' and is standard in official letters, reports, and academic submissions. The numeric format '15/3' is acceptable only in informal contexts—like text messages to friends or internal team calendars. In your letter to your professor, using '15 tháng ba' will reflect proper cultural etiquette and professionalism."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So in the letter, I’ll write: 'Tôi xin phép được nộp bài trễ vào ngày 15 tháng ba do lý do gia đình.' Is that appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s very appropriate—but let’s refine it slightly for even greater respect and clarity. In formal Vietnamese academic writing, it’s common to begin with a polite salutation and use slightly more formal phrasing. Here’s a polished version: \n\n\"Kính gửi Thầy/Cô [Professor's Name],\n\nTôi tên là [Your Name], sinh viên lớp [Your Class]. Tôi viết thư này để kính xin được gia hạn nộp bài nghiên cứu cuối kỳ, do một số lý do gia đình bất khả kháng. Đề nghị nộp bài vào ngày 15 tháng ba. Tôi rất mong nhận được sự thông cảm và hỗ trợ từ Thầy/Cô. \n\nTrân trọng,\n[Tên bạn]\"\n\nThis version maintains humility, clarity, and cultural respect—especially by using 'tháng ba' and avoiding numeric shorthand."
+            },
+            {
+              "role": "user",
+              "content": "Thank you so much. I really appreciate how you explained the cultural reasoning behind the month format. It makes sense now—using the full name isn’t just tradition, it’s about showing respect and precision."
+            },
+            {
+              "role": "assistant",
+              "content": "You're very welcome. That’s exactly right—this isn’t just about grammar. In Vietnamese culture, the choice of words reflects one’s attitude toward the recipient and the situation. Using full month names in formal contexts is a small but meaningful way of demonstrating care, professionalism, and cultural awareness. It’s part of what we call *tôn trọng người khác*—respecting others through attention to detail. You’re doing it well."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Full month names (e.g., 'tháng ba') are required in formal writing such as academic letters",
+          "Numeric formats like '15/3' are acceptable only in informal contexts",
+          "Abbreviations like 'thg' are not used in formal or professional settings",
+          "Use of full month names reflects respect, precision, and cultural propriety",
+          "Generational shift toward digital shorthand is acknowledged but contextually constrained"
+        ],
+        "issues": [
+          "Minor: The phrase 'Kính gửi Thầy/Cô [Professor's Name]' assumes the professor is male; while 'Thầy/Cô' is gender-neutral in form, in practice, Vietnamese students often use 'Thầy' for male professors and 'Cô' for female professors. The example could better reflect this nuance by suggesting context-based selection.",
+          "Slight overgeneralization: The assistant states 'in formal writing... always use the full month name'—this is accurate, but in some very formal legal or bureaucratic documents, the format '15 tháng ba năm 2025' is standard, and the year is often included. The example omits the year, which is a minor but contextually relevant omission in full formal letters."
+        ],
+        "suggestions": [
+          "Add a note in the assistant’s response suggesting the inclusion of the year (e.g., 'năm 2025') in formal letters for completeness and legal precision.",
+          "Refine the salutation to reflect gender sensitivity: suggest using 'Thầy' for male professors and 'Cô' for female professors, based on real-world practice.",
+          "Include a brief mention of regional variation: while '15 tháng ba' is standard nationwide, some northern regions may use slightly different phrasing in spoken form (e.g., 'ngày 15 tháng ba'), but this does not affect written form."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing a formal letter to my university professor to request an extension on my final research paper. The deadline is next Friday, which is March 22. How should I write the date in the letter?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a formal academic letter in Vietnamese, you should always write the full month name to maintain clarity and respect. So, instead of writing '22/3', you should write 'ngày 22 tháng ba'. This format is expected in official correspondence and reflects proper cultural etiquette."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I’ve seen some of my classmates use '22/3' in their emails. Is that okay in informal messages?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in informal digital communication—like text messages or casual emails to friends—using '22/3' is perfectly acceptable and widely used. Many younger Vietnamese people do this for speed and convenience. However, in formal contexts such as academic submissions, official requests, or professional emails, it’s best to avoid numeric formats to prevent ambiguity and show respect for the recipient."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I’m writing a formal email to the department head about a scholarship application, should I write 'tháng ba' or 'tháng 3'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a scholarship application to a department head, you should use the full name: 'tháng ba'. Writing 'tháng 3' is too casual and may be seen as careless, especially in formal documentation. Using 'tháng ba' demonstrates attention to detail and cultural propriety—values highly respected in Vietnamese professional and academic environments."
+            },
+            {
+              "role": "user",
+              "content": "What about handwritten notes or internal group schedules? I’ve seen people write 'thg 3' in our class group chat. Is that okay there?"
+            },
+            {
+              "role": "assistant",
+              "content": "In informal handwritten notes or internal group chats, using 'thg 3' (short for 'tháng 3') is common and understood among peers. It’s a shorthand that saves time and is acceptable in low-stakes, familiar settings. However, even in these cases, it’s better to avoid it in official documents or when sharing with people outside your immediate circle, as it lacks formality and could be misinterpreted."
+            },
+            {
+              "role": "user",
+              "content": "Thanks for clarifying. So to sum up: full names in formal writing, numbers in casual chats, and avoid abbreviations like 'thg' in professional contexts?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The key is context. Use 'tháng ba' in formal letters, reports, and emails to professors or officials. Use '22/3' in quick messages to friends or classmates. And avoid 'thg 3' in any setting where professionalism or clarity matters. This balance between modern convenience and cultural respect is something many Vietnamese people navigate daily—especially younger generations."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Full month names (e.g., 'tháng ba') are required in formal and academic writing",
+          "Numeric formats (e.g., '22/3') are acceptable in informal digital communication",
+          "Abbreviations like 'thg 3' are informal and not used in professional or official contexts",
+          "Context determines appropriateness of date format, reflecting cultural nuance",
+          "Younger generations use numeric formats casually but revert to full names in formal settings",
+          "Use of full names conveys respect, precision, and cultural propriety in formal environments"
+        ],
+        "issues": [
+          "Minor: The phrase 'thg 3' is used in the example with quotation marks in the assistant's response, which may slightly emphasize its informality—this is accurate but could be clarified further as a non-standard abbreviation not found in official materials.",
+          "Slight overgeneralization in the final summary: 'avoid abbreviations like thg 3 in any setting where professionalism matters'—while correct, it might benefit from acknowledging that 'thg' is sometimes used in internal, non-public group chats among peers, which is acceptable within that bounded context."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s final response to clarify that 'thg' is used only in very informal, peer-to-peer settings and is never appropriate in any public or official documentation.",
+          "Include a small example of a formal letter header using 'ngày 22 tháng ba' to reinforce the correct format in context.",
+          "Consider mentioning that while numeric formats are common, they are not universally unambiguous—e.g., '15/3' could be interpreted as March 15 (Vietnamese format) or 15 March (British format), so full names remain safer in formal writing."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m writing a formal letter to my university professor to request an extension on my research paper. The deadline is next Friday, which is the 15th of March. How should I write the date in the letter?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Vietnamese correspondence, especially academic letters, it's important to use the full month name for clarity and respect. Instead of writing '15/3' or '15/3/2025', you should write 'ngày 15 tháng ba năm 2025'. This format is standard in official documents and shows attention to detail, which is highly valued in Vietnamese academic culture."
+            },
+            {
+              "role": "user",
+              "content": "I see. So I shouldn’t use 'thg 3' or just '15/3' even if it’s common in text messages?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. While '15/3' or 'thg 3' might be common in casual chats with friends or on social media, they are considered too informal for academic or professional letters. Using 'tháng ba' (March) in full reflects cultural respect for formality and precision. In fact, using abbreviated or numeric-only dates in such contexts could unintentionally signal carelessness, even if the meaning is clear."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve been using '15/3' in my notes and messages with classmates. Should I change that too when writing for class assignments?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good question. For class assignments, especially those submitted to professors or in formal academic settings, it’s best to use the full format: 'ngày 15 tháng ba'. Even if your classmates use '15/3', maintaining full month names in your work helps you present yourself as thoughtful and culturally aware. It’s a small detail, but in Vietnamese academic culture, such details matter—they reflect your respect for the process and the recipient."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So in my email to the professor, I’ll write: 'Tôi viết thư này để xin gia hạn nộp bài nghiên cứu đến ngày 15 tháng ba năm 2025.' Is that correct?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s perfect. Your sentence is clear, respectful, and culturally appropriate. The use of 'tháng ba' instead of '3' or 'thg 3' aligns with formal Vietnamese writing standards. You might also consider adding 'kính gửi thầy/cô' at the beginning and 'trân trọng' at the end for extra politeness—these small touches are often expected in formal Vietnamese communication."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of full month names ('tháng ba') in formal academic writing",
+          "Preference for 'ngày 15 tháng ba năm 2025' in official documents",
+          "Avoidance of abbreviations like 'thg 3' in professional contexts",
+          "Recognition of numeric format '15/3' as informal, acceptable only in casual settings",
+          "Cultural value placed on precision, formality, and respect in academic communication",
+          "Generational shift in digital communication without undermining formal standards"
+        ],
+        "issues": [
+          "Minor: The assistant uses Vietnamese script in the final example without explicitly noting that the user is writing in Vietnamese. While contextually implied, a brief note about language choice could enhance clarity for training data consistency.",
+          "Slight overgeneralization in the assistant’s last response: 'trân trọng' is appropriate, but 'kính gửi thầy/cô' may be overly formal if the professor’s gender is unknown or if the institution uses neutral titles. A more flexible phrasing like 'kính gửi Thầy/Cô' or 'kính gửi giảng viên' would be more inclusive."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s final response clarifying that the example uses Vietnamese script because the user is writing a letter in Vietnamese, to reinforce language context awareness in training data.",
+          "Suggest alternative formal openings such as 'Kính gửi Thầy/Cô' or 'Kính gửi giảng viên' to reflect gender-neutral or institutionally appropriate forms, improving inclusivity and authenticity.",
+          "Include a subtle reminder that while '15/3' is acceptable in informal notes, full month names are expected in all submissions to professors or academic institutions, reinforcing the cultural norm."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

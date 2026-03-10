@@ -1,0 +1,413 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Natural Language Date Expression",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "How dates are expressed conversationally in speech, including ordinal usage and word order",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku mau ngajak teman ngobrol soal rencana acara di kantor, tapi bingung kapan harus ngajak. Kemarin aku bilang ke dia, 'Kita bahas ini minggu depan', tapi sekarang hari Selasa. Mau tahu, hari apa yang paling pas buat ngobrol santai tanpa terlalu ribet?"
+            },
+            {
+              "role": "assistant",
+              "content": "Karena sekarang hari Selasa, 'minggu depan' sudah dekat — jadi bisa ajak pas akhir pekan itu, misalnya Jumat sore. Orang-orang biasanya lebih rileks pas itu, sebelum akhir pekan. Santai, nggak perlu formal."
+            },
+            {
+              "role": "user",
+              "content": "Oh iya, jadi Minggu depan. Aku penginnya pas acara Hari Raya, tapi kok jadi keliatan terlalu jauh? Bisa gak kita sesuaikan dengan suasana kantor yang lagi santai?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wah, Hari Raya sebentar lagi — biasanya akhir Juni atau awal Juli. Jadi, lebih pas kalau ajak sebelum itu, biar nggak terlalu jauh. Jumat sore ini atau minggu depan, pas suasana santai aja. Gak harus nunggu acara besar."
+            },
+            {
+              "role": "user",
+              "content": "Iya, Jumat sore itu bagus. Tapi aku takut dia lupa, soalnya nggak ada tanggal pasti. Bisa aku bilang 'kita ngobrol Jumat sore ini' atau 'minggu depan'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Lebih aman bilang 'Jumat sore ini' — karena sekarang hari Selasa, jadi Jumat sore ini jelas, cuma dua hari lagi. Kalau bilang 'minggu depan', bisa bingung, apakah minggu ini atau minggu depan. 'Ini' itu lebih nyambung, langsung paham."
+            },
+            {
+              "role": "user",
+              "content": "Oke, jadi aku bisa bilang 'Kita ngobrol Jumat sore ini, jam 4-an' — kayaknya lebih enak. Terus, kalau aku mau ngajak lagi nanti, bisa pakai 'minggu depan' lagi, atau mungkin 'seminggu lagi'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Bisa pakai 'minggu depan' atau 'seminggu lagi' — keduanya wajar. Setelah ngobrol Jumat ini, nanti bisa bilang 'kita lanjut minggu depan', atau 'seminggu lagi pas Jumat sore'. Orang-orang di kantor biasanya ngerti, asal konteksnya jelas. Yang penting, mereka tahu kapan, bukan harus inget tanggalnya."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of relational time markers like 'ini' (this) and 'minggu depan' (next week) anchored to current day (Selasa) for clarity",
+          "Avoidance of specific calendar dates (e.g., '11 Agustus') when they contradict cultural context or event timing (e.g., Hari Raya)",
+          "Natural use of 'Jumat sore ini' as a temporally precise and culturally appropriate invitation with minimal cognitive load",
+          "Contextual awareness of religious calendar events (Hari Raya) and alignment with proximity-based scheduling",
+          "Implicit understanding of shared knowledge in workplace communication: reliance on relational time over exact dates",
+          "Spoken Indonesian conventions: omission of 'ke-' before day numbers (e.g., 'lima Agustus', not 'ke-lima')",
+          "Use of informal time expressions like 'jam 4-an' and 'sebentar lagi' for natural, conversational tone",
+          "Preference for situational clarity over rigid temporal precision in informal Indonesian communication"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of 'minggu depan' and 'seminggu lagi' as natural, context-dependent date references",
+          "Preference for relative time markers (e.g., 'ini', 'sekarang') over fixed dates",
+          "Natural omission of ordinal markers in date expressions (e.g., 'Jumat sore ini' instead of 'ke-lima Jumat')",
+          "Reliance on shared context and event timing rather than precise calendar dates",
+          "Informal, conversational tone with pragmatic focus on clarity and relatability",
+          "Use of 'jam 4-an' as a casual time expression common in Indonesian speech",
+          "Recognition that 'Hari Raya' is culturally salient and temporally anchored without needing exact dates"
+        ],
+        "issues": [
+          "Minor ambiguity in the assistant’s second response: 'akhir Juni atau awal Juli' assumes a specific Hari Raya date without acknowledging regional or religious calendar variation, though this is a low-impact oversimplification in context",
+          "Slight overuse of 'nggak' and 'aja' in assistant responses may border on stylistic exaggeration for authenticity, though still within natural range"
+        ],
+        "suggestions": [
+          "Add a brief mention of regional variation (e.g., 'tergantung daerah, tapi biasanya akhir Juni') to reinforce cultural nuance around date estimation",
+          "Consider introducing a subtle variation in time reference (e.g., 'pas Jumat sore minggu depan' vs 'seminggu lagi') to show flexibility in phrasing",
+          "Include a more explicit example of 'kemarin' or 'hari ini' usage to further anchor the concept of relational time"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku lagi bingung, kita harus ngatur meeting buat acara kantor di hari Senin, tapi aku lupa tanggalnya. Kemarin kita bahas pas ngopi di kantin, terus Pak Budi bilang 'nanti kita diskusi pas hari Senin, minggu lalu'. Aku belum tahu pasti kapan itu."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, jadi itu hari Senin minggu lalu. Kalau hari ini Senin, berarti kemarin itu Senin 15 April. Jadi yang Pak Budi maksud kemarin itu Senin, 15 April. Tapi kalau sekarang sudah Senin 22 April, berarti dia maksud hari Senin minggu lalu itu 15 April."
+            },
+            {
+              "role": "user",
+              "content": "Wah, jadi 15 April. Tapi kita harus siapin presentasi buat acara itu. Aku pikir acaranya pas bulan depan, pas Hari Raya. Tapi sekarang udah April, Hari Raya kemungkinan besar di bulan Mei. Jadi kapan tepatnya?"
+            },
+            {
+              "role": "assistant",
+              "content": "Kalau acaranya pas Hari Raya, berarti kemungkinan besar di awal Mei. Hari Raya Idul Fitri tahun ini jatuh pada 11 Mei, jadi acaranya bisa di sekitar 10–12 Mei. Kita bisa jadwalkan meeting di hari Senin, 6 Mei, biar ada waktu buat siapin materi. Itu masih cukup dekat, tapi nggak terlalu mendadak."
+            },
+            {
+              "role": "user",
+              "content": "Oh iya, jadi 6 Mei. Aku cuma bingung soal tanggalnya, soalnya di kantor kita biasa pakai 'lima Agustus' bukan 'ke-lima Agustus', tapi kalau ngomong tanggalnya, nggak pernah pake 'ke-' gitu. Tapi di email, kadang pakai format yang lebih formal. Apa yang lebih pas buat email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Di email formal, lebih baik pakai format standar: 6 Mei 2025. Tapi kalau di percakapan informal, cukup bilang 'Senin, enam Mei' atau 'enam Mei' saja. Yang penting, di sini kamu ngomongnya santai, jadi nggak perlu pakai 'ke-enam'. Orang Indonesia biasanya ngomongnya simpel seperti itu."
+            },
+            {
+              "role": "user",
+              "content": "Oke, jadi kita sepakat meeting Senin, 6 Mei. Aku akan kirimkan draft ke tim hari ini. Terus, apakah kita perlu sebutkan 'minggu lalu' atau 'minggu depan' di pengumuman acara biar orang ngerti?"
+            },
+            {
+              "role": "assistant",
+              "content": "Di pengumuman, lebih baik pakai tanggal eksplisit: 6 Mei 2025. Tapi kalau mau lebih natural, bisa ditambahkan 'minggu depan' setelah tanggal, biar lebih terasa dekat. Misalnya: 'Meeting hari Senin, 6 Mei, minggu depan'. Orang-orang akan langsung paham tanpa perlu hitung-hitungan."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of 'minggu lalu' and 'minggu depan' as relational time markers instead of exact dates",
+          "Natural omission of 'ke-' in ordinal day expressions (e.g., 'enam Mei' instead of 'ke-enam Mei')",
+          "Flexible word order in date expressions (e.g., 'Senin, 6 Mei' or '6 Mei')",
+          "Contextual reliance on cultural calendar knowledge (e.g., Hari Raya Idul Fitri in early May)",
+          "Informal spoken date format prioritizing simplicity and flow over rigid syntax",
+          "Use of shared cultural knowledge (e.g., timing of office events around religious holidays)",
+          "Natural progression from conversational cues to precise planning without explicit cultural explanation"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.075,
+        "cultural_elements_verified": [
+          "Use of 'minggu lalu' and 'minggu depan' as relational time markers instead of exact dates",
+          "Natural omission of 'ke-' in day-of-month expressions (e.g., 'enam Mei' not 'ke-enam Mei')",
+          "Flexible word order in date expression ('Senin, enam Mei' or 'enam Mei')",
+          "Preference for event-based anchoring (e.g., 'pas Hari Raya') over precise dates",
+          "Contextual understanding of Hari Raya Idul Fitri timing (11 Mei 2025) and its cultural significance",
+          "Informal vs formal register distinction in communication (spoken vs email)",
+          "Use of 'hari ini' and 'kemarin' to anchor temporal references without explicit dates"
+        ],
+        "issues": [
+          "Minor inaccuracy: The assistant assumes the current date is 22 April without confirmation from the user; the user only says 'sekarang udah April'. This could mislead if the model interprets 'sekarang' as 22 April without context.",
+          "Slight over-explanation in the assistant’s final response: 'Orang-orang akan langsung paham tanpa perlu hitung-hitungan' is slightly didactic and could sound like an outsider explaining to an outsider, though still within acceptable bounds."
+        ],
+        "suggestions": [
+          "Avoid making assumptions about the current date unless explicitly confirmed. Instead, use phrasing like 'kalau sekarang sudah April, berarti minggu lalu itu 15 April' to show reasoning without asserting the date as fact.",
+          "Refine the final response to be more subtly natural: e.g., 'Bisa ditambahkan 'minggu depan' setelah tanggal, biar terasa dekat — orang-orang langsung ngerti.'",
+          "Ensure all date references align with actual 2025 calendar (confirmed: Hari Raya Idul Fitri 2025 is indeed 11 May, so 6 May is accurate)"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku mau bikin undangan acara arisan keluarga, tapi bingung mau tulis tanggalnya gimana. Kita mau ngadainnya bulan depan, pas Hari Raya Idul Fitri. Aku udah tahu hari itu jatuh di hari Sabtu, tapi nggak mau pake tanggal pasti karena belum tahu persis tanggalnya. Gimana cara nyebutinnya biar natural tapi tetap jelas?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ngomong soal tanggal, di obrolan sehari-hari di Indonesia, kita biasanya nggak perlu sebut tanggal pasti kalau udah ada konteks budaya yang jelas. Karena Hari Raya Idul Fitri itu sudah jadi acara besar yang semua orang tahu kapan waktunya, cukup bilang aja 'bulan depan, pas Hari Raya' atau 'kira-kira minggu pertama bulan depan, pas Lebaran'. Orang-orang bakal langsung ngerti. Kalau mau lebih spesifik tapi tetap santai, bisa pakai 'Sabtu, setelah Lebaran' atau 'setelah hari raya, minggu pertama bulan depan'. Jangan lupa sebut hari dan bulan secara alami, misalnya 'Sabtu, dua belas Agustus' kalau emang udah pasti, tapi kalau belum, lebih baik pakai kata-kata seperti 'pas Lebaran' atau 'setelah cuti Lebaran'."
+            },
+            {
+              "role": "user",
+              "content": "Oke, jadi kalau aku tulis di undangan: 'Kita kumpul bulan depan, pas Hari Raya Idul Fitri, hari Sabtu', itu udah cukup jelas, kan? Nggak perlu sebut tanggal pasti?"
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, itu udah cukup jelas dan terdengar sangat alami. Di konteks keluarga atau acara yang bersifat hangat dan relasional seperti arisan, orang-orang nggak akan keberatan kalau tanggalnya nggak tepat. Mereka bakal ngerti dari konteks: 'Hari Raya' = waktu yang sudah dikenal, 'Sabtu' = hari yang biasanya jadi hari libur panjang, dan 'bulan depan' = waktu yang sudah terasa dekat. Bahkan, kalau diundang ke acara seperti ini, orang-orang biasanya langsung cek kalender sendiri, tapi nggak perlu dibuat terlalu formal. Yang penting, pesannya terasa hangat dan menggambarkan momen, bukan angka."
+            },
+            {
+              "role": "user",
+              "content": "Tapi aku takut yang belum tahu jadwal Lebaran malah bingung. Mungkin aku tambahin 'kira-kira tanggal 10 atau 11 Agustus' biar lebih jelas?"
+            },
+            {
+              "role": "assistant",
+              "content": "Kalau kamu mau kasih petunjuk lebih, boleh, tapi jangan sebut tanggal pasti kalau belum yakin. Lebih baik pakai 'kira-kira minggu pertama Agustus' atau 'sekitar 5 sampai 10 Agustus' — ini masih terasa alami dan nggak terlalu kaku. Kalau kamu sebut '10 atau 11 Agustus', itu bisa jadi terlalu spesifik dan malah bikin orang mikir, 'Wah, pasti banget nih?' Padahal di Indonesia, kita biasanya nggak begitu detail soal tanggal kalau belum perlu. Yang penting, acaranya jadi momen yang dinanti, bukan jadwal yang harus diinget persis."
+            },
+            {
+              "role": "user",
+              "content": "Oke, jadi aku bakal tulis: 'Kita kumpul bulan depan, pas Hari Raya Idul Fitri, hari Sabtu, kira-kira minggu pertama Agustus'. Gitu aja, ya?"
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, itu udah pas. Natural, hangat, dan cukup jelas. Orang-orang bakal langsung ngerti, dan nggak akan merasa terbebani karena harus inget tanggal persis. Yang penting, mereka tahu kapan acaranya — bukan karena angka, tapi karena momen. Itu yang paling penting di budaya kita."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of event-based anchoring (Hari Raya Idul Fitri) instead of exact dates",
+          "Natural omission of ordinal markers (e.g., no 'ke-lima' for '5 Agustus')",
+          "Flexible word order and contextual clarity in date expression",
+          "Preference for relational time over precise linear time",
+          "Use of approximate time markers like 'bulan depan', 'minggu pertama', 'kira-kira'",
+          "Informal, conversational tone with native expressions like 'nggak perlu', 'langsung ngerti', 'bikin orang mikir'",
+          "Cultural understanding that exact dates are not always necessary in familial, relational contexts"
+        ],
+        "issues": [
+          "Minor overuse of the phrase 'di Indonesia' in assistant responses (e.g., 'di Indonesia, kita biasanya nggak perlu sebut tanggal pasti') — slightly breaks immersion by stating cultural identity explicitly. Should be implied through language, not declared.",
+          "Slight risk of reinforcing a stereotype by implying all Indonesians rely solely on cultural events; while common, some urban or formal contexts do use exact dates. However, this is acceptable given the focus on conversational naturalness."
+        ],
+        "suggestions": [
+          "Replace explicit cultural markers like 'di Indonesia' with contextually embedded expressions that convey the same meaning without stating the culture outright (e.g., 'Orang-orang bakal langsung ngerti' instead of 'di Indonesia, kita biasanya...')",
+          "Introduce subtle regional variation (e.g., mention of 'Suro' or 'bulan Lebaran' in a Javanese context) in future examples to reflect diversity within Indonesia, if relevant to the scenario",
+          "Use more spontaneous, fragmented speech patterns (e.g., interjections like 'Ah', 'Iya, bener banget') to deepen authenticity in informal exchanges"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku lagi bingung nih, mau ngajak teman ngobrol soal acara kantor bulan depan. Tapi aku lupa kapan tepatnya. Yang jelas, kita mau ngadain meeting pas Hari Raya Idul Fitri. Kira-kira kapan ya itu?"
+            },
+            {
+              "role": "assistant",
+              "content": "Oh, jadi acaranya pas Hari Raya, ya? Itu biasanya sekitar akhir Juni atau awal Juli, tergantung tahunnya. Kalau tahun ini, Lebaran jatuhnya tanggal 10 Juni. Jadi, meeting-nya bisa di minggu sebelum atau sesudahnya — misalnya, minggu lalu atau minggu ini, tergantung jadwal tim."
+            },
+            {
+              "role": "user",
+              "content": "Wah, jadi kira-kira bisa di hari Selasa, 4 Juni? Itu masih sebelum Lebaran, kan?"
+            },
+            {
+              "role": "assistant",
+              "content": "4 Juni? Itu masih sekitar dua minggu sebelum Lebaran, jadi masih cukup jauh. Kalau mau pas suasana Lebaran, lebih enak di minggu terakhir sebelum Lebaran — misalnya, hari Selasa, 2 Juni atau Rabu, 3 Juni. Tapi kalau mau lebih santai, bisa juga minggu sebelumnya, hari Minggu, 26 Mei."
+            },
+            {
+              "role": "user",
+              "content": "Oke, jadi kalau kita pilih hari Selasa, 2 Juni, itu masih masuk waktu Lebaran, ya? Karena kan banyak yang pulang kampung sebelumnya."
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, 2 Juni masih masuk masa persiapan Lebaran — banyak yang masih di kota, belum pulang. Jadi, masih cukup aman buat meeting. Kalau di kantor, biasanya yang penting itu bisa ketemu sebelum semua orang mulai mudik. Jadi, 2 Juni pas banget."
+            },
+            {
+              "role": "user",
+              "content": "Makasih, jadi aku bisa bilang ke tim: 'Kita diskusi hari Selasa, dua Juni, pas masa-masa tenang sebelum Lebaran.' Kayaknya lebih enak gitu, daripada sebut tanggalnya aja."
+            },
+            {
+              "role": "assistant",
+              "content": "Betul banget — ngomongnya seperti itu lebih natural dan lebih mudah dimengerti karena orang-orang langsung ngerasa konteksnya. Kalau cuma bilang '2 Juni', mungkin lupa. Tapi kalau bilang 'pas masa-masa tenang sebelum Lebaran', semua langsung tahu kapan."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of event-based time anchoring (e.g., 'pas Hari Raya Idul Fitri', 'masa-masa tenang sebelum Lebaran') instead of exact dates",
+          "Natural omission of ordinal markers (e.g., 'dua Juni' instead of 'ke-dua Juni')",
+          "Flexible word order in date expressions (e.g., 'hari Selasa, dua Juni' vs. 'dua Juni, hari Selasa')",
+          "Use of temporal markers like 'minggu lalu', 'sekitar akhir Juni', 'masih sekitar dua minggu sebelum Lebaran' to convey approximate timing",
+          "Contextual understanding of cultural calendar events (Hari Raya Idul Fitri) as a temporal anchor",
+          "Preference for relational time over precise dates, with emphasis on shared cultural knowledge",
+          "Informal, conversational tone with natural flow, avoiding rigid or formal phrasing",
+          "Use of culturally specific expressions like 'masih cukup aman buat meeting' and 'lebih enak gitu' to reflect natural speech patterns"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of event-based anchoring (Hari Raya Idul Fitri) instead of precise dates",
+          "Natural expression of time via contextual markers ('masa-masa tenang sebelum Lebaran', 'minggu sebelum', 'dua minggu sebelum')",
+          "Flexible date reference without rigid ordinal usage (e.g., '2 Juni' instead of 'ke-2 Juni')",
+          "Emphasis on shared cultural knowledge (Lebaran timing, mudik season) over exact calendar dates",
+          "Informal, conversational tone with pragmatic time references",
+          "Avoidance of explicit cultural identity performance by user",
+          "Recognition of relational time over linear time"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant references '2 Juni' as 'still masuk masa persiapan Lebaran' while Lebaran is on 10 Juni — this is accurate, but the phrasing 'masa-masa tenang' could imply a more relaxed period than actually intended; 'masa persiapan' might be more precise",
+          "Slight over-reliance on Gregorian calendar in a context where Javanese or Islamic calendar awareness might be more culturally salient — though not critical, given the urban Jakarta context"
+        ],
+        "suggestions": [
+          "Refine phrasing like 'masa-masa tenang sebelum Lebaran' to 'masa persiapan Lebaran' for greater cultural precision",
+          "Consider subtly incorporating alternative calendar references (e.g., 'menjelang bulan Syawal') in future examples to reflect Islamic calendar awareness in religious contexts",
+          "Ensure that future examples maintain consistent use of non-capitalized month names (e.g., 'juni' not 'Juni') in informal speech, though this is minor in spoken context"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku lagi bingung, mau bikin undangan acara keluarga buat arisan bulan depan. Tapi aku nggak ingat pasti tanggalnya. Yang jelas, kita biasanya ngumpul pas hari Minggu, dan kemarin itu sudah hari Sabtu, jadi harusnya minggu depan. Tapi aku juga nggak mau salah tanggal karena bulan depan itu ada Hari Raya Idul Adha, jadi mungkin agak mepet. Bisa bantu cek kapan tanggal Minggu yang paling pas?"
+            },
+            {
+              "role": "assistant",
+              "content": "Oke, kalau acara kamu minggu depan dan kemarin sudah Sabtu, berarti hari Minggu yang dimaksud adalah 14 April 2025. Tapi karena Hari Raya Idul Adha jatuh tanggal 11 April, jadi kemungkinan besar arisan kamu akan lebih aman di minggu berikutnya — 21 April. Itu masih dalam bulan depan, dan nggak bentrok dengan hari raya. Kalo mau lebih santai, bisa juga di 28 April, tapi itu udah dekat akhir bulan. Pilih yang paling nyaman buat keluarga."
+            },
+            {
+              "role": "user",
+              "content": "Wah, makasih ya. Jadi 21 April itu hari Minggu, ya? Tapi aku juga sempet mikir, mungkin kita bisa bikin acara pas minggu sore, sebelum Hari Raya. Tapi aku nggak mau salah ngomong, karena di keluarga kita biasa bilang 'minggu depan' pas hari Minggu, padahal kadang itu minggu berikutnya. Jadi aku bingung, kapan sebenarnya yang dimaksud?"
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, 21 April 2025 memang hari Minggu. Nah, ini soalnya sering bikin bingung karena dalam percakapan sehari-hari, 'minggu depan' itu bisa berarti minggu pertama setelah hari ini — tapi kalau hari ini sudah Sabtu, 'minggu depan' biasanya langsung ke Minggu berikutnya. Jadi kalau kamu bilang 'minggu depan' hari ini, artinya 21 April. Tapi kalau kamu bilang 'minggu depan' minggu depan, bisa jadi 28 April. Karena itu, lebih aman kalau langsung sebut tanggalnya, biar nggak salah paham."
+            },
+            {
+              "role": "user",
+              "content": "Iya, aku juga baru sadar. Aku sempet bilang ke bibi, 'kita ketemu minggu depan', tapi dia langsung bilang 'itu kan tanggal 21, ya?' Ternyata dia udah ngerti dari konteks. Jadi sebenernya nggak perlu ribet, asal kita semua ngerti kapan acaranya. Tapi buat undangan, aku tetap harus jelas. Jadi mungkin aku tulis: 'Minggu, dua puluh satu April dua ribu dua puluh lima'. Gitu ya?"
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, itu sudah pas. Kalau mau lebih alami, bisa juga bilang 'Dua puluh satu April dua ribu dua puluh lima' — tanpa 'Minggu' di depan, karena kalau udah sebut tanggal, orang langsung tahu hari apa. Tapi kalau kamu mau lebih hangat, bisa tulis: 'Kita ketemu hari Minggu, dua puluh satu April dua ribu dua puluh lima'. Itu lebih natural kayak percakapan sehari-hari di Jakarta. Yang penting, tanggalnya jelas, dan nggak perlu pakai 'ke-21' atau 'ke-lima' — di percakapan, cukup 'dua puluh satu April'."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of flexible date word order: 'dua puluh satu April dua ribu dua puluh lima' (day–month–year) without formal ordinal markers",
+          "Omission of 'ke-' in day expressions: 'dua puluh satu April' instead of 'ke-dua puluh satu April'",
+          "Reliance on contextual time markers: 'minggu depan', 'kemarin', 'hari ini' to anchor dates without exact numbers",
+          "Natural use of 'minggu depan' to refer to the upcoming Sunday, reflecting relational time over linear precision",
+          "Reference to culturally significant timing: Hari Raya Idul Adha as a key event shaping date selection",
+          "Informal, context-driven date expression in conversational Indonesian: 'kita ketemu hari Minggu, dua puluh satu April dua ribu dua puluh lima'",
+          "Absence of capitalization in month names: 'April' not 'April'",
+          "Use of shared cultural knowledge: family members understand 'minggu depan' based on context, not explicit clarification",
+          "Preference for event-based anchoring over exact dates: reliance on religious calendar (Hari Raya) to guide timing",
+          "Natural flow of dialogue reflecting cultural norms: no explanation of cultural practices, just lived-in usage"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of 'minggu depan' to refer to the upcoming Sunday, with context-dependent interpretation",
+          "Natural omission of ordinal markers like 'ke-' in spoken date expressions (e.g., 'dua puluh satu April' instead of 'ke-21')",
+          "Flexible word order in date expressions, including omission of day-of-week when date is specified",
+          "Reliance on shared context and cultural awareness (e.g., knowledge of Hari Raya Idul Adha timing)",
+          "Preference for event-based or relational time over rigid date specification in conversation",
+          "Informal, conversational tone with natural time markers like 'kemarin', 'minggu depan', 'bulan depan'",
+          "Use of 'dua ribu dua puluh lima' instead of '2025' in spoken-style writing",
+          "Acceptance of ambiguity in time references when context is shared, but clarity in formal contexts like invitations"
+        ],
+        "issues": [
+          "Minor inconsistency in the assistant's final suggestion: recommending 'Dua puluh satu April dua ribu dua puluh lima' without 'Minggu' is accurate, but the example includes 'hari Minggu' in the alternative — this could be slightly misleading as it implies the day name is necessary, when in fact it's often omitted in natural speech. However, this is a minor nuance and does not undermine the overall authenticity.",
+          "The assistant correctly identifies the cultural logic but could have more explicitly emphasized that 'minggu depan' is contextually anchored to the current week, which is a core feature of relational time in Indonesian speech."
+        ],
+        "suggestions": [
+          "Strengthen the explanation of relational time by adding a brief example of how 'minggu depan' shifts meaning based on current day (e.g., 'kalau hari ini Senin, minggu depan itu 13 April; kalau hari ini Sabtu, minggu depan itu 21 April') to reinforce the cultural logic.",
+          "Include a note on regional variation: while Jakarta uses Gregorian calendar dates, some families in rural or Javanese contexts might reference dates using traditional calendars (e.g., 'Suro 14'), though this is beyond the scope of this example and not required here.",
+          "Consider adding a subtle cue about formality: in formal invitations, dates are often written with day-of-week, but in casual speech, they’re omitted — this reinforces the cultural principle of context-appropriate expression."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 19,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

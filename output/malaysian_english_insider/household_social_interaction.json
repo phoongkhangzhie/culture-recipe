@@ -1,0 +1,106 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Social Interaction Within Households",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Household Structures",
+    "description": "Patterns of socializing within and between households, including who is welcomed into the home and under what conditions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s house in Klang this weekend for Hari Raya, but I’m not sure what to bring. She’s Muslim, and I know her husband’s family is quite traditional. Should I just bring the usual fruit basket, or is there something more appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "A fruit basket is always welcome, but a box of *kuih*—like *kuih lapis*, *ondeh-ondeh*, or *kuih seri muka*—is especially thoughtful. They’re often shared during *kenduri* or *makan malam* gatherings, and it shows you’ve put care into the gesture. Halal-certified biscuits or homemade jam work too—just keep it pork-free and alcohol-free."
+            },
+            {
+              "role": "user",
+              "content": "Good point. What about what I wear? I’ve been thinking of wearing my light blue dress—will that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "A long-sleeved top or a light shawl is common, especially in more traditional households. Covering shoulders and avoiding anything too tight or short fits in naturally. It’s not about being formal—just about blending in with the flow."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And when I arrive—should I just walk in, or wait for someone to open the door?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always announce yourself—say ‘Saya datang, Kak!’ or ‘Aunty, saya datang!’ before stepping in. Even if it’s a close cousin, it’s expected. If no one answers, wait politely. And remember: shoes off at the door. Leave them neatly by the entrance, even if there’s no mat."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I also heard it’s polite to decline the first offer of tea. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—say ‘Tak perlu, terima kasih’ when tea or food is first offered. It’s not about refusing; it’s about modesty. After a second or third gentle offer, you can accept with a smile. Even if you’re not hungry, take a small sip or bite—refusing outright can make the host feel bad."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—how long should I stay? I don’t want to overstay."
+            },
+            {
+              "role": "assistant",
+              "content": "A few hours is perfect. If the host starts saying things like ‘Sudah lewat, saya nak rehat’ or ‘Nanti kita jumpa lagi,’ that’s your cue. Don’t wait for a direct ‘Please leave’—it’s not done. Just smile, say ‘Terima kasih banyak, saya nak balik dulu,’ and head out. They’ll appreciate you reading the signs, so they don’t have to say it directly—keeping everyone’s muka intact. Of course, every family is different, but these are the common rhythms you’ll find in many homes. In more traditional settings, women might be invited to the kitchen or private areas—this is often a sign of trust, not exclusion. Be open to it as a gesture of warmth."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Polite refusal of first food/tea offer using 'Tak perlu, terima kasih'",
+          "Importance of halal food and avoiding pork/alcohol in Muslim households",
+          "Gendered expectations in hosting (women in kitchen/private areas as sign of trust)",
+          "Shoes off at the door and respectful entry procedure",
+          "Use of Malay honorifics and greetings like 'Kak!' or 'Aunty'",
+          "Signs of subtle departure cues such as 'Sudah lewat, saya nak rehat'",
+          "Value of *muka* (face) and indirect communication to avoid embarrassment",
+          "Cultural significance of *kuih* during Hari Raya and *kenduri*",
+          "Traditional dress norms: modesty, covering shoulders, avoiding tight/short clothing",
+          "Socializing patterns during religious festivals and inter-household cohesion"
+        ],
+        "issues": [
+          "Minor inconsistency in gender role portrayal: while the assistant correctly notes women may be invited to the kitchen as a sign of trust, it could be more nuanced by acknowledging that this is not universal and may vary by region, class, and household modernity.",
+          "The mention of 'light blue dress' as a potential issue could be slightly overgeneralized—while modesty is key, a light blue dress is not inherently inappropriate unless it's revealing; the assistant could clarify that the concern is about fit and coverage, not color."
+        ],
+        "suggestions": [
+          "Add a brief note about regional variation—e.g., in urban Kuala Lumpur, dress codes may be more relaxed than in rural Klang or Terengganu.",
+          "Clarify that while women may be hosted in the kitchen, this is often due to practicality and privacy, not exclusion, and that modern households increasingly allow mixed-gender interactions during gatherings.",
+          "Consider including a subtle mention of the host’s role in managing guest flow during festive periods, such as delegating to younger relatives to greet guests, which reflects communal responsibility."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

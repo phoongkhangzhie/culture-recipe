@@ -1,0 +1,88 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Date Order Convention",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "The sequence of day, month, and year components in written date representations (e.g., DD/MM/YYYY vs MM/DD/YYYY)",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm trying to register for a university scholarship in Vietnam, but the online form keeps rejecting my date of birth. I entered 01/09/2000, but it says 'Invalid date format'. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "The system requires DD/MM/YYYY with leading zeros — so 01/09/2000 is correct for September 1, 2000. Make sure you're not using MM/DD/YYYY, which is common internationally but not accepted in official Vietnamese systems."
+            },
+            {
+              "role": "user",
+              "content": "Wait, so 01/09/2000 means September 1st, not January 9th? I’ve used 01/09/2000 for years on international sites, and it’s always been January 9th."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — in Vietnam, the day comes first, then the month, then the year. So 01/09/2000 is September 1st. This format has been standard since 1945 and is used in all official documents, government portals, and daily life. Even in spoken Vietnamese, people often say 'ngày 01 tháng 09' in formal contexts, though younger urban speakers may say 'ngày 9 tháng 9' informally — which is perfectly natural and acceptable in casual conversation."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’m helping my younger cousin with her university application. She’s in Ho Chi Minh City and usually writes dates as 9/1/2000 casually. Should I correct her for formal submissions?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — for formal applications, always use the full DD/MM/YYYY format with leading zeros: 01/09/2000. While younger people in cities like TP.HCM often say 'ngày 9 tháng 1' informally, digital forms require the full, precise format. Using 9/1/2000 can cause errors or delays, so it’s best to stick with the official standard. This reflects attention to detail — a valued trait in Vietnamese academic culture."
+            },
+            {
+              "role": "user",
+              "content": "Got it. One last thing — what if she’s writing a personal statement? Can she be more conversational, or should she still use the formal format?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a personal statement, she can use natural phrasing like 'I was born on ngày 01 tháng 09 năm 2000' — that’s perfectly appropriate and culturally respectful. Avoid MM/DD/YYYY even in informal writing, as it may signal unfamiliarity with local norms. In Vietnamese academic culture, precision in dates reflects respect, diligence, and care — especially when writing about personal milestones."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — one more thing: I’ve heard some tech-savvy younger users in Vietnam use formats like 2000-09-01. Is that common?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — in programming, databases, or technical documentation, younger Vietnamese users often use ISO 8601 (YYYY-MM-DD), like 2000-09-01, especially in coding or data systems. But for public-facing forms, scholarship applications, or personal statements, stick to DD/MM/YYYY with leading zeros. The ISO format is useful in tech but not standard for general public use. Also, note that lunar dates like 'Mùng 1 Tết năm 2025' carry deep cultural meaning — they’re used in family letters, holiday greetings, and ancestral references, showing respect for tradition and seasonal cycles."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 0.0,
+        "linguistic_authenticity_score": 0.0,
+        "dimension_relevance_score": 0.0,
+        "training_quality_score": 0.0,
+        "overall_score": 0.0,
+        "cultural_elements_verified": [],
+        "issues": [],
+        "suggestions": [],
+        "is_approved": false
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 10,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

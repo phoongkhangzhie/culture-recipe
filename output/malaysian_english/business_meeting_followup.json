@@ -1,0 +1,198 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Business Meeting Follow-Up",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around post-meeting communication, such as follow-up emails, calls, written summaries, or courtesy gifts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up a meeting with Mr. Lim from Klang Valley Development Sdn Bhd about the new community park project. We discussed timelines and site layouts, and he seemed very engaged. I want to send a proper follow-up email, but I’m not sure how to word it—especially since he’s senior and I’m from a smaller firm. What should I include and how should I phrase it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Great to hear you’re following up—this shows respect and professionalism, which are highly valued in Malaysian business culture. Start with a warm but polished greeting: ‘Dear Mr. Lim, I hope this message finds you well.’ Then, express appreciation sincerely: ‘Thank you for the insightful discussion today; your input on community integration was truly helpful.’"
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I summarize the action items, like who’s responsible for the soil test report and the design mockups?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—summarizing is a good idea, but keep it collaborative and soft. Avoid direct assignments. Instead, say: ‘We’ll be preparing the initial site sketches by early next week and would welcome your feedback when convenient.’ For the soil report: ‘Kindly let us know if there are any updates, so we can align accordingly.’ This respects hierarchy while keeping things moving."
+            },
+            {
+              "role": "user",
+              "content": "What about sending a written summary? Is that necessary? And should I send it right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "A written summary is appreciated—especially after formal or high-stakes meetings. For senior executives, sending it within 24 hours is often expected to show promptness and respect. If it’s a routine discussion, 48 hours is still good. Use gentle phrasing: ‘As discussed, we’re considering the east-side area for a children’s play zone’ or ‘We’re considering native plants, as you suggested.’ Avoid firm commitments—use ‘we may consider’ or ‘we’re exploring’ instead of ‘we will.’"
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Also, I brought a small gift—some local kuih from my aunt’s bakery. Should I give it to him now, or wait until after the email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s thoughtful—gifts are a nice way to build rapport. Since the meeting’s already ended, it’s best to send the gift within 1–2 days after the meeting. Hand it over in person if possible, or deliver it via a colleague if not. Keep it modest: no company logos, no expensive items, and avoid anything with religious symbols or pork-based ingredients, especially if you're unsure of the recipient’s background. A simple note like ‘With sincere thanks for your time and guidance’ works well—natural and warm without being overly formal."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if he doesn’t reply to my email for a few days? Should I follow up? And how?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good question. Silence is common—especially with senior figures who may be busy—but it’s polite to follow up within 3–5 working days. If no reply, send a light check-in: ‘Dear Mr. Lim, I hope you’re well. Just gently checking in on the park design timeline—happy to provide any additional details if needed.’ Close with ‘Best wishes’—this is more natural and commonly used in everyday Malaysian business emails than ‘Warm regards.’ Avoid over-apologizing or excessive humility like ‘I’m sorry to bother you’—it can unintentionally undermine your confidence."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.35,
+        "cultural_elements_verified": [
+          "Use of polite, deferential tone in follow-up emails",
+          "Emphasis on harmony and face-saving in communication",
+          "Soft phrasing for action items (e.g., 'we may consider', 'kindly advise')",
+          "Importance of timely follow-up (within 24–48 hours) for senior executives",
+          "Appropriateness of modest, culturally sensitive gifts (kuih, no religious/pork elements)",
+          "Preference for in-person gift delivery when possible",
+          "Avoidance of over-apologizing or excessive humility in follow-ups",
+          "Use of 'Best wishes' as a natural closing in Malaysian business emails",
+          "Respect for hierarchy in assigning responsibilities and initiating contact"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'senior figures' as always being unresponsive—while common, some senior Malaysians do respond promptly; the example could acknowledge variability in response times without implying universal silence.",
+          "The phrase 'we’re exploring' is accurate, but could be slightly more nuanced by noting that Malaysians often use passive constructions like 'it is being considered' to further depersonalize and de-escalate responsibility."
+        ],
+        "suggestions": [
+          "Add a brief note about the importance of timing when sending gifts—ideally not during religious holidays unless certain of the recipient’s beliefs, to avoid unintended offense.",
+          "Slightly expand on the rationale behind avoiding direct assignments: in Malaysian culture, assigning tasks explicitly can be seen as presumptuous unless the speaker holds a clear authority role.",
+          "Include a subtle reminder about the role of intermediaries (e.g., secretaries or junior staff) in relaying messages to senior figures, which is common in hierarchical Malaysian workplaces."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up a meeting with Mr. Lim from Syarikat Teknologi Nusantara about our joint project proposal. It went well, but I’m not sure what to do next. Should I send a follow-up email? What should I include?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a follow-up email is appropriate and expected in Malaysian business culture. Begin with a warm but respectful greeting: 'Dear Mr. Lim, I hope this message finds you well.' Then, briefly thank him for his time and insights. Keep the tone appreciative and light—avoid sounding transactional."
+            },
+            {
+              "role": "user",
+              "content": "What about summarizing the action items? Should I list them clearly, or is that too direct?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can summarize the key points, but gently. Use phrases like 'As we discussed, we might look at finalizing the draft by next week' or 'We could explore the next steps based on your thoughts.' Avoid bullet points or rigid structures—softening the language maintains harmony and respects indirect communication norms."
+            },
+            {
+              "role": "user",
+              "content": "I was thinking of sending a small kuih from my aunt’s bakery as a thank-you. Is that appropriate after a meeting?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful gesture. A small kuih from your aunt’s bakery would be appropriate as a token of appreciation—just be sure to send it the day after the meeting, not during the meeting itself. It’s best delivered with your follow-up email or during a casual follow-up visit. Avoid over-explaining it; a simple note like 'Hope you enjoy this small treat' is sufficient. In more formal or conservative settings, branded merchandise or a fruit basket may be preferred."
+            },
+            {
+              "role": "user",
+              "content": "What if Mr. Lim doesn’t reply to my email? Should I follow up with a call?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait 3–4 days, then send a gentle nudge: 'Just checking in—hope you’re well! We understand your schedule may be tight, so no pressure at all. Just wanted to see if there are any updates from your side.' If still no reply after a week, a brief call is acceptable—but always email first to confirm a time. Never call without notice, especially if he’s senior."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So the goal is to keep things respectful, indirect, and relationship-focused, even when discussing deadlines or next steps?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The core is harmony—maintaining smooth, respectful relationships. Indirectness isn’t evasion; it’s care. For urgent matters, you can gently firm up the tone: 'We’d appreciate your input by Friday to keep things on track,' but still soften it with a smile or polite closing. And remember—your tone, timing, and even pauses (like using ellipses…) matter as much as the words. It’s not just what you say, but how you say it, and when."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Polite and deferential tone in follow-up emails",
+          "Use of soft, non-confrontational language for action items (e.g., 'we might consider', 'as discussed')",
+          "Avoidance of bullet points or rigid structures in summaries",
+          "Timing of follow-up: sending gifts the day after a meeting, not during",
+          "Delivery of small gifts (kuih) with minimal explanation",
+          "Acknowledgment of the recipient’s potential busyness ('We understand your schedule may be tight')",
+          "Preference for email over phone call for follow-ups, with calls only after prior notice",
+          "Regional and contextual sensitivity: kuih acceptable in most settings, but branded items or fruit baskets preferred in formal/conservative contexts",
+          "Cultural value of face-saving and relationship harmony over directness"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Follow-up emails are expected and should begin with a courteous greeting and appreciation",
+          "Tone should be polite, deferential, and avoid direct or task-oriented language",
+          "Action items should be summarized using soft, indirect phrasing (e.g., 'we might look at', 'we could explore')",
+          "Courtesy gifts like kuih are appropriate and culturally meaningful, especially when modest and delivered post-meeting",
+          "Gifts should not be over-explained; simplicity and humility are valued",
+          "Calling without prior notice is inappropriate, especially for senior individuals",
+          "Follow-up calls should be preceded by an email to confirm timing",
+          "Delayed replies are expected and should be handled with patience and no pressure",
+          "The emphasis on harmony, face-saving, and indirect communication is central to Malaysian business culture",
+          "Tone, timing, and pauses (e.g., ellipses) are culturally significant in conveying respect and nuance"
+        ],
+        "issues": [
+          "Minor: The suggestion to send a gift 'the day after the meeting' could be slightly ambiguous—best practice is to send it within 1–2 business days, not necessarily the same calendar day, to avoid implying urgency or oversight. However, this is a very minor nuance.",
+          "The phrase 'a brief call is acceptable—but always email first to confirm a time' could be slightly improved by emphasizing that the email should explicitly state the purpose and suggest a time window, as this reflects deeper cultural norms of respect for hierarchy and schedule"
+        ],
+        "suggestions": [
+          "Clarify that gifts should ideally be delivered within 1–2 business days post-meeting, not strictly 'the day after', to allow for cultural and logistical flexibility.",
+          "Strengthen the guidance on follow-up calls by recommending that the email include a specific time suggestion (e.g., 'Would Thursday afternoon work for a brief 10-minute call?') to reflect the indirect yet proactive nature of Malaysian communication.",
+          "Consider adding a note about regional variation: in more conservative or rural settings (e.g., Kelantan, Terengganu), gift-giving may be less common or require greater formality, while in urban centers like Kuala Lumpur, kuih is widely accepted."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 26,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

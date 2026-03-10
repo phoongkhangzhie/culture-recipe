@@ -1,0 +1,106 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Serving Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms around offering and serving food and drink to guests, including order of service, refills, and insistence",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Minh kept offering more pho, even after I said I was full—what should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "Just take a small spoonful and smile. She’s not pushing—you’re welcome. That’s how she shows you’re important."
+            },
+            {
+              "role": "user",
+              "content": "And my aunt kept refilling my glass, even when it was half full. Should I say something?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not unless you need to. She’s watching you—refilling means she’s making sure you’re comfortable. A quiet ‘đã đủ, cảm ơn’ with a nod is enough."
+            },
+            {
+              "role": "user",
+              "content": "I noticed she didn’t let me serve myself—should I have tried?"
+            },
+            {
+              "role": "assistant",
+              "content": "No. Let her serve. That’s how she shows you’re part of the family. If someone needs help, pass the shared spoon—don’t take the lead. Using both hands when receiving food from elders is respectful."
+            },
+            {
+              "role": "user",
+              "content": "I saw her quietly pour more pho into my bowl while I was talking to Minh. It felt… kind of unexpected."
+            },
+            {
+              "role": "assistant",
+              "content": "She paused, then reached for the bowl when you weren’t looking—just enough to keep it warm. That’s how it’s done. You don’t need to say anything. She knows you’re comfortable. That’s how it’s done."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Hosts serve first and refill without being asked as a sign of care and inclusion",
+          "Guests accept the first serving graciously and decline subsequent offers politely with 'đã đủ, cảm ơn'",
+          "Refusing to eat or drink repeatedly may be seen as distant or ungrateful",
+          "The host may say 'Ăn đi, đừng ngại' to encourage guests to eat freely",
+          "It is impolite for guests to refill their own plates or drinks",
+          "The act of serving is a gesture of honor, not obligation",
+          "Subtle gestures—like a glance before refilling—signal attentiveness and care",
+          "Receiving food with both hands from elders is a sign of respect",
+          "Persistent serving is not pushiness, but a cultural expression of warmth and hospitality"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Hosts serve guests first and initiate refills without guest prompting",
+          "Guests should not refill their own drinks or food",
+          "Polite refusal of additional food/drink using 'đã đủ, cảm ơn' is appropriate",
+          "Persistent offering is a sign of care, not pressure",
+          "Serving with both hands, especially to elders, is respectful",
+          "Quiet, unannounced refills during conversation are culturally accepted and meaningful",
+          "Shared dishes with communal utensils are standard",
+          "Host may eat last to prioritize guests"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the phrase 'That’s how it’s done' is repeated verbatim in two assistant turns, which may feel slightly monotonous or formulaic in natural speech",
+          "The use of 'she' to refer to the host without prior context (e.g., 'Minh' and 'aunt') could be ambiguous in a real conversation; however, this is acceptable in a training example where roles are implied"
+        ],
+        "suggestions": [
+          "Vary phrasing slightly in repeated cultural affirmations—e.g., replace 'That’s how it’s done' with 'That’s her way of showing you’re welcome' or 'She’s making sure you’re taken care of' to enhance naturalness",
+          "In future examples, include subtle cues of hierarchy (e.g., 'your aunt' vs. 'Minh’s mother') to reinforce the role of elders in serving rituals",
+          "Consider adding a brief moment where the guest notices the host’s careful eye contact or slight pause before refilling—this would deepen the cultural nuance of attentive care"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Meeting Duration",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Cultural expectations around how long business meetings typically last and punctuality norms for starting and ending",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a business meeting with a government agency in Jakarta next week. My schedule says it’s 9:00 a.m. sharp, but I’ve heard that meetings here often run late. Should I plan for extra time, and how should I handle the start time?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, definitely plan for extra time—especially with government agencies in Jakarta. A meeting scheduled for 9:00 a.m. might not start until 9:15 or even 9:20, depending on when the senior official arrives. It’s common for others to wait, not because of disorganization, but as a sign of respect. The key is patience, not urgency."
+            },
+            {
+              "role": "user",
+              "content": "So if I arrive at 9:00, should I just wait quietly? What if I’m the only one there? And how long should I expect the meeting to last?"
+            },
+            {
+              "role": "assistant",
+              "content": "Arrive on time—or even a few minutes early. If you’re the first, don’t rush to start. Wait quietly. It’s normal for others to arrive 10–15 minutes late, especially if traffic is heavy. The meeting usually begins only when the senior leader arrives. As for duration, don’t expect a 30-minute meeting to end in 30 minutes. It could easily stretch to 90 minutes or more—especially if there’s a coffee ritual, small talk about family or health, or if the director wants to hear everyone’s input before speaking."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if I need to get to another meeting afterward? Should I mention that I’m pressed for time?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s better not to mention it directly. Instead, you can gently signal your schedule later in the meeting—perhaps during a break—by saying something like, 'I have another appointment after lunch, so I’ll need to leave early if we’re wrapping up.' That way, you show respect for the group’s rhythm while still managing your own commitments. But avoid pushing for closure or time limits—decisions are often deferred, and that’s normal."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the small talk before we start? Should I just wait for it, or should I initiate it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Initiate it—especially if you’re the only one there. A simple, warm greeting like 'Selamat pagi, Bapak/Ibu. Bagaimana perjalanan tadi? Apakah lancar?' (Good morning, Sir/Madam. How was your journey? Was it smooth?) goes a long way. If you’re unsure, just smile, nod, and wait for others to speak. The rhythm will emerge naturally. A sincere follow-up like 'Semoga keluarga Anda sehat dan bahagia' (I hope your family is healthy and happy) is also warmly received and shows genuine care."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—what if the meeting ends without a clear decision? Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. In fact, that’s quite common—especially in formal or hierarchical settings. Decisions aren’t always made in the meeting itself. You might hear, 'Kami akan konsultasikan dulu dengan tim dan kabari nanti' (We’ll consult with the team first and inform you later), or 'Mari kita musyawarahkan dulu' (Let’s deliberate further). This reflects the values of *musyawarah* (deliberative consensus) and *harmoni* (harmony)—where group agreement matters more than speed. The real outcome isn’t always a decision, but strengthened trust and relationship. So don’t worry if it doesn’t end with a conclusion. The process is the result."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.35,
+        "cultural_elements_verified": [
+          "Meetings often run longer than scheduled due to relational dynamics and consensus-building",
+          "Punctuality is flexible; arriving 5–15 minutes late is acceptable, especially due to traffic",
+          "Senior officials set the pace; others wait for their arrival before starting",
+          "Small talk about family and health is culturally significant and expected",
+          "Coffee rituals and informal conversation are part of the meeting rhythm",
+          "Decisions are often deferred or made through indirect consensus (*musyawarah*)",
+          "Direct requests for closure or time limits are discouraged; indirect signaling is preferred",
+          "The process of the meeting is valued as much as the outcome"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all government meetings in Jakarta follow this pattern, though this is typical rather than universal. However, this is acceptable in training data for illustrative purposes.",
+          "The use of 'Bapak/Ibu' without specifying gender context may slightly reduce authenticity in formal settings, where honorifics are often more precisely gendered and context-sensitive. However, the inclusion of both is a reasonable compromise for general guidance."
+        ],
+        "suggestions": [
+          "Include a brief note in the system prompt or metadata that this reflects common patterns, not universal rules, to prevent overgeneralization in model behavior.",
+          "Consider adding a subtle variation in tone or formality in the assistant's response to reflect regional or organizational differences (e.g., corporate vs. government), though this is not critical at this stage.",
+          "In future examples, consider including a response where the assistant acknowledges that some younger or more internationalized agencies may have stricter time norms, to reflect cultural variation within Indonesia."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a business meeting with a partner from PT IndoJaya, a manufacturing company in Surabaya. My team and I are flying in from Jakarta tomorrow morning. The meeting is scheduled for 9:00 a.m., but I’ve heard that things here often start late. Should I arrive exactly at 9:00, or should I wait until 9:15?"
+            },
+            {
+              "role": "assistant",
+              "content": "Arrive around 9:00 a.m.—being on time is expected and shows respect. However, the meeting will likely begin when the senior leader or ketua rapat arrives, not when the clock hits 9:00. In Surabaya’s business culture, punctuality is valued, but the rhythm is relational, not rigidly clock-based. The host may be early, but they’ll wait. Don’t be surprised if you’re greeted with a warm ‘Selamat pagi’ and a smile—this is the cue to settle in. A simple gesture like bringing a small local snack for the team is thoughtful and appreciated, but not required. The real focus is on presence, not props."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the meeting length? I’ve got a presentation to deliver and a contract review. Should I expect it to run on schedule?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not likely. A 30-minute agenda can easily stretch to 60 or 90 minutes. The first 15–20 minutes are typically spent on small talk—asking about your journey, traffic, family, or how the new factory expansion is going. Coffee or tea is served not just as a break, but as part of building trust. Don’t rush it. Even if you’ve finished your points, you might hear phrases like ‘Kita perlu pertimbangkan lebih lanjut’ or ‘Ini perlu dipikirkan bersama’—these are indirect ways of signaling that discussion continues. Decisions aren’t made in the meeting; they’re discussed informally afterward."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I was worried about looking unprofessional if I don’t push for closure. Should I try to wrap things up early?"
+            },
+            {
+              "role": "assistant",
+              "content": "No—don’t push for closure. Trying to end early can seem abrupt. Instead, use the extra time to deepen rapport. Ask about their weekend plans, how their children are doing, or how the team is adjusting to the new production line. If you’re in a formal setting, a meal invitation after the meeting is a strong sign of inclusion. The real goal isn’t ticking off items—it’s showing you value the relationship. Let the moment unfold. When the ketua rapat says, ‘Kami akan kirimkan draftnya minggu depan,’ that’s your signal to wrap up. Don’t say ‘Thank you, I’ll follow up’ unless they’ve clearly closed it."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if the meeting runs past lunch? Should I bring food, or is that awkward?"
+            },
+            {
+              "role": "assistant",
+              "content": "If it runs past noon, it’s common for the host to offer lunch—especially in Surabaya, where business meals are deeply tied to trust. If they don’t mention it, you can gently say, ‘Saya harap tidak mengganggu waktu makan Anda, Bapak/Ibu,’ with a soft tone and a polite nod. That shows awareness without pressure. If they do offer food, accept it graciously—even if you’re not hungry, take a bite. It’s not about eating; it’s about participation. If they don’t offer, don’t assume it’s a problem. Sometimes meetings stretch because people are still discussing, and the lunch break becomes part of the flow. Stay present. Let the rhythm guide you."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this is really helpful. One more thing: I’ve noticed that sometimes people pause, or there’s silence after I finish speaking. Is that normal? Should I keep talking, or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—silence is normal, and it’s not a gap to fill. In Indonesian business culture, pauses are often used to process, show respect, or signal that a decision is being weighed. Don’t rush to speak again. Let the silence sit. It’s not awkward—it’s a sign of thoughtful consideration. Pay attention to non-verbal cues: a slow nod, a slight head tilt, or a glance at others before responding. Prolonged eye contact is rare and can feel intense—instead, soft, respectful eye contact is preferred. Even if you’re used to strict timelines, showing patience is a sign of respect, not weakness. Let the moment breathe. This is especially true in Surabaya, where hierarchy and harmony are carefully maintained. The ketua rapat often sets the pace—wait for their cues, not the clock."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Meeting start time is flexible and contingent on senior participant arrival",
+          "Meetings typically run longer than scheduled due to relational and consensus-building dynamics",
+          "Small talk and personal questions (family, health, journey) are integral to building trust",
+          "Indirect communication styles (e.g., 'Kita perlu pertimbangkan lebih lanjut') signal ongoing deliberation",
+          "Decision-making is often deferred and not formally concluded in meetings",
+          "Silence is culturally appropriate and used for reflection and respect",
+          "Hierarchy influences meeting pacing and decision authority",
+          "Lunch or food sharing is a relational gesture, not merely logistical",
+          "Punctuality is expected but interpreted flexibly, especially in internal or local contexts",
+          "Non-verbal cues (nods, glances, soft eye contact) are more important than direct verbal confirmation"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant says 'Arrive around 9:00 a.m.' in response to the user’s question about 9:00 vs 9:15, but later reinforces that being on time is expected—this could be slightly ambiguous. Slight clarification would help: e.g., 'Arrive at 9:00, but don’t be surprised if the meeting starts 10–15 minutes later.'",
+          "The phrase 'ketua rapat' is used correctly, but could be more consistently contextualized (e.g., 'the chairperson' or 'the senior leader') for non-Indonesian audiences to avoid confusion, though this is minor given the overall clarity."
+        ],
+        "suggestions": [
+          "Add a brief note in the first response clarifying that 'on time' in Surabaya business culture often means arriving at 9:00, but the meeting may begin 10–15 minutes later—this would reinforce the flexibility without undermining punctuality norms.",
+          "Consider including a subtle reminder that while silence is acceptable, it’s still important to remain engaged (e.g., smiling, nodding) to signal attentiveness, to prevent misinterpretation as disinterest.",
+          "In the final response, reinforce that the pause after speaking is not a sign of disapproval but a cultural signal of respect and thoughtfulness—this strengthens the training value for models."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 19,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

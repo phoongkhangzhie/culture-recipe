@@ -1,0 +1,109 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Handing Gifts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The physical and ceremonial manner in which gifts are presented, including which hand to use and whether to bow",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s wedding in Shah Alam next week. She’s been really kind to me, and I want to bring something nice. What’s the proper way to hand over the gift? Should I use both hands? And what about the red envelope?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always use both hands—especially for family events like weddings. The right hand is preferred, but offering with both shows respect. In Malay homes, you’ll often see a tray waiting at the door—gifts are placed on it first, as a sign of honor. It’s not just tradition; it’s how we show the family we’re honoring their space and the occasion."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I write anything inside the envelope? And is cash okay, or should I get something else?"
+            },
+            {
+              "role": "assistant",
+              "content": "Cash is perfectly fine—most people go with that. Just make sure it’s in a clean red envelope, and if you can, choose numbers like 8 or 9 for good luck. A small note on the back isn’t necessary, but a simple line like 'Just a small token from me, thank you for everything' adds warmth without overdoing it."
+            },
+            {
+              "role": "user",
+              "content": "What if I’m giving it during the reception? Should I wait until later to open it, or is it okay to just hand it over and leave?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to place it on the tray before the reception starts if one’s available. If not, quietly hand it to a family member—no need to delay the moment. Never open it in front of her, not even to check the amount. Just say something soft like, ‘Thank you for everything, I hope this small gesture means something.’ A slight nod, hand near your chest—no bowing. The quiet dignity matters more than the formality."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—how should I wrap it? Should it be tight?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, never tight. Loose, neat wrapping with tissue or cloth is preferred—it shows openness and trust. Tight wrapping can feel like hiding something, which goes against the spirit of the gesture. In Shah Alam, people still like the old way—loose, clean, with cloth—so it feels respectful. It’s not about perfection, but intention."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use both hands when presenting gifts to elders or in formal family settings",
+          "Present gifts on a tray in Malay homes as a sign of honor",
+          "Use the right hand only—left hand is considered unclean",
+          "Never open a gift in front of the giver",
+          "Avoid tight wrapping; loose, neat wrapping with tissue or cloth is preferred",
+          "Cash in red envelopes with lucky numbers (8, 9) is culturally appropriate",
+          "Keep messages humble and indirect—avoid overly sentimental or Western phrasing",
+          "Use subtle gestures like a nod and hand near the chest instead of bowing",
+          "Regional variation exists—Shah Alam retains traditional practices like tray presentation",
+          "Cultural norms are assumed, not explained; responses reflect shared understanding"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of both hands when giving gifts to elders or in formal settings",
+          "Preference for the right hand, avoiding the left",
+          "Presentation on a tray in Malay homes as a sign of honor",
+          "Avoiding tight wrapping to reflect openness and trust",
+          "Use of red envelopes with lucky numbers (8, 9) for Chinese New Year and other occasions",
+          "Cash as acceptable and common gift, especially in red envelopes",
+          "Not opening gifts in front of the giver",
+          "Subtle gestures like a slight nod or hand near chest instead of bowing",
+          "Humble, indirect language in gift-giving context (e.g., 'small token')",
+          "Regional variation acknowledged (Shah Alam as a context with traditional values)"
+        ],
+        "issues": [
+          "The assistant does not explicitly mention the cultural significance of the tray in Malay homes beyond 'sign of honor'—could deepen the nuance by referencing its symbolic role in Malay hospitality (e.g., 'the tray is part of the ritual, showing the gift is elevated before being received')",
+          "Minor risk of overgeneralization: the example assumes a Malay household context (tray, both hands) but does not acknowledge that non-Malay families (e.g., Chinese or Indian) may follow different practices—though this is acceptable as the user’s cousin’s wedding context implies a Malay setting"
+        ],
+        "suggestions": [
+          "Add a brief mention of the tray’s deeper cultural symbolism—e.g., 'The tray isn’t just practical; it’s a way of elevating the gift, like placing it on sacred ground.'",
+          "Consider including a subtle nod to interethnic variation in gift-giving customs (e.g., 'If it’s a mixed family, the tray might still be used, but the gift could be wrapped in red cloth if Chinese, or with flowers if Indian')—but only if the context clearly supports it",
+          "Strengthen the humility tone slightly in the final response by using a phrase like 'It’s not about the amount, but the heart behind it' to better reflect the cultural value of modesty"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 9
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 23,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

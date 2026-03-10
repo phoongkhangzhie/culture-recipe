@@ -1,0 +1,96 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Business Dress Code",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expected attire in professional and business settings, including formal, smart-casual, and industry-specific norms",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a client meeting with a senior manager from Vinhomes tomorrow, and I’m unsure about what to wear. I’ve got a navy suit, but I’m thinking of pairing it with a light blue shirt and a red tie. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Navy suit is perfect—very appropriate. Light blue shirt works well. But red tie? Too strong. Go for burgundy, deep gray, or a subtle pattern. In formal Vietnamese business settings, especially with senior leaders, understated elegance carries more weight than bold choices."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about my colleague? She’s younger and usually wears smart-casual stuff—like a patterned blouse with chinos. Would that be okay for this meeting?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a senior-level Vinhomes meeting, better to go fully formal. Even if she’s used to smart-casual, this is a moment to show respect for hierarchy. A tailored blouse with dark trousers or a knee-length skirt would be ideal—no patterns, no open-toe shoes. It’s not about fitting in as a team, but about honoring the occasion."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I also noticed she has a small silver hoop in her eyebrow. Should she take it out?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal client meetings with senior leadership—especially at a firm like Vinhomes, which blends international standards with deep cultural roots—discreet presentation is key. While some progressive firms in HCMC may allow minor facial piercings, it’s safer to remove it here. It’s not about style, but about showing respect for the setting and the people we’re meeting."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure we all go in with clean, crisp shirts and closed-toe shoes. One last thing—what if it’s hot? I don’t want to look sweaty."
+            },
+            {
+              "role": "assistant",
+              "content": "Even in heat, neatness matters. Lightweight cotton or linen blends work well—just keep them crisp and well-pressed. A light blazer can maintain polish. White, light blue, or pale gray shirts are all fine. Closed-toe shoes are expected, even in summer. In formal Vietnamese business settings, attention to detail speaks louder than comfort."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Formal business attire in Vietnam emphasizes modesty, neatness, and respect for hierarchy",
+          "Navy suits, light blue shirts, and conservative ties are appropriate for senior client meetings",
+          "Red ties are considered too bold and potentially attention-seeking in formal Vietnamese business contexts",
+          "Smart-casual attire is discouraged in meetings with senior leadership, even if common in daily office culture",
+          "Junior staff are expected to dress more conservatively than seniors as a sign of respect",
+          "Facial piercings, especially visible ones like eyebrow hoops, are often viewed as unprofessional in formal or government-linked settings",
+          "Lightweight fabrics like cotton and linen are acceptable in hot climates, provided they remain crisp and well-pressed",
+          "Closed-toe shoes and impeccable grooming are expected across all formal business interactions",
+          "The cultural value of understated elegance over bold expression is accurately reflected"
+        ],
+        "issues": [
+          "Minor: The term 'Vinhomes' is used without context—while it is a major Vietnamese real estate firm, its internal culture may vary. However, the response correctly treats it as a high-status, culturally sensitive organization, which is appropriate.",
+          "Slight overgeneralization: The assistant assumes all senior-level meetings at Vinhomes require full formality, which may not hold in all cases. However, this aligns with conservative norms in Vietnamese business culture, especially when dealing with leadership, so it's acceptable within the context."
+        ],
+        "suggestions": [
+          "Consider adding a brief nod to regional variation—e.g., 'In HCMC, some firms might be slightly more flexible, but for Vinhomes, better to err on the side of caution.' This would enhance nuance without undermining the core message.",
+          "To further strengthen linguistic authenticity, use slightly more implicit cultural references—e.g., instead of 'showing respect for hierarchy,' say 'it’s the kind of thing that shows you understand the room.' This would better reflect how Vietnamese professionals naturally express cultural awareness."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 8
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

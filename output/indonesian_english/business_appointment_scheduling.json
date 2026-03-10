@@ -1,0 +1,251 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Business Appointment Scheduling",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around how far in advance meetings should be arranged and the etiquette of confirming appointments",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to schedule a meeting with Pak Budi, the Head of Operations at PT Mitra Jaya in Jakarta. We discussed it briefly last week, but I haven’t followed up yet. Should I send a message now, or wait until next week?"
+            },
+            {
+              "role": "assistant",
+              "content": "Send a message within the next 24–48 hours—this is both polite and expected. But first, remember: just because you discussed it doesn’t mean the time is confirmed. In Indonesian business culture, even a casual conversation doesn’t replace formal confirmation. Always reconfirm the date and time, especially with senior figures like Pak Budi. This shows respect and maintains *harmoni* (harmony)."
+            },
+            {
+              "role": "user",
+              "content": "What’s a good way to phrase it? I don’t want to sound too formal, but I also don’t want to be too casual."
+            },
+            {
+              "role": "assistant",
+              "content": "Try this: *\"Terima kasih atas kesempatan berdiskusi minggu lalu, Pak. Saya ingin mengonfirmasi kembali jadwal kami untuk hari Selasa pukul 10.00, jika masih sesuai dengan jadwal Bapak. Saya akan menunggu arahan lebih lanjut.\"* The phrase *‘akan menunggu arahan lebih lanjut’* is more than politeness—it’s a cultural signal of deference, showing you respect his authority and aren’t pressuring him to respond immediately."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I send it via WhatsApp or email?"
+            },
+            {
+              "role": "assistant",
+              "content": "WhatsApp is preferred in Jakarta for business. It’s professional yet personal. Keep the tone respectful—no emojis unless you’ve already built rapport. Send it between 8–10 AM to align with morning routines and show consideration for his time."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—what if he doesn’t reply right away? I’ve heard people in Jakarta often delay responses."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, delays are normal and not a sign of disinterest. Senior figures often need to consult higher-ups or coordinate internally—this is part of the hierarchical flow. Don’t assume silence means no. If there’s no reply in 48 hours, send a gentle follow-up: *\"Mohon maaf mengganggu, Pak. Saya hanya ingin memastikan apakah jadwal Selasa pukul 10.00 masih sesuai, atau apakah Bapak memiliki waktu yang lebih tepat.\"*"
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this is really helpful. I’ll send the message today. One last thing: is there a risk of scheduling during Ramadan or public holidays?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—timing is critical. During Ramadan, especially in the second half of the month, many professionals are unavailable for entire days, not just midday hours. Even if fasting hours are over, meetings are often postponed or rescheduled. Eid al-Fitr and Idul Adha are non-business days. If your meeting is in late May or early June, check the 2024 national calendar. When rescheduling due to holidays, add a respectful note: *\"Saya memahami bahwa bulan Ramadhan adalah waktu yang khusus, dan saya menghargai kesibukan Bapak. Jika memungkinkan, saya akan menunggu kesempatan yang lebih tepat setelah hari raya.\"* This shows cultural awareness and builds trust."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Appointments should be scheduled 1–2 weeks in advance",
+          "Confirmation within 24–48 hours is expected and culturally significant",
+          "Use of indirect language such as 'akan menunggu arahan lebih lanjut' to show deference",
+          "Preference for WhatsApp over email in Jakarta business settings",
+          "Respect for seniority and hierarchical decision-making processes",
+          "Tolerance for delayed responses as normal, not a sign of disinterest",
+          "Avoidance of scheduling during Ramadan and major Islamic holidays",
+          "Cultural sensitivity in rescheduling messages, especially during religious periods",
+          "Morning timing (8–10 AM) for sending messages as respectful of daily routines"
+        ],
+        "issues": [
+          "The example assumes the user is male and addressing 'Pak Budi'—this could reinforce gendered assumptions if not contextually justified. However, since 'Pak' is a standard honorific and the scenario is plausible, this is a minor concern rather than a critical error.",
+          "The phrase 'Saya akan menunggu arahan lebih lanjut' is correctly used, but the explanation could more clearly emphasize that it's a culturally embedded way of avoiding direct pressure—this is slightly implied but not fully unpacked in the assistant’s response."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response explaining that 'akan menunggu arahan lebih lanjut' is not just polite but a strategic communication tool in hierarchical Indonesian contexts, helping maintain *harmoni* without confrontation.",
+          "Clarify that while WhatsApp is preferred, the choice may vary slightly depending on the company’s formality—some formal institutions still prefer email for documentation purposes.",
+          "Include a reminder about checking the official 2024 national calendar for Eid al-Fitr and Idul Adha dates, as these vary yearly and are not always widely publicized outside Indonesia."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m trying to schedule a meeting with Pak Budi, the Head of Operations at PT Sinar Jaya in Jakarta. I’ve sent him an email last week proposing a meeting for next Tuesday at 10:00 AM, but I haven’t heard back. Should I follow up? And how should I do it properly?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, it’s a good idea to follow up—especially since Pak Budi is senior, so direct confirmation might not come immediately. In Indonesian business culture, it’s common for high-level professionals to wait for a polite confirmation before finalizing their schedule. Since you’ve already sent the initial proposal, sending a gentle follow-up now is appropriate. I’d recommend a short message via WhatsApp or email, using respectful language. You could say something like: 'Selamat pagi, Pak Budi. Saya ingin mengucapkan terima kasih atas kesempatan berdiskusi sebelumnya. Saya ingin mengonfirmasi kembali jadwal kami untuk Selasa, pukul 10.00, apakah masih sesuai dengan Bapak? Saya akan menunggu arahan lebih lanjut.' This shows respect, reaffirms your interest, and allows him to respond without pressure."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if he doesn’t reply right away? I’ve heard that meetings in Jakarta can be quite flexible—should I be worried if he’s late or cancels?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all—this flexibility is normal and expected. In Jakarta’s business environment, especially with senior figures, meetings are often scheduled with a degree of fluidity. A delay of 15 to 30 minutes is common, and even a two-hour delay isn’t unheard of if the person is managing multiple priorities or waiting for internal approvals. What’s more important than punctuality is showing patience and maintaining harmony. If Pak Budi doesn’t reply within 24–48 hours, it’s okay to send a second, slightly more direct but still polite message—like, 'Mohon maaf mengganggu, saya ingin memastikan apakah jadwal Selasa pukul 10.00 masih bisa kami laksanakan, atau apakah ada waktu yang lebih sesuai dari Bapak?' This keeps the conversation open without appearing pushy."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I also noticed that next Tuesday is just after Idul Adha. Should I be concerned about scheduling then?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a very thoughtful question. Idul Adha is a significant religious holiday, and while business does continue, many professionals take time off or work reduced hours. Meetings are often postponed, especially in the afternoon, because many are observing religious rituals or spending time with family. If possible, I’d suggest rescheduling to Wednesday or Thursday after the holiday, especially if the discussion is important. If you must meet on Tuesday, keep the meeting short and start early in the morning—ideally before 9:30 AM—since many people may still be catching up on personal commitments. It’s also respectful to acknowledge the holiday in your message: 'Selamat Hari Raya Idul Adha, Pak Budi. Saya harap Bapak dan keluarga telah merayakan dengan baik. Saya ingin menanyakan kembali jadwal pertemuan kami, jika Bapak merasa nyaman.' This builds rapport and shows cultural awareness."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps. I’ll send the follow-up today and consider rescheduling if needed. I just want to make sure I’m not coming across as disorganized or disrespectful."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re already on the right track by asking these questions. In Indonesian business culture, the focus isn’t on rigid timelines but on relationship-building and mutual respect. Your careful approach—confirming, being patient, acknowledging cultural moments—actually signals professionalism and cultural intelligence. As long as you maintain a respectful tone and avoid direct pressure, you’ll be seen as considerate and trustworthy. The key is consistency in politeness, not perfection in scheduling. You’re doing great."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Meetings should be scheduled 1–2 weeks in advance, especially for senior figures",
+          "Follow-up confirmation within 24–48 hours is culturally expected and polite",
+          "Indirect communication is preferred—using phrases like 'I’ll await further instructions' to avoid pressure",
+          "Flexibility in timing (e.g., 15–30 min delays, up to 2 hours) is normal and expected in Jakarta business culture",
+          "Seniority affects communication style—avoiding direct pressure on higher-ranking individuals",
+          "Idul Adha is a significant holiday; business is often reduced or postponed, especially in the afternoon",
+          "Acknowledging religious holidays in messages strengthens rapport and shows cultural awareness",
+          "Respect, harmony (*harmoni*), and relationship-building are prioritized over rigid scheduling"
+        ],
+        "issues": [
+          "The example assumes WhatsApp is the default channel without mentioning that email may still be preferred in formal corporate settings, though WhatsApp is widely used in practice. This is minor and contextually acceptable given Jakarta’s urban business environment.",
+          "The phrase 'Saya akan menunggu arahan lebih lanjut' is correctly used, but the assistant could briefly explain that this is a culturally coded way of indicating confirmation without stating it directly—this nuance could be emphasized for deeper training value."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response explaining that phrases like 'Saya akan menunggu arahan lebih lanjut' are not passive delays but active, culturally appropriate ways of confirming indirectly—this would deepen the model’s understanding of indirect communication.",
+          "Mention that while WhatsApp is common, formal emails may still be used in initial outreach, especially in larger corporations, to maintain a paper trail. This adds nuance without undermining the primary message.",
+          "Include a subtle reminder that during Ramadan, similar considerations apply (e.g., avoiding afternoon meetings), to reinforce the broader pattern of religious and cultural sensitivity in scheduling."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m preparing for a key meeting with a senior manager at PT Surya Mandiri in Jakarta. We agreed to meet next Tuesday at 10:00 AM, but I haven’t sent a confirmation yet. Should I send something now, or is it too late?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s actually a good idea to send a confirmation now—especially since this is a senior-level meeting. In Indonesian business culture, even if the date was agreed upon, sending a polite follow-up within 24–48 hours is expected and shows respect. Waiting too long without confirmation can be interpreted as uncertainty or lack of preparation, which might affect how your professionalism is perceived."
+            },
+            {
+              "role": "user",
+              "content": "I see. What’s the best way to phrase it? I don’t want to sound pushy, especially since he’s senior."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful concern—indirectness and respect for hierarchy are key. Instead of a direct confirmation like 'I’ll see you on Tuesday,' use a polite, deferential tone. For example: *‘Terima kasih atas kesempatan berdiskusi, saya ingin mengonfirmasi kembali jadwal kami pada hari Selasa pukul 10.00. Saya akan menunggu arahan lebih lanjut dari Bapak.’* This acknowledges the meeting, shows attentiveness, and gracefully leaves room for any adjustment without pressure—very much in line with *harmoni* and respect for seniority."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I send it via WhatsApp or email?"
+            },
+            {
+              "role": "assistant",
+              "content": "WhatsApp is usually preferred for business follow-ups in Jakarta—especially with senior colleagues—because it’s fast, widely used, and feels more personal than email. Just keep the message clean and professional. Avoid long paragraphs. A short, respectful note with the time and date is sufficient. And if you’re unsure about the recipient’s preference, a quick message like *‘Saya mengirimkan konfirmasi singkat via WhatsApp, mohon maaf jika ada kesalahan’* (I’m sending a brief confirmation via WhatsApp, please excuse any inconvenience) can soften the tone."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—what if he doesn’t reply? Does that mean the meeting is off?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not necessarily. In Indonesian business culture, silence isn’t always a no—especially if the other person is senior or busy. If you don’t receive a reply within 24 hours, it’s okay to send a gentle follow-up: *‘Saya harap Bapak dalam keadaan baik. Saya hanya ingin memastikan kembali jadwal kami Selasa pukul 10.00, terima kasih.’* This maintains respect while gently reconfirming. The lack of immediate reply is often not a sign of disinterest, but part of the natural rhythm of relationship-based communication—where patience and trust matter more than rigid timelines."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Appointments should be scheduled 1–2 weeks in advance",
+          "Confirming appointments within 24–48 hours is expected and shows professionalism",
+          "Indirect communication is preferred, especially with senior colleagues",
+          "Use of phrases like 'Saya akan menunggu arahan lebih lanjut' to signal confirmation without pressure",
+          "Silence from a senior contact does not necessarily mean cancellation",
+          "WhatsApp is the preferred channel for business follow-ups in Jakarta",
+          "Respect for hierarchy and harmony (*harmoni*) shapes communication style",
+          "Cultural interpretation of timing and punctuality differs from Western norms"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'senior' as always requiring indirectness—some younger or more Westernized professionals may expect direct confirmation, though this is a nuanced point not critical at training level",
+          "The example doesn’t explicitly mention Ramadan or public holidays, which are relevant to scheduling in Indonesia, though this omission is not a major flaw given the focus on confirmation etiquette"
+        ],
+        "suggestions": [
+          "Include a brief note about Ramadan or major holidays (e.g., Eid al-Fitr) affecting meeting availability, especially in the final turn, to enrich cultural context",
+          "Consider adding a variant response using formal email for more conservative or traditional organizations, to reflect situational variation in communication channels",
+          "Clarify that while WhatsApp is preferred, the tone should remain professional—avoid emojis or overly casual language, even in messaging"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 15,
+    "research_rounds": 1,
+    "examples_produced": 3
+  }
+}

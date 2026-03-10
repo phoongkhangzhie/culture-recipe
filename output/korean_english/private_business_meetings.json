@@ -1,0 +1,113 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Private Meetings During Negotiations",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Norms around requesting or holding side meetings and one-on-one discussions during broader group negotiations",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m in the final day of a high-stakes merger negotiation with a Korean tech firm. After a long session, Director Park, the lead negotiator, stayed behind and said quietly, 'Would you be open to a quick word after dinner?' I’m unsure how to respond—should I accept? Is this a sign of trust, or could it be risky?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, you should accept—but with awareness. This invitation often signals growing trust, especially after a long session where rapport has been building. However, it’s still context-sensitive: it depends on the stage of your relationship and the seniority dynamics. If the group has been cohesive and respectful, this quiet moment is likely a sign of respect and a subtle opening for deeper connection.\n\nRespond with humility: 'I’d be honored to speak with you after dinner, if it’s convenient.'\n\nThis keeps the door open without overcommitting—exactly the balance Koreans value."
+            },
+            {
+              "role": "user",
+              "content": "I’ve accepted. Now, what should I expect during the conversation? Should I bring up the pricing dispute we’ve been stuck on, or wait for him to bring it up?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait. Do not bring up pricing.\n\nThis isn’t a tactical meeting—it’s relational. Your role is to listen, acknowledge, and show you see him as a person. A simple, sincere comment like:\n- 'Today’s discussion was thoughtful—especially your point about long-term integration.'\n- 'I appreciate the care your team has shown in the transition plan.'\n\nThese aren’t small talk. They’re expressions of *jeong*—emotional connection that builds trust over time. And beneath it all, *hyo* (group harmony) is at play: maintaining balance, not disruption."
+            },
+            {
+              "role": "user",
+              "content": "What if he talks about his son’s university or the meal instead of business? Is that just small talk, or is there something deeper going on?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not small talk—it’s a relational opening. Sharing personal details is a sign of trust, not a test. He’s inviting you into a space of mutual respect.\n\nRespond with warm, brief curiosity: 'Which university is he applying to?' or 'This dish is excellent—how often do you enjoy this at home?'\n\nThese are not interruptions. They’re invitations to connect. Listen with presence, respond with sincerity, and you’ll strengthen the relationship."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—what if a junior member from their team had asked me to meet privately instead? Would that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "That would be inappropriate. Junior members rarely initiate private meetings without senior approval.\n\nIf it happens, respond with care: 'I’d be glad to connect, but I’ll check with Director Park first to ensure it’s suitable.'\n\nThis protects *face* and preserves *hyo*. Private meetings are not claims—they’re permissions, typically facilitated by senior leaders or trusted intermediaries who signal readiness through subtle cues. Bypassing hierarchy can disrupt group harmony."
+            },
+            {
+              "role": "user",
+              "content": "And what about timing? Is dinner a safe moment, or should I be careful about when such meetings happen?"
+            },
+            {
+              "role": "assistant",
+              "content": "Dinner is acceptable—but only after trust has formed. Early on, private meetings can seem disruptive.\n\nThe key is context: after the official agenda ends, a brief, private chat feels like a natural transition. Keep it short—10 to 15 minutes. And never record, document, or reference it later without explicit consent."
+            },
+            {
+              "role": "user",
+              "content": "One final thing—why is avoiding documentation so important in these moments?"
+            },
+            {
+              "role": "assistant",
+              "content": "Because these moments are built on trust, not transaction. Even mentioning them later—even positively—can make the relationship feel transactional, breaking the unspoken bond.\n\nSo close with silence: a quiet nod, a soft 'Thank you for your time,' and no follow-up. No notes. No summaries. Just presence—and discretion.\n\nThat said, experienced negotiators may make brief, private notes for personal reflection—but never shared or referenced publicly. The key is internal processing, not external exposure. This distinction reflects a deeper understanding of *hyo*: protecting the group’s harmony by not exposing private moments to public scrutiny."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.35,
+        "cultural_elements_verified": [
+          "Private meetings during negotiations are context-sensitive and require deference to hierarchy",
+          "Side meetings are often framed as relational rather than transactional",
+          "The use of phrases like 'a quick word after dinner' signals trust-building",
+          "Junior members should not initiate private meetings without senior approval",
+          "Dinner or post-session moments are appropriate for informal, private discussions",
+          "Maintaining group harmony (*hyo*) and emotional connection (*jeong*) are central",
+          "Avoiding documentation and public reference of private conversations preserves trust",
+          "Listening with presence and responding with sincere curiosity is culturally appropriate",
+          "The role of intermediaries and senior facilitation in approving private meetings"
+        ],
+        "issues": [
+          "The term 'jeong' is used correctly but could benefit from a brief contextual explanation for non-Korean audiences in training data, though this is acceptable in a high-level guidance context",
+          "The phrase 'I’d be honored to speak with you after dinner' is appropriate but slightly formal—native Korean speakers might use even more restrained phrasing like 'I’d be happy to, if it’s convenient' to avoid over-enthusiasm"
+        ],
+        "suggestions": [
+          "Include a brief note in the system prompt or metadata about the distinction between *jeong* (deep emotional bond) and *hyo* (harmony), to prevent overgeneralization in training",
+          "Consider adding a subtle cue in the assistant’s response about the importance of reading nonverbal signals (e.g., a pause, a glance) as indicators of readiness for a private meeting—this is a key implicit cue in Korean interaction",
+          "Slight tonal refinement in the acceptance response to reflect the modesty and restraint typical in Korean communication, e.g., replacing 'I’d be honored' with 'I’d be glad to, if it’s suitable'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Religious Beliefs and Practices",
+    "category": "Core Values and Social Structures > Values and Beliefs > Religion",
+    "description": "The role of religious belief systems in shaping individual identity, community life, moral frameworks, and daily behavior",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to visit my aunt in Chiang Mai next week. She’s been unwell and I want to bring something meaningful—maybe a small offering for the temple. What would be appropriate to bring during this time?"
+            },
+            {
+              "role": "assistant",
+              "content": "A thoughtful gesture. A small basket with five simple items works well: a bundle of incense, a candle, a fresh flower—jasmine or marigold is perfect—a small bowl of rice, and a clean white cloth. These are commonly offered at temple altars, especially in the morning when monks are present. Place them respectfully on the front altar, then step back quietly."
+            },
+            {
+              "role": "user",
+              "content": "Should I do anything special when I arrive? I’ve never been to a temple there before."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—when you enter the temple grounds, pause briefly and do a small wai with your hands together at chest level. It’s a sign of respect, not just a greeting. If you see a monk, wait until they’ve passed before stepping forward. When offering, place your items on the altar with both hands, then bow slightly. Silence speaks more than words here."
+            },
+            {
+              "role": "user",
+              "content": "I’ve heard some people say they make merit for their family when someone is sick. Is that true? How would I do that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, it’s common. Many believe that making merit during a family member’s illness helps ease their suffering and supports healing. You can do this by donating to a monk’s meal, sponsoring a dhamma talk, or contributing to a merit-making ceremony like a morning alms-giving event. If you’re short on time, simply bringing the offering and silently wishing for her recovery is enough. Your intention is what matters most—this act aligns with dhamma and helps restore balance in the cycle of kamma."
+            },
+            {
+              "role": "user",
+              "content": "And if I want to say something to my aunt when I visit? She’s been quiet lately."
+            },
+            {
+              "role": "assistant",
+              "content": "Sit beside her quietly for a moment, maybe with a soft smile. Then say gently, 'I’ve made merit for your recovery.' That’s enough. Your presence and quiet care are a kind of merit—like a single jasmine petal offered at dawn, small, but sacred in its stillness. No need to speak more. The stillness between you is already sacred."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—what should I avoid doing at the temple? I don’t want to accidentally offend anyone."
+            },
+            {
+              "role": "assistant",
+              "content": "Good question. Avoid touching or pointing at monks, sacred objects, or the Buddha image. Never step over prayer mats or altars. And never point your feet toward the Buddha or a monk—keep them tucked under you when sitting. These aren’t strict rules, but they’re part of the quiet respect that many follow. Also, don’t speak loudly or laugh during ceremonies—monks often bless offerings silently, and their presence is felt even when they’re not seen. Temple customs in Chiang Mai are generally consistent, though some may have small local variations—following the flow of the moment is always respectful."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Theravāda Buddhist practices in daily life and community rituals",
+          "Merit-making (bun) as a response to illness and personal well-being",
+          "Use of symbolic offerings (incense, candle, flower, rice, cloth) at temples",
+          "The wai gesture as a sign of respect, not just greeting",
+          "Respectful behavior toward monks and sacred spaces (e.g., not pointing, not stepping over altars)",
+          "Importance of silence and stillness in religious contexts",
+          "Syncretic spiritual worldview: merit-making aligned with dhamma and kamma",
+          "Family-centered spiritual practices during illness",
+          "Local temple customs in Chiang Mai as consistent with broader Thai norms",
+          "Emphasis on intention (cetana) over ritual formality"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: while the example reflects common practices, it assumes uniformity across all temples in Chiang Mai without acknowledging regional or individual variation (e.g., some temples may have different offering customs).",
+          "The phrase 'a single jasmine petal offered at dawn' is poetic but slightly idealized; while metaphorically accurate, it may not reflect typical lay behavior, which is often more practical than symbolic in tone."
+        ],
+        "suggestions": [
+          "Add a subtle nod to local variation: e.g., 'In Chiang Mai, most temples follow these customs, but you might notice small differences depending on the wat—following the lead of others is always respectful.'",
+          "Slightly moderate the poetic metaphors in the final response to reflect more grounded, everyday expressions of reverence, which are more typical in actual Thai speech (e.g., 'Your presence is already a kind of merit' is excellent, but could be paired with a more concrete image like 'like a quiet offering placed at the base of the Buddha statue').",
+          "Ensure future examples include brief context about the syncretic nature of Thai spirituality (e.g., mention of phi or household deities) when relevant, to reinforce the cultural nuance beyond Buddhism alone."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 3,
+    "examples_produced": 1
+  }
+}

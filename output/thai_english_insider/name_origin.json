@@ -1,0 +1,104 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Name Origin",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural, religious, and historical sources from which personal names are drawn",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping my sister pick a name for her baby boy. She’s been thinking about *Chaiyapruk*—it means 'life and strength'—but I’m not sure if it’s too common or if it fits the stars. She was born on the 14th of May, under the Year of the Ox, and the monk said the name should have a strong syllable on the third beat. What do you think?"
+            },
+            {
+              "role": "assistant",
+              "content": "Chaiyapruk works well—especially for an Ox child. The third syllable, *pruk*, carries weight, which the monk would notice. It’s not overused in central Thailand, though you’ll hear it in Isaan too. The *ch* start gives it a grounded tone, like earth. Just remember: Ox children thrive on names that feel steady, not flashy. This one does."
+            },
+            {
+              "role": "user",
+              "content": "Good point. She also likes *Sukhathai*, but I’m worried it’s too historical—like a kingdom name. Is that okay for a modern baby? She wants something that feels meaningful but not too heavy."
+            },
+            {
+              "role": "assistant",
+              "content": "Sukhathai isn’t just a name from history—it’s still used today, especially in families who value hope. Many parents choose it not for history, but because it feels like a blessing for a new life. It’s gentle, not ceremonial. It flows well with most family names and carries a quiet warmth, like sunlight through a temple window."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about *Ananda*? It’s short, and we both love the idea of joy. But I’ve heard some people say it’s too religious—like it’s too close to the Buddha’s name."
+            },
+            {
+              "role": "assistant",
+              "content": "Ananda is deeply meaningful—bliss in Pali—but yes, some families avoid it out of respect. It’s not forbidden, but it’s not common in everyday names either. If your sister’s family is devout, it could be a quiet honor. Otherwise, it might feel a bit solemn for a child’s daily name. It’s not flashy, but it carries weight."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll tell her to ask the monk again, maybe check the birth time and nakhat. She’s also thinking of adding *Phra*—like *Phra Chai*—but I’m not sure if that’s too formal."
+            },
+            {
+              "role": "assistant",
+              "content": "Phra is sacred—it’s reserved for monks, temples, and holy things. It’s not something you’d see on a school form—only in very special circumstances. In rare cases, a child in a deeply religious family might be given *Phra Chai* during a ceremony, but the monk would likely advise against it unless the family is deeply involved in temple life. It’s not a name for everyday use."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. She also mentioned that her mother’s side has a tradition of naming children after the first letter of the mother’s name. Is that still common?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially in older families. If the mother’s name starts with *S*, the child might get *Sukhathai*, *Siri*, or *Sarun*. It’s not a rule, but a quiet thread passed down. Some do it only for boys, others for both. It’s not loud, but it’s meaningful—like a whisper from the past. It’s more common in central and northeastern Thailand, but not universal. And if the child has a *sib* (birth name) and a *phu* (public name), this tradition often shapes the *sib*."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Thai names often derive from Pali-Sanskrit roots with spiritual meanings (e.g., Ananda, Sukhathai)",
+          "Names are chosen with consideration of birth date, zodiac (Year of the Ox), and numerology",
+          "The role of monks in naming ceremonies and guidance on syllabic rhythm and auspiciousness",
+          "Use of honorifics and sacred terms like *Phra* being reserved for religious contexts",
+          "Family naming traditions based on maternal name initials (e.g., S → Sukhathai, Siri)",
+          "Distinction between *sib* (birth name) and *phu* (public name), especially in older families",
+          "Gender-neutral or fluid naming trends, with modern flexibility in usage",
+          "Cultural significance of names as blessings and expressions of hope, not just identifiers"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in 'not universal' — while true, the phrasing could be softened to avoid implying the tradition is rare rather than regionally specific",
+          "The term 'nakhat' (lunar mansion) is mentioned but not explained; while acceptable in context, it assumes user familiarity without clarification, which may mislead learners"
+        ],
+        "suggestions": [
+          "Slightly rephrase 'not universal' to 'more common in certain regions and families' to reflect nuance without overgeneralizing",
+          "If used in training data for broader audiences, consider briefly contextualizing 'nakhat' in a footnote or natural explanation (e.g., 'the 27 lunar mansions used in Thai astrology')",
+          "Ensure that future examples avoid any implication that *Phra* is ever used in secular personal names—this example correctly avoids it, but reinforcing this boundary strengthens training"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

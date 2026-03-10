@@ -1,0 +1,384 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Punctuality When Visiting",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural expectations around arriving on time, early, or fashionably late when visiting someone's home",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m supposed to go to Andi’s house for dinner tonight, and he said 6 PM. I just finished work early and I’m already near his place. Should I go in now, or wait outside?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait outside for a bit—don’t go in yet. He might still be finishing up the cooking or setting the table. If you go in too early, he might feel rushed, and it’s better to let him handle the prep without guests around."
+            },
+            {
+              "role": "user",
+              "content": "Oh, right—my cousin once showed up 20 minutes early and Andi actually asked her to wait in the car. I didn’t realize that was normal. So I should just hang around the corner until 6:15 or so?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Arriving 10 to 15 minutes late is perfectly fine—actually, expected for a casual dinner at home. It’s not about being late; it’s about not disrupting the host’s flow. Plus, if you show up right at 6, he might still be rushing, and that puts pressure on him."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if I end up stuck in traffic and won’t make it until 7? Should I text him?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, definitely send a quick message. Just say something like, 'Saya terlambat sedikit, nanti sampai dalam 15 menit'—it’s polite and keeps him from worrying. He’ll appreciate the heads-up, even if he doesn’t say much."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that makes sense. I was worried I’d seem rude if I didn’t show up on time. But now I get it—showing up a little late is actually respectful, as long as you let him know."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. It’s not about the clock—it’s about harmony. The host wants you to feel welcome, not stressed. A little flexibility shows you understand the rhythm of home visits here. Andi will be glad you’re there, even if you’re a little late."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Arriving 10–30 minutes late (fashionably late) is culturally expected for informal home visits",
+          "Early arrival is discouraged and may be perceived as intrusive or disruptive",
+          "Hosts typically prefer to manage preparations without guests present",
+          "Texting to inform the host of a delay is a polite and expected practice",
+          "The emphasis on interpersonal harmony (gotong royong) over strict timekeeping in social contexts",
+          "Cultural norm is communicated through natural, insider-level language and context without explicit cultural framing",
+          "Use of Indonesian phrases like 'Saya terlambat sedikit, nanti sampai dalam 15 menit' reflects authentic communication patterns",
+          "Urban, informal, and family-based social settings are the context where punctuality is relaxed"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Arriving 10–30 minutes late is culturally expected for informal home visits",
+          "Early arrival may be perceived as intrusive or disruptive to host preparation",
+          "Hosts often prefer guests not to enter until ready, even if early",
+          "Communication about delays is polite and expected",
+          "Use of Indonesian phrases like 'Saya terlambat sedikit, nanti sampai dalam 15 menit' is appropriate and authentic",
+          "Punctuality is context-dependent: more flexible in informal settings, stricter in formal ones",
+          "The emphasis on harmony (gotong royong) over strict timekeeping is reflected in the response"
+        ],
+        "issues": [
+          "The assistant's final response includes the phrase 'the rhythm of home visits here'—slightly abstract and could be more grounded in everyday Indonesian phrasing; a more natural alternative would be 'It’s how things work in Indonesian homes' or 'This is how most people do it here.'",
+          "While the Indonesian phrase is correctly used, it is not translated in the response—this is acceptable in context, but could be slightly more natural if integrated with a brief English explanation (e.g., 'Just say something like “I’m a bit late, I’ll be there in 15 minutes”') to maintain flow for non-Indonesian speakers in training data."
+        ],
+        "suggestions": [
+          "Replace 'the rhythm of home visits here' with a more colloquial and culturally grounded phrase like 'This is how most people do it in Indonesian homes' to enhance linguistic authenticity.",
+          "Consider adding a brief, natural English translation of the Indonesian phrase in parentheses the first time it appears: e.g., 'Saya terlambat sedikit, nanti sampai dalam 15 menit (I’m a bit late, I’ll be there in 15 minutes)' to support training data clarity without breaking cultural immersion.",
+          "Ensure that all user turns reflect subtle cultural cues without self-identification—this example is strong in this regard, but double-check that no future examples include overt cultural declarations."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m supposed to go to Andi’s house for dinner tonight at 6, but I just realized I’m stuck in traffic near Cikarang. I’m not sure if I’ll make it on time. Should I just go ahead and head over, or wait until I’m closer?"
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t worry—just head over when you can. It’s totally fine to be a bit late. In fact, if you show up exactly at 6, Andi might even think you’re being too formal. A 15-20 minute delay is completely normal for a home dinner. Just send him a quick message: 'Saya terlambat, nanti sampai dalam 15 menit.' That way, he knows you’re on your way and won’t be waiting around."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I was actually thinking about leaving early just to be safe, but now I’m wondering if that’s a bad idea. I don’t want to arrive too early and catch him still setting up the table."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—arriving early is actually the opposite of what you want. If you get there before 6:10, Andi might even ask you to wait outside. He’s probably still finishing the cooking or arranging things. That’s why people say it’s better to be fashionably late. It shows you’re not rushing, and you respect the host’s space and rhythm. Just keep your phone handy and update him when you’re on the move."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve seen that happen before—someone shows up too early and gets told to wait by the gate. I didn’t know it was such a common thing."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s more than common—it’s expected. Especially in families or older communities. The host wants to feel ready, not surprised. You’re not being rude by being late; you’re being considerate. The real awkwardness comes from showing up before the host is ready. So trust the flow. Your presence matters more than the clock."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Arriving 10–30 minutes late is culturally acceptable and expected for informal home visits",
+          "Early arrival is discouraged and may be met with polite refusal to enter",
+          "Hosts often prefer to be ready before guests arrive, reflecting care and preparation",
+          "Sending a brief message to inform about delay is polite and customary",
+          "The concept of 'fashionably late' reflects cultural values of harmony and respect for the host’s rhythm",
+          "Urban vs. traditional differences in punctuality are implicitly acknowledged through context"
+        ],
+        "issues": [
+          "The use of 'Andi' as a name is generic but acceptable; however, in some rural or conservative communities, using first names in informal invitations might be less common—though not a major issue given the context.",
+          "The phrase 'Saya terlambat, nanti sampai dalam 15 menit' is accurate and natural, but the assistant could have optionally added a slightly warmer tone (e.g., 'Maaf, saya terlambat, nanti sampai dalam 15 menit—terima kasih sudah bersabar') to reflect more nuanced politeness, though this is a minor enhancement."
+        ],
+        "suggestions": [
+          "Consider including a brief mention of regional or generational variation (e.g., 'In Jakarta, people might be more relaxed, but in smaller towns, it’s even more common to arrive late') to reinforce cultural nuance without over-explaining.",
+          "Use more subtle idiomatic expressions in the assistant’s response, such as 'Jangan buru-buru, nanti malah bikin host bingung' (Don’t rush—otherwise you’ll just confuse the host), to enhance linguistic authenticity.",
+          "Avoid any phrasing that could imply the cultural norm is universal; instead, frame it as a shared understanding among insiders, not a rule to be taught."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m supposed to go to Rina’s house for dinner tonight, and she said 6 PM. I’m leaving now from my place, but I’m worried I’ll be too early. Should I just head straight there, or wait a bit?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’re right to think about that—better to leave now but not arrive exactly at 6. If you get there too early, Rina might still be cooking or setting up, and she’ll probably ask you to wait outside. It’s not a big deal, but it can feel awkward. Just head out, but plan to arrive around 6:20 or 6:30. That’s the sweet spot—shows you’re respectful, but not rigid."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I was actually wondering—what if I end up running late because of traffic? Should I text her?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, definitely. If you’re going to be more than 10 minutes late, just send a quick message. Something simple like, “Aku terlambat, nanti sampai dalam 15 menit,” is perfect. She’ll appreciate the heads-up and won’t worry. In fact, not letting her know would be worse—she might think something’s wrong."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that helps. I’ve been to her house before, but I still get nervous about the timing. Last time I arrived right at 6, and she looked a bit flustered, like I interrupted something."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s actually pretty common. When people come exactly on time, hosts sometimes feel like they’re not ready—especially if they’re still arranging the table or finishing the food. Arriving a little late isn’t just acceptable; it’s kind of expected for casual dinners. It gives them space to prepare without pressure. You’re not being rude—you’re being considerate."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ll aim for 6:25, and if I’m stuck in traffic, I’ll send a message. I’ll also bring the dessert I promised, just in case."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. Bringing something is always a nice touch, and it’ll feel like you’re part of the moment, not just a guest. Just relax—Rina’s not expecting a clock-watcher. She’ll be happy you came, and the timing will work out naturally."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Arriving 10–30 minutes late (e.g., 6:20–6:30) is culturally appropriate and expected for informal home visits",
+          "Arriving exactly on time may cause discomfort for the host, who might still be preparing",
+          "Hosts may politely ask guests to wait outside if they arrive early",
+          "Communicating lateness via a quick message (e.g., 'Aku terlambat, nanti sampai dalam 15 menit') is polite and expected",
+          "Not informing the host of delay is worse than being late—it causes unnecessary worry",
+          "The emphasis on relational comfort over strict timekeeping reflects broader cultural values like harmony and gotong royong",
+          "Bringing a small gift (like dessert) is a culturally valued gesture"
+        ],
+        "issues": [
+          "The assistant uses the phrase 'clock-watcher' in the final response, which is a Western cultural idiom and may not be naturally understood or used by Indonesians in this context. It risks introducing an external cultural frame.",
+          "While the use of Indonesian phrases like 'Aku terlambat, nanti sampai dalam 15 menit' is accurate and authentic, the assistant introduces them in a way that could be interpreted as performative or didactic, rather than as natural internalized knowledge. A more authentic response would embed the phrase seamlessly without framing it as a 'perfect' example."
+        ],
+        "suggestions": [
+          "Replace 'clock-watcher' with a more culturally grounded metaphor, such as 'someone who checks the time too much' or simply avoid idioms that aren’t part of the target culture’s expressive repertoire.",
+          "Integrate Indonesian phrases more naturally—e.g., instead of saying 'something simple like...', use 'just say something like...' as part of a flowing response that reflects how a native speaker would actually think and speak.",
+          "Avoid any meta-commentary on what is 'perfect' or 'nice'—let the cultural norm be implied through behavior and tone, not evaluative language."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m heading to Rina’s house for dinner tonight—she invited me around 6, but I’ve been stuck at work. I’m not sure if I should just show up now or wait a bit. She’s been cooking since afternoon, right? I don’t want to arrive too early and bother her."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re right to think about it—Rina’s probably still finishing up. If you’re leaving now, aim to get there in about 25 minutes. Arriving 10 to 30 minutes late is totally normal for a home dinner like this. In fact, showing up right at 6 might make her feel rushed, especially if she’s still setting the table or doing last-minute prep."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. I was worried I’d be rude if I showed up too early. But what if I’m actually running late—like, 45 minutes? Should I text her?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, definitely send a quick message. Just say something like, 'Saya terlambat, nanti sampai dalam 30 menit'—it’s polite and expected. She’ll appreciate the heads-up. If you’re really late, even a simple 'Sorry, traffic’s bad—still on my way' is enough. The key is not to disappear without a word."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And if I do end up arriving around 6:45, is it okay to just walk in, or should I knock and wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Walk in when you’re ready—no need to wait outside. But if you’re unsure, a quick knock is fine. Rina will probably be in the kitchen or dining area, so she’ll hear you. Just don’t go straight into the living room if she’s still busy. A quick 'Hai, aku datang!' with a smile goes a long way."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this actually makes me feel a lot better. I was stressing over the timing, but now I know it’s all about being present, not perfect."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s the spirit. In our culture, the warmth of the moment matters more than the clock. Just bring your good energy, and she’ll be happy to see you—late or not."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Arriving 10–30 minutes late is culturally appropriate for informal home visits",
+          "Early arrival is discouraged as it may make the host feel rushed",
+          "Communication about delays is expected and polite",
+          "Using simple, direct messages like 'Saya terlambat, nanti sampai dalam 30 menit' is customary",
+          "The host’s preparation state influences guest expectations",
+          "Warmth and presence are valued over punctuality in social contexts",
+          "No need to wait outside; walking in is acceptable unless the host is clearly busy"
+        ],
+        "issues": [
+          "The assistant uses Indonesian phrases in a way that might feel slightly performative in an English-only context—while acceptable for cultural authenticity, it could be more seamlessly integrated (e.g., using 'I’ll be there in 30 minutes' with a brief note that this is a common phrase, rather than quoting it directly).",
+          "The user’s final line about 'being present, not perfect' is a bit too abstract and Westernized in framing; a more culturally grounded phrasing like 'It’s about being together, not on time' might better reflect the local mindset."
+        ],
+        "suggestions": [
+          "Replace the direct use of Indonesian phrases with natural English equivalents that convey the same meaning and cultural norm, e.g., 'Just let her know you’re running late—something like “I’m delayed, but I’ll be there in about 30 minutes” is perfectly polite.' This maintains authenticity without breaking immersion.",
+          "Refine the assistant’s closing line to reflect a more culturally embedded value: instead of 'good energy,' use something like 'Just bring your warmth and she’ll be happy to see you—late or not.'",
+          "Consider adding a subtle nuance about urban vs. rural or generational differences in the assistant’s response to reinforce the context-dependency of punctuality."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to Rina’s house for dinner tonight—she invited me around 6:30. I just finished my work at 5:45, so I’m thinking of leaving now. Should I head over right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better not go straight from work. Rina probably hasn’t even started cooking yet. If you show up at 6:30 sharp, she might still be setting the table or preparing food. It’s better to wait until 7:00 or 7:15. That way, you’ll arrive when things are already rolling—no one’s rushing, and it feels more natural."
+            },
+            {
+              "role": "user",
+              "content": "Oh, good point. I remember my cousin once came early and was told to wait outside because the food wasn’t ready. I didn’t want to be that awkward guest. But what if I’m running late? Like, if traffic’s bad?"
+            },
+            {
+              "role": "assistant",
+              "content": "If you’re going to be delayed, just send her a quick message. A simple ‘Saya terlambat, nanti sampai dalam 20 menit’ is perfect—polite, clear, and expected. She’ll understand. In fact, not texting at all if you’re late might be more awkward than being late itself."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So arriving around 7:15 is ideal? And I should definitely message if I’m going to be later than that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. 7:15 is a sweet spot—late enough to avoid the host being flustered, but not so late that it feels like you’re ignoring the occasion. And yes, always message if you’re delayed. It shows respect for her time and effort. She’ll appreciate the heads-up more than a silent late arrival."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Arriving 10–30 minutes late (fashionably late) is culturally appropriate for informal home visits",
+          "Early arrival is discouraged as it may make the host feel rushed or unprepared",
+          "Hosts often prefer guests to arrive after preparations are underway to maintain harmony and avoid awkwardness",
+          "Sending a message when running late is a standard and expected practice",
+          "The phrase 'Saya terlambat, nanti sampai dalam 15 menit' reflects natural, culturally appropriate communication",
+          "Cultural norms prioritize relational comfort over strict punctuality in informal social settings",
+          "The scenario reflects a common, authentic Indonesian domestic experience with realistic names and context (e.g., Rina, 6:30 dinner invitation)",
+          "The assistant responds with shared cultural assumptions without explaining or performing culture"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Arriving 10–30 minutes late (e.g., 7:15 instead of 6:30) is considered appropriate for informal home visits",
+          "Early arrival may be seen as intrusive, especially if the host is still preparing",
+          "Hosts may politely ask early guests to wait outside",
+          "Informing the host of delays via message is expected and respectful",
+          "Using a simple Indonesian phrase like 'Saya terlambat, nanti sampai dalam 20 menit' is culturally appropriate",
+          "The emphasis on relational comfort over strict timekeeping in social contexts",
+          "Variability in expectations based on context (social vs. formal events)"
+        ],
+        "issues": [
+          "The assistant’s use of 'Rina' as a name is not inherently problematic, but in a fully authentic context, a more culturally grounded name (e.g., 'Rina' is plausible, but could be more regionally specific like 'Siti' or 'Dewi') might enhance realism. However, this is a minor issue.",
+          "The assistant does not explicitly acknowledge that urban or younger Indonesians may have different expectations, though this nuance is not required in a short dialogue and is implied through the flexible timing advice."
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of context variation (e.g., 'This is for casual dinners—weddings or religious events are different') to reinforce cultural nuance without over-explaining.",
+          "In future examples, include a mix of urban and rural settings to reflect regional diversity in punctuality norms.",
+          "Use more natural Indonesian phrases in context (e.g., 'Aku telat, nanti sampai dalam 15 menit' instead of formal 'Saya terlambat') to reflect spoken register in informal settings."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

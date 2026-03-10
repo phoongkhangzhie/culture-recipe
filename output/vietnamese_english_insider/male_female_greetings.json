@@ -1,0 +1,106 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Greetings Between Men and Women",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Norms governing cross-gender greetings, including appropriate physical contact and verbal forms of address",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting Ms. Linh from accounting tomorrow—she’s been here ten years, and I just started. Should I shake her hand when we meet?"
+            },
+            {
+              "role": "assistant",
+              "content": "Start with a slight bow—head down, hands together at chest level, like a quiet prayer. Say ‘Chào chị’ softly. A handshake is rare unless she offers it, especially in formal or traditional teams. In Hanoi, the bow is more common; in Ho Chi Minh City, a light nod may suffice. Men may initiate a handshake in formal settings, but it’s usually done with restraint and only if the woman appears open to it—better to wait and observe her cues."
+            },
+            {
+              "role": "user",
+              "content": "I noticed she wears an áo dài on Fridays—should I say something about it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—just say ‘Chị mặc áo dài thật đẹp.’ Keep it brief and sincere. It’s a quiet way to acknowledge her presence and tradition. In many professional settings, especially in Hanoi or older firms, wearing the áo dài on Fridays is a sign of pride and cultural continuity. Your appreciation will be seen as respectful, not performative—especially if you say it with a calm tone and a soft smile."
+            },
+            {
+              "role": "user",
+              "content": "What about eye contact? I don’t want to seem rude, but I also don’t want to stare."
+            },
+            {
+              "role": "assistant",
+              "content": "A soft, brief glance is respectful—just enough to show you’re listening. Then gently look down or away. Sustained eye contact, especially with a senior woman, can feel too direct. Even in modern urban workplaces, younger professionals often balance confidence with modesty—so a quiet, measured gaze works best. In northern Vietnam, this restraint is more pronounced; in southern cities, it’s still present but slightly less rigid."
+            },
+            {
+              "role": "user",
+              "content": "And if we’re in a meeting with others, should I still use ‘chị’ even if I’m not close to her?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always. Use ‘chị’ for a senior woman, even in group settings. Switching to ‘bạn’ too soon can seem casual or dismissive. Let her invite informality. In many international firms in HCMC or Hanoi, younger professionals often use ‘chị’ even when others say ‘bạn’—it’s a quiet signal of respect, shaped by deep-rooted values of intergenerational humility and care. That said, in some younger, Westernized teams—especially in tech startups—‘bạn’ may be used more freely, but only after a period of observed familiarity."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—since I’m a man and she’s senior, should I be extra careful with how I act around her?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially early on. Use the correct honorific, keep your tone modest and measured, and avoid sudden movements. In formal settings, a bow is more natural than a handshake. Even in international firms, younger professionals often use ‘chị’ even when others say ‘bạn’—it’s a quiet signal of respect, shaped by deep-rooted values of intergenerational humility and care. And just to note: women in Vietnamese workplaces often use ‘anh’ for senior male colleagues too—this symmetry reflects mutual respect, not just gendered expectation. Also, a brief pause after greeting—just a breath, a moment of stillness—can speak volumes. Silence isn’t empty; it’s respectful."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of 'chị' as a respectful honorific for senior women in professional settings",
+          "Preference for bowing over handshakes in formal or traditional Vietnamese contexts",
+          "Minimal physical contact in cross-gender greetings, especially between non-intimates",
+          "Cultural significance of áo dài as a symbol of tradition and professionalism",
+          "Appropriateness of brief, soft eye contact with modesty and restraint",
+          "Gendered expectations of modesty and restraint in greetings, particularly for men initiating contact",
+          "Regional variation between northern (Hanoi) and southern (Ho Chi Minh City) norms",
+          "The importance of observing cues and allowing the senior person to set the tone of familiarity",
+          "Symmetry in honorific use: women also use 'anh' for senior men",
+          "Cultural value of silence and stillness as a form of respect"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the statement about 'younger professionals often use ‘chị’ even when others say ‘bạn’'—while accurate in many traditional or Hanoi-based firms, this may not hold uniformly across all younger, Westernized teams in HCMC. A slight nuance acknowledging variation would strengthen accuracy.",
+          "The phrase 'even in international firms' appears in two responses (turns 4 and 8), which could imply a universal trend. It would be more precise to specify 'in many' or 'in traditionally oriented international firms' to avoid overgeneralization."
+        ],
+        "suggestions": [
+          "Replace 'in international firms' with 'in many traditionally oriented international firms' or 'in Hanoi-based or older-established international firms' to better reflect regional and institutional variation.",
+          "Add a brief note in the final response about the importance of observing the woman’s own behavior—e.g., if she initiates a handshake or uses 'bạn', it may signal a more relaxed norm in that particular workplace.",
+          "Consider including a subtle mention of how family relationships (e.g., a woman being a relative of a colleague) can influence greeting norms, though this may be beyond the scope of the current dimension."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

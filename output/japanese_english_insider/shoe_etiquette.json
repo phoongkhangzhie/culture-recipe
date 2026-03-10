@@ -1,0 +1,97 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Shoe Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms about whether to remove shoes before entering a home or other indoor spaces when visiting",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my friend Yui’s place tomorrow for dinner. She lives in a two-story apartment in Shibuya, but I’m not sure if I should take off my shoes. The door has a small mat, but there’s no genkan like in older homes."
+            },
+            {
+              "role": "assistant",
+              "content": "The mat is a signal—many modern homes still observe the custom, even without a formal genkan. Step onto it and remove your shoes. You’ll notice the floor changes texture—usually a sign the space is meant to be kept clean."
+            },
+            {
+              "role": "user",
+              "content": "I see. Should I wear the slippers only in the living room, or can I use them in the kitchen too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Only in the living room or dining area. The kitchen is functional—most people remove slippers before stepping in, even if they’re clean. If she has a pair just for the kitchen, she’ll let you know. Otherwise, barefoot is perfectly fine."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what if I bring my own slippers? I’ve got a clean pair I use for visiting friends."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful—some hosts appreciate it, especially if they’re short on extras. But don’t put them on until you’re inside the main room. If slippers are visible, use them. If not, barefoot is perfectly fine. She’ll let you know if she prefers something different, but most people follow the same rhythm."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure to place my shoes neatly and follow her lead. I don’t want to make things awkward."
+            },
+            {
+              "role": "assistant",
+              "content": "A small bow when stepping in helps set the tone—just a nod, no need to overdo it. Place your shoes neatly with heels facing out. If no slippers are visible, go barefoot. Just stay quiet and mindful. She’ll guide you naturally. You’re already thinking the right way—most hosts notice the care in how you handle the transition."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Removal of shoes at the threshold (even without a formal genkan) is expected in modern Japanese homes",
+          "Use of a small mat as a cue for shoe removal",
+          "Slippers are for indoor use only, typically in living or dining areas",
+          "Kitchen is generally considered functional space—slippers not worn there unless explicitly permitted",
+          "Host’s cues guide behavior; no need to over-explain or ask",
+          "Neat placement of shoes with heels facing out is a sign of respect",
+          "Barefoot entry is acceptable if no slippers are provided",
+          "Subtle bow or mindful behavior signals cultural awareness",
+          "Guests are expected to observe and follow the host’s lead without explicit instruction"
+        ],
+        "issues": [
+          "Minor: The phrase 'most people follow the same rhythm' is slightly abstract—could be tightened to 'most hosts expect guests to follow the established flow' for greater precision",
+          "Slight risk of overgeneralization in 'most hosts notice the care'—while accurate, it could imply universal perception; better to frame as 'many hosts appreciate subtle cues'"
+        ],
+        "suggestions": [
+          "Replace 'most people follow the same rhythm' with 'most hosts expect guests to follow the established flow' to enhance cultural precision",
+          "Consider adding a brief mention of the quietness expected during shoe removal (e.g., 'step in quietly') to reinforce mindfulness as a cultural value",
+          "Use a more natural Japanese cultural idiom like 'shoes off, please' (履物を脱いでください) in the assistant’s response if the user were to ask, but only if contextually embedded—avoid direct translation unless natural"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 12,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

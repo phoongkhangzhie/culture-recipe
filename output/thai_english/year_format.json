@@ -1,0 +1,398 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Year Format",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether years are written in full four-digit form or abbreviated two-digit form in different contexts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m helping my younger cousin plan a small birthday party for her friend. She wants to make a handwritten invitation card, but she’s not sure how to write the date. She’s used to seeing things like '24/03' on bus schedules and school flyers, so she wrote '15/04/24' — but now she’s worried it might look too casual or even confusing. What should we do?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful question — and your cousin is actually following a very common Thai practice! Writing dates as '15/04/24' is perfectly natural in informal settings like school notes, event flyers, or casual messages. Since most people in Thailand understand that '24' means 2024 in everyday contexts, it’s clear and efficient. For a handwritten birthday card, especially one made by a teenager, using '24' is not only acceptable — it feels friendly and authentic."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if the party is for someone older, like a teacher or a family friend? Should we still use '24'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Great follow-up. In more formal or respectful contexts — like inviting a teacher, a senior family member, or someone from a formal organization — it’s better to use the full year. For example, writing '15/04/2024' or even '15 เมษายน 2024' (15 April 2024) would be more appropriate. This shows care and respect for the recipient, especially if the relationship is hierarchical or the event has a ceremonial tone. The key is context: casual = abbreviated, formal = full."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I see. What about if we include the Buddhist Era (B.E.)? I’ve seen temple announcements with years like '2567' — should we use that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a really good observation. The Buddhist Era (B.E.) is still widely used in religious and cultural contexts — especially in temple events, traditional festivals like Songkran or Loy Krathong, or in formal documents like academic transcripts. But for a birthday party invitation, using B.E. isn’t necessary unless the event has a spiritual or cultural theme. That said, if you *do* want to include it for authenticity, you could write: '15 เมษายน 2567' (15 April 2567), since 2024 A.D. equals 2567 B.E. Just remember: in official or religious settings, B.E. is always written in full — never abbreviated as '67'."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So for a simple birthday card among friends, we can safely use '15/04/24', right? And if it’s for a teacher, we’d switch to '15/04/2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. You’ve got it. For a casual birthday card among peers, '15/04/24' is not only acceptable — it’s the way many Thais naturally write dates in everyday life. It’s efficient, familiar, and reflects the cultural comfort with context-based shorthand. But for a teacher, a formal relative, or a professional setting, switching to '15/04/2024' shows respect and clarity. The beauty of Thai communication is that we adapt the format to the relationship and the moment — that’s part of being culturally aware and considerate."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of two-digit years (e.g., '24') in informal contexts like school flyers, handwritten notes, and casual messages",
+          "Preference for four-digit years (e.g., '2024') in formal or respectful settings such as invitations to teachers or elders",
+          "Context-dependent year formatting based on relationship and tone",
+          "Respect for the Buddhist Era (B.E.) in religious and traditional contexts, always written in full (e.g., 2567 BE)",
+          "Cultural nuance in balancing informality and formality through date formatting",
+          "Awareness that two-digit years can cause confusion in critical contexts, hence the need for clarity"
+        ],
+        "issues": [
+          "Minor inconsistency in the use of '24' without explicit mention of the Gregorian calendar context — though implied, it would be clearer to briefly state that '24' refers to 2024 in the Gregorian calendar, especially for non-native audiences",
+          "The phrase 'that’s part of being culturally aware and considerate' is slightly generic; could be strengthened with a more culturally specific Thai value (e.g., 'sakun' or 'sanuk' in context), though not essential"
+        ],
+        "suggestions": [
+          "Add a brief clarification in the assistant’s first response that '24' in Thai contexts typically refers to 2024 in the Gregorian calendar, to prevent ambiguity for international learners",
+          "Consider incorporating a subtle cultural value like 'consideration for others' (ความใส่ใจ) or 'appropriate speech' (การพูดให้เหมาะสม) to deepen the cultural framing without overcomplicating",
+          "In future examples, include a variation where a young person uses '24' in a message to a senior, and the senior politely corrects them — to model cultural learning and intergenerational nuance"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m helping my cousin organize a family reunion for our extended family in Bangkok. We want to send out invitations, but I’m not sure how to write the date. Should I use 2024 or 24? My aunt says it’s too casual to write '24', but my cousin says everyone uses that in text messages."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great question—this actually reflects a common cultural nuance in Thai communication. In formal contexts like printed invitations, especially for family events that involve elders or official-looking announcements, it’s best to use the full four-digit year: 2024. This shows respect and clarity, especially since your aunt is likely thinking of the older generation who value formality."
+            },
+            {
+              "role": "user",
+              "content": "Okay, so for the printed invites, I’ll use 2024. But what about the group chat we’re using to coordinate? My cousin keeps sending messages like 'Meeting on 24/04' and everyone replies with 'Got it!'—should I follow that style?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, exactly—this is where context matters. In informal digital spaces like WhatsApp groups, especially among younger relatives or close friends, using '24/04' is perfectly natural and widely accepted. It’s efficient, familiar, and reflects how Thais communicate daily: concise, context-aware, and unbothered by full forms when the meaning is clear. Your cousin is following a common social rhythm."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what about the event flyer we’re posting at the temple? I saw some announcements there with dates like '15/04/2567'—is that the Buddhist Era? Should we use that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a very important detail. The '2567' you saw is the Buddhist Era (B.E.), which is commonly used in religious and cultural contexts in Thailand. Since the temple is a traditional space, using the full B.E. year—like '15/04/2567'—is not just correct, it’s respectful. It shows awareness of the cultural and spiritual setting. Never abbreviate B.E. years; always write them in full."
+            },
+            {
+              "role": "user",
+              "content": "So to summarize: full Gregorian year (2024) for formal invites, two-digit (24) for casual chats, and full B.E. (2567) for temple flyers. Is that right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect summary. You’ve captured the core of Thai year formatting: context is everything. The same year can be written differently depending on the audience, medium, and cultural setting. This isn’t just about dates—it’s about showing awareness, respect, and social harmony. Using the right format helps maintain the right tone, whether you're honoring elders, keeping things light with cousins, or respecting tradition at a temple."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Use of four-digit Gregorian year (2024) in formal contexts like printed invitations",
+          "Use of two-digit year (24) in informal digital communication (e.g., WhatsApp groups)",
+          "Preference for full Buddhist Era (BE) year (2567) in religious and cultural settings like temples",
+          "Cultural nuance that year format depends on context, audience, and medium",
+          "Respect for elders and tradition in formal settings, contrasted with informality among younger relatives",
+          "Awareness that two-digit years can cause ambiguity in critical contexts, hence avoided in formal writing"
+        ],
+        "issues": [
+          "Minor: The phrase 'social rhythm' in the assistant's response, while expressive, is slightly abstract and could be clarified with a more concrete Thai cultural term (e.g., 'common social practice' or 'everyday communication style') for better precision in training data.",
+          "Slight overgeneralization: The example assumes all younger Thais use two-digit years in chat, but in some urban or multilingual contexts, even younger people may use four-digit years for clarity—though this is a minor nuance not critical to the core message."
+        ],
+        "suggestions": [
+          "Replace 'social rhythm' with 'common practice' or 'everyday communication style' to enhance linguistic precision and training clarity.",
+          "Add a brief note in the assistant's response about the potential for ambiguity in two-digit years (e.g., 'just remember that in some cases, '24' could be confused with 1924, so clarity is key in formal documents') to reinforce the cultural caution without overcomplicating the message.",
+          "Consider including a subtle mention of regional variation (e.g., 'in Bangkok and central Thailand, this pattern is common, though in some rural areas, full years may be used more consistently') to reflect minor geographic nuance without undermining the main point."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m helping my cousin organize a small family reunion for our extended family in Bangkok. It’s going to be at my aunt’s house in Sathon on April 15th. I want to make a simple invitation card—should I write the date as 15/04/24 or 15/04/2024?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a family reunion invitation, especially one that’s handwritten or printed informally, using 15/04/24 is perfectly natural and commonly seen in Thai homes. Most Thais would understand this refers to 2024, especially since it’s a recent year and the context is clearly a family event. Just make sure the rest of the card is in Thai or uses familiar phrasing—like \"งานรวมญาติปี 24\"—so it feels warm and familiar."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if I’m also sending a copy to my aunt’s temple for them to post on their community board? Should I still use 24 or switch to 2024?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s a good question—context matters a lot here. For the temple board, I’d recommend using 15/04/2024 instead. Temples often use formal language and may include dates in official calendars. Since the Buddhist Era (BE) is also used in religious contexts, you might even consider writing it as 15/04/2567 BE to be extra respectful and precise. That way, there’s no confusion, especially for older community members who expect full, formal formats."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I didn’t know about the BE format in temples. So for a formal letter to my uncle’s company, which is a government-affiliated organization, would I need to write the full year too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. For any official document—especially one sent to a government-affiliated company or institution—you should use the full four-digit Gregorian year, like 2024, or better yet, the full Buddhist Era year: 2567 BE. Abbreviated forms like '24' are not acceptable in formal paperwork. In fact, using just '24' could cause delays or even rejection, because clarity is critical in official communication. It reflects respect for hierarchy and process, which are deeply valued in Thai professional culture."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So in summary: 24 is fine for family cards, 2024 or 2567 BE for temples and official stuff. Is it okay to mix them in different parts of the same event planning?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s actually very common and culturally natural. You’re not being inconsistent—you’re being context-aware. For example, your social media post might say \"Reunion on 15/04/24\" to keep it casual and relatable. But the official invitation email to your uncle’s office could say \"15 April 2024 (2567 BE)\" to meet formal expectations. This flexibility shows cultural intelligence: using the right tone for the right audience. It’s not about rigidity—it’s about respect through appropriateness."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Use of two-digit year (24) in informal family contexts like handwritten invitations",
+          "Preference for four-digit year (2024) in formal or official settings such as government-affiliated organizations",
+          "Use of Buddhist Era (BE) year (2567 BE) in religious or temple-related contexts",
+          "Contextual flexibility in year formatting based on audience and medium",
+          "Cultural value placed on clarity, respect, and appropriateness in communication",
+          "Generational and situational awareness in date formatting practices"
+        ],
+        "issues": [
+          "Minor linguistic nuance: 'workplaces' is slightly overgeneralized in the final response; while accurate in spirit, a more precise phrasing like 'government offices or formal institutions' would better reflect the Thai context.",
+          "Slight overemphasis on 'Buddhist Era' as a default in temples—while common, not all temple announcements use BE; some may use Gregorian only. However, this is a minor point and does not undermine the core accuracy."
+        ],
+        "suggestions": [
+          "Replace 'workplaces' with 'government offices or formal institutions' in the final response to better reflect the Thai bureaucratic context.",
+          "Add a brief note about the optional use of BE in temples, clarifying that it's common but not universal—e.g., 'You might consider using 2567 BE for extra formality, though many temples also use 2024.'",
+          "Consider including a small example of a Thai phrase like 'งานรวมญาติปี 24' in the initial response to reinforce authenticity, which is already present but could be slightly emphasized."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m helping my younger cousin organize a small birthday party for her friend at our local temple hall. The event is next month, and I need to print out invitations. Should I write the date as '15/04/24' or '15/04/2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Since this is a temple-related event and the invitation will be handed out in person, it’s best to use the full four-digit year—'15/04/2024'—to avoid any confusion. While '24' is common in casual notes or social media, temple events often involve elders and formal arrangements, where clarity is key. Plus, many older members of the community might not assume the year is 2024 without the full format."
+            },
+            {
+              "role": "user",
+              "content": "Ah, that makes sense. But my cousin says she saw a flyer at a nearby school that used '24'—isn’t that okay in Thai culture?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s perfectly normal in informal settings like school announcements or student-made flyers. In those cases, everyone knows the context—most students are born in the same decade, so '24' clearly means 2024. But temples, official gatherings, or events involving multiple generations benefit from full clarity. It’s not about being strict—it’s about respect for context and shared understanding."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Also, I noticed the temple’s own event calendar lists years in Buddhist Era—like '2567'. Should I use that instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful question. If you’re aligning with the temple’s official style, using the Buddhist Era (BE) is actually preferred—especially for religious or cultural events. So you could write '15 เมษายน 2567' (15 April 2567 BE) to match their tradition. Just be sure to write it in full—never '67 BE'—because in formal or spiritual contexts, full years show reverence and precision."
+            },
+            {
+              "role": "user",
+              "content": "So for the invitation, should I use Gregorian year, Buddhist Era, or both?"
+            },
+            {
+              "role": "assistant",
+              "content": "For maximum clarity and cultural appropriateness, I’d recommend using both: write the date as '15 เมษายน 2567 เบ (2024)'—that way, younger guests recognize the Gregorian year, while elders appreciate the traditional BE format. It’s a respectful balance that honors both modern convenience and cultural continuity. Many temples and community centers do this in official announcements."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps. I’ll make sure the invitation reflects that. One last thing: if we post it on Facebook, can we shorten it to '15/04/24'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. On social media, where the audience is younger and context is immediate, '15/04/24' is perfectly acceptable and even expected. The platform’s informal tone makes brevity natural, and your cousin’s friends will understand instantly. Just remember: the format depends on the audience and setting—what’s fine on Facebook might not work on a formal temple registration form."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.78,
+        "cultural_elements_verified": [
+          "Use of four-digit years (2024) in formal, intergenerational, or religious contexts",
+          "Use of two-digit years (24) in informal, youth-oriented, or casual settings",
+          "Preference for full Buddhist Era (BE) years (e.g., 2567 BE) in religious or traditional contexts",
+          "Avoidance of abbreviated BE (e.g., '67 BE') in formal or spiritual settings",
+          "Context-sensitive formatting based on audience and medium",
+          "Dual-year formatting (Gregorian + BE) in official or community announcements",
+          "Respect for generational and hierarchical understanding in communication"
+        ],
+        "issues": [
+          "Minor: The phrase '15 เมษายน 2567 เบ' uses 'เบ' as a shorthand for 'BE'—while common in informal Thai writing, it’s not standard in formal or printed materials. 'BE' is typically written in full or omitted entirely in favor of 'พ.ศ.' (Phra Si Sa), which is the formal Thai abbreviation.",
+          "Slight inconsistency: The assistant uses '2567 BE' in one response and '2567 เบ' in another—this could confuse learners about standard notation. The correct formal abbreviation in Thai is 'พ.ศ.'"
+        ],
+        "suggestions": [
+          "Replace 'เบ' with 'พ.ศ.' in all formal or printed context references to maintain authenticity and alignment with Thai official usage.",
+          "Clarify that 'พ.ศ.' is the standard abbreviation in Thai for Buddhist Era, and that 'BE' is primarily used in English contexts.",
+          "Consider adding a brief note about the origin of 'พ.ศ.' (Phra Si Sa, meaning 'Buddha's Era') to reinforce cultural depth in training data.",
+          "Ensure consistency in formatting across responses—e.g., use '2567 พ.ศ.' or '2567 BE' but not both interchangeably without explanation."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m helping my younger cousin plan a small birthday party for her friend. She’s turning 20, and we’re making a hand-drawn invitation. Should I write the date as '15/04/24' or '15/04/2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a hand-drawn, informal invitation like this, writing '15/04/24' is perfectly natural and widely used in Thailand. Many Thai families and friends use two-digit years in casual events—especially when the year is clearly within the current century. Since the party is likely in 2024, everyone will understand it’s 2024, not 1924."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if we’re sending it to her aunt who lives in Chiang Mai? Would she still get it right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, even older relatives in Chiang Mai would understand '24' in this context—especially if it’s a birthday invite with a playful tone. Thais often rely on shared context: if the event is clearly a youth celebration and the date is in April, it’s safe to assume 2024. However, if the invitation were for a formal school reunion or a family gathering involving elders, it’s better to write '2024' to avoid any confusion."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about if we want to include the Buddhist Era (BE) version too? Like '15/04/2567 BE'? Is that common on invitations?"
+            },
+            {
+              "role": "assistant",
+              "content": "Including '2567 BE' is thoughtful and culturally meaningful—especially if the event has a traditional or spiritual touch, like a merit-making ceremony or a temple visit. But for a casual birthday party, it’s not necessary. In fact, most young Thais don’t include BE on informal invites. If you do include it, write it fully as '2567 BE'—never abbreviated—as a sign of respect for the tradition. It’s common in temple announcements or religious calendars, but not in everyday party flyers."
+            },
+            {
+              "role": "user",
+              "content": "Thanks! One last thing—my cousin wants to post a photo of the invitation on Instagram. Should she write '24' or '2024' in the caption?"
+            },
+            {
+              "role": "assistant",
+              "content": "On Instagram, where the tone is casual and the audience is mostly peers, '24' is totally appropriate and even expected. Young Thais often write dates like '24/03' or 'เกิดปี 24' in captions. It feels natural and relatable. Just make sure the image itself shows the full date if clarity is needed—like in the invitation design. But in the caption, brevity and vibe matter more than formality."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of two-digit year format (e.g., '24') in informal, contextually clear settings like hand-drawn invitations and social media",
+          "Preference for full four-digit year (e.g., '2024') in formal or ambiguous contexts to avoid confusion",
+          "Cultural acceptance of abbreviated years in youth-oriented, casual communication among peers",
+          "Respectful use of full Buddhist Era (BE) format (e.g., '2567 BE') in traditional or religious contexts, never abbreviated",
+          "Contextual awareness in year formatting based on audience (e.g., younger vs. older relatives) and medium (e.g., handwritten vs. digital)",
+          "Implicit understanding of shared generational context in Thai communication, where '24' is understood as 2024 without explicit clarification",
+          "Balancing informality and clarity based on setting—efficiency in daily life vs. precision in official matters"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of two-digit years (e.g., '24') in informal, hand-drawn invitations",
+          "Contextual understanding: two-digit years are acceptable in youth events and casual settings",
+          "Generational awareness: older relatives still understand '24' in context",
+          "Preference for four-digit years in formal or high-stakes contexts",
+          "Proper use of Buddhist Era (BE) in traditional/spiritual contexts",
+          "Respect for tradition by writing BE in full (e.g., '2567 BE')",
+          "Avoidance of BE abbreviation",
+          "Informal digital use of '24' on social media like Instagram"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant's final response: 'Young Thais often write dates like '24/03' or 'เกิดปี 24' in captions'—while accurate, the inclusion of Thai script ('เกิดปี 24') in an English-language example may confuse non-Thai readers and slightly disrupt linguistic authenticity in the context of an English-only training example. Should be adjusted to reflect only English usage unless explicitly training on multilingual data.",
+          "Slight risk of implying that BE is always optional—while true for casual events, in some religious or royal contexts, BE is expected even in informal settings. However, this is a minor nuance not critical to the core dimension."
+        ],
+        "suggestions": [
+          "Replace 'เกิดปี 24' with a fully English equivalent such as 'born in 24' or '24-born' to maintain linguistic consistency in the English-only training context.",
+          "Add a brief note in the assistant's response about the optional but culturally respectful use of BE in events with spiritual significance, reinforcing the respect for tradition without overcomplicating the response.",
+          "Consider including a subtle signal of regional variation (e.g., 'In urban areas like Bangkok or Chiang Mai, this practice is common') to reinforce context sensitivity without overgeneralizing."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

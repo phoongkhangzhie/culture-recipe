@@ -1,0 +1,87 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Monetary and Payment System",
+    "category": "Institutional Norms > Regulation & Policy > Financial Market Rules",
+    "description": "The monetary policy framework, currency regime, and payment infrastructure including cash, card, and digital payment norms",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my aunt in Yogyakarta next week and want to bring a small gift for her *selamatan* ceremony. I’ve heard people give crisp new rupiah notes—how much should I give, and what’s the best way to present it?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a close family member like your aunt, 50,000 IDR or 100,000 IDR in a brand-new, undamaged note is thoughtful and appropriate. Avoid folded, torn, or worn bills—this shows care and respect. Present it with both hands, slightly bowing your head, and say: 'Untuk acara selamatan, mohon maaf kalau sederhana, semoga bermanfaat.' It’s warm, humble, and natural for family settings."
+            },
+            {
+              "role": "user",
+              "content": "Thanks! I’ll do that. But I’m also worried about paying for the ceremony food and drinks. Should I use cash or digital money? My aunt’s warung is small, and I’ve seen people use QR codes, but I’m not sure if it’s common there."
+            },
+            {
+              "role": "assistant",
+              "content": "In Yogyakarta, it depends on the area. In villages or traditional neighborhoods, cash is still preferred—especially for ceremonies. But in urban or semi-urban warungs, QRIS-enabled digital payments are common. If you're unsure, ask a family member first. When giving digitally, send it directly via the wallet app—GoPay, OVO, or DANA—not through WhatsApp. Send a quick message like: 'Untuk keperluan selamatan, terima kasih atas kebaikannya.'"
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll bring cash for the main gift, but I’ll also have a digital wallet ready. I’ve heard some people in Jakarta use cashback rewards—do people here care about that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not really. In Yogyakarta, especially during *selamatan*, the focus is on sincerity, not savings. Cashback or rewards aren’t considered when giving gifts—people value the gesture, not the financial perk. Digital wallets are useful for convenience, especially with distant relatives, but the physical gift remains the heart of the tradition. It’s not about the money—it’s about showing care."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of crisp new rupiah notes as gifts during *selamatan* ceremonies",
+          "Preference for cash in rural and traditional settings like Yogyakarta",
+          "QRIS as a national interoperable payment standard accepted in small warungs",
+          "Digital wallets (GoPay, OVO, DANA) used for convenience and gifting",
+          "Cultural emphasis on sincerity over financial incentives in gift-giving",
+          "Social norms around respectful presentation (both hands, slight bow)",
+          "Limited use of cashback/rewards in ceremonial contexts"
+        ],
+        "issues": [
+          "The instruction to send digital money via the wallet app (not WhatsApp) is accurate, but could be more nuanced—some families in Yogyakarta may still prefer direct cash or even physical envelopes, especially for ceremonial gifts, even if digital is used for supplementary payments.",
+          "The phrase 'mohon maaf kalau sederhana, semoga bermanfaat' is appropriate but slightly generic; a more culturally resonant variant like 'Semoga bermanfaat untuk acara yang berarti' might better reflect the sentiment of a family gift."
+        ],
+        "suggestions": [
+          "Include a brief note about the cultural significance of *selamatan* as a community event where financial contribution is symbolic of unity, not transactional.",
+          "Clarify that while QRIS is widely adopted, some older warungs may still not have terminals—so carrying cash is always a safe choice.",
+          "Suggest that if using digital wallets, users should confirm with family whether a digital transfer is expected or if physical gifting is preferred, as preferences vary even within the same region."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

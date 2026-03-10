@@ -1,0 +1,98 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Communal Living",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Family Dynamics",
+    "description": "Arrangements where multiple generations or extended family members share living spaces, resources, and responsibilities",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to move back to Hanoi after working in Singapore for five years. My parents and my 80-year-old grandmother still live in our family home in Bắc Ninh, and I’ve been thinking about staying with them. But I’m worried—my room was given to my younger cousin when I left. Should I bring up the idea of moving back, and how should I do it respectfully?"
+            },
+            {
+              "role": "assistant",
+              "content": "Returning home after years abroad is a meaningful act in Vietnamese culture—especially when it’s to care for elders. In Bắc Ninh, multigenerational living remains common, grounded in filial piety and shared responsibility. Start by visiting with a small gift: fruit, incense, or a tray of bánh mì. When you arrive, greet your grandmother first—bow slightly, avoid direct eye contact, and speak softly. This shows humility and respect before any conversation."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if my cousin is already settled in my old room? I don’t want to cause tension. And how do I bring up the idea without making it seem like I’m taking something from them?"
+            },
+            {
+              "role": "assistant",
+              "content": "Begin with appreciation. Say: *‘Anh/Chị ơi, em thấy phòng anh/chị sạch sẽ, cảm ơn vì đã chăm sóc.’* Then gently suggest a compromise: *‘Nếu con về, con sẽ ở tạm, không cần phòng riêng—chỉ cần một góc nhỏ để làm việc. Con sẽ tự dựng một chiếc tủ nhỏ, không gây ồn khi bà nghỉ trưa.’* Using ‘anh/chị’ is respectful regardless of age or gender, and ‘chăm sóc’ feels more natural than ‘giữ gìn’—it reflects daily care, not formal preservation."
+            },
+            {
+              "role": "user",
+              "content": "I’m also worried about my privacy. I’ve been used to my own space in Singapore. How do I balance that with family life? I don’t want to seem ungrateful, but I do need some quiet time to work remotely."
+            },
+            {
+              "role": "assistant",
+              "content": "Your need for quiet is valid—and many returnees face this. In Vietnamese homes, privacy isn’t about walls; it’s about harmony. The courtyard (hiên) is often a semi-private space where one can work or reflect. Ask your grandmother: *‘Em xin phép đặt một bàn nhỏ ở cuối hiên, để làm việc từ xa mỗi ngày. Em sẽ không làm ồn khi bà nghỉ trưa.’* Most families will honor this with care."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll go back to Bắc Ninh next week and talk to them. I just hope they’ll accept me back—not as a burden, but as someone who wants to give back."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re already giving back by coming home with love and humility. Before you speak, place a small offering—candles, fruit, or incense—on the ancestral altar. Even in secular homes, this is a meaningful gesture of respect and continuity, deeply rooted in Vietnamese tradition. It acknowledges your roots and seeks blessings for a smooth reunion.\n\nWhen you arrive, don’t wait to be asked: help with cooking, sweep the courtyard, or set the table. Let your presence speak first. In rural Bắc Ninh, your grandmother often holds informal authority—she may mediate discussions even if not formally in charge.\n\nIf tensions arise, suggest a family council: gather your parents, grandmother, and cousin to discuss the arrangement. This reflects modern values of mutual respect and shared input. Propose a trial: *‘Em xin ở tạm hai tháng, rồi cùng gia đình bàn lại.’* This shows respect for tradition and room for growth.\n\nAnd consider timing: returning during Tết or before a major family event can make such a conversation feel more natural. Use a shared family calendar or informal agreement to manage expectations around space and quiet time—this reflects how Vietnamese families adapt tradition to modern life."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.275,
+        "cultural_elements_verified": [
+          "Multigenerational living is common in Vietnamese families, especially in rural Bắc Ninh",
+          "Filial piety and respect for elders are central values, demonstrated through greeting rituals (bowing, soft speech, avoiding eye contact)",
+          "The ancestral altar is a symbolic and functional element in Vietnamese homes",
+          "Use of honorifics like 'anh/chị' for respectful address regardless of age or gender",
+          "Courtyard (hiên) as a semi-private space for work or reflection",
+          "Family councils or joint discussions for resolving household arrangements",
+          "Trial periods for new living arrangements to maintain harmony",
+          "Emphasis on non-confrontational communication and avoiding 'losing face'",
+          "Shared responsibilities in daily life (cooking, cleaning, helping elders)",
+          "Tết as a key moment for family reunions and discussions about living arrangements"
+        ],
+        "issues": [
+          "Minor ambiguity in the use of 'em' (I) in formal contexts—while acceptable in spoken Vietnamese, in written or formal cultural guidance, 'tôi' might be more appropriate in initial respectful gestures; however, 'em' is widely used among younger adults and is contextually acceptable here",
+          "The phrase 'chăm sóc' is correctly used, but could be slightly refined to 'chăm sóc phòng' (taking care of the room) for greater specificity in the context of room stewardship"
+        ],
+        "suggestions": [
+          "Consider adding a brief note about the role of the grandmother in decision-making, even if not formally the head, to reinforce the subtle but real influence elders hold in rural Vietnamese households",
+          "Slightly expand on the concept of 'tình cảm gia đình' (family affection) as a foundation for compromise, to emphasize emotional continuity over rigid rules",
+          "Include a mention of food as a medium of reconciliation—e.g., offering to cook a meal for the family as a gesture of integration"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 10
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 27,
+    "research_rounds": 3,
+    "examples_produced": 1
+  }
+}

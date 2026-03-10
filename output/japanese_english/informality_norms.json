@@ -1,0 +1,367 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Informality Norms",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "Contexts in which informal speech, behavior, and dress are appropriate or considered disrespectful",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just started a new job at a mid-sized tech company in Tokyo, and my team leader, Mr. Sato, is 58 and very respected. We had our first team meeting today, and I’m unsure how to address him in our internal LINE group. Should I use his first name, or is ‘Sato-san’ better?"
+            },
+            {
+              "role": "assistant",
+              "content": "In this context, ‘Sato-san’ is the appropriate and respectful choice. Even in tech companies, especially in Tokyo, it’s customary to use honorifics with senior colleagues unless explicitly invited to use first names. Mr. Sato’s age and position indicate he is a figure of authority, and using ‘Sato-san’ shows proper regard for hierarchy and *wa* (harmony)."
+            },
+            {
+              "role": "user",
+              "content": "I see. But one of my younger colleagues, Aiko, who’s about my age, used ‘Sato-kun’ in a message earlier. I thought that was a bit informal—was that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "That would be inappropriate. ‘Sato-kun’ is used for junior male colleagues or close peers, and applying it to a senior figure like Mr. Sato—especially a 58-year-old leader—could be perceived as mocking or disrespectful. Even among peers, such terms are used only with mutual familiarity and shared status. Aiko’s use of ‘Sato-kun’ likely reflects a misunderstanding of social nuance, not a cultural norm."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about after-work drinks? I heard those are more relaxed. Could I use his first name then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even in *nomikai* (after-work drinks), formality is maintained unless there’s a clear signal of mutual comfort. In most traditional workplaces, first names are not used until trust and equality are established—often after months, or even years. If Mr. Sato initiates using his first name, you may follow—but never assume. Until then, ‘Sato-san’ remains the safest and most respectful choice."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—should I bow when I send a message to him on LINE, or is that overkill?"
+            },
+            {
+              "role": "assistant",
+              "content": "No need to bow in digital communication. However, your tone and choice of words matter more. Always use polite language, honorifics, and avoid slang. A simple ‘Hai, Sato-san’ with a respectful closing like ‘Yoroshiku onegaishimasu’ conveys the right level of humility and consideration without overdoing it."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of honorifics (-san) with senior colleagues in professional settings",
+          "Prohibition of first-name use with superiors, even in tech environments",
+          "Appropriate use of -kun with junior males, and its inappropriateness for seniors",
+          "Maintaining formality in after-work drinks (*nomikai*) until explicitly invited",
+          "Cultural sensitivity to hierarchy and *wa* (harmony) in digital communication",
+          "Respect for age and seniority in workplace interactions",
+          "Avoidance of casual language and slang (e.g., *sugoi*, emojis) in professional contexts",
+          "Gradual, earned informality as a privilege, not a default"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of honorifics like '-san' for senior colleagues in formal work settings",
+          "Prohibition of 'kun' for senior figures, even in informal contexts",
+          "Maintaining formality in *nomikai* until trust is established",
+          "Respect for hierarchy and age in workplace communication",
+          "Digital communication etiquette: no physical bowing, but respectful tone and language",
+          "Regional nuance (Tokyo's formality) acknowledged implicitly",
+          "Cultural values of *wa* (harmony), *tatemae*, and *TPO* reflected in reasoning"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant’s response about 'Sato-kun' being 'mocking'—while inappropriate, the term’s use by a junior colleague could also stem from generational or regional differences (e.g., Osaka), though the core point about hierarchy is correct",
+          "The assistant does not acknowledge that some younger professionals in Tokyo may use *kun* with peers in relaxed internal chats, but this is not a critical error given the context of a senior leader"
+        ],
+        "suggestions": [
+          "Add a brief nuance about regional or generational variation in the use of *kun*—e.g., 'While *kun* is generally inappropriate for seniors, younger employees in more relaxed teams might use it informally with peers, but never with superiors.'",
+          "Include a note on how *nomikai* dynamics vary—some modern companies may allow first names after several gatherings, but only if initiated by the senior person",
+          "Consider mentioning that in some startups, especially foreign-influenced ones, first-name basis may emerge faster, but still with caution"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just started a new job at a mid-sized tech company in Tokyo. My team leader, Mr. Sato, is 58 and very respected. During our first meeting, I said, 'Hey, Sato, let’s get this project going!' He nodded but didn’t smile. Now I’m worried—was that too casual? Should I have said something else?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that phrasing could have been perceived as too informal, especially in a professional setting with a senior colleague. In Japanese workplaces, even in tech firms, using a superior’s first name—especially with a casual tone like 'Hey'—is considered a breach of *tatemae* (social face) and hierarchy. Mr. Sato likely interpreted it as a lack of respect, even if unintentional."
+            },
+            {
+              "role": "user",
+              "content": "Oh no. I didn’t mean to offend him. What should I have said instead? I want to show I’m eager but still respectful."
+            },
+            {
+              "role": "assistant",
+              "content": "A much more appropriate approach would be to use formal language and honorifics. For example: 'Hai, Sato-san. I understand this project is important. I will do my best to contribute and follow your guidance.' This shows humility, respect, and awareness of the relationship dynamic. You can also add a slight bow when speaking to reinforce sincerity."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So even if the company is modern, I shouldn’t use first names unless invited? What about after-work drinks? I’ve heard people use first names then."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a good observation. In *nomikai* (after-work drinks), informality can gradually emerge—but only after trust is built. Even then, first names are typically used only among peers of similar age and seniority. You should still use 'Sato-san' unless he explicitly invites you to use his first name. The key is: informality is earned, not assumed. In Tokyo’s corporate culture, even in startups, formality remains a sign of maturity and awareness."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll be more careful. Should I apologize for my first comment?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a quiet, respectful apology would be appropriate. You could say: 'Sato-san, I apologize for my casual tone earlier. I realize now that I should have used more formal language. I will be more mindful going forward.' This acknowledges the misstep without over-explaining, which aligns with the cultural value of *wa* (harmony) and self-correction."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of honorifics (-san) with superiors",
+          "Avoidance of first-name use with seniors or superiors",
+          "Contextual appropriateness of informality (e.g., not in formal meetings)",
+          "Importance of bowing and non-verbal cues",
+          "Informality as earned through trust and relationship, not assumed",
+          "Respect for hierarchy and TPO (Time, Place, Occasion)",
+          "Cultural sensitivity in post-work social settings (nomikai)",
+          "Apology as a culturally appropriate response to social misstep",
+          "Contrast between modern workplaces and enduring formality norms",
+          "Use of polite language (Teineigo) in professional interactions"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of honorifics like '-san' for superiors in professional settings",
+          "Avoidance of first names with seniors unless invited",
+          "Formality as a sign of respect and maturity, not outdated tradition",
+          "Informality in *nomikai* only after trust is established",
+          "Importance of bowing and non-verbal cues in showing sincerity",
+          "Apology as a culturally appropriate response to social missteps",
+          "Respect for hierarchy and relational dynamics in workplace interactions",
+          "Recognition of generational and regional nuance (e.g., Tokyo vs. Osaka)"
+        ],
+        "issues": [
+          "Minor overgeneralization: The example implies all Tokyo tech companies maintain rigid formality, but some startups do allow first names after mutual agreement—though this is still rare and context-dependent.",
+          "Slight lack of emphasis on *tatemae* in the apology example: while the apology is appropriate, it could better reflect the subtle, indirect nature of Japanese self-correction (e.g., avoiding direct blame or over-explanation)."
+        ],
+        "suggestions": [
+          "Add a note that in some modern Tokyo startups, first-name usage may emerge informally among peers after mutual agreement—but only after several months and never with seniors without explicit invitation.",
+          "Refine the apology example to include a more indirect, self-deprecating tone: e.g., 'Sato-san, gomen nasai. I realize my words were not appropriate. I will be more careful in the future.' This better reflects *tatemae* and humility.",
+          "Include a brief mention of *kotoba no chikara* (the power of words) to reinforce why language choice matters deeply in Japanese communication."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just started a new job at a mid-sized tech company in Tokyo, and my team lead, Mr. Sato, is 58 and very respected. During our first meeting, he said, 'Call me Sato, no need for formalities.' Should I use his first name now?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even if Mr. Sato invited informality, it’s still wise to proceed with caution. In Tokyo’s professional culture, such an invitation is often a gesture of goodwill, but it doesn’t automatically grant permission to use first names—especially not in written communication or formal settings. Continue using 'Sato-san' unless he explicitly encourages a more casual tone over time. This shows respect and awareness of hierarchy, which is valued even in modern workplaces."
+            },
+            {
+              "role": "user",
+              "content": "I see. But I’ve noticed younger colleagues in our team use first names with each other—even with Mr. Sato. Should I follow suit to fit in?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common point of confusion. While younger employees may use first names among peers, this is typically limited to those of similar age, seniority, and informal relationship—often after long-standing trust is built. Mr. Sato may be more relaxed, but he’s still a senior figure. Using his first name without clear, repeated encouragement could still be seen as disrespectful. It’s better to wait for a clear signal—like him calling you by your first name in a relaxed setting—before making that shift."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about during after-work drinks? I’ve heard those are more casual. Can I use his first name then?"
+            },
+            {
+              "role": "assistant",
+              "content": "After-work drinks (*nomikai*) are indeed more relaxed, but formality still plays a role. Even in these settings, it’s best to maintain 'Sato-san' unless he explicitly invites you to use his first name—especially if you’re the newest member. In Japanese culture, even temporary informality must be earned. A bow, polite speech, and respectful tone go a long way in building trust. Once he consistently uses your first name in casual conversation, then it may be appropriate to reciprocate."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll keep using 'Sato-san' for now. I just want to make sure I don’t accidentally cause offense."
+            },
+            {
+              "role": "assistant",
+              "content": "Your awareness is already a sign of strong cultural sensitivity. In Japan, the effort to get it right—through restraint, respect, and attention to context—is often more valued than perfection. By choosing formality over casualness, you’re demonstrating maturity and care for harmony (*wa*). That’s what truly builds trust over time."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Formality in professional settings is maintained even when invited to be informal",
+          "Use of honorifics like '-san' is preserved unless explicitly invited otherwise",
+          "Informality in nomikai (after-work drinks) is contextually limited and earned",
+          "Hierarchy and respect are prioritized over perceived modernity or peer pressure",
+          "Younger employees may use first names only among peers with established trust",
+          "Respect for seniority and gradual relationship-building is emphasized",
+          "The concept of 'earned informality' aligns with TPO (Time, Place, Occasion) and *wa* (harmony)",
+          "The importance of non-verbal cues and subtle signals in social dynamics is acknowledged"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing Tokyo as uniformly formal—while accurate for the context, it slightly downplays regional variation (e.g., Osaka’s more relaxed norms) that could be noted as a contrast in a broader training set",
+          "No explicit mention of the role of *tatemae* (social face) in maintaining formality as a strategy for harmony, though it is implicitly reflected in the emphasis on restraint"
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response acknowledging regional differences (e.g., 'While Tokyo tends to be more reserved, in Osaka or other Kansai regions, such invitations might carry more weight'), to enhance nuance without undermining the core message",
+          "Include a subtle reference to *tatemae* in the final response—e.g., 'Maintaining formality is not just respect, but also a way of preserving social harmony and avoiding unintended offense'—to deepen cultural depth",
+          "Consider adding a follow-up example where a junior employee misuses informality, leading to subtle tension, to reinforce the consequences of misjudging context"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just started a new job at a mid-sized tech company in Tokyo, and my team leader, Mr. Tanaka, is 52. We had our first meeting today. I’m unsure how to address him in emails and during meetings. Should I use 'Tanaka-san' or can I use his first name since it’s a startup?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to consider this carefully. In most Japanese workplaces—even in tech startups—using 'Tanaka-san' is the appropriate and respectful choice, especially with someone of his seniority. First names are rarely used unless explicitly invited, and even then, only among peers of equal rank and long-standing familiarity. Since you're new, it’s best to maintain formality until he signals otherwise. Using 'Tanaka-san' shows respect and aligns with the cultural value of *wa*—harmony through proper social conduct."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But I saw a few younger colleagues call him 'Tanaka' during a casual team chat on LINE. Does that mean it’s okay now?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common point of confusion. While younger employees may use first names informally in private chats, especially on platforms like LINE, this is typically limited to close peer groups with shared age, department, and trust. It’s not a sign of general workplace informality—it’s a signal of established rapport. As a new employee, following the same pattern would risk appearing presumptuous. Stick with 'Tanaka-san' in all professional communications until he invites you to be more casual. Even then, proceed with caution and observe how others interact."
+            },
+            {
+              "role": "user",
+              "content": "What about after-work drinks? I’ve heard those are more relaxed. Can I use his first name then?"
+            },
+            {
+              "role": "assistant",
+              "content": "After-work drinks (*nomikai*) are indeed more relaxed, but formality still plays a role. While conversation may become lighter, the use of honorifics like 'Tanaka-san' is typically maintained unless the team has a long-standing, flat hierarchy culture. Even then, it’s common for juniors to wait for the senior to drop the honorific first. If he says, 'Call me Tanaka,' then it’s acceptable—but only after he initiates it. Until then, 'Tanaka-san' is the safest and most respectful choice. Remember: informality is earned, not assumed."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of 'Tanaka-san' as the appropriate form of address for senior colleagues in professional settings",
+          "Informality as earned through trust and seniority, not assumed",
+          "Hierarchy and respect maintained even in casual settings like nomikai",
+          "Gen Z and younger employees using first names only within close peer groups",
+          "The importance of waiting for senior figures to initiate informality",
+          "Contextual variation between formal work environments and relaxed social settings",
+          "Tone and indirectness as markers of respect in Japanese communication"
+        ],
+        "issues": [
+          "Minor overgeneralization about 'most Japanese workplaces'—some startups in Tokyo do have flat hierarchies, but the example correctly acknowledges this is rare and context-dependent",
+          "Slight lack of mention of regional variation (e.g., Kansai vs. Kanto), though not critical given the Tokyo-specific context"
+        ],
+        "suggestions": [
+          "Include a brief note about regional differences (e.g., Kansai being more relaxed) to reflect generational and geographic nuance without undermining the core message",
+          "Add a sentence acknowledging that some companies may have internal norms that differ from general cultural expectations, emphasizing observation and contextual awareness",
+          "Consider referencing the concept of *tatemae* (social face) explicitly in the assistant’s response to deepen cultural grounding"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "raw": "```json\n{\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"I just started a new job at a mid-sized tech company in Tokyo, and my team leader, Mr. Tanaka, is 52. We’ve had two team meetings, and today he asked me to join him for a casual after-work drink. Should I use his first name, or keep calling him Tanaka-san?\"\n    }\n    ,\n    {\n      \"role\": \"assistant\",\n      \"content\": \"In this situation, it’s best to continue using ‘Tanaka-san’ for now. Even though the setting is informal, first-name use is not automatically granted just because you’re invited to a *nomikai*. In Tokyo’s corporate culture, especially at established firms, formality is maintained unless your superior explicitly invites you to use their first name—often only after several years of working together or during very close personal interactions. Using ‘Tanaka’ too soon could be seen as presumptuous or disrespectful, even if your intention is to be friendly.\"\n    }\n    ,\n    {\n      \"role\": \"user\",\n      \"content\": \"I see. But some of my younger colleagues in the same department seem to call him ‘Tanaka’ casually. Does that mean it’s okay now?\"\n    }\n    ,\n    {\n      \"role\": \"assistant\",\n      \"content\": \"That’s a good observation—but important to contextualize. The younger colleagues may have been hired around the same time and share a similar generational and cultural background, possibly from more startup-friendly environments. However, even in tech companies, formality is still the default unless explicitly relaxed. If they’re using his first name, it’s likely because Mr. Tanaka has signaled comfort with it—perhaps through his own language or behavior. But you should not assume this applies to you unless you’ve received a clear, direct invitation. It’s safer to wait for an explicit cue.\"\n    }\n    ,\n    {\n      \"role\": \"user\",\n      \"content\": \"Got it. So if I want to be respectful but still participate in the relaxed atmosphere, what’s the best way to speak and behave?\"\n    }\n    ,\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Excellent question. You can participate warmly while preserving respect:  \n- Continue using ‘Tanaka-san’ in speech.  \n- Use polite forms like ‘hajimemashite’ (nice to meet you) or ‘arigatou gozaimashita’ (thank you) even in casual settings.  \n- Bow slightly when greeting or thanking—about 15 degrees is appropriate.  \n- Avoid slang, emojis, or overly casual language in conversation.  \n- If others use first names, mirror their behavior only if you’re certain it’s the accepted norm in that group.  \n- Most importantly: observe how Mr. Tanaka speaks to others. If he uses ‘Tanaka-san’ with his peers, follow suit. If he uses first names, you may cautiously do the same—but only after he does it first.\"\n    }\n    ,\n    {\n      \"role\": \"user\",\n      \"content\": \"Thank you. I’ll keep using ‘Tanaka-san’ and watch how the group interacts. One last thing—should I bring a gift to the drinks?\"\n    }\n    ,\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Yes, bringing a small, thoughtful gift is a respectful gesture in Japanese *nomikai* culture. A modest item like a bottle of premium green tea, a set of local sweets, or a high-quality pen works well. Wrap it neatly, and present it with both hands while bowing slightly. Say something like, ‘This is a small token of my appreciation for your guidance.’ Avoid anything flashy or expensive—modesty is key. It’s not about the gift’s value, but the thought and respect behind it.\"\n    }\n  ]\n}\n```"
+        },
+        "cultural_elements": [
+          "Continue using ‘Tanaka-san’ in speech.  ",
+          "Use polite forms like ‘hajimemashite’ (nice to meet you) or ‘arigatou gozaimashita’ (thank you) even in casual settings.  ",
+          "Bow slightly when greeting or thanking—about 15 degrees is appropriate.  ",
+          "Avoid slang, emojis, or overly casual language in conversation.  ",
+          "If others use first names, mirror their behavior only if you’re certain it’s the accepted norm in that group.  ",
+          "Most importantly: observe how Mr. Tanaka speaks to others. If he uses ‘Tanaka-san’ with his peers, follow suit. If he uses first names, you may cautiously do the same—but only after he does it first.\""
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Formality in workplace interactions is maintained even in casual settings like *nomikai*",
+          "First-name usage is not automatic and requires explicit invitation from the superior",
+          "Observation of the superior’s behavior is key to determining appropriate informality",
+          "Use of honorifics like *-san* is appropriate and expected in professional contexts",
+          "Gift-giving with modesty and respect is a valued practice in *nomikai*",
+          "Bow depth (15 degrees) is culturally accurate for casual but respectful greetings",
+          "Avoidance of slang, emojis, and casual language in professional settings is correctly emphasized",
+          "Regional differences (Tokyo vs. Osaka) are acknowledged in context of generational behavior"
+        ],
+        "issues": [
+          "Minor omission of the fact that *nomikai* culture can vary significantly by company size and industry—some startups in Tokyo may have more relaxed norms, though this is not a critical error",
+          "The suggestion to 'mirror behavior only if certain it’s the accepted norm' could be slightly strengthened by emphasizing that even if others use first names, the junior employee should not initiate it without clear cues"
+        ],
+        "suggestions": [
+          "Add a brief note about the importance of *tatemae* (social face) in maintaining formality even when others appear casual—this reinforces the cultural logic behind cautious behavior",
+          "Clarify that while younger colleagues may use first names, it often reflects a shared generational and educational background (e.g., same university or startup culture), not a shift in hierarchy",
+          "Consider including a subtle mention of *kotodama* (the spiritual weight of words) to reinforce why language choice matters deeply in Japanese culture"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

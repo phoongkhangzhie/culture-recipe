@@ -1,0 +1,107 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Seating Etiquette for Guests and Hosts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Rules and customs governing where guests and hosts sit relative to each other in social settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s new apartment for Tết dinner for the first time. I don’t want to mess up the seating—should I just pick a spot when I walk in, or wait for them to direct me?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for them to guide you. Never choose your seat—especially not the one facing the entrance. If they’re younger or your cousin, they might say ‘Cậu ngồi đây đi’ or ‘Chị ngồi đây đi’—it’s a sign they’re welcoming you in. If they don’t say anything, just stand quietly by the side until invited."
+            },
+            {
+              "role": "user",
+              "content": "What if I’m not sure where to stand? Should I just hover near the door or sit on the edge of the couch?"
+            },
+            {
+              "role": "assistant",
+              "content": "Sitting on the edge of the couch is fine—especially if you’re younger or not yet invited. In both urban and traditional homes, the center or head seat is reserved for elders or honored guests. But even in modern apartments, the host might just nod or gesture subtly. Don’t rush—watch their cues."
+            },
+            {
+              "role": "user",
+              "content": "So if I’m invited to sit at the head of the table, does that mean I’m really close to the family?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—that’s a real sign of trust. Accept it with a quiet smile. Don’t ask questions. Wait for the elder or host to start eating, then follow. That’s how you show you’re present, not loud."
+            },
+            {
+              "role": "user",
+              "content": "What if I end up in the corner near the kitchen? I didn’t mean to, but I didn’t want to seem pushy."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s common for younger guests to sit there—especially if elders are present. No one minds, and it’s not seen as being excluded. The host might move you later if needed, but they’ll do it gently. Just stay calm and let them lead."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I just stay calm, let them lead, and watch what they do."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. You’ll know when it’s time. The host might glance at a seat or shift slightly—those little cues mean more than words. Even in younger homes, elders are still given priority. Avoid sitting directly in front of the altar, even if you’re unsure—it’s better to err on the side of caution. And keep your posture modest—no stretching out or pointing."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Host determines seating arrangement without guest input",
+          "Guests should not choose their own seats, especially the head or center seat",
+          "The seat facing the entrance is considered the position of honor",
+          "Invitation to sit is signaled through phrases like 'Cậu ngồi đây đi' or 'Chị ngồi đây đi'",
+          "Elders and honored guests are seated at the head of the table or in central positions",
+          "In modern homes, subtle cues (glances, gestures) are used to guide seating",
+          "Sitting in the corner near the kitchen is acceptable for younger guests and not a sign of exclusion",
+          "The host may gently reposition guests without explicit correction",
+          "Guests wait for elders to begin eating before starting",
+          "Posture should be modest; avoiding overt displays of comfort or dominance",
+          "Avoid sitting directly in front of the altar as a sign of respect"
+        ],
+        "issues": [
+          "Minor inconsistency in tone: the assistant occasionally uses slightly formal or explanatory language (e.g., 'It’s common for younger guests to sit there—especially if elders are present') that borders on didactic, though still within acceptable bounds for implicit cultural guidance.",
+          "The phrase 'even in younger homes, elders are still given priority' could be slightly misleading—while true in principle, younger hosts in urban settings may not always enforce strict hierarchy, and the example could better reflect this nuance."
+        ],
+        "suggestions": [
+          "Replace 'It’s common for younger guests to sit there—especially if elders are present' with a more natural phrasing like 'You’ll often see younger ones sit near the kitchen—no one thinks less of you for it.' This improves linguistic authenticity.",
+          "Add a brief mention of how urban younger hosts might use nonverbal cues (e.g., a nod toward a seat, shifting their own position) to signal invitation, reinforcing the idea that guidance is subtle and context-dependent.",
+          "Include a reference to the role of the host in ensuring the guest feels welcomed, even if they’re seated in a less prominent spot—this reinforces the cultural value of harmony over formality."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

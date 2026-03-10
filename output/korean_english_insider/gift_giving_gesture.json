@@ -1,0 +1,216 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Handing Gifts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The physical and ceremonial manner in which gifts are presented, including which hand to use and whether to bow",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my boss’s house for Lunar New Year. He’s in his late 50s and has been really supportive. I want to bring a small gift—what’s the right way to do it? Should I just hand it over when I get there?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wrap it neatly—premium green tea in a red-and-gold box works perfectly. Present it with both hands, right hand on top, palms up, at chest level. Bow about 20 degrees—a moderate, respectful gesture. Don’t push it into his hands; let him take it naturally."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And when he takes it, should I say anything? Or just stand there?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for him to accept it with both hands, then say ‘감사합니다’ quietly and bow slightly. Don’t open or comment on it then—just let him take it in. He’ll open it later, probably in private. If he says ‘이렇게 좋은 선물을 주셔서 감사합니다,’ just smile and say ‘아니요, 제가 받을 만큼의 값이 아니에요’—it’s a quiet way of showing humility."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I was thinking of bringing a bottle of soju, but I heard that’s not good for formal gifts. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Soju is usually reserved for casual gatherings with peers—this is a more formal occasion, so something like tea or a fruit basket would be more fitting. It keeps the tone respectful and focused on gratitude, not celebration."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll go with the tea. One last thing—should I use my left hand if I’m holding something else, like my bag?"
+            },
+            {
+              "role": "assistant",
+              "content": "Never use your left hand for the gift—ever. Even if you’re carrying something, switch the bag to your right side before you present. The left hand is for private things, not shared moments like this."
+            },
+            {
+              "role": "user",
+              "content": "I’ll make sure to include a note with my name on the tea box. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a handwritten note with your name is thoughtful. Add a simple greeting like ‘새해 복 많이 받으세요’—it’s warm, respectful, and just right."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Gifts should be presented with both hands",
+          "Right hand preferred for giving, palms up, at chest level",
+          "Slight bow (15–30 degrees) during exchange",
+          "Avoid using left hand for gift presentation",
+          "Do not push gift into recipient’s hands",
+          "Receiving gift with both hands and expressing gratitude with '감사합니다'",
+          "Avoid opening or commenting on gift immediately",
+          "Use of red and gold wrapping for auspiciousness",
+          "Preference for tea or fruit baskets over soju in formal settings",
+          "Handwritten note with name and simple greeting like '새해 복 많이 받으세요'",
+          "Use of humble language like '아니요, 제가 받을 만큼의 값이 아니에요' in response"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant’s final response: 'It keeps the tone respectful and focused on gratitude, not celebration'—while accurate, this slightly oversimplifies the cultural nuance. Soju can be appropriate in some formal contexts (e.g., with colleagues or in certain family settings), though not ideal for a boss in a strictly hierarchical context. However, this is a minor point and does not undermine overall accuracy.",
+          "The assistant uses English to explain Korean expressions (e.g., 'it’s a quiet way of showing humility')—this is acceptable in training data for clarity, but ideally, the assistant would model native-level fluency by embedding the cultural meaning naturally without translation."
+        ],
+        "suggestions": [
+          "Replace the explanatory phrase 'it’s a quiet way of showing humility' with a more natural, embedded cultural reference—e.g., 'That’s the expected response; it shows you’re not taking credit for the honor.'",
+          "Consider adding a brief mention of gift card etiquette (e.g., writing the name in ink, not pencil) to further enrich the cultural depth.",
+          "Ensure the assistant occasionally uses culturally appropriate pauses or indirectness in tone (e.g., softening advice with 'I’d suggest…' or 'Many people prefer…') to mirror natural Korean communication style, rather than direct instruction."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my boss’s house for Lunar New Year. He’s been really kind to me this year, so I want to bring a small gift. What should I keep in mind? I don’t want to mess up the etiquette."
+            },
+            {
+              "role": "assistant",
+              "content": "Wrap it neatly—red or gold paper is best. Avoid white, black, or green. A simple tea set, a box of *yakgwa*, or even a good gift card in a nice envelope works well. Just keep it thoughtful, not flashy."
+            },
+            {
+              "role": "user",
+              "content": "Got it. How should I actually hand it over? I’ve heard you use both hands… is that right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—both hands, palms up. Right hand leading, left supporting. Offer it at chest level, not too high or low. Don’t push it into their hands—let them take it gently."
+            },
+            {
+              "role": "user",
+              "content": "Should I bow? How deep?"
+            },
+            {
+              "role": "assistant",
+              "content": "A slight bow—15 to 30 degrees—is perfect. Synchronize it with the handover. If your boss is older or senior, a touch deeper shows extra respect, but keep it natural—no need to overdo it."
+            },
+            {
+              "role": "user",
+              "content": "And if I get a gift back? I’ve been given things before but never knew how to respond."
+            },
+            {
+              "role": "assistant",
+              "content": "Accept with both hands, bow slightly, and say ‘Gamsahamnida.’ You can pause a beat and say something like, ‘This is too generous of you,’ or just ‘I’m truly touched.’ No need to say ‘I’m not worthy’—that’s too dramatic. Just show humility with your tone and posture."
+            },
+            {
+              "role": "user",
+              "content": "What about a gift card? Is that okay for Lunar New Year?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s acceptable, especially if it’s practical, but in formal Lunar New Year settings, people often prefer physical gifts—something that carries more personal thought. A gift card is seen as convenient, but not quite as warm. If you go that route, make sure it’s in a nice envelope, wrapped well, and include a handwritten note. The gesture speaks louder than the item itself."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve noticed sometimes people hesitate to accept gifts, even say no at first—like they’re being humble. Is that real?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—absolutely. It’s common for the recipient to politely decline at first, saying things like ‘I can’t accept this’ or ‘You didn’t have to.’ They’ll say it with a smile, but it’s not really a refusal. It’s part of the ritual—showing humility. Just smile, say it’s a small token, and offer it again gently. Then they’ll accept with a bow and a quiet ‘Gamsahamnida.’"
+            },
+            {
+              "role": "user",
+              "content": "Thanks—I’ll make sure to use both hands, bow properly, and keep the wrapping simple. I really appreciate the guidance."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re welcome. It’s not about the price—it’s about the heart. Doing it right shows you care, and that means everything."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Gifts are always presented with both hands, palms up, at chest level",
+          "The right hand leads, but both hands are used to show sincerity and humility",
+          "Bowing (15–30 degrees) is synchronized with the gift exchange",
+          "Red and gold wrapping paper is preferred; white, black, and green are avoided",
+          "Gift cards are practical but less personal in formal Lunar New Year contexts",
+          "Handwritten notes on gift cards add cultural warmth and intention",
+          "Recipients often decline gifts initially as a gesture of humility",
+          "The recipient’s polite refusal is not genuine—re-offering the gift gently is expected",
+          "The gesture speaks louder than the item itself",
+          "Avoid pushing the gift into the recipient’s hands—let them take it"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Gifts should be wrapped in red or gold paper, avoiding white, black, or green",
+          "Gifts should be presented with both hands, palms up, at chest level",
+          "The right hand leads, with the left hand supporting",
+          "A slight bow (15–30 degrees) is appropriate during gift exchange",
+          "Deeper bows are used for elders or superiors, but should remain natural",
+          "Gifts should be accepted with both hands and accompanied by 'Gamsahamnida'",
+          "Polite refusal and humility are culturally expected in gift exchanges",
+          "Gift cards are acceptable but less preferred than physical, thoughtful gifts in formal Lunar New Year contexts",
+          "Handwritten notes and presentation quality convey sincerity more than monetary value"
+        ],
+        "issues": [
+          "The assistant’s response to the gift card question could be slightly more nuanced—while it acknowledges the preference for physical gifts, it could emphasize that gift cards are still acceptable if well-presented and accompanied by a personal note, which is a common and culturally valid practice in modern Korea.",
+          "The phrase 'no need to say I’m not worthy' is a translation of a common Western cultural interpretation; while accurate in spirit, it may not reflect the exact Korean rhetorical style. A more culturally precise phrasing would be 'Avoid excessive self-deprecation—modesty is shown through tone and posture, not words.'"
+        ],
+        "suggestions": [
+          "In the gift card response, include a brief note on how modern Korean professionals often use gift cards for convenience, especially in corporate settings, but always with elegant packaging and a handwritten card to maintain cultural respect.",
+          "Refine the humility explanation to reflect the Korean concept of 'jeong' (emotional connection) and 'gong-hap' (harmony), emphasizing that the ritual is about mutual respect and emotional resonance rather than literal self-deprecation.",
+          "Add a subtle mention of the gift card’s denomination—avoiding amounts that are unlucky (e.g., 4, 7, or 9, depending on context), which is a known nuance in Korean gift-giving."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 19,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

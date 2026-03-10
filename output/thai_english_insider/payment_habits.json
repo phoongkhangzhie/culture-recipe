@@ -1,0 +1,399 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Payment Habits",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Daily Life and Travel",
+    "description": "Preferred payment methods in everyday transactions, including attitudes toward cash, card, and mobile payment",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m at the market near Wat Pho and want to buy some mango sticky rice. The vendor only has a small plastic card reader on the counter, but I don’t have a card with me. Should I just pay in cash? It’s 85 baht."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, cash is definitely the way to go here. Most vendors at this market don’t accept cards unless they’re set up for it—especially for small amounts like 85 baht. Just hand over the exact change or round up to 90 if you’re okay with it. They’ll appreciate the simplicity, and you won’t have to worry about a terminal not working."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ve got a 100-baht note—should I give that and ask for change, or is it better to pay exact? I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "Giving the 100-baht note is perfectly fine, especially if you’re in a hurry. But if you want to be extra polite, pay exact—85 baht—using a 50, a 20, a 10, and a 5. The vendor will likely return the change with a soft smile and say 'sawasdee krap' while bowing slightly. It’s a small thing, but it shows respect."
+            },
+            {
+              "role": "user",
+              "content": "I see. I was thinking about using PromptPay instead—my phone’s ready. Would that work here? I don’t want to carry too much cash."
+            },
+            {
+              "role": "assistant",
+              "content": "You can try PromptPay, but only if the vendor has a QR code posted or a scanner visible. Some do, especially if they’re used to tourists or younger customers. But most local vendors prefer cash for quick, informal transactions. If you’re unsure, just ask politely: 'ใช้ PromptPay ได้ไหมครับ/ค่ะ?' — they’ll let you know right away."
+            },
+            {
+              "role": "user",
+              "content": "Ah, that makes sense. I’ll go with cash and pay exact. Thanks for helping me not make a mistake—this is my first time at this market."
+            },
+            {
+              "role": "assistant",
+              "content": "No problem at all. You’re doing great—just being mindful of how things work here shows you’re respectful. Next time, you might even see someone use a QR code to pay for a 30-baht drink at the corner store. That’s the new normal, but cash still rules the streets."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of specific Thai locations (Wat Pho market)",
+          "Preference for exact change in small transactions",
+          "Cash as dominant method in informal, local markets",
+          "Limited card acceptance due to infrastructure and fees",
+          "Cultural expectation of respectful interaction during transactions (e.g., bowing, 'sawasdee krap')",
+          "Context-sensitive use of mobile payment (PromptPay) based on vendor readiness",
+          "Natural integration of Thai language phrases ('ใช้ PromptPay ได้ไหมครับ/ค่ะ?')",
+          "Social awareness of age and setting in payment choices",
+          "Implicit understanding of transaction norms without explicit cultural explanation",
+          "Pragmatic coexistence of cash and digital payment methods based on context"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Cash remains dominant in local markets and small vendors, especially for transactions under 100 baht",
+          "Vendors often prefer exact change as a sign of respect and fairness",
+          "The practice of returning change with a polite gesture (e.g., slight bow, 'sawasdee krap')",
+          "Card readers are uncommon in informal settings; vendors may not accept cards unless equipped",
+          "PromptPay is used but only when vendors have QR codes or scanners; not universal in local markets",
+          "Mobile payments are common in convenience stores and for small purchases, but cash is still preferred for informal transactions",
+          "Thai consumers balance digital convenience with traditional values like respect and harmony in transactions"
+        ],
+        "issues": [
+          "Minor: The assistant’s use of 'sawasdee krap' in the response is correct, but the context of a vendor bowing while returning change is slightly idealized—while common, not all vendors perform this gesture, and it's more typical in slightly more formal or tourist-oriented settings. However, this is a nuance that doesn't undermine accuracy.",
+          "The assistant correctly avoids explaining cultural context to an outsider—no 'as a Thai person...' or educational tone—so this is not a violation of implicit cultural context."
+        ],
+        "suggestions": [
+          "Consider adding a subtle mention of the social expectation that overpayment (e.g., giving 100 baht for 85) is acceptable in fast-paced or informal settings, especially for younger vendors or tourists, to reflect regional and generational variation.",
+          "To further deepen authenticity, the assistant could occasionally reference a specific local practice like 'rounding up to avoid small change' as a shared understanding, not just a suggestion—e.g., 'Many people here round up to 90, it’s common practice.'",
+          "In future examples, include a scenario where a customer uses PromptPay for a small purchase at a convenience store to contrast with the market setting, reinforcing the shift in digital adoption across contexts."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m at the market near Wat Pho and want to buy some mango sticky rice. The vendor only has a small plastic tray with a QR code on it, but I don’t have cash on me. Should I just try scanning it?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s okay to try the QR code, especially if it’s a PromptPay-enabled one—many small vendors now use it for quick, clean transactions. But if you’re unsure, you can ask politely: 'ขอใช้บัตรได้ไหมครับ/ค่ะ?' (Can I pay with card?)—some still prefer cash, especially for small amounts. If they say no, just keep a few small bills handy for next time. It’s common to carry 20 or 50 baht notes for these kinds of stalls."
+            },
+            {
+              "role": "user",
+              "content": "Ah, good point. I just noticed the vendor handed me back 10 baht change after I paid 50 via QR. She bowed slightly and said 'สวัสดีครับ'—was that normal?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s very typical. Even for small changes, Thais often return exact change with a small bow or a polite greeting—especially if they’re serving you directly. It’s a quiet way of showing respect and maintaining harmony. You don’t need to return the gesture, but acknowledging it with a smile or a soft 'ขอบคุณครับ/ค่ะ' is appreciated."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been using LINE Pay for my coffee and snacks at 7-Eleven, but I’m not sure if it’s okay to use it for street food. Some vendors seem to hesitate."
+            },
+            {
+              "role": "assistant",
+              "content": "Good question. For small, informal purchases like street food, most people still prefer cash—even if the vendor has a QR reader. It’s not just about the tech; it’s about the rhythm of the moment. Paying with cash feels more personal, and the exchange of exact change builds a small connection. That said, if the vendor has a visible PromptPay or TrueMoney QR code, it’s perfectly fine. Just keep a few baht in your pocket for those who still prefer cash."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of PromptPay and mobile wallets like LINE Pay for small, informal transactions",
+          "Preference for cash in street food and market settings, especially for small amounts",
+          "Cultural expectation of exact change and respectful exchange (e.g., bowing, polite phrases)",
+          "Social context shaping payment method choice (formality, vendor type, age)",
+          "Implicit trust in digital infrastructure without full replacement of traditional practices",
+          "Natural integration of Thai politeness norms (e.g., 'สวัสดีครับ', 'ขอบคุณครับ/ค่ะ') in transactional interactions",
+          "Coexistence of digital and cash methods based on situational appropriateness"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Cash remains dominant in small, informal transactions like street food and markets",
+          "Many vendors prefer exact change and return it with a bow or polite greeting",
+          "PromptPay and mobile wallets are widely used, especially in urban areas",
+          "Vendors may hesitate to accept digital payments for very small amounts due to cultural preference for cash",
+          "Carrying small denominations (20, 50 baht) is a common practical habit",
+          "Polite speech and subtle gestures (e.g., 'สวัสดีครับ', slight bow) are part of transactional etiquette",
+          "The social value of harmony and respect is embedded in small transactional interactions"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant uses 'ขอใช้บัตรได้ไหมครับ/ค่ะ?' (Can I pay with card?) in a context where the vendor only has a QR code—this could imply card acceptance, but the user is already in a digital payment context. A more natural phrasing would be 'ขอใช้ PromptPay ได้ไหมครับ/ค่ะ?' to align with the actual payment method.",
+          "The phrase 'It’s common to carry 20 or 50 baht notes for these kinds of stalls' is accurate but could be strengthened by mentioning that 10-baht notes are also common for change, reflecting the frequency of small transactions."
+        ],
+        "suggestions": [
+          "Replace 'ขอใช้บัตรได้ไหมครับ/ค่ะ?' with 'ขอใช้ PromptPay ได้ไหมครับ/ค่ะ?' when the context is clearly QR-based to avoid confusion about payment method compatibility.",
+          "Add a brief mention of how 10-baht notes are frequently used in change, reinforcing the cultural norm around exact change.",
+          "Consider including a subtle reference to the informal social rhythm of cash exchanges—e.g., 'The pause to count change feels like a moment of connection, not just a transaction.'—to deepen the cultural nuance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m at the market near Wat Pho and want to buy some mango sticky rice. The vendor only has a small plastic tray with a QR code sticker on it. Should I just scan it, or should I have cash ready?"
+            },
+            {
+              "role": "assistant",
+              "content": "Scan the QR code—it’s fine, especially if you’re paying with PromptPay. Most vendors here use it now, even for small things like this. Just make sure your balance is clear so it goes through fast."
+            },
+            {
+              "role": "user",
+              "content": "Good, I did. But now I’m not sure—should I pay exactly 65 baht, or can I round up to 70? I don’t want to make things awkward."
+            },
+            {
+              "role": "assistant",
+              "content": "Pay exactly 65 baht. The vendor will likely hand back 5 baht in change, and they’ll say 'sawasdee krap' with a little bow. That’s how it’s done—exact change shows respect. Rounding up feels too casual for this kind of transaction."
+            },
+            {
+              "role": "user",
+              "content": "Right, I remember now. I had a friend once who paid 70 and the vendor looked surprised. I think they even said ‘thank you’ a bit too politely. I didn’t realize it was such a small thing."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. It’s not about the money—it’s about harmony. When you pay precisely, it’s like saying, ‘I see you, I respect your work.’ That small moment matters more than the baht itself."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ll keep my 10-baht and 5-baht coins handy next time. I always forget, even though I use PromptPay for bills and taxi rides."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s the thing—digital works for formal or fast things, but for street food, cash or exact digital payment keeps the ritual alive. It’s a quiet way of staying connected to the place."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Cash remains dominant in local markets and street food stalls",
+          "QR code payments via PromptPay are widely accepted even for small purchases",
+          "Exact change is culturally preferred and seen as respectful",
+          "Vendors often return change with a polite greeting like 'sawasdee krap' and a slight bow",
+          "Rounding up is perceived as casual and can feel awkward in traditional settings",
+          "Digital payments are used for formal or fast transactions, but cash maintains ritual significance",
+          "The value of interpersonal harmony in transactions is prioritized over convenience"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all vendors near Wat Pho accept QR codes, which may not hold true in all cases—some older or rural vendors may still prefer cash only.",
+          "The phrase 'sawasdee krap' is correctly used but could be more contextually grounded; in a real transaction, it's more likely to be used by the vendor when handing change, not necessarily as part of the exchange itself."
+        ],
+        "suggestions": [
+          "Add subtle variation in vendor behavior—e.g., a brief hesitation or a glance at the phone before confirming a QR scan—to reflect real-world digital adoption gaps.",
+          "Include a brief mention of the 'rounding up' social cue in a different context (e.g., a taxi ride) to contrast with the market setting, reinforcing the cultural nuance without overloading the dialogue.",
+          "Use more natural Thai expressions embedded in English (e.g., 'khun nai' or 'khun' for 'you' in polite speech) to deepen linguistic authenticity, though this should be done sparingly to maintain readability."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m at the market near Wat Pho and want to buy some mango sticky rice. The vendor is just handing me the food, but I don’t have exact change for 65 baht. Should I just give 70 and let her keep the extra?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can give 70, but she’ll likely return 5 baht with a small bow and say 'sawasdee krap'—it’s polite to give exact change if you can, but rounding up is common here. Just don’t overpay too much; it feels awkward."
+            },
+            {
+              "role": "user",
+              "content": "Ah, okay. I noticed she didn’t have a card machine, so I couldn’t use my bank card. Is that normal for places like this?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, most street vendors don’t accept cards—too expensive for small amounts. Even if they did, they’d probably only take it for 100 baht or more. Cash is still king here, especially under 100."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been trying to use PromptPay to pay my friend back for lunch, but he said he’d rather take cash. Why is that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Some people still prefer cash for small, informal things—like splitting a meal or a quick tip—because it feels more personal. PromptPay is great for bigger transfers or when you need speed, but for daily small exchanges, cash keeps things simple and respectful."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll keep some small bills in my wallet. Should I use my phone to scan a QR code at the 7-Eleven instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect choice. At 7-Eleven or any convenience store, QR code payments are fast and common—especially for 30 to 50 baht drinks. You’ll see many people do it, and it’s totally normal. Just make sure your phone’s ready."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Cash remains dominant in street markets and small vendors",
+          "Rounding up to avoid small change is common practice",
+          "Vendors often return change with a bow and polite greeting ('sawasdee krap')",
+          "Card acceptance is limited in small, informal settings due to fees and low transaction volume",
+          "Cash preferred for transactions under 100 baht",
+          "Mobile payments like PromptPay are popular for speed and convenience, especially for larger or formal transfers",
+          "Preference for cash in small, informal exchanges (e.g., splitting lunch) reflects cultural values of simplicity and personal connection",
+          "QR code payments are widely accepted and common in convenience stores like 7-Eleven"
+        ],
+        "issues": [
+          "Minor: The assistant’s response to the 7-Eleven question could slightly overgeneralize by implying QR code use is 'perfect' without acknowledging that some older customers or cash-only counters still exist, though this is a very minor point.",
+          "No explicit cultural identity performance by user (e.g., 'I’m Thai')—excellent adherence to implicit context"
+        ],
+        "suggestions": [
+          "Add a subtle nuance in the assistant’s response about PromptPay: mention that while some prefer cash, many younger people use it even for small amounts—this reinforces the generational shift without overgeneralizing.",
+          "Consider including a brief mention of the social expectation around 'fairness' in exact change, even if not strictly enforced, to deepen the cultural layer on respect and harmony.",
+          "Ensure future examples include a mix of urban and rural contexts to reflect regional variation in payment habits"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m at the market near Wat Pho and want to buy some mango sticky rice. The vendor only has a little plastic card reader, but I don’t have cash on me. Should I just try the card? Or should I go to the convenience store first to get change?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to wait and get cash—most vendors here only accept cards if they’re set up for it, and even then, they usually don’t take small amounts. That little reader might not even work for under 100 baht. Plus, the vendor’s already holding the basket for you—no need to make it awkward. Just walk over to the 7-Eleven across the street and grab a 50-baht note. They’ll give you change for the 100, and you can pay exact change like usual."
+            },
+            {
+              "role": "user",
+              "content": "Ah right, I forgot—she’ll probably want exact change. I don’t want to overpay and make her go through the trouble of counting back. But what if I just use PromptPay instead? I’ve got it on my phone."
+            },
+            {
+              "role": "assistant",
+              "content": "You can, but only if she has a QR code ready. Most street vendors don’t have one unless they’re part of a small digital group. If she does, it’s fine—PromptPay’s quick and clean. But if she’s just holding the basket, it’s safer to go cash. She’ll appreciate the exact amount, and you’ll both avoid the awkward pause while she tries to figure out the phone payment. Plus, it’s just how things are done here—respect for the moment, for the person."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ll go get cash. And I’ll make sure to give her 65 baht exactly—no rounding up. I don’t want to be that person who pays 70 and makes her search for five baht in change."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s the right way. When you hand over the money, a small smile and a soft ‘sawasdee krap’ goes a long way. She’ll remember you not just for the payment, but for the respect."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of specific Thai locations (Wat Pho, 7-Eleven near a temple)",
+          "Preference for exact change in small transactions",
+          "Cultural discomfort with overpayment and the social burden it creates",
+          "Limited card acceptance in informal street vendor settings",
+          "Reliance on cash for transactions under 100 baht",
+          "Trust in PromptPay but awareness of its limited use among street vendors",
+          "Social etiquette in payment (e.g., 'sawasdee krap', smiling, respectful tone)",
+          "Implicit understanding of social harmony in transactions",
+          "Pragmatic, context-sensitive choice of payment method based on vendor type and setting",
+          "Cultural value of minimizing inconvenience to others"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Cash remains dominant in street markets and small vendors, especially for small transactions",
+          "Vendors often refuse card payments unless equipped with proper terminals",
+          "Transactions under 100 baht are typically cash-only in informal settings",
+          "Preference for exact change reflects cultural values of fairness and respect",
+          "Use of PromptPay is growing but not universally available among street vendors",
+          "QR code payments require vendor readiness; not all vendors have them set up",
+          "Social etiquette includes polite gestures like 'sawasdee krap' and small smiles during transactions",
+          "Avoiding overpayment to prevent inconvenience to the vendor is a culturally recognized norm"
+        ],
+        "issues": [
+          "Minor: The phrase 'no need to make it awkward' slightly overgeneralizes emotional tone; while accurate in spirit, it's a slightly Westernized way of framing social discomfort. A more authentic phrasing might emphasize harmony or respect directly.",
+          "Slight risk of reinforcing the 'digital vs. cash' binary—while accurate, it could benefit from acknowledging that some vendors are increasingly adopting digital tools, even if not yet mainstream."
+        ],
+        "suggestions": [
+          "Replace 'make it awkward' with a more culturally grounded phrase like 'to keep the moment smooth and respectful' to better reflect Thai values of harmony (wai kham) without Western framing.",
+          "Add a brief mention that some vendors in tourist areas are starting to accept mobile payments, to reflect ongoing change without undermining the core cultural norm.",
+          "Consider including a subtle reference to the vendor’s possible hesitation if the user tries to use a phone payment—e.g., 'She might look a little unsure, not because she doesn’t know how, but because it’s not how things usually happen here.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

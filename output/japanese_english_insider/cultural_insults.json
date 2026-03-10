@@ -1,0 +1,207 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Cultural Insults",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "Words, gestures, and behaviors that are considered deeply insulting or offensive within a specific cultural context",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a business meeting with Mr. Tanaka from the Kyoto branch tomorrow. I’ve been asked to bring a small gift for the host. What should I avoid? I don’t want to make a mistake."
+            },
+            {
+              "role": "assistant",
+              "content": "Avoid anything sharp—like pens or scissors—and never give clocks, white flowers, or anything in white or black. Those are linked to funerals. A neatly wrapped box of matcha sweets or a modest set of tea utensils works well. Present it with both hands and bow slightly. The wrapping matters—no tape showing, no plain paper."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the meeting itself? I’ve been told to be respectful, but I’m not sure how to show that without overdoing it. I don’t want to seem stiff."
+            },
+            {
+              "role": "assistant",
+              "content": "Balance is key. When you enter, wait for Mr. Tanaka to acknowledge you first—don’t speak until he does. Use ‘Tanaka-san’ always, never his first name. Keep your tone calm and moderate; loud or fast speech feels aggressive. And when he offers tea, accept it with both hands—even if you only sip. Refusing outright would be seen as rejecting the gesture."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I was also told not to point with my finger. Is there a better way?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—use your open hand, palm up, to gesture. If you’re pointing to a document or screen, a pen is fine. But never your finger. Even a slight nod toward the item works. And in quiet settings, avoid sudden movements or loud sounds—silence shows respect."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I accidentally drop my business card? I don’t want to make a scene."
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t pick it up right away. Wait for him to notice, then say ‘Sumimasen’ quietly and bow slightly. He’ll likely pick it up for you. And remember—always present your card with both hands, face up. Handing it one-handed feels dismissive, even by accident."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’m also wondering—how should I hold myself during the meeting? I want to show respect without seeming tense."
+            },
+            {
+              "role": "assistant",
+              "content": "Sit upright but not rigidly—keep your posture calm and composed. Avoid direct eye contact with Mr. Tanaka, especially when speaking. A slight downward gaze shows humility and attentiveness. It’s not about avoiding him—it’s about showing you’re listening. And if you need to glance up, do so briefly and softly. That’s how respect is quietly expressed."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Avoiding direct eye contact with superiors or elders as a sign of humility and respect",
+          "Using open-hand gestures instead of finger-pointing",
+          "Presenting business cards with both hands and face-up",
+          "Avoiding loud noises, sudden movements, or abrupt actions",
+          "Giving gifts wrapped neatly, avoiding clocks, white flowers, or sharp objects",
+          "Accepting tea or offerings with both hands, even for a small sip",
+          "Using honorifics like -san and avoiding first names without permission",
+          "Maintaining a calm, moderate tone and pace in speech",
+          "Waiting for others to initiate or acknowledge before speaking",
+          "Allowing silence as a natural part of respectful interaction"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Avoiding direct eye contact as a sign of respect",
+          "Using open hand gesture instead of finger pointing",
+          "Presenting gifts with both hands and proper wrapping",
+          "Avoiding sharp objects, clocks, and white/black colors in gifts",
+          "Using honorifics like '-san' and not first names",
+          "Accepting tea with both hands as a sign of respect",
+          "Not picking up dropped items immediately; waiting for acknowledgment",
+          "Maintaining calm, moderate tone and avoiding loud noises",
+          "Sitting upright but not rigidly, with slight downward gaze to show humility"
+        ],
+        "issues": [
+          "Minor: The phrase 'It’s not about avoiding him—it’s about showing you’re listening' could be slightly misleading. While indirect gaze is respectful, completely avoiding eye contact might be misinterpreted as disinterest. A more precise phrasing would clarify that brief, soft glances are acceptable and expected in context.",
+          "Slight overgeneralization: The assistant assumes Mr. Tanaka is a superior (using 'Tanaka-san' and waiting for acknowledgment), but doesn’t account for potential peer-level interactions. However, given the context of a Kyoto branch meeting, this is plausible and not a critical error."
+        ],
+        "suggestions": [
+          "Refine the eye contact explanation to emphasize that brief, soft glances are natural and expected—only prolonged or intense staring is problematic.",
+          "Add a subtle note about regional nuance: Kyoto is traditionally more formal than other regions, so the level of formality is appropriate here, but a brief mention of regional variation could enhance depth.",
+          "Consider including a non-verbal cue like a slight bow when speaking to reinforce respect without over-explaining."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting Mr. Tanaka-san from the Osaka office tomorrow. This is my first time, and I’m worried I might break the quiet during the meeting. How should I handle the business card exchange?"
+            },
+            {
+              "role": "assistant",
+              "content": "Present it with both hands, writing facing him. Receive his card the same way. Call him Mr. Tanaka-san, not just Tanaka. A small pause after the exchange is natural—don’t rush to fill it."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been told eye contact can be tricky. Should I look at his eyes, or is there a better spot?"
+            },
+            {
+              "role": "assistant",
+              "content": "Look at his neck or chin. A brief glance every few seconds is enough. Holding eye contact too long can seem confrontational, especially with someone senior."
+            },
+            {
+              "role": "user",
+              "content": "What about gifts? I’d like to bring something small—Osaka sweets, maybe? How should I present it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, regional sweets are perfect. Wrap them neatly and present with both hands. Say just, ‘This is a small token of my respect, Mr. Tanaka-san.’ No need to explain or apologize."
+            },
+            {
+              "role": "user",
+              "content": "I dropped my pen earlier today and it made a loud noise. I felt terrible—like I’d disrupted the moment. Is that really that serious?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even small sounds carry weight in a quiet space. Pick it up silently and keep going. The moment is already full of attention—don’t add noise to it."
+            },
+            {
+              "role": "user",
+              "content": "I’ll be careful. I just want to make sure I don’t do anything that makes the atmosphere feel off."
+            },
+            {
+              "role": "assistant",
+              "content": "Your calm presence will speak more than words. Just stay still, attentive, and respectful—those are the true signs of courtesy."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Presenting business cards with both hands and facing the recipient",
+          "Using honorifics such as -san when addressing seniors or superiors",
+          "Avoiding direct eye contact with superiors; instead, glancing at the neck or chin",
+          "Maintaining silence and stillness during interactions to preserve harmony",
+          "Minimizing noise and avoiding sudden movements that disrupt the quiet",
+          "Presenting gifts neatly with both hands and offering a brief, respectful phrase",
+          "Avoiding self-deprecation or over-explaining when minor mistakes occur",
+          "Using culturally appropriate gifts (e.g., regional sweets) and avoiding taboo items like clocks or white flowers"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Presenting business cards with both hands and facing the recipient",
+          "Using honorifics like '-san' appropriately",
+          "Avoiding prolonged eye contact, especially with seniors",
+          "Using the neck or chin as a gaze target during conversation",
+          "The importance of silence and minimal noise in formal settings",
+          "Neat wrapping and respectful presentation of gifts",
+          "The cultural significance of small, thoughtful gifts (e.g., regional sweets)",
+          "The sensitivity to loud noises disrupting harmony (wa)",
+          "The expectation of calm, composed presence over overt politeness"
+        ],
+        "issues": [
+          "The assistant’s final response ('Your calm presence will speak more than words...') is slightly generic and could benefit from a more culturally specific metaphor or behavioral cue (e.g., referencing 'reading the air' or 'mood of the room'), though it remains accurate.",
+          "The user’s concern about 'making the atmosphere feel off' is phrased in English cultural terms—while understandable, a more culturally embedded phrasing (e.g., 'I don’t want to create a sense of unease') would better reflect insider language. However, this is a minor stylistic issue, not a factual error."
+        ],
+        "suggestions": [
+          "In the final assistant response, incorporate a culturally resonant concept like 'reading the air' (空気を読む) or 'maintaining the mood' (雰囲気を保つ) to deepen authenticity.",
+          "Consider having the assistant subtly reinforce the idea of 'harmony' (wa) as an unspoken norm rather than a rule, to reflect how Japanese people internalize etiquette.",
+          "In future examples, include a brief moment where the user unintentionally violates a norm (e.g., dropping a pen with a loud clatter), and let the assistant respond with a non-verbal cue or silence—this would better demonstrate implicit cultural learning."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 3,
+    "examples_produced": 2
+  }
+}

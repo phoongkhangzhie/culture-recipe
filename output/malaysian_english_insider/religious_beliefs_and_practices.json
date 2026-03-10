@@ -1,0 +1,96 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Religious Beliefs and Practices",
+    "category": "Core Values and Social Structures > Values and Beliefs > Religion",
+    "description": "The role of religious belief systems in shaping individual identity, community life, moral frameworks, and daily behavior",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m helping plan the office celebration for Hari Raya this year. We’ve got a diverse team—Malay, Indian, Chinese, and colleagues who don’t observe religious practices. How do we make it inclusive without making anyone feel left out? Should we go halal-only?"
+            },
+            {
+              "role": "assistant",
+              "content": "Halal-certified food is a thoughtful choice—it respects dietary practices and makes everyone feel seen. Keep the focus on togetherness, not ritual. Serve classic dishes like ketupat, rendang, and lemang. It’s about sharing joy, not performing tradition."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about timing? Some of us are fasting during Ramadan, and prayer times shift daily. Should we adjust the schedule?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—start after Maghrib, around 7 PM or later. That’s when the fast ends, and most people are free. Avoid serving food during daylight hours in Ramadan. A simple note like ‘Celebration starts after sunset’ shows care without over-explaining."
+            },
+            {
+              "role": "user",
+              "content": "Good call. What about decorations? I was thinking red and green—safe, right? But I don’t want to overdo religious symbols."
+            },
+            {
+              "role": "assistant",
+              "content": "Red and green are perfect—classic for Hari Raya. Lanterns, floral garlands, or a simple 'Selamat Hari Raya' banner work well. Avoid religious displays like prayer mats or Quranic verses in shared spaces. If someone brings a personal item like a Quran for quiet reflection, it’s fine—but don’t set up anything just for the occasion."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I was also thinking of a small open house where people can say a greeting in their own language—like 'Selamat Hari Raya' or 'Happy Deepavali.' Would that feel okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a lovely idea. Some colleagues may choose to join a pre-iftar gathering or a shared meal after Maghrib as a gesture of solidarity, but the main iftar meal is typically private. For Deepavali, non-Hindu colleagues often participate in cultural aspects like visiting temples as guests or lighting a diya as a symbol of welcome—these are respectful observations, not personal rituals. The real spirit is *adab*—showing proper conduct with kindness. You could frame it as ‘a moment to share greetings and small tokens of goodwill’—not as ritual, but as connection. In places like Penang and Sabah, where interfaith traditions are deeply embedded, such gestures feel natural. A small plate of *kuih* on the side or a quiet corner with prayer mats if someone needs space—these subtle touches reflect lived experience without drawing attention. It’s about creating space where everyone feels seen, not performing culture."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Hari Raya celebration as a shared, inclusive office event with halal food as a sign of respect",
+          "Timing of celebrations after Maghrib to respect Ramadan fasting",
+          "Use of red and green as traditional Hari Raya colors without overemphasizing religious symbols",
+          "Avoidance of public religious displays like prayer mats or Quranic verses in shared spaces",
+          "Recognition of private nature of iftar meals and the importance of *adab* (proper conduct) and goodwill",
+          "Interfaith gestures such as lighting diyas or visiting temples as guests, especially in multicultural regions like Penang and Sabah",
+          "Subtle inclusion of space for personal religious practice (e.g., prayer mats in quiet corners)",
+          "Use of culturally appropriate terms like *kuih*, *Selamat Hari Raya*, and *iftar* without over-explanation"
+        ],
+        "issues": [
+          "The mention of 'a small open house where people can say a greeting in their own language' could risk framing interfaith participation as performative if not carefully contextualized—though the assistant’s response mitigates this well by focusing on goodwill rather than ritual.",
+          "The phrase 'non-Hindu colleagues often participate in cultural aspects like visiting temples as guests' could be slightly misleading if interpreted as a common expectation; participation varies widely and is not universal—best phrased as a possibility rather than norm."
+        ],
+        "suggestions": [
+          "Rephrase 'non-Hindu colleagues often participate...' to 'some non-Hindu colleagues may choose to participate...' to reflect diversity of practice without implying obligation.",
+          "Add a brief mention of *harmoni* (harmony) as a guiding principle in interfaith interactions to reinforce the cultural value underlying the advice.",
+          "Clarify that while halal food is inclusive, it's not the only way to show respect—some non-Muslims may also appreciate non-halal but culturally meaningful food, depending on the team’s dynamics."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

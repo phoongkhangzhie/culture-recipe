@@ -1,0 +1,96 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Eye Contact Norms",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Communication Style",
+    "description": "Cultural norms around the appropriateness, meaning, and expected duration of direct eye contact in social and professional contexts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a job interview at a local Thai company, and I’ve heard that eye contact is different here than in Western countries. I want to make a good impression, but I’m worried I might come across as rude or too bold if I look someone in the eye. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to consider this—many foreign professionals find Thai eye contact norms surprising at first. In Thailand, direct eye contact with someone older or in a higher position can seem assertive or disrespectful. During your interview, it’s best to keep your gaze slightly downward or to the side, especially when speaking. A soft, respectful glance is enough—there’s no need to stare or hold eye contact for long. Smiling gently while looking away often conveys warmth and attentiveness without overstepping."
+            },
+            {
+              "role": "user",
+              "content": "So I shouldn’t try to make eye contact even when answering questions? What if I look down too much—will they think I’m not confident or not paying attention?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common concern—and it’s natural to worry about appearing unconfident. Your care about making a good impression actually shows respect, which is highly valued in Thai culture. The key is balance: brief, natural glances are fine, especially when listening or responding. But avoid prolonged or intense eye contact. Looking slightly down shows humility and respect. In Thai culture, attentiveness is often signaled through calm composure, a soft tone, and subtle gestures like a slight nod or gentle smile. Even a leader might appear reserved in meetings not because they’re disengaged, but because they’re practicing restraint out of respect."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ve also heard about the *wai*—should I use that during the interview?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Using the *wai* at the beginning and end of the interview is a meaningful gesture that shows respect. When you greet the interviewer, bring your palms together at chest level, bow slightly, and keep your eyes gently lowered. Hold the *wai* for a moment—about one to two seconds—then release slowly, maintaining a calm demeanor. Even native Thai professionals use the *wai* in formal interactions, so your gesture will be seen as appropriate and thoughtful regardless of language ability. A moderate bow with a soft smile is always welcome."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—what if I’m speaking with a younger colleague during a team meeting? Can I look them in the eye then?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great question. Among peers, especially in younger, urban, or internationalized workplaces—like tech startups or multinational firms—eye contact norms can be more relaxed. Brief, fleeting glances are often acceptable, and some younger professionals may even use more direct eye contact, especially in casual or collaborative settings. Still, it’s best to keep it soft and brief—avoid staring or holding the gaze too long. In close-knit teams, a gentle smile or nod often speaks louder than eye contact. While norms may be more flexible in Bangkok or in multinational companies, in rural or traditional workplaces, the norm remains more reserved. So, even among peers, it’s still best to err on the side of subtlety and respect."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Avoidance of direct eye contact with elders or superiors as a sign of respect",
+          "Use of downward gaze or side glance to show humility in formal settings",
+          "Smiling while avoiding eye contact as a sign of politeness and warmth",
+          "The *wai* gesture as a culturally appropriate greeting with lowered eyes",
+          "Cultural distinction between hierarchical/deferential contexts and peer interactions",
+          "Nuanced variation in norms across urban, international, and traditional workplaces",
+          "Nonverbal cues (nod, smile, posture) as primary indicators of attentiveness",
+          "Leaders appearing reserved due to cultural restraint, not disinterest"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'rural or traditional workplaces' as uniformly strict—some urban Thai workplaces, even traditional ones, may allow moderate eye contact with peers",
+          "Slight lack of emphasis on the *duration* of the *wai* (1–2 seconds is accurate, but could be reinforced as a cultural marker of respect)"
+        ],
+        "suggestions": [
+          "Add a brief note about how younger Thai professionals in globalized environments may adapt norms more flexibly, especially in tech or creative industries, to better reflect generational and contextual variation",
+          "Include a subtle mention that while eye contact is limited, a *soft* and *brief* glance during key moments (e.g., when answering a question) is acceptable and even expected for engagement—just not sustained",
+          "Reinforce that the *wai* is not just a gesture but a ritualized expression of *sanuk* (harmony) and *wai* etiquette is often observed even by native Thais in formal settings"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 13,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

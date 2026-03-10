@@ -1,0 +1,439 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Date and Number Separator",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Characters used to separate date or number components, such as slashes, hyphens, periods, or commas",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m preparing a budget proposal for a community health project in Yogyakarta. I need to write the timeline and cost estimates, but I’m not sure how to format the dates and numbers correctly. Can you help?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course! For formal documents in Indonesia, use the DD/MM/YYYY format—like 15/04/2024 for April 15, 2024. Always include the full year in official proposals to avoid ambiguity. In spoken or informal notes, people often say 'lima belas April' or write '15/4', but for budgets and contracts, consistency is key."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about numbers? I’ve seen invoices with commas and periods, and I’m confused. For example, how should I write IDR 1,500,000?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, this is a common point of confusion—especially for international collaborators. In Indonesia, we use a period (.) as the thousand separator and a comma (,) for decimals. So IDR 1,500,000 should be written as 1.500.000,00. That’s one million five hundred thousand rupiah. If you write 1,500.000,00, it would be misread as one thousand five hundred point zero zero—very different!"
+            },
+            {
+              "role": "user",
+              "content": "Oh no, I’ve done that before! I once sent a quote as 5.000,00 and someone thought it was five million. That caused a big misunderstanding. How can I avoid this in my proposal?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a very real risk—and unfortunately not uncommon. To prevent confusion: always use the local format (1.500.000,00), and when in doubt, write the amount in words too. For example: 'IDR 1.500.000,00 (satu juta lima ratus ribu rupiah)'. This dual format is standard in official documents and shows respect for local conventions. Avoid U.S.-style formatting like 1,500,000.00—foreign formats can undermine credibility."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll do that. Also, should I write the dates in words or numbers in the proposal?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal proposals—especially for government or institutional partners—use numbers with the full date: 15 April 2024 or 15/04/2024. If you're writing a project update for a local team, you might say 'pertemuan pertama pada 15 April'. But for budgets, contracts, and official submissions, stick to the numerical format with the year included."
+            },
+            {
+              "role": "user",
+              "content": "Thanks so much. One last thing—what if I’m working with a rural community in Central Java? Do they use different formats?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good question. In rural areas, especially among older generations, you might see informal references or even Javanese calendar dates—like 'Tanggal 10 Sura'—but for official documentation, the national standard still applies. The key is context: if you're dealing with local leaders or elders, a brief explanation or visual example can help. Showing a sample invoice with correct formatting builds trust. Always prioritize clarity over formality. And remember: 1.500.000,00 is one million five hundred thousand, not 150 million—so 'seratus lima puluh juta' (150 million) would be 150.000.000,00. Small differences in formatting can mean huge differences in meaning."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "DD/MM/YYYY is the standard date format in formal Indonesian documents",
+          "Period (.) is used as the thousand separator and comma (,) as the decimal marker in Indonesian number formatting",
+          "Writing amounts in both numerals and words (e.g., 1.500.000,00 (satu juta lima ratus ribu rupiah)) prevents misinterpretation",
+          "U.S.-style formatting (e.g., 1,500,000.00) is not standard and may undermine credibility in local contexts",
+          "In rural or traditional settings, informal or local calendar references may appear, but national standards still apply in official documentation",
+          "Clarity and cultural respect are prioritized over rigid formality in communication with local communities"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.35,
+        "cultural_elements_verified": [
+          "DD/MM/YYYY is the standard date format in formal Indonesian documents",
+          "Period (.) is used as thousand separator and comma (,) as decimal marker in numbers",
+          "Use of full year in official documents to prevent ambiguity",
+          "Dual format (number + words) is common in official Indonesian documents",
+          "Risk of misinterpretation due to U.S. formatting (e.g., 5.000,00 vs 5,000.00) is real and documented",
+          "Informal use of '15/4' or 'lima belas April' in spoken or non-formal contexts",
+          "Regional and generational variation exists, especially in rural areas",
+          "Javanese calendar references (e.g., 'Tanggal 10 Sura') may appear in informal rural contexts",
+          "Clarity and context override rigid formatting in practice"
+        ],
+        "issues": [
+          "Minor inconsistency in the assistant's final example: '150.000.000,00' is correct for 150 million, but the explanation 'one million five hundred thousand' should be 'one million five hundred thousand'—this is accurate, but the phrasing 'small differences in formatting can mean huge differences in meaning' could be slightly overstated without context about how often such errors occur in practice. However, this is not a factual error and is acceptable in educational tone.",
+          "The assistant uses 'IDR' in all examples, which is correct, but could note that in informal rural settings, 'Rp' is more commonly used in spoken and handwritten contexts, though 'IDR' is standard in formal writing."
+        ],
+        "suggestions": [
+          "Add a brief note that in highly formal or legal documents, the number in words is often written in Indonesian script (e.g., 'satu juta lima ratus ribu rupiah') to prevent tampering or misreading.",
+          "Consider including a small visual example (in text form) like: 'IDR 1.500.000,00 (satu juta lima ratus ribu rupiah)' to reinforce the format.",
+          "Mention that in digital forms (e.g., government portals), the system often enforces the correct format, so users should align with system expectations."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m preparing a contract for a small business project in Jakarta, and I want to make sure the financial terms are clear. I’ve written the payment amount as 5.000,00. Is that correct in Indonesian format?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, your format is correct for Indonesia: 5.000,00 means five thousand rupiah (IDR 5,000). In Indonesian financial notation, periods (.) separate thousands and commas (,) mark decimals. So 5.000,00 is five thousand, not five million. This is a common point of confusion for foreigners, so you’re right to double-check."
+            },
+            {
+              "role": "user",
+              "content": "Oh, good—thanks for clarifying. I’ve also included the due date as 15/04/2024. Is that the right way to write it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, 15/04/2024 is the standard formal date format in Indonesia—DD/MM/YYYY—used in official documents, banking, and contracts. It’s consistent with international ISO standards and widely understood across government and business sectors in Jakarta and beyond. Just be mindful that in casual conversation, people might say '15 April' or even '15/4' without the year, especially if the context is clear."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’m sending this to a client in Surabaya. Should I use the full date every time, even in emails?"
+            },
+            {
+              "role": "assistant",
+              "content": "For professional correspondence, especially with clients in Surabaya or any part of Indonesia, it’s best to use the full date format: 15 April 2024 or 15/04/2024. While people in urban areas are used to the DD/MM/YYYY format, using the full version avoids any ambiguity—especially since some older clients or regional partners might still rely on spoken context or local calendars. Clarity trumps brevity in formal settings."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. One last thing—what if I need to write a larger amount, like 1.250.000,50? Is that how it should look?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect—1.250.000,50 is correct. Here’s how it breaks down: the first period separates millions (1.250.000 = one million two hundred fifty thousand), and the comma marks the decimal (50 cents). So this is one million two hundred fifty thousand rupiah and fifty sen. This format is standard in invoices, financial reports, and government forms. A common mistake is reversing the symbols—using a comma for thousands and a period for decimals—which would make it look like 1,250.000.50 and cause serious confusion."
+            },
+            {
+              "role": "user",
+              "content": "Thanks so much. I’ve learned a lot. I’ll make sure to use the right format in all documents. This really helps avoid misunderstandings."
+            },
+            {
+              "role": "assistant",
+              "content": "You're very welcome. Taking the time to respect local conventions like date and number formatting shows professionalism and cultural awareness—especially important in Indonesian business culture, where trust is built through attention to detail. If you ever need help reviewing a document or checking a format, feel free to ask."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "DD/MM/YYYY is the standard formal date format in Indonesia",
+          "Period (.) is used as a thousands separator and comma (,) as a decimal marker in financial notation",
+          "Clarity in formal documents is prioritized over brevity, especially in business contexts",
+          "Urban professionals in Jakarta and Surabaya are familiar with standardized formats, but older or regional clients may prefer full dates",
+          "Misinterpretation of number formats (e.g., reversing comma/period) can lead to serious financial errors",
+          "Informal use of abbreviated dates (e.g., 15/4) is common in spoken or casual contexts"
+        ],
+        "issues": [
+          "Minor: The assistant’s tone is slightly more formal than typical for a casual user inquiry, though still acceptable in professional contexts. No significant linguistic inauthenticity.",
+          "The example does not explicitly mention the Javanese calendar or regional calendar variations beyond a brief nod in the research—this is a minor omission but not critical given the focus on standard business formats."
+        ],
+        "suggestions": [
+          "Include a brief mention of regional calendar usage (e.g., Javanese calendar) in the assistant’s response when discussing dates to reflect deeper cultural nuance, especially if the context involves traditional or rural stakeholders.",
+          "Consider adding a small note about the use of 'rupiah' vs. 'IDR' in different contexts—e.g., 'IDR' is common in formal documents, while 'rupiah' is more common in spoken or informal written communication.",
+          "In future examples, introduce a scenario where a foreigner misreads a number due to symbol reversal to reinforce the risk and learning point."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I'm preparing a contract for a small business partnership here in Surabaya. I need to write the effective date and the payment amount clearly. Should I use 15/04/2024 for April 15, 2024? And how do I write IDR 5,000,000 correctly in Indonesian format?"
+            },
+            {
+              "role": "assistant",
+              "content": "Hi! Yes, for official documents like contracts in Indonesia, it's best to use the DD/MM/YYYY format — so 15/04/2024 is correct and widely accepted. You can also write it as '15 April 2024' for a slightly more formal tone, which is common in business letters."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And for the amount — I've seen some invoices with commas and periods mixed up. Is IDR 5.000.000,00 the right way to write five million rupiah?"
+            },
+            {
+              "role": "assistant",
+              "content": "Almost — but there’s a key difference in the separator usage. In Indonesia, we use a period (.) as the thousand separator and a comma (,) for the decimal point. So, five million rupiah should be written as IDR 5.000.000,00. This avoids confusion — for example, 5.000,00 means five thousand, not five million."
+            },
+            {
+              "role": "user",
+              "content": "Ah, that makes sense. I’ve had a colleague in Jakarta send me a file where the numbers looked off — I thought it was a typo. So if I write 5.000.000,00, it’s definitely five million, not five thousand?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s why this format is critical in financial documents. A misread comma or period can cause serious issues — I’ve heard of cases where a bid of IDR 5.000,00 (five thousand) was accidentally interpreted as five million because of formatting confusion. Always double-check the separators when dealing with money, especially in contracts or invoices."
+            },
+            {
+              "role": "user",
+              "content": "Thank you — that’s really helpful. Should I write the date in full every time, or is DD/MM/YYYY fine for contracts?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal contracts, writing the full date — like '15 April 2024' — is preferred for clarity and professionalism. But if you're using a digital form or system, DD/MM/YYYY is perfectly acceptable and widely used in banking and government documents. The key is consistency: pick one format and stick with it throughout the document."
+            },
+            {
+              "role": "user",
+              "content": "Understood. So for my Surabaya-based business contract, I’ll go with '15 April 2024' and IDR 5.000.000,00. Thanks for helping me avoid a costly mistake!"
+            },
+            {
+              "role": "assistant",
+              "content": "You're very welcome! You're doing the right thing by paying attention to these details — it shows respect for local norms and helps build trust in your business relationships. If you ever need help reviewing a document, just ask."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "DD/MM/YYYY is the standard date format for official documents in Indonesia",
+          "Period (.) is used as the thousand separator and comma (,) as the decimal marker in Indonesian number formatting",
+          "Misinterpretation of number formats can lead to serious financial errors",
+          "Full date format (e.g., '15 April 2024') is preferred in formal contracts for clarity",
+          "Digital systems and banking widely accept DD/MM/YYYY format",
+          "Consistency in formatting is emphasized in professional contexts",
+          "Contextual variation exists between formal and informal usage"
+        ],
+        "issues": [
+          "Minor: The assistant’s use of 'Jakarta-based professional' in a general example could slightly reinforce urban-centric bias, though not inaccurate",
+          "The term 'five million rupiah' is used in explanation but not explicitly tied to IDR 5.000.000,00 in the first instance — could be clearer for learners"
+        ],
+        "suggestions": [
+          "Explicitly state that the format IDR 5.000.000,00 is equivalent to five million rupiah in the first mention of the amount to reinforce learning",
+          "Add a brief note about regional variation (e.g., 'In some rural areas, you might see local calendar references, but for contracts, stick to the national standard') to reflect cultural nuance without overcomplicating",
+          "Use a slightly more conversational phrasing like 'I’ve heard of a case where a bid was misread because of the comma' to enhance authenticity while preserving accuracy"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I'm preparing a contract for a small business deal in Jakarta. I need to write the payment terms clearly. I'm used to writing dates as MM/DD/YYYY and numbers with commas for decimals, but I'm worried I might confuse my Indonesian partners. Can you help me get this right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course — it’s great that you’re being careful. In Indonesia, the standard date format in official documents is DD/MM/YYYY, so for April 15, 2024, you’d write 15/04/2024. This helps avoid confusion, especially since many Indonesians use the day-month-year order naturally, even in formal writing."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I should write the date as 15/04/2024. What about numbers? I’m used to writing 1,000.50 for one thousand and fifty cents. But I’ve heard that in Indonesia, it’s the opposite — commas for decimals and periods for thousands?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly right — and this is a common point of confusion for foreign professionals. In Indonesia, the convention is: periods (.) as thousand separators and commas (,) as decimal markers. So, one thousand five hundred rupiah is written as 1.500,00 — not 1,500.00. A bid of IDR 5.000,00 means five thousand rupiah, not five million. Misreading this can lead to serious misunderstandings, especially in contracts."
+            },
+            {
+              "role": "user",
+              "content": "That’s a big difference! So if I want to say the total is five million rupiah, I should write 5.000.000,00? And for five hundred thousand, it’s 500.000,00?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, exactly. Here’s a quick guide:\n\n- IDR 500,000 → 500.000,00\n- IDR 1.000,000 → 1.000.000,00\n- IDR 5.000,00 → 5.000,00 (five thousand, not five million)\n\nAlways use the period for thousands and comma for decimals. This format is standard in banking, government reports, and retail pricing — so using it in your contract will make it feel authentic and trustworthy to local partners."
+            },
+            {
+              "role": "user",
+              "content": "Thanks for clarifying. In casual conversations, do people still use this format, or do they switch to something simpler?"
+            },
+            {
+              "role": "assistant",
+              "content": "Great question. In spoken or informal contexts — like chatting with a colleague over coffee in Bandung or writing a quick note — people often simplify. You might hear someone say \"lima belas April\" instead of \"15/04/2024,\" or write \"15/4\" if the year is clear from context. But in official documents, contracts, or financial statements, the full DD/MM/YYYY format and the correct number separators are expected. Clarity matters more than formality — but in formal settings, following local conventions builds credibility."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll make sure to use 15/04/2024 and write the payment amount as 5.000.000,00. One last thing — is there a risk if I use the U.S. format in a business email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, there is a real risk. Using MM/DD/YYYY or commas for decimals (like 5,000.00) could be misinterpreted — especially by someone reading quickly or unfamiliar with Western formats. In one case, a foreign contractor accidentally quoted 5.000,00 as five million rupiah, which caused a major dispute. Even if you’re polite and clear, the format itself can trigger confusion. It’s always safer to adapt to local conventions when working in Indonesia, especially in financial or legal contexts."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Standard date format in Indonesia is DD/MM/YYYY in official documents",
+          "Use of periods (.) as thousand separators and commas (,) as decimal markers in numbers",
+          "Risk of misinterpretation when using U.S. number format (e.g., 5.000,00 vs. 5,000.00)",
+          "Informal contexts may simplify date formats (e.g., '15/4' or 'lima belas April')",
+          "Clarity and context override rigid formality in communication",
+          "Local conventions are expected in contracts and financial documents"
+        ],
+        "issues": [
+          "Minor: The assistant uses 'Bandung' as an example of casual conversation — while plausible, it slightly overgeneralizes urban informal speech without acknowledging regional variation (e.g., Jakarta vs. rural areas). However, this does not undermine accuracy.",
+          "Slight risk of overemphasizing the 'five million' misinterpretation anecdote as a standalone example, though it is grounded in documented cases and contextually valid."
+        ],
+        "suggestions": [
+          "Consider adding a brief note about the Javanese calendar in rural or traditional contexts, even if not central, to reflect the cultural nuance mentioned in the research.",
+          "To enhance realism, include a phrase like 'like in many Indonesian business settings' when referencing standard formats, reinforcing that this is a normative expectation rather than a universal rule.",
+          "In future examples, vary the regional context (e.g., mention Yogyakarta or Medan) to avoid over-reliance on Jakarta/Bandung as default urban examples."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m helping my friend set up a small online shop for her batik business in Yogyakarta. She’s preparing her first invoice and wants to make sure it looks professional. She wrote the amount as '5.000,00' — is that correct for Indonesian rupiah?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s correct in format — but it’s important to clarify what it means. In Indonesia, we use a period (.) as a thousand separator and a comma (,) for the decimal point. So '5.000,00' means five thousand rupiah (IDR 5,000), not five million. This is the standard format used in banks, receipts, and official documents."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I see — so if she wants to write one million five hundred thousand rupiah, how should she write it? I’ve seen people write '1.500.000,00' — is that right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly right! For one million five hundred thousand rupiah, you write it as 1.500.000,00. The periods separate thousands: 1 (million), 500 (thousand), and 000 (units). The comma marks the decimal, so 1.500.000,00 = IDR 1,500,000. This format is consistent across official financial systems, e-commerce platforms like Tokopedia, and government reports."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about dates? She’s listing the invoice date as '15/4/2024'. Is that acceptable for a business document?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, '15/4/2024' is perfectly acceptable in formal business contexts — it follows the standard Indonesian date format of DD/MM/YYYY. In fact, this is the official format used in government documents, bank statements, and digital systems across Indonesia. However, in spoken language or informal notes, people often say '15 April' or '15/4' without the year, especially if the context is clear."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if she’s sending this to a foreign client who might be used to MM/DD/YYYY? Should she write it differently?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great point. When communicating with international clients, it’s wise to add clarity to avoid confusion. For example, instead of just '15/4/2024', she could write '15 April 2024' or '15/04/2024' (with a leading zero on the month). The full written form — '15 April 2024' — is especially safe and widely understood, even by non-Indonesians. It shows attention to detail and cultural awareness."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — that’s really helpful. One last thing: if she’s listing multiple items, should she use the same number format for each line?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. Consistency is key in professional documents. Every amount should follow the same format: use periods for thousands and commas for decimals. For example: 15.000,00 (IDR 15,000), 250.000,00 (IDR 250,000), and so on. This not only ensures accuracy but also reflects professionalism and respect for local conventions — especially important in a country where financial misinterpretations can happen easily, like mistaking 5.000,00 for five million."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of DD/MM/YYYY date format in formal business documents",
+          "Use of period (.) as thousand separator and comma (,) as decimal marker in Indonesian number format",
+          "Clarity and consistency in financial documentation to prevent misinterpretation",
+          "Preference for full date format (e.g., 15 April 2024) in cross-cultural communication",
+          "Contextual adaptation of format: formal vs. informal or international audiences",
+          "Cultural emphasis on accuracy and professionalism in business transactions",
+          "Realistic scenario involving a small business owner in Yogyakarta, Indonesia",
+          "Natural progression of questions that build understanding of cultural conventions",
+          "Assistant provides both technical accuracy and cultural context without over-explaining"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "DD/MM/YYYY is the standard date format in formal Indonesian contexts",
+          "Period (.) is used as a thousand separator and comma (,) as decimal marker in Indonesian number formatting",
+          "The example correctly distinguishes between formal and informal usage of dates and numbers",
+          "The risk of misinterpreting 5.000,00 as five million is accurately highlighted",
+          "The recommendation to use '15 April 2024' or '15/04/2024' for international clarity reflects real-world practice",
+          "Consistency in formatting across documents is emphasized as a professional norm"
+        ],
+        "issues": [
+          "Minor: The assistant uses 'IDR 5,000' in parentheses after '5.000,00' — this is technically correct but could confuse non-Indonesian readers who expect U.S. formatting. It's better to use consistent notation throughout.",
+          "Slight overgeneralization: While '15/4/2024' is acceptable, in some highly formal or legal documents (e.g., contracts), the full written form 'Lima belas April dua ribu dua puluh empat' may be preferred — though this is not required in standard business invoices."
+        ],
+        "suggestions": [
+          "Replace 'IDR 5,000' with 'IDR 5.000,00' in parentheses to maintain consistent formatting and avoid confusion for learners.",
+          "Add a brief note that while '15/4/2024' is widely accepted, some formal or legal documents may prefer the full written form in Indonesian for maximum clarity.",
+          "Include a small example of a full invoice line item using both date and number formatting together to reinforce contextual integration."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 19,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

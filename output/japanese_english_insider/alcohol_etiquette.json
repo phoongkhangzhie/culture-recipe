@@ -1,0 +1,407 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Alcohol Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural norms around offering, accepting, or declining alcoholic beverages in social and dining settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Mr. Tanaka’s pouring again—should I let him keep going, or should I stop him?"
+            },
+            {
+              "role": "assistant",
+              "content": "Let him pour. It’s natural for the host to refill everyone’s glass. Just keep your glass ready and accept it with both hands. If you’re not drinking much, a small sip is enough—no need to say anything. The gesture is more important than the amount."
+            },
+            {
+              "role": "user",
+              "content": "I’m not great with alcohol, but I don’t want to seem like I’m not joining in. What’s the best way to handle it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Just sip lightly and maintain eye contact. If you’re asked directly, you can say, ‘Sake wa suki desu ga, nihonjin no yō ni nai desu’—I like sake, but I can’t handle it like a Japanese person. That’s a common, polite way to signal your limits without drawing attention."
+            },
+            {
+              "role": "user",
+              "content": "And when we toast—should I say ‘Kanpai’? Or is there a better way?"
+            },
+            {
+              "role": "assistant",
+              "content": "Say ‘Kanpai’ if you’re comfortable, but don’t clink glasses. Just lightly touch them or nod. The quiet moment of mutual respect says more than words."
+            },
+            {
+              "role": "user",
+              "content": "I noticed someone poured for me even after I’d finished. Is that normal?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, especially at a business dinner. The host or senior person usually keeps pouring to show care and maintain harmony. It’s not a burden—it’s a sign of inclusion. Just let them."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The host or senior person typically pours for others before themselves",
+          "Accepting alcohol with both hands is a sign of respect",
+          "Sipping lightly is sufficient; outright refusal is avoided in favor of subtle cues",
+          "Self-deprecating phrases like 'Sake wa suki desu ga, nihonjin no yō ni nai desu' are culturally appropriate for declining alcohol",
+          "Clinking glasses is avoided; light touch or nod is preferred during toasts",
+          "Refilling glasses is expected and seen as a gesture of care and group harmony",
+          "Non-verbal cues like eye contact and posture carry more weight than words in high-context settings"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "The host or senior person refills others' glasses without being asked",
+          "Accepting alcohol with both hands as a sign of respect",
+          "Sipping lightly as a polite way to participate without overdrinking",
+          "Using self-deprecating humor to decline alcohol ('I like sake but can’t handle it like a Japanese person')",
+          "Avoiding glass clinking during toasts; using light touch or bow instead",
+          "The expectation to maintain harmony through attentive participation in drinking rituals"
+        ],
+        "issues": [
+          "The phrase 'Sake wa suki desu ga, nihonjin no yō ni nai desu' is grammatically correct but slightly unnatural in casual use—native speakers might say 'Nihonjin no yō ni nai' (I can't drink like a Japanese person) without the 'sake wa suki desu ga' framing, which sounds more like a direct translation. A more natural version would be 'Sake wa suki desu ga, nihonjin no yō ni nai desu' (I like sake, but I can't drink like a Japanese person), but the phrasing in the response is acceptable as a mild, polite excuse.",
+          "The assistant does not explicitly acknowledge the subtle hierarchy in pouring—e.g., that the host typically pours for others, not themselves. While implied, this nuance could be more clearly embedded in the response to reinforce cultural depth."
+        ],
+        "suggestions": [
+          "Refine the refusal phrase to use a more commonly used native expression, such as 'Sake wa suki desu ga, nihonjin no yō ni nai desu'—but present it as a common idiom, not a direct quote from a script.",
+          "In the response about the host pouring, include a brief implicit reference to the host not drinking first, to reinforce the hierarchical aspect of the ritual.",
+          "Consider adding a subtle cue about the importance of not letting the glass go empty, as this is a key sign of engagement in izakaya culture."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to a business dinner at a small izakaya tomorrow night with my team and our department head. I’ve never been to one before. What’s the right way to handle the sake pouring? I don’t drink much, but I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "The host or senior person will pour for everyone first—don’t worry about doing it yourself. When they pour for you, accept the glass with both hands and raise it slightly. Even if you only take a small sip, it’s important to participate. If you’re not drinking, just hold the glass with both hands and say quietly, ‘O-akarui,’ which means you’ll drink a little. That’s enough to show respect."
+            },
+            {
+              "role": "user",
+              "content": "What if I accidentally finish my glass and someone offers to refill it? Should I say no right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s common for the host to refill glasses without asking—especially in izakayas. If you’re not drinking, it’s okay to let them refill you once, but after that, gently place your hand over the glass and say, ‘Sumimasen, chotto yasumimasu,’ or just nod and smile. They’ll understand. Don’t over-explain—just keep eye contact and stay present. The key is showing you’re part of the group, even if you’re not drinking."
+            },
+            {
+              "role": "user",
+              "content": "And what about when the department head pours for me? Should I pour back right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, never pour for the senior person first. Wait until they’ve poured for everyone else—including themselves—before you pour for anyone. That’s the ‘bottom-up’ rule. If you’re asked to pour, do so with both hands, and always pour for others before yourself. The act of serving is more important than drinking. Just remember: humility and attentiveness matter more than how much you drink."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The host or senior person pours for others first, not themselves",
+          "Accepting a drink with both hands is a sign of gratitude",
+          "Sipping lightly or saying 'O-akarui' signals willingness without overcommitment",
+          "Refusing a refill is done subtly with a hand gesture and a polite phrase",
+          "The 'bottom-up' rule: pour for others before yourself",
+          "Glasses are typically filled only 2/3 full to show respect",
+          "Eye contact and presence maintain group harmony even when not drinking",
+          "Avoid over-explaining a refusal; keep it brief and polite",
+          "Refilling glasses without asking is a norm in izakayas, signaling attentiveness",
+          "The act of pouring is a performance of respect, not about consumption"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 8.5,
+        "overall_score": 8.75,
+        "cultural_elements_verified": [
+          "The host or senior person pours for others first, not themselves",
+          "Accepting alcohol with both hands is a sign of respect",
+          "Using 'O-akarui' to indicate willingness to drink a little",
+          "Refusing refills with a gentle gesture and polite phrase like 'Sumimasen, chotto yasumimasu'",
+          "The 'bottom-up' rule: never pour for a senior person first",
+          "Pouring for others before oneself as an act of humility",
+          "The expectation of participation in drinking rituals even when not consuming alcohol",
+          "Avoiding over-explanation and maintaining presence through eye contact and non-verbal cues"
+        ],
+        "issues": [
+          "The assistant’s use of 'O-akarui' in English without explanation may be slightly misleading—while it’s a real phrase, its use in this context is more nuanced. A native speaker might use it more casually or contextually, and the assistant should avoid treating it as a standalone 'code' phrase.",
+          "The phrase 'Sumimasen, chotto yasumimasu' is grammatically correct but sounds slightly unnatural in this context. A more natural phrasing would be 'Sumimasen, chotto yasumimasu' (polite), but native speakers might simply say 'Chotto yasumimasu' or use a hand gesture with a smile—less formal phrasing is typical in izakaya settings.",
+          "The assistant mentions 'don’t over-explain'—this is accurate, but could be strengthened by implying that silence and non-verbal cues are more powerful than words in such settings."
+        ],
+        "suggestions": [
+          "Replace 'O-akarui' with a more natural English paraphrase like 'I’ll take a little' or 'Just a sip, thank you' to maintain authenticity without relying on untranslated Japanese phrases.",
+          "Use more natural Japanese expressions in context, such as 'Chotto yasumimasu' or 'Sore wa mō ichido' (that’s enough), with a hand gesture or smile, to reflect how real people communicate in izakayas.",
+          "Emphasize the role of body language and silence—e.g., 'Just nod and smile. No need to speak. They’ll understand.'—to better reflect the non-verbal nature of Japanese social cues.",
+          "Clarify that while 'bottom-up' is correct, the assistant could reinforce that pouring for others is a continuous, unspoken responsibility, not a one-time act."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my team leader’s dinner at that izakaya near Shinjuku Station tomorrow. I’m not really good with alcohol, but I don’t want to seem rude. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "Start by letting him pour for you first—he’ll likely do that anyway. When he offers, take the glass with both hands and say ‘O-akarui’ quietly. Just a small sip is enough. Don’t fill your own glass; wait for him to refill it. If you’re asked to drink more, you can nod and say ‘Hai, chotto doko’—just a little more. It’s fine to keep it light."
+            },
+            {
+              "role": "user",
+              "content": "What if he keeps pouring and I can’t keep up? I don’t want to seem like I’m avoiding it, but I really can’t drink much."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s okay—just keep the glass about two-thirds full. When you’re done, place it on the table with both hands, and if he offers again, you can gently tap the side of the glass with your finger. That’s a quiet way to say ‘no more, thank you.’ He’ll understand. The key is to stay engaged—make eye contact, smile, and keep the conversation going. They’ll notice your effort more than the amount you drink."
+            },
+            {
+              "role": "user",
+              "content": "And if I need to say no upfront? Like, before the first round?"
+            },
+            {
+              "role": "assistant",
+              "content": "If you’re nervous, it’s better to say something like ‘Sumimasen, shuushoku o shite imasu’—I’m on a diet—right at the start. Keep it simple. Don’t over-explain. They’ll respect that you’re mindful. Once the drinking starts, it’s harder to stop without seeming abrupt. So timing matters."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 8.8,
+        "overall_score": 8.85,
+        "cultural_elements_verified": [
+          "The host or senior person pours for others first, demonstrating humility and respect",
+          "Accepting alcohol with both hands and saying 'O-akarui' to indicate willingness without overcommitment",
+          "Refusing with subtle, non-confrontational cues like tapping the glass or using a mild excuse",
+          "The importance of maintaining engagement and group harmony even when declining alcohol",
+          "The practice of not clinking glasses during toasts, implied through the emphasis on quiet, respectful gestures",
+          "The social risk of refusing alcohol in business settings and the need for tactful timing"
+        ],
+        "issues": [
+          "The phrase 'Sumimasen, shuushoku o shite imasu' (I’m on a diet) is not the most culturally appropriate or commonly used excuse for declining alcohol. While plausible, it's less authentic than self-deprecating humor like 'Sake wa suki desu ga, nihonjin no yō ni nai desu' (I like sake, but I can’t handle it like a Japanese person), which is more culturally resonant and widely used.",
+          "The suggestion to 'tap the side of the glass with your finger' as a refusal signal is plausible but not standard. The more common and widely recognized gesture is to leave the glass about two-thirds full and not refill it, or to gently place the glass down with both hands and avoid eye contact during refills—subtlety is key. Tapping may be misinterpreted or not widely understood.",
+          "The assistant’s tone is slightly didactic and explanatory, which risks breaking the 'implicit context' rule. While the user doesn’t explicitly state their identity, the assistant occasionally explains norms as if teaching an outsider, which could train models to over-explain rather than embody cultural fluency."
+        ],
+        "suggestions": [
+          "Replace 'shuushoku o shite imasu' with a more culturally authentic excuse such as 'Sake wa suki desu ga, nihonjin no yō ni nai desu' or 'Kore wa heta desu' (I’m not good at alcohol).",
+          "Replace the finger-tapping gesture with a more standard and widely recognized refusal cue: leaving the glass partially full and not signaling desire for a refill, or gently placing it down with both hands and smiling.",
+          "Refine the assistant’s tone to be more implicit and natural—use culturally embedded responses without framing them as advice. For example, instead of 'That’s okay—just keep the glass about two-thirds full,' say 'You’ll see others leave theirs a little full—just follow the rhythm.'",
+          "Include a subtle reference to *kanpai* and the no-clinking norm in the first response to reinforce the broader etiquette context."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to a business dinner at a small izakaya tomorrow night with my team. My boss is hosting, and there are four of us—me, two junior colleagues, and him. I’ve never been to one before. How should I handle the sake pouring?"
+            },
+            {
+              "role": "assistant",
+              "content": "The host always pours for others first. Since your boss is hosting, he’ll likely start by pouring for everyone else—don’t expect him to pour for himself until last. When he offers you sake, accept with both hands, even if you’re not drinking much. A small sip is enough to show respect. If you’re not drinking at all, it’s best to say something quietly before the first round—something like, 'Sumimasen, shuushoku o shite imasu'—but only if you’re truly not drinking. Otherwise, just hold your glass with both hands and nod."
+            },
+            {
+              "role": "user",
+              "content": "What if I don’t want to drink more after the first round? I don’t want to seem rude, but I’m already feeling full."
+            },
+            {
+              "role": "assistant",
+              "content": "You don’t need to drink much—just keep your glass at about two-thirds full. If your boss or senior colleague refills it, it’s polite to accept and take a small sip. If you’re really not drinking, you can place the glass down with both hands and say, 'Hai, chotto yasumimasu'—‘I’ll take a break’—with a slight bow. That’s enough. The key is to stay engaged: smile, make eye contact, and keep the conversation going. They’ll understand if you’re not drinking much."
+            },
+            {
+              "role": "user",
+              "content": "And what about when they say 'Kanpai'? Should I clink glasses?"
+            },
+            {
+              "role": "assistant",
+              "content": "No clinking—never clink glasses in Japan. It’s considered bad luck, like breaking something precious. Instead, just touch your glass lightly to theirs and bow slightly. You can say 'Kanpai' quietly, but keep it low. The focus is on harmony, not noise."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The host pours for others before themselves (bottom-up rule)",
+          "Accepting alcohol with both hands as a sign of respect",
+          "Sipping minimally to show willingness without overcommitting",
+          "Polite refusal using self-deprecating or health-related excuses before drinking begins",
+          "Avoiding glass clinking during toasts (kampai etiquette)",
+          "Light glass touching and bowing instead of clinking",
+          "Maintaining engagement through eye contact and presence even when not drinking",
+          "Using culturally appropriate phrases like 'Sumimasen, shuushoku o shite imasu' and 'Hai, chotto yasumimasu'",
+          "Understanding that group harmony (wa) is prioritized over individual preference",
+          "Natural integration of izakaya setting and business dinner context"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.75,
+        "cultural_elements_verified": [
+          "The host (boss) pours for others first, not themselves",
+          "Pouring with both hands, especially for seniors",
+          "Accepting alcohol with both hands as a sign of respect",
+          "Taking a small sip even if not drinking much",
+          "Tactful refusal using self-deprecating or polite phrases",
+          "Avoiding glass clinking during 'Kanpai' due to bad luck",
+          "Light touch and slight bow instead of clinking",
+          "Maintaining engagement through eye contact and smiles",
+          "Sake refills being done immediately by senior members",
+          "The importance of harmony (wa) and group cohesion in drinking rituals"
+        ],
+        "issues": [
+          "The phrase 'Sumimasen, shuushoku o shite imasu' is not a natural or commonly used excuse for not drinking; it translates to 'I’m on a diet,' which is not culturally appropriate or typical. A more authentic refusal would be 'Sake wa suki desu ga, nihonjin no yō ni nai desu' or 'Hai, chotto yasumimasu' (as used later).",
+          "The assistant uses English for the explanation of 'Kanpai' and 'Hai, chotto yasumimasu' without context, which breaks immersion. In a truly authentic multi-turn chat, the assistant should model the natural use of Japanese phrases within the flow, without needing to translate them for the user."
+        ],
+        "suggestions": [
+          "Replace 'Sumimasen, shuushoku o shite imasu' with a more culturally accurate phrase like 'Sake wa suki desu ga, nihonjin no yō ni nai desu' or 'Chotto yasumimasu' when declining alcohol.",
+          "Integrate Japanese phrases naturally in context without translation—e.g., have the assistant say 'Hai, chotto yasumimasu' and let the user infer meaning from context, as a native speaker would.",
+          "Add a subtle mention of the 'sake-chū' practice (continuous pouring) to reinforce the norm of attentive refilling, even if not explicitly asked.",
+          "Ensure that all cultural references are embedded in the flow of conversation rather than delivered as a list of rules."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my senior colleague’s farewell dinner at that izakaya near Shinjuku Station. I’m not really good with alcohol, but I don’t want to seem rude. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "Start by letting the host pour for you first—don’t pour your own. When they offer, take the glass with both hands and nod slightly. Even if you don’t drink much, a small sip is expected. Just say ‘O-akarui’ quietly when they pour, so they know you’re accepting."
+            },
+            {
+              "role": "user",
+              "content": "But what if they keep refilling my glass? I don’t want to overdo it, but I don’t want to seem ungrateful either."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s common in izakayas—refilling happens automatically. If you’re feeling full or need to stop, just place your glass down gently with both hands and say ‘Sumimasen, chotto oshimai desu’ (Sorry, I’ll stop here). Don’t over-explain. They’ll understand. Keep eye contact and smile lightly—it shows you’re still engaged."
+            },
+            {
+              "role": "user",
+              "content": "And if I really can’t drink at all? I’ve got a doctor’s note, but I’m not sure if I should mention it."
+            },
+            {
+              "role": "assistant",
+              "content": "If you’re in a formal setting, it’s better to mention it quietly before drinks start. Just say, ‘Sumimasen, shuushoku o shite imasu’—it’s polite and neutral. No need to go into detail. Once the bottle’s out, it’s harder to refuse without causing a pause. Better to set the tone early."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about when they toast? Should I say something?"
+            },
+            {
+              "role": "assistant",
+              "content": "Say ‘Kanpai’ softly when they raise their glass. Don’t clink—just touch the rim lightly or bow. The gesture matters more than the sound. If you’re unsure, follow the senior person’s lead. They’ll set the pace."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The host pours for others before themselves (bottom-up rule)",
+          "Accepting alcohol with both hands and a small sip is expected even if not drinking much",
+          "Polite refusal is framed with a self-deprecating or neutral excuse (e.g., 'shuushoku o shite imasu')",
+          "Refusing after a drink has been poured is awkward; better to decline early",
+          "Glasses are not clinked during toasts—light touch or bow is preferred",
+          "Refilling is automatic in izakayas, and polite refusal is done subtly with minimal explanation",
+          "Maintaining eye contact and a quiet smile during refusal shows continued engagement",
+          "Cultural norms are conveyed through behavior and subtle cues, not explicit explanation",
+          "The use of natural Japanese phrases like 'O-akarui', 'Kanpai', and 'Sumimasen' in context",
+          "Setting the tone early (before drinking begins) is culturally preferred for sensitive situations"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "The expectation to accept alcohol with a small sip even when not wanting to drink",
+          "The use of 'O-akarui' as a polite way to accept a drink",
+          "The practice of pouring for others first, especially by seniors or hosts",
+          "The custom of not clinking glasses during toasts and using a light touch or bow instead",
+          "The norm of automatic refilling in izakayas and the appropriate way to signal stopping",
+          "The recommendation to set boundaries early in formal settings using polite, neutral phrases",
+          "The emphasis on non-verbal cues like eye contact, smiling, and hand positioning"
+        ],
+        "issues": [
+          "The phrase 'Sumimasen, shuushoku o shite imasu' (I'm on a diet) is not the most natural or commonly used excuse for abstaining from alcohol. While it’s understandable, it’s more commonly used for dietary restrictions than alcohol avoidance. A more authentic phrase would be 'Sake wa suki desu ga, nihonjin no yō ni nai desu' (I like sake, but I can’t handle it like a Japanese person), or 'Kono yō ni nai' (I’m not good with alcohol).",
+          "The assistant’s tone, while accurate, occasionally leans slightly toward instructionality rather than lived cultural expression. For example, 'Just say...' or 'Don’t over-explain' could be phrased more naturally as part of a shared understanding, e.g., 'It’s fine to say it quietly—people will get it.'"
+        ],
+        "suggestions": [
+          "Replace 'Sumimasen, shuushoku o shite imasu' with a more culturally resonant phrase like 'Sake wa suki desu ga, nihonjin no yō ni nai desu' or 'Kono yō ni nai' when declining alcohol due to personal limits.",
+          "Rephrase instructional language (e.g., 'Just say...') to reflect internalized cultural knowledge, such as 'You can say something like...—it’s common and accepted.' This better models how a native speaker would convey the norm.",
+          "Consider adding a brief mention of the social pressure to maintain group harmony (wa) as a reason for accepting even small sips, reinforcing the deeper cultural motivation behind the behavior."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

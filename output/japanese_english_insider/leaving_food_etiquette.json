@@ -1,0 +1,113 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Leaving Food After Eating",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Whether leaving food on the plate is considered polite, impolite, or neutral in a cultural dining context",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m hosting my cousin from overseas for dinner this weekend. She’s never had a proper home-style kaiseki meal before. I want to make sure she feels comfortable, but I’m a bit worried—she’s polite, but I’ve noticed she tends to leave a little rice on her plate when she’s full. Should I say anything?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best to finish what’s on your plate, especially in a home setting. But if she’s truly full, a small remainder is understood—especially if she finishes with a quiet ‘Gochisōsama deshita.’ That gesture shows she’s been mindful."
+            },
+            {
+              "role": "user",
+              "content": "So it’s not ideal to leave food, even a little? What if she doesn’t know the cues? Should I point them out?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better not to say anything. Just model it—after you’re done, place your chopsticks neatly across the bowl. She’ll likely follow without needing words."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the shared dishes? She might not know she should help herself."
+            },
+            {
+              "role": "assistant",
+              "content": "People take what they need from the center. If she’s still eating, the host might quietly refill her bowl—no comment, no pressure. It’s a quiet way of saying we’re still here with you, and we’re glad you’re enjoying it."
+            },
+            {
+              "role": "user",
+              "content": "So if she leaves a little rice, the host might still offer more? That’s not a sign she should eat more, is it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all. Offering more is just a gentle reminder that we’re still present with you. It’s not about how much you eat—it’s about sharing the moment."
+            },
+            {
+              "role": "user",
+              "content": "I see. And in a formal kaiseki setting, would the same apply? I’ve heard even small leftovers might be noticed."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—kaiseki is prepared with care and intention. Every bite is thoughtfully received. A clean plate shows you’ve honored the meal, but if she’s full, a small remainder with a quiet closing gesture still carries respect."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. So the real thing is to show you’ve honored the meal—not just by eating, but by finishing it, or at least making it clear you’ve eaten with care?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The meal is a shared moment of care. Finishing it shows you’ve taken it in—not just the food, but the thought behind it. Even a small remainder with presence speaks louder than words."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Leaving food on the plate is generally considered impolite in Japanese home and formal dining settings",
+          "Finishing the meal signals gratitude and respect for the host and the food",
+          "A small remainder is acceptable if the person is truly full, especially with a respectful closing gesture like 'Gochisōsama deshita'",
+          "Placing chopsticks neatly across the bowl indicates completion of the meal",
+          "Hosts may quietly refill a guest’s bowl as a non-verbal cue of continued care and inclusion",
+          "The emphasis is on mindful consumption and honoring the effort behind the meal",
+          "In kaiseki dining, every element is intentional, and a clean plate reflects appreciation",
+          "Non-verbal cues are preferred over direct instruction to maintain harmony and subtlety"
+        ],
+        "issues": [
+          "The assistant's final response, while accurate, slightly anthropomorphizes the host’s intent by saying 'we’re still here with you'—this phrasing, while poetic, risks over-interpretation. A more culturally grounded version would emphasize the continuity of care without emotional framing.",
+          "The term 'quiet closing gesture' is slightly vague—specifying that 'placing chopsticks across the bowl' is the standard signal would improve precision."
+        ],
+        "suggestions": [
+          "Replace 'we’re still here with you' with a more culturally neutral phrase like 'it’s a way of showing we’re still attending to your needs' to preserve subtlety without projecting emotion.",
+          "Clarify that 'placing chopsticks across the bowl' is the universal signal in Japanese dining, not just a 'gesture'—this strengthens cultural specificity.",
+          "Consider adding a brief mention of *waste* (*mottainai*) as a cultural value underlying the expectation to finish food, to reinforce the deeper ethical dimension.",
+          "Ensure that all references to 'she' are consistent with the user’s framing (cousin from overseas) and avoid assumptions about gendered behavior unless culturally grounded."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 13
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

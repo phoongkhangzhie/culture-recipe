@@ -1,0 +1,179 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Payment Habits",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Daily Life and Travel",
+    "description": "Preferred payment methods in everyday transactions, including attitudes toward cash, card, and mobile payment",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku mau beli kopi di warung dekat kantor pagi ini, tapi aku lupa bawa uang tunai. Aku bawa GoPay, tapi aku nggak tahu apakah warung itu menerima pembayaran digital. Apa biasanya warung kecil di Jakarta seperti ini menerima GoPay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Di Jakarta sih, banyak warung kecil udah terima GoPay. Coba lihat di meja atau dinding—kalau ada stiker QR, berarti bisa. Kadang cuma tulisan kecil: 'GoPay, cepat dan aman!' Kalau nggak ada, tinggal tanya langsung: 'Bisa bayar GoPay, Bu?' Biasanya mereka senang, soalnya nggak perlu hitung uang kertas."
+            },
+            {
+              "role": "user",
+              "content": "Oke, aku coba tanya. Tapi kalau ternyata mereka nggak bisa terima GoPay, aku nggak mau repot bawa uang tunai dari rumah. Apa ada cara lain yang lebih praktis buat aku yang sering lupa bawa uang?"
+            },
+            {
+              "role": "assistant",
+              "content": "Bisa isi saldo GoPay tiap minggu—50 ribu aja, cukup buat kopi dan gorengan. Kalau warungnya nggak punya QR, tapi masih terdaftar di jaringan GoPay, kamu tetap bisa bayar pakai saldo. Cuma perlu scan kode atau kasih kode ke mereka. Kalau nggak bisa, tenang—banyak warung tetap terima tunai, dan mereka biasanya siap dengan kembalian kecil."
+            },
+            {
+              "role": "user",
+              "content": "Wah, ternyata banyak pilihan. Aku juga pernah lihat orang bayar pakai OVO di warung, tapi aku nggak tahu bedanya sama GoPay. Apa perlu aku daftar dua aplikasi?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ngga perlu. GoPay lebih banyak dipakai di Jakarta, terutama karena terintegrasi sama Gojek—bisa buat bayar kopi, jajan, bahkan bayar Gojek. OVO lebih kuat di beberapa kota kecil di Jawa, tapi di Jakarta, GoPay lebih gampang. Kalau kamu cuma beli kopi atau gorengan, GoPay aja cukup. DANA juga bagus, proses daftarnya cepat, nggak perlu kartu debit."
+            },
+            {
+              "role": "user",
+              "content": "Aku denger juga ada yang bayar pakai kartu kredit di warung, tapi kok mereka bilang ada biaya tambahan? Aku bingung, soalnya dulu waktu beli di supermarket, nggak ada biaya itu."
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, di warung kecil, kalau terima kartu, sering ada biaya 2–3%—karena mereka yang bayar fee ke bank. Banyak yang nggak mau, jadi lebih pilih tunai atau GoPay. Di supermarket, toko yang tanggung biaya, jadi kamu nggak perlu bayar. Tapi di warung, kalau mereka bilang ada biaya, lebih baik pakai GoPay atau tunai saja."
+            },
+            {
+              "role": "user",
+              "content": "Oke, aku ngerti sekarang. Ternyata nggak cuma soal uang, tapi juga soal kebiasaan dan kenyamanan. Aku mau coba mulai lebih sering pakai GoPay, biar nggak bolak-balik cari uang kertas."
+            },
+            {
+              "role": "assistant",
+              "content": "Banyak yang udah nyerah bawa dompet, pakai GoPay aja. Coba mulai dari yang kecil—bayar kopi, beli gorengan, atau Gojek. Nanti lama-lama jadi kebiasaan. Yang penting, isi saldo tiap minggu—biar nggak kaget pas mau bayar."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Cash (tunai) remains dominant in small warungs and informal markets",
+          "QR code-based e-wallets like GoPay are widely adopted in urban Jakarta",
+          "Warungs often display QR stickers or signs indicating digital payment acceptance",
+          "E-wallets are preferred over cards due to lower friction and no surcharges",
+          "Card payments in small warungs often incur a 2–3% surcharge (biaya tambahan)",
+          "GoPay is deeply integrated with Gojek ecosystem and widely used for daily small transactions",
+          "DANA and OVO are also used, but GoPay has stronger urban dominance in Jakarta",
+          "Users often top up e-wallets weekly with small amounts (e.g., 50,000 IDR)",
+          "Peer-to-peer transfers and e-wallets are common among friends and family",
+          "Users prefer e-wallets for convenience and to avoid carrying cash"
+        ],
+        "issues": [
+          "Minor linguistic inconsistency: 'Aku mau beli kopi' uses 'Aku' (first-person pronoun) while the rest of the dialogue uses 'aku' (lowercase), which is more natural in informal spoken Indonesian. However, this is a minor stylistic variation and not a serious error.",
+          "The assistant’s use of 'nggak' (non-standard spelling of 'nggak') is authentic and contextually appropriate for informal spoken Indonesian, but in formal training data, it could be flagged for consistency. However, since the context is natural, informal chat, this is acceptable."
+        ],
+        "suggestions": [
+          "Consider including a brief mention of regional variation—e.g., OVO’s strength in certain parts of Java—to reinforce the nuance that platform dominance varies by region, even within Indonesia.",
+          "Add a subtle reference to the social norm of not using foreign payment apps (e.g., Apple Pay), to reinforce the cultural boundary around digital financial ecosystems.",
+          "To further deepen authenticity, include a moment where the user expresses mild frustration with a vendor who refuses card payments but doesn’t explain it—mirroring the common subtle refusal through 'system not compatible'—to reflect real-life cultural pragmatism."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I wanted to buy coffee at a warung near my office earlier, but when I tried to pay with GoPay, the vendor said the system wasn’t compatible. I tried using my debit card, but he said he didn’t have a terminal. So I ended up paying in cash, but it felt a bit awkward—like he was more comfortable with physical money."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not uncommon, especially in smaller warungs. Many vendors say 'the system isn’t compatible' not because they’re refusing, but because they don’t want to risk a failed transaction. It’s a quiet way of saying, 'I’m not set up for this'—and it keeps things simple."
+            },
+            {
+              "role": "user",
+              "content": "I guess I’m just surprised. Everyone uses GoPay now, right? Why would he reject it? I feel like I should’ve been more prepared—maybe I should just carry cash all the time."
+            },
+            {
+              "role": "assistant",
+              "content": "You don’t need to carry cash all the time, but it helps to know the signs. If there’s no QR sticker, or the phone looks old, he probably hasn’t signed up. Some just haven’t gone through the registration process—or they’re nervous about the setup."
+            },
+            {
+              "role": "user",
+              "content": "So it’s not that he doesn’t trust GoPay—it’s just that the system isn’t ready for him. I was worried he thought I was being pushy or something. But now I see he was just doing what he’s used to."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. For many warung owners, cash isn’t just convenient—it’s part of their rhythm. In places like Yogyakarta or rural Java, counting money by hand, jotting it down in a notebook, and seeing the change in their palm gives them control. It’s not resistance. It’s trust in what they know."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. If I wanted to help him get on board with digital payments, how should I go about it? I don’t want to come off as pushy or lecture him about modern tech."
+            },
+            {
+              "role": "assistant",
+              "content": "Just keep it light. You could say, 'Hey, if you’re ever curious, I can show you how it works—no pressure, just so you don’t miss out on customers.' But don’t push it. Many vendors are wary, not because they’re stubborn, but because they’ve seen others get stuck with fees or app errors. Their choice to stay with cash is valid—especially when it works."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Cash remains dominant in small warungs and informal markets",
+          "Vendors often use 'system not compatible' as a polite way to decline digital payments",
+          "Limited card terminal adoption outside urban commercial zones",
+          "High prevalence and cultural integration of e-wallets like GoPay in daily transactions",
+          "Warung owners' preference for cash rooted in familiarity, control, and trust in traditional methods",
+          "Vendors' hesitation toward digital systems due to fear of fees, technical issues, or lack of registration",
+          "Peer-to-peer digital payment culture among younger Indonesians",
+          "Non-acceptance of foreign payment systems (implied through context)"
+        ],
+        "issues": [
+          "Minor risk of reinforcing a slight urban-rural binary in the assistant’s response, though not explicitly stated—could be refined to reflect regional variation without generalization",
+          "The suggestion to 'show him how it works' might subtly imply a patronizing tone, though the assistant mitigates it with 'no pressure'. Could be softened further for greater cultural sensitivity"
+        ],
+        "suggestions": [
+          "Replace 'if you’re ever curious' with a more culturally grounded phrase like 'if you ever want to try it, I can help you set it up' to better reflect natural Indonesian conversational humility and non-intrusiveness",
+          "Add a brief mention of how some vendors are slowly adopting e-wallets through government or platform incentives (e.g., Gojek’s merchant onboarding programs) to reflect the evolving landscape without overgeneralizing",
+          "Include a subtle nod to regional diversity—e.g., 'In Jakarta or Bali, you’ll see QR codes everywhere, but in smaller towns, it’s still hit or miss'—to avoid implying uniformity"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 15,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

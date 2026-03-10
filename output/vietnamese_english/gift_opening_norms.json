@@ -1,0 +1,411 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Opening Gifts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Whether gifts are opened immediately in front of the giver or set aside to be opened privately later",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my aunt in Hanoi for Tết this year, and she’s given me a red envelope with money inside. I want to thank her properly, but I’m not sure what to do. Should I open it right away in front of her?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to ask—this is a common concern, especially for younger people or those raised abroad. In Vietnamese culture, it’s customary not to open a red envelope (lì xì) immediately in front of the giver, even if you’re excited. Doing so might unintentionally seem impolite or overly focused on the money, which goes against the values of humility and respect for the giver’s intention."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I didn’t realize that. So what should I do instead? I don’t want to seem ungrateful."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—your intention is what matters most. The key is to accept the gift with both hands, bow slightly, and say something warm like ‘Cảm ơn dì, con rất vui’ (Thank you, Auntie, I’m so happy). Then, place the envelope gently on the table or shelf, perhaps near the family altar or where other gifts are kept. This shows you’ve received it with respect, without drawing attention to its contents."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if I feel awkward not opening it right away? I’ve seen people do it in movies and on social media."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great observation. Many younger people in cities like Hanoi or Ho Chi Minh City are indeed influenced by global trends, and some may open gifts quickly—especially in informal or international settings. But even when they do, they often apologize afterward, saying things like ‘Xin lỗi, con không kiềm được, con chỉ muốn cảm ơn ngay!’ (I’m sorry, I couldn’t help myself—I just wanted to thank you right away). This shows awareness of the cultural norm, even when bending it slightly."
+            },
+            {
+              "role": "user",
+              "content": "So it’s okay to open it later, as long as I do it privately? I’d like to show my appreciation properly."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Opening the lì xì later—perhaps after guests have left, or when you’re with family in the quiet of the evening—is not only acceptable but often preferred. That’s when you can truly reflect on the gesture. You might even share the moment with your cousins or younger siblings, saying, ‘Dì đã gửi lời chúc Tết rất ý nghĩa,’ which honors both the gift and the relationship behind it. The value isn’t in the amount—it’s in the *lòng thành*, the sincerity of heart."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll make sure to keep the envelope on the table and open it with my family after everyone’s gone to bed. I want to show my respect the right way."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s the perfect approach. Your thoughtfulness will be felt far more than any formality ever could. In Vietnamese culture, it’s not about what you do in the moment—it’s about how you honor the relationship over time. You’re already showing deep cultural awareness, and that’s what truly matters."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "Gifts, especially lì xì, are not opened immediately in front of the giver",
+          "Gifts are received with both hands and a slight bow as a sign of respect",
+          "The recipient places the gift aside (e.g., on a table or shelf) without opening it",
+          "Opening gifts privately later is culturally preferred and respectful",
+          "The emphasis is on sincerity (*lòng thành*) over material value",
+          "Younger generations may open gifts immediately in informal settings but often apologize",
+          "The act of delaying gift-opening reflects humility and respect, not disinterest",
+          "Gifts are often opened in the presence of family, especially during Tết"
+        ],
+        "issues": [
+          "Minor: The phrase 'con rất vui' (I’m so happy) is slightly informal for a formal greeting to an aunt; 'con rất vui được nhận lì xì từ dì' would be more precise and natural in a ceremonial context. However, this does not detract significantly from authenticity.",
+          "The assistant uses English for the entire conversation, which is acceptable for training data, but the inclusion of Vietnamese phrases is well-integrated and correctly contextualized."
+        ],
+        "suggestions": [
+          "Consider adding a brief note in the system prompt clarifying that Vietnamese honorifics (like 'dì' for aunt) are used with respect and should be matched to the correct familial relationship.",
+          "To further enhance training quality, include a variation where the user is a guest at a wedding or funeral—settings where gift etiquette differs slightly in formality and context.",
+          "Include a subtle mention of the family altar (bàn thờ) as a common place to keep lì xì, reinforcing the spiritual and cultural significance of the space."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s house for Tết this year, and she’s given me a red envelope (lì xì) with money inside. I’ve never been to a Tết gathering in Vietnam before, and I’m not sure what to do. Should I open it right away in front of her?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Vietnamese culture, it’s best not to open the lì xì immediately in front of your cousin. While it might feel natural to open it right away to show appreciation, doing so can unintentionally come across as impolite or even greedy, especially in more traditional settings. Instead, accept it with both hands, bow slightly, and say a quiet 'Cảm ơn cậu' (Thank you, cousin) to show gratitude. Then, place the envelope aside—on the table, altar, or in your bag—without opening it there."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I didn’t know that. So I shouldn’t open it until later? What’s the right time to open it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, it’s customary to open the lì xì privately—usually after the guests have left, or once you’re back home with family. Some people wait until they’re alone or with close family members, especially during the first few days of Tết when the atmosphere is more relaxed. This private moment allows you to appreciate the gift without the pressure of public display. It’s not about being ungrateful—it’s about showing respect for the gesture and the relationship behind it."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if I’m with friends and we’re all opening our lì xì together? Should I still wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even in informal groups, many Vietnamese people still follow the tradition of not opening gifts in front of the giver. If you’re with friends, you might open it together *after* the main gathering, perhaps while sharing tea or snacks. If you do open it in front of others, it’s common to say something like, 'Xin lỗi, mình chỉ mở nhanh một chút để cảm ơn' (Sorry, I’m just opening it quickly to thank you), as a gentle acknowledgment of the cultural norm. The key is sincerity—your intention matters more than the timing."
+            },
+            {
+              "role": "user",
+              "content": "I really appreciate that. I want to be respectful, especially since this is my first Tết with my extended family. Is there anything else I should keep in mind about giving or receiving gifts?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. Remember that in Vietnamese culture, the value of a gift lies not in its price, but in the thought and care behind it. A simple fruit basket, a box of traditional tea, or even a handmade card can be deeply meaningful. Also, giving money in a red envelope is a gesture of blessing and good fortune—especially for children and younger relatives. The amount isn’t as important as the sincerity. And when you receive a gift, it’s common to respond with a small token in return, like a snack or a handmade item, to maintain balance and harmony in the relationship."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Gifts, especially lì xì, are not opened immediately in front of the giver",
+          "Gifts are accepted with both hands and a slight bow as a sign of respect",
+          "The emphasis is on sincerity (*lòng thành*) rather than material value",
+          "Gifts are opened privately after guests leave or at home",
+          "The practice of opening gifts in private is rooted in humility and modesty",
+          "Apologies or light explanations (e.g., 'Xin lỗi, mình chỉ mở nhanh một chút') are used when opening gifts in public",
+          "Gifts are often simple and thoughtful—like tea, fruit baskets, or handmade items",
+          "Reciprocity is valued: returning a small token maintains social harmony"
+        ],
+        "issues": [
+          "Minor: The phrase 'Cảm ơn cậu' is informal and appropriate for a cousin, but in more formal or traditional contexts, 'Cảm ơn chị/em' (Thank you, sister/brother) may be more appropriate depending on age and relationship. However, this is contextually acceptable given the cousin relationship.",
+          "Slight oversimplification in the last response: while reciprocity is valued, it's not always expected or required—especially in casual or first-time interactions. The example could be more nuanced to avoid implying obligation."
+        ],
+        "suggestions": [
+          "Include a brief note in training materials that the use of 'cậu' is appropriate for same-age or younger cousins, but 'chị/em' may be preferred for older or younger relatives to reflect hierarchy and respect.",
+          "Clarify that returning a gift is a gesture of goodwill, not a formal obligation—this helps prevent overgeneralization of reciprocity norms.",
+          "Add a sentence in the assistant’s response about the importance of the red envelope’s symbolism (blessing, good fortune, protection) to deepen cultural context.",
+          "Consider including a subtle mention of regional variation (e.g., urban vs. rural) to reflect that younger generations may be more flexible, but still mindful of the underlying respect."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s house for Tết this year, and she’s given me a small red envelope with money inside. I’ve never been to a Vietnamese family gathering during Tết before, and I’m not sure what to do with the lì xì. Should I open it right away in front of her?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to ask—this is a meaningful moment, and the way you respond shows respect. In Vietnamese culture, it’s customary not to open the lì xì immediately in front of the giver. Doing so might be seen as showing off or being overly focused on the money, which goes against the values of humility and sincerity (*lòng thành*)."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I didn’t know that. So what should I do instead? I really want to show I’m grateful."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—your intention to show gratitude is what matters most. The best way is to accept the lì xì with both hands, bow slightly, and say something like 'Cảm ơn cậu nhiều!' (Thank you so much!) or 'Chúc cậu Tết vui vẻ!' (Wishing you a happy Lunar New Year!). Then, place it gently on the table or in your pocket without opening it. This small gesture speaks volumes about your respect and awareness."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if I’m tempted to open it right away—especially since it’s my first time and I’m excited? I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a very common feeling, and many people—even younger Vietnamese—have felt the same. If you do open it by accident, it’s okay to quietly apologize afterward. You could say, 'Xin lỗi, mình hơi háo hức, không cố ý!' (Sorry, I got excited and didn’t mean to!). But the real key is the intention: showing appreciation without drawing attention to the gift itself. The joy comes from the relationship, not the amount."
+            },
+            {
+              "role": "user",
+              "content": "I see. So the gift isn’t about the money—it’s about the blessing and the connection?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, precisely. The lì xì symbolizes good fortune and the hope that you’ll have a prosperous year. It’s not about the value—it’s about the care behind it. In fact, a simple, thoughtfully chosen gift like a lì xì with a handwritten note or a small family photo inside is often more meaningful than a large sum. The real gift is the relationship and the warmth of the moment."
+            },
+            {
+              "role": "user",
+              "content": "That’s really beautiful. I’ll make sure to keep it private and open it later with my family, maybe after dinner when everyone’s relaxed. Should I write a thank-you note or something?"
+            },
+            {
+              "role": "assistant",
+              "content": "That would be a lovely touch. A short handwritten note—just a few lines—can go a long way. You might write: 'Cảm ơn cậu rất nhiều vì món quà Tết ý nghĩa. Mình rất trân trọng tình cảm và lời chúc của cậu. Chúc cậu một năm mới an lành và hạnh phúc!' (Thank you so much for this meaningful Lunar New Year gift. I truly appreciate your kindness and well-wishes. Wishing you a peaceful and happy new year!). It shows thoughtfulness and deepens the connection."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.78,
+        "cultural_elements_verified": [
+          "Gifts (especially lì xì) are not opened immediately in front of the giver",
+          "Receiving gifts with both hands and a slight bow is a sign of respect",
+          "Apologizing if a gift is opened prematurely is culturally appropriate",
+          "The emphasis on sincerity (*lòng thành*) over material value",
+          "Private opening of gifts, often later with family, is the norm",
+          "The symbolic meaning of lì xì as a blessing rather than financial value",
+          "Handwritten notes expressing gratitude are valued and meaningful"
+        ],
+        "issues": [
+          "Minor: The phrase 'Xin lỗi, mình hơi háo hức, không cố ý!' is natural but slightly informal; in more formal or traditional settings, a more reverent apology like 'Xin lỗi vì đã mở quà sớm, không có ý bất kính' might be preferred.",
+          "Slight overgeneralization: While younger generations are more influenced by global customs, the example could acknowledge that urban youth may occasionally open gifts openly without apology, but still do so with awareness—this nuance is implied but not explicitly stated."
+        ],
+        "suggestions": [
+          "Include a brief note in the assistant’s response acknowledging generational variation: 'While many younger people in cities may open lì xì out of excitement, even they often apologize afterward, showing they still value the cultural norm.'",
+          "Slightly refine the apology phrase to include a more formal tone option for conservative or elder-focused settings.",
+          "Consider adding a mention of placing the lì xì on a ceremonial table (like a family altar or Tết display) as a culturally resonant act of respect."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping my cousin prepare for Tết this year. She’s going to visit her aunt in Hanoi, and I want to make sure she does everything right. The aunt gave her a red envelope (lì xì) during the family gathering last night. Should my cousin open it right away in front of everyone?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, it’s best not to open the lì xì immediately in front of the giver. In Vietnamese culture, opening a gift—especially a red envelope—right away can be seen as impolite or even greedy, as it draws attention to the amount and may make the giver uncomfortable. Instead, your cousin should accept it with both hands, bow slightly, and say a quiet ‘Cảm ơn cô’ (Thank you, aunt). Then, she should place it safely aside—perhaps in her bag or on the table—without opening it in front of others."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I didn’t know that. So she shouldn’t even look at it until later? What if she’s excited and wants to check how much is inside?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common instinct, especially among younger people, but it’s important to resist it. The act of waiting to open the lì xì is a quiet expression of respect and humility. Even if she’s excited, she can show that by smiling warmly and saying, 'Con cảm ơn cô nhiều, con sẽ mở sau nhé' (Thank you so much, Aunt—I’ll open it later). If she does open it too soon, she might even apologize afterward, saying, 'Xin lỗi cô, con không kiềm được lòng tò mò!' (I’m sorry, Aunt—I couldn’t help being curious!). But better to avoid the moment entirely."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. So when *should* she open it? And what’s the right way to do it?"
+            },
+            {
+              "role": "assistant",
+              "content": "She should open it privately—ideally after the family gathering has settled, or once she’s back home with her parents or siblings. The moment is meant to be shared, not performed. She can open it with her family, perhaps while sipping tea or during a quiet moment, and say something like, 'Cô gửi lì xì này cho con, con thấy rất ấm lòng' (Aunt sent this lì xì for me—I feel so touched by it). The focus isn’t on the money, but on the love and care behind it. That’s what matters most: *lòng thành*—sincerity of heart."
+            },
+            {
+              "role": "user",
+              "content": "That’s really beautiful. What if she’s in a more international setting, like a friend’s house where people open gifts right away? Should she still wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "In informal or international settings, younger Vietnamese may open gifts right away—especially if they’re close to the giver or in a relaxed group. But even then, many still pause and gently acknowledge the cultural norm. They might say, 'I know I should wait, but I’m so excited—I hope you don’t mind!' or 'Sorry, I’m used to opening gifts right away, but I’ll remember this for next time.' This small gesture shows awareness and respect, even when bending the rule. The key is intention: showing that you value the relationship more than the moment of display."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Gifts, especially lì xì, are not opened immediately in front of the giver",
+          "Accepting gifts with both hands and a slight bow is a sign of respect",
+          "The emphasis on *lòng thành* (sincerity of heart) over material value",
+          "Private opening of gifts, often with family, is the culturally preferred practice",
+          "Apologies or explanations for opening gifts early are common and culturally appropriate",
+          "Younger generations may open gifts immediately in informal or international settings but often acknowledge the norm",
+          "The act of waiting reflects humility and respect, not disinterest"
+        ],
+        "issues": [
+          "Minor: The use of 'con' (child) in 'Con cảm ơn cô nhiều' assumes a specific age and relationship; in some contexts, 'em' might be more appropriate for a cousin addressing an aunt, though 'con' is acceptable and not incorrect",
+          "Slight overgeneralization in the final response: while younger Vietnamese may open gifts early in international settings, the example assumes this is universally done with awareness—some may not be aware at all, and the cultural nuance of 'showing awareness' may be too optimistic for all learners"
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant's final response about the importance of context: 'In more formal or traditional settings, even in international environments, it’s still best to wait unless the situation is clearly casual and the giver is very familiar.'",
+          "Consider including a subtle distinction between 'cousin' and 'aunt' in the Vietnamese honorific system—e.g., using 'chị' or 'bà' instead of 'cô' depending on the aunt’s age and relationship to the cousin, to reinforce linguistic precision",
+          "Include a short phrase in Vietnamese that a younger person might say to acknowledge the norm: 'Con biết là nên đợi, nhưng con quá háo hức!' (I know I should wait, but I’m just too excited!)—to make the response more authentic and relatable"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping my cousin plan her first Tết celebration at her new apartment in Hanoi. She wants to give small gifts to her close friends who are coming over—like a box of traditional bánh mứt (jam and cake) and a few red envelopes (lì xì). But I’m worried: should she open the gifts right away when she hands them out, or wait? I’ve seen people do both, and I don’t want her to accidentally offend anyone."
+            },
+            {
+              "role": "assistant",
+              "content": "In Vietnamese culture, it’s best to avoid opening gifts in front of the giver—especially during Tết, when gestures carry deep meaning. Your cousin should present the gifts with both hands, bow slightly, and say a simple thank-you, like 'Cảm ơn bạn rất nhiều'—then set them aside without opening them immediately. This shows respect and humility, and avoids any impression of greed or excessive focus on material value."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense, but what if someone else opens their gift right away? I’ve seen younger friends do it, especially when they’re excited. Should she still wait, even if others are opening theirs?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, she should still wait—especially if she’s the host. The key isn’t the action itself, but the intention behind it. Opening a gift in front of the giver can feel like a performance, which goes against the value of *lòng thành* (sincerity of heart). Even if others open theirs, she can quietly follow the traditional rhythm: accept, bow, place the gift on the family altar or a central table, and open it later with family or close friends. This private moment is where the real appreciation happens—without pressure."
+            },
+            {
+              "role": "user",
+              "content": "So she shouldn’t open the lì xì right away either? I know some people do, especially in casual settings."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—especially the lì xì. These red envelopes are not just money; they’re symbols of blessings, protection, and good fortune for the new year. Opening one in front of the giver, even casually, can be seen as disrespectful. The tradition is to keep it safe until after guests have left or when the family gathers quietly. Some people even write a small note on the envelope: 'Cảm ơn nhiều, sẽ mở sau'—'Thank you so much, I’ll open this later.' It’s a gentle way to honor the custom without drawing attention."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. What if she’s nervous about seeming ungrateful? Like, what if she really wants to show she’s happy?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a very human concern—and the beauty of Vietnamese culture is that sincerity is valued more than formality. She can show her gratitude in other ways: by making eye contact, speaking warmly, and saying something like, 'Tôi rất trân trọng món quà và tấm lòng của bạn'—'I truly value your gift and your kindness.' The appreciation is in the heart, not the moment of opening. In fact, many people in Hanoi still open lì xì only after midnight on Tết, when the family is together and the mood is quiet—because the gesture matters more than the spectacle."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So the gift isn’t about the item—it’s about the relationship. I’ll make sure she keeps the gifts on the table with a note, and opens them later with her family. Thanks for helping me understand this so clearly."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re very welcome. That’s the essence of it: the gift is a bridge, not a show. By honoring the quiet rhythm of giving and receiving, your cousin isn’t just following tradition—she’s nurturing connection, humility, and harmony. That’s what Tết is really about."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Gifts are not opened immediately in front of the giver in Vietnamese culture",
+          "Gifts are accepted with both hands and a slight bow as a sign of respect",
+          "The emphasis is on *lòng thành* (sincerity of heart) over material value",
+          "Red envelopes (lì xì) are symbolic of blessings and should be opened privately",
+          "Gifts are often placed on a table or altar and opened later with family",
+          "Younger generations may open gifts immediately but often apologize to acknowledge the norm",
+          "Appreciation is expressed through warmth and words, not through immediate reaction to the gift",
+          "The private moment of opening gifts allows for genuine, unhurried appreciation"
+        ],
+        "issues": [
+          "Minor: The phrase 'Cảm ơn bạn rất nhiều' is grammatically correct but slightly informal; in a formal or respectful context (e.g., receiving a gift from a close friend during Tết), 'Cảm ơn bạn rất nhiều' is acceptable, but 'Cảm ơn bạn rất nhiều, tôi rất trân trọng món quà' would be more nuanced and reflective of deeper gratitude. However, this is a very minor stylistic point and does not affect cultural accuracy.",
+          "The suggestion to write 'Cảm ơn nhiều, sẽ mở sau' on the envelope is culturally accurate and authentic, though slightly informal—this is acceptable given the context of a personal, familial setting."
+        ],
+        "suggestions": [
+          "Include a brief mention of regional variation (e.g., urban vs. rural) to reflect that while the norm is strong in Hanoi, younger people in cities may deviate, but still often express apology or awareness.",
+          "Consider adding a sentence about the role of the family altar (bàn thờ) as a symbolic place to store gifts during Tết, reinforcing the spiritual and communal significance.",
+          "Slightly elevate the tone of the final response to reflect the poetic and philosophical depth of Vietnamese cultural values, e.g., 'The quiet act of waiting becomes a silent prayer for harmony.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

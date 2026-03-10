@@ -1,0 +1,206 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Handing Gifts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The physical and ceremonial manner in which gifts are presented, including which hand to use and whether to bow",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my aunt for the first time since she retired. She taught for 35 years—she’s like a second mother to me. I want to bring something thoughtful, not flashy. What should I get, and how should I give it?"
+            },
+            {
+              "role": "assistant",
+              "content": "A box of premium jasmine tea in gold wrapping would be perfect—elegant, quiet, and full of respect. Or a small potted orchid; it’s something that blooms slowly, just like her dedication. Avoid anything sharp—knives or scissors are never good gifts, as they’re seen as cutting ties."
+            },
+            {
+              "role": "user",
+              "content": "Good. Should I open it right away when I hand it over?"
+            },
+            {
+              "role": "assistant",
+              "content": "Never open it in front of her. Wait until you’re alone. That’s the rule—especially with elders or someone you respect deeply."
+            },
+            {
+              "role": "user",
+              "content": "And how should I present the gift?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use both hands. Hold the gift in your right hand, support it from below with your left. Keep your palms together at chest level—this is the wai. Bow your head slightly, about 15 to 30 degrees. It’s not just about the hands—it’s the whole gesture that shows respect."
+            },
+            {
+              "role": "user",
+              "content": "I’ll remember that. Which hand do I use?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always the right hand. The left is for things like wiping or cleaning—never for giving something valuable. When you’re giving with both hands, the right holds the gift, the left supports it. It’s how we show humility, even in family."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And I should avoid anything sharp, right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—knives, scissors, anything sharp. They’re bad luck, especially when giving to someone who’s taught or served. A hand-painted Thai tray or a small fruit basket with a nice wrapper would be better. Something that’s whole, lasting, and shared."
+            },
+            {
+              "role": "user",
+              "content": "I’ll go with the tea and a small orchid. Simple, sincere, and meaningful."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s exactly right. In Thai families, it’s not about the price—it’s about the care. She gave 35 years of her life to her students. This gift? It’s a quiet way of saying thank you, like a prayer without words."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Gifts should be presented with both hands, right hand holding the gift, left hand supporting it from below",
+          "Palms are brought together at chest level (wai) during gift presentation, especially to elders or respected figures",
+          "A slight head bow (15–30 degrees) is performed during the wai gesture to show respect",
+          "Never open a gift in front of the giver—this is a sign of humility and proper etiquette",
+          "Always use the right hand for giving or receiving gifts; the left hand is considered unclean",
+          "Avoid sharp objects like knives or scissors, as they symbolize cutting relationships",
+          "Gifts should be neatly wrapped in bright, auspicious colors (e.g., red, gold, white); avoid black or white alone",
+          "The value of a gift lies in intention and care, not price or extravagance",
+          "The wai gesture is commonly used in formal family gatherings and religious contexts, not just with monks"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 8.8,
+        "overall_score": 8.82,
+        "cultural_elements_verified": [
+          "Use of the right hand for gift-giving",
+          "Supporting the gift with the left hand while holding it in the right",
+          "Bowing the head (wai) during gift exchange",
+          "Avoiding sharp objects as gifts",
+          "Presenting gifts with both hands as a sign of humility",
+          "Neat, respectful wrapping (implied by 'gold wrapping', 'nice wrapper')",
+          "Gifts should reflect care and sincerity over material value",
+          "Cultural significance of slow-blooming plants like orchids",
+          "Respect for elders and teachers in family contexts"
+        ],
+        "issues": [
+          "The assistant's explanation of the left hand being used for 'wiping or cleaning' is slightly oversimplified and risks reinforcing a hygiene-based stereotype. While culturally relevant, it could be misinterpreted as implying the left hand is 'unclean' in a literal sense, which is not always accurate—more precisely, it's about ritual purity and respect.",
+          "The assistant does not explicitly mention the Buddhist context (e.g., monks or temples), which is a key dimension of gift-giving in Thai culture. While not required in every example, this is a notable omission given the cultural briefing's emphasis on monastic practices.",
+          "The phrase 'like a prayer without words' is poetic but risks being too abstract or metaphorical for a training example focused on concrete behavioral norms. It may dilute the instructional clarity for model training."
+        ],
+        "suggestions": [
+          "Replace 'the left is for wiping or cleaning' with 'the left hand is traditionally reserved for personal hygiene and not used in respectful exchanges' to better reflect cultural nuance without overgeneralizing.",
+          "Include a brief, natural mention of monastic gift-giving (e.g., 'If you ever give to a monk, you’d place the gift on a cloth or tray—never hand it directly') to strengthen cultural completeness.",
+          "Replace metaphorical language like 'a prayer without words' with a more grounded cultural observation, such as 'It’s how we show gratitude without words—just like how we bow when we greet elders.'",
+          "Ensure that all user turns remain implicitly Thai—no need to change anything here, as the user’s tone is natural and insider-like."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my aunt’s house for Songkran, and I want to bring her a gift. She’s always looked out for me, so I’d like it to feel meaningful. What would be a good choice, and how should I give it?"
+            },
+            {
+              "role": "assistant",
+              "content": "A box of Kanom Siam or a set of fragrant Thai herbal teas would be thoughtful—something that feels like home, especially during Songkran. Wrap it neatly in red or gold paper. The colors are lucky, and the care in wrapping shows how much you value her."
+            },
+            {
+              "role": "user",
+              "content": "Good, I’ll go with Kanom Siam. Should I open it right away when I hand it to her?"
+            },
+            {
+              "role": "assistant",
+              "content": "No—keep it closed. Hold it with both hands: right hand on top, left hand supporting underneath. Bow your head slightly, just enough to show respect. Let her open it later. The moment isn’t about the gift—it’s about the way you give it."
+            },
+            {
+              "role": "user",
+              "content": "So I use my right hand, support it with my left, and bow a little? I remember my uncle once handed a gift to a monk with his left hand at a temple, and the monk just didn’t look at him. It felt… heavy."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s why we use the right hand—especially with monks. The left is kept for personal things, never for offerings. Monks don’t accept gifts directly because it’s part of their vow of non-attachment. It’s not about you—it’s how things are done."
+            },
+            {
+              "role": "user",
+              "content": "Right, I’ve learned that. So for a gift to a monk, do I just hand it over like that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not directly. Place the gift on a clean cloth or tray first. Then offer it with both hands and a soft bow. That way, you honor the space between you and the monk—no contact, no distraction. It’s how we keep the moment sacred."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So it’s not about being seen as respectful, but just… how things are done. Like the wai—it just happens when you’re grateful."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The wai isn’t a performance. It comes when your heart is full. In Thai homes, kids learn early: giving with both hands and a bow isn’t just polite—it’s how we show we remember our place in the family."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of the right hand for gift-giving",
+          "Supporting the gift with the left hand to show humility",
+          "Bowing the head (wai) as a gesture of respect",
+          "Avoiding direct hand contact with monks; using a cloth or tray",
+          "Neat, auspicious wrapping in red or gold paper",
+          "Gifts should not be opened immediately upon giving",
+          "Cultural significance of gift-giving as an expression of gratitude and hierarchy",
+          "Gift-giving as a natural, internalized practice rather than performative"
+        ],
+        "issues": [
+          "Minor ambiguity in the phrase 'let her open it later'—while culturally accurate, it could be slightly more precise to say 'she will open it after receiving it' to emphasize the ritual timing.",
+          "The mention of 'your uncle once handed a gift to a monk with his left hand' introduces a specific anecdote that, while plausible, slightly breaks the implicit cultural context by referencing a personal memory—could be softened to a more general observation."
+        ],
+        "suggestions": [
+          "Replace 'let her open it later' with 'she will open it after receiving it' to better reflect the cultural expectation of immediate acceptance and delayed opening.",
+          "Rephrase the anecdote about the uncle to be more general: e.g., 'I’ve heard of people being reminded of the importance of the right hand when giving to monks—especially in temple settings.'",
+          "Consider adding a brief mention of the symbolic meaning of the cloth used for monks (e.g., 'a clean cloth represents purity and respect') to deepen cultural nuance without explanation."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 3,
+    "examples_produced": 2
+  }
+}

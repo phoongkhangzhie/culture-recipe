@@ -1,0 +1,180 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Cultural Stereotyping",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "The harm caused by applying overgeneralized cultural assumptions to individuals based on their group membership",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m a Chinese Malaysian working in a mid-sized tech firm in Kuala Lumpur. My team just got a new project lead—she’s Malay, and I’ve noticed she keeps giving me vague feedback like 'We’ll discuss this later' when I present ideas. I’m not sure if she’s just busy, or if there’s something deeper going on. Should I push for clarity, or is this just how things work here?"
+            },
+            {
+              "role": "assistant",
+              "content": "What you're experiencing is common in Malaysian workplaces—especially in cross-ethnic teams—where *menjaga muka* (face-saving) and indirect communication are valued. Saying 'We’ll discuss this later' often isn’t a brush-off, but a way to avoid discomfort, especially when feedback might challenge someone’s idea or identity. It’s not about you—it’s about preserving harmony."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I’ve also heard from a colleague that when the Malay team lead was promoted, it was partly because she was seen as having 'natural leadership'—like she just *fit* the role. I’ve been here 8 years, done the same work, and I still feel like I’m being passed over. Is this about cultural fit again?"
+            },
+            {
+              "role": "assistant",
+              "content": "The idea that Malay individuals are more naturally authoritative is a harmful stereotype that persists in some workplaces—but it’s not true. Leadership isn’t inherited by ethnicity. Many Chinese and Indian professionals across Malaysia, from public service to tech, have risen through merit, resilience, and opportunity. The promotion system includes Bumiputera policies, which are part of a national framework to address historical socio-economic imbalances—not to assign roles based on race. These policies aim for equity, not exclusion."
+            },
+            {
+              "role": "user",
+              "content": "I just want to be heard. How do I speak up without seeming confrontational? I don’t want to be seen as 'too direct' or 'not team-oriented.'"
+            },
+            {
+              "role": "assistant",
+              "content": "You’re already showing cultural intelligence by wanting to be heard with care. Try framing your request as collaborative: *‘I really appreciate your input—could we clarify the next steps so I can align my work better?’* This keeps the tone respectful and open. You could also test ideas in group settings: *‘I’ve been thinking about this approach—how does it fit with the team’s direction?’* This invites feedback without demanding it."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. I also wonder—does regional identity play a role? I’ve heard that in places like Sarawak or Sabah, people don’t see themselves through the same racial lens as in Peninsula Malaysia."
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. In Sabah and Sarawak, identity is often rooted in indigenous heritage—like *Dayak*, *Kadazan-Dusun*, or *Bidayuh*—rather than national racial categories. People there identify more by community, language, and place than by ethnicity. This leads to different workplace dynamics, where loyalty and belonging stem from shared history and local pride, not racial labels. That’s why regional diversity matters: Malaysia isn’t monolithic. Your experience in KL is valid—but it’s shaped by context. You’re not alone, and your voice belongs here."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "menjaga muka",
+          "harmoni",
+          "kepentingan bersama",
+          "hirarki",
+          "muka",
+          "Bumiputera policies",
+          "natural leadership (as stereotype)",
+          "Dayak",
+          "Kadazan-Dusun",
+          "Bidayuh",
+          "indigenous heritage",
+          "regional identity in East Malaysia",
+          "collaborative framing of feedback",
+          "indirect communication",
+          "contextual identity",
+          "non-monolithic Malaysia",
+          "merit-based leadership",
+          "historical socio-economic equity"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "The concept of *menjaga muka* (face-saving) as a reason for indirect communication in Malaysian workplaces",
+          "The distinction between national racial categories and indigenous identity in Sabah/Sarawak",
+          "The role of Bumiputera policies in addressing historical socio-economic imbalances",
+          "The critique of the stereotype that Malays are 'naturally authoritative' or 'naturally suited' to leadership",
+          "The acknowledgment of hybrid identities among younger Malaysians",
+          "The use of respectful, context-sensitive language in workplace interactions",
+          "The recognition that silence or vague responses do not imply disengagement but may reflect harmony-seeking behavior"
+        ],
+        "issues": [
+          "The assistant’s response to the user’s concern about being passed over could have more explicitly named the structural issue of 'cultural fit' as a proxy for racial bias, which is a known but under-acknowledged phenomenon in Malaysian workplaces. While the response correctly challenges the stereotype, it could more directly name the risk of 'cultural fit' being weaponized to exclude non-Malay professionals.",
+          "The mention of 'Bumiputera policies' is accurate but could be slightly more nuanced—specifically noting that these are part of a broader affirmative action framework (e.g., NEP legacy), not just a 'promotion system,' to avoid oversimplification."
+        ],
+        "suggestions": [
+          "In the response to the promotion question, explicitly name 'cultural fit' as a potential barrier and reframe it as a risk of unconscious bias, not just a structural policy issue.",
+          "Add a brief note about how younger Malaysian professionals often navigate multiple identities (e.g., 'Malaysian-Chinese', 'Muslim-Chinese') to further reinforce hybridity as a norm.",
+          "Consider including a subtle nod to regional variation in communication styles—e.g., that while indirectness is common in KL, some Sarawakian teams may value directness in certain contexts, depending on organizational culture."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m a Chinese-Malaysian project lead at a tech startup in Kuala Lumpur. Recently, I proposed a new client onboarding process that’s more data-driven and automated. My manager, Encik Rizal, didn’t say no, but he just said, 'We’ll discuss this later' after the meeting. I’ve been working here for five years and have led two major projects. I’m starting to wonder if it’s because I’m Chinese—maybe he thinks I’m too direct or not 'culturally aligned'?"
+            },
+            {
+              "role": "assistant",
+              "content": "That pause—‘We’ll discuss this later’—is a common Malaysian way of preserving harmony without saying no directly. It’s not always personal, but it can reflect deeper dynamics. The idea that Chinese people are ‘too direct’ is a stereotype that doesn’t reflect the full range of Chinese-Malaysian communication styles—especially in professional settings where many of us are deeply attuned to *harmoni* and *muka*. Your proposal to improve efficiency? That’s actually aligned with national values like *1Malaysia* and inclusive innovation. What matters is your intent—and that’s clear."
+            },
+            {
+              "role": "user",
+              "content": "I didn’t realize it could be that subtle. But I’ve also noticed that when we assign roles, Malay colleagues often get community-facing tasks, Chinese ones are pushed into sales or operations, and Indians into technical roles. Is that part of the same pattern?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not uncommon to see patterns where certain roles are assumed to align with ethnic backgrounds—but this isn’t a rule, and many teams are actively working to break those cycles. In tech startups, merit often shines through, but unconscious bias can still shape assumptions. The good news? Younger leaders across all communities are challenging these norms—pushing for roles based on capability, not background. In places like Penang or Sarawak, local identities are stronger, and such stereotypes are less rigid. And nationwide, inclusive leadership training and cross-ethnic mentorship programs are gaining traction, moving beyond tokenism toward real equity."
+            },
+            {
+              "role": "user",
+              "content": "So how do I push back without seeming confrontational? I don’t want to be seen as ‘too Chinese’ in my approach."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re already showing cultural intelligence. Try reframing your idea as a way to strengthen *keseimbangan*—harmony through smarter systems. Say: ‘This could help us serve more clients smoothly while keeping our team’s collaborative spirit.’ Then, ask Encik Rizal privately: ‘I’d appreciate your thoughts on how this aligns with our team’s values.’ That preserves *menjaga muka* and invites dialogue. If needed, bring in a neutral ally—someone respected across groups—to co-lead a small pilot. Change in Malaysia often happens not through debate, but through connection."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Use of *harmoni* and *muka* as core cultural concepts",
+          "Recognition that silence or indirect responses like 'We’ll discuss this later' reflect harmony preservation",
+          "Acknowledgment of generational shifts and hybrid identities among Malaysian youth",
+          "Critique of occupational stereotyping (e.g., Chinese in sales, Indians in technical roles)",
+          "Reference to regional diversity (Penang, Sarawak) as counterpoints to national stereotypes",
+          "Emphasis on inclusive leadership and cross-ethnic mentorship as emerging trends",
+          "Correct use of honorifics (Encik Rizal) and respectful tone in professional context",
+          "Distinction between ethnic identity and individual capability"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'Malay colleagues often get community-facing tasks'—while this reflects a common pattern, it should be framed as a potential bias rather than an established norm to avoid reinforcing stereotypes",
+          "Slight oversimplification in suggesting 'younger leaders across all communities are challenging these norms'—while true in many cases, the pace and extent of change vary significantly by sector and region"
+        ],
+        "suggestions": [
+          "Reframe occupational role assumptions as 'common patterns that may reflect unconscious bias' rather than general truths",
+          "Include a brief mention of the role of affirmative action or ethnic quotas in public sector contexts, to provide a fuller picture of structural dynamics",
+          "Add a note about the importance of *kepentingan bersama* in team decision-making, especially when proposing process changes",
+          "Consider including a reference to interfaith or multicultural family dynamics to further illustrate hybrid identities"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 23,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

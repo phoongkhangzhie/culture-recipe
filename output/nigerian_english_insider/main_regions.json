@@ -1,0 +1,195 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Main Regions",
+    "category": "Institutional Norms > Geography & Customs > Population and Geography",
+    "description": "Key geographic and administrative regions within a country and their distinct cultural identities and sub-cultures",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin in Kano next week for Eid, but I’m not sure how to behave. My uncle said I should arrive early and bring something, but I don’t know what’s expected. Should I just bring a small gift, or is there more to it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Arrive before Jumu’at prayers—especially in Kano, where family and faith are central. A wrapped gift works best: dates, a good tea, or a box of sweets. It’s not about the price, but the thought. And when you greet, do it properly—bow slightly, hand over your heart, say ‘Salamu alaikum’ slowly. The elders notice that kind of respect."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. I’ve never been to a home in Kano during Eid before. Will I be expected to join the prayer, or just wait in the house?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’ll be invited if you’re comfortable. Men usually pray in the courtyard; women and children stay inside. If you’re unsure, follow the eldest male—when he stands, you stand. You don’t need to know the prayers. Just stand and follow quietly. Afterward, they’ll serve you first. That’s how it’s done."
+            },
+            {
+              "role": "user",
+              "content": "I’m also stopping by my aunt in Lagos afterward. She’s Yoruba, and I know she’s very particular about hospitality. I don’t want to offend her by doing something wrong."
+            },
+            {
+              "role": "assistant",
+              "content": "In Lagos, especially among Yoruba families, hospitality is deep-rooted. When you arrive, wait to be invited to sit. If she says ‘Kai kai,’ it means ‘take a little’—not a command, but a ritual of shared care. Even if you’re full, take a small portion. Refusing more than once can seem dismissive. And if she calls you ‘Omo rere,’ it’s a sign she sees you as respectful, humble, and part of the family. It’s not just a phrase—it’s an honor."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. I’m actually going to stop by my uncle in Enugu too before heading back. He’s Igbo, and I remember he always says things like ‘Igbo enwe eze’ when we’re arguing about who should lead a meeting. What does that mean, and how should I act around him?"
+            },
+            {
+              "role": "assistant",
+              "content": "‘Igbo enwe eze’ means no one man is a king—everyone has a voice. It’s often used in community or group decisions, not just family arguments. In his home, let elders speak first. If you have an idea, say it with a pause: ‘I humbly suggest…’ And when food is served, take the first yam if offered. Don’t eat until others start. It’s a sign of unity. These values run deep, even in urban Enugu."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to Calabar next, to see my cousin in the Delta. She’s Efik, and I’ve heard they have these big masquerades. Should I expect to see one during my visit?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ekpe masquerades are sacred and tied to lineage, ancestral memory, and community law. They’re not part of the New Yam Festival per se—they’re reserved for specific events like initiation rites or family ceremonies. If you’re invited to a gathering, stay quiet, bow your head slightly, and don’t stare. It’s not about spectacle—it’s spiritual. Your presence should be respectful, not curious."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. She’s been telling me about how the women in her family run things—she said I’d be welcomed like a son. What should I do to show I’m welcome?"
+            },
+            {
+              "role": "assistant",
+              "content": "If she says you’re welcomed like a son, that’s a real honor. In Efik homes, women often lead domestic and community affairs. When she speaks, listen. If she offers food, accept with both hands. If she calls you ‘good child’ or uses a term of endearment that signals acceptance, it’s a quiet seal of belonging. Don’t overthink it—just be present, humble, and kind."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Hausa-Fulani cultural practices in Kano, including salamu greeting, Jumu’at prayers, and Eid customs",
+          "Yoruba emphasis on hospitality, 'Kai kai' ritual, and the significance of 'Omo rere'",
+          "Igbo principle of collective decision-making with 'Igbo enwe eze' and communal eating norms",
+          "Efik spiritual traditions including Ekpe masquerades, ancestral reverence, and female-led family dynamics",
+          "Regional distinctions in religious practice, social hierarchy, and ceremonial behavior across Nigeria",
+          "Respect for elders, communal labor (karma), and gendered roles in family and community life"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in describing Efik culture as uniformly 'women-run'—while the 'mama' system is strong, it's not monolithic; some households have male-dominated structures. A slight nuance would help.",
+          "The phrase 'she said I’d be welcomed like a son' could be slightly misleading—while kinship terms are fluid, 'welcomed like a son' may imply a formal adoption or deep lineage bond not always present. A more neutral phrasing like 'treated with familial warmth' might be safer.",
+          "The assistant’s tone in the last response ('Don’t overthink it—just be present, humble, and kind') is slightly too generic and could benefit from a more culturally specific behavioral cue (e.g., 'if she offers you a cup of palm wine, accept it with both hands—this is a sign of trust')"
+        ],
+        "suggestions": [
+          "Add a brief contextual note when discussing Efik masquerades: clarify that they are not public performances but sacred events, and non-initiates should never attempt to photograph or question them.",
+          "In the Igbo section, consider mentioning the role of the *Ozo* title or *Ndi Igbo* lineage systems to deepen cultural texture without overcomplicating.",
+          "Use more region-specific food examples: e.g., in Kano, mention *suya* or *tuwo shinkafa*; in Lagos, *akara* and *moi moi*; in Enugu, *ofada rice*; in Calabar, *ukwa* or *edikang ikong*.",
+          "Introduce subtle linguistic markers: e.g., in Yoruba homes, the use of *‘Ara o!’* (meaning 'come in') or *‘Ko si e’* (‘no problem’) to signal authenticity without breaking English."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin in Kano next week—she’s the eldest daughter in the family, and her husband’s father is related to the Emir. I want to make sure I don’t come off as disrespectful. How should I greet her when I arrive?"
+            },
+            {
+              "role": "assistant",
+              "content": "Start with a proper salamu—bow slightly, place your right hand over your heart, and say ‘Salamu alaykum’ in a calm, respectful tone. It’s not just a greeting; it shows you acknowledge the family’s standing and the importance of hierarchy. Once inside, wait for her to invite you to sit. Don’t take the right side of the room—especially if elders are present; that’s usually reserved for guests of higher status."
+            },
+            {
+              "role": "user",
+              "content": "Got it. If we’re sitting together, should I mention I’m from Lagos? I don’t want to seem like I’m showing off or disrespecting the North."
+            },
+            {
+              "role": "assistant",
+              "content": "Better not to lead with it. Let the conversation unfold naturally. If she asks where you’re from, say something like, ‘I’m from Lagos, but my father’s from Ibadan.’ That keeps it grounded. The North values humility—especially around regional pride. If you’re asked about Lagos, you can mention work or family visits, but don’t go into detail unless invited."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I heard there’s a big Eid celebration in Kano this year—my cousin said I should join the community iftar. Is that something I should accept?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—especially if she’s inviting you. It’s not just about food; it’s about belonging. Arrive early, and don’t eat until the prayer is finished. Bring a small gift—dates, juice, or a packaged snack. Be ready to help with serving or preparing, even if it’s just passing water. That’s how community works. If you’re asked to join the men’s or women’s side, follow quietly without question."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—my cousin mentioned she’ll be cooking tuwo shinkafa and a dish I think is moin moin. I’m not sure if that’s common here. Should I comment on it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Tuwo shinkafa is definitely common here—especially during Eid. Moin moin is more typical of the Southwest, but it’s not unheard of in Kano, especially if your cousin has family from the West or likes fusion dishes. Just say, ‘This is delicious, Mama’—that’s the respectful way to address an elder woman. If she serves you more than once, don’t refuse. Say, ‘Thank you, Mama, you’re too kind.’ Gratitude matters more than perfect knowledge of the dish."
+            },
+            {
+              "role": "user",
+              "content": "What if someone asks me to speak Hausa? I only know a few words—like ‘salamu’ and ‘shukurin.’"
+            },
+            {
+              "role": "assistant",
+              "content": "Say, ‘I’m still learning, but I’ll try’—that’s enough. Don’t force it. If you say a word right, they’ll appreciate the effort. If you’re unsure, just smile and nod. The North values intention over perfection. If someone corrects you gently, say ‘Alhamdulillah’ or ‘Shukurin’—both are polite and sincere. That’s how you earn trust."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Salamu greeting with bow and hand over heart in Kano",
+          "Hierarchy and respect in family and social settings in Northern Nigeria",
+          "Importance of Ramadan and Eid al-Fitr celebrations in Kano",
+          "Community participation during iftar, including serving and gift-giving",
+          "Proper etiquette around seating and status in homes",
+          "Use of 'Mama' as a respectful term for elder women",
+          "Value of humility and modesty in regional identity discussions",
+          "Intention over perfection in language use, especially Hausa",
+          "Regional distinctions in food (tuwo shinkafa vs. moin moin)",
+          "Informal social structures like the Emir's influence and extended family networks"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing Northern Nigerian culture—while Hausa-Fulani norms are dominant in Kano, the example doesn't acknowledge the presence of other ethnic groups (e.g., Kanuri, Nupe) or non-Muslim communities in the city, though this is acceptable given the focus on Hausa-Fulani cultural practices as contextually relevant.",
+          "The phrase 'Mama' is used without specifying whether it's a familial or respectful honorific—while generally correct, in some Northern contexts, 'Aunty' or 'Alhajiya' may be more appropriate depending on age and marital status. However, 'Mama' is widely understood and used in interregional settings, so this is not a critical error."
+        ],
+        "suggestions": [
+          "Include a brief nod to the diversity within Kano—e.g., mentioning that while the Hausa-Fulani culture is dominant, Kano is also home to significant communities from other ethnicities, which adds nuance to the regional identity.",
+          "Consider adding a subtle reference to the role of Islamic education (e.g., Quranic schools) in shaping social behavior, to reinforce deeper cultural roots beyond surface-level etiquette.",
+          "Slight expansion on the meaning of 'karma' (used in research but not in the example) could enrich the cultural depth, though its absence is not a flaw given the focus on greetings and social conduct."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

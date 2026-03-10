@@ -1,0 +1,78 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Ethnicity Assumptions",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "The social pitfalls of making assumptions about a person's background, nationality, or identity based on appearance",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses. Acknowledge the emotional weight of identity questions, especially for those with mixed heritage, and validate their experiences without overgeneralizing. Use natural, accessible language that reflects everyday conversation while honoring cultural nuance."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping a friend prepare for a job interview at a mid-sized tech company in Kyoto. She’s been told the team values ‘fit’ and ‘harmony,’ but she’s worried about how her background might be perceived. She’s Japanese on her mother’s side and American on her father’s—she was born in Osaka and has never lived outside Japan. Still, she’s been asked twice in casual conversations, ‘Wait, are you really Japanese?’ and once, ‘Do you speak Japanese?’ even though she’s fluent and uses it every day. It’s starting to make her feel like she doesn’t belong, even though she’s been raised here. How should she handle this?"
+            },
+            {
+              "role": "assistant",
+              "content": "I hear how painful those moments must feel—especially when they come from people who might not realize how much they imply. In Japan, appearance often leads to assumptions about identity, and that can happen even with people who’ve lived here their whole lives. The question 'Are you really Japanese?' isn’t just about heritage—it’s often a signal that someone sees you as different, even if they don’t mean to be hurtful.\n\nIt’s not uncommon for people with mixed heritage to be treated as 'other,' even when they’ve grown up in Japan, speak fluently, and participate fully in local life. This is similar to the experiences of *Zainichi Koreans*, whose families have lived in Japan for generations but still face questions like 'Where are you really from?'—a phrase that can erase their Japanese identity.\n\nWhat matters most isn’t just where you’re from—it’s how you live. Her fluency, her school memories, her participation in local festivals, and her deep familiarity with Osaka life all show she’s part of the community. She doesn’t need to justify herself. A simple, calm response like: 'I was born in Osaka. My dad’s American, but I’ve lived here my whole life. I speak Japanese every day and celebrate local traditions just like anyone else.'—is enough. It’s not about defending her identity; it’s about stating her reality."
+            },
+            {
+              "role": "user",
+              "content": "That’s really helpful. I think she’ll feel more confident now. But what if someone asks her about her ‘roots’ or where she’s ‘from’ in a casual setting—like at a team lunch? She’s not sure how to respond without sounding like she’s defending herself or making a scene."
+            },
+            {
+              "role": "assistant",
+              "content": "In casual settings, the key is to respond with quiet confidence—no defensiveness, no over-explaining.\n\nTry: 'I was born in Osaka, so I’m from there. My dad’s American, but I’ve lived here my whole life. I grew up with Japanese friends and celebrate local festivals just like everyone else.'\n\nThis gently corrects the assumption without creating distance. It’s not about proving anything—it’s about sharing her truth.\n\nIf the question feels like it’s testing her belonging, a small, warm smile and a soft: 'I’ve lived here my whole life—I’m just a local, same as anyone else'—can be very effective. It’s not about fitting in; it’s about claiming her place.\n\nAnd remember: in Japan, *tatemae*—the social face we present—often masks true feelings. The person asking might not mean harm; they may just be unsure how to talk about identity. But silence from the person being questioned isn’t always agreement. Sometimes, it’s a protective strategy rooted in *wa*—harmony. She doesn’t have to speak if she doesn’t want to. Her presence, her participation, and her consistency speak louder than words."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The social weight of appearance-based assumptions about identity in Japan",
+          "The emotional impact of questions like 'Are you really Japanese?' or 'Do you speak Japanese?' on mixed-heritage individuals",
+          "The experience of *Zainichi Koreans* and the erasure of Japanese identity through questioning",
+          "The role of *tatemae* (public facade) and *wa* (harmony) in suppressing direct confrontation about identity",
+          "The validity of lived experience over biological or ethnic origin in defining belonging",
+          "The effectiveness of calm, factual self-assertion without defensiveness in social settings"
+        ],
+        "issues": [
+          "The term 'mixed heritage' is used broadly but could be more precise—e.g., specifying 'Japanese-American' or 'bicultural' to reflect the specific background described",
+          "The assistant’s use of 'she’s not from here' in the second response may slightly overgeneralize the experience of mixed-heritage individuals, though it’s contextually appropriate as a rhetorical device",
+          "While *tatemae* and *wa* are correctly invoked, the explanation could be slightly more nuanced—e.g., noting that *tatemae* is not always about avoiding conflict but also about maintaining relational smoothness"
+        ],
+        "suggestions": [
+          "Consider adding a brief note about how long-term foreign residents or dual citizens may also face similar assumptions, even if not mixed-heritage, to broaden cultural inclusivity",
+          "In future examples, include a subtle indication of how silence can be a form of resistance or self-protection—e.g., 'Sometimes, choosing not to respond is a quiet act of self-preservation'",
+          "Use more culturally specific phrasing in the response, such as 'I’ve grown up in Osaka, just like my neighbors' instead of 'just like anyone else' to reflect local identity markers"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

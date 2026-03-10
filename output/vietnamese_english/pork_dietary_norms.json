@@ -1,0 +1,87 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Pork and Dietary Taboos",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Religious, cultural, and personal attitudes toward consuming pork, including taboos and culturally accepted alternatives",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping my friend Linh plan a small Tết dinner for her extended family. She’s worried because her cousin Minh, who’s Muslim, won’t eat pork. But most of the family loves traditional dishes like thịt kho and roasted pork. How can we make sure everyone feels included without changing the heart of the meal?"
+            },
+            {
+              "role": "assistant",
+              "content": "This is such a thoughtful way to honor both tradition and inclusion—very much in the spirit of Tết. You don’t need to remove pork entirely. Many Vietnamese families, especially in cities or interfaith households, naturally adapt by preparing separate halal options.\n\nFor Minh, a halal version of thịt kho using chicken or beef with halal-certified fish sauce works beautifully. Roasted chicken is another festive, familiar choice. In some families with Muslim members, it’s common to prepare separate dishes—sometimes even using different utensils or cooking areas—to respect religious practices. This isn’t a new trend—it’s part of a quiet, long-standing tradition of care and flexibility."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about the ancestral altar? I’ve heard pork is offered during Tết rituals. Can we still honor that tradition if we’re not serving pork?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—absolutely. The altar isn’t about the meat itself, but about reverence and continuity. While pork is common, especially in rural areas, it’s not the only offering.\n\nMany families use symbolic foods: a whole boiled egg (especially one with a preserved yolk) represents purity and new beginnings. A bowl of rice with a single egg is also traditional in some villages. Fresh fruit—like oranges or tangerines—is another staple, symbolizing prosperity.\n\nBánh ú tro is a beloved Tết food, often eaten during celebrations, but it’s not typically placed on the ancestral altar. It’s more of a festive treat than a ritual offering. The key is intention: the altar reflects love and memory, not just specific ingredients."
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps. I’ll suggest a mixed menu with a separate halal platter and symbolic altar offerings. I think Linh will feel relieved knowing her family can celebrate together, even with different needs."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re very welcome. That’s exactly the spirit of Tết—where tradition and care meet. By honoring both the old ways and the new realities, you’re helping the family stay connected across generations and beliefs. Linh will feel supported, and Minh will know he’s truly welcome. That’s the real meaning of Tết: family, memory, and belonging."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Pork is central to Vietnamese cuisine and Tết celebrations",
+          "Muslim Vietnamese families may avoid pork due to religious dietary laws",
+          "Halal alternatives like chicken or beef are culturally accepted and used in interfaith households",
+          "Separate cooking or serving areas for halal meals are a recognized practice in some families",
+          "Pork is commonly offered on ancestral altars, but not exclusively",
+          "Symbolic offerings like boiled eggs, rice with egg, and fruit are traditional and meaningful",
+          "The emphasis on intention and inclusivity in rituals reflects core Vietnamese values"
+        ],
+        "issues": [
+          "Minor inaccuracy: Bánh ú tro is not typically placed on ancestral altars—this is correctly noted, but the phrasing 'it’s not typically placed on the ancestral altar' could be misinterpreted as implying it's never used in rituals. Clarifying that it is a festive food, not a ritual offering, is accurate but could be more precise.",
+          "Slight overgeneralization: The statement 'In some families with Muslim members, it’s common to prepare separate dishes...' may imply this is widespread, when it's more typical in urban or interfaith households rather than across all Vietnamese families. A nuance about regional or family-specific variation would strengthen accuracy."
+        ],
+        "suggestions": [
+          "Clarify that while halal separation is practiced in some urban or interfaith homes, it is not a nationwide norm, and many Muslim Vietnamese families integrate into broader culinary traditions without separation.",
+          "Add a brief mention of the growing number of Vietnamese vegetarians and plant-based alternatives in urban areas as part of the evolving cultural landscape, reinforcing the idea of adaptation without loss of tradition.",
+          "Consider using a more culturally specific term like 'bánh ú tro' with a brief note on its regional origin (e.g., from Central Vietnam) to enhance authenticity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 7
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

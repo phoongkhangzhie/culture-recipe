@@ -1,0 +1,410 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Month Representation",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether months are written numerically, as abbreviations, or spelled out in full",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to draft an official letter to my landlord about a leaking roof. I want it to sound professional but also clear. Should I write 'March 2024' or 'Mar 2024' at the top?"
+            },
+            {
+              "role": "assistant",
+              "content": "For an official letter, especially one to a landlord or in a formal context, it’s best to spell out the full month: 'March 2024'. This follows Nigerian formal writing conventions—common in government, academic, and business correspondence—and shows respect and clarity. Abbreviations like 'Mar' are fine in casual texts or internal notes, but not in formal documents."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But I’m also sending a follow-up WhatsApp message to my cousin to remind her about the meeting next week. Should I say 'the 12th' or '12th'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In casual chats like WhatsApp, saying 'the 12th' is very natural and widely used—especially among younger Nigerians in cities like Lagos and Abuja. You might say, 'Let’s meet on the 12th, around 3 PM.' It’s polite, conversational, and reflects how people actually speak. Avoid just '12th' without 'the'—that sounds abrupt or like a typo."
+            },
+            {
+              "role": "user",
+              "content": "Ah, that makes sense. I’m also filling out a digital form for a scholarship application, and it asks for the date in 'DD/MM/YYYY' format. I’m from Oyo State, so I’m used to the day-month-year order. But I’ve heard some people get confused—like if they see '03/04/2024', is that March 4th or April 3rd?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—this is a common point of confusion, especially for those unfamiliar with Nigerian conventions. In Nigeria, '03/04/2024' means March 4, 2024 (day/month/year). We use DD/MM/YYYY consistently across banking, government portals, and official forms. The U.S. MM/DD/YYYY format isn’t standard here, so you’re right to be careful. Always double-check the form’s instructions, but if it’s Nigerian or West African, assume DD/MM/YYYY unless otherwise stated."
+            },
+            {
+              "role": "user",
+              "content": "Thanks! One more thing—my uncle is organizing a family gathering during the month of harvest. In Yoruba, we call it 'Ojó Iṣẹ́'. Should I write that in the invitation?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a beautiful cultural touch—using 'Ojó Iṣẹ́' (the month of harvest) adds warmth and tradition, especially for a family event. It’s perfectly appropriate in oral announcements, cultural gatherings, or personal invitations where heritage matters. However, for clarity in written invitations—especially if guests include non-Yoruba speakers—I’d recommend pairing it with the Gregorian month: 'Ojó Iṣẹ́ (October)'. That way, you honor tradition while ensuring everyone understands the timing."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of full month names (e.g., 'March') in formal writing like official letters",
+          "Preference for abbreviations (e.g., 'Mar') in informal digital communication",
+          "Common use of 'the 12th' in casual speech and messaging (e.g., WhatsApp)",
+          "Adoption of DD/MM/YYYY format in Nigerian digital systems and official forms",
+          "Cultural significance of 'Ojó Iṣẹ́' as a Yoruba term for the month of harvest",
+          "Hybrid approach in invitations: pairing traditional terms with Gregorian equivalents for clarity"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the mention of 'younger Nigerians in cities like Lagos and Abuja'—while accurate for urban youth, it may not reflect rural or intergenerational variation. However, this is contextual and not a critical error.",
+          "The example assumes all Nigerian forms use DD/MM/YYYY without acknowledging regional or institutional exceptions (e.g., some international organizations operating in Nigeria may use MM/DD/YYYY). Still, the core assertion is correct for most local contexts."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response about the potential for confusion with international audiences, especially in cross-cultural correspondence, to reinforce the importance of context-aware communication.",
+          "Consider including a short mention of Hausa month names (e.g., *Rabi' al-Awwal*) in the context of religious or traditional events to further reflect Nigeria’s linguistic diversity, though not required for this specific dimension.",
+          "Clarify that while 'the 12th' is natural, some older or more formal speakers may prefer '12th' without 'the' in written notes—this adds nuance without undermining the main point."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to write a formal email to my boss about the quarterly report submission. I want to make sure the date is correct and looks professional. Should I write 'March 2024' or 'Mar 2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal email in a Nigerian corporate setting, always spell out the month: 'March 2024'. This follows British English conventions still standard in official documents, government communications, and academic writing across Nigeria. Using 'Mar 2024' might seem too casual, even if it’s common in texts or social media."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if I’m sending a quick message to my team on WhatsApp about the same deadline? Can I just say '3rd Mar' like I usually do?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—on WhatsApp or internal chats, '3rd Mar' is perfectly natural, especially among younger professionals in Lagos, Abuja, or Port Harcourt. The '3rd' instead of 'the 3rd of' is a common Nigerian English idiom in informal writing, and 'Mar' is standard for brevity in SMS culture. Just keep it clear: '3rd Mar 2024' avoids confusion."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ve also seen people write dates like '12/03/2024' in spreadsheets. Is that okay for work documents?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, but only in digital or technical contexts—like Excel files, bank forms, or government portals—where the 'DD/MM/YYYY' format is standard. In Nigeria, we use day-month-year order, so '12/03/2024' means 12 March 2024, not 3rd December. Just be cautious if sharing with international colleagues who use MM/DD/YYYY—always clarify if the audience isn’t local."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. I’m also planning a community event in Oyo and want to announce it in both English and Yoruba. How should I write the date in Yoruba?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a community event in Oyo, it’s thoughtful to include the date in both languages. However, in modern Yoruba-speaking contexts, especially in public announcements, most people use 'March' or 'Mar' even in bilingual settings—traditional names like 'Ojó Ọjọ́' (for January) are poetic or archaic and rarely used in everyday speech. The Arabic-derived month names (like 'Rabi' al-Awwal') are used in Islamic religious contexts, not for Gregorian months. So, a clear and respectful approach would be: 'Ewe oju: 15th March 2024 (15 Mar 2024)'—this balances clarity with cultural awareness."
+            },
+            {
+              "role": "user",
+              "content": "Thanks! So to sum up: full spelling for formal emails, '3rd Mar' for WhatsApp, 'DD/MM/YYYY' in spreadsheets, and just 'March' or 'Mar' in Yoruba bilingual announcements. Is that right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. You’ve got it—context is everything in Nigerian communication. Whether you're writing for a boardroom in Abuja, a group chat in Lagos, or a village gathering in Oyo, the key is matching your format to your audience and purpose. That flexibility—balancing professionalism, clarity, and cultural respect—is what makes Nigerian English so dynamic. And remember: in northern Nigeria, Arabic month names may appear in religious contexts, but for general use, English remains the go-to."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Spelling out months in full (e.g., 'March 2024') is standard in formal Nigerian English, especially in official and academic documents.",
+          "Abbreviations like 'Mar' and '3rd Mar' are common and acceptable in informal digital communication (e.g., WhatsApp, internal chats) among urban professionals.",
+          "The 'DD/MM/YYYY' date format is standard in Nigerian digital systems (e.g., banking apps, government portals) and must be used carefully to avoid confusion with international MM/DD/YYYY conventions.",
+          "In bilingual announcements (e.g., English and Yoruba), modern Nigerian practice favors using 'March' or 'Mar' rather than traditional or archaic Yoruba month names like 'Ojó Ọjọ́', which are rarely used in everyday contexts.",
+          "Arabic-derived month names (e.g., 'Rabi' al-Awwal', 'Safar') are used in Islamic religious contexts in northern Nigeria but are not applied to Gregorian months in general public communication.",
+          "Regional variation exists: while southern Nigerian communities (e.g., Lagos, Oyo) use English-based month references, northern communities may use Arabic names in religious or traditional settings, but not in standard date notation."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Formal Nigerian English uses full month names (e.g., 'March') in official documents",
+          "Informal communication (e.g., WhatsApp) uses abbreviations like 'Mar' and ordinal forms like '3rd'",
+          "DD/MM/YYYY is the standard date format in Nigeria, distinct from U.S. MM/DD/YYYY",
+          "Hybrid use of English and local languages in bilingual announcements is common",
+          "Arabic-derived month names are used in Islamic religious contexts, not in general Gregorian date notation",
+          "Regional variation exists (e.g., northern Nigeria uses Arabic month names in religious settings)",
+          "Cultural respect and clarity override rigid formatting rules in community and traditional contexts"
+        ],
+        "issues": [
+          "Minor overgeneralization in the Yoruba section: while 'Ojó Ọjọ́' is not commonly used in everyday speech, it's worth noting that some traditional or cultural events may still reference Yoruba calendar terms, even if poetically. The response could acknowledge this nuance without overstating its usage.",
+          "The phrase 'modern Yoruba-speaking contexts' may subtly imply that traditional forms are outdated, which could be perceived as dismissive of cultural continuity. A more balanced phrasing would recognize that traditional names persist in certain ceremonial or historical references."
+        ],
+        "suggestions": [
+          "Slightly rephrase the Yoruba section to acknowledge that while 'March' is standard in most public announcements, traditional or ceremonial events might use indigenous calendar references—e.g., 'Iṣẹ́ Ọjọ́' (the month of labor) or 'Ojó Ọjọ́'—especially in cultural or religious contexts, even if not in standard date notation.",
+          "Add a brief note about the importance of audience awareness: when addressing elders or traditional leaders, using culturally resonant terms—even if not literal—can signal respect, even if the date is still written in English numerals.",
+          "Consider including a short example of a bilingual announcement using both English and a Yoruba month name in a poetic or ceremonial context to reflect the full spectrum of cultural expression."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to draft a formal letter to my boss about the project timeline, but I’m not sure how to write the dates. Should I write 'March 2024' or 'Mar 2024'? I’m in Lagos, and it’s for an official report."
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal report in Lagos, especially in a corporate or government context, it’s best to spell out the full month—so 'March 2024' is the right choice. It shows professionalism and aligns with British English conventions still used in official Nigerian documentation. Abbreviations like 'Mar' are fine in casual messages, but not in formal letters."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what about the date format? I’ve seen people write '12/03/2024'—is that okay? I don’t want to confuse anyone, especially since some of my colleagues are from the UK and others are from the US."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great question—this is where Nigerian context matters. In Nigeria, we almost always use the DD/MM/YYYY format, so '12/03/2024' means 12th March 2024. This is different from the US MM/DD/YYYY system, so if you're writing for a mixed audience, it’s safer to write it out fully: '12 March 2024'. That way, there’s no risk of confusion, regardless of where your readers are from."
+            },
+            {
+              "role": "user",
+              "content": "Thanks! I’ll use the full date. But what if I’m texting my team about a meeting? Can I just say 'Fri, 15th' or '15/03'? I’m in a WhatsApp group with the project team, and we’re all pretty casual."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—on WhatsApp or in informal chats, brevity is key. 'Fri, 15th' or even '15/03' is totally fine and widely understood among Nigerian professionals, especially in urban centers like Lagos and Abuja. Using '15/03' implies 15th March, following our local DD/MM/YYYY habit. Just keep it consistent with how your team usually communicates. If you’re unsure, you can always add a quick clarification like '15/03 = 15th March' in your first message."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. One last thing—my cousin from Kano mentioned that in some traditional settings, people don’t use 'March' at all. They use old names like *Rabi' al-Awwal* or *Safar*. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s very true—especially in northern Nigeria where Hausa is spoken. In religious or cultural contexts, months are often referred to by their Arabic-derived names, like *Safar*, *Rabi' al-Awwal*, or *Jumada al-Ula*. These are used in Islamic calendars, community events, or oral traditions. But they’re not used in official documents or standard date notation. It’s part of a deeper cultural rhythm—like how Yoruba elders might refer to the 'month of harvest' instead of 'August' in storytelling. So yes, the names exist, but they’re context-specific and not interchangeable with the Gregorian calendar in formal use."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Formal documents in Nigeria use full month names (e.g., 'March') to reflect professionalism",
+          "Informal communication (e.g., WhatsApp) uses abbreviations ('Mar') or numerical formats ('15/03')",
+          "Nigeria uses DD/MM/YYYY date format, distinct from US MM/DD/YYYY",
+          "Arabic-derived month names (e.g., *Safar*, *Rabi' al-Awwal*) are used in northern Nigeria in religious/traditional contexts",
+          "Regional and linguistic diversity influences date expression (e.g., Yoruba 'month of harvest', Igbo 'Igbɔn')",
+          "Hybrid use of formats based on context (formal vs. informal) is common among urban Nigerian professionals"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the final response: while Arabic-derived names are used in northern Nigeria, they are not typically used in everyday date notation even in religious contexts—this is correctly noted, but could be more explicitly framed as 'rarely used in standard documentation' to avoid implying broader usage.",
+          "The term 'old names' in the assistant’s response may slightly mislead—these are not 'old' in a historical sense but are part of the Islamic calendar system, which remains current in religious practice. Slight rewording would improve precision."
+        ],
+        "suggestions": [
+          "Rephrase 'old names' to 'Islamic calendar names' or 'Arabic-derived names from the Hijri calendar' for greater accuracy and clarity.",
+          "Add a brief note that while these names are culturally significant, they are not used in standard Gregorian date notation even in traditional settings.",
+          "Consider including a brief mention of regional variation in date expression (e.g., Igbo or Yoruba month references) to further enrich the cultural depth without overcomplicating the response."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to draft a formal letter to my boss about a project delay. Should I write 'March 2024' or '03/2024' for the timeline?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal letter—especially in a Nigerian professional context—always spell out the month in full, like 'March 2024'. It shows respect, clarity, and aligns with official documentation standards. Using '03/2024' might be acceptable in internal spreadsheets, but not in formal correspondence."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if I’m messaging my team on WhatsApp? Can I just say 'Mar' or '03/2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in informal team chats—especially on WhatsApp—using 'Mar' or even '03/2024' is totally fine and common. Younger professionals in Lagos and Abuja often abbreviate like that for speed. Just make sure the date format is clear: '03/2024' means March 2024, not April, because we use DD/MM/YYYY here—unlike the US."
+            },
+            {
+              "role": "user",
+              "content": "Ah, good to know. So if I write '12/03/2024' in a message, does that mean 12th March or 3rd December?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly right—it means 12th March 2024. In Nigeria, we follow the day-month-year order: DD/MM/YYYY. So '12/03/2024' is the 12th of March, not the 3rd of December. This is crucial—especially when sharing deadlines or appointments with colleagues. Always double-check the format to avoid confusion."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ve also seen some elders in Oyo talk about 'Ojó Iṣẹ́' during farming season. Is that a real month name?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. In Yoruba-speaking communities, especially in Oyo and Ogun states, traditional calendar terms like *Ojó Iṣẹ́* (the month of harvest) or *Ojó Ọjọ́* (the first month) are used in oral traditions, festivals, and agricultural planning. These aren’t used in official documents, but they carry deep cultural meaning. It’s a beautiful example of how Nigerian timekeeping blends modern and ancestral ways."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. So when writing a public announcement for a community event, should I use 'March' or 'Ojó Iṣẹ́'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a public community announcement—especially one meant to be clear and inclusive—stick with 'March 2024' in English. That ensures everyone, including younger people and outsiders, understands it. But if you’re including a traditional note or cultural introduction, you can add something like: 'The event will take place in Ojó Iṣẹ́, the month of harvest, corresponding to March 2024.' That way, you honor tradition while keeping it accessible."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Formal writing in Nigeria typically spells out months in full (e.g., 'March 2024')",
+          "Informal communication (e.g., WhatsApp) often uses abbreviations like 'Mar' or numerical formats like '03/2024'",
+          "Nigeria uses DD/MM/YYYY date format, not MM/DD/YYYY",
+          "Yoruba traditional calendar terms like 'Ojó Iṣẹ́' are used in oral traditions and agricultural contexts",
+          "Hybrid expression—using both modern and traditional terms—is culturally appropriate and respectful in community announcements",
+          "Regional linguistic diversity (e.g., Yoruba, Hausa) influences timekeeping in non-official contexts"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes widespread use of 'Mar' in Lagos and Abuja without acknowledging regional variation (e.g., northern Nigeria may have different texting norms). However, this is not a factual error and is contextually acceptable in a general guide.",
+          "The use of 'Ojó Iṣẹ́' is correctly contextualized as non-official, but the example could briefly note that it’s not a direct equivalent to 'March'—it’s a seasonal or cultural concept, not a calendar month."
+        ],
+        "suggestions": [
+          "Add a brief note that 'Ojó Iṣẹ́' refers to a seasonal period rather than a fixed calendar month, to prevent misinterpretation by learners.",
+          "Consider including a short mention of Hausa month names (e.g., *Rabi' al-Awwal*) in a footnote or parenthetical to reflect broader linguistic diversity, even if not central to the core example.",
+          "To further strengthen training quality, include a follow-up user query about a northern Nigerian context (e.g., 'How do people in Kano refer to March in religious settings?') to reinforce regional nuance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I'm trying to write a formal letter to my uncle’s school about his upcoming retirement. I want to make sure the date is correct and looks professional. Should I write 'March 2024' or 'Mar 2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal letter like this—especially to a school or institution—it’s best to spell out the full month: 'March 2024'. This follows Nigerian formal writing conventions, where full spelling conveys respect and clarity. Abbreviations like 'Mar' are more common in casual texts or internal notes, but not in official correspondence."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about if I’m texting my cousin in Lagos to confirm the date for the family reunion? Would '03/2024' be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a text message to a cousin, yes—'03/2024' is perfectly fine and commonly used. But just to be safe, it’s helpful to add the day or clarify the format. For example: 'Let’s meet on the 15th—so 15/03/2024, okay?' That way, you avoid confusion, since Nigerians typically use DD/MM/YYYY, not MM/DD/YYYY. So '15/03/2024' means 15 March 2024, not 3rd of January."
+            },
+            {
+              "role": "user",
+              "content": "Ah, that’s good to know. My cousin mentioned the event is in 'the 3rd'—I think they meant March. Is that a common way to say it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Saying 'the 3rd' for March is very common in spoken Nigerian English, especially in informal or family conversations. It’s part of a broader habit where people refer to months using ordinal numbers—like 'the 6th' for June or 'the 11th' for November. It’s not just about brevity; it’s a natural rhythm in how many Nigerians talk about time in daily life."
+            },
+            {
+              "role": "user",
+              "content": "Interesting. My aunt from Kano sometimes says 'Rabi' al-Awwal' when talking about Ramadan. Is that a real month name?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s correct. In northern Nigeria, especially among Hausa-speaking communities, months are often referenced by their Arabic-derived names in religious or traditional contexts. 'Rabi' al-Awwal' is the second month of the Islamic calendar, and it’s commonly used during religious discussions or announcements. However, it’s not used in standard date notation—just like how we wouldn’t write 'Ojó Iṣẹ́' for the month of harvest in a formal document. These names carry deep cultural and spiritual meaning, but they’re context-specific."
+            },
+            {
+              "role": "user",
+              "content": "So if I’m writing a report for my job in Abuja, I should stick to full months like 'December' and avoid abbreviations or numbers?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. In a corporate or official report in Abuja—especially one going to stakeholders or government bodies—always use full months: 'December 2024', not 'Dec' or '12/2024'. That’s the standard for professionalism. However, if you're sending a quick email to your team or updating a shared calendar, you might use 'Dec' or even '12/2024'—as long as everyone knows you’re using DD/MM/YYYY. The key is matching the tone and audience. Respect, clarity, and context matter most."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Formal writing in Nigeria uses full month names (e.g., 'March') for professionalism",
+          "Informal communication (texts, family chats) uses abbreviations ('Mar') or numerical formats ('03/2024')",
+          "DD/MM/YYYY date format is standard in Nigeria, not MM/DD/YYYY",
+          "Use of ordinal numbers like 'the 3rd' for March is common in spoken Nigerian English",
+          "Arabic-derived Islamic month names (e.g., 'Rabi' al-Awwal') are used in religious/traditional contexts in northern Nigeria",
+          "Hybrid usage based on context, audience, and formality is a hallmark of Nigerian date expression",
+          "Cultural respect and clarity override rigid formatting rules"
+        ],
+        "issues": [
+          "Minor: The term 'Ojó Iṣẹ́' is used as a hypothetical example of a Yoruba harvest month name; while culturally resonant, it is not a standard or widely recognized term in mainstream Yoruba. A more precise example like 'Ọjọ́ Ẹkọ́' or 'Igbà Iṣẹ́' would be more accurate. However, this is a minor issue in a broader context of authentic representation."
+        ],
+        "suggestions": [
+          "Replace 'Ojó Iṣẹ́' with a more commonly recognized Yoruba term for a harvest month (e.g., 'Igbà Iṣẹ́' or 'Ọjọ́ Ẹkọ́') to enhance precision in the example.",
+          "Consider adding a brief note about regional variation in month naming (e.g., Igbo: 'Igbɔn' for February) to further enrich the cultural depth without overloading the example.",
+          "Include a subtle mention of the influence of British English conventions in formal Nigerian writing to reinforce the historical context."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

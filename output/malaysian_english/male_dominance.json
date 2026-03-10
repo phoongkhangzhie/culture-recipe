@@ -1,0 +1,109 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Male Dominance",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Gender Roles",
+    "description": "Cultural norms and social structures that position men as the primary authority in family, professional, and public life",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping my younger brother, Amir, prepare for his *pertunangan* with Aina. His family wants me to handle the initial discussions with her parents, but I’m not sure how to approach it properly. It’s my first time doing this, and I’m worried about making a mistake. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to step in—this is a meaningful responsibility. Traditionally, the groom’s family leads the *pertunangan*, so your role is appropriate. Contact Aina’s father formally—use *Encik* followed by his name, like *Encik Rahman*. Choose a weekday during daytime hours, and always ask permission before beginning. Be respectful, warm, and clear about your family’s sincere interest. This is a formal gesture, and the tone sets the stage for the family’s future relationship. While modern families are more collaborative, the groom’s family still typically takes the lead in initiating and guiding these discussions."
+            },
+            {
+              "role": "user",
+              "content": "What about the *mas kahwin*? I know it’s negotiated, but how much should we offer? And should I mention it right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "The *mas kahwin* is usually discussed after the initial meeting, typically by male relatives. Start with a modest, symbolic amount—RM3,000 to RM5,000 in rural areas like Kelantan, RM8,000–10,000 in urban centers like Kuala Lumpur. The figure reflects family means and regional norms, not just tradition. Don’t bring it up immediately. If asked, say: *‘We want to show our respect and commitment, and we’re open to discussion.’* While couples now often discuss this together, the initial offer still comes from the groom’s side, reinforcing male authority in financial and symbolic aspects of marriage."
+            },
+            {
+              "role": "user",
+              "content": "Aina’s mother is a teacher and very independent. She’s been supportive, but I’m not sure how to address her. Should I call her *Puan* or just use her name?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always use *Puan* followed by her name—*Puan Aminah*—as a sign of respect. This is standard even for professionals. In many urban, educated households, mothers like her play a key role in discussions, especially around education and family values. Her input is valued and often influential. If you're unsure about using Malay phrases, it’s safe to keep the conversation in English unless the family explicitly invites code-switching. Respectful tone matters more than language choice."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll make sure to follow the protocol. One last thing—what if Aina’s family asks about my brother’s future plans? Should I speak for him or let him answer?"
+            },
+            {
+              "role": "assistant",
+              "content": "Let your brother share his plans directly—this shows maturity and ownership. He can say, *‘Saya akan mencari pekerjaan yang stabil dan membantu keluarga.’* Even in progressive families, the groom’s family typically retains formal authority in major decisions. That said, modern Malaysian marriages increasingly involve shared planning—couples co-consider careers, finances, and living arrangements. The key is balance: honor tradition, but recognize that today’s families value collaboration. Aina’s voice matters just as much as your brother’s—this is not a shift away from culture, but a redefining of it, where respect and partnership grow alongside long-standing roles."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Male leadership in *pertunangan* initiation",
+          "Male relatives traditionally lead *mas kahwin* negotiations",
+          "Use of *Encik* and *Puan* as formal honorifics reflecting hierarchy",
+          "Respectful silence and indirect speech expected of women in formal settings",
+          "Men hold formal decision-making authority in family and religious matters",
+          "Gendered division of labor in household responsibilities",
+          "Syariah law favoring male inheritance rights",
+          "Women’s participation in discussions valued, but final authority often rests with men",
+          "Code-switching in communication is context-dependent; English is acceptable unless family invites Malay",
+          "Cultural expectation that men initiate and guide major family transitions"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "The groom’s family leads *pertunangan* discussions",
+          "Use of *Encik* and *Puan* as formal honorifics",
+          "Male relatives traditionally negotiate *mas kahwin*",
+          "Regional variation in *mas kahwin* amounts (RM3k–5k in rural, RM8k–10k in urban)",
+          "Men retain formal authority in major marital decisions",
+          "Women’s roles in family discussions are respected but often indirect",
+          "Tension between tradition and modernity in marriage planning",
+          "Respect for female professionals (e.g., teacher) while maintaining hierarchical address"
+        ],
+        "issues": [
+          "Slight overgeneralization of 'rural' vs 'urban' norms without acknowledging internal diversity within regions",
+          "The assistant’s final response downplays male dominance too much by framing it as 'redefining' rather than acknowledging the persistent structural imbalance",
+          "Use of Malay phrase *‘Saya akan mencari pekerjaan yang stabil dan membantu keluarga.’* is authentic but may confuse non-Malay speakers; contextually appropriate but could be explained"
+        ],
+        "suggestions": [
+          "Add nuance to regional differences: not all rural areas in Kelantan or Terengganu follow the strictest norms; some urban families in KL also uphold conservative practices",
+          "Acknowledge that while collaboration is growing, the *initiative* and *formal authority* in marriage negotiations still rest with men—this is a key marker of male dominance",
+          "Consider adding a brief note about how women may influence *mas kahwin* discussions indirectly through family networks, even if not formally involved",
+          "Clarify that using Malay phrases is appropriate only if the family is comfortable with code-switching; otherwise, English is acceptable"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

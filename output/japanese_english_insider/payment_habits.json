@@ -1,0 +1,97 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Payment Habits",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Daily Life and Travel",
+    "description": "Preferred payment methods in everyday transactions, including attitudes toward cash, card, and mobile payment",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting friends at a small izakaya in Asakusa tomorrow night. I want to pay for everyone’s drinks, but I’m not sure how to handle it smoothly. Should I just use my card at the counter, or is there a better way?"
+            },
+            {
+              "role": "assistant",
+              "content": "Just place your card or cash on the counter—no need to say anything. The staff will take care of it. If you're using a card, they’ll process it without fuss. Your friends will understand it’s your gesture. It’s just how things are done."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if the place only takes cash? I’ve seen some places turn away cards even when they have terminals."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s common in older, family-run izakayas—especially in Asakusa. They often prefer cash to avoid fees and keep things simple. Bring a few thousand yen in small bills, like 1,000-yen notes. Hand them over with both hands, palm up, and avoid eye contact or verbal confirmation. Let it be quiet and seamless. They’ll return the change when they’re ready. It’s part of the rhythm."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been using PayPay lately for splitting bills with friends. Would that work here?"
+            },
+            {
+              "role": "assistant",
+              "content": "Most small izakayas don’t support mobile payments like PayPay—staff often lack the training, and it’s not built into their system. Even if they accept it, they may hesitate to use it. Better to pay in cash or card on the spot. If you want to settle up later, a simple ‘arigatou gozaimasu’ via LINE is enough. No need to over-explain. The quiet act of paying is its own form of respect—no fanfare, no drama. That’s *wa* in motion."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ll bring cash just in case. Should I bring exact change for each person’s drink, or is it okay to pay for the whole round?"
+            },
+            {
+              "role": "assistant",
+              "content": "Just pay the total. No need to break it down. They’ll handle it. The quiet act of paying is its own form of respect—no fanfare, no explanation. If you leave a little extra, it’s fine, but not expected. It’s not tipping; it’s just a gentle way of saying thank you. The gesture speaks for itself."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Cash remains dominant in small, traditional izakayas, especially in Asakusa",
+          "Preference for cash due to avoidance of card processing fees and simplicity",
+          "Use of 1,000-yen notes as standard small denomination currency",
+          "Handing money with both hands, palm up, as a sign of respect",
+          "Avoidance of eye contact and verbal confirmation during payment as part of quiet etiquette",
+          "No tipping culture; extra money is not expected but accepted as a gesture",
+          "Mobile payments like PayPay are not widely accepted in small, traditional establishments",
+          "Group payment is common, with the payer covering the full amount without expectation of change",
+          "The concept of *wa* (harmony) is reflected in the quiet, unobtrusive nature of the act of paying"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: not all family-run izakayas in Asakusa strictly reject cards—some may accept them, especially in tourist areas. However, this is a nuanced exception that doesn’t undermine the overall accuracy.",
+          "The phrase 'Let it be quiet and seamless' is slightly abstract but culturally resonant and consistent with the broader ethos of *wa*; it does not misrepresent the norm."
+        ],
+        "suggestions": [
+          "Consider adding a subtle nod to the growing but still limited adoption of PayPay in urban areas, perhaps in a future example, to reflect the evolving landscape without undermining the current context.",
+          "To enhance realism, include a brief mention of the staff’s typical response (e.g., a quiet 'arigatou gozaimasu' or nod) to reinforce the non-verbal, respectful interaction.",
+          "In future examples, explore the contrast between younger generations using mobile payments and older establishments sticking to cash to deepen the cultural tension and nuance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 7
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

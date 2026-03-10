@@ -1,0 +1,245 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Business Meeting Follow-Up",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around post-meeting communication, such as follow-up emails, calls, written summaries, or courtesy gifts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just finished a meeting with Bapak Andi from PT Sinar Jaya, a key partner for our new distribution project. It was a formal discussion, and I want to send a proper follow-up, but I’m not sure how to do it right. Can you help me draft a respectful email and suggest what else I should do?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. First, please send a formal email within the next 24–48 hours. Begin with a warm greeting: 'Selamat pagi, Bapak Andi, saya harap Bapak dalam keadaan sehat dan baik.' Then express gratitude: 'Terima kasih banyak atas kesempatan berdiskusi kemarin dan atas masukan berharga Bapak mengenai strategi distribusi di wilayah Jawa Timur.' Use honorifics consistently and avoid direct demands. Instead of saying 'Please confirm the next steps,' phrase it as: 'Kami dengan hormat memohon arahan Bapak mengenai langkah selanjutnya, sesuai ketersediaan waktu Bapak.'"
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I also send a written summary? And what about a follow-up call?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, sending a brief written summary (1–2 pages) is highly valued, especially for formal meetings. Include a section titled 'Ringkasan Diskusi dan Kesepakatan Bersama' and highlight Bapak Andi’s insights first. Frame decisions as collective outcomes—e.g., 'Berdasarkan masukan Bapak Andi dan tim kami, kami sepakat untuk memulai uji coba di tiga kota utama.' Avoid mentioning disagreements. For the call, initiate it yourself as the junior party. Start with: 'Selamat pagi, Bapak Andi, saya ingin menyampaikan terima kasih atas kesempatan berdiskusi kemarin.' Then include light small talk—ask about his family or health—before gently touching on the next steps."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about a gift? I’d like to show appreciation properly."
+            },
+            {
+              "role": "assistant",
+              "content": "Excellent thought. A modest courtesy gift is appropriate, but deliver it after the meeting—never during. Choose something symbolic and culturally respectful: a high-quality local tea from Bandung, a handcrafted batik scarf, or a fruit basket with tropical fruits like mangosteen and rambutan. Present it with both hands and say, 'Ini sedikit tanda terima kasih dari kami atas waktu dan kebaikan Bapak.' Avoid anything with religious symbols or Western holiday themes. Remember, the gift isn’t transactional—it’s a gesture of *gotong royong*, showing you value the relationship beyond the deal."
+            },
+            {
+              "role": "user",
+              "content": "Thank you so much. I’ll send the email today, prepare the summary, and arrange a call this week. I’ll also pick a thoughtful gift."
+            },
+            {
+              "role": "assistant",
+              "content": "You're very welcome. Your thoughtful follow-up will not only fulfill expectations but strengthen trust—exactly what Bapak Andi and PT Sinar Jaya will appreciate. In Indonesian business culture, it’s not just about what you say, but how you show you care. Selamat melanjutkan, dan semoga kerja sama berjalan lancar."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Follow-up email within 24–48 hours with formal tone and honorifics",
+          "Use of indirect language and deferential phrasing (e.g., 'memohon arahan')",
+          "Written summary valued, especially for formal meetings, with emphasis on collective outcomes",
+          "Follow-up call preferred for sensitive matters, initiated by junior party",
+          "Call begins with gratitude and includes small talk (family/health)",
+          "Courtesy gift delivered after meeting, modest and culturally appropriate (tea, batik, fruit basket)",
+          "Gift presented with both hands and accompanied by respectful speech",
+          "Gift as gesture of *gotong royong*, not transactional",
+          "Avoidance of religious symbols and Western holiday themes in gifts"
+        ],
+        "issues": [
+          "Minor inconsistency in script: The assistant uses 'Bapak Andi' in the first response but later refers to him as 'Bapak Andi' again without variation in formality; however, this is acceptable as the name is used consistently and respectfully.",
+          "Slight overuse of direct Indonesian phrases in English context—while appropriate for teaching, in real-world training, models should learn to *generate* such phrases naturally rather than rely on embedded code-switching. However, this is acceptable in a pedagogical example."
+        ],
+        "suggestions": [
+          "Consider adding a brief explanation of why certain phrases are preferred (e.g., 'memohon arahan' instead of 'please confirm') to reinforce cultural logic for learners.",
+          "In future examples, include a variation where the senior party responds with a slightly delayed reply—this would illustrate how time sensitivity is perceived in hierarchical contexts.",
+          "For training quality, consider varying the tone slightly (e.g., a more junior employee vs. mid-level manager) to reflect different levels of formality based on status."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just finished a meeting with Bapak Arif from PT Surya Mandiri, a key supplier for our new project. It was a formal discussion about delivery timelines and quality checks. I’m supposed to send a follow-up, but I’m not sure what’s expected in Indonesia. Can you help me draft a proper email and suggest next steps?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. In Indonesian business culture, a timely follow-up is essential—it reflects respect and strengthens relationships. Send a formal email within 24–48 hours, using honorifics like *Bapak* and a deferential tone. Begin with sincere gratitude, and frame next steps as a request for his guidance, not a demand. I’ll draft a sample email for you."
+            },
+            {
+              "role": "user",
+              "content": "Yes, please. Also, should I send a written summary? And what about a gift? I’ve heard it’s customary after formal meetings, but I don’t want to overstep."
+            },
+            {
+              "role": "assistant",
+              "content": "A concise written summary (1–2 pages) is highly appreciated, especially for formal meetings. It should highlight Bapak Arif’s insights first and present decisions as shared outcomes. As for gifts: yes, they are customary—but only *after* the meeting. A modest, symbolic item like a batik-wrapped fruit basket or premium local tea is appropriate. Present it with both hands and express gratitude. Crucially: do *not* mention the gift in the email. It should be delivered separately—ideally during or right after a follow-up call."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Could you also suggest a follow-up call? I think the discussion was complex, and I’d like to show personal commitment."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a follow-up call is excellent for complex discussions—it shows genuine care. If you’re junior to Bapak Arif, initiate the call. Begin with: *Selamat pagi, Bapak Arif, saya ingin menyampaikan terima kasih atas kesempatan berdiskusi kemarin.* Then, include brief small talk—how he’s been, or his family—before gently transitioning to business. Keep the tone humble and open. I’ll include a call script in the draft."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. This is exactly what I needed. I’ll send the email today and schedule the call for tomorrow morning. I’ll also prepare a small gift. Your guidance has helped me understand that this isn’t just procedure—it’s about showing we care."
+            },
+            {
+              "role": "assistant",
+              "content": "You’ve captured the heart of it: this is about *gotong royong*, not just process. The follow-up is relational. One note—*if* you’re senior to Bapak Arif, he may expect you to receive the call rather than initiate it. But since you’re seeking guidance, it’s likely you’re junior, so your approach is appropriate. Well done. May your relationship grow stronger through this thoughtful effort."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Timely follow-up within 24–48 hours is expected to show respect",
+          "Use honorifics (e.g., Bapak/Ibu) and deferential tone in all communications",
+          "Frame requests as seeking guidance, not issuing demands",
+          "Written summaries are valued and should acknowledge senior input first",
+          "Gifts are customary after meetings but must be delivered separately—never mentioned in email",
+          "Follow-up calls signal personal commitment and are preferred for complex topics",
+          "Junior parties typically initiate calls; senior parties may receive them",
+          "Begin calls with gratitude and include brief small talk to build rapport",
+          "The follow-up is relational—rooted in *gotong royong* and mutual obligation"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Follow-up emails within 24–48 hours with deferential tone and honorifics (Bapak/Ibu)",
+          "Use of *gotong royong* as a cultural framing for relationship-building",
+          "Written summaries valued, especially for formal meetings, with emphasis on collective outcomes and senior input",
+          "Courtesy gifts (tanda tangan) are customary after meetings, not during, and should be modest, symbolic, and culturally appropriate",
+          "Gifts should be delivered separately—ideally after a follow-up call—and presented with both hands",
+          "Follow-up calls preferred for complex matters, initiated by junior party, with humble tone and small talk before business",
+          "Cultural nuance regarding hierarchy: junior initiating call vs. senior receiving call"
+        ],
+        "issues": [
+          "Minor ambiguity in the phrase 'if you’re senior to Bapak Arif, he may expect you to receive the call'—this could be misinterpreted as a universal rule; in practice, even senior individuals may expect junior parties to initiate calls as a sign of respect, depending on context. The guidance should emphasize that hierarchy is respected through action, not just position.",
+          "The inclusion of 'Selamat pagi, Bapak Arif, saya ingin menyampaikan terima kasih atas kesempatan berdiskusi kemarin' is accurate but could be slightly enhanced with a more natural Indonesian phrasing such as 'Saya ingin menyampaikan terima kasih yang sebesar-besarnya atas kesempatan berdiskusi kemarin, Bapak.'"
+        ],
+        "suggestions": [
+          "Clarify that while seniority influences expectations, the norm of junior initiating calls is deeply rooted in respect (*sopan santun*) and remains strong even in hierarchical settings.",
+          "Include a brief note on cultural sensitivity: avoid mentioning gifts in the email or call—this is a key point emphasized in the research but could be reinforced more clearly.",
+          "Consider adding a subtle reminder that the tone should remain warm but not overly familiar, even in small talk—Indonesian business culture values emotional restraint and formality."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just finished a meeting with Bapak Andri, the head of procurement at PT Sinar Jaya in Jakarta. We discussed a potential partnership for supplying office supplies. I want to send a proper follow-up, but I’m not sure what’s expected in Indonesian business culture. Can you help me draft a respectful email and suggest next steps?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. In Indonesian business culture, a timely and thoughtful follow-up is essential—it shows respect and strengthens the relationship. I recommend sending a formal email within 24–48 hours. Begin with a warm greeting, express gratitude for the opportunity, and acknowledge Bapak Andri’s insights. Use honorifics like 'Bapak' and maintain a humble tone. Avoid direct demands; instead, frame requests as seeking guidance. I’ll draft a sample email for you."
+            },
+            {
+              "role": "user",
+              "content": "That would be very helpful. Also, should I send a written summary? And what about a gift? I’ve heard that’s important."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a brief written summary (1–2 pages) is highly valued, especially for formal meetings. It should summarize key points, highlight Bapak Andri’s contributions first, and present decisions as collective outcomes—never assign blame. As for gifts, a modest, culturally appropriate one is customary after the meeting, not during. Consider a high-quality local tea set or a batik cloth, presented with both hands. Avoid religious symbols or Western holiday themes. Gifts should be delivered the day after the meeting, ideally with a handwritten note expressing appreciation. This gesture reinforces *gotong royong*—mutual care and obligation."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. Could you please send me the full email draft with a thank-you note and a gentle request for next steps?"
+            },
+            {
+              "role": "assistant",
+              "content": "Certainly. Here’s a culturally appropriate draft:\n\nSubject: Terima Kasih atas Waktu dan Pandangan Bapak di Pertemuan Kemarin\n\nSelamat pagi, Bapak Andri,\n\nSaya ingin menyampaikan terima kasih yang sebesar-besarnya atas kesempatan berdiskusi dengan Bapak kemarin mengenai kerja sama pasokan perlengkapan kantor. Saya sangat menghargai masukan dan pandangan Bapak, terutama mengenai kualitas dan keberlanjutan pasokan, yang sangat membantu dalam menyusun rencana kami.\n\nKami telah menyusun ringkasan singkat dari diskusi untuk memastikan pemahaman bersama. Kami juga ingin memohon petunjuk Bapak mengenai langkah selanjutnya, sesuai ketersediaan waktu Bapak.\n\nSekali lagi, terima kasih atas kepercayaan dan keramahan Bapak. Kami sangat menghargai kesempatan ini dan berharap dapat terus menjalin hubungan yang saling menguntungkan.\n\nHormat kami,\n[Your Name]\n[Your Position]\n[Company Name]"
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Follow-up within 24–48 hours is expected",
+          "Use of honorifics (Bapak/Ibu) and deferential tone in email",
+          "Avoidance of direct demands; use of indirect phrasing like 'seeking guidance at your convenience'",
+          "Value placed on written summaries (1–2 pages) highlighting senior participant contributions",
+          "Gifts are customary after meetings, not during",
+          "Gifts should be modest, culturally appropriate (tea, batik), presented with both hands",
+          "Gifts should include a handwritten note expressing appreciation",
+          "Emphasis on *gotong royong* and mutual obligation",
+          "Use of Indonesian phrases such as 'Terima kasih atas waktu dan pandangan Bapak' and 'Hormat kami' in the draft"
+        ],
+        "issues": [
+          "The email includes the phrase 'Saya ingin menyampaikan terima kasih yang sebesar-besarnya' — while correct, it's slightly more formal than typical for a first follow-up; a more natural phrasing would be 'Terima kasih atas waktu dan pandangan Bapak' (as used in the example), which aligns better with the modesty and humility norms.",
+          "The draft does not explicitly mention the delivery of the gift the day after the meeting, which is a key nuance in the cultural briefing — it’s implied but not clearly stated in the email context."
+        ],
+        "suggestions": [
+          "Adjust the opening gratitude phrase to be slightly more concise and natural: e.g., 'Terima kasih atas waktu dan pandangan Bapak kemarin' instead of 'yang sebesar-besarnya'.",
+          "Add a brief note in the email or a separate message suggesting: 'Kami juga akan mengirimkan sebuah tanda terima kasih kecil sebagai bentuk apresiasi, sebagaimana biasa dilakukan dalam budaya bisnis Indonesia.' to reinforce the gift protocol without overstepping.",
+          "Consider adding a line in the assistant’s response to clarify that the gift should be sent the day after the meeting, not on the same day, to reinforce the timing nuance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 13,
+    "research_rounds": 1,
+    "examples_produced": 3
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Educational Practices",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Education and Knowledge",
+    "description": "Teaching methodologies, classroom dynamics, and the structural features of the educational system",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m a student in Hanoi, and I’m struggling with my math homework. I don’t understand the quadratic equations the teacher explained today. But I’m afraid to ask in class—everyone else seems to get it, and I don’t want to look stupid. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s completely normal to feel that way—many students in Hanoi feel the same, even if they don’t say it. In our classrooms, silence often means respect, not understanding. You’re not alone if you nod along when you’re confused. The most respectful way to ask is quietly after class. Just say: *Cô ơi, em chưa hiểu ạ*—'Teacher, I don’t understand, sorry.' The word *ạ* isn’t just politeness—it’s a quiet act of humility, showing you’re listening and respectful, even when you’re unsure."
+            },
+            {
+              "role": "user",
+              "content": "That sounds right, but I’m still nervous. What if she thinks I wasn’t paying attention? My parents are pushing me hard for the national exam—success means so much to them."
+            },
+            {
+              "role": "assistant",
+              "content": "Your parents care deeply—many families see the *Tốt nghiệp THPT* exam as a turning point. But here’s what matters: asking for help isn’t weakness. In Vietnamese culture, effort and humility are valued more than appearing perfect. Even top students often ask after class, though rarely in front of others. It’s not about being behind—it’s about getting it right. The *ạ* at the end of your sentence carries emotional weight: it’s a small, quiet way of saying, 'I’m not perfect, but I respect you.' That takes courage."
+            },
+            {
+              "role": "user",
+              "content": "That helps. I’ll try asking after class. But what if I’m still confused after she explains? I don’t want to keep bothering her."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re not bothering her—teachers expect students to need clarification. If you’re still unsure, just say: *Cô ơi, em vẫn chưa hiểu ạ, cô có thể giải thích thêm một chút được không ạ?* (Teacher, I still don’t get it—could you explain a bit more?). It’s okay. If she’s busy, try a classmate first. In Hanoi, many students form quiet study groups after school. Some also use WhatsApp groups—common among urban youth—but this isn’t true for all, especially in rural or lower-income schools."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—what if a teacher isn’t very patient? I’ve seen some get annoyed if you ask too much."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a real concern. In many public schools, especially, asking questions can feel risky—teachers are seen as authority figures, and repeated questions may be interpreted as lack of effort. If a teacher seems impatient, it’s okay to step back. Write your question neatly in your notebook, or ask a classmate first. In some cases, students even wait until the next day to ask. Digital tools like WhatsApp groups are growing, but they’re more common in cities and among families who can afford smartphones and data. The truth is: in-class questioning remains rare and high-risk for social stigma. Your care for your learning is already a sign of respect—sometimes, the most respectful thing is to be patient, humble, and persistent in your own way."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of honorifics *Cô ơi* and *ạ* to express respect and humility when addressing teachers",
+          "Silence in class as a sign of respect rather than understanding",
+          "Reluctance to ask questions in class due to fear of stigma or appearing unintelligent",
+          "High parental pressure related to the *Tốt nghiệp THPT* national exam",
+          "Students seeking help after class or through peers rather than during instruction",
+          "Existence of informal study groups and use of WhatsApp in urban areas",
+          "Teacher-centered classrooms with authoritative tone and commands like *Lên bảng!*",
+          "Cultural tension between traditional obedience and modern reform goals",
+          "Regional differences (Hanoi vs. rural/low-income schools) in access to digital tools",
+          "The emotional weight of *ạ* as a marker of humility and respect"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing urban youth behavior (e.g., WhatsApp use) as universal, though the text does acknowledge limitations with 'not true for all, especially in rural or lower-income schools')",
+          "Slight implication that all teachers are impatient, which may reinforce a stereotype—though the assistant does balance this with nuance by acknowledging variability"
+        ],
+        "suggestions": [
+          "Include a brief mention of how some newer schools or private institutions in Hanoi are beginning to encourage more open questioning, to reflect ongoing reform efforts and generational shifts",
+          "Add a subtle reference to how younger students may use more indirect language (e.g., 'Em có thể hỏi thêm không ạ?' instead of 'Em không hiểu') to show linguistic evolution",
+          "Consider adding a note about the role of school counselors or academic advisors in some urban schools, as a modern alternative to peer or post-class help"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 13
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

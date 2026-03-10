@@ -1,0 +1,106 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Festival Symbols",
+    "category": "Institutional Norms > Geography & Customs > Dates of Significance",
+    "description": "Visual, material, and symbolic elements—such as colors, objects, and icons—associated with specific festivals",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping my mom prepare for Chuseok this year, but I’m not sure about the order of the offerings on the *sikdang*. We’ve got persimmons, chestnuts, mung bean soup, and the *songpyeon*—should I put them in a certain way?"
+            },
+            {
+              "role": "assistant",
+              "content": "Place the *songpyeon* in the center, front and center. To the right, put the mung bean soup in a plain ceramic bowl—white or light blue, no patterns. On the left, arrange chestnuts first, then persimmons. The *songpyeon* should be soft but not mushy, with a gentle sheen—fresh from the steamer. It’s not just about how they look; it’s about how they carry the morning’s warmth, the hands that made them."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I use the same *songpyeon* molds we’ve used for the past few years, or is it okay to get new ones this time?"
+            },
+            {
+              "role": "assistant",
+              "content": "If they’re still in good shape, better to use the old ones. You can feel the years in the grooves—the way your grandmother’s fingers pressed them in. They’ve held the shape of so many Chuseok mornings. New ones are fine if you’re starting fresh, but tradition says the old molds carry the family’s memory."
+            },
+            {
+              "role": "user",
+              "content": "I remember my grandmother always made the *songpyeon* with red bean filling. Is that still the most common?"
+            },
+            {
+              "role": "assistant",
+              "content": "Red bean’s the classic, especially for the ancestral rite. But chestnut’s popular too—especially in the countryside. And some families, particularly in rural areas or older lineages, make *gonggi*—lotus- or turtle-shaped rice cakes—for longevity and good fortune. They’re made with *gat*—rice flour—shaped by hand, often unevenly. That’s what makes them real. The act of shaping them together matters more than perfection."
+            },
+            {
+              "role": "user",
+              "content": "And the *charye*—should we go to the grave site today or wait until tomorrow? The weather’s been so humid."
+            },
+            {
+              "role": "assistant",
+              "content": "Better to go today—early morning, before the sun climbs high. The timing’s more important than the humidity. Bring the *sikdang* set, a jar of water for washing the stone, and the new *japgi* banners. Wear clean white—no stains or signs of wear. It’s not just for show; it’s a sign of respect."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure to set the table right and bring the old molds. I’ll also check the *japgi*—I think the one from last year is still in the box behind the closet."
+            },
+            {
+              "role": "assistant",
+              "content": "The *japgi* should be in the cedar chest beneath the altar, not the closet. That’s where they’re kept—protected, folded neatly, away from dust and damp. If the one from last year’s still there, keep it. But don’t let it get wrinkled. When you hang them, facing east is traditional—some families, especially in older or rural lineages, still do this as a quiet act of continuity with ancestral memory. It’s not a rule for everyone, but a gesture that carries meaning. And if you’re setting up the *sikdang*, it’s common to place it on the north or east side of the ancestral tablet, depending on the altar’s orientation. It’s not about strict rules, but about the care in the gesture."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of *songpyeon* as central offering in Chuseok with specific placement (center, front and center)",
+          "Color symbolism: white clothing for *charye* as sign of respect",
+          "Traditional use of *japgi* banners, stored properly in cedar chest, hung facing east",
+          "Preference for old *songpyeon* molds as heirlooms carrying family memory",
+          "Variety of *songpyeon* fillings (red bean, chestnut) and alternative shapes (*gonggi* lotus/turtle-shaped)",
+          "Ritual timing: early morning for *charye* to avoid midday heat",
+          "Placement of *sikdang* on north or east side of ancestral tablet based on altar orientation",
+          "Emphasis on care and gesture over strict rules in ritual practice",
+          "Use of *guk* (mung bean soup) and seasonal fruits (persimmons, chestnuts) in *charye* offerings",
+          "Symbolic meaning of *gonggi* (longevity), *japgi* (ancestral continuity), and *songpyeon* (harmony, fertility)"
+        ],
+        "issues": [
+          "Minor ambiguity in the description of *sikdang* placement—while 'north or east side' is plausible, the specific orientation depends on regional and family traditions; a more nuanced phrasing could acknowledge this variability without overgeneralizing.",
+          "The mention of 'clean white' clothing is accurate, but could be slightly expanded to clarify that it refers to *white hanbok* or *white ceremonial attire*, not just any white clothing, to avoid misinterpretation."
+        ],
+        "suggestions": [
+          "Add a brief contextual note in the assistant’s response about regional variation in *sikdang* placement (e.g., 'Some families place it on the east, others on the north, depending on the ancestral tablet’s direction') to reinforce cultural nuance without overprescribing.",
+          "Clarify that *white* in *charye* refers specifically to traditional white *hanbok* or *jeogori* and *baji*, not just any white fabric, to prevent misinterpretation of the symbolism.",
+          "Consider including a subtle reference to the *taegeuk* symbol in modern *japgi* or altar decorations, as it’s commonly seen in contemporary Chuseok displays, especially in urban households."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

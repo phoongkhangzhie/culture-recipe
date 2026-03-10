@@ -1,0 +1,223 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Serving Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms around offering and serving food and drink to guests, including order of service, refills, and insistence",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s house for dinner tomorrow. I hope I don’t mess up the soju thing—everyone’s been so generous with it lately."
+            },
+            {
+              "role": "assistant",
+              "content": "The host will keep refilling your glass—don’t pour yourself. If you try, they’ll gently cover the cup with their hand or say ‘I’ll do it’ to keep serving. It’s their way of showing respect—accepting helps maintain harmony."
+            },
+            {
+              "role": "user",
+              "content": "I’ve already had three bowls of rice. I’m full, but I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "Say ‘배가 부르네요’ with a small bow. They’ll likely offer more—accept the second or third time. It’s not about how much you eat. It’s about letting them show care."
+            },
+            {
+              "role": "user",
+              "content": "I noticed my aunt used a spoon to put kimchi on my cousin’s plate earlier. Should I do that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "If there’s a serving spoon, use it—everyone does. If not, just place a little on the plate with your own spoon. Don’t look directly while serving. Averted eyes show respect."
+            },
+            {
+              "role": "user",
+              "content": "What about eating speed? Should I wait for everyone?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—eat at the same pace. Finishing early can feel like rushing. The elders eat first, then others follow. Don’t finish before them. They’re not judging—they’re making sure you’re taken care of."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The host serves guests first, especially elders, before serving themselves.",
+          "Refilling drinks is a ritualized act of care; guests should not refill their own glasses.",
+          "Gentle refusal gestures (e.g., covering the cup or saying 'I’ll do it') are common when hosts insist on serving.",
+          "Accepting a second or third offer of food or drink maintains harmony and acknowledges the host’s intention.",
+          "Using a serving spoon is expected; if none is available, use your own spoon discreetly and with averted eyes.",
+          "Eating at the same pace as others, especially elders, shows respect and attentiveness.",
+          "Elders eat first, and others follow in order of age or status—this reflects hierarchy and formality."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "Host serves guests first before themselves",
+          "Host continuously refills guests' drinks without invitation",
+          "Guest should not refill their own glass; asking permission is polite but not expected",
+          "Guests decline initially but accept second or third offer to maintain harmony",
+          "Use of serving spoons or personal spoons for serving food, not chopsticks",
+          "Averted eye contact during serving as a sign of humility",
+          "Eating at the same pace as others, especially elders, to show respect",
+          "Host’s role as caregiver responsible for guest comfort"
+        ],
+        "issues": [
+          "The assistant’s response to 'I’ve already had three bowls of rice' could be slightly more nuanced—while '배가 부르네요' is correct, the assistant might better reflect the cultural weight of declining: the host may persist even after a bow, and the guest’s acceptance of a second offer is not just about 'letting them show care' but also about maintaining relational balance.",
+          "The phrase 'It’s not about how much you eat' slightly oversimplifies the deeper cultural meaning—eating in moderation is expected, but the act of accepting is more about reciprocity and social cohesion than mere acceptance of care."
+        ],
+        "suggestions": [
+          "In the second turn, strengthen the cultural nuance by adding: 'They might say “Just a little more” even after you say you’re full—don’t worry, it’s their way of showing you’re valued.'",
+          "In the fourth turn, clarify that using a personal spoon is acceptable only if no serving utensil is available, and emphasize that placing food on the plate with a spoon is done with the non-dominant hand or with a gesture of humility.",
+          "Add a brief mention of the host’s non-verbal cues (e.g., slight bow, hand covering the cup) to reinforce the implicit nature of the ritual."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "They poured soju right away—should I just let them keep refilling, or is it okay to pour myself?"
+            },
+            {
+              "role": "assistant",
+              "content": "Let them pour. It’s not just about the drink—it’s about care. If you try to pour yourself, they’ll likely wave it off gently. Just accept it with a small, respectful bow (jeol) and a quiet ‘감사합니다.’"
+            },
+            {
+              "role": "user",
+              "content": "What if I’m not thirsty anymore? I don’t want to leave my glass empty—feels awkward."
+            },
+            {
+              "role": "assistant",
+              "content": "Say ‘조금만 더 주세요’—just a little more—and smile. They’ll probably insist again. That’s normal. Accepting the second or third round keeps the warmth going. It’s not about drinking; it’s about being part of the moment. The host’s role is to care, and letting them serve you is how you honor that."
+            },
+            {
+              "role": "user",
+              "content": "She put kimchi on my plate without asking. Should I have said no?"
+            },
+            {
+              "role": "assistant",
+              "content": "No—she’s showing care. Refusing right away can feel like pushing her kindness away. Just say ‘감사합니다’ and eat it. If you’re full, say ‘배가 부르지만, 맛있어요’—it’s delicious, but I’m full. A small bow goes a long way."
+            },
+            {
+              "role": "user",
+              "content": "I finished eating, but everyone’s still going. Should I wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes. Don’t rush. Keep your hands folded, smile, and stay at the table. Wait until the host or the eldest finishes. That’s how you show you’re part of the group, not just a guest."
+            },
+            {
+              "role": "user",
+              "content": "And what about using chopsticks to serve others? I saw someone do it earlier."
+            },
+            {
+              "role": "assistant",
+              "content": "Never use your chopsticks to serve. That’s a big no. Always use the serving spoons. If there aren’t any, use the back of your chopsticks or a clean napkin—never your eating utensils."
+            },
+            {
+              "role": "user",
+              "content": "When someone’s serving me, should I look them in the eye?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not really. Keep your gaze slightly down. Direct eye contact while being served feels too bold—like you’re challenging their role. A soft, lowered glance shows humility."
+            },
+            {
+              "role": "user",
+              "content": "After dinner, should I offer to help clear the dishes?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can offer—say ‘저 좀 도와드릴까요?’—but if they say no, don’t press it. Just smile and nod. They’re the host; their role is to care for you. Offering shows thoughtfulness, but accepting their refusal shows respect for their space."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—should I eat slowly? I don’t want to seem too eager."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Eat at the same pace as the others. Eating too fast can feel like you’re rushing the moment. Slow, deliberate bites show you’re present—and that you value the shared experience. The host’s care is in the rhythm, not the speed."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "The host always serves guests first, especially in formal or familial settings.",
+          "Refilling drinks is a gesture of care; guests should not refill their own glasses.",
+          "Saying '조금만 더 주세요' is the natural way to accept a refill when politely declining initially.",
+          "A small, respectful bow (jeol) is the appropriate physical gesture when accepting food or drink.",
+          "Hosts often insist on serving more, even after refusal, to express generosity and care.",
+          "Using chopsticks to serve others is considered impolite; serving spoons or the back of chopsticks should be used instead.",
+          "Maintaining slightly lowered eye contact while being served shows humility and respect.",
+          "Staying at the table until the host or eldest finishes signals belonging and respect.",
+          "Offering to help after dinner is kind, but accepting refusal honors the host’s role as caregiver.",
+          "Eating at the same pace as others reflects mindfulness and appreciation for the shared moment."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Host serves guests first, including refilling drinks continuously",
+          "Guest should not refill their own glass without permission",
+          "Polite refusal followed by acceptance of second/third offer is expected",
+          "Use of serving spoons instead of chopsticks to serve others",
+          "Avoiding direct eye contact during serving as a sign of humility",
+          "Guest should wait until host or eldest finishes eating",
+          "Host’s role as caregiver and provider of comfort is central",
+          "Accepting food without asking is a sign of care, not imposition",
+          "Eating at the same pace as others shows respect and presence",
+          "Offering help with clearing dishes is acceptable but must be withdrawn gracefully if declined"
+        ],
+        "issues": [
+          "The phrase 'just a little more' is used in English, but the assistant's response uses the Korean phrase '조금만 더 주세요'—this is appropriate, but the user's turn does not reflect natural English phrasing that would precede such a Korean expression. The user's language should reflect a native speaker’s internalization of the cultural logic without direct translation.",
+          "The assistant's use of 'jeol' (a bow) is accurate, but the term is not explained—this is acceptable in implicit context, but could confuse a model if not paired with natural usage. However, since the context is implicit, this is a minor issue.",
+          "The phrase 'It’s not about drinking; it’s about being part of the moment' is slightly interpretive and risks over-romanticizing. While the sentiment is culturally aligned, it’s a generalization that could be refined to reflect more grounded cultural logic."
+        ],
+        "suggestions": [
+          "Refine the user’s second message to reflect more natural English phrasing that mirrors a native speaker’s internalized concern—e.g., 'I’m not thirsty, but I don’t want to leave my glass empty... what should I do?'—to better model authentic insider thinking.",
+          "Replace the interpretive line 'It’s not about drinking; it’s about being part of the moment' with a more grounded cultural explanation, such as 'They’re showing care through service. Letting them pour is how you accept their role.'",
+          "Ensure that all Korean phrases are used in context where a non-Korean speaker might reasonably be expected to understand them through usage, not translation—this example already does this well, but consistency is key."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

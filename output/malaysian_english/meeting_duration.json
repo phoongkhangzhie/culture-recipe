@@ -1,0 +1,245 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Meeting Duration",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Cultural expectations around how long business meetings typically last and punctuality norms for starting and ending",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a meeting with a client in Kuala Lumpur tomorrow morning. The agenda is set for 10:00 AM, but I’ve heard that Malaysian meetings often start late. Should I arrive at 10:00 sharp, or wait a bit?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to ask—arriving at 10:00 AM is perfectly appropriate, especially if you’re meeting a senior client. However, don’t be surprised if the meeting doesn’t begin until around 10:15 or even 10:30. In Malaysian business culture, the most senior person’s arrival sets the tone. If Encik Aziz, the project lead, hasn’t arrived, it’s customary to wait. Arriving early is respectful, but showing up right on time is ideal—being too early might seem pushy."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about the duration? I’ve got a tight schedule after this meeting—can I expect it to end on time?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s where the rhythm differs from Western norms. A 30-minute agenda here often stretches to 90 minutes or more—not because of inefficiency, but because building rapport matters deeply. After the formal discussion, there’s usually time for light conversation, snacks, or even a brief prayer break if it’s midday. In fact, if it’s around 12:30 PM, the team might pause for Zuhr prayer—this is normal and expected, especially in more traditional or Muslim-majority offices. The meeting may resume after lunch, or continue informally."
+            },
+            {
+              "role": "user",
+              "content": "So if the agenda is done early, should I just leave, or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to wait. Ending a meeting abruptly—especially before everyone feels comfortable—is considered impolite. Even if the agenda is complete, it’s common to linger for 15–20 minutes to chat, share tea or kuih, and strengthen relationships. The senior person will signal the end—perhaps by rising slowly, checking their watch, or saying, *‘Let’s continue this next time.’* Until then, stay. This is how trust and harmony are built. In fact, one junior manager once ended a meeting early and was gently reminded later that ‘we don’t cut short the group’s time.’"
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this really helps. I’ll plan to stay, and not worry about the clock. Should I mention the time if I need to leave early?"
+            },
+            {
+              "role": "assistant",
+              "content": "If you must leave early, it’s best to do so indirectly. Instead of saying, *‘I need to go now,’* you could say, *‘I’m sorry, I have another meeting starting at 1:00 PM—would it be alright if I stepped out after this?’* Or, *‘I’ll need to catch the traffic before it gets worse.’* This preserves face and shows respect. The group will understand. The real measure of professionalism here isn’t clock-watching—it’s showing care for the people and the process."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Polychronic time orientation in Malaysian business culture",
+          "Late meeting starts contingent on senior person's arrival",
+          "Flexible meeting duration extending beyond agenda",
+          "Prayer breaks (Zuhr) as standard during midday meetings",
+          "Informal social bonding (chat, snacks, kuih) after formal agenda",
+          "Indirect communication to preserve harmony (e.g., 'traffic is bad' vs. 'you're late')",
+          "Seniority dictating meeting flow and closure",
+          "Avoiding abrupt departure; waiting for implicit cues to end",
+          "Use of culturally appropriate indirect language for early departure"
+        ],
+        "issues": [
+          "Minor overgeneralization: The example assumes all Malaysian meetings include prayer breaks, but this is context-specific (more common in Muslim-majority or traditional offices, less so in multicultural or non-religious settings). A slight nuance about regional and organizational variation would improve accuracy.",
+          "Slight lack of mention of generational or urban vs. rural differences: While the example reflects traditional norms, it could acknowledge that younger professionals in MNCs may be more time-conscious, though still deferential to hierarchy."
+        ],
+        "suggestions": [
+          "Add a brief qualifier: 'In many traditional or Muslim-majority workplaces, especially in central and east coast regions, midday prayer breaks are common—though this may vary in cosmopolitan or non-religious offices.'",
+          "Include a subtle nod to generational shifts: 'While many still value relational pacing, younger professionals in tech and multinational firms may balance efficiency with cultural respect.'",
+          "Consider using a more localized honorific like 'Encik' or 'Puan' in a follow-up example to reinforce authenticity, though it’s already used appropriately here."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a project kickoff meeting with a client in Kuala Lumpur tomorrow. My team and I are meeting at 10:00 AM, but I’m worried we might be seen as unprofessional if we start late. How should I handle this?"
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t worry—starting exactly on time isn’t expected here, especially with local clients. In fact, it’s quite common for meetings to begin 10 to 15 minutes after the scheduled time, particularly if the senior person hasn’t arrived yet. The key is to show respect for hierarchy and harmony, not the clock. Arriving a few minutes early is fine, but don’t be surprised if the meeting doesn’t start right at 10:00. It’s better to wait patiently than to begin without the project lead."
+            },
+            {
+              "role": "user",
+              "content": "What if we finish the agenda early? Should we wrap up right away, or is it okay to stay longer?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s actually very common—and expected—to stay longer even after the agenda is done. In Malaysian business culture, the real work often happens in the informal chat that follows. Sharing snacks, exchanging pleasantries, or discussing non-work topics helps build trust and rapport. Ending too early might be seen as abrupt or even rude. You’ll likely be invited to stay for tea or coffee, and that’s a sign of inclusion, not a delay. The meeting might naturally extend by 20–30 minutes, and that’s perfectly normal."
+            },
+            {
+              "role": "user",
+              "content": "What if someone needs to leave early? Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Leaving early is acceptable only if you’ve made your respect clear—especially to senior members. If you need to go, it’s best to wait until the senior person signals the end, perhaps by rising slowly or checking their watch. Then, you can quietly excuse yourself with a polite note like, 'I’ll be heading off now, but thank you for the discussion.' Never cut short the group without a subtle cue. The group’s comfort comes before individual schedules."
+            },
+            {
+              "role": "user",
+              "content": "And what about prayer breaks? I heard they’re common in some meetings."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, especially in Muslim-majority settings or with clients from East Coast states like Kelantan or Terengganu. Midday (Zuhr) prayers are observed with respect—meetings often pause for 10–15 minutes around 1:00 PM. It’s not seen as a disruption but as a natural part of the day. If you’re in a meeting during that time, the facilitator might say, 'Let’s pause for prayer,' and everyone will stop. This is a sign of cultural and religious sensitivity, not inefficiency. It’s best to be flexible and respectful—don’t rush back in, and don’t bring up the clock."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Polychronic time orientation in Malaysian business culture",
+          "Late starts due to senior person's arrival",
+          "Flexibility in meeting duration beyond scheduled time",
+          "Post-agenda informal chat as relationship-building",
+          "Acceptance of prayer breaks (Zuhr) in Muslim-majority settings",
+          "Indirect communication around punctuality and scheduling",
+          "Hierarchy-driven timing and deference to senior members",
+          "Respect for religious and regional variations (East Coast vs. Sabah/Sarawak)",
+          "Use of subtle cues for departure, not direct announcements"
+        ],
+        "issues": [
+          "Minor omission of regional variation in time perception (e.g., Sabah/Sarawak being more relaxed), though the example acknowledges East Coast strictness",
+          "Slight overgeneralization that prayer breaks are 'especially common' without specifying context (e.g., Muslim-majority clients or religiously observant teams)"
+        ],
+        "suggestions": [
+          "Add a brief note about regional diversity: 'In more diverse or indigenous regions like Sabah and Sarawak, time norms may be even more fluid, with less emphasis on formal prayer breaks.'",
+          "Include a subtle reference to generational differences: 'Younger professionals in tech or MNCs may be more time-conscious, but still prioritize group harmony and seniority.'",
+          "Use a more natural Malaysian English idiom like 'We’ll start when Encik Rahman arrives' instead of 'the senior person hasn’t arrived yet' to enhance authenticity"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a project kick-off meeting with a client in Kuala Lumpur tomorrow. My team and I are supposed to start at 10:00 AM, but I’ve heard Malaysian meetings often start late. Should I arrive early, or wait until the scheduled time?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to plan ahead. In Kuala Lumpur, it’s best to arrive around 10:00 AM—no earlier. Arriving too early might be seen as pushy, especially if the senior client or project lead hasn’t arrived yet. The meeting will likely start 10–15 minutes after the scheduled time, once everyone is present. The most senior person’s arrival usually sets the tone. Don’t worry—this is normal and expected."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if the meeting runs longer than the 30-minute agenda? I don’t want to seem unprofessional if we go over."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s actually a good sign—it means the conversation is flowing naturally. In Malaysian business culture, meetings often stretch beyond their original time, especially when rapport is being built. A 30-minute agenda might take 60–90 minutes, and that’s perfectly acceptable. After the formal discussion, you’ll likely have time for snacks, light chat, or even a brief prayer break if it’s midday. This isn’t wasted time—it’s part of the relationship-building process. The key is to stay present and engaged, not to rush."
+            },
+            {
+              "role": "user",
+              "content": "I see. One more thing—what if someone arrives late? Should I say something?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, never point it out directly. Instead, you can say something like, *‘Ah, the traffic must be heavy today’* or *‘We’re just waiting for Encik Rahim—he’ll be here shortly.’* This preserves harmony and avoids putting anyone on the spot. The senior person’s arrival is what matters most. If the meeting doesn’t start right on time, it’s not a failure—it’s a sign of respect for hierarchy and group comfort."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I feel much more confident now. So, if we finish early, should I leave right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all. Leaving early—even if the agenda is done—can be seen as abrupt. It’s polite to stay for a few extra minutes to chat, share refreshments, or exchange pleasantries. The real closure often comes subtly—someone might say, *‘Let’s continue this after lunch’* or *‘We’ll wrap up next time.’* Wait for those cues. Staying shows you value the relationship, not just the task."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Polychronic time orientation in Malaysian business culture",
+          "Late meeting starts due to senior person's arrival",
+          "Flexible meeting duration beyond scheduled time",
+          "Importance of informal chat, snacks, and relationship-building after formal agenda",
+          "Midday prayer breaks as standard in Muslim-majority settings",
+          "Indirect communication to preserve harmony (e.g., 'traffic is heavy')",
+          "Seniority determining meeting flow and timing",
+          "Avoiding early departure to maintain relational continuity",
+          "Use of cues like 'Let’s continue after lunch' for natural closure"
+        ],
+        "issues": [
+          "Minor omission of regional variation (e.g., East Coast vs. Sabah/Sarawak), though not critical for general context",
+          "Slight underemphasis on the fact that prayer breaks are not just cultural but religiously obligatory in many contexts, though the response does correctly frame them as expected"
+        ],
+        "suggestions": [
+          "Add a brief mention of regional differences in time perception (e.g., Kelantan vs. Kuala Lumpur) to reflect nuance without overcomplicating",
+          "Include a subtle note that while indirectness is preferred, younger professionals in MNCs may be more time-conscious—this reinforces the generational shift insight from the briefing",
+          "Consider using a Malay honorific like 'Encik' or 'Puan' in context to enhance authenticity, especially when referencing senior figures"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 12,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

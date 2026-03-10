@@ -1,0 +1,176 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Alcohol Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural norms around offering, accepting, or declining alcoholic beverages in social and dining settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m at a company dinner—my boss is hosting, and I’m the newest person. I don’t drink much, but I don’t want to seem rude. How should I handle the soju pours?"
+            },
+            {
+              "role": "assistant",
+              "content": "The host starts, and you follow their lead. When they pour for you, accept with both hands—never reach for the bottle. Don’t pour your own. If they offer another round, drink it all in one go. If you can’t finish it, leave a small amount—just enough to show you’re trying. That’s how it’s done."
+            },
+            {
+              "role": "user",
+              "content": "What if I don’t want another round? I’ve had a few, and I’m driving home."
+            },
+            {
+              "role": "assistant",
+              "content": "You can say ‘sajang’ with a smile—everyone knows it means you appreciate the gesture but can’t drink. Keep it brief, and they’ll understand. It’s okay to say you’re driving—just keep it calm, not defensive. The key is showing respect while protecting your limits. You’ll fit in just fine."
+            },
+            {
+              "role": "user",
+              "content": "And what about when I need to pour for someone? The senior is sitting to my right."
+            },
+            {
+              "role": "assistant",
+              "content": "Always pour for seniors first. Use your right hand to hold the bottle, left hand to support the base—never the rim. Pour just below the brim, leave space. When handing it over, keep your hand low, eyes down, slight bow. After the toast, drink it all in one go—sipping slowly is disrespectful. The host drinks first to signal it’s safe to go—watch them, follow their lead. It’s the unspoken way."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 8.8,
+        "overall_score": 8.82,
+        "cultural_elements_verified": [
+          "The host pours first and sets the tone for drinking",
+          "Accepting drinks with both hands is mandatory, especially from seniors",
+          "Pouring for others with right hand holding bottle, left hand supporting base",
+          "Leaving space in the glass (not filling to the brim) as a sign of respect",
+          "Drinking the entire glass in one go after a toast is expected",
+          "Using 'sajang' as a polite refusal to drink without direct refusal",
+          "Saying 'I’m driving' is acceptable but should be calm and not defensive",
+          "Seniority and hierarchy dictate pouring order and formality",
+          "The unspoken nature of rituals—no need for explanation, just participation"
+        ],
+        "issues": [
+          "The assistant’s third response uses the phrase 'It’s the unspoken way'—while culturally accurate, it risks implying the user should conform without context, which could subtly encourage performance over understanding. Slight risk of reinforcing passive compliance.",
+          "The user explicitly states 'I don’t drink much' and 'I’m driving'—this is acceptable in context as natural user concern, but the assistant’s response could better reflect the social weight of such a refusal by subtly reinforcing that it’s acceptable to say so without over-explaining, which it does, but could be more nuanced in tone.",
+          "Minor issue: The phrase 'keep it calm, not defensive' is slightly Western in framing—more culturally authentic phrasing would be 'keep it humble' or 'don’t over-explain'—but still within acceptable range."
+        ],
+        "suggestions": [
+          "Replace 'It’s the unspoken way' with 'That’s just how it’s done—no need to explain, just participate with respect' to better reflect cultural norms without implying compliance over understanding.",
+          "In the response about refusing another round, consider adding a subtle cue like 'They’ll appreciate your honesty if you say it with a smile and a bow' to reinforce the non-verbal component of respect.",
+          "Ensure all assistant responses maintain a tone of shared cultural knowledge—avoid any phrasing that sounds like instruction from an outsider. The current tone is good but could lean slightly more into the insider perspective (e.g., 'You know how it is' or 'We do it this way' instead of 'That’s how it’s done')."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 11
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s wedding next week, and I’m nervous about the dinner part. My uncle is hosting, and he’s the eldest in the family. I don’t drink much, but I don’t want to seem rude if he offers soju. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t worry—just keep a few things in mind. When your uncle offers soju, take the glass with both hands, even if you’re not drinking. If you can’t drink, just hold it with both hands, tilt it slightly toward him, and say quietly, ‘Sajang,’ with a small bow. That’s enough to show respect without over-explaining."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what if he keeps offering more? I don’t want to seem like I’m avoiding him, but I really can’t have another glass."
+            },
+            {
+              "role": "assistant",
+              "content": "If he offers again, don’t pour from your own glass—never do that. Instead, just place your hand lightly over the rim after it’s filled. That’s the quiet signal. If he presses, you can say, ‘I’m on medication,’ with a smile and a bow. Keep it simple. They’ll understand."
+            },
+            {
+              "role": "user",
+              "content": "And the toasting part? I’ve seen people clink glasses, but I’m not sure how to do it right."
+            },
+            {
+              "role": "assistant",
+              "content": "When toasting, always make sure your glass is lower than the senior’s—especially your uncle’s. Don’t raise it higher. Say ‘Gamsahamnida’ or ‘Jal jae!’ and drink it all in one go. Sipping slowly can look like you’re not engaged. And if you’re unsure, just follow the lead of the person next to you."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this helps a lot. I’ll remember to keep my glass low and use both hands. I just want to be respectful without making a scene."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s the balance—being present, showing respect, and staying true to yourself. You’re doing it right by thinking about it ahead of time. Just remember: don’t drink too much, but don’t refuse either. That’s the unspoken rule."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Using both hands to receive a drink from a senior",
+          "Tilting the glass slightly to signal non-consumption without direct refusal",
+          "Saying 'sajang' as a culturally appropriate way to decline alcohol",
+          "Placing hand over the glass to signal no more is wanted",
+          "Lowering the glass during toasting to show deference",
+          "Drinking the entire glass in one go as a sign of respect",
+          "Using brief, polite explanations like 'I’m on medication' when declining",
+          "Following the lead of others in a group setting to maintain harmony",
+          "Avoiding self-pouring as a sign of politeness",
+          "Understanding that refusal must be indirect and humble to preserve social cohesion"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.825,
+        "cultural_elements_verified": [
+          "Offering soju with both hands and accepting it with both hands",
+          "Tilting the glass slightly and saying 'sajang' to decline without explanation",
+          "Not pouring from one's own glass; using hand over rim as a subtle refusal signal",
+          "Using 'I'm on medication' as a brief, polite excuse for not drinking",
+          "Lowering one's glass during toasting, especially when toasting a senior",
+          "Drinking the entire glass in one go as a sign of respect",
+          "Following the lead of others during toasting",
+          "Emphasis on avoiding direct refusal and maintaining harmony"
+        ],
+        "issues": [
+          "The assistant's final response includes the phrase 'Don’t drink too much, but don’t refuse either'—this oversimplifies the cultural nuance. The real unspoken rule is not about moderation per se, but about maintaining respect through appropriate formality and ritual. The phrasing risks normalizing excessive drinking, which is not culturally endorsed.",
+          "The use of 'Jal jae!' as a toast phrase is slightly inaccurate. While it's a common informal expression, in formal family settings like weddings, 'Gamsahamnida' (thank you) or 'Jangsu!' (to your health) are more appropriate and widely used. 'Jal jae!' is more casual and may sound out of place in a solemn family gathering.",
+          "The assistant doesn’t explicitly mention the importance of the host drinking first to signal safety—this is a key ritual that reinforces trust and is especially relevant in weddings."
+        ],
+        "suggestions": [
+          "Replace 'Jal jae!' with 'Jangsu!' or 'Gamsahamnida' in the toasting response to reflect more accurate and contextually appropriate language.",
+          "Rephrase the final line to emphasize ritual correctness and respect over moderation: e.g., 'Just remember: honor the form, stay present, and let your actions speak respect.'",
+          "Add a brief mention of the host drinking first as a safety ritual, especially in formal settings like weddings, to reinforce cultural authenticity.",
+          "Avoid framing the core principle as 'don’t drink too much'—this misrepresents the cultural priority, which is about ritual compliance and hierarchy, not alcohol quantity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

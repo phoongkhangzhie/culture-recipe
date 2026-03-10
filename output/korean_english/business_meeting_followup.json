@@ -1,0 +1,437 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Business Meeting Follow-Up",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around post-meeting communication, such as follow-up emails, calls, written summaries, or courtesy gifts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up a key meeting with the senior management team at Hanwha Techwin in Seoul. We discussed the upcoming joint R&D project timeline. I’m supposed to send a follow-up email today, but I’m not sure how formal it should be. Could you help me draft something appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. In Korean business culture, a post-meeting email should reflect both respect for hierarchy and the delicate balance of harmony (jeong). Since this was with senior management, your tone must be deferential yet concise—avoiding any appearance of haste or casualness. Begin by thanking them for their time, reference the key points discussed (especially those from senior participants), and frame decisions as collective consensus. Use honorifics like 'Mr. Kim' or 'Director Lee' with '-nim' if appropriate. Keep it to 3–4 short paragraphs. Would you like to share the names and titles of the attendees so I can tailor the honorifics?"
+            },
+            {
+              "role": "user",
+              "content": "Yes—there was Director Park (R&D Division), Ms. Cho (Project Planning), and Mr. Kim (Finance). I also remember Mr. Kim mentioned the budget review might be delayed. I want to acknowledge that gently without sounding pushy."
+            },
+            {
+              "role": "assistant",
+              "content": "Thank you for that detail. In Korean etiquette, it’s important to acknowledge concerns without emphasizing them—especially when the issue involves a senior leader like Mr. Kim. The key is to show attentiveness while maintaining restraint. I’ll draft a version that references the budget delay as a shared consideration, not a problem. It will open with gratitude, highlight the agreement on the project phases (leading with Director Park’s input, as the most senior), mention the budget review as a point of mutual awareness, and close with a respectful commitment to next steps. I’ll also suggest sending it within 24 hours—ideally tomorrow morning—since timing is crucial: too soon feels urgent, too late seems indifferent. Here’s a draft:"
+            },
+            {
+              "role": "user",
+              "content": "That sounds perfect. Also, I was thinking about sending a small gift—maybe some premium green tea from Jeju? Is that appropriate after a meeting like this?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a courtesy gift (sungje) is indeed appropriate and well-received, especially after a strategic meeting. Jeju green tea is an excellent choice—elegant, regional, and not overly expensive. Make sure it’s neatly wrapped in a traditional box, and present it with both hands while bowing slightly. The recipient will likely refuse once or twice as a gesture of humility—accept their refusal with a quiet smile and a polite nod. Avoid anything personalized, branded with your name, or too lavish. Also, do not send it the same day as the meeting; wait until the next business day. Sending it too soon may seem like an attempt to influence, and sending it on a weekend or holiday is inappropriate. I recommend delivering it in person during business hours (9:00–18:00), or arranging for a junior staff member to deliver it with a note that says, 'In appreciation of your guidance and time today.'"
+            },
+            {
+              "role": "user",
+              "content": "Thank you—this is incredibly helpful. One last thing: should I follow up with a phone call if I don’t hear back in a few days?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best to avoid a phone call unless there’s genuine urgency or sensitivity. In Korean business culture, calling outside of business hours—or even during them without invitation—is considered intrusive. If you need to check in, a brief, polite email the day after the initial follow-up is far more appropriate. A single follow-up email, sent one day after the meeting, already demonstrates respect and patience. If you send a second message, it should be even more concise—just a courteous note like: 'I hope this message finds you well. I’m following up on our recent discussion regarding the project timeline, and I remain ready to support as needed.' Avoid any pressure or urgency. The silence between messages is not awkward—it’s a sign of respect and self-restraint. Over-communication can signal impatience, which undermines the harmony you’re trying to build."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.35,
+        "cultural_elements_verified": [
+          "Post-meeting emails should be deferential, concise, and sent within 24 hours",
+          "Honorifics like '-nim' are appropriate for senior figures",
+          "Senior participants' input should be highlighted first in summaries",
+          "Decisions framed as collective consensus, not individual opinions",
+          "Courtesy gifts (sungje) are expected after strategic meetings",
+          "Gifts should be modest, regionally appropriate (e.g., Jeju green tea), and not personalized",
+          "Gifts must be delivered the next business day, not same-day",
+          "Gift presentation involves both hands and a slight bow; recipient may refuse twice",
+          "Phone calls are discouraged unless urgent; avoid calling outside business hours",
+          "Silence during calls is respectful, not awkward",
+          "Over-communication signals impatience and disrupts harmony (jeong)",
+          "Follow-up emails should be polite and non-pressuring, with one follow-up being sufficient"
+        ],
+        "issues": [
+          "Minor nuance: The assistant assumes the recipient will be in Seoul without confirming time zone context, which could affect timing advice (e.g., sending on 'tomorrow morning' may not align with local business hours if the sender is overseas). However, this is a small contextual gap, not a cultural error.",
+          "The assistant does not explicitly mention that the gift note should be handwritten or in Korean, though this is implied by 'in appreciation of your guidance and time today'—a minor omission in authenticity for high-stakes business contexts."
+        ],
+        "suggestions": [
+          "Add a brief note advising the sender to confirm the recipient’s business hours if sending from a different time zone, especially when advising timing for gift delivery or follow-up.",
+          "Suggest using a handwritten note in Korean (if possible) for the gift, or at minimum, a simple Korean phrase like '감사합니다' (Thank you) on the card to reinforce cultural authenticity.",
+          "Clarify that junior staff often handle gift delivery on behalf of senior members, reinforcing the hierarchy and reducing pressure on the sender."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just finished a key strategy meeting with the senior management team at Hanwha Techwin in Seoul. We discussed the new smart factory rollout for the Busan plant. I’m the junior project lead, and my supervisor asked me to draft a follow-up email to the team. Could you help me write something appropriate? I want to show respect and keep the relationship strong."
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. In Korean business culture, a well-timed, respectful follow-up email is essential—not just for clarity, but as a gesture of harmony (jeong) and deference to hierarchy. Since you're junior, the tone should be humble and collective, emphasizing gratitude and alignment with senior input. I’ll draft a version that reflects these values."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I also want to include a brief summary of the key points we discussed—especially the decision to prioritize Phase 1 testing at the Busan site by mid-October. Should I list that directly, or is there a more respectful way to frame it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Excellent question. In Korean business writing, you should not present decisions as individual conclusions. Instead, frame them as group consensus, with senior voices highlighted first. For example, you can say: 'As discussed during the meeting, Director Kim emphasized the importance of ensuring operational readiness before Phase 1 deployment, and the team agreed on a mid-October timeline.' This subtly elevates the senior leader’s input while showing unity. Avoid bullet points—use flowing sentences with natural transitions."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I mention the courtesy gift I brought after the meeting? I gave a box of Jeju black tea to the Director and the team lead. I know it’s not common in Western cultures, but I want to be respectful."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, you may reference it—but only indirectly and with humility. Never say, 'I gave you a gift.' Instead, you can write: 'I truly appreciate the opportunity to collaborate with such a dedicated team. As a small token of my gratitude, I brought some local Jeju black tea, hoping it might offer a moment of comfort during the busy weeks ahead.' This acknowledges the gesture without drawing attention to it, which aligns with the cultural value of modesty. Also, remember: the recipient will likely refuse once or twice before accepting—so your quiet delivery was perfect."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. One last thing—should I send this email immediately, or wait a bit? I don’t want to seem pushy."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect instinct. Timing is everything. Send the email within 24 hours, but not immediately after the meeting—ideally the next business day, around 10:30 a.m. This shows diligence without urgency. Avoid sending it late in the day or on Fridays. And never send multiple follow-ups unless prompted. A single, well-crafted message conveys patience and respect far more than frequent reminders."
+            },
+            {
+              "role": "user",
+              "content": "Thank you so much. This has been incredibly helpful. I’ll send it tomorrow morning. I really appreciate how this small act—this email—can carry so much cultural weight."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re absolutely right. In Korean business culture, it’s not about what you say—it’s how you say it, when you say it, and what it implies. That single email carries the weight of respect, hierarchy, and relational care. By honoring these unspoken rules, you’re not just reporting outcomes—you’re strengthening the foundation of trust. Well done."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Follow-up emails should be sent within 24 hours, ideally the next business day at 10:30 a.m.",
+          "Tone must be humble and deferential, reflecting hierarchy and group consensus.",
+          "Decisions should be framed as collective agreement, with senior participants’ input highlighted first.",
+          "Use of flowing sentences instead of bullet points to maintain formality and harmony.",
+          "Indirect reference to courtesy gifts (sungje) with humility and modesty, acknowledging the ritual of refusal.",
+          "Gifts should be modest, tasteful, and regionally appropriate (e.g., Jeju black tea).",
+          "Avoiding over-communication; one well-crafted follow-up is sufficient.",
+          "Respect for silence and pauses in communication, implied through timing and tone.",
+          "Emphasis on jeong (emotional bond and harmony) as a core value in business relationships."
+        ],
+        "issues": [
+          "The assistant’s final response slightly overgeneralizes by stating 'it’s not about what you say—it’s how you say it, when you say it, and what it implies,' which, while poetic, risks oversimplifying the cultural mechanics. A more precise framing would reinforce that the *form* of the message (structure, honorifics, timing) is as important as its content.",
+          "No explicit mention of honorifics like '-nim' or '-si' in the email draft, even though they are essential in Korean business writing. While the assistant explains their importance implicitly, the example does not model their use."
+        ],
+        "suggestions": [
+          "Include a sample email draft that uses proper honorifics (e.g., 'Director Kim-nim' or 'Team Lead Kim-si') to model linguistic authenticity.",
+          "Clarify that written summaries are typically prepared by junior staff under senior oversight, and that the assistant’s role in drafting the email should reflect this hierarchical dynamic.",
+          "Add a brief note about avoiding Western-style directness (e.g., 'I’ve attached the summary' or 'Please find the key points below') and instead using indirect, deferential phrasing like 'As mentioned during our discussion...' or 'For your reference, the team agreed on...'.",
+          "Consider adding a warning about sending emails on Fridays or after 5:00 p.m., reinforcing the importance of timing in business etiquette."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just finished a strategic planning meeting with the team from Hanwha Solutions. It was a high-level discussion about our joint project timeline. I’m unsure how to follow up properly—should I send an email right away? What’s the right tone and timing?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, sending a follow-up email within 24 hours is appropriate and expected. Since this was a formal meeting with senior stakeholders, the tone should be deferential and respectful. Begin with a formal greeting, clearly state your name and title (e.g., 'Kim Ji-hoon, Project Coordinator'), and express sincere gratitude for the opportunity to discuss the project with your counterparts. Avoid being overly casual—phrases like 'Thanks for the chat' are too informal. Instead, use 'I truly appreciate the time and insights shared during our meeting.'"
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I include a summary of the key points? And how should I structure it, especially since the senior leaders from Hanwha spoke first?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely—sending a written summary is highly valued and demonstrates diligence and attention to group cohesion. Structure it with the senior participants’ input highlighted first. For example, begin with: 'As Mr. Lee from Hanwha Solutions emphasized, the priority remains on aligning Q3 deliverables with the client’s milestone schedule.' Then list other key points in descending order of seniority. Frame decisions as collective consensus: 'The team agreed that the revised timeline, as discussed, will proceed with mutual alignment.' Keep the summary concise but thorough—no bullet points in the first draft, but use clear paragraphs. Avoid attributing opinions to individuals; instead, say 'As noted by the team' or 'The group concluded.'"
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I send the summary via email, or is a phone call better for this kind of thing? I don’t want to seem pushy."
+            },
+            {
+              "role": "assistant",
+              "content": "Email is far more appropriate here. Phone calls are reserved for urgent or sensitive matters and should only be made during business hours (9:00–18:00). Even then, the caller must wait for the recipient to initiate the conversation. A brief call after sending the email—perhaps just to say, 'I’ve sent a summary for your reference; please let me know if any points need clarification'—is acceptable, but only if you’ve already sent the email. Calling too soon or without prior notice may be seen as impatient. The key is restraint: one well-timed, understated email conveys respect more than multiple messages."
+            },
+            {
+              "role": "user",
+              "content": "I also remember hearing about gifts—should I bring something after the meeting? What kind of gift is appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a small courtesy gift (sungje) is customary and appreciated. Choose something modest and tasteful—high-quality green tea from Jeju, a set of traditional Korean paper stationery, or branded office items from a reputable Korean company (like a leather notebook from SsangYong). Wrap it neatly, present it with both hands, and bow slightly. The recipient will likely refuse once or twice as a gesture of humility—accept their refusal with a smile and a polite 'I hope you’ll accept this small token of appreciation.' Avoid gifts with personalization (like monograms), clocks, handkerchiefs, or white flowers—these carry negative connotations. The gift should not be expensive; the intent is gratitude, not obligation."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—should I send the gift before or after the email? And is it okay to send both in the same message?"
+            },
+            {
+              "role": "assistant",
+              "content": "Send the email first—ideally the same day, within 24 hours. The gift can be delivered the next day, either in person or via courier, with a handwritten note attached. You may mention the gift briefly in the email if you wish: 'I’ve also prepared a small token of appreciation, which I’ll be sending your way shortly.' But do not make it the focus. The email should center on the meeting’s outcomes and your gratitude. The gift is a secondary, respectful gesture—not a transaction. Timing and discretion are key: over-communicating can signal impatience, while thoughtful timing reflects deep respect."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.35,
+        "cultural_elements_verified": [
+          "Follow-up email within 24 hours is expected and appropriate",
+          "Email tone must be deferential and respectful, avoiding casual phrasing",
+          "Senior participants' input should be highlighted first in summaries",
+          "Decisions framed as collective consensus, not individual opinions",
+          "Written summaries are highly valued and reflect diligence and group cohesion",
+          "Phone calls are reserved for urgent/sensitive matters and must be made during business hours",
+          "Callers must wait for recipient to initiate conversation; silence is respectful",
+          "Courtesy gifts (sungje) are customary after meetings",
+          "Gifts should be modest, tasteful, non-personalized, and wrapped neatly",
+          "Gifts should not include clocks, handkerchiefs, or white flowers",
+          "Recipient typically refuses gift once or twice as a ritual of humility",
+          "Gift delivered the next day, after email, with handwritten note",
+          "Gift should not be the focus of the email; email centers on meeting outcomes",
+          "Timing and discretion are critical—over-communication signals impatience"
+        ],
+        "issues": [
+          "Minor inconsistency in the use of 'Mr. Lee'—in formal Korean business context, titles like 'Mr. Lee' are often rendered with honorifics such as 'Lee-si' or 'Lee-nim' in written communication, especially when referencing seniority. While 'Mr. Lee' is understandable in English, it lacks the cultural nuance of deference.",
+          "The phrase 'I’ve also prepared a small token of appreciation' in the email is slightly too direct for Korean cultural norms—more typical phrasing would be 'I have a small token to express my gratitude, which I will be sending shortly' to maintain humility and indirectness."
+        ],
+        "suggestions": [
+          "Replace 'Mr. Lee' with 'Mr. Lee-si' or 'Mr. Lee-nim' in formal written contexts to reflect honorific usage in Korean business culture.",
+          "Adjust the gift mention in the email to use more indirect, humble phrasing such as 'I have a small token to express my gratitude, which I will be sending shortly' to better align with the cultural preference for understatement.",
+          "Consider adding a brief note about the importance of not sending gifts during holidays or after hours, as this is a subtle but critical aspect of timing and respect.",
+          "Clarify that while gifts are acceptable, they should never be sent with the expectation of reciprocity or influence—emphasize the symbolic, non-commercial nature of sungje."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up a key meeting with the senior management team at Hanwha Solutions in Seoul. We discussed a joint sustainability initiative, and I want to send a proper follow-up email to show respect and maintain good rapport. Could you help me draft a polite and culturally appropriate message? I’m junior staff, so I need to be careful with hierarchy and tone."
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. Since you're junior staff and the meeting involved senior leaders, your email should reflect deference, humility, and careful attention to hierarchy. Begin with a formal greeting, clearly state your name and title, and reference the meeting with respect. Use honorifics like ‘-si’ or ‘-nim’ when addressing seniors. Keep the tone concise but warm—avoid being overly casual or too brief. A thank-you within 24 hours is ideal. I’ll draft a version for you."
+            },
+            {
+              "role": "user",
+              "content": "That would be very helpful. I also want to send a brief written summary afterward—should I include it in the same email, or send it separately? And what should I include in the summary?"
+            },
+            {
+              "role": "assistant",
+              "content": "Good question. It’s best to send the summary separately, preferably the next business day. Sending it in the same email may make the message feel too long or overwhelming. The summary should be structured with the senior participants’ input highlighted first—this reflects their status. Frame decisions as collective consensus, not individual opinions. Include key points, action items, and timelines, but avoid assigning blame or highlighting disagreements. Use a formal header with the date, meeting title, and list of attendees with titles. This shows diligence and group cohesion."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’m also thinking about sending a small courtesy gift—something tasteful but not extravagant. I was considering a box of premium Jeju black tea. Is that appropriate? Should I give it during the meeting or after?"
+            },
+            {
+              "role": "assistant",
+              "content": "Jeju black tea is an excellent choice—elegant, regional, and culturally resonant. It’s appropriate as a sungje (courtesy gift) after the meeting, not during. Present it with both hands, bow slightly, and say something like, ‘This is a small token of appreciation for your time and guidance.’ The recipient will likely refuse once or twice as a gesture of humility—accept their refusal gracefully. Avoid anything personalized or overly expensive. No clocks, handkerchiefs, or white flowers—those carry negative symbolism. A simple, tasteful gift wrapped neatly is perfect."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—should I call anyone directly to follow up, or is email sufficient? If I do call, what’s the right way to do it?"
+            },
+            {
+              "role": "assistant",
+              "content": "For formal follow-ups, email is preferred over phone calls. If you must call—say, for urgent clarification—do so only during business hours (9:00–18:00), and wait for the recipient to speak first. Silence is expected and respected; don’t rush to fill pauses. Calling outside business hours or on weekends/holidays is considered intrusive. If you’re reaching out to a senior leader, it’s better to send a brief email first, then wait for a response before calling. Over-communication signals impatience, which undermines the harmony (jeong) you’re trying to build."
+            },
+            {
+              "role": "user",
+              "content": "This is incredibly helpful. I’ll send a thank-you email today, a separate summary tomorrow, and present the tea gift after work hours. I’ll make sure to use proper honorifics and keep everything respectful and understated. Thank you for guiding me through this."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re welcome. Your thoughtful approach—respectful, timely, and mindful of hierarchy and harmony—will leave a strong, positive impression. Remember: in Korean business culture, it’s not about speed, but about the quiet, deliberate execution of ritual. Your attention to these details speaks volumes about your professionalism and cultural awareness. Well done."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.275,
+        "cultural_elements_verified": [
+          "Use of honorifics like '-si' or '-nim' in addressing senior leaders",
+          "Importance of timely follow-up within 24 hours",
+          "Separation of summary from email for formality and clarity",
+          "Hierarchy in summarizing discussion—senior input first",
+          "Framing decisions as collective consensus",
+          "Appropriateness of Jeju black tea as a courtesy gift",
+          "Presentation of gift with both hands and slight bow",
+          "Recipient's ritual refusal of gift once or twice",
+          "Avoidance of clocks, handkerchiefs, and white flowers",
+          "Preference for email over phone calls in formal follow-ups",
+          "Calling only during business hours (9:00–18:00)",
+          "Expectation of silence during calls as respectful",
+          "Avoidance of over-communication to preserve harmony (jeong)",
+          "Cultural emphasis on quiet, deliberate execution over speed"
+        ],
+        "issues": [
+          "Minor ambiguity in the assistant's use of 'junior staff' without specifying whether the user is male or female—Korean business culture often includes gendered expectations in formality, though this may be beyond the scope of the example.",
+          "The phrase 'a small token of appreciation for your time and guidance' is accurate but slightly Western in phrasing; a more authentically Korean version might be 'This is a humble offering of gratitude for your kind instruction.'"
+        ],
+        "suggestions": [
+          "Include a brief note on how to address the recipient in the email—e.g., using 'Dear Mr. Kim, Director of Sustainability (Kim Si)'—to reinforce title hierarchy.",
+          "Suggest using a formal email subject line such as 'Follow-Up on Joint Sustainability Initiative Meeting – [Date]' to reflect formality and structure.",
+          "Clarify that the written summary should be sent by junior staff under the supervision of a senior, as this reflects actual workflow in Korean companies.",
+          "Consider adding a line about the importance of not sending the gift during the meeting—emphasizing that it must be after the meeting concludes, ideally on the same day but not during the event."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just finished a key strategy meeting with the senior team at Hanwha Solutions. We discussed the new joint venture timeline and budget allocation. I’m supposed to send a follow-up, but I’m not sure how to do it properly in Korean business style. Can you help me draft a respectful email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. In Korean business culture, a timely and respectful follow-up is essential—not just for clarity, but as a gesture of jeong (deep emotional connection) and respect for hierarchy. Since the meeting concluded yesterday, sending a concise email today by 11 a.m. would be ideal. The tone should be deferential, not rushed, and it should acknowledge the senior participants first. I’ll draft one for you with the proper structure and honorifics."
+            },
+            {
+              "role": "user",
+              "content": "That would be great. The attendees were Mr. Kim (Director, Strategy Division), Ms. Park (Senior Manager, Finance), and Mr. Lee (Head of International Partnerships). I’m a mid-level project coordinator, so I need to be careful with titles and formality."
+            },
+            {
+              "role": "assistant",
+              "content": "Understood. Here’s a culturally appropriate draft for your follow-up email:\n\nSubject: Thank You for the Valuable Discussion – Joint Venture Planning (Oct 26, 2024)\n\nDear Mr. Kim, Ms. Park, and Mr. Lee,\n\nI sincerely appreciate the opportunity to participate in today’s strategic discussion regarding the joint venture timeline and budget allocation. Thank you for your insightful guidance and shared vision.\n\nAs discussed, we will proceed with the following key points:\n- Mr. Kim emphasized the importance of aligning the Q1 rollout with Hanwha’s annual planning cycle.\n- Ms. Park confirmed the initial budget allocation of KRW 12 billion, with a review scheduled in early November.\n- Mr. Lee suggested exploring local partner engagement by mid-November, pending regulatory approvals.\n\nI will prepare a detailed written summary for your review by tomorrow afternoon, following your direction. Please let me know if any adjustments or additional details are needed.\n\nOnce again, thank you for your trust and leadership. I look forward to continuing our collaboration with care and diligence.\n\nRespectfully,\n\nJi-hoon Park\nProject Coordinator, Hanwha Solutions\n\nThis version uses honorifics (e.g., ‘Mr. Kim’, ‘Ms. Park’, ‘Mr. Lee’), reflects senior input first, frames decisions as collective, and maintains a humble tone—critical for showing respect in hierarchical settings."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I also want to send a small gift to Mr. Kim and Ms. Park as a courtesy after the meeting. What would be appropriate? I’m thinking of high-quality green tea from Jeju."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful gesture. Jeju green tea is excellent—elegant, modest, and regionally symbolic. Make sure it’s in a simple, well-wrapped box, not branded or personalized. Avoid anything with monograms, clocks, or white packaging, as those carry negative connotations (e.g., death or mourning).\n\nWhen presenting, use both hands, bow slightly, and say: 'This is a small token of my appreciation for your guidance today.' The recipient will likely refuse once or twice as a sign of humility—simply accept their refusal with a quiet smile and nod. Don’t insist. The ritual itself is more important than the gift.\n\nAnd remember: do not send the gift immediately after the meeting. Wait until the next business day. Sending it too soon may seem rushed or eager. A day later, delivered during business hours, is perfect."
+            },
+            {
+              "role": "user",
+              "content": "Got it. One last thing—should I call Mr. Kim to confirm he received the email, or is that too pushy?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best not to call unless absolutely necessary. In Korean business culture, over-communication can signal impatience or lack of trust in the process. A well-timed email is sufficient. If you call, it should be during business hours (9:00–18:00), and you must wait for the recipient to speak first. Even a short pause is expected and respectful—it shows you’re listening, not rushing.\n\nIf Mr. Kim doesn’t respond within two days, you may send a brief, polite follow-up: 'I hope this message finds you well. I wanted to confirm the email was received and kindly ask if you have any initial feedback.' But avoid multiple follow-ups. Let the silence speak."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Follow-up emails should be sent within 24 hours and include deferential tone and honorifics",
+          "Senior participants' input is highlighted first in summaries",
+          "Decisions are framed as collective consensus rather than individual opinions",
+          "Written summaries are prepared by junior staff under senior guidance",
+          "Courtesy gifts (sungje) are appropriate after meetings and must be modest and tasteful",
+          "Gifts should be wrapped neatly, presented with both hands, and accompanied by a bow",
+          "Gift refusal ritual (one or two polite refusals) is expected and important",
+          "Avoiding gifts with monograms, clocks, handkerchiefs, or white packaging due to negative symbolism",
+          "Timing of gift delivery: wait until next business day, not immediately after meeting",
+          "Phone calls should be avoided unless urgent; if made, must be during business hours and recipient must initiate conversation",
+          "Pauses during calls are respectful, not awkward",
+          "Over-communication is seen as impatience; silence is a sign of respect",
+          "Follow-up calls should be minimal and only after two days if no response"
+        ],
+        "issues": [
+          "The email draft uses Western-style salutation 'Dear Mr. Kim, Ms. Park, and Mr. Lee'—in formal Korean business culture, especially in written communication, it's more common to use a single honorific address like 'Dear Mr. Kim, Ms. Park, and Mr. Lee' with a slightly more formal structure, but the use of multiple names in one salutation is acceptable in English translations. However, in real Korean business settings, the recipient’s seniority would be reflected in the order of names and titles, which is correctly observed here.",
+          "The assistant refers to 'Mr. Kim' and 'Ms. Park' without using the honorific suffix '-nim' in the English text, which is acceptable in English-language business correspondence, but could be misleading if the model learns that honorifics are not used in English. However, this is a reasonable adaptation to English norms while preserving cultural intent."
+        ],
+        "suggestions": [
+          "Consider adding a brief note in the assistant’s response explaining that while honorifics like '-nim' are used in Korean, they are not typically included in English-language business emails—this helps train the model to distinguish between linguistic formality and cultural respect in different languages.",
+          "In future examples, include a note about the role of the project coordinator (junior staff) in preparing summaries under senior oversight, to reinforce the hierarchical aspect of the process.",
+          "Clarify that the 'small token of my appreciation' phrase is a standard expression in Korean business etiquette, and could be slightly adjusted to 'This is a small token of my sincere appreciation for your guidance today' to better reflect the depth of jeong."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

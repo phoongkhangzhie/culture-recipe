@@ -1,0 +1,167 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Natural Language Date Expression",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "How dates are expressed conversationally in speech, including ordinal usage and word order",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "今週の金曜、ちょっとお茶でもしようかと思って。時間は大丈夫？"
+            },
+            {
+              "role": "assistant",
+              "content": "ええ、15時ごろなら空いてるよ。カフェでどう？"
+            },
+            {
+              "role": "user",
+              "content": "15時ごろって、ちょうどいいね。でもちょっと心配なんだけど、来週の水曜はお盆の前だから、ちょっと忙しいかも。"
+            },
+            {
+              "role": "assistant",
+              "content": "ああ、お盆の前は確かに、家のこととかでめっちゃ忙しくなるよね。じゃあ、金曜15時ごろでいい？もしくは、木曜の方がまだ余裕ある？"
+            },
+            {
+              "role": "user",
+              "content": "うーん、木曜もちょっと…。じゃあ、金曜の15時ごろで。あと、会う場所は、ちょっと遠くないところがいいな。電車で30分以内くらいで。"
+            },
+            {
+              "role": "assistant",
+              "content": "わかった。駅から徒歩5分以内の、落ち着いたカフェならいくつかあるよ。金曜15時ごろ、そちらで。混んでない時間帯も分かってるから、ゆっくり話せればいいな。"
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of contextually implied time references (e.g., omitting '今週の' after initial mention)",
+          "Preference for minimal date expressions in speech (e.g., '金曜15時ごろ' instead of '今週の金曜15時ごろ')",
+          "Natural omission of ordinal numerals in spoken Japanese (e.g., '5日' instead of '5日目' or 'go-nichi')",
+          "Use of culturally appropriate discourse particles with variation ('ええ', 'ああ', 'わかった') to reflect natural rhythm and tone",
+          "Substitution of '心配' with '忙しい' to align with casual, non-anxious expression of scheduling constraints",
+          "Softened phrasing like 'ゆっくり話せればいいな' instead of '気兼ねなく話せるよ' to reflect cultural value of ease and harmony",
+          "Reliance on shared understanding and implicit timing cues (e.g., 'お盆の前' as a temporal anchor without specifying exact date)"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of '今週の金曜' (this Friday) without explicit date or year, relying on shared temporal context",
+          "Natural omission of year and full month name, consistent with spoken Japanese norms",
+          "Use of 'お盆の前' (before Obon) as a culturally resonant temporal marker instead of a numerical date",
+          "Casual, context-driven time negotiation without over-explanation or formality",
+          "Preference for vague but meaningful temporal references like '15時ごろ' (around 3 p.m.) rather than exact times",
+          "Implicit understanding of social rhythm and personal availability without direct assertion",
+          "Preference for proximity-based location criteria ('電車で30分以内', '駅から徒歩5分以内') as a cultural norm in meeting planning"
+        ],
+        "issues": [
+          "Minor: '15時ごろ' is used without any honorific or polite form, which is acceptable in casual speech but slightly less common in slightly more formal peer-to-peer interactions. However, given the overall casual tone, this is not a critical issue.",
+          "Slight underuse of 'ちょうど' or 'ぴったり' to signal precision—this could be more nuanced in a context where timing is being confirmed, but the current use of 'ちょうどいいね' is natural and contextually appropriate."
+        ],
+        "suggestions": [
+          "Consider introducing a subtle shift in politeness level in the assistant's response if the relationship between interlocutors is slightly more formal (e.g., using '〜でございます' or '〜でよろしいでしょうか' in a professional setting).",
+          "In future examples, include a reference to seasonal or event-based dating (e.g., 'お花見の時期に会えるといいな') to further enrich the dimension of natural language date expression.",
+          "Add a brief moment where the assistant confirms the date implicitly by referencing a shared memory or ongoing event (e.g., '今週の金曜、前回の会議のあとだったね') to deepen the sense of shared context."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "今週の金曜、ちょっと会えたらいいなって思って。前回の打ち合わせの続き、ちょっと確認したいんだけど。"
+            },
+            {
+              "role": "assistant",
+              "content": "ああ、了解。今週の金曜、3時ごろなら空いてるよ。ちょうどいいね。"
+            },
+            {
+              "role": "user",
+              "content": "うん、3時頃なら大丈夫。それなら、今週の金曜ってことね？ちょっと確認しておきたいんだよね。"
+            },
+            {
+              "role": "assistant",
+              "content": "そう、今週の金曜。3時、いいよ。"
+            },
+            {
+              "role": "user",
+              "content": "ああ、そうだった。じゃあ、今週の金曜、3時から会議室で。あと、お茶の用意は大丈夫？ちょっと準備しておきたいんだけど。"
+            },
+            {
+              "role": "assistant",
+              "content": "はい、大丈夫。前日までに準備していただけると嬉しいです。資料があれば、その分、前日までに送っていただけると助かりますね。"
+            },
+            {
+              "role": "user",
+              "content": "了解。それじゃ、前日までに送るよ。あと、来月の頭、お花見の予定ある？ちょっとタイミング合わせたいんだけど。"
+            },
+            {
+              "role": "assistant",
+              "content": "来月の頭？ちょうどお花見の時期あたりね。GWの前くらいに桜が咲き始めるかも。ちょっとタイミングが合いそう。"
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Use of '今週の金曜' (this Friday) without explicit date or year, relying on shared context",
+          "Omission of ordinal '金曜日' vs. '金曜' in casual speech, consistent with natural spoken Japanese",
+          "Use of '来月の頭' (early next month) as a vague temporal reference, avoiding precise date",
+          "Reference to 'お花見' (cherry blossom viewing) as a seasonal marker for timing, not a numerical date",
+          "Natural progression of conversation without over-explanation, reflecting shared cultural understanding",
+          "Polite but casual tone with appropriate use of 'ね', 'よ', and '大丈夫' in social coordination",
+          "Implied understanding of preparation timing ('前日までに') without explicit instruction"
+        ],
+        "issues": [
+          "Minor inconsistency: '来月の頭' is used in a way that slightly over-precisizes timing; in truly natural speech, it would often be even vaguer, e.g., '来月、ちょっと空いてる？' or 'お花見の時期、どう？' — but this is a very minor issue.",
+          "The assistant's response 'ちょうどお花見の時期あたりね' is slightly more explicit than typical casual speech; native speakers might say 'お花見の時期、ちょうどね' or simply 'お花見の頃、いいかも' to maintain vagueness and softness."
+        ],
+        "suggestions": [
+          "Simplify the assistant’s response to 'お花見の時期、ちょうどね' or 'お花見の頃、いいかも' to better reflect the natural avoidance of precision in casual conversation.",
+          "Consider using more elliptical phrasing in the assistant’s final reply, such as 'GWの前くらい？' instead of 'GWの前くらいに桜が咲き始めるかも' to mirror how Japanese speakers often avoid over-explaining seasonal timing.",
+          "Ensure that even in follow-up turns, the assistant avoids reinforcing numerical precision unless explicitly requested — e.g., no need to confirm '3時から' in full unless the user does so first."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 7
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

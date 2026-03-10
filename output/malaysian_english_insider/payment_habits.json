@@ -1,0 +1,246 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Payment Habits",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Daily Life and Travel",
+    "description": "Preferred payment methods in everyday transactions, including attitudes toward cash, card, and mobile payment",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Auntie Siti’s been asking me to help her send money to her grandson in Penang for his wedding. She said she wants to give him the *duit daging*—you know, the real kind, not just numbers on a screen. But she’s nervous about using the app. How can we make sure she feels it’s still meaningful?"
+            },
+            {
+              "role": "assistant",
+              "content": "I get it—*duit daging* isn’t just about the amount. It’s the handover, the blessing, the *tangan* that passes it. She can send it through *DuitNow* to her son’s account, then have him go to a bank or *Touch 'n Go* kiosk to withdraw fresh notes. That way, she’s still part of the moment—like passing it through her hands, even if it’s not direct."
+            },
+            {
+              "role": "user",
+              "content": "She’s scared though. She keeps saying, ‘I can’t see the money—how do I know it’s real?’ How do I explain it without making her feel like she’s behind?"
+            },
+            {
+              "role": "assistant",
+              "content": "Tell her it’s like sending a letter with a photo inside—she’s not just sending digits, she’s sending love. Show her how to send a small amount, like RM50, and check the confirmation together. When she sees the balance update and gets the receipt, it’ll feel real. And if she’s still unsure, just go to a *bank branch* or *Touch 'n Go* kiosk—she can hand over cash in person. Control is key."
+            },
+            {
+              "role": "user",
+              "content": "She also wants to give *duit raya* this year. Can she use the app for that? She’s worried it won’t feel the same."
+            },
+            {
+              "role": "assistant",
+              "content": "For *duit raya*, the ritual matters—the red envelope, the crisp notes, the way you hand it with both hands. She can send the money digitally to her child’s account, then use that to withdraw fresh notes from a bank or *Touch 'n Go* kiosk. That way, the money comes from her, and the act stays sacred. Apps like *GrabPay* or *Touch 'n Go eWallet* are fine for the transfer, but the giving? That’s still in person. And if she’s giving *zakat*, she can use *Tabung Zakat*—it’s *Syariah*-compliant, so it feels right, too."
+            },
+            {
+              "role": "user",
+              "content": "She’s still hesitant. What if she’s not alone? My younger cousin’s been helping her with her phone lately—she shows her how to check balances, even when she’s at the kiosk. Is that normal?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. That’s how it usually works—*anak muda* guiding *makcik* and *pakcik*. It’s not about being behind; it’s about family. When she’s with someone she trusts, the app becomes less scary. And if she’s ever unsure, just go to a *Touch 'n Go* kiosk at a mall or post office—those are safe, familiar places. The staff even know her by name sometimes. It’s like a little *warung* with a screen."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Preference for physical cash in ritual contexts like *duit raya* and *duit daging*",
+          "Use of *DuitNow* for real-time transfers with family",
+          "Reliance on *Touch 'n Go* kiosks and banks for cash withdrawal to preserve ritual",
+          "Intergenerational support in digital adoption (*anak muda* guiding *makcik/pakcik*)",
+          "Trust in physical locations (banks, kiosks) as safe and familiar",
+          "Syariah-compliant digital platforms like *Tabung Zakat* for religious giving",
+          "Cultural significance of handover rituals and tactile experience in financial giving",
+          "Urban-rural and generational divide in digital comfort levels",
+          "Blending of digital tools with traditional practices (e.g., digital transfer → physical cash)",
+          "Use of Malay terms (*duit*, *tangan*, *makcik*, *anak muda*, *warung*) in natural English context"
+        ],
+        "issues": [
+          "Minor risk of reinforcing generational stereotype by implying only youth can assist elders (though this is common, it could be slightly nuanced further)",
+          "Slight overgeneralization of *Touch 'n Go* kiosks being universally known by name—some rural kiosks may not be branded or recognized by locals as such"
+        ],
+        "suggestions": [
+          "Add a subtle nuance in the assistant’s final response to acknowledge that not all elders are equally comfortable with any form of technology—some may prefer a third-party (e.g., bank teller) to handle the transaction for them, not just a family member",
+          "Slightly vary the mention of *Touch 'n Go* kiosks by specifying they are often located in malls, post offices, or petrol stations to reinforce geographic familiarity",
+          "Include a brief mention of *bank branches* as a trusted alternative to kiosks for those who distrust automated systems, reinforcing the institutional trust factor"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Auntie Siti’s been asking me to help her send some duit raya to her grandson in Penang. She wants to make sure it’s done right—she’s been saving for weeks, and she insists it has to be in cash. But I’m worried about the travel, and she’s not comfortable with the phone app. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "No worries—Pos Laju and Kargo Express are reliable for this, especially in Penang. Just pack the cash in a sealed envelope with a note, and they’ll deliver it door-to-door. She’ll feel better knowing it’s physical and personal, not just a tap on a screen."
+            },
+            {
+              "role": "user",
+              "content": "That sounds good. But what if she wants to give a little extra for the wedding? She’s been saying she wants to give ‘duit daging’—flesh money. How do I explain that to the courier?"
+            },
+            {
+              "role": "assistant",
+              "content": "You don’t need to explain it to the courier—just write ‘Duit Raya & Wedding Gift’ on the envelope and add a short note from her. The term ‘duit daging’ is just her way of saying it’s from the heart, not just money. That’s what matters most."
+            },
+            {
+              "role": "user",
+              "content": "Good idea. And what about the money itself? Should it be new notes? She said the ones from the bank aren’t good enough."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, fresh notes are best—crisp, clean, and new. Avoid anything torn or folded. If you can, get a bundle of RM10 or RM20 notes from the bank. It’s not just about the value—it’s about how it’s presented. She’ll feel it’s been specially prepared."
+            },
+            {
+              "role": "user",
+              "content": "Okay, I’ll do that. Thanks. I’ll make sure she gets to see the delivery confirmation too—she’s always checking if things are done properly."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful. She’ll appreciate the care. And if she ever wants to try DuitNow for smaller gifts—like a surprise top-up for his phone—just let her learn at her own pace. It’s not about replacing the old ways, but adding another way to show love."
+            },
+            {
+              "role": "user",
+              "content": "You know, in Penang, even some older folks are starting to use DuitNow for raya now. But Auntie Siti still says, ‘Cash is the only real way.’"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s the beauty of it—cash still rules for big moments like raya, especially when it’s about family. But in Penang, you’ll see younger relatives using DuitNow for quick gifts, and that’s okay too. It’s not either/or. It’s both—old ways for the heart, new ways for the pace of life. She’s right to want it this way—when it’s about love, not just money, the old ways still matter most."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Cash remains culturally significant for symbolic transactions like duit raya",
+          "Use of terms like 'duit raya' and 'duit daging' as culturally meaningful expressions",
+          "Preference for fresh, crisp banknotes in ceremonial giving",
+          "Reliance on trusted delivery services (Pos Laju, Kargo) for physical money transfer",
+          "Generational and regional variation in payment preferences (urban vs. rural, younger vs. older)",
+          "Coexistence of digital and cash methods without hierarchy—'both, not either/or'",
+          "Emphasis on presentation and intention over transactional mechanics",
+          "Respect for elders' preferences without pushing digital adoption",
+          "DuitNow used for small, informal gifts but not for major ceremonial amounts"
+        ],
+        "issues": [
+          "Minor risk of reinforcing a slight stereotype by implying all older Malaysians reject digital systems; however, this is balanced by the assistant’s nuanced framing of coexistence",
+          "The term 'duit daging' is used without explicit cultural explanation, but this is acceptable since the context implies understanding—no need to over-explain for insiders"
+        ],
+        "suggestions": [
+          "Consider adding a subtle nod to *Touch 'n Go* or *DuitNow* being used in urban settings for non-ceremonial gifts, to further reinforce the layered ecosystem",
+          "Slightly vary the language in the assistant’s response to reflect regional dialectal nuances (e.g., Penang Malay influence), though not required for general authenticity",
+          "Include a brief mention of *zakat* or *wakaf* as alternative digital giving options to enrich the cultural depth, if context allows"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Auntie Siti’s been asking me to help her send money to her son in Penang for his wedding. She’s been saving for months, and she wants to give him RM500 in cash, but she’s worried about carrying it. Can I just use GrabPay instead? She’s been saying the money has to be in paper, that it’s more meaningful."
+            },
+            {
+              "role": "assistant",
+              "content": "I get what you’re saying — Auntie Siti’s right about the weight of it. That RM500 isn’t just money; it’s *duit daging*, the kind of gift that comes from her hands, not a tap. She’s been counting it every night, folding each note carefully. If you send it via GrabPay, she’ll feel like something’s missing. The connection’s in the act of giving, not the transfer."
+            },
+            {
+              "role": "user",
+              "content": "But she’s also worried about the risk of losing it on the bus. And she’s never used an e-wallet before. I tried showing her DuitNow last week, but she said, ‘Boleh tunjuk duit tu?’ like she’s waiting to see the actual notes."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s exactly it — she needs to *see* it. Maybe you can do it together: go to a Touch ‘n Go counter at the mall, where she can scan her own card and watch the balance update on the screen. Or better yet, use a bank transfer to her son’s account, then let her print out the receipt. That way, she can hold the proof — a physical paper trail — and still feel the transaction is real. It’s not about the tech; it’s about trust."
+            },
+            {
+              "role": "user",
+              "content": "She said the money has to be in crisp, new notes, and she’s been saving for weeks. I don’t want to break the tradition, but I also don’t want her to get robbed. What if I help her carry it to the bus station? Just to the stop near her son’s flat?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s the sweet spot — a hybrid. You can carry it with her, not for the money, but for the journey. She’ll still hand it over herself, the way she wants. You’re not replacing the ritual; you’re protecting it. And if she’s nervous, let her count it on the bus, out loud. That’s how she’ll know it’s safe. The act matters more than the method."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "The emotional and symbolic weight of cash ('duit daging') in familial giving",
+          "Preference for physical money in traditional contexts like wedding gifts",
+          "Generational gap in digital adoption (Auntie Siti's skepticism toward e-wallets)",
+          "Use of hybrid solutions (e-wallet + physical proof) to bridge trust and tradition",
+          "Importance of visible, tangible confirmation of transactions (receipts, balance updates)",
+          "Cultural significance of hand-delivered money and ritual in gift-giving",
+          "Urban-rural and generational divides in payment method adoption",
+          "Use of Touch 'n Go counters and bank transfers as trusted, tangible interfaces",
+          "Bilingual lexical blending ('duit', 'DuitNow', 'GrabPay') in natural speech"
+        ],
+        "issues": [
+          "Minor risk of over-romanticizing the 'crisp new notes' tradition — while valid, not all Malaysians insist on new notes; some prefer used notes as a sign of authenticity in certain contexts (e.g., *duit raya*). However, this is a nuanced point and does not undermine the overall authenticity.",
+          "The phrase 'Boleh tunjuk duit tu?' is colloquial but slightly awkward in context — more natural phrasing would be 'Boleh tunjuk duit tu?' (with a pause) or 'Tunjuk duit, lah?' — but this is a minor linguistic quirk, not a serious error."
+        ],
+        "suggestions": [
+          "Consider adding a subtle reference to *zakat* or *wakaf* if the context were religious, to reflect broader Islamic ethical influences on digital finance (though not required here, as the scenario focuses on family gift-giving).",
+          "In future examples, explore the role of *kredit* and *bayar* in everyday speech to reinforce linguistic authenticity.",
+          "Include a brief mention of regional variation (e.g., 'In Penang, even elders use GrabPay at hawker centres') to reflect urban adoption without undermining rural traditions."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

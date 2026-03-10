@@ -1,0 +1,110 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Leaving Food After Eating",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Whether leaving food on the plate is considered polite, impolite, or neutral in a cultural dining context",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s house for dinner tomorrow—she’s been cooking all day, and I know her mom’s been helping. I don’t want to make a bad impression. Should I eat everything on my plate, even if I’m full?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, especially with elders around. Finishing your plate is a quiet way of saying thank you—like showing you saw their effort and appreciated it."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been told that leaving even a few grains of rice is a big deal. Is that really true? I don’t want to seem rude or like I didn’t like the food."
+            },
+            {
+              "role": "assistant",
+              "content": "Even a few grains can feel like a message. The host might worry you didn’t enjoy it or that they didn’t do enough. It’s not about how much you eat—it’s about honoring the care behind the meal."
+            },
+            {
+              "role": "user",
+              "content": "What if I’m sharing a side dish with others? Can I leave a little if they’re still eating?"
+            },
+            {
+              "role": "assistant",
+              "content": "Only if it’s clearly shared and others are still helping themselves. But if it’s your portion, better to finish it. The key is being mindful—taking just what you’ll eat, not more."
+            },
+            {
+              "role": "user",
+              "content": "I remember once I left a bit of kimchi on my plate at a friend’s place, and she kept refilling my bowl. I didn’t know why she did it—was that a sign I didn’t like it?"
+            },
+            {
+              "role": "assistant",
+              "content": "She wasn’t pushing you—she was gently fixing it. That refill? It’s a kind of care. She wanted you to feel welcome, not that you were full too soon."
+            },
+            {
+              "role": "user",
+              "content": "So even if I’m full, I should just keep eating slowly? No matter what?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s okay to feel full—really. But keep eating slowly, take a sip of tea, or pause to talk. The act of continuing, even gently, shows you’re present and grateful. Leaving the plate empty is like saying thank you without words."
+            },
+            {
+              "role": "user",
+              "content": "I’ve noticed people take just a little from communal dishes. Is that part of the same thing?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Taking only what you’ll eat shows respect—not just for the food, but for the host’s effort. It’s about not wasting the care they put into the meal."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Finishing one's plate is a sign of gratitude and respect, especially toward elders and hosts",
+          "Leaving even small amounts of food (e.g., rice, kimchi) can be interpreted as dissatisfaction or disrespect",
+          "Hosts may refill plates subtly to show care and ensure guests feel welcomed",
+          "Taking only what one will eat from communal dishes reflects mindfulness and respect for the host’s effort",
+          "The emphasis on mindful consumption aligns with values of harmony, gratitude, and avoiding waste",
+          "Cultural nuance is acknowledged: fullness is acceptable, but the appearance of finishing the meal matters"
+        ],
+        "issues": [
+          "The assistant's response to 'Should I eat everything on my plate, even if I’m full?' could be slightly more nuanced—while the answer is correct, it might benefit from acknowledging that physical fullness is respected, and the emphasis is on symbolic completion rather than forced overeating. However, this is minor and already addressed in later turns.",
+          "The phrase 'a quiet way of saying thank you' is slightly abstract but acceptable in natural speech; it could be strengthened with a more concrete cultural metaphor (e.g., 'like a silent bow of thanks'), but not required."
+        ],
+        "suggestions": [
+          "In future examples, consider embedding a brief moment where the user expresses internal conflict about feeling full—this would deepen the emotional realism and reinforce the cultural tension between physical comfort and social expectation.",
+          "Include a subtle mention of the concept of 'jeong' (deep emotional connection) in relation to food sharing, to further ground the response in Korean emotional culture.",
+          "Use more culturally specific metaphors (e.g., 'like leaving a gift half-untouched') to enhance linguistic authenticity without over-explaining."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 9,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

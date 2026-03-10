@@ -1,0 +1,105 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Date and Number Separator",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Characters used to separate date or number components, such as slashes, hyphens, periods, or commas",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m preparing a formal invitation for my aunt’s 60th birthday celebration in Bangkok. It’s going to be on April 15, 2024, and I want to make sure the date and details are written correctly in Thai style. Should I write it as 15/04/2024 or 15/4/24?"
+            },
+            {
+              "role": "assistant",
+              "content": "For formal invitations in Thailand—especially for family and religious events—the preferred format is 15 เมษายน 2567. This uses the full Thai script for the month and the Buddhist Era (BE) year, which is 2567 (2024 + 543). In official and ceremonial contexts, the BE year is always written in full—never abbreviated as '67'—to preserve clarity and cultural respect. That said, the Gregorian format (15/04/2024) is also widely accepted in modern urban settings, especially when inviting international guests. The key is context: use BE for traditional or religious events, and Gregorian for digital or international communication. Many formal invitations now include both formats to be inclusive."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I’ll write '15 เมษายน 2567' in Thai script. But what about the time? The event starts at 6:30 PM. Should I write that as 6:30 PM or 18:30?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use 18:30 น. in formal Thai writing. The 'น.' is a standard abbreviation for 'เวลา' (time), commonly used in newspapers, event programs, and official documents. It’s concise and universally understood in formal contexts. While some older or more traditional materials might use descriptive phrasing like 'หกโมงครึ่งเย็น', the 24-hour format with 'น.' is standard in modern formal invitations."
+            },
+            {
+              "role": "user",
+              "content": "Thanks! I also need to include the address: 123 Sukhumvit Road, Bangkok 10110. How should I format the postal code and number?"
+            },
+            {
+              "role": "assistant",
+              "content": "Write it as: 123 สุขุมวิท ถนน, กรุงเทพฯ 10110. Use Arabic numerals for the street number and postal code—no commas or spaces. The postal code is always a single number: 10110. This matches official government and business formats. In ceremonial or artistic designs—such as temple donation slips or handcrafted invitations—you may see Thai numerals (e.g., ๑๒๓), but for standard formal invitations, Arabic numerals are correct and expected."
+            },
+            {
+              "role": "user",
+              "content": "One last thing — I’m including a small donation box for the temple offering. The suggested amount is 500 baht. Should I write it as 500 or 500.00?"
+            },
+            {
+              "role": "assistant",
+              "content": "Write it as 500.00 บาท. Use a period as the decimal separator and no comma for thousands—this is standard in all formal Thai financial documents, including temple donation slips and bank receipts. This format ensures clarity, especially in automated systems. While Arabic numerals are standard, you may see Thai numerals (e.g., ๕๐๐.๐๐) in ceremonial or decorative contexts, particularly when the design emphasizes tradition or spiritual authenticity. However, for clarity and consistency, Arabic numerals are recommended in formal invitations."
+            },
+            {
+              "role": "user",
+              "content": "Just to be thorough—what about large numbers? I’ve seen some handwritten notes use spaces instead of commas, like 1 000 000. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in informal handwritten notes—especially among older generations or in rural areas—it’s common to use spaces instead of commas (e.g., 1 000 000). This reflects a regional and generational variation. However, in formal, printed, or digital contexts—like official documents, financial records, or digital forms—commas are used as thousand separators (e.g., 1,000,000). So use commas for consistency and clarity in formal writing, but know that spaces are still culturally understood in casual settings."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of day/month/year format with forward slashes in formal contexts (e.g., 15/04/2024)",
+          "Preference for Buddhist Era (BE) year in formal and religious events (2567 for 2024)",
+          "Full Thai script month names in formal writing (e.g., เมษายน)",
+          "Use of commas as thousand separators and periods as decimal points in formal financial contexts",
+          "Use of 'น.' as abbreviation for 'เวลา' in formal time notation (18:30 น.)",
+          "Arabic numerals preferred in formal documents, though Thai numerals may appear in ceremonial designs",
+          "Spaces used instead of commas in informal handwritten notes, especially among older generations",
+          "Dual format usage (Gregorian and BE) in official invitations for inclusivity",
+          "Standardization of postal codes without commas or spaces (10110)"
+        ],
+        "issues": [
+          "Minor ambiguity in the explanation of the BE year: while 2567 is correct, the example does not explicitly clarify that the BE year is used in official Thai contexts, which could lead to overgeneralization if not paired with context. However, this is not a factual error.",
+          "The suggestion that '1 000 000' is used in rural or older handwritten notes is accurate, but the phrasing 'this reflects a regional and generational variation' could be slightly overstated without citing that this is more common in informal, non-digital settings rather than a formal regional standard."
+        ],
+        "suggestions": [
+          "Add a brief note that the BE year is not used in everyday conversation but is standard in official documents, religious ceremonies, and formal invitations to reinforce the distinction between public and private usage.",
+          "Clarify that while Thai numerals (e.g., ๑๒๓) are used in ceremonial or decorative contexts, they are not used in official or financial documents—this strengthens the boundary between tradition and function.",
+          "Consider adding a line about the 24-hour clock being standard in formal Thai writing, reinforcing that 18:30 น. is preferred over 6:30 PM in official materials."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

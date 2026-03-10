@@ -1,0 +1,173 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Zero-Padding in Dates",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "The convention of adding leading zeros to single-digit day or month values in date notation",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing the submission for the annual office compliance report. The deadline is March 5th, and I need to make sure all the dates in the document are formatted correctly. Should I write it as 3/5 or 03/05?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use 03/05. Leading zeros are standard in formal documents, even internally. It’s expected across departments and systems—especially in compliance materials."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And for the year? Should it be 2024 or 2024 with the full four digits? I saw some forms with just the last two digits."
+            },
+            {
+              "role": "assistant",
+              "content": "Always use four digits: 2024. Shortening to '24' is acceptable only in casual notes. Formal submissions require the full year for clarity and consistency."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One more thing—on the cover page, I’m listing the submission date as 03/05/2024. Is that the right order?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, MM/DD/YYYY is standard for compliance reports. For legal filings, YYYY/MM/DD may be used, but in most office contexts, MM/DD/YYYY is expected. Consistent formatting helps avoid confusion at a glance—important in high-precision environments."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I remember a junior colleague got called out last year for writing '3/5' on a budget summary. It was just a small thing, but it caused a delay."
+            },
+            {
+              "role": "assistant",
+              "content": "In Japanese professional environments, such details are expected to reflect attention to order and consistency. Omitting leading zeros can signal carelessness, even if the content is correct. It’s not about the date—it’s about showing you follow the standard, which maintains clarity and trust."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of leading zeros (03/05) in formal documents and compliance reports",
+          "Preference for four-digit years (2024) in formal contexts",
+          "MM/DD/YYYY as standard in office environments, with YYYY/MM/DD for legal filings",
+          "Perception of zero-padding as a sign of attention to detail and professionalism",
+          "Cultural emphasis on consistency, precision, and avoiding ambiguity in written communication",
+          "Anecdotal reference to junior employee reprimand for omitting leading zeros"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant’s final response: 'In Japanese professional environments...' — while accurate, slightly abstract; could be more grounded in specific workplace behavior",
+          "The user’s final message references a past incident involving a 'junior colleague'—while plausible, it risks implying a universal or institutionalized reprimand system, which may overstate the cultural norm (though the tone is appropriately understated)"
+        ],
+        "suggestions": [
+          "Replace 'In Japanese professional environments...' with a more grounded phrasing like 'In many Japanese offices, omitting leading zeros can draw attention—especially in formal documents—because it’s seen as a small but visible sign of carelessness.'",
+          "Consider adding a brief, subtle reference to real-world systems (e.g., 'like the ones used in government e-forms') to reinforce authenticity without over-explaining",
+          "Ensure future examples avoid even implied judgmental tone—keep responses descriptive, not prescriptive, to reflect cultural norms as lived, not enforced"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm finalizing the compliance report—deadline’s March 5th. Should I write the date as 3/5 or 03/05?"
+            },
+            {
+              "role": "assistant",
+              "content": "03/05—especially for official documents. It’s the standard across most digital systems and printed forms here."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And the year? Just 2024?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, 2024. So 03/05/2024. The format’s consistent in both internal systems and external submissions."
+            },
+            {
+              "role": "user",
+              "content": "I’ve seen people get asked to revise their dates quietly—just to keep things consistent."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not about being strict—it’s about maintaining the shared order we all rely on. Small details like this reflect care for the process, which matters in how we work together."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. But what if it’s just a quick internal memo? Could I use 3/5 there?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a team memo, 3/5 might go unnoticed, but using 03/05 keeps things aligned with the templates everyone uses. It’s easier for everyone when the format stays the same—no one has to double-check, and it shows you’re mindful of the workflow."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Zero-padding in date notation (e.g., 03/05 instead of 3/5)",
+          "Consistency in formal and digital documentation",
+          "Visual uniformity and precision in written communication",
+          "Adherence to shared standards without explicit enforcement",
+          "Respect for institutional workflows and system templates",
+          "Implicit cultural value of seiketsu (order) in professional settings",
+          "Subtle emphasis on collective ease and smooth processing over individual convenience"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of zero-padded dates (03/05) in official and digital contexts",
+          "Consistency in date formatting across systems and documents",
+          "Perception of zero-padding as a sign of professionalism and attention to detail",
+          "Cultural value of order, precision, and shared standards in work environments",
+          "Preference for uniformity even in informal internal communication to maintain workflow harmony",
+          "Implicit understanding of norms without explicit cultural explanation"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the assistant's final response: 'no one has to double-check' slightly oversimplifies potential ambiguity in informal settings, though it aligns with the cultural norm of minimizing cognitive load through consistency.",
+          "The assistant does not explicitly acknowledge the existence of informal exceptions (e.g., handwritten notes), though this is implied through context and does not undermine accuracy."
+        ],
+        "suggestions": [
+          "Slightly soften the phrasing in the final response to acknowledge that informal contexts may allow for flexibility, e.g., 'In a quick team memo, 3/5 might slip through—but using 03/05 keeps the whole team on the same page, which is what we value.'",
+          "Consider adding a brief, natural reference to a shared system (e.g., 'like the ones in our internal portal') to reinforce cultural grounding without breaking immersion.",
+          "Ensure future examples avoid any implication that zero-padding is universally enforced in *all* handwritten or personal contexts, even if the tone remains consistent with cultural values."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 9
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

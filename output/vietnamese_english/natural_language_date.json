@@ -1,0 +1,243 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Natural Language Date Expression",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "How dates are expressed conversationally in speech, including ordinal usage and word order",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m trying to plan a small family gathering for my grandfather’s giỗ (ancestor’s death anniversary). It’s supposed to be on the 15th of the 7th lunar month this year. I’m not sure what the Gregorian date is, and I want to make sure I get the timing right for everyone."
+            },
+            {
+              "role": "assistant",
+              "content": "I understand how important this is—giỗ is a deeply meaningful ritual in Vietnamese families. The 15th of the 7th lunar month is called *rằm tháng Bảy*, also known as the Ghost Festival. This year, it falls on **July 23, 2025** in the Gregorian calendar. So your family gathering should be on that day, ideally in the evening, as *rằm* is traditionally observed at night with offerings."
+            },
+            {
+              "role": "user",
+              "content": "Thank you! I’ll mark it down. But I’m also thinking about how to tell my younger cousin, who’s in Ho Chi Minh City and mostly uses Gregorian dates. Should I say ‘July 23’ or mention the lunar date too?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful question. For your cousin, it’s best to use both dates for clarity and cultural connection. You could say: *‘Giỗ ông nội sẽ diễn ra vào ngày 23 tháng 7 năm 2025 (tức ngày rằm tháng Bảy âm lịch).’* This way, she gets the exact date she needs, but also sees the cultural significance—especially since *rằm tháng Bảy* carries deep spiritual meaning in Vietnamese tradition. Many younger people still recognize the lunar reference, even if they use Gregorian dates in daily life."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the time? Should I say ‘tối’ (night) or be more specific? My aunt wants to start the ceremony at 6 PM."
+            },
+            {
+              "role": "assistant",
+              "content": "In family contexts, saying *‘tối’* (night) is perfectly natural and often sufficient—especially when the exact time isn’t critical. But since your aunt wants to start at 6 PM, it’s helpful to be specific: *‘Ceremony bắt đầu lúc 6 giờ chiều ngày 23 tháng 7.’* That’s respectful and clear. You might even add: *‘Chúng tôi sẽ cúng vào lúc 6 giờ chiều, đúng giờ rằm.’*—this links the time to the ritual significance, which adds warmth and cultural depth."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll tell everyone it’s *rằm tháng Bảy* and use the Gregorian date too. I just hope my cousin doesn’t get confused with *thứ năm*—I’ve heard that’s a common mistake."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a very common mix-up! *Thứ năm* means Thursday, not ‘the fifth.’ So if you say *‘ngày thứ năm’*, it sounds like you’re referring to Thursday. Always use *ngày năm* (day five) for the fifth of the month—never *thứ năm*. For example, *‘Ngày 5 tháng 7’* is correct, but *‘ngày thứ năm tháng 7’* would mean ‘Thursday, July.’ It’s a subtle but crucial distinction in Vietnamese. Your cousin will appreciate the clarity—and you’ll avoid a funny misunderstanding!"
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of lunar calendar for ancestral rituals (giỗ) with emphasis on *rằm tháng Bảy*",
+          "Correct use of *âm lịch* and dual date formatting in media-like clarity",
+          "Proper distinction between *ngày năm* (5th) and *thứ năm* (Thursday)",
+          "Cultural significance of *rằm* as a spiritually meaningful night event",
+          "Recognition of generational differences in date expression (urban youth vs. family tradition)",
+          "Contextual use of *tối* (night) in family settings with ritual timing",
+          "Appropriate integration of poetic and ritual language (*chúng tôi sẽ cúng vào lúc 6 giờ chiều, đúng giờ rằm*)"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing regional differences—no mention of regional variation in *rằm* observance, though this is not a critical error",
+          "Slight informality in tone when discussing *giỗ* (e.g., 'that’s a thoughtful question') may not fully reflect the solemnity expected in ancestral rituals in some families, though acceptable in youth-oriented dialogue"
+        ],
+        "suggestions": [
+          "Add a brief note about regional variation in lunar calendar usage (e.g., 'In the South, some families might use Gregorian dates more often, but still reference *rằm tháng Bảy* for cultural continuity') to reinforce nuance",
+          "Consider including a native speaker’s phrasing variation (e.g., *‘Cúng vào đêm rằm, ngày 23 tháng 7’*) to reflect natural spoken rhythm",
+          "Clarify that *rằm* is not just a date but a ritual period—suggestions like *‘đúng giờ rằm’* are culturally resonant and should be preserved"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Chào bạn, mình đang chuẩn bị lễ cúng giỗ ông nội vào tháng 7 âm lịch năm nay. Mình nhớ là ông nội mất vào ngày mùng 5 tháng 7 âm lịch, nhưng mình không chắc năm nay là ngày nào theo dương lịch. Bạn giúp mình kiểm tra xem hôm đó là ngày bao nhiêu tháng mấy năm 2025 được không?"
+            },
+            {
+              "role": "assistant",
+              "content": "Chào bạn, mình hiểu rõ sự quan trọng của ngày giỗ ông nội — đó là một dịp thiêng liêng, thể hiện lòng hiếu thảo. Năm 2025, ngày mùng 5 tháng 7 âm lịch sẽ rơi vào ngày 27 tháng 8 năm 2025 (thứ Bảy). Bạn có thể ghi nhớ là: ngày giỗ ông nội là ngày mùng 5 tháng 7 âm lịch, tức là ngày 27 tháng 8 năm 2025. Nên chuẩn bị lễ vật từ trước, đặc biệt là bánh ú tro, xôi gấc và hoa cúc trắng để cúng đúng nghi thức."
+            },
+            {
+              "role": "user",
+              "content": "Cảm ơn bạn nhiều! Mình định mời cả họ đến nhà mình để cúng, nhưng mình lo là không biết nên nói thế nào cho đúng. Nên nói là 'cúng vào ngày mùng 5 tháng 7 âm lịch' hay 'ngày 27 tháng 8'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Mình rất hiểu nỗi lo của bạn — trong gia đình, việc dùng đúng cách diễn đạt ngày lễ rất quan trọng. Khi nói về giỗ tổ, cúng ông bà, bạn nên dùng *âm lịch* để thể hiện sự trang trọng và truyền thống. Vì vậy, tốt nhất là nói: *“Cúng giỗ ông nội vào ngày mùng 5 tháng 7 âm lịch năm nay”*. Dù bạn biết rõ ngày dương lịch (27/8), việc giữ nguyên *âm lịch* sẽ khiến người lớn trong nhà cảm thấy an tâm, vì đó là cách nói đúng với văn hóa Bắc Bộ và cả miền Trung. Bạn có thể thêm: *“Tức là ngày 27 tháng 8 năm 2025”* nếu cần giải thích cho người trẻ hoặc người nước ngoài."
+            },
+            {
+              "role": "user",
+              "content": "Ừ thì mình cũng thấy vậy. Nhưng mấy đứa cháu nhỏ trong nhà hay nói *Tết 2025* hay *ngày 1 tháng 1* mà không nói *âm lịch*. Mình có nên nhắc chúng dùng *mùng một Tết âm lịch* không?"
+            },
+            {
+              "role": "assistant",
+              "content": "Rất hay khi bạn quan tâm đến điều này. Trong văn hóa Việt, việc dùng *mùng một Tết âm lịch* không chỉ là chính xác về thời gian — nó là một biểu tượng của bản sắc. Dù giới trẻ ở TP.HCM hay dùng *Tết 2025*, nhưng khi nói đến *Tết Nguyên Đán*, việc nhấn mạnh *âm lịch* (như *mùng một Tết âm lịch*) là cách để giữ gìn truyền thống. Bạn có thể nhẹ nhàng nhắc các cháu: *“Tết năm nay là mùng một Tết âm lịch, tức là ngày 29 tháng 1 năm 2025”*. Dần dần, các cháu sẽ hiểu rằng *âm lịch* không chỉ là lịch cũ — mà là nơi chứa đựng tâm hồn dân tộc."
+            },
+            {
+              "role": "user",
+              "content": "Mình cảm thấy rất an tâm sau cuộc trò chuyện này. Cảm ơn bạn rất nhiều vì đã giúp mình nói đúng, nói hay, và nói có tâm."
+            },
+            {
+              "role": "assistant",
+              "content": "Bạn thật sự rất có tâm khi muốn giữ gìn nghi thức gia đình. Đó chính là điều quý giá nhất. Chúc bạn và gia đình một buổi cúng giỗ trọn vẹn, an lành, và đầy ắp tình thân. Nếu cần thêm gợi ý về bài cúng hay cách sắp xếp mâm cỗ, mình luôn sẵn sàng hỗ trợ."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of lunar calendar (âm lịch) for ancestral rites and cultural events",
+          "Correct use of 'mùng 5 tháng 7 âm lịch' for giỗ tổ",
+          "Distinction between âm lịch and dương lịch in family contexts",
+          "Proper ordinal expression: 'mùng một' for lunar 1st, not 'ngày một'",
+          "Cultural significance of lunar dates as identity markers",
+          "Regional awareness: mention of Bắc Bộ and Trung Bộ traditions",
+          "Intergenerational language variation: youth use of Gregorian vs. elders' use of lunar",
+          "Emphasis on ritual correctness in family communication",
+          "Use of poetic and emotional framing in cultural context"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'dù giới trẻ ở TP.HCM hay dùng Tết 2025' could imply a monolithic youth behavior; regional variation among youth is more nuanced",
+          "Slight imbalance in tone: the assistant’s final response leans slightly idealized (e.g., 'nơi chứa đựng tâm hồn dân tộc') — while authentic in sentiment, it may border on performative culturalism in training data"
+        ],
+        "suggestions": [
+          "Refine youth language description to reflect greater diversity: e.g., 'many urban youth use Gregorian dates in daily conversation but still acknowledge âm lịch during Tết and giỗ'",
+          "Include a brief mention of regional variation in youth usage (e.g., 'in the South, some youth use both systems interchangeably, while in the North, âm lịch remains more prominent in family settings')",
+          "Consider adding a subtle nuance about the optional nature of adding dương lịch in family settings — not always necessary, only for clarity with outsiders"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m trying to plan a small family gathering for my grandfather’s giỗ (anniversary of death). He passed away on the 10th of the 7th lunar month, but I’m not sure what the Gregorian date is this year. Can you help me figure it out?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. Your grandfather’s giỗ is on *mùng 10 tháng 7 âm lịch*. This year, that corresponds to **July 15, 2025** in the Gregorian calendar. It’s not just a date — it’s a sacred moment in the lunar cycle, tied to remembrance and ancestral connection. Would you like help preparing a simple ceremony or a message to share with relatives?"
+            },
+            {
+              "role": "user",
+              "content": "Thank you! That’s very helpful. I’d like to invite my younger cousin, who lives in Ho Chi Minh City. She’s not very familiar with lunar dates—how should I explain it to her so she understands it’s not just a random date?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful of you. When speaking to younger family members, it helps to connect the date to its deeper meaning. You could say: *‘Cậu ơi, ngày giỗ ông nội mình là mùng 10 tháng 7 âm lịch — một ngày thiêng liêng trong tháng, gần với ngày rằm (trăng tròn), khi người ta thường cúng tổ tiên để tưởng nhớ và giữ gìn dòng họ.’* This gently introduces the cultural weight of lunar dates without overwhelming her."
+            },
+            {
+              "role": "user",
+              "content": "That’s perfect. I’ll use that. Also, should I mention the time? It’s going to be in the afternoon, around 3 PM."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, adding the time is helpful. In Vietnamese, you can say: *‘Gặp nhau lúc 3 giờ chiều ngày 15 tháng 7 năm 2025 (tức là mùng 10 tháng 7 âm lịch).’* This clearly separates the Gregorian date from the lunar one. Using *mùng 10* instead of *ngày 10* is important — it’s the standard form for lunar dates in ritual contexts, used consistently across regions, especially in family and ancestral ceremonies."
+            },
+            {
+              "role": "user",
+              "content": "Got it. One last thing — my mom said we should do the cúng before sunset. Is there a specific time I should aim for?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, ideally before sunset — between 3:30 and 5:30 PM. Many families choose this window because it’s *giữa ban ngày và đêm tối*, a symbolic moment of transition, like the boundary between the living and the ancestors. You might say: *‘Cúng trước lúc hoàng hôn, khoảng 3 giờ 30 phút chiều, để lòng thành kính được trọn vẹn giữa ánh hoàng hôn nhẹ nhàng.’* It’s not just about timing — it’s about presence, silence, and memory. And remember: *mùng 10* is preferred in ritual contexts to honor tradition and avoid confusion with Gregorian dates. The 10th lunar day of the 7th month is a time of quiet remembrance, not celebration — a moment to reflect on family roots and continuity."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Use of *mùng 10 tháng 7 âm lịch* for lunar date (correct form, not *ngày 10*)",
+          "Distinction between Gregorian and lunar calendars in ritual contexts",
+          "Emphasis on *rằm* (full moon) as culturally significant",
+          "Cultural significance of timing around sunset (*hoàng hôn*) as symbolic transition",
+          "Correct use of *giỗ* as ancestral remembrance with spiritual weight",
+          "Preference for *mùng* over *ngày* in ritual lunar expressions",
+          "Dual date format: Gregorian with lunar equivalent in parentheses",
+          "Contextual variation: explanation tailored for younger generation",
+          "Regional neutrality: avoids regional bias while maintaining authenticity"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'used consistently across regions' — while *mùng 10* is standard, Southern youth may use *ngày 10* informally even in ritual contexts; better to say 'commonly used across regions, especially in formal/ritual settings'",
+          "Slight risk of over-poetic tone in the final response: 'lòng thành kính được trọn vẹn giữa ánh hoàng hôn nhẹ nhàng' may be too literary for everyday family communication, though still plausible"
+        ],
+        "suggestions": [
+          "Adjust phrasing to reflect regional variation: e.g., 'While *mùng 10* is the standard form in most family and religious contexts, younger people in urban areas may use *ngày 10* informally — but for *giỗ*, it’s best to use the traditional form.'",
+          "Slightly moderate the poetic language in the final response to reflect a broader range of natural speech, e.g., replace 'ánh hoàng hôn nhẹ nhàng' with 'giữa chiều và tối' for greater authenticity in casual family use",
+          "Consider adding a brief note on why *mùng một* is used for the 1st but not for other days — to reinforce the linguistic rule without over-explaining"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

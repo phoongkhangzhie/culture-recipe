@@ -1,0 +1,96 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Name Origin",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural, religious, and historical sources from which personal names are drawn",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping my cousin choose a name for her newborn son. She’s from Hanoi and wants something that feels traditional but also meaningful. She’s worried about picking the wrong name—her mother-in-law says names should match the baby’s birth chart. Can you help?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. In Vietnamese families, especially in Hanoi and other northern regions, many still consult *Tứ Trụ*—a traditional system that uses birth time to balance elemental energies like Wood, Fire, Earth, Metal, and Water. It’s not always followed rigidly today, but it’s seen as a meaningful guide, especially when parents want to align the child’s name with harmony and fortune. The key is that it’s one part of a bigger picture—many families blend it with personal meaning, family values, or even how the name sounds."
+            },
+            {
+              "role": "user",
+              "content": "He was born on March 12, 2024, at 7:45 AM. The family uses 'Văn' as the middle name for the generation—her older brother and sister both have it. She loves the idea of a name with Confucian virtue and nature imagery. She’s also fond of the name *Minh*—it means 'bright' or 'intelligent'—but she’s not sure if it’s too common."
+            },
+            {
+              "role": "assistant",
+              "content": "March 12, 2024, at 7:45 AM corresponds to the 12th day of the 2nd lunar month in the Year of the Dragon (Giáp Thìn), in the *Mậu Thìn* hour. In *Tứ Trụ*, this birth has strong Wood energy, with Earth and Wood from the hour. Names with Water (wisdom, flow) or Wood (growth, resilience) are considered harmonious. But here’s the important part: *Minh*—meaning 'bright' or 'intelligent'—isn’t just common in the North. It’s widely used across Vietnam, from Hanoi to Ho Chi Minh City. Its popularity comes from its positive, timeless meaning, not regional preference."
+            },
+            {
+              "role": "user",
+              "content": "She really likes 'Văn Minh'—it feels familiar and strong. But she’s also curious about the name *Văn Hùng*. Is that a good choice? She’s heard it’s used for strong, brave men."
+            },
+            {
+              "role": "assistant",
+              "content": "*Văn Hùng*—'Cultured Brave'—is a powerful name. *Hùng* connects to the legendary Hùng Kings, the mythical founders of Vietnam, and carries deep cultural weight—courage, leadership, and national pride. While it’s not tied to a specific element in *Tứ Trụ*, many families choose names like this for their moral and emotional resonance. If she values strength and integrity, it’s a meaningful and respected choice."
+            },
+            {
+              "role": "user",
+              "content": "She’s decided on *Văn Minh*. She feels it honors both the family tradition and the child’s potential. Thank you—this was really helpful. I’ll tell her that the name carries the weight of both Confucian virtue and the promise of light."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a beautiful choice. *Văn Minh*—'Cultured Brightness'—is both timeless and deeply meaningful. The 'Văn' ties the child to his siblings and ancestors, strengthening family continuity. While *Minh* is common, that’s part of its strength—it’s a name people recognize and respect, full of hope and clarity. Today, many Vietnamese parents choose names not just for balance in *Tứ Trụ*, but for how they feel—what they evoke. Some even pick names for their rhythm, ease of pronunciation, or how they sound in modern life, especially in cities. The real heart of it? A name is a gift of identity, shaped by love, memory, and aspiration."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of *Tứ Trụ* (Four Pillars of Destiny) as a name selection guide in Vietnamese families",
+          "Significance of the middle name 'Văn' as a generational marker in northern Vietnamese families",
+          "Cultural resonance of 'Văn Hùng' tied to the Hùng Kings and national identity",
+          "Meaning and popularity of 'Minh' as a name meaning 'bright' or 'intelligent'",
+          "Balancing traditional practices (Tứ Trụ) with personal meaning and modern naming trends",
+          "Emphasis on Confucian values (cultured, virtue, harmony) in name selection",
+          "Use of nature and moral imagery in Vietnamese names (e.g., 'Minh' as light, 'Hùng' as courage)",
+          "Recognition that name popularity does not diminish cultural or emotional value"
+        ],
+        "issues": [
+          "Minor inaccuracy: The lunar date calculation for March 12, 2024, at 7:45 AM is not fully precise in the assistant’s response—while the year is correctly identified as Giáp Thìn (Dragon), the lunar month and day require verification via a lunar calendar converter. However, this is a technical detail that does not significantly undermine the cultural message.",
+          "Slight overgeneralization: The statement that 'Minh is widely used across Vietnam' is accurate, but could be nuanced by noting that its use is especially strong in urban and educated circles, while rural families may prefer more regionally distinct names."
+        ],
+        "suggestions": [
+          "Include a brief note that *Tứ Trụ* interpretations are often done by specialists (e.g., fortune-tellers or elders), not typically self-calculated by parents, to enhance authenticity.",
+          "Add a sentence acknowledging that while *Văn Minh* is meaningful, some modern parents may choose to vary the middle name slightly (e.g., *Văn An*, *Văn Đức*) to avoid overuse, reflecting evolving naming trends.",
+          "Clarify that 'Văn' is not exclusively northern—while common in Hanoi, it is also used in central and southern regions, though with regional pronunciation variations."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

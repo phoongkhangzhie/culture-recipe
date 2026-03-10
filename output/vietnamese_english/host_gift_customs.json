@@ -1,0 +1,441 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Bringing Gifts for the Host",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Expectations around whether and what type of gift to bring when visiting someone's home",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my friend Minh’s family for the first time this weekend—she’s been my roommate for two years, but this is the first time I’ll be going to her parents’ house. I want to make a good impression. Should I bring a gift?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—bringing a small gift is a thoughtful and expected gesture when visiting a Vietnamese family for the first time, especially if you’re meeting the parents. It shows respect and gratitude for their hospitality. Since you’re not yet close enough to skip it entirely, even a modest gift will go a long way in building rapport."
+            },
+            {
+              "role": "user",
+              "content": "What kind of gift would be appropriate? I’m not sure what’s considered polite or what might be misunderstood."
+            },
+            {
+              "role": "assistant",
+              "content": "Great question—choosing the right gift matters more than the price. Avoid anything flashy or expensive, as that could make the family uncomfortable. Instead, consider something modest, meaningful, and culturally resonant. Here are a few safe and well-received options:\n\n- A basket of fresh fruit: Oranges, lychees, or dragon fruit are excellent choices—symbolizing prosperity and good fortune. \n- High-quality tea: A box of Phuc Long or Trung Nguyên green or oolong tea is always appreciated, especially if served with a small tea set.\n- Baked goods: A nice loaf of French-style bread or a small cake from a reputable bakery (like Bánh Mì Gia Hân or Le Boulanger) works well.\n- A potted plant: A small lucky bamboo or a flowering plant symbolizes growth and renewal—perfect for a family home.\n\nAvoid clocks, white or black flowers, handkerchiefs, or sharp objects—these carry funeral associations and are deeply inappropriate."
+            },
+            {
+              "role": "user",
+              "content": "I was thinking of bringing a box of imported chocolates. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Chocolates can work, but with a caveat: they should be high-quality, neatly wrapped, and not overly luxurious. If they’re from a well-known international brand and presented simply, they’re acceptable. However, avoid anything too extravagant—like gold-leafed boxes or designer packaging—because that might feel like an attempt to impress rather than show sincerity. Also, keep in mind that food gifts are more culturally aligned than sweets, especially when visiting elders. If you’re still unsure, a fruit basket or tea would be a more natural fit."
+            },
+            {
+              "role": "user",
+              "content": "I see. I’ll go with a basket of lychees and a box of Phuc Long tea. How should I present it when I arrive?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect choice—lychees and tea are both traditional, thoughtful, and symbolically rich. When you arrive, present the gift with both hands, even if you’re just handing it to Minh’s mother. A slight bow or nod shows respect. Say something like: *“Chào bác, em có chút quà nhỏ để cảm ơn bác đã mời em đến nhà.”* (Hello, Auntie, I have a small gift to thank you for inviting me.)\n\nThe host will likely open it right away and express appreciation—maybe even offer you a piece of fruit or a cup of tea. It’s polite to accept with a smile and say *“Cảm ơn bác, em rất vui được đến thăm.”* (Thank you, Auntie, I’m so happy to be here.)\n\nAnd remember: if they insist you keep it, don’t refuse outright—just say *“Dạ, em rất vui được tặng bác, nhưng bác cứ giữ để dùng nhé.”* (Yes, I’m happy to give it to you, but please keep it for yourself.)"
+            },
+            {
+              "role": "user",
+              "content": "That’s really helpful. I was worried I’d do something wrong. I just want to show I respect their family and their hospitality."
+            },
+            {
+              "role": "assistant",
+              "content": "Your intention speaks volumes—and that’s what matters most. In Vietnamese culture, it’s not about the value of the gift, but the *tâm* (heart) behind it. A simple, well-chosen gift with genuine respect and humility is far more meaningful than any expensive item. Minh will appreciate your thoughtfulness, and her parents will likely feel honored by your gesture. You’re already on the right path."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Bringing a gift is expected for first-time visits to a Vietnamese family, especially when meeting parents",
+          "Gifts should be modest in value and not flashy or overly expensive",
+          "Fruit baskets (oranges, lychees, dragon fruit) are culturally appropriate and symbolize prosperity",
+          "Tea (Phuc Long, Trung Nguyên) is a highly regarded gift, especially premium green or oolong varieties",
+          "Avoiding taboo items such as clocks, white/black flowers, handkerchiefs, and sharp objects",
+          "Presenting gifts with both hands and a respectful verbal greeting is customary",
+          "The host typically opens the gift immediately and expresses gratitude",
+          "Accepting the host’s thanks gracefully and not refusing outright—even if offered to keep it—is expected",
+          "The emphasis on *tâm* (heart/intention) over material value is central to the cultural ethos",
+          "Baked goods and potted plants are acceptable alternatives, especially if culturally resonant"
+        ],
+        "issues": [
+          "The use of 'Dạ' in the response may be slightly overused in formal contexts; while correct, it's often reserved for very formal or deferential speech. In a first-time visit with a friendly but respectful tone, 'Dạ' is appropriate but could be used more sparingly. However, this is a minor stylistic point and not a critical error.",
+          "The mention of 'French-style bread' as a gift option, while plausible, is less culturally rooted than traditional Vietnamese or Asian-inspired pastries. It might feel slightly Westernized, though not incorrect."
+        ],
+        "suggestions": [
+          "Consider replacing 'French-style bread' with a more culturally resonant option like bánh mì, bánh ú tro, or bánh trung thu (especially during Tết), to strengthen authenticity.",
+          "In the Vietnamese phrase examples, consider adding a brief English translation for non-Vietnamese speakers in the training data context, though this is already partially done.",
+          "Clarify that while gifts are expected, the expectation is more relaxed with close friends—this nuance is implied but could be reinforced slightly earlier in the conversation."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for the first time since moving back to Vietnam after living abroad. It’s a weekend visit, and I want to make a good impression—especially since her husband’s parents are also there. Should I bring a gift? What would be appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—bringing a gift is a thoughtful and expected gesture in this context, especially since it’s a first visit to your cousin’s in-laws’ home and they’re elders. It shows respect and acknowledges their hospitality. Since it’s a family gathering, keep the gift modest, meaningful, and culturally appropriate. Avoid anything too expensive or flashy—sincerity matters more than value."
+            },
+            {
+              "role": "user",
+              "content": "What kind of gift would be safe and well-received? I’m thinking of getting something from a local bakery or market."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great idea—local food gifts are always appreciated. Consider a box of high-quality bánh trung thu (mooncakes) if it’s near Tết or a seasonal celebration, or a tray of bánh ú tro (sticky rice cakes with black bean filling), which are traditional and symbolize renewal. Alternatively, a fruit basket with mangosteens, lychees, or oranges is excellent—these are auspicious, sweet, and widely loved. You could also pick up a nice tea set from Phuc Long or Trung Nguyên, especially premium green or oolong tea. These are practical, elegant, and show care."
+            },
+            {
+              "role": "user",
+              "content": "I’ve heard not to give clocks or white flowers—can you confirm that? And what about alcohol?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s correct—avoid clocks, handkerchiefs, or white/black flowers, as they’re associated with funerals and mourning. Giving them could unintentionally send a negative message. As for alcohol: if the host is a man or an older man, a small bottle of rượu nếp (rice wine) can be acceptable, especially if he drinks. But if the host is a woman, younger, or a Buddhist practitioner, it’s best to skip alcohol altogether. A safer choice is tea, fruit, or baked goods—these are universally welcomed and carry no cultural risk."
+            },
+            {
+              "role": "user",
+              "content": "How should I present the gift? Should I open it right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Present the gift with both hands—this shows respect. Use a small bow or slight nod, and say something like: *‘Chào bác, em có chút quà nhỏ để cảm ơn bác đã mời em đến nhà.’* (Hello, Uncle, I have a small gift to thank you for inviting me.) The host will likely open it right away and express gratitude, often saying *‘Em quá chu đáo!’* (You’re so thoughtful!) It’s polite to accept their thanks with a humble smile. Never refuse the gift outright, even if they insist you keep it—just say *‘Dạ, em rất vui được tặng bác.’* (Yes, I’m happy to give it to you.)"
+            },
+            {
+              "role": "user",
+              "content": "Thanks so much. I’ll go with a fruit basket and a box of bánh ú tro from a trusted shop in Old Quarter. I’ll wrap it in red paper. Does that sound okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect—red paper is ideal for luck and celebration. A fruit basket with mangosteens and lychees, paired with bánh ú tro, is a thoughtful and culturally resonant choice. It’s modest in value but rich in meaning. You’ll be showing respect, humility, and care—exactly what Vietnamese families value most. Your cousin and her parents will appreciate the gesture deeply. Enjoy your visit, and may it strengthen your family bonds."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Gift-giving is expected during first visits to in-laws' homes, especially involving elders",
+          "Gifts should be modest in value and reflect sincerity over materialism",
+          "Fruit baskets with mangosteens, lychees, or oranges are culturally appropriate and auspicious",
+          "Bánh ú tro and bánh trung thu are traditional, meaningful gifts",
+          "Tea (especially green or oolong) is a safe and appreciated gift",
+          "Avoiding clocks, handkerchiefs, and white flowers due to funeral associations",
+          "Alcohol (rượu nếp) is acceptable for older male hosts but not for women, younger people, or Buddhist practitioners",
+          "Presenting gifts with both hands and a polite verbal greeting is respectful",
+          "Hosts typically open gifts immediately and express gratitude",
+          "It is impolite to refuse a gift outright; humility and acceptance are expected",
+          "Red wrapping paper is culturally appropriate for luck and celebration"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant uses 'em' (colloquial) in Vietnamese phrases like 'Em quá chu đáo!' but does not explain the level of formality. While 'em' is correct for younger people addressing elders, it might be slightly informal in very formal contexts. However, this is contextually acceptable given the cousin relationship.",
+          "The assistant does not explicitly mention that gifts are often shared with the family after being opened, which is a subtle but meaningful part of the ritual—though not critical to the core dimension."
+        ],
+        "suggestions": [
+          "Include a brief note about the social expectation that gifts are often shared among family members after being opened, reinforcing communal values.",
+          "Clarify that while 'em' is appropriate in this context, using 'con' (child) or 'anh/chị' (older sibling) in formal address may be preferred in more distant or strictly hierarchical family settings.",
+          "Slightly expand on the symbolism of red paper beyond luck—mentioning its association with prosperity and happiness during festive seasons could enrich the cultural nuance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for the first time since I moved back to Vietnam after living abroad. It’s a Sunday afternoon, and I want to make a good impression. Should I bring a gift? What kind?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—bringing a small gift is a thoughtful way to show respect and gratitude, especially on your first visit back. Since you’re meeting your cousin’s family and it’s a meaningful home visit, a modest gift is expected. Avoid anything too flashy or expensive, as that might make them uncomfortable. Instead, focus on sincerity and cultural appropriateness."
+            },
+            {
+              "role": "user",
+              "content": "What would be a good gift? I’m thinking of buying some imported tea or maybe a box of pastries from a French bakery in the Old Quarter."
+            },
+            {
+              "role": "assistant",
+              "content": "Both are great options—tea and pastries are very well-received. For tea, choose a high-quality green or oolong from a reputable brand like Phuc Long or Trung Nguyên. A nice gift box with a red or gold wrapper would be ideal. If you go with pastries, a small selection from a well-known bakery like Bếp Nhà or L’Atelier de l’Amour would work well. Just make sure it’s not too many items—something modest and elegant is best."
+            },
+            {
+              "role": "user",
+              "content": "What about fruit? I saw some mangosteens at the market today—they looked really fresh. Could I bring those instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Mangosteens are excellent—very symbolic of prosperity and good fortune, and they’re a favorite during family visits, especially around Tết. If they’re fresh and in season, they’re a wonderful choice. Just make sure to bring them in a clean, attractive basket or container. You could even pair them with a small box of tea for a thoughtful combo. The key is presentation: neat, clean, and respectful."
+            },
+            {
+              "role": "user",
+              "content": "I’m a bit nervous—what if they don’t want me to bring anything? I don’t want to overstep."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common concern, and it’s actually quite respectful to bring something even if they say no. If the host politely declines, don’t insist—just smile and say, *‘Em chỉ muốn bày tỏ lòng biết ơn, anh/chị đừng ngại nhé.’* (I just want to show my gratitude—please don’t mind.) Then place it gently on a table or sideboard. They’ll appreciate the gesture even if they don’t accept it directly. In Vietnamese culture, the intention behind the gift matters more than the object itself."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And how should I present it? Should I say something specific?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—present it with both hands, slightly bow your head, and say something warm like: *‘Chào bác/chị, em có chút quà nhỏ để cảm ơn bác/chị đã mời em đến nhà. Chúc bác/chị luôn mạnh khỏe và hạnh phúc.’* (Hello, I have a small gift to thank you for inviting me. Wishing you good health and happiness.) This small ritual shows humility and care. And don’t be surprised if they open it right away—this is normal and a sign of appreciation."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—should I avoid anything specific? I don’t want to accidentally offend anyone."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—avoid gifts with negative symbolism. No clocks (associated with death), no white or black flowers (funeral colors), and no sharp objects like knives or scissors (symbolizing severed ties). Also, avoid alcohol unless you know the host is a man and enjoys it—better to skip it if you’re unsure, especially if the host is a woman, a younger person, or a Buddhist practitioner. Stick to food, tea, or symbolic items like fruit or a potted plant. Simplicity and thoughtfulness are what truly matter."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Gift-giving is expected for first visits or formal family gatherings in Vietnamese culture",
+          "Gifts should be modest in value and not flashy to avoid causing discomfort",
+          "Fruit (especially mangosteens) is culturally appropriate and symbolic of prosperity",
+          "Tea (green or oolong) and pastries from reputable local bakeries are suitable gifts",
+          "Presentation with both hands and a polite verbal greeting is customary",
+          "Gifts are often opened immediately upon arrival as a sign of appreciation",
+          "Avoiding taboo items like clocks, white/black flowers, and sharp objects is important",
+          "Alcohol should be avoided unless the host is a male elder who drinks it",
+          "The intention behind the gift is valued more than its material worth",
+          "Hosts may politely decline, but the guest should still present the gift respectfully"
+        ],
+        "issues": [
+          "The assistant uses 'Em' (a term for younger person) when addressing a cousin’s family, which may not be accurate if the user is an adult returning after living abroad—'Tôi' would be more appropriate in formal or respectful contexts with extended family. However, this is a minor nuance and does not significantly undermine the overall accuracy.",
+          "The phrase 'Chào bác/chị' assumes the host is an elder (bác = aunt/uncle), but in a cousin’s family, the host may be a peer. A more flexible option like 'Chào anh/chị' would be more universally appropriate unless the host is clearly older."
+        ],
+        "suggestions": [
+          "Replace 'Em' with 'Tôi' in the response to the user’s concern about overstepping, to reflect a more appropriate level of formality when addressing relatives after a long absence.",
+          "Use 'Chào anh/chị' instead of 'Chào bác/chị' in the greeting example unless the host is clearly an elder, to reflect a more accurate social dynamic within cousin-level family visits.",
+          "Consider adding a brief mention of potted plants or mooncakes as symbolic gifts during Tết, to further enrich cultural context and reinforce the anecdotal insight from the research."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for the first time since I moved back to Vietnam after living abroad. It’s a big reunion during Tết, and I want to make a good impression. Should I bring a gift? What would be appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—bringing a gift during Tết is not just polite, it’s a meaningful way to show respect and strengthen family bonds. Since this is your first visit back and you’re meeting extended family, a thoughtful gift will be greatly appreciated. For Tết, consider something symbolic of renewal and prosperity. A beautifully wrapped box of bánh trung thu (mooncakes) or bánh ú tro (sticky rice cakes with black bean filling) would be perfect—these are traditional, festive, and widely loved. A fruit basket with mangosteens or oranges is also excellent, as they symbolize good fortune. Avoid anything too expensive or flashy—simplicity and sincerity matter more than value."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I was thinking of getting a box of imported tea from a local boutique. Is that okay? And what about presentation? Should I wrap it myself?"
+            },
+            {
+              "role": "assistant",
+              "content": "Tea is a wonderful choice—especially premium green or oolong tea from brands like Phuc Long or Trung Nguyên. It’s elegant, practical, and deeply rooted in Vietnamese hospitality. Just make sure it’s not overly luxurious; a mid-range, nicely packaged set works best. As for wrapping, yes—wrap it neatly in red or gold paper if possible. These colors are associated with luck and celebration. Present it with both hands, bow slightly, and say something like: *‘Chào bác, em có chút quà nhỏ để cảm ơn bác đã mời em về nhà dịp Tết này.’* (Hello uncle, I have a small gift to thank you for inviting me home during Tết.) The host will likely open it right away and express gratitude—don’t refuse their thanks, even if they say you don’t need to bring anything. It’s part of the ritual."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll get the tea and wrap it in gold paper. What should I avoid? I almost bought a small clock for my aunt—she loves those."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, be careful—clocks are a common mistake. In Vietnamese culture, giving a clock is considered inauspicious because the word *‘đồng hồ’* sounds like *‘đồng hồ mất’* (time lost), which is associated with death and mourning. It’s best to avoid clocks, handkerchiefs, white or black flowers, or sharp objects—those carry negative symbolism. Stick with food, tea, or symbolic items like a potted plant (for growth and new beginnings). Your aunt will appreciate the thought, but not the meaning behind the gift."
+            },
+            {
+              "role": "user",
+              "content": "Thank you so much. One last thing—what if the family already has a lot of food and doesn’t seem to need anything? Should I still bring something?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even if they already have plenty, bringing a gift is still meaningful. It’s not about what they need—it’s about showing respect and acknowledging their hospitality. A small, modest gift like a box of fruit or a tea set is a gesture of *tình cảm* (emotional connection), not material exchange. In fact, if you don’t bring anything, some elders might quietly worry you’re not being mindful. The act itself—presenting it with both hands and a sincere greeting—is what truly matters. As one elder once told me: *‘Vật nhỏ, lòng lớn—chỉ cần có tâm là đủ.’* (Small item, big heart—only sincerity is needed.)"
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.78,
+        "cultural_elements_verified": [
+          "Gift-giving is expected during Tết and for first visits to family homes",
+          "Modest, symbolic gifts like mooncakes (bánh trung thu), sticky rice cakes (bánh ú tro), fruit baskets, and tea are appropriate",
+          "Presentation with both hands and a polite verbal greeting is customary",
+          "Gifts should not be overly expensive or flashy",
+          "Avoiding taboo items such as clocks, handkerchiefs, white/black flowers, and sharp objects",
+          "The emphasis is on sincerity and respect rather than material value",
+          "Gifts are often opened immediately upon arrival, and hosts express gratitude",
+          "The ritual reinforces familial bonds and social harmony",
+          "Even if the host has plenty, bringing a gift is still expected as a gesture of respect"
+        ],
+        "issues": [
+          "Minor: The use of 'bác' (uncle/aunt) in the example greeting assumes the recipient is an elder; while plausible, it could be slightly misleading if the cousin’s family includes younger relatives. A more neutral alternative like 'chị/em' (sister/brother) might be safer in some contexts.",
+          "The phrase 'Vật nhỏ, lòng lớn—chỉ cần có tâm là đủ' is culturally accurate and poetic, but it is not a commonly cited proverb. While the sentiment is correct, it may be perceived as slightly fabricated by some native speakers. A more verifiable quote (e.g., from a well-known elder or cultural text) would strengthen authenticity."
+        ],
+        "suggestions": [
+          "Replace 'bác' with a more contextually flexible honorific like 'chị' or 'anh' depending on the recipient’s age and relationship, or use a neutral 'cảm ơn anh/chị' to avoid assumptions.",
+          "Consider substituting the custom proverb with a more widely recognized Vietnamese saying about gifts, such as 'Tặng quà không phải để đổi lấy, mà để bày tỏ lòng thành.' (Giving a gift isn’t about exchange—it’s about showing sincerity.)",
+          "Include a brief note on the significance of red and gold wrapping during Tết to reinforce cultural symbolism for learners.",
+          "Add a subtle mention that if the host insists you keep the gift, it’s polite to accept with gratitude and humility—this reinforces the social nuance of gift acceptance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for the first time since moving back to Vietnam after living abroad. It’s a weekend visit, and I want to make a good impression—especially since my cousin’s parents are quite traditional. Should I bring a gift?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—bringing a small gift is a thoughtful and expected gesture, especially when visiting elders in a traditional household. Since this is your first visit after being away, it’s a meaningful opportunity to show respect and reconnect. A modest, culturally appropriate gift will go a long way in expressing your sincerity."
+            },
+            {
+              "role": "user",
+              "content": "What kind of gift would be best? I’m thinking of buying something from a local bakery or a nice tea set. Would that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great idea. A high-quality tea set—especially something like Phuc Long or Trung Nguyên premium green tea—is excellent. It’s practical, respectful, and widely appreciated. If you’d like something more festive, a box of bánh trung thu (mooncakes) or a tray of bánh ú tro (sticky rice cakes) would be perfect, especially since they’re traditional and symbolize renewal and family harmony. Both are common during family visits, especially around Tết, but still appropriate for any occasion."
+            },
+            {
+              "role": "user",
+              "content": "I’ve heard not to bring clocks or white flowers. Is that true? And what about alcohol? My cousin’s father drinks rice wine sometimes."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s very true. Avoid clocks—because they symbolize the end of life—and white or black flowers, which are associated with funerals. Also, don’t give sharp objects, like knives, as they represent severed relationships. Regarding alcohol: rice wine (rượu nếp) is acceptable for older male hosts, especially during family gatherings, but it’s best to avoid it if the host is a woman, younger, or a Buddhist practitioner. If you’re unsure, stick to non-alcoholic options like tea, fruit, or pastries. Simplicity and thoughtfulness matter more than cost."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll get a box of Phuc Long tea and a small fruit basket with mangosteens and oranges. Should I wrap it? How should I present it when I arrive?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect choices—mangosteens and oranges are especially lucky, symbolizing prosperity. Yes, wrap it neatly, ideally in red or gold paper if possible, to add a festive touch. When you arrive, present the gift with both hands—this shows respect. Say something like: *“Chào bác, em có chút quà nhỏ để cảm ơn bác đã mời em đến nhà. Chúc bác và bác gái luôn mạnh khỏe.”* (“Hello Uncle, I have a small gift to thank you for inviting me. Wishing you and Auntie good health.”) The host will likely open it right away and express gratitude—don’t refuse their thanks, even if they say you don’t need to bring anything. It’s polite to accept their appreciation with a smile and a quiet “Cảm ơn bác.”"
+            },
+            {
+              "role": "user",
+              "content": "Thank you so much. One last thing—what if they offer to return the gesture or give me something back? Should I accept?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common and kind gesture—especially if the host is warmly appreciative. It’s perfectly acceptable to accept their return gift with grace, even if it’s just a small snack or a cup of tea. But don’t feel obligated to reciprocate immediately or with something equal in value. The relationship is built on *tình cảm*—emotional connection—not transaction. If they insist, simply say, *“Dạ, em cảm ơn bác, nhưng em chỉ muốn thể hiện lòng biết ơn, không cần phải trả lại đâu.”* (“Yes, thank you, Uncle, but I only wanted to show gratitude—no need to return it.”) That’s the spirit of Vietnamese hospitality: warmth over formality."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Gift-giving is expected when visiting elders or traditional households in Vietnam",
+          "Modest, thoughtful gifts are preferred over expensive ones",
+          "Fruit baskets with mangosteens and oranges are appropriate and symbolize prosperity",
+          "Tea (especially premium green tea like Phuc Long or Trung Nguyên) is a culturally appropriate gift",
+          "Bánh trung thu and bánh ú tro are traditional, meaningful gifts for family visits",
+          "Avoiding clocks, white/black flowers, and sharp objects due to funeral associations",
+          "Alcohol (rượu nếp) is acceptable for older male hosts but not for women, younger people, or Buddhist practitioners",
+          "Presenting gifts with both hands is a sign of respect",
+          "Using polite Vietnamese phrases like 'Chào bác', 'Cảm ơn bác', and 'Chúc bác luôn mạnh khỏe' is authentic",
+          "Hosts often open gifts immediately and express gratitude",
+          "Refusing thanks is impolite; accepting appreciation with grace is expected",
+          "Reciprocation is encouraged but not obligatory, and should reflect emotional connection over transaction"
+        ],
+        "issues": [
+          "The suggestion to wrap the gift in red or gold paper, while culturally resonant, may slightly overemphasize festive packaging for a non-Tết visit—red/gold is most strongly associated with Tết and can be seen as overly elaborate for a casual weekend visit. A simpler, clean wrap would be more typical.",
+          "The phrase 'Chúc bác và bác gái luôn mạnh khỏe' is accurate and appropriate, but 'bác gái' may be slightly formal or less commonly used in casual family settings. 'Chị dâu' or 'cô' might be more natural depending on the cousin’s age and family structure. However, this is a minor nuance and not a critical error."
+        ],
+        "suggestions": [
+          "Slightly soften the packaging suggestion: instead of 'ideally in red or gold paper', suggest 'a neat, clean wrap—red or gold if festive, but plain is perfectly acceptable' to reflect everyday norms.",
+          "Add a brief note that while 'bác gái' is respectful, younger cousins might use 'chị' or 'cô' depending on the host’s age and relationship, to enhance authenticity in varied family dynamics.",
+          "Consider including a mention that gift value is not the focus—e.g., 'Even a small basket of fruit from a local market is meaningful if offered with sincerity'—to reinforce the cultural value of humility."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

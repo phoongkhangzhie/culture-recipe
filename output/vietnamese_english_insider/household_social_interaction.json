@@ -1,0 +1,122 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Social Interaction Within Households",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Household Structures",
+    "description": "Patterns of socializing within and between households, including who is welcomed into the home and under what conditions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m thinking about visiting my friend Linh’s house this weekend. She’s been my classmate since high school, and we’ve been close for years. But I know her parents are strict, and I’ve never been inside their home before. Should I just go over, or do I need to ask first?"
+            },
+            {
+              "role": "assistant",
+              "content": "Definitely ask first—especially since you haven’t been inside before. It’s not just about permission; it’s about showing respect for their family space and the quiet rules that keep things harmonious. Linh can help you reach out, but it’s best to let her know you’re going to ask her parents directly."
+            },
+            {
+              "role": "user",
+              "content": "I see. So I should text Linh and ask if it’s okay to visit, and then she’d tell me to ask her mom or dad directly?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—just let her know you’re planning to reach out. She might even help you phrase it, especially if she knows her mom’s routine. Wait until after dinner, when things are calmer. That’s usually when the household settles down, and her mom is more likely to be free."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about bringing something? I don’t want to show up empty-handed."
+            },
+            {
+              "role": "assistant",
+              "content": "Always bring a small gift—something simple but thoughtful. A box of sweet mango preserves, a bag of good coffee, or a basket of fresh fruit works perfectly. It’s not about cost; it’s about showing you’ve thought about them. Just avoid anything too big—something that feels like a burden might make them uneasy."
+            },
+            {
+              "role": "user",
+              "content": "And what about when I get there? I’ve heard you have to take off your shoes. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—always. The shoe rack is right by the door. Take off your shoes before stepping in, and keep them neatly lined up. Don’t leave them haphazardly. If her mom or an elder is in the main room, it’s best to wait for an invitation to sit—especially if they’re still in the living area."
+            },
+            {
+              "role": "user",
+              "content": "What if they offer tea? Should I drink it right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—accept it with both hands, even if you’re not thirsty. Refusing tea can feel like you’re not comfortable or don’t trust the home. Sip slowly, and when you’re done, say, ‘Cảm ơn, em đã uống xong rồi.’ Don’t stay past 8 p.m. unless they invite you to dinner. Overstaying without a signal feels like you’re imposing. It’s not just about time—it’s about being mindful of their peace."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this helps a lot. One more thing: I’ve been thinking… we’re close, but I’m not sure if it’s okay for me to come over if we’re just friends. I don’t want to make things awkward."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a good instinct. Visiting a friend’s home is different if you’re more than just friends. It’s best to wait until things are more formal—like when you’re officially dating or have talked to your families—before bringing someone new. That way, you’re not putting pressure on her or her parents. The family’s comfort matters more than the moment."
+            },
+            {
+              "role": "user",
+              "content": "And what about how the visit ends? I don’t want to leave too early or stay too long."
+            },
+            {
+              "role": "assistant",
+              "content": "The host usually gives subtle cues. If she starts checking the time, or mentions how tired her mom is, it’s a sign. Or if she gently says, ‘Em về đi, mai còn đi học,’ that’s your cue. Just smile, say thanks, and leave. No need to over-explain. They’ll appreciate you reading the room."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The importance of seeking permission before visiting a friend’s home, especially when not yet close to the family",
+          "The practice of removing shoes at the door as a sign of respect",
+          "The significance of offering a small gift upon arrival",
+          "The use of subtle cues to indicate when to leave",
+          "The expectation to accept tea with both hands and sip slowly",
+          "The cultural preference for not over-staying, especially past 8 p.m.",
+          "The social sensitivity around romantic relationships and household visits",
+          "The role of elders in household hierarchy and seating arrangements",
+          "The value placed on harmony, indirect communication, and reading social cues",
+          "The idea that the first visitor during Tết influences household fortune"
+        ],
+        "issues": [
+          "The assistant’s final response about 'officially dating' could be slightly overgeneralized—while true in many cases, some urban Vietnamese families may allow close friends to visit without formal romantic status, especially if the friendship is long-standing. A more nuanced phrasing would acknowledge this variation.",
+          "The use of 'em' in the phrase 'Cảm ơn, em đã uống xong rồi' is acceptable but slightly informal; in a formal or respectful context, especially when addressing elders, 'con' or 'cháu' would be more appropriate. However, since the user is likely a peer of Linh, 'em' is contextually acceptable."
+        ],
+        "suggestions": [
+          "Refine the final response about romantic relationships to include a note on regional or generational variation (e.g., 'In many families, especially in rural or traditional households, it’s best to wait until things are more formal, but in some urban settings, close friends may be welcomed earlier—still, it’s always wise to be mindful of the family’s comfort.')",
+          "Consider adding a brief mention of the significance of the host’s seating position or the placement of the tea tray as a subtle indicator of status and respect, to deepen the cultural nuance",
+          "In the response about tea, include a small note on the use of both hands as a gesture of respect, which reinforces the cultural value of humility and attentiveness"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

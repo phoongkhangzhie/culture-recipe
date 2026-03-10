@@ -1,0 +1,187 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Bringing Gifts for the Host",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Expectations around whether and what type of gift to bring when visiting someone's home",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my colleague’s family home for dinner this weekend—her parents invited me. I want to bring a small gift, but I’m not sure what’s appropriate. I was thinking of picking up something from the convenience store near my office, but now I’m wondering if that’s too casual."
+            },
+            {
+              "role": "assistant",
+              "content": "A convenience store is fine for a simple, modest gift—just make sure it’s something thoughtful, like a box of seasonal wagashi or a nice fruit basket. Avoid anything too flashy or expensive. The key is presentation: wrap it neatly in soft, neutral paper. That’s what matters most."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. I’ve been to a shop in Asakusa that sells handmade red bean mochi—would that be a good choice? I was also considering a bottle of sake, but I’m not sure if that’s okay without being asked."
+            },
+            {
+              "role": "assistant",
+              "content": "The Asakusa mochi is perfect—seasonal, traditional, and beautifully made. Just make sure it comes in a proper gift box. Sake is best avoided unless they’ve mentioned it. Bringing it uninvited can create pressure to reciprocate, which disrupts the balance. Keep it simple: a thoughtful food gift, wrapped with care."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll get the mochi and wrap it in soft beige paper. Should I open it during the visit or wait until I leave?"
+            },
+            {
+              "role": "assistant",
+              "content": "Leave it unopened. They may unwrap it in front of you—often in the living room or kitchen—quietly, with a soft ‘O-kashi o tsukuremashita’ as a gesture of appreciation. It’s not rejection if they don’t open it right away; it’s respect. The thought matters more than the act. They’ll keep it as a memento."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Gifts are expected when visiting someone’s home, especially for the first time or on formal occasions",
+          "Gifts should be modest in value (¥1,000–¥3,000) and not overly expensive",
+          "Neat, traditional gift wrapping in soft, neutral colors is essential",
+          "Food items like wagashi, seasonal fruit, or regional specialties are most appropriate",
+          "Sake or alcohol should not be brought unless explicitly invited to do so",
+          "The host may unwrap the gift in the guest’s presence with quiet appreciation",
+          "The phrase 'O-kashi o tsukuremashita' is commonly used when receiving a gift",
+          "Unwrapping in front of the guest is a sign of respect, not obligation",
+          "The gesture of giving is more important than the gift’s material value"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Gift-giving is expected during first visits to a host’s home",
+          "Gifts should be modest in value (¥1,000–3,000)",
+          "Gift wrapping in soft, neutral paper is essential",
+          "Food items like wagashi and seasonal fruit are appropriate",
+          "Avoiding alcohol unless invited to bring it",
+          "The host may politely refuse the gift initially as ritualized humility",
+          "Gifts are often unwrapped in front of the guest as a sign of appreciation",
+          "The act of gift-giving emphasizes thoughtfulness over extravagance",
+          "The guest should not open the gift during the visit"
+        ],
+        "issues": [
+          "The assistant’s use of 'O-kashi o tsukuremashita' is accurate, but it would typically be said by the guest when presenting the gift, not the host. The assistant correctly implies this, but the phrasing could be slightly more natural—e.g., 'I brought a small treat' is acceptable, but native speakers might use a more subtle expression like 'I brought something small' or 'Just a little something.'",
+          "The mention of 'Asakusa mochi' is culturally appropriate, but the assistant does not clarify that mochi is traditionally associated with New Year (Shōgatsu), so bringing it outside that season might be seen as slightly off unless it’s a modern, seasonal variation. However, this is a minor nuance and not a critical error."
+        ],
+        "suggestions": [
+          "Refine the phrasing of the gift presentation line to sound more naturally Japanese—e.g., 'Just a small token from me' instead of 'I brought a small treat'—to better reflect the humility and understatement typical in Japanese speech.",
+          "Consider adding a subtle nod to the idea that the host may keep the gift as a memento, as this is a meaningful cultural point often overlooked in Western interpretations.",
+          "In future examples, include a brief moment where the host declines the gift politely—this reinforces the ritualized humility and strengthens the authenticity of the interaction."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my colleague’s house for dinner tomorrow evening—first time, and they’ve been really kind about helping me settle in. I want to bring something, but I’m not sure what’s appropriate. Should I bring anything? If so, what kind of gift?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, it’s customary to bring a small gift—especially for a first visit. Something around ¥2,000, neatly wrapped. A box of seasonal wagashi from Kyoto or a small pack of chestnuts from Nagano would be perfect. Avoid anything too practical—like kitchenware or towels—and never bring alcohol unless they’ve invited you to."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I was thinking of picking up a box of those limited-edition KitKat flavors from Tokyo. Would that work?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful, but maybe not the best choice. KitKats are common souvenirs, and if they’ve already seen one at work, it might feel redundant. Plus, they’re often sold in bulk—could seem like a lot. A single, beautifully wrapped regional sweet would feel more personal and considered."
+            },
+            {
+              "role": "user",
+              "content": "I see. What about a small bottle of green tea? I found a nice one from Shizuoka—lightly steamed, with a delicate flavor."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s excellent—very appropriate. Shizuoka tea is well-regarded, and a single bottle in a nice wrapper would be just right. Make sure it’s not in a plastic container. Wrap it in paper with a simple ribbon, preferably in soft beige or pale green. Present it upon arrival, not during dinner—use both hands, bow slightly, and say, ‘O-kashi o tsukuremashita.’ They’ll likely refuse politely at first. Just say it’s a small token and insist gently."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll do that. And I should probably avoid anything with a strong smell, right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. No garlic, fish, or anything with a sharp scent. Also, avoid white flowers or clocks—those carry funeral associations. The gift isn’t about the item itself, but the care behind it. While many hosts appreciate it as a keepsake, some may open it right away—especially if it’s edible—so don’t worry if they do. The gesture matters most."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Bringing a small gift (¥1,000–¥3,000) is expected for a first home visit",
+          "Gifts should be neatly wrapped in soft, neutral-colored paper with a ribbon",
+          "Food items like seasonal wagashi, regional sweets, or premium tea are ideal",
+          "Avoid alcohol unless explicitly invited to bring it",
+          "Do not bring items with strong odors (e.g., garlic, fish) or symbolic items like white flowers or clocks",
+          "Present the gift upon arrival using both hands with a slight bow",
+          "Hosts may politely refuse the gift at first—insist gently",
+          "The gift is valued for the thought and respect behind it, not its monetary value",
+          "Some hosts may open edible gifts immediately; others may keep them as a keepsake—both are acceptable"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.85,
+        "cultural_elements_verified": [
+          "Gift-giving is expected for first home visits in Japan",
+          "Gifts should be modest in value (¥1,000–¥3,000)",
+          "Gift wrapping (furikake) is essential and should be neat and tasteful",
+          "Neutral or soft colors preferred for wrapping (beige, pale green)",
+          "Seasonal or regional food items (wagashi, chestnuts, tea) are ideal gifts",
+          "Avoiding alcohol unless invited, and avoiding perishables without knowing preferences",
+          "Avoiding items with strong smells, religious or funeral symbolism (white flowers, clocks)",
+          "Gift presentation: both hands, slight bow, saying 'O-kashi o tsukuremashita'",
+          "Host may initially refuse politely—ritualized humility",
+          "Gifts are often opened in front of the guest, especially if edible",
+          "The gesture and thoughtfulness matter more than the item’s intrinsic value"
+        ],
+        "issues": [
+          "The assistant’s response to the KitKat suggestion, while accurate, could be slightly more nuanced—mentioning that KitKats are widely known as souvenirs and that their novelty may reduce perceived thoughtfulness, but not outright dismissing them as inappropriate (which could be seen as overly rigid).",
+          "The phrase 'It’s just a small token' is not a direct quote from Japanese etiquette; while the sentiment is correct, the exact phrasing used in Japanese contexts is more formal and indirect (e.g., 'I hope you’ll accept this small thing'—'Kono chīshō o kuyō ni narimasu'—though this is not typically said aloud).",
+          "The assistant does not mention that the gift should ideally be something that reflects the host’s tastes or the occasion (e.g., seasonal fruit for autumn), which adds cultural depth."
+        ],
+        "suggestions": [
+          "Refine the phrasing around gift refusal to reflect more natural Japanese indirectness—e.g., 'I hope you’ll accept this small thing' instead of 'It’s just a small token', which sounds too casual in English.",
+          "Add a brief note about seasonality (e.g., 'A box of persimmons would be lovely now—autumn is the season for them') to reinforce cultural nuance.",
+          "Slightly soften the critique of KitKats—acknowledge the thoughtfulness but suggest a more personal alternative, to avoid sounding dismissive of common tourist gifts.",
+          "Include a subtle hint that the host might keep the gift as a memento, reinforcing the cultural value of the gesture beyond the moment."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

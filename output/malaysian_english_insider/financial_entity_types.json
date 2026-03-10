@@ -1,0 +1,420 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Financial Entity Types",
+    "category": "Institutional Norms > Regulation & Policy > Financial Market Rules",
+    "description": "Categories of financial institutions operating in the country, such as commercial banks, cooperatives, and microfinance institutions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Auntie from Kampung Sungai Kluang asked me to help her start a small nasi lemak stall. She’s saved a bit from her koperasi simpanan, but needs a bit more to buy the cooker and ingredients. How should we go about this? She’s not comfortable with big banks, but she heard about a women’s group that helps with loans."
+            },
+            {
+              "role": "assistant",
+              "content": "She’s on the right track—many women in rural areas like Sungai Kluang start small businesses through kumpulan wanita. The Koperasi Wanita Kebangsaan offers interest-free microloans specifically for home-based food ventures. They require a group of at least five women to form a kumpulan, where everyone guarantees each other’s loans. It’s not just about money—it’s about trust and mutual support."
+            },
+            {
+              "role": "user",
+              "content": "That sounds familiar. She mentioned joining a meeting next week at the village hall. Is it okay if we go together? She’s nervous about speaking up, but I think she’d feel better with someone."
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. Going together is the right move—this is how it’s done. The kumpulan meetings are more about building rapport than formal paperwork. You’ll sit with the group, share your plan, and they’ll assess your commitment. The elders will ask about your savings history and how you’ll repay. It’s not a loan—it’s a shared responsibility."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. What about the cooker? Can we get help with that part too? She’s worried about spending too much upfront."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—many kumpulan members use the loan to buy equipment in installments. You can also check with Bank Rakyat’s microfinance arm; they sometimes offer bulk discounts on kitchen gear for new entrepreneurs. And if she’s open to it, a Syariah-compliant financing option through CIMB Clicks might work—no interest, just a fixed fee, and it’s digital, so she can track it easily."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. She’s not too keen on digital stuff, but maybe we can try it slowly. Thanks for walking me through this—feels less overwhelming now."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re welcome. That’s the spirit—step by step, with family and community. Once she starts, she’ll probably want to help another woman next. That’s how it grows here."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of koperasi simpanan and kumpulan wanita as grassroots financial mechanisms",
+          "Emphasis on trust, mutual guarantee, and community-based lending in rural financial practices",
+          "Recognition of Koperasi Wanita Kebangsaan as a legitimate microfinance provider for women",
+          "Inclusion of Bank Rakyat’s microfinance arm and CIMB Clicks as Syariah-compliant digital options",
+          "Cultural preference for group-based decision-making and face-to-face interaction in financial matters",
+          "Inter-generational and familial support in entrepreneurship (e.g., youth assisting elders)",
+          "Indirect, relational approach to financial assistance (e.g., 'step by step, with family and community')",
+          "Distinction between conventional and Syariah-compliant finance without over-explaining"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'rural' financial behavior—could subtly acknowledge urban youth preferences (e.g., digital Islamic fintech) as part of the broader ecosystem, though not required in this context",
+          "Slight lack of explicit mention of *Syariah-compliance* as a cultural driver in the assistant’s final response, though it’s implied through CIMB Clicks and the absence of interest"
+        ],
+        "suggestions": [
+          "In future examples, include a brief, natural reference to digital tools like Klir or CIMB Clicks being used by younger women in urban areas to show generational diversity in financial choices",
+          "Consider adding a subtle nod to religious alignment—e.g., 'It’s good she’s thinking about something halal—this way, her business will be blessed too'—to reflect cultural values without over-explaining",
+          "Ensure that any mention of 'loan' is framed as a communal responsibility rather than a transactional agreement, which is already well done"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m thinking of starting a small nasi lemak stall in my hometown, but I don’t have much savings. My aunt said I should join a koperasi wanita first—she’s in one in Kota Bharu. How does that work?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, good choice—koperasi wanita is a solid start. You’ll need to join first, usually with a small membership fee and a deposit. Once you’re in, you can apply for a group loan through the kumpulan model. The group meets regularly, and everyone supports each other’s repayment. It’s not just about money—it’s about trust and community. Your aunt would’ve gone through the same process."
+            },
+            {
+              "role": "user",
+              "content": "So it’s like a loan from the group? And I don’t pay interest?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. No interest—just a small administrative fee. The loan is interest-free because it’s based on *gotong-royong* and mutual responsibility. You repay in monthly installments, and the group tracks it together. If one person misses a payment, the others help cover it. That’s how it works—no need for collateral, just commitment."
+            },
+            {
+              "role": "user",
+              "content": "That sounds manageable. Can I use the money for a stall, or do I need to use it for something else first?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can use it for the stall—many women in koperasi wanita start home-based food businesses. Just make sure you present a simple business plan during the group meeting. They’ll want to know your target market, how you’ll use the funds, and how you’ll repay. It’s not just approval—it’s a community check-in."
+            },
+            {
+              "role": "user",
+              "content": "What if I want to keep it digital later? I’ve seen apps like Klir for Islamic finance. Can I use something like that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. If you’re in Kuala Lumpur or Kota Kinabalu, you can use digital Islamic fintech like Klir or CIMB Clicks for savings and even microloans. But for your first step, starting with koperasi wanita gives you both funding and mentorship. Later, you can transition to digital tools—many do. It’s about building trust first, then scaling up."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this makes sense. I’ll talk to my aunt and go to the next meeting. I’ll also check if the koperasi has any training sessions."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. Tell her you’re looking to start small but with a strong foundation. Most koperasi wanita offer basic financial literacy sessions too—great for learning how to track expenses and plan for growth. You’re not just getting a loan; you’re joining a network of women who’ve been where you are."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of 'koperasi wanita' and 'kumpulan' as organic cultural references",
+          "Reference to Kota Bharu as a regional context for rural cooperative activity",
+          "Emphasis on trust, community accountability, and mutual aid (gotong-royong)",
+          "Interest-free loan model rooted in Syariah principles without explicit religious framing",
+          "Gradual progression from community-based finance to digital Islamic fintech (Klir, CIMB Clicks)",
+          "Indirect request for help: 'I’m thinking of starting...' instead of direct demand",
+          "Cultural value of mentorship and intergenerational guidance (aunt’s advice)",
+          "Informal, natural tone with culturally specific terms used without explanation",
+          "Focus on collective decision-making and group meetings as part of the process",
+          "Integration of financial literacy and business planning as community norms"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of koperasi wanita as a community-based microfinance mechanism for women entrepreneurs",
+          "Emphasis on trust, mutual responsibility, and *gotong-royong* in group lending",
+          "Interest-free loans with administrative fees, consistent with Syariah-compliant principles",
+          "Requirement of group meetings and business plan presentation as part of approval process",
+          "Regional specificity (Kota Bharu, Kota Kinabalu) and recognition of urban-rural differences in financial access",
+          "Integration of digital Islamic fintech (Klir, CIMB Clicks) as complementary tools for younger generations",
+          "Value placed on mentorship and financial literacy training within cooperatives",
+          "Indirect, community-centered approach to financial decisions without explicit cultural self-identification"
+        ],
+        "issues": [
+          "Minor omission of explicit mention of *Syariah*-compliance as a cultural driver in koperasi wanita, though implied through 'no interest' and 'gotong-royong'",
+          "Slight underrepresentation of the role of mosques and religious institutions in promoting koperasi wanita and *takaful*, though contextually present via digital fintech promotion"
+        ],
+        "suggestions": [
+          "Include a brief reference to religious or community events (e.g., ‘many koperasi meetings are held after Friday prayers’) to reinforce cultural grounding",
+          "Add a subtle nod to generational shift by having the assistant say, ‘My aunt joined in the 90s—now the younger ones use apps too,’ to reinforce intergenerational continuity",
+          "Consider using a localized phrase like ‘kita kena ikut prosedur koperasi dulu’ in the assistant’s response to enhance linguistic authenticity without breaking English format"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aunty Siti from Kampung Sungai Kluang mentioned that we need to join the koperasi kampung before applying for a loan to fix the roof. I’m not sure how it works—can I just walk in and sign up, or is there a meeting first?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’ll need to attend the next monthly meeting at the kampung hall. That’s when new members are formally welcomed and the group votes on applications. Aunty Siti will probably tell you to bring your IC and a letter from the village head if you’re applying for a bigger loan. Don’t worry—most people start with a small savings contribution first, like RM10 a month, to build trust."
+            },
+            {
+              "role": "user",
+              "content": "Oh, so it’s not just about money—it’s about being part of the group. I’ve been thinking about starting a small nasi lemak stall. Would the koperasi wanita help with that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. The koperasi wanita in your district has a special program for home-based food businesses. They offer interest-free loans through a group guarantee system—your peers vouch for you. You’d meet with a committee, share your business plan, and pay back in small monthly installments. I know a few women from there who started with just RM500 and now run full-time stalls."
+            },
+            {
+              "role": "user",
+              "content": "That sounds better than borrowing from a bank. But what if I want to use digital tools later? Like tracking sales or getting payments online?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can use digital tools while staying within the cooperative’s framework. Some koperasi wanita now partner with platforms like Klir or CIMB Clicks for Syariah-compliant digital banking. Just make sure the account is set up as a *tabung usaha*—a business savings account under the cooperative’s name. That way, your transactions stay halal and aligned with the group’s values."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll go to the meeting this week and ask about the loan process. I’ll also ask if they can help me set up a simple bookkeeping system—my aunt says she’s good at it."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. Aunty Siti will appreciate you bringing a family member. In our culture, having a trusted relative involved builds even more confidence in the group. And if you’re lucky, she might even recommend you to the kumpulan wanita in the next village—those groups often share tips and customers."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Cooperative membership requires attendance at formal meetings and group consensus",
+          "Koperasi kampung and koperasi wanita serve as community-based financial institutions with group guarantee systems",
+          "Interest-free loans are offered through collective trust and peer vouching",
+          "Use of *tabung usaha* (business savings account) under cooperative name for halal-compliant digital finance",
+          "Digital tools like Klir and CIMB Clicks are used in alignment with Syariah principles",
+          "Family involvement and trust are culturally valued in financial transactions",
+          "Regional and gender-specific financial groups (e.g., kumpulan wanita) exist and support livelihoods",
+          "Gradual onboarding via small savings contributions builds credibility within the group"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all koperasi wanita have digital partnerships, which may not be true across all regions—some rural branches may lack such infrastructure.",
+          "The phrase 'your peers vouch for you' could be slightly simplified to 'your group members support your application' to better reflect the collective responsibility without implying personal endorsement."
+        ],
+        "suggestions": [
+          "Add a brief mention of regional variation: e.g., 'Some koperasi in East Malaysia still rely on paper records—digital access varies by location.'",
+          "Include a subtle nod to generational differences: e.g., 'Younger members might suggest using a free app for tracking, while elders prefer handwritten ledgers.'",
+          "Consider using a more localized term like 'kampung' instead of 'district' when referring to the koperasi wanita to reinforce geographical authenticity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to start a small nasi lemak stall in my village near Kota Bharu. My aunt says I should join the koperasi wanita first—she’s been part of it for years. But I’m not sure how it works or if I can get a loan without a bank account."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great step—many women in Kelantan start small businesses through koperasi wanita. You don’t need a bank account to join; just bring your IC and a letter from the village headman. Once you’re in, you can apply for a loan after attending a few group meetings. The kumpulan model means you’ll be part of a circle of women who support each other—your loan is guaranteed by the group, not just your credit history."
+            },
+            {
+              "role": "user",
+              "content": "Oh, so it’s like a savings circle? My cousin tried that in Klang, but it was hard to get the money on time. How’s it different here?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s more structured here. The koperasi wanita in Kota Bharu has a formal process—monthly contributions, quarterly meetings, and a committee that reviews loan applications. They often approve small business loans for home-based food stalls, especially if you’ve been active for at least six months. Plus, the interest-free rate is a big help—no faedah, just a small administrative fee."
+            },
+            {
+              "role": "user",
+              "content": "That sounds better. Should I also look into a Syariah-compliant bank for bigger equipment like a rice cooker or fridge?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, if you’re thinking of buying equipment, Bank Islam or CIMB Islamic would be ideal. They offer murabahah financing—no interest, just a clear cost-plus agreement. You can apply online or at the branch, and many branches in Kelantan have dedicated SME desks. Just bring your koperasi loan approval letter; it shows you’re a responsible borrower."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. My mom also mentioned takaful insurance—should I get that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. Takaful is part of the culture here—especially for small business owners. The koperasi wanita often partners with Takaful Malaysia to offer group coverage at low rates. It’s not just protection—it’s community care. When someone faces hardship, the group helps with claims. It’s like gotong-royong in action."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "The role of koperasi wanita in supporting women entrepreneurs in rural Kelantan",
+          "The requirement of IC and village headman letter for joining koperasi",
+          "Group-based loan guarantees through collective responsibility",
+          "Use of interest-free financing (no faedah) in Syariah-compliant institutions",
+          "Murabahah financing as a common Islamic banking product for SMEs",
+          "Integration of takaful insurance with community cooperatives",
+          "Cultural value of gotong-royong (mutual assistance) in financial support systems",
+          "Regional specificity: koperasi kampung and koperasi wanita in East Malaysia",
+          "Preference for face-to-face interactions and community trust in financial decisions"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'Kota Bharu' as representative of all of Kelantan—some rural areas may have different operational models.",
+          "Slight ambiguity in the term 'kumpulan model'—while understood colloquially, it could benefit from a brief contextual clarification (e.g., 'like a savings circle with group accountability')."
+        ],
+        "suggestions": [
+          "Add a subtle nod to generational differences: e.g., 'My aunt says it’s easier now than when she started—online updates and mobile banking help.'",
+          "Include a brief mention of digital tools (e.g., 'You can check your koperasi balance via the Koperasi Wanita app') to reflect modernization trends.",
+          "Use a more natural mix of Malay terms in context: e.g., 'Bila dah aktif selama enam bulan, baru boleh apply loan—tapi tak perlu ada akaun bank.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m thinking of starting a small nasi lemak stall at the pasar malam near my aunt’s house in Kota Bharu. But I don’t have much savings. How can I get help without taking interest?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’re not alone—many people start like this. First, you should check if there’s a local *koperasi wanita* in the area. They often have small, interest-free loans for women entrepreneurs. Your aunt might know someone in the group."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I remember her mentioning a *kumpulan wanita* at the mosque last month. Is that the same thing?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, exactly. That’s the group lending model—members support each other. You’d join, attend a few meetings, and after building trust, you can apply for a loan. The group guarantees each other, so no need for collateral. It’s how many home-based food businesses start."
+            },
+            {
+              "role": "user",
+              "content": "That sounds good. But what if I want to buy a trolley and a fridge? Can I use a Syariah-compliant loan instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Definitely. You can apply through a Syariah-compliant bank like Bank Islam or CIMB Islamic. They offer *murabahah* financing—no interest, just a transparent markup. The staff will guide you through the paperwork, and many branches have female officers who understand small business needs."
+            },
+            {
+              "role": "user",
+              "content": "I’d prefer to keep it simple. Maybe start with the koperasi first, then see if I need more later. Should I talk to my aunt directly?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s the right way. In our culture, it’s natural to ask family first. Just say something like, ‘Auntie, if there’s a chance, I’d like to join the group—maybe with a small amount to start.’ They’ll help you find the right person and even introduce you."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of local terms: 'koperasi wanita', 'kumpulan wanita', 'pasar malam', 'nasi lemak', 'Kota Bharu'",
+          "Reference to community-based finance models: group lending, peer guarantee, trust through participation",
+          "Implicit cultural value: family and community as first support system",
+          "Preference for interest-free, Syariah-compliant finance due to religious and ethical alignment",
+          "Indirect request style: 'if there’s a chance, I’d like to join…'",
+          "Recognition of gender-specific financial structures: women’s cooperatives and female-friendly banking services",
+          "Hierarchical trust: relying on elders and family networks for access to financial resources",
+          "Gradual progression in financial support: starting with community co-op, then considering formal Islamic banking",
+          "Regional specificity: Kota Bharu, mosque-based groups, local market context",
+          "Cultural logic of financial inclusion: finance as social empowerment, not just transactional"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Coexistence of Syariah-compliant banks and cooperatives in financial decision-making",
+          "Use of *koperasi wanita* and *kumpulan wanita* for women-led micro-enterprises",
+          "Collectivist financial support through community groups and family networks",
+          "Preference for trust-based, relationship-driven lending over formal collateral",
+          "Indirect communication style in requests (e.g., 'if there’s a chance, I’d like to join')",
+          "Regional relevance of Kota Bharu and pasar malam as cultural and economic hubs",
+          "Gender-specific financial institutions (e.g., female officers at Islamic banks)",
+          "Use of *murabahah* as a common Syariah-compliant financing model",
+          "Cultural expectation of family involvement in financial initiation"
+        ],
+        "issues": [
+          "Minor omission of the fact that *koperasi wanita* may require a minimum membership period before loan eligibility—could be added for nuance",
+          "Slight overgeneralization that all *kumpulan wanita* are automatically accessible; some require formal registration or sponsorship"
+        ],
+        "suggestions": [
+          "Add a brief mention of the typical waiting period (e.g., 3–6 months) after joining a *koperasi wanita* before accessing loans, to reflect real-world timelines",
+          "Include a subtle reference to the role of religious or community leaders (e.g., *ustazah* or *ketua kampung*) in facilitating group introductions",
+          "Slightly vary the assistant’s tone in the final turn to reflect regional speech patterns (e.g., a softer, more deferential tone common in Kelantan) for added authenticity"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

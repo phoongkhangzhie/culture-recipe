@@ -1,0 +1,214 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Seating Etiquette for Guests and Hosts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Rules and customs governing where guests and hosts sit relative to each other in social settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m hosting a small dinner at my place next week for my senior colleague from Kyoto and a few junior team members. The room has tatami, and I’ve already set the table. I’m a bit unsure about where everyone should sit—especially since the Kyoto colleague is quite senior. Should I just let them pick their seat?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best not to leave seating to chance, especially with someone senior. The most honored seat—the *shimoseki*—should be directly facing the tokonoma, furthest from the entrance. That’s where your Kyoto colleague should sit. You’ll sit to their right, slightly lower in position, so they’re clearly the guest of honor. The junior members can be seated to the left of the guest of honor, in order of seniority, but always with the host’s seat remaining distinct."
+            },
+            {
+              "role": "user",
+              "content": "I see. So I should guide them to the seat when they arrive? I don’t want to seem too direct, but I also don’t want them to pick a spot by accident."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, you should gently lead them. When they enter, bow slightly and say something like, ‘Please come this way,’ while gesturing toward the *shimoseki* with your hand—just a soft motion, not a point. Wait until they’re seated before taking your own place. That shows respect and makes the hierarchy clear without words."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the junior staff? Should they wait for me to sit first before they do?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. They should remain standing until you’ve taken your seat. Once you’re seated, they can then settle in, starting from the most senior among them. No one should sit before you, even if they’re eager. It’s not about comfort—it’s about showing deference through timing."
+            },
+            {
+              "role": "user",
+              "content": "And if someone tries to move seats later? I’ve seen people shift around during dinner, even in formal settings."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best not to move once seated, especially during the meal. If someone does, it’s usually a sign they’re unaware or uncomfortable. But you can quietly signal the correct seating by subtly adjusting your own position—like turning slightly toward the tokonoma—without drawing attention. The key is to maintain the order naturally, not enforce it."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll make sure to set it up carefully. I don’t want to give the impression I’m not mindful of seniority, especially with someone from Kyoto."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re already thinking the right way. The care you’re showing in preparing for this—seating, timing, gesture—will speak louder than any words. They’ll feel respected, and that’s what matters most."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of culturally specific terms: 'shimoseki', 'tokonoma', 'tatami', 'senior colleague from Kyoto'",
+          "Implicit demonstration of seating hierarchy: guest of honor seated facing tokonoma, host seated to their right",
+          "Natural guidance by host: leading guest to seat with subtle hand gesture, waiting to sit until guest is seated",
+          "Emphasis on timing and deference: juniors wait for host to sit first, no seat-shifting without permission",
+          "Cultural value of non-verbal communication: quiet, graceful cues over explicit instruction",
+          "Contextual awareness of regional nuance: reference to Kyoto as a place of high cultural formality",
+          "Subtle hierarchy in movement: host subtly signals correct seating without confrontation",
+          "Focus on harmony and unspoken understanding: conversation reflects shared cultural knowledge without explanation",
+          "Avoidance of directness in social guidance: soft phrasing like 'please come this way' instead of commands",
+          "Emphasis on ritual over comfort: seating as expression of respect, not personal preference"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The *shimoseki* (honored seat) is positioned facing the *tokonoma* and furthest from the entrance",
+          "The host sits to the right of the honored guest, in a position of lesser prominence",
+          "Guests are led to their seat by the host with a subtle hand gesture and verbal cue",
+          "The host waits until the guest is seated before taking their own seat",
+          "Junior members sit to the left of the guest of honor, in order of seniority",
+          "Junior staff remain standing until the host is seated",
+          "Seating should not be changed during the meal; subtle cues are used to maintain order",
+          "Seating reflects hierarchy and respect, not comfort",
+          "The Kyoto colleague is treated with extra deference due to regional and seniority status"
+        ],
+        "issues": [
+          "Minor: The term 'shimoseki' is used without explanation, which may confuse non-Japanese learners. However, in the context of implicit cultural knowledge and insider language, this is acceptable and even appropriate.",
+          "Slight risk of overgeneralization: The example assumes all Kyoto-based senior colleagues are treated with identical deference. While culturally plausible, regional nuance (e.g., Kyoto’s traditionalism) is acknowledged appropriately in the user’s comment, so this is not a critical flaw."
+        ],
+        "suggestions": [
+          "Consider adding a brief contextual note in training data documentation about regional variations in Kyoto’s emphasis on formality, to prevent overgeneralization in model training.",
+          "In future examples, include a variation where a guest *does* sit in the wrong seat and the host responds with a natural, non-verbal correction (e.g., shifting posture, adjusting the tea bowl) to reinforce implicit learning.",
+          "Avoid introducing terms like 'shimoseki' in isolation unless in a context where they are already culturally embedded—this example does so correctly via user context."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m hosting a small dinner at my place for a senior colleague from the Tokyo office and a few team members. The room has tatami, and I’ve set up the table in the center. Should I be worried about where everyone sits?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—seating reflects respect and harmony. The seat directly facing the tokonoma is the *kotae*, the honored position. Your senior colleague should be guided there first."
+            },
+            {
+              "role": "user",
+              "content": "So I shouldn’t just sit at the head of the table like I usually do? I thought that was the natural place."
+            },
+            {
+              "role": "assistant",
+              "content": "There’s no ‘head’ seat—only the seat of honor. You’ll sit to their right, slightly behind, so they’re acknowledged but not overshadowed. Keep your spine straight, but relaxed—like you’re rooted in the floor. Wait until they’re seated before you take your place."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And when we enter the room, should I lead them to their seat, or let them choose?"
+            },
+            {
+              "role": "assistant",
+              "content": "Lead them in. Bow slightly from the waist as you enter, then gesture with a quiet tilt of the wrist—just enough to guide. Step slightly to the side, not directly behind them. Stillness speaks more than words."
+            },
+            {
+              "role": "user",
+              "content": "What about the others? Should I arrange them myself, or let them pick?"
+            },
+            {
+              "role": "assistant",
+              "content": "Guide the senior guest first. Then others will settle naturally—seniority flows like water. Suggest positions with a nod, a glance. No need to speak. Let the silence do the work."
+            },
+            {
+              "role": "user",
+              "content": "And when we start eating—should I serve them first?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—serve them first. Bring the dish with both hands, place it gently, and wait until they’ve taken their first bite before you begin. It’s a quiet way of honoring them."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—how should they sit? Should they lean back a bit?"
+            },
+            {
+              "role": "assistant",
+              "content": "No. They’ll sit slightly forward, knees together, hands resting on their lap—showing attentiveness. Avoid turning your back to the guest or the tokonoma. Even a small shift can feel distant."
+            },
+            {
+              "role": "user",
+              "content": "What if I’m junior to the guest? Should I still sit at the same table?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—everyone sits at the same table. You’ll be seated in a position of quiet attentiveness, slightly behind and to the side of the main group. It’s not about being excluded—it’s about showing respect through presence. You’re part of the circle, just not at the center. Like a steady presence behind the light."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The concept of *kotae* (honored position) facing the tokonoma is accurately portrayed",
+          "The host sits to the right of the honored guest, demonstrating humility",
+          "The host waits until the guest is seated before taking their own place",
+          "Guiding the guest with a subtle hand gesture (wrist tilt) and bowing is culturally accurate",
+          "The emphasis on silence, nonverbal cues, and natural flow of seniority is authentic",
+          "Serving the guest first with both hands and waiting for them to begin eating is correct",
+          "Posture (slightly forward, knees together, hands in lap) reflects attentiveness and respect",
+          "Avoiding back-facing or turning away from the guest or tokonoma is properly emphasized",
+          "Junior individuals sit in attentive, peripheral positions without exclusion—symbolic of respect through presence"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: The example assumes a tatami room with a tokonoma, which is common in traditional homes but not universal. However, since the user explicitly mentions tatami, this is contextually appropriate.",
+          "The phrase 'like a steady presence behind the light' is poetic but slightly abstract—could be misinterpreted by learners. While evocative, it borders on metaphorical abstraction that might not be immediately graspable in a training context."
+        ],
+        "suggestions": [
+          "Replace the metaphor 'like a steady presence behind the light' with a more concrete, culturally grounded analogy (e.g., 'like a quiet pillar supporting the center of the room') to maintain authenticity without sacrificing clarity.",
+          "Consider adding a brief, implicit reference to *wa* (harmony) or *enryo* (restraint) in the assistant’s final response to reinforce the underlying cultural value without explaining it explicitly.",
+          "Ensure that future examples maintain the same level of implicit cultural knowledge—avoid any phrasing that could be interpreted as instructing an outsider, which this example successfully avoids."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 11
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

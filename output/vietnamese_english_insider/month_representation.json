@@ -1,0 +1,248 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Month Representation",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether months are written numerically, as abbreviations, or spelled out in full",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to set up a reminder for my aunt’s birthday next month. It’s on the 18th, but I’m not sure how to write it properly in the message I’m sending her. Should I use 1/18 or Thg 1 18? She’s not super into tech stuff, but I don’t want it to look too stiff either."
+            },
+            {
+              "role": "assistant",
+              "content": "For a birthday message to your aunt, keep it warm and personal. Use ‘18/1’ — that’s the most natural way in casual Vietnamese texting. It’s clear, friendly, and widely understood. Just make sure you write it as 18/1, not 1/18, so it’s clear the day comes before the month."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about if I’m writing a formal note for her anniversary gift? Like, on the card or something? Should I write ‘tháng Một’ then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, for a card or formal note — especially if it’s for a milestone like an anniversary — go with ‘tháng Một’ in full. It feels respectful and polished. You can even write it as ‘18 tháng Một’ to keep it clean but still proper. That way, it’s clear and carries the right tone."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One more thing — if I’m texting my cousin about the family reunion in February, and we’re all meeting at my uncle’s house, should I say ‘Thg 2’ or ‘tháng Hai’? We’re all in the same group chat, and everyone’s used to the shorthand."
+            },
+            {
+              "role": "assistant",
+              "content": "In a group chat with cousins, ‘Thg 2’ is perfect. It’s fast, familiar, and everyone gets it. You don’t need to overthink it — just keep it light and natural. If you’re sharing the date in a message like ‘15 Thg 2, 7 giờ chiều’, that’s exactly how we’d write it."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I just remembered — during Tết, my mom always says ‘tháng Giêng’ instead of ‘Thg 1’. Is that just tradition, or does it matter more then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly — during Tết, it’s always ‘tháng Giêng’, never ‘Thg 1’ or ‘1/1’. That’s not just tradition; it’s part of how we mark the lunar new year with care. Even in casual chats, people use the full name to honor the season. It’s a small thing, but it shows respect for the timing and the culture."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of '18/1' in informal digital communication for a birthday reminder",
+          "Preference for 'tháng Một' in formal or heartfelt written messages (e.g., cards)",
+          "Natural use of 'Thg 2' in group chats among younger relatives",
+          "Cultural significance of 'tháng Giêng' during Tết, always spelled out",
+          "Avoidance of English month names or Roman numerals in local contexts",
+          "Contextual adaptation of month representation based on audience and purpose",
+          "Implicit understanding of formality levels without explicit explanation",
+          "Authentic Vietnamese family communication dynamics in a digital setting"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Use of '18/1' in informal texting for January 18th",
+          "Preference for 'tháng Một' in formal contexts like anniversary cards",
+          "Common use of 'Thg 2' in group chats among cousins",
+          "Cultural significance of 'tháng Giêng' during Tết, always spelled out",
+          "Avoidance of English month names or Roman numerals in local contexts",
+          "Contextual switching between numerical, abbreviated, and full forms based on setting"
+        ],
+        "issues": [
+          "Minor inconsistency in date format: '15 Thg 2, 7 giờ chiều' — while natural, the lack of a space before the time (e.g., '15 Thg 2, 7 giờ chiều') could be slightly more natural with a space after the comma in Vietnamese typography; however, this is a very minor typographical nuance and not a cultural error.",
+          "The assistant's response to the Tết question could be slightly more emphatic about the cultural weight — though it correctly identifies 'tháng Giêng' as essential, a stronger emphasis on ritual significance might deepen the cultural insight further."
+        ],
+        "suggestions": [
+          "Consider adding a brief, natural mention of how 'tháng Giêng' is often used in poetry, greetings, or festival decorations to reinforce its symbolic role beyond just date notation.",
+          "In the assistant's response about the formal card, explicitly mention that using '18 tháng Một' is preferred over '18/1' even in semi-formal notes to reinforce the formality gradient.",
+          "To enhance realism, include a light cultural reference in the cousin chat — e.g., 'Just like we always do, right? Thg 2, 7 giờ chiều at Uncle’s place!' — to mirror authentic group chat tone."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I need to send a quick message to my cousin in Đà Nẵng about the family reunion this Tết. It’s supposed to be on the 15th, but I’m not sure which date that is in the lunar calendar. Can you help me double-check?"
+            },
+            {
+              "role": "assistant",
+              "content": "This year, the 15th of the lunar month falls around February 10th. Since it’s Tết, we’re talking about *tháng Giêng*, the first lunar month. You can say 'tháng Giêng 15' — it feels right for the season."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I should write 'tháng Giêng 15' instead of '1/15' in my text? My mom always says numbers feel too cold for family stuff."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. '1/15' works fine for work stuff, but for family, 'tháng Giêng 15' just feels warmer. It’s not about being fancy — it’s about keeping it Vietnamese, especially during Tết."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’m also thinking of sending a group message to the family chat. Should I keep it formal or go with something like 'Thg 1 ngày 15'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect for a group chat — 'Thg 1 ngày 15' is totally natural. You’re not being stiff, but you’re still keeping it real. Younger cousins will get it, and no one’ll think you’re weird."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. I almost typed 'January 15' by accident because I was copying from my calendar app. My younger brother would’ve laughed at me for being so formal."
+            },
+            {
+              "role": "assistant",
+              "content": "Ha, don’t worry — that’s the kind of thing we all do. Tết mà, better to keep it Vietnamese. Using 'Jan' feels like wearing a suit to a family picnic."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 10.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.85,
+        "cultural_elements_verified": [
+          "In formal and traditional contexts like Tết, months are spelled out in full (e.g., 'tháng Giêng')",
+          "In informal digital communication, abbreviations like 'Thg 1' are commonly used and culturally accepted",
+          "Numerical formats like '1/15' are appropriate for work or neutral contexts but feel impersonal in family settings",
+          "Using English month names (e.g., 'January') is perceived as overly formal or culturally out of place in local family communication",
+          "The preference for culturally resonant language during Tết reflects deeper values of tradition, warmth, and familial connection"
+        ],
+        "issues": [],
+        "suggestions": [
+          "Consider adding a subtle mention of the lunar calendar’s cultural significance to reinforce why 'tháng Giêng' is used instead of 'tháng Một' during Tết",
+          "To further deepen nuance, a future example could contrast a formal letter (e.g., a business email) with a group chat, explicitly showing format shifts across contexts"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I need to send a reminder to my cousin about the family reunion this weekend. It’s on Sunday, the 15th, but I’m not sure how to write the date properly in Vietnamese. Should I say '15/1' or 'Thg 1' or just 'tháng Một'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Just write 15/1 — everyone gets it, and don’t forget to add chủ nhật. That’s how we do it in texts, no need to overthink it."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if I’m writing a formal note to my aunt who’s organizing the event? Like a quick email about the schedule?"
+            },
+            {
+              "role": "assistant",
+              "content": "For her, go with 'tháng Một' — full name, no abbreviations. 'Chủ nhật, ngày 15 tháng Một' is clean and respectful, especially when she’s in charge."
+            },
+            {
+              "role": "user",
+              "content": "Ah, right — and what about if we’re talking about Tết? I saw someone write 'Thg 1' in a post, but I think that’s actually the lunar month, right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. During Tết, it’s always 'tháng Giêng'. Never 'Thg 1' or '1/1' — even in casual posts. It’s the first lunar month, and spelling it out shows you’re in tune with the season."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. So if I’m posting on Facebook with a photo of the ancestral altar, I should write 'ngày 15 tháng Giêng' instead of '15/1'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yeah — people notice. It’s like showing you’re in the moment, not just ticking a box."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of '15/1' in casual messages with family",
+          "Preference for 'tháng Một' in formal or respectful contexts like family emails",
+          "Spelling out 'tháng Giêng' during Tết to honor lunar calendar traditions",
+          "Avoidance of 'Thg 1' and '1/1' during Tết to maintain cultural authenticity",
+          "Cultural expectation of contextual appropriateness in date formatting",
+          "Implicit understanding that full month names signal respect and seasonal awareness",
+          "Natural, unforced integration of cultural norms in digital communication"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.775,
+        "cultural_elements_verified": [
+          "In informal contexts like texts, Vietnamese use numerical formats (15/1) or abbreviations (Thg 1)",
+          "In formal contexts, full Vietnamese month names (tháng Một) are preferred",
+          "During Tết, the lunar month 'tháng Giêng' is always spelled out, never abbreviated or numerical",
+          "Using 'Thg 1' or '1/1' during Tết is culturally inappropriate and seen as disrespectful",
+          "The distinction between solar and lunar calendar months is culturally significant",
+          "Cultural sensitivity in date formatting reflects deeper values of respect, context-awareness, and seasonal awareness"
+        ],
+        "issues": [
+          "Minor: The phrase 'everyone gets it' in the assistant’s first response, while colloquial, slightly underemphasizes the cultural nuance of formality vs. informality. A more precise phrasing could reinforce context sensitivity.",
+          "Slight risk of overgeneralization in 'no need to overthink it' — while natural, it may downplay the importance of appropriate formality in some family contexts."
+        ],
+        "suggestions": [
+          "Refine the informal response to include a subtle cue about context: e.g., '15/1 is fine for texts — but if you're writing to someone older or in a formal setting, better to use the full name.'",
+          "Add a brief mention of the lunar calendar’s role in Tết to reinforce cultural depth without over-explaining.",
+          "Use more authentic conversational markers like 'đúng đó' or 'thì' in the assistant’s replies to increase linguistic authenticity, especially in the informal turns."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 15,
+    "research_rounds": 1,
+    "examples_produced": 3
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "culture": "Malaysian",
+  "dimension": {
+    "name": "Punctuality When Visiting",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural expectations around arriving on time, early, or fashionably late when visiting someone's home",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m heading over to Auntie Salmah’s house later for dinner—she said around 6, but I’m not sure if I should be there exactly at 6 or a bit late. She’s been cooking since noon, and I don’t want to interrupt her while she’s still setting the table."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, good thinking—don’t rush in at exactly 6. A little late is actually better here, like 6:10 or 6:15. That way, you’re not catching her mid-plating or tidying up. Just send a quick message before you leave: ‘Salam, I’m on my way, should be there by 6:15’—keeps her in the loop without pressure."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I was also wondering—would it be okay if I got there at 6:20? She’s got the kids to settle, and I don’t want to walk in right as she’s finishing up the last bit of cooking."
+            },
+            {
+              "role": "assistant",
+              "content": "6:20’s still fine—especially with the kids. In many Malaysian families, especially during casual dinners, a soft schedule is the norm. Just avoid showing up before 6:10, though. If you’re too early, she might still be in her nightgown or rushing to tidy up, and that’s not ideal. A little late shows you’re mindful, not pushy."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And should I bring anything? I know she always says not to, but I feel bad just showing up empty-handed."
+            },
+            {
+              "role": "assistant",
+              "content": "Bring a small fruit basket or some cookies—something light, not too much. She’ll appreciate it without feeling obligated. If you’re going with a cousin or two, split it so it’s not overwhelming. She’ll say ‘no need,’ but you’ll know she’s glad you thought of it."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that’s really helpful. I’ll grab some durian-flavoured biscuits from the shop near her block—she loves those."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. Durian biscuits—she’ll be touched. Just say ‘Salam, I brought a little something’ when you walk in, not before. That way, it’s polite, not pushy. If she tries to hand it back, just smile and say, ‘It’s just a small token, Auntie.’ She’ll let it go."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—what about timing? Is 6:20 okay even if it’s close to Maghrib prayer time? I don’t want to interrupt if she’s about to start."
+            },
+            {
+              "role": "assistant",
+              "content": "Good catch. If it’s near 6:00, check the prayer time—ideally, don’t arrive right as Maghrib starts. Most families wait until after prayer, so 6:20’s safe if she’s already started. But if you’re unsure, a quick text like ‘Just checking—should I come a bit later?’ shows care without overstepping."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Arriving 5–15 minutes late is socially acceptable and often expected in informal Malaysian family gatherings",
+          "A 'soft schedule' is common in many Malaysian households, especially among extended family and in rural or close-knit communities",
+          "Sending a brief message before arrival to confirm timing is a polite and expected gesture",
+          "Bringing a small, thoughtful gift (e.g., fruit, cookies) is appreciated even if the host says 'no need'",
+          "The concept of 'fashionably late' reflects cultural values of harmony and comfort over rigid punctuality",
+          "Avoiding arrival during prayer times (e.g., Maghrib) shows respect, especially in Malay households",
+          "Punctuality expectations vary across ethnic groups—Chinese Malaysian families may expect more exact timing during festive seasons",
+          "Overly early arrival (e.g., 30 minutes ahead) can be seen as intrusive, as hosts need time to prepare and settle",
+          "Polite refusal of gifts is common; the guest should gently accept the gesture with a smile and light explanation"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Arriving slightly late (6:10–6:20) is preferred over arriving exactly at 6:00",
+          "Avoiding arrival too early (before 6:10) to prevent disrupting host preparations",
+          "Respect for the host’s routine, especially during meal prep or prayer times",
+          "Use of a brief message to inform the host of arrival time without pressure",
+          "Cultural sensitivity around Maghrib prayer time and avoiding disruption",
+          "Acceptance of small, thoughtful gifts (e.g. fruit basket, cookies) even when declined",
+          "Use of Malay greetings like 'Salam' as part of polite interaction",
+          "Social expectation that hosts may say 'no need' but appreciate gestures",
+          "Regional and familial flexibility in timing, especially in informal or extended family settings"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes a Malay Muslim household throughout, but doesn’t acknowledge variation across ethnic groups (e.g., Chinese or Indian families) even though the cultural context is broadly Malaysian. However, this is acceptable given the specific scenario involving Maghrib prayer and 'Auntie Salmah', which aligns with a Malay Muslim context.",
+          "The mention of 'durian-flavoured biscuits' is culturally plausible but could be seen as slightly hyper-specific; however, it adds authenticity and is not problematic"
+        ],
+        "suggestions": [
+          "Consider adding one brief reference to cultural variation (e.g., 'In some Chinese families, they might prefer punctuality, but with Auntie Salmah, a little late is perfectly fine') to reinforce nuance without disrupting flow.",
+          "Ensure future examples include non-Muslim or non-Malay contexts to broaden representation, especially for training data diversity.",
+          "Use more subtle cues for regional variation (e.g., referencing 'the way her cousins from Penang would do it' or 'like how my uncle in Johor handles it') to embed cultural relativity naturally."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m going to Auntie Siti’s house for dinner this Sunday—she said 6:30, but I’m thinking of arriving around 6:45. Is that okay? She’s been cooking all day, and I don’t want to show up too early and catch her in the middle of something."
+            },
+            {
+              "role": "assistant",
+              "content": "6:45 should be fine—she’ll probably be glad you’re not there at 6:15, when she’s still setting the table and checking the curry. She’s been saying she wants to finish the sambal before you arrive anyway. Just give her a quick call when you’re about 10 minutes away, so she knows you’re on your way."
+            },
+            {
+              "role": "user",
+              "content": "Good point. Should I bring anything? I brought the pandan cake last time, but I’m not sure if I should again."
+            },
+            {
+              "role": "assistant",
+              "content": "The cake was nice, but she already has two boxes from your cousin. Maybe bring a small fruit platter instead—something fresh like dragon fruit or mangoes. That way it’s a nice touch without overdoing it. And if you’re bringing anything, don’t arrive with it in hand at 6:45—just leave it by the door so she doesn’t have to juggle it while she’s still cooking."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And if I’m running late because of traffic, should I text her? She’s not on WhatsApp much, but I can call."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, call her—she’ll appreciate the heads-up. Just say something like, 'Siti, sorry, traffic’s bad near Jalan Duta, I’ll be about 20 minutes late.' She’ll understand. In fact, she’ll probably say, 'No problem, just come when you can—my food’s still on the stove.' That’s how she is."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I was worried I’d be rude showing up too early, but now I feel better. I’ll just make sure to be there by 7:00 at the latest."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. 7:00 is the sweet spot—late enough to respect her prep time, early enough to enjoy the meal without missing the start. And if you’re still in the car at 7:05, just send a quick message: 'Almost there, Siti!' She’ll smile."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Arriving 15 minutes late (6:45 for a 6:30 dinner) is culturally acceptable and considered respectful of the host’s preparation time.",
+          "Arriving significantly early (e.g., 6:15) is seen as intrusive, especially if the host is still cooking or setting the table.",
+          "Calling ahead when running late is expected and appreciated; it reflects consideration for the host’s routine.",
+          "The host’s likely response—'No problem, just come when you can'—is consistent with Malaysian hospitality norms.",
+          "The suggestion to leave gifts by the door rather than carry them in reflects cultural awareness of the host’s need to manage multiple tasks during meal prep.",
+          "The emphasis on avoiding disruption during key moments (e.g., cooking, preparing sambal) aligns with cultural values of harmony and respect for the host’s space and effort.",
+          "The use of informal but warm language (e.g., 'She’ll smile', 'She’s been saying she wants to finish the sambal') reflects natural, insider-level communication."
+        ],
+        "issues": [
+          "Minor: The mention of 'Jalan Duta' is specific to Kuala Lumpur and may not be universally relatable across all Malaysian regions. However, this is a minor contextual detail and does not undermine cultural accuracy.",
+          "Slight overgeneralization: The example assumes a single, unified cultural response across ethnic groups (Malay, Chinese, Indian), though the assistant’s response reflects a broadly applicable Malay urban norm, which is acceptable in context. No explicit ethnic stereotypes are present."
+        ],
+        "suggestions": [
+          "Consider adding a subtle nod to regional or ethnic variation in future examples (e.g., 'In some Chinese homes, they might prefer you be on time, but Auntie Siti is more relaxed—she’s always said punctuality is for meetings, not family dinners'). This would reinforce cultural nuance without overcomplicating the current example.",
+          "Use a more diverse range of household types (e.g., a rural Malay home, a Chinese New Year gathering) in future examples to expand training data coverage.",
+          "Avoid using specific street names unless they are essential to the narrative, to maintain broader cultural relevance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m heading over to Auntie Siti’s house for dinner tonight. She said 7 PM, but I’ve got a meeting that might run late. Should I just show up around 7:15 or wait until I’m sure I’m done?"
+            },
+            {
+              "role": "assistant",
+              "content": "7:15 should be fine—she’ll expect you around then. Just give her a quick call if you’re running past 7:20, especially since she’s likely still finishing up the cooking and maybe even the evening prayer. She won’t mind a little late, but showing up straight after the 7 o’clock adhan would be the sweet spot."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I don’t want to arrive right when she’s just about to start serving or still in her prayer clothes. Should I text her before I leave the office?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a quick ‘Hi Auntie, just wrapping up my meeting—should be at your place by 7:15, no rush’ is perfect. It lets her know you’re on your way without making her wait or feel pressured. She’ll appreciate the heads-up more than a strict 7 PM arrival."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I was thinking about bringing those durian pastries I got from the pasar malam—would that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely—she loves those. Just don’t bring them too early, though. If you’re at her place before 7, better keep them in the bag until you’re actually walking in. She might still be doing her prayers or tidying up, and it’s not the time to start unpacking treats."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll wait until I’m actually at the door. Thanks for the heads-up—this is my first time visiting since she moved to the new flat, so I didn’t want to mess up the timing."
+            },
+            {
+              "role": "assistant",
+              "content": "No worries—she’ll be happy you’re coming. The new flat’s a bit quieter, so she’ll probably be even more relaxed. Just show up with that little smile and the pastries, and you’ll be golden."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of specific Malaysian names (Auntie Siti) and cultural references (adhan, pasar malam)",
+          "Reference to religious timing (7 o’clock prayer) as a cultural cue for arrival",
+          "Implicit understanding of 'fashionably late' (7:15 arrival after 7 PM invitation)",
+          "Avoidance of arriving early (not bringing pastries too soon)",
+          "Host comfort prioritized over punctuality (not disrupting prayer or cooking routines)",
+          "Informal but respectful communication style (texting a quick update without over-explaining)",
+          "Cultural nuance in gift-giving timing (bringing treats only upon arrival)",
+          "Regional and familial context (auntie, household visits, extended family dynamics)",
+          "Subtle emphasis on harmony and situational awareness over clock time",
+          "Natural, insider-level phrasing without cultural self-reference or explanation"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Arriving 5–15 minutes late is acceptable and expected for informal family visits",
+          "Calling ahead to confirm arrival time is appreciated and shows consideration",
+          "Avoiding arrival during prayer time (e.g., 7 PM adhan) is culturally sensitive",
+          "Hosts may still be preparing or in prayer attire, so arriving too early is disruptive",
+          "Bringing gifts (e.g., durian pastries) is welcome, but timing of presentation matters",
+          "Host comfort and household routines take precedence over strict punctuality",
+          "Informal communication (e.g., 'no rush') is natural and expected in familial contexts",
+          "Regional and familial flexibility in timing is respected, especially in urban Malay households"
+        ],
+        "issues": [
+          "Minor: The use of 'adhan' without context may be slightly unfamiliar to non-Muslim readers, but in a Malaysian context with a Malay auntie, it is culturally accurate and natural. No correction needed.",
+          "Slight nuance: The example assumes a Muslim household (reference to adhan), which is accurate for many Malay families but not universal. However, since the context (Auntie Siti, pasar malam, durian pastries) strongly implies a Malay Muslim household, this is appropriate and not an error."
+        ],
+        "suggestions": [
+          "Consider adding a subtle variation in tone if the setting were Chinese or Indian Malaysian (e.g., a different greeting or expectation around timing), to reinforce cultural diversity within Malaysia without diluting the core example.",
+          "To further enhance realism, the assistant could occasionally reference a shared cultural ritual (e.g., 'she’ll be lighting the oil lamp after prayer') to deepen immersion.",
+          "Ensure future examples include non-Muslim Malaysian perspectives on punctuality to avoid over-reliance on one religious-cultural framework."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m going to Auntie Salmah’s house for dinner this Saturday. She said around 6:30, but I’m not sure if I should aim to be there exactly at 6:30 or a bit later. She’s always so busy with the kids and cooking, and I don’t want to show up too early and catch her in the middle of something."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, good thinking — Auntie Salmah’s place is definitely one of those where a little late is better than too early. Just show up around 6:45 to 7:00. She’ll be glad you’re there, and she’ll already be settled in, maybe even halfway through the rice cooking. If you’re there right at 6:30, she might still be wiping down the kitchen or rushing to finish the sambal."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I was also wondering — should I call her before I leave, just to say I’m on my way? Or is that too much?"
+            },
+            {
+              "role": "assistant",
+              "content": "A quick call at 6:15 or so is actually a good move — not to check in, but to say you’re heading out. Something like, ‘Auntie, I’m leaving now, should be there in about 20 minutes.’ That way she knows you’re on your way, and if there’s any last-minute thing she needs to tidy up, she’ll have a heads-up. But don’t call earlier than that — she might still be in her dressing room or doing the prayer."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And if I end up stuck in traffic, should I text her or just arrive late without saying anything?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always text if you’re running late — even if it’s just a quick, ‘Sorry, traffic’s bad, will be there in 20 mins.’ She’ll appreciate the heads-up. No need to over-explain, but a little note shows you’re mindful. She’s not expecting a full report — just a signal that you’re still on track."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that’s really helpful. I was also thinking — since it’s a family dinner, should I bring anything? Maybe a small gift or something?"
+            },
+            {
+              "role": "assistant",
+              "content": "A small gesture is always nice — a pack of her favourite tea, or a fruit basket from the market. Doesn’t have to be fancy. Just something that says you’re thinking of her. But honestly, she’ll be happy just to see you. The real gift is your presence."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Arriving 5–15 minutes late is culturally appropriate for informal family visits in Malaysian homes",
+          "Arriving significantly early (e.g., 30 minutes ahead) is considered intrusive, especially if the host is preparing for guests",
+          "The concept of 'fashionably late' is understood and expected in familial and close-knit social settings",
+          "Calling ahead to confirm arrival time is a common and thoughtful practice to avoid disrupting household routines",
+          "A brief, polite message when running late (e.g., due to traffic) is expected and appreciated",
+          "Small, thoughtful gifts (e.g., tea, fruit) are valued but not mandatory, with emphasis on presence over material gestures",
+          "Host comfort and readiness are prioritized over strict adherence to time, reflecting cultural emphasis on harmony and situational awareness",
+          "Cultural norms vary subtly by ethnic group (e.g., Malay, Chinese, Indian Malaysian households), but the underlying principle of thoughtful timing is shared across contexts",
+          "Use of natural, context-specific Malaysian references (e.g., 'Auntie Salmah', 'sambal', 'prayer', '6:30 dinner') without explicit cultural framing",
+          "Communication style is warm, concise, and assumes shared cultural understanding — no need to explain norms"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Arriving slightly late (6:45–7:00) is preferred over arriving exactly at 6:30 to avoid interrupting host preparations",
+          "Hosts may still be preparing meals or completing rituals (e.g., prayer) at the stated time, making early arrival disruptive",
+          "Calling ahead at 6:15 to signal departure is a culturally appropriate and expected gesture",
+          "Texting to inform of traffic delays is appreciated and reflects mindfulness without over-explanation",
+          "The emphasis on host comfort and situational awareness over rigid punctuality aligns with Malaysian cultural values",
+          "Small gifts (tea, fruit basket) are appreciated but not mandatory; presence is valued most"
+        ],
+        "issues": [
+          "Minor: The use of 'Auntie' as a term of endearment is accurate, but could be more regionally specific (e.g., 'Aunty' is common in Malay and Chinese communities, but 'Auntie' may sound slightly more English-influenced; however, this is acceptable in informal urban Malaysian English)",
+          "Slight overgeneralization: The example assumes a single dominant cultural norm, but does not acknowledge that regional or ethnic variations (e.g., Chinese Malaysian families expecting stricter punctuality during festive occasions) are part of the broader cultural context — though this is not a major flaw given the focus on a single household scenario"
+        ],
+        "suggestions": [
+          "Include a brief, natural mention of cultural variation (e.g., 'Unlike some Chinese families who like everyone on time for Lunar New Year, Auntie Salmah’s more relaxed — she’d rather you not rush in before the rice is done') to subtly reinforce cultural nuance without breaking immersion",
+          "Consider adding a subtle cue about gendered expectations (e.g., 'She might still be in her dressing room' references modesty norms, which could be made slightly more explicit in context, though it’s already implied and appropriate)",
+          "Ensure future examples reflect diverse household types (e.g., urban vs. rural, different ethnic groups) to avoid reinforcing a monolithic view of Malaysian culture"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Malaysian culture. Represent the values and lived experience of Malaysian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m visiting Auntie Salmah’s house in Petaling Jaya this Sunday for lunch. She said around 1:30, but I’m not sure if I should aim to be there exactly at 1:30 or a bit later. She’s been preparing the nasi lemak and sambal for ages, so I don’t want to show up too early and catch her in the middle of something."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, good thinking — don’t rush in at 1:30 sharp. A bit late is better here. Just aim to be there by 1:45 at the latest. She’ll be happy you’re there, and you won’t interrupt her final touches. If you’re worried, send her a quick message around 1:20 saying you’re on your way — that way she knows you’re not lost or stuck in traffic."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I was also wondering — is it okay if I arrive around 2:00? I’ve got a quick errand at the pasar pagi first, and the traffic from Damansara might be bad."
+            },
+            {
+              "role": "assistant",
+              "content": "Two o’clock’s fine — she’ll be used to guests arriving a bit after the clock. Especially since it’s a weekend lunch, not a formal visit. Just give her a quick call or WhatsApp before you leave the pasar to say you’re heading over. She’ll appreciate the heads-up, and it keeps things smooth for everyone."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And should I bring anything? I brought a bottle of syrup last time, but she said she didn’t need it."
+            },
+            {
+              "role": "assistant",
+              "content": "No need to overthink it — just being there is the main thing. If you want to bring something, a small fruit basket or a pack of tea would be nice, but don’t stress. She’ll be glad you came, especially with the weather being so hot. And if you’re helping with the table later, that counts too."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — I’ll bring a few mangoes from the market. I’ll also message her at 1:20, just to be safe. I don’t want to be one of those guests who shows up at 1:15 and catches her still in her slippers, stirring the sambal."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly — that’s the right move. She’ll be in her flow by then, and you’ll arrive just in time to enjoy the meal without making her feel rushed. That’s how it’s done in the family way."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Arriving slightly late (1:45–2:00) is culturally acceptable and preferred for informal family visits in Malaysia",
+          "Avoiding arrival too early (e.g., 1:30) to respect the host’s preparation time and privacy",
+          "Proactively informing the host of arrival via WhatsApp or call (e.g., at 1:20) is a common and expected practice",
+          "The use of local references like 'pasar pagi', 'nasi lemak', 'sambal', and 'Petaling Jaya' grounds the scenario in authentic Malaysian context",
+          "Informal, warm tone with subtle cues of familial familiarity (e.g., 'Auntie Salmah', 'she’ll be happy you’re there') reflects natural Malaysian social interaction",
+          "Emphasis on situational awareness and host comfort over strict punctuality, consistent with cultural values of harmony and thoughtfulness",
+          "Cultural expectation of not bringing gifts unless genuinely desired, and the idea that presence is the main gift",
+          "Implicit understanding that traffic and personal errands are legitimate reasons for slight delays, without needing to justify excessively"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Arriving slightly late (1:45–2:00) is preferred over arriving on time for informal family visits",
+          "Avoiding arrival too early to not disrupt host's preparations (e.g., stirring sambal, tidying)",
+          "Communication via WhatsApp or call to confirm arrival is expected and appreciated",
+          "Host comfort and harmony are prioritized over strict punctuality",
+          "Small gifts like fruit or tea are welcome but not obligatory",
+          "Informal, familial settings allow for flexibility in timing, especially on weekends",
+          "The concept of 'family way' implies shared, unspoken cultural norms"
+        ],
+        "issues": [
+          "Minor: The phrase 'she’ll be in her flow by then' is slightly abstract but acceptable in natural speech; could be slightly more grounded in everyday Malaysian English (e.g., 'she’ll be settled in' or 'she’ll be ready')",
+          "Slight risk of overgeneralization: While the example correctly reflects common norms, it doesn’t acknowledge regional or ethnic variations (e.g., Chinese Malaysian families may expect stricter timing during festive events). However, since the context is clearly a Malay family in Petaling Jaya, this is not a critical flaw."
+        ],
+        "suggestions": [
+          "Consider adding a subtle nod to regional or ethnic nuance in a future version, e.g., 'For a Chinese family during Chinese New Year, it might be different — but for Auntie Salmah’s, this is just how it’s done.'",
+          "Replace 'in her flow' with a more common phrase like 'settled in' or 'ready to welcome guests' to increase linguistic authenticity",
+          "Include a brief mention of calling ahead for formal visits to reinforce the broader cultural practice of communication, even if not needed here"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 19,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

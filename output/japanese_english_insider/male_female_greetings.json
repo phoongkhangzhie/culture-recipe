@@ -1,0 +1,116 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Greetings Between Men and Women",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Norms governing cross-gender greetings, including appropriate physical contact and verbal forms of address",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting a senior female designer at a Tokyo creative studio tomorrow—first time, no prior contact. Should I offer a handshake?"
+            },
+            {
+              "role": "assistant",
+              "content": "No handshake. Just a gentle bow—about 15 degrees, hands at your sides, back straight. Keep your gaze lowered. Say 'Hajimemashite.' Use -san only if she introduces her name first."
+            },
+            {
+              "role": "user",
+              "content": "What if she doesn’t bow back right away? Should I say something?"
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t speak. A quiet pause is natural. Hold your bow until she responds. If she nods or returns a slight bow, that’s enough. Match her depth. Eyes stay down—no need to fix your gaze."
+            },
+            {
+              "role": "user",
+              "content": "After the meeting, we’re near the elevator and she says 'Otsukaresama desu.' Should I reply the same?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—'Otsukaresama desu' is perfect. A small nod or light bow. Stay just behind or slightly to the side if walking together. First names come only after she uses yours. Watch her cues."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—how should I stand during the bow? I don’t want to seem stiff."
+            },
+            {
+              "role": "assistant",
+              "content": "Keep your back straight, shoulders relaxed, hands at your sides. The bow comes from the waist—no shifting. The quiet moment is part of the respect—no need to rush."
+            },
+            {
+              "role": "user",
+              "content": "And if she’s in a traditional studio, should I be more careful with how I respond to her bow?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially in Kyoto or older studios. Her bow may be quiet, with eyes lowered, a slight tilt. Unless she is clearly senior or in a ceremonial role, matching her depth is safest—deep bows are reserved for high status or formal occasions. Her response will guide the rhythm—trust her cues, not assumptions. No touching—never a tap, even light. Let silence speak. If she uses your name, always add -san. The moment unfolds without words."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Bowing depth reflects respect and social context without gendered overcompensation",
+          "Handshakes are avoided in formal or unfamiliar settings; bowing is standard",
+          "Verbal address uses -san unless the relationship is close or status is clearly established",
+          "The quiet moment in greeting is part of respect—no need to rush or overperform",
+          "Matching the other person’s cues is more important than assuming posture based on gender",
+          "Seniority and role (e.g., ceremonial) determine bow depth, not gender alone",
+          "Women have agency in setting the tone of interaction—observe and respond naturally"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Avoidance of handshakes in formal Japanese settings",
+          "Use of bow (ojigi) as standard greeting with appropriate depth and posture",
+          "Importance of matching bow depth to the other person’s level of formality",
+          "Use of 'Hajimemashite' for first meetings",
+          "Use of '-san' as a neutral honorific in professional settings",
+          "No use of personal pronouns in initial interactions",
+          "Non-verbal cues (gaze, posture, timing) as key components of respect",
+          "Silence and pausing as culturally appropriate during greetings",
+          "No physical contact, including light touches",
+          "Response to 'Otsukaresama desu' with matching phrase and minimal gesture",
+          "Hierarchy and status awareness in bowing depth and naming conventions",
+          "Sensitivity to context (e.g., traditional studios, Kyoto vs. Tokyo)"
+        ],
+        "issues": [
+          "Minor overgeneralization in the final response: 'Her response will guide the rhythm—trust her cues, not assumptions' could imply a level of interpretive burden on the male participant that may not reflect the shared cultural understanding. In reality, both parties are expected to follow established norms, not decode subtle signals.",
+          "The phrase 'Let silence speak' is poetic but slightly abstract for a training example; it may mislead models into treating silence as performative rather than normative."
+        ],
+        "suggestions": [
+          "Replace 'Let silence speak' with 'Silence is part of the ritual—no need to fill it with words.' This maintains authenticity while being more precise for training.",
+          "Clarify that bowing depth is not determined by gender but by status, formality, and context—emphasize that both men and women follow the same norms, avoiding any implication that men must 'adjust' their behavior more than women.",
+          "Include a brief mention of the role of the environment (e.g., traditional studio vs. modern office) in shaping expectations, to reinforce contextual sensitivity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "International Financial Alignment",
+    "category": "Institutional Norms > Regulation & Policy > Financial Market Rules",
+    "description": "Degree to which the financial system adheres to international standards such as Basel III, IFRS, and FATF recommendations",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m a small business owner in Chiang Mai running a boutique eco-lodge. We’re looking to attract foreign investors, but I’m worried about how our financial reporting will be perceived internationally. I’ve heard Thailand follows IFRS, but I’m not sure how strict the rules are in practice, especially for smaller businesses like ours."
+            },
+            {
+              "role": "assistant",
+              "content": "You're right to be thoughtful—Thailand has fully adopted IFRS for listed companies since 2008, and many private firms, especially those aiming for international credibility, now follow it voluntarily. While not mandatory for small businesses, using IFRS makes your financials more transparent and easier for foreign investors to understand. The Bank of Thailand also enforces Basel III standards in the banking sector, which strengthens the overall system’s stability. But here’s what matters most: in Thai business culture, compliance isn’t just about ticking boxes—it’s about building trust through consistency, transparency, and ethical conduct. That’s why investors often value not just the numbers, but the integrity behind them."
+            },
+            {
+              "role": "user",
+              "content": "That’s reassuring. But I’ve also heard about Thailand’s past issues with money laundering, especially in real estate. I don’t want our lodge to be seen as part of that risk. How can we show we’re compliant without seeming too rigid or foreign?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a very real concern—and a smart one. In 2019, the FATF did flag Thailand due to vulnerabilities in real estate and cash-heavy sectors. But the response wasn’t just top-down—it involved collaboration across government, private sector, and civil society. Local banks, real estate associations, and even temple networks joined financial literacy campaigns. The emphasis wasn’t on punishment, but on restoring trust through shared responsibility. Today, Thailand’s AML framework is much stronger, and the country was removed from the FATF list in 2022. For your lodge, stick to formal banking channels, keep clear records, and avoid large cash transactions. When sharing your approach with investors, frame it not as compliance, but as part of your community commitment—ethical, consistent, and rooted in local values."
+            },
+            {
+              "role": "user",
+              "content": "I see. I’ve been using a local savings group called *krob krua* for staff bonuses and community projects. It’s informal, but everyone trusts it. Should I be concerned that this might raise red flags with international auditors?"
+            },
+            {
+              "role": "assistant",
+              "content": "Like many in northern Thailand, your *krob krua* is a trusted group where members contribute monthly to support shared goals—like staff bonuses or community projects. It’s a reflection of deep-rooted values like reciprocity and collective care. For audit purposes, it’s wise to keep it small-scale and transparent. You don’t need to formalize it legally, but documenting it internally as a 'staff and community support initiative' with clear rules helps. Avoid large cash flows or transactions that could trigger AML scrutiny. Importantly, this isn’t about erasing culture—it’s about aligning informal strength with formal clarity. Many international auditors appreciate this balance: it shows both cultural authenticity and responsible governance."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. One last thing—when I meet foreign investors, I usually start with tea and small talk. But I’ve been told they might want quick, technical answers. How do I balance relationship-building with efficiency?"
+            },
+            {
+              "role": "assistant",
+              "content": "This reflects a common Thai approach to business—where trust is built through time and presence. In Chiang Mai, especially in community-based tourism, this rhythm is deeply valued. Starting with tea and conversation isn’t delay—it’s strategy. Investors may expect speed, but they also value stability, trust, and sincerity. By taking a few moments to connect, you’re not slowing down—you’re building the foundation for long-term partnership. Once trust is established, you can present your financials clearly and confidently. Many international partners actually appreciate this approach because it shows emotional intelligence, cultural awareness, and a calm, steady presence—what we call *jai yen*. The real alignment isn’t just in following IFRS or Basel III—it’s in showing that your business is both technically sound and culturally grounded. That’s what earns lasting trust."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Full adoption of IFRS for listed companies since 2008",
+          "Implementation of Basel III standards by the Bank of Thailand",
+          "FATF designation in 2019 and subsequent remediation by 2022",
+          "Use of temple-based and community-driven financial literacy initiatives",
+          "Cultural emphasis on trust, integrity, and moral responsibility (*karma* in practice)",
+          "Existence and legitimacy of informal financial systems like *krob krua*",
+          "Value of relationship-building (*krasue*, *jai yen*) in business interactions",
+          "Coexistence of formal compliance and informal, trust-based financial practices"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'Thai business culture' as uniformly prioritizing relationship-building; some urban or export-oriented firms may prioritize efficiency more heavily, though this is contextually nuanced and acceptable here.",
+          "The term 'sawatdee' is incorrectly used in the research context to describe community lending circles—this appears to be a conflation with the greeting. However, the example correctly uses *krob krua*, so no harm is done in the example itself."
+        ],
+        "suggestions": [
+          "Consider adding a brief note about regional variation—e.g., that while Chiang Mai values relationship-building, larger Bangkok-based firms may operate with more procedural formality, to reinforce nuance.",
+          "In future examples, consider including a subtle mention of how digital finance (e.g., PromptPay) is increasingly bridging informal and formal systems, reflecting modern integration.",
+          "To further enhance authenticity, include a localized phrase like 'sawasdee krap' in the final response, even if only in context, to reflect linguistic fluency without overuse."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 11,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

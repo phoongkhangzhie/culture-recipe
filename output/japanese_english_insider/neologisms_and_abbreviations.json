@@ -1,0 +1,102 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Neologisms and Abbreviations",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Fixed Expressions in Language",
+    "description": "New words, slang, and abbreviations that have emerged in contemporary usage, often driven by technology and pop culture",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m planning a surprise for Rina—she’s been talking nonstop about that new anime, and I want the vibe to feel like ‘sekai no hoshi,’ you know? Like she’s the quiet center of something special. But I’m stuck on how to word the invite without sounding too much like a fanfic. Any ideas?"
+            },
+            {
+              "role": "assistant",
+              "content": "Keep it soft. Just: ‘Rina. Tonight. 7. No need to ask why. Just come. We’ll figure it out together.’"
+            },
+            {
+              "role": "user",
+              "content": "Love that. Should I drop a hashtag? Like #RinaNoHoshi? Or would that ruin the mood?"
+            },
+            {
+              "role": "assistant",
+              "content": "If you post it, let it be quiet. A single frame, dim light, her silhouette. #RinaNoHoshi—just a whisper. No explanation. No proof."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And for the setup—should I go full pastel, or keep it minimal? She’s not loud, but she loves the little things."
+            },
+            {
+              "role": "assistant",
+              "content": "Pastel, but only in the light. A few strings. One paper lantern. Like the kind that flickers when no one’s watching. The kind that doesn’t need to be seen to be felt."
+            },
+            {
+              "role": "user",
+              "content": "Perfect. And if she walks in and says ‘nande?’—should I just smile and say ‘mada mada’?"
+            },
+            {
+              "role": "assistant",
+              "content": "Just look at her. A beat. Then a small smile. Let the silence do the work."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "kawaiso",
+          "mada",
+          "kakko",
+          "kuromi",
+          "himawari",
+          "sekai no hoshi",
+          "nande?",
+          "mada mada"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "Use of 'sekai no hoshi' as a poetic, self-idealizing term for a beloved person, reflecting online fandom culture and identity expression",
+          "Natural integration of 'nande?' to convey mild surprise or confusion, consistent with Japanese high-context communication",
+          "Use of 'mada mada' as a non-verbal, restrained response reflecting cultural values of indirectness and emotional restraint",
+          "Emphasis on silence, subtlety, and ambient atmosphere (e.g., flickering lanterns, dim light) as markers of emotional depth",
+          "Preservation of cultural nuance through implication rather than explanation, aligning with Japanese communication norms"
+        ],
+        "issues": [
+          "The hashtag '#RinaNoHoshi' is presented in English script, which is inconsistent with authentic Japanese digital culture where such hashtags are typically written in Japanese or katakana (e.g., #りなのほし), though this is a minor issue given the English-language format of the example",
+          "While 'mada mada' is used correctly in context, the assistant's final response does not explicitly acknowledge the abbreviation's cultural weight—this could be strengthened by embedding a subtle cultural cue (e.g., a pause, a glance, or a soft tone description) to reinforce its implicit significance"
+        ],
+        "suggestions": [
+          "Replace '#RinaNoHoshi' with a more culturally grounded variant like '#りなのほし' or '#RinaNoHoshi' in katakana to better reflect real-world Japanese social media usage",
+          "Enhance the assistant's final response with a sensory or emotional descriptor (e.g., 'Let the silence hang—just long enough for her to feel it') to deepen the cultural authenticity of 'mada mada' as a culturally resonant pause",
+          "Consider including a brief, natural reference to a shared cultural artifact (e.g., a specific anime, song, or festival) to ground the neologism in a lived context, without breaking the implicit mode"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

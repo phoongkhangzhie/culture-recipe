@@ -1,0 +1,258 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Culturally Sensitive Topics",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "Subjects that are considered taboo, divisive, or inappropriate to raise in casual social conversation",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning a small dinner party at my apartment in Lagos for some friends from work. I want to make it warm and welcoming, but I’m not sure what topics to talk about. I don’t want to accidentally offend anyone."
+            },
+            {
+              "role": "assistant",
+              "content": "Creating warmth in Nigerian gatherings begins with shared joy and quiet respect. Start with light, universal topics—food, music, local festivals, or even the weather. For example, ‘This rainy season always brings back memories of my mum’s pepper soup!’—personal but safe.\n\nAvoid income, marital status, religion, politics, or ethnic labels. If someone mentions their child, say, ‘How old is your little one? They must be a delight!’—but don’t press further.\n\nAnd remember: silence isn’t awkward—it’s respectful. A smile, a nod, or a gentle shift to ‘What’s your favorite Nigerian movie?’ keeps things flowing without pressure."
+            },
+            {
+              "role": "user",
+              "content": "What if someone brings up religion? I know some of my coworkers are Christian, others Muslim. I don’t want to seem disrespectful."
+            },
+            {
+              "role": "assistant",
+              "content": "In mixed-faith settings, keep it light and affirming. If someone mentions fasting or church, respond with warmth: ‘That’s admirable—your dedication is inspiring.’\n\nNever ask about prayer routines, conversions, or religious practices. Even phrases like ‘You’re so spiritual’ can feel like judgment.\n\nInstead, use a shared value: ‘We are all one people, no matter our beliefs.’ This is a common, unifying phrase across Nigeria. Let elders or senior colleagues guide the tone if needed—they often help keep the mood harmonious."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about mentioning where people are from? I know we’re from different parts of Nigeria—some from the North, some from the South."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, this requires care. You can mention regional dishes—‘I love your egusi soup, it reminds me of my aunt’s from Enugu’—but always with humility and appreciation, not comparison.\n\nNever label people by tribe—avoid assumptions like ‘You’re Hausa, so you must be…’ or ‘Igbo people are always so loud!’—those are stereotypes that can hurt, even if meant as jokes.\n\nAnd be mindful of history. The Biafra war still carries emotional weight for many in the South. While you don’t need to bring it up, acknowledging shared joy—‘Whether it’s a wedding in Kano or a naming ceremony in Owerri, the joy feels the same—family and laughter are universal’—builds unity without drawing lines.\n\nAlso, pay attention to non-verbal cues. A quiet person might be reflecting, grieving, or simply reserved. In those moments, a simple ‘I’m glad you’re here’ can mean more than any topic. Listening is often more powerful than speaking."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Avoiding direct discussion of religion in mixed-faith settings to prevent offense",
+          "Not labeling individuals by ethnic or tribal identity in casual conversation",
+          "Using inclusive phrases like 'We are all one people, no matter our beliefs' to affirm unity",
+          "Acknowledging regional diversity in traditions (e.g., weddings, naming ceremonies) without oversimplifying",
+          "Recognizing silence and stillness as culturally respectful, not awkward",
+          "Prioritizing listening over speaking, especially when someone appears withdrawn",
+          "Using non-verbal cues (tone, body language, eye contact) as key indicators of comfort and emotional state",
+          "Referring to regional foods and customs with humility and appreciation, not comparison",
+          "Avoiding historical references (e.g., Biafra war) unless in safe, private, or academic contexts"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Avoidance of direct discussion on religion, politics, and ethnicity in mixed settings",
+          "Use of indirect expressions for sensitive topics (e.g., humor about government)",
+          "Respect for personal privacy regarding income, marital status, and family matters",
+          "Sensitivity to historical trauma (e.g., Biafra war) and emotional weight of ethnic identity",
+          "Value placed on shared joy, silence, and non-verbal respect in social interaction",
+          "Appropriateness of regional food references as safe conversation starters",
+          "Use of unifying phrases like 'We are all one people' to foster harmony",
+          "Caution against stereotyping and tribal labeling"
+        ],
+        "issues": [
+          "Minor risk in the phrase 'You’re Hausa, so you must be…' being presented as a stereotype to avoid—while accurate, the example could be misinterpreted as overgeneralizing if not carefully contextualized in training data",
+          "Slight overgeneralization of 'Igbo people are always so loud!' as a stereotype—though clearly framed as something to avoid, it may reinforce the very stereotype it warns against if used in isolation"
+        ],
+        "suggestions": [
+          "Replace the hypothetical stereotype examples with more nuanced phrasing, e.g., 'Avoid making assumptions based on regional origin, such as implying someone’s personality or behavior based on their ethnic background.'",
+          "Include a brief note on the importance of listening and observing non-verbal cues, especially in intergenerational or inter-ethnic gatherings, to reinforce the cultural value of restraint and respect",
+          "Add a subtle mention of regional diversity within Nigeria (e.g., Northern Nigeria includes Hausa, Fulani, Kanuri) to avoid homogenizing ethnic identities"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to host a small dinner party at my apartment in Lagos next weekend. I want to make it welcoming for my friends from different backgrounds—some are Christian, some Muslim, and a few are from the North and South. What should I avoid saying or doing to keep things smooth?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful of you—hosting across religious and regional lines requires care. Avoid mentioning religious holidays, prayers, or conversions, even casually. For example, don’t say things like ‘I’m so grateful for my church this week’ or ‘My cousin just converted to Islam’ unless someone brings it up first. Instead, focus on shared values like family, food, and respect."
+            },
+            {
+              "role": "user",
+              "content": "What about politics? One of my friends is a political analyst, and I’m worried we might get into a debate about the upcoming election."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, politics is a minefield in casual settings. Even if your friend is a professional, it’s best to steer clear. If the topic comes up, respond with gentle humor or a proverb—like ‘The river flows where the wind blows’—to acknowledge tension without taking sides. You can say, ‘Let’s talk about the weather instead—this heat is unbearable!’ to pivot naturally."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about personal questions? I know some people get uncomfortable if you ask about money or marriage. Should I just avoid all personal topics?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not all personal topics—just the sensitive ones. You can ask about health, children, or work in general terms: ‘How’s your little one doing?’ or ‘Are you enjoying your new job?’ But avoid direct questions like ‘How much do you earn?’ or ‘Why don’t you have kids yet?’ Those feel intrusive. Instead, use indirect praise: ‘You’ve been blessed with so much joy lately!’"
+            },
+            {
+              "role": "user",
+              "content": "And what if someone brings up a controversial topic—like the Biafra war or a recent scandal involving a government official?"
+            },
+            {
+              "role": "assistant",
+              "content": "If that happens, stay calm and shift focus. You might say, ‘I’ve heard stories from elders about how hard things were—let’s hope we continue to grow together.’ Or, ‘This meal brings so many memories—let’s enjoy it together.’ This acknowledges the past without reopening wounds. Remember: silence, respectful listening, and gentle redirection are powerful tools. If someone shares a personal story tied to trauma, simply listen with presence—no need to fix it. That’s often the deepest form of respect."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Avoiding direct religious comparisons or proselytizing in mixed-faith settings",
+          "Steering clear of political affiliations and sensitive national debates in casual gatherings",
+          "Using indirect language or humor to navigate tension around politics and history",
+          "Respecting personal boundaries by avoiding questions about income, marital status, or family finances",
+          "Acknowledging historical trauma with care and humility, using phrases that reflect shared hope rather than oversimplified closure",
+          "Practicing silence and attentive listening when someone shares a painful or personal story",
+          "Using food as a unifying symbol without reinforcing regional culinary rivalries (e.g., referring to 'the meal' instead of 'jollof rice')"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Avoiding direct religious discussion in mixed-faith settings",
+          "Using humor or proverbs to deflect political debate",
+          "Indirect references to sensitive historical events like the Biafra war",
+          "Avoiding intrusive personal questions about income and marriage",
+          "Emphasizing shared values like family, food, and respect",
+          "Using silence and attentive listening as forms of respect",
+          "Recognizing regional and ethnic diversity across Nigeria"
+        ],
+        "issues": [
+          "Minor risk of oversimplifying regional dynamics—North/South binary is common but not exhaustive; some nuances about ethnic identities (e.g., Edo, Tiv, Fulani) are underrepresented",
+          "The phrase 'Let’s hope we continue to grow together' is slightly generic and could be strengthened with a more culturally resonant idiom (e.g., 'We must learn from the past and walk forward as one')"
+        ],
+        "suggestions": [
+          "Incorporate a more specific Nigerian proverb or idiom relevant to reconciliation or unity (e.g., 'A single drum cannot make a song' or 'Unity is strength') to enhance authenticity",
+          "Acknowledge that while general guidance is useful, local variations exist—suggesting the host observe subtle cues from guests can deepen cultural responsiveness",
+          "Add a brief note about the importance of food as a neutral, unifying element—highlighting how Nigerian meals often transcend religious and ethnic lines"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning a small gathering at my cousin’s house in Lagos for her birthday. She’s a Christian, and I want to make it special. Should I include a prayer or religious message during the event?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful of you. In Lagos, where people from many faiths live together, it’s best to keep the event inclusive. Instead of a formal prayer, you could ask a respected elder or family member to offer a brief, general blessing—something like, 'May God bless this gathering with joy and unity.' This way, it feels warm and respectful without centering one faith over others. Many families here use such gentle expressions to honor spirituality without drawing attention to differences."
+            },
+            {
+              "role": "user",
+              "content": "What about food? I know some people are Muslim and others Christian—should I avoid pork entirely?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s often best to avoid pork in mixed gatherings to prevent discomfort, though some Muslim families may consume it privately. When in doubt, opt for beef, chicken, or plant-based dishes like moi moi, amala with ewedu, or plantain and beans. If you do include meat, label it clearly—beef or chicken—and avoid pork unless you’re certain everyone is comfortable with it. It’s not about rules—it’s about care and respect for different sensitivities."
+            },
+            {
+              "role": "user",
+              "content": "One of the guests is a close friend who recently got divorced. Should I mention it or avoid talking about relationships?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s best to avoid any direct reference to her marital status. In Nigerian culture, personal family matters like divorce are private and rarely discussed in public—even among friends. Focus on light, positive topics: the weather, the food, her children if she has them, or a shared memory. If she brings it up, listen with empathy, but don’t push. A simple, 'I’m glad you’re here today' carries more warmth than any question."
+            },
+            {
+              "role": "user",
+              "content": "And what if someone jokes about how corrupt politicians are? Is that okay to laugh at?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s a common but delicate situation. Nigerians often use humor to cope with political frustration—jokes about 'government officials who eat money' or 'cars that run on air' are widespread and usually safe because they’re general and shared. But in some communities, especially in the North, even indirect political humor can be sensitive due to strong views on authority and governance. Always consider your audience. If the joke is light and inclusive, a quiet chuckle is fine—but avoid initiating it yourself. Let the mood guide you, and remember: what’s funny in one place might not be in another."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Avoiding pork in mixed gatherings to prevent discomfort despite private consumption by some Muslim families",
+          "Using general blessings instead of formal prayers in multi-faith settings",
+          "Avoiding direct mention of personal matters like divorce in public social settings",
+          "Exercising caution with political humor, especially in northern Nigerian contexts",
+          "Prioritizing inclusivity and emotional safety over cultural assumptions",
+          "Recognizing regional variation in sensitivity around politics and public discourse",
+          "Using light, indirect humor to discuss systemic issues without targeting individuals or groups"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Avoiding direct religious proselytizing in mixed-faith settings",
+          "Using inclusive, general blessings instead of faith-specific prayers",
+          "Avoiding pork in mixed religious gatherings as a gesture of respect",
+          "Labeling food clearly to accommodate dietary restrictions",
+          "Treating personal matters like divorce as private and not to be discussed openly",
+          "Using humor to indirectly address political frustration, with awareness of regional sensitivity",
+          "Recognizing that political humor varies by region and audience"
+        ],
+        "issues": [
+          "Minor risk in suggesting 'government officials who eat money' as universally safe—this phrase, while common, may be considered too blunt in some conservative or Northern Nigerian contexts; a more cautious phrasing could acknowledge regional variation more explicitly",
+          "The phrase 'many families here use such gentle expressions' could be slightly overgeneralized; it would be stronger to specify 'in many urban, multi-faith Nigerian households' to reflect geographic and social nuance"
+        ],
+        "suggestions": [
+          "Replace 'government officials who eat money' with a more contextually cautious example like 'jokes about public officials and empty promises' to reduce risk of offense in conservative communities",
+          "Refine the generalization about family practices by specifying 'in urban, diverse settings like Lagos or Abuja' to reflect regional variation in cultural norms",
+          "Add a brief note about the importance of observing nonverbal cues—such as laughter or silence—when assessing whether political humor is appropriate"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Traditional Music and Dance",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Art and Entertainment",
+    "description": "Indigenous and traditional musical styles, instruments, and dance forms as expressions of cultural heritage",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "My cousin is getting married next month in Ibadan, and her family wants to include a traditional Yoruba dance in the ceremony. I’m not from the Yoruba community, but I’d like to participate meaningfully. Can you help me understand what’s expected and how I can prepare?"
+            },
+            {
+              "role": "assistant",
+              "content": "Of course. What your cousin’s family is inviting you to is a cherished pre-wedding gathering—often called *Igba Odo* in many Yoruba communities, though some families may use local or familial names. It’s a joyful, communal celebration where the bride is honored with music, drumming, blessings, and affirmations. There’s no single ‘correct’ name across all families, so if your cousin’s family uses a different term, follow their lead. The spirit of the event is what matters most: to celebrate the bride’s journey and her place in the family and community."
+            },
+            {
+              "role": "user",
+              "content": "What should I wear? And how do I know when to move or clap?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wear something vibrant—like a red, green, white, or gold *iro and buba*, or a simple *agbada*. If you’re unsure, ask the *Iyalode* (the senior woman organizing the event)—she’ll guide you on the color theme. For movement: walk gently in a circle, sway with the rhythm, and follow those around you. Clap when the drumming begins, especially when the lead drummer calls out. There’s no need to perform perfectly—your presence and willingness to join are what truly matter."
+            },
+            {
+              "role": "user",
+              "content": "Will there be live music? And is there a risk I might do something culturally inappropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—live drumming is central. You’ll hear *dùndún* drums, known as 'talking drums' because they mimic Yoruba speech, carrying proverbs, blessings, and stories through rhythm. Each beat has meaning—some mark greetings, others celebrate the bride’s virtues. Other common drums include *sogo* and *kidi*. As for *Bata* drums: they are sacred, used only in spiritual festivals like *Eyo* or *Ijebu Ode*, led by *Babalawo* priests. They are never played at weddings. If you see them, do not touch, mimic, or draw attention—observe quietly. Respect for sacred instruments protects the spiritual integrity of the tradition."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll wear my red *iro*, stay in the circle, and follow the rhythm. I really want to show my support."
+            },
+            {
+              "role": "assistant",
+              "content": "Iwọ ni o jẹ́ ẹni tó wà? *Babalo mi*, may your heart be full and your steps light. When you join the circle, you’re not just dancing—you’re becoming part of a living story. The drum will guide you, and the community will welcome you. And remember: during *Igba Odo*, the bride is symbolically crowned with beads and blessings—her honor is the heart of the ritual. Your presence, with care and humility, will mean more than you know. If in doubt, just ask an elder or organizer—many families love when guests show genuine interest."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Igba Odo as a pre-wedding Yoruba celebration",
+          "Use of vibrant traditional attire (iro and buba, agbada) with color symbolism",
+          "Role of the Iyalode in organizing events",
+          "Importance of communal participation and call-and-response rhythm",
+          "Dùndún drums as 'talking drums' that convey proverbs and stories",
+          "Distinction between secular and sacred drumming (Bata drums used only in spiritual festivals)",
+          "Respect for sacred instruments and protocols (not touching Bata drums)",
+          "Symbolic crown of beads and blessings during Igba Odo",
+          "Use of Yoruba phrases like 'Iwọ ni o jẹ́ ẹni tó wà?' and 'Babalo mi'",
+          "Emphasis on humility, presence, and asking elders when uncertain"
+        ],
+        "issues": [
+          "Minor ambiguity in the description of 'Igba Odo'—while widely recognized, some families may use alternative terms; however, this is acknowledged by the assistant, so it's not a critical error.",
+          "The assistant assumes the event is in Ibadan, but does not clarify that the specific customs might vary slightly by sub-community (e.g., urban vs. rural Ibadan), though this is a minor nuance."
+        ],
+        "suggestions": [
+          "Include a brief note on regional variation within Yoruba traditions (e.g., differences between Ibadan, Oyo, and Ile-Ife customs) to reinforce cultural nuance.",
+          "Add a line about the role of the *Olori Igbeyawo* (bride’s mother or senior female relative) in guiding the ceremony, as she often plays a key role in Igba Odo.",
+          "Consider mentioning the significance of the *Egungun* masquerade in broader Yoruba culture, even if not directly part of the wedding, to subtly reinforce cultural depth."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 11
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

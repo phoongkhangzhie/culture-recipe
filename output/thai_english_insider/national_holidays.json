@@ -1,0 +1,113 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "National Holidays",
+    "category": "Institutional Norms > Geography & Customs > Dates of Significance",
+    "description": "State-designated public holidays commemorating historical, political, or civic milestones",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting Bangkok next week—Chakri Day is on the 6th, and I’d love to go to the Grand Palace. Should I wear something specific? I don’t want to make a mistake."
+            },
+            {
+              "role": "assistant",
+              "content": "Long sleeves, covered shoulders, and closed-toe shoes—yes. A simple long-sleeved shirt with a scarf works perfectly. No shorts, tank tops, or anything too revealing. It’s not just about dress—it’s about showing respect in a sacred space."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll wear something modest with long sleeves and a scarf. What about timing? I heard there’s a royal homage ceremony in the morning."
+            },
+            {
+              "role": "assistant",
+              "content": "The official ceremony at 8:00 AM at the Temple of the Emerald Buddha is for royal family and invited guests only. Public access is limited—most visitors can only observe from the outer courtyards. Keep your voice low, stay still, and avoid stepping into restricted zones. It’s not a performance—it’s a moment of national reverence."
+            },
+            {
+              "role": "user",
+              "content": "I noticed some people were wearing purple and gold too. Is that related?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—purple and gold are colors of the Chakri Dynasty. Many locals wear them today, especially the *pha nung* or *sabai*. It’s not required, but it’s a quiet way of joining the day’s spirit. Even greetings carry more weight—people bow slightly, hands together, as a gesture of shared respect."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure not to point my feet at Buddha images when I visit Wat Phra Chettuphon."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful. Wat Phra Chettuphon is central to Chakri Day—people come here to honor the Emerald Buddha, who symbolizes the continuity and peace of the nation. Especially today, reverence is at its peak. Cover your shoulders, remove your shoes, and move gently. Even small gestures like a soft *wai* carry deeper meaning—this is a day of quiet unity."
+            },
+            {
+              "role": "user",
+              "content": "I saw people pausing near temples around 3 PM—was that part of the observance?"
+            },
+            {
+              "role": "assistant",
+              "content": "That moment of silence happens in December, not today—though people may still pause out of habit or respect. On Chakri Day, the quiet stillness you saw is commonly observed near temples and royal shrines. It’s not formal, but it’s part of the rhythm: a shared moment of reflection. You might see someone bowing, lighting a candle, or just standing quietly. It’s a quiet kind of togetherness."
+            },
+            {
+              "role": "user",
+              "content": "I saw people offering flowers and incense at the temple—this is how it’s always done on days like this, right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Chakri Day is a time for quiet merit-making. Offering flowers, candles, food—these are not just rituals. They’re acts of remembrance, gratitude, and national spirit. Even a simple *wai*, hands pressed together, becomes a shared moment of respect. It’s not about being seen—it’s about being present. And you’ll notice: even casual greetings today carry a deeper *wai*—a little more reverence, a little more pause."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Chakri Day is observed on April 6 with solemn ceremonies at the Grand Palace and Wat Phra Chettuphon",
+          "Traditional Thai attire such as *pha nung* and *sabai* are worn on national holidays",
+          "Purple and gold are associated with the Chakri Dynasty",
+          "Dress code at sacred sites includes long sleeves, covered shoulders, and closed-toe shoes",
+          "Public behavior during ceremonies involves quiet reverence, low voices, and respectful distance",
+          "The *wai* gesture is used with greater reverence during national holidays",
+          "Offering flowers, candles, and food to monks and Buddha images is a core practice on Chakri Day",
+          "The significance of Wat Phra Chettuphon as a spiritual and national center on Chakri Day",
+          "The cultural practice of momentary stillness and reflection near temples is observed"
+        ],
+        "issues": [
+          "The assistant incorrectly attributes the 3:00 PM moment of silence to Chakri Day—this is actually a feature of King’s Birthday (December 5), not Chakri Day. This is a factual error that undermines cultural accuracy.",
+          "The user’s final question about flower offerings is phrased as if it’s a general practice, but the assistant responds as if it’s uniquely tied to Chakri Day without clarifying that such offerings are common on many Buddhist holidays, not exclusively on Chakri Day. This risks overgeneralization."
+        ],
+        "suggestions": [
+          "Correct the mention of the 3:00 PM moment of silence—replace it with a description of Chakri Day’s actual observances, such as the morning royal homage and the quiet, reflective atmosphere throughout the day.",
+          "Clarify that while flower offerings are common on Chakri Day, they are also part of broader Buddhist observances, and frame them as part of a continuous cultural practice rather than a unique ritual of this holiday alone.",
+          "Consider adding a brief mention of the *wai* gesture being more formal and deliberate on national holidays to reinforce the subtle but meaningful shift in everyday behavior."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Business Meeting Follow-Up",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around post-meeting communication, such as follow-up emails, calls, written summaries, or courtesy gifts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "raw": "```json\n{\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"I just wrapped up the meeting with Mr. Adeyemi from Lagos Logistics, and we agreed on the pilot rollout in Port Harcourt. I want to send a follow-up email by tomorrow morning, but I’m not sure how to structure it properly—especially since he’s senior and we’re building this partnership. Can you help me draft something that feels right?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Absolutely. Start with ‘Dear Mr. Adeyemi,’ and open with a warm but respectful thank you—something like, ‘Thank you for the productive discussion today and for sharing your insights on the Port Harcourt rollout.’ Then reference a specific point you discussed, like the warehouse handover timeline or the joint team coordination. Mention the agreed action clearly: ‘As we discussed, I’ll circulate the draft implementation plan by Friday, and I’ll include the proposed schedule for the site visit next week.’ Close with a note of appreciation and forward-looking tone: ‘I truly value this collaboration and look forward to advancing the next steps with your guidance.’ Keep it concise—three short paragraphs max.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"That’s helpful. Should I also send a WhatsApp message after the email? I know he prefers quick calls, but I don’t want to overstep.\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Yes—send a quick WhatsApp the same day, but keep it light and natural. Something like: ‘Hi Mr. Adeyemi, just wanted to thank you again for the meeting today. I’ve sent the email with the action points. I’ll share the draft plan by Friday.’ No need for formality—this is a quick, friendly check-in. He’ll appreciate the promptness without feeling pressured.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"What about a written summary? We covered a lot—timeline, responsibilities, delivery checkpoints. Should I include a bullet-point recap in the email?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Yes, definitely. A bullet-point summary is not just helpful—it’s expected in serious discussions. Include:  \n- Draft implementation plan to be shared by Friday  \n- Site visit tentatively scheduled for Tuesday, 14th (pending confirmation)  \n- Lagos Logistics to provide warehouse access documents by Wednesday  \n- Joint team meeting set for Thursday, 16th at 10 a.m.  \n- Your team to lead coordination with local vendors  \nAdd a closing line: ‘Please let me know if any adjustments are needed before Friday.’ It shows you’re thorough and respectful of his time.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"And what about a small gift? I’ve been thinking of bringing a box of Ota tea when I visit next week—just as a token of appreciation. Is that okay?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"That’s thoughtful—and yes, it’s appropriate, especially if the relationship is moving forward. A modest, locally made gift like a box of Ota tea or a handcrafted notebook with a simple note—‘Thank you for the opportunity to collaborate’—delivered during your next visit is perfectly fine. Just make sure it’s not flashy or expensive. The key is timing: avoid giving it right after the meeting, but a small token later in the process, when rapport is building, is seen as gracious, not transactional. If you’re still unsure, wait until after the first site visit or a successful milestone.\"\n    }\n  ]\n}\n```"
+        },
+        "cultural_elements": [
+          "Draft implementation plan to be shared by Friday  ",
+          "Site visit tentatively scheduled for Tuesday, 14th (pending confirmation)  ",
+          "Lagos Logistics to provide warehouse access documents by Wednesday  ",
+          "Joint team meeting set for Thursday, 16th at 10 a.m.  ",
+          "Your team to lead coordination with local vendors  "
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Follow-up email within 24–48 hours is expected and valued",
+          "Personalized email referencing specific discussion points (e.g., warehouse handover, joint team coordination)",
+          "Clear articulation of agreed actions with deadlines",
+          "Use of respectful but not overly formal tone appropriate to seniority",
+          "Timely WhatsApp message as a courteous follow-up, not intrusive",
+          "Bullet-point summary of action items is appreciated and expected in serious discussions",
+          "Small, modest, locally sourced gift (e.g., Ota tea, handcrafted notebook) is acceptable as a token of appreciation when timed appropriately",
+          "Gifts should be delivered after initial rapport is established, not immediately after meeting",
+          "Hierarchy and deference are respected in communication style"
+        ],
+        "issues": [
+          "Minor risk of over-idealization: the example assumes the recipient (Mr. Adeyemi) will appreciate all follow-up forms equally; in practice, preferences may vary by individual and context. However, this is a minor deviation from the norm and does not constitute a critical error.",
+          "The assistant’s response to the gift question could be slightly more nuanced about regional variations—Ota tea is specific to Ota, Ogun State, and may not be universally recognized as a 'Nigerian' gift; however, it is still a plausible and culturally appropriate choice."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response about checking the recipient’s communication preferences (e.g., some senior Nigerian professionals may prefer email only, while others value WhatsApp), to reflect individual variation within the culture.",
+          "Slightly adjust the gift suggestion to acknowledge that regional identity (e.g., Ota tea) may be contextually appropriate but should be chosen with awareness of the recipient’s background—e.g., if Mr. Adeyemi is from the North, a different local product might be more fitting.",
+          "Consider including a subtle reminder about avoiding excessive formality in WhatsApp messages to maintain authenticity in digital communication."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I just wrapped up the meeting with Mr. Adeyemi from Lagos Logistics, and we agreed on the joint distribution pilot in Port Harcourt. I want to send a follow-up email today, but I’m not sure how formal to be—should I include the action points we discussed? Also, is it okay to send a quick WhatsApp message after the email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely send the email today—within the next few hours is best. Mr. Adeyemi values promptness, especially on matters like this. In your email, start with ‘Dear Mr. Adeyemi,’ and mention the specific point about the Port Harcourt pilot we discussed, like how we’d test the warehouse coordination model with three delivery zones. Then list the action items clearly: you’ll share the draft MOU by Friday, and he’ll confirm the local team lead by Wednesday. Keep it polite but not overly stiff—just professional and warm. A short ‘Thank you for your insights today’ goes a long way."
+            },
+            {
+              "role": "user",
+              "content": "Good, that makes sense. Should I also include a bullet-point summary? I know he’s busy, but I don’t want anything to get lost in the flow of the email."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a concise bullet list is excellent—especially for someone like Mr. Adeyemi who handles multiple projects. Keep it clean: one line per point, with clear ownership and deadlines. For example: • Draft MOU shared by: 10th April (you) • Local team lead confirmed by: 8th April (Mr. Adeyemi) • First pilot test scheduled: 15th April. That way, he can scan it in seconds and feel confident nothing’s been missed. And yes—after the email, a quick WhatsApp message like ‘Thank you again for the meeting today. Looking forward to the next steps’ is perfectly appropriate. It shows you’re attentive without overdoing it."
+            },
+            {
+              "role": "user",
+              "content": "Perfect. I’ll send the email now and follow up with WhatsApp later. One more thing—would it be okay to send a small gift after the pilot kicks off? Maybe a box of the new Oshodi Tea blend? I don’t want it to seem like a bribe, just a token of appreciation."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s thoughtful, and yes—sending a modest gift a few days after the pilot starts would be well received, especially if it’s something local and tasteful like the Oshodi Tea. Just make sure it’s not delivered right after the meeting. Wait until you’ve both seen some progress. And when you do send it, include a simple note: ‘A small token of appreciation for the partnership.’ No need to over-explain. The key is timing and humility—no grand gestures. That way, it’s seen as a gesture of goodwill, not obligation."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Prompt follow-up within 24–48 hours is expected and valued",
+          "Emails should be polite, personalized, and reference specific discussion points",
+          "Clear action items with ownership and deadlines are appreciated",
+          "Bullet-point summaries are effective for busy professionals",
+          "WhatsApp messages after email follow-ups are culturally appropriate and courteous",
+          "Gifts are acceptable after progress is made, not immediately after meetings",
+          "Gifts should be modest, local, and accompanied by a humble note",
+          "Hierarchy and respect are reflected in tone and timing of communication",
+          "Timing and humility are critical in gift-giving to avoid perceptions of bribery"
+        ],
+        "issues": [
+          "Minor risk of over-emphasizing 'modest' gift as a universal rule—some high-level Nigerian executives may accept slightly more substantial gifts in certain contexts (e.g., post-deal), though the example correctly frames it as inappropriate immediately after a meeting.",
+          "The use of 'Oshodi Tea blend' is plausible but could be more regionally specific—'Oshodi' is a neighborhood in Lagos, so naming a tea after it may be less widely recognized than a more nationally known brand like 'Kano Tea' or 'Nigerian Premium Tea'. However, this is a minor detail and not a cultural error."
+        ],
+        "suggestions": [
+          "Consider adding a subtle nuance about regional variation: in some parts of Nigeria (e.g., Northern Nigeria), gift-giving norms may be more conservative; however, the current example remains valid for Lagos-based business culture.",
+          "To enhance authenticity, include a brief, culturally grounded phrase like 'as we say in Lagos, timing is everything' when discussing gift timing—this would reinforce insider knowledge without breaking immersion.",
+          "Ensure that all action items in the example reflect realistic Nigerian business timelines (e.g., 'Friday' and 'Wednesday' are plausible, but avoid implying rigid deadlines without context—Nigerian business schedules often allow for flexibility due to logistics or power dynamics)."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "raw": "```json\n{\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"I just wrapped up the meeting with Mr. Adeyemi from Lagos Logistics, and we agreed on the pilot rollout for the southern zone. I want to send a follow-up email by tomorrow morning, but I’m not sure how to structure it properly. He’s quite senior, so I don’t want to come off too casual.\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"You’re right to be thoughtful—Mr. Adeyemi would expect something timely and respectful. Start with ‘Dear Mr. Adeyemi,’ and lead with appreciation: ‘Thank you for the productive discussion today on the southern zone pilot.’ Then briefly reference two specific points you discussed—like the warehouse handover timeline and the joint training session for drivers. That shows you were attentive.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Good point. I’ll include those. Should I also list the action items clearly? I know he likes things spelled out.\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Absolutely. He’ll appreciate clarity. Use bullet points after a short paragraph:  \n- Lagos West warehouse handover: Confirm by Thursday, 10th.  \n- Driver training schedule: Draft to be shared by Friday, 11th.  \n- Joint review meeting: Tentatively set for Monday, 14th.  \nAdd a line like, ‘As discussed, I’ll circulate the draft terms by Friday.’ That reinforces your commitment.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Perfect. Should I send a WhatsApp message too, or is the email enough?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"Send the email first—formal and complete. Then, a quick WhatsApp later in the day: ‘Good afternoon, Mr. Adeyemi. Thank you again for your time today. I’ve sent the follow-up email with the action points and will keep you posted on the draft. Looking forward to our next steps.’ It’s courteous, not pushy, and keeps the door open.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"What about a small gift? I was thinking of sending a box of Oba Akran tea—local, not flashy. Would that be appropriate now?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"That’s thoughtful, but wait a few days after the email. Sending a gift right after the meeting might seem transactional. If the pilot goes well, you could bring it during your next visit or send it with a note like, ‘A small token of appreciation for the trust you’ve placed in our partnership.’ Keep it modest—just like the tea.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Makes sense. I’ll send the email today, WhatsApp tomorrow morning, and hold off on the tea for now. Thanks for walking me through this—it’s exactly what I needed.\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"You’re very welcome. Just remember: prompt, personalized, and respectful is the rhythm here. When you show up consistently like that, trust grows—especially with someone like Mr. Adeyemi.\"\n    }\n  ]\n}\n```"
+        },
+        "cultural_elements": [
+          "Lagos West warehouse handover: Confirm by Thursday, 10th.  ",
+          "Driver training schedule: Draft to be shared by Friday, 11th.  ",
+          "Joint review meeting: Tentatively set for Monday, 14th.  "
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Timely follow-up within 24–48 hours is expected and valued",
+          "Formal email with personalized appreciation and reference to specific discussion points",
+          "Use of bullet points for clarity in action items, especially for senior stakeholders",
+          "Importance of hierarchy and respect in tone, particularly when addressing senior figures",
+          "WhatsApp used as a courteous, non-intrusive follow-up after email",
+          "Gifts are appropriate only after successful outcomes and should be modest and symbolic",
+          "Gifts should not be sent immediately after meetings to avoid appearing transactional",
+          "Emphasis on consistency, attentiveness, and relationship-building through follow-up"
+        ],
+        "issues": [
+          "Minor risk of over-reliance on English-only communication; in real Nigerian business settings, some verbal follow-ups may involve local languages or code-switching (though not required in this context as the example is in English)",
+          "The suggestion to send a gift 'with a note' after a successful pilot could be misinterpreted as implying the gift is tied to performance—should emphasize that it's purely symbolic and not contingent"
+        ],
+        "suggestions": [
+          "Include a brief note in the assistant’s response about the importance of tone consistency across all communication channels—e.g., avoiding overly casual language even in WhatsApp despite its informality",
+          "Consider adding a subtle mention of the role of intermediaries or gatekeepers in Nigerian business networks, such as secretaries or junior staff who may filter messages to senior figures—this could enhance realism in follow-up strategies",
+          "Clarify that while gifts are acceptable, they should never be sent without prior cultural awareness of the recipient’s personal preferences or organizational policies"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

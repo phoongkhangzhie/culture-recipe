@@ -1,0 +1,186 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Socialization During Business Meetings",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "The extent to which small talk and personal interaction are expected as part of a formal business meeting",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting Mr. Linh from the Hanoi branch tomorrow for the first time to discuss the regional distribution plan. I want to make sure I don’t come across as too direct or cold. Should I just jump into the agenda, or is there something I should do first?"
+            },
+            {
+              "role": "assistant",
+              "content": "Start with a quiet, respectful greeting—ask how he’s been, especially if he’s been traveling. A simple ‘Anh Linh khỏe không? Chuyến đi thuận lợi chứ?’ shows care without overstepping. It’s a small gesture that signals you notice him as a person, not just a colleague."
+            },
+            {
+              "role": "user",
+              "content": "Good point. And if he mentions his daughter’s exam results, should I respond right away? She’s in grade 12, right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, but keep it light and warm—just a brief ‘Chúc mừng! Cậu ấy thật thông minh, chắc anh tự hào lắm.’ Don’t ask about scores or school directly. Wait for him to bring it up again. That way, you’re showing you’re listening, not prying."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And the seating—should I wait for him to indicate where to sit, or just take the nearest chair?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always wait. Let him gesture or say ‘Mời anh ngồi’ first. If he doesn’t, stand quietly until he does. That small pause speaks volumes—respect for hierarchy, and patience."
+            },
+            {
+              "role": "user",
+              "content": "And tea? I noticed in past meetings people offer it. Should I offer, or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "As a guest, it’s best not to offer tea—let the host initiate. Your presence is already a sign of respect. If you’re hosting, serve him first with both hands and say ‘Anh uống trước nhé.’ He’ll likely refuse politely, but the gesture matters most."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ll keep it light—just health, family, maybe the Mid-Autumn Festival decorations in the office. That kind of thing?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. The festival is safe—everyone’s talking about it. A quiet comment like ‘Các em nhỏ ở văn phòng làm đèn ông sao thật đẹp, đúng không anh? Chắc là cả văn phòng đang háo hức chuẩn bị cho Tết Trung thu.’ turns observation into connection. No need to lead—just share what you see, and let the moment breathe."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Pre-meeting personal interaction focused on health, family, and shared cultural events like the Mid-Autumn Festival",
+          "Use of honorifics (Anh, Chị) and formal address in professional settings",
+          "Hierarchy-aware behavior: waiting for senior person to indicate seating, offering tea only after invitation",
+          "Indirectness and restraint in personal sharing: responding to personal disclosures without probing",
+          "Silence and patience as signs of respect and attentiveness",
+          "Observation-based small talk (e.g., commenting on festival decorations) as a non-intrusive way to build rapport",
+          "The importance of relational cues (thân tình, tình cảm) over transactional exchanges"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the final assistant turn: 'everyone’s talking about it' assumes universal awareness of the Mid-Autumn Festival in all Vietnamese workplaces, which may not hold true in non-urban or non-traditional corporate settings. However, this is a low-risk assumption given the context of a Hanoi-based business meeting.",
+          "The assistant’s use of Vietnamese phrases (e.g., 'Anh Linh khỏe không? Chuyến đi thuận lợi chứ?') is accurate and natural, but in a real training example, it would be ideal to include a brief English translation in parentheses for model training clarity—though not required if the goal is implicit cultural modeling."
+        ],
+        "suggestions": [
+          "Include a brief, naturalistic variation in the assistant’s response to reflect regional diversity (e.g., a subtle nod to differences between Hanoi and Ho Chi Minh City business norms), to prevent over-simplification of a complex cultural landscape.",
+          "Consider adding a turn where the assistant subtly models silence or pausing after a personal comment—e.g., a pause before responding to a shared story—to reinforce the cultural value of contemplative listening.",
+          "In future examples, include a scenario where the senior person does not initiate personal talk—this would help the model learn that the absence of personal interaction is not a sign of coldness, but a signal to wait and observe."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Anh Minh just mentioned his daughter’s graduation during the meeting. Should I say something about it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — but wait until after the initial greeting. Start with 'Anh Minh, khỏe không ạ?' Then, if the mood feels warm, say quietly: 'Chúc mừng anh, con gái anh thật sự rất đáng tự hào.' Keep it simple. A soft tone shows respect, not performance."
+            },
+            {
+              "role": "user",
+              "content": "Good. How should I open the meeting? I’ve got my slides ready, but I’m thinking about starting with something about the weather."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. A gentle opener like 'Trời hôm nay mát thật, đúng dịp mùa thu Hà Nội' works well — just enough to ground the moment. It’s not small talk; it’s shared presence, a quiet way of saying, 'We’re here together.'"
+            },
+            {
+              "role": "user",
+              "content": "What if someone else starts talking right after? Should I jump in?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait. Especially if it’s Anh Minh or someone senior. A pause isn’t empty — it’s respect. Just nod slightly and say 'Dạ, em cảm nhận được ý anh' or 'Anh nói rất đúng, em thấy rất gần gũi.' That’s enough."
+            },
+            {
+              "role": "user",
+              "content": "And tea? Should I offer it when we sit down?"
+            },
+            {
+              "role": "assistant",
+              "content": "If you’re hosting, yes — pour with both hands, especially for Anh Minh. Don’t wait to be asked. If offered, accept with a slight bow. Refusing can feel like closing the door. If you need to decline politely, say: 'Dạ, cảm ơn anh, em không cần ạ.'"
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll start with the weather, then a quiet word about his daughter after the greeting. I’ll keep the tone light but grounded."
+            },
+            {
+              "role": "assistant",
+              "content": "Notice how Anh Minh smiles when he speaks about her. That’s the moment to respond — not before. Timing is part of respect. When you’re ready, begin with: 'Em xin phép được chia sẻ một vài ý tưởng về dự án...' — and everything will flow naturally. Don’t worry about form. The real currency here is sincerity and rhythm. And remember: don’t mention your own children unless invited. Personal sharing is a gift, not a transaction."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Pre-meeting personal interaction as relational currency rather than idle talk",
+          "Use of indirect, context-sensitive personal remarks (e.g., about daughter’s graduation)",
+          "Importance of timing and non-verbal cues (smiling, pausing, nodding)",
+          "Hierarchy-aware communication: waiting for senior to speak, deferring to them",
+          "Respectful use of honorifics (Anh, chị) and formal address (dạ, ạ)",
+          "Offering and accepting tea as a gesture of respect and inclusion",
+          "Personal sharing as a reciprocal gift, not transactional",
+          "Silence as a sign of respect, not awkwardness",
+          "Weather and seasonal references as culturally appropriate icebreakers",
+          "Avoiding self-disclosure (e.g., mentioning one’s own children) unless invited"
+        ],
+        "issues": [
+          "Minor risk of over-idealizing the 'perfect' response — while accurate, the example presents a near-flawless cultural performance that may not reflect real-world variability (e.g., some Vietnamese professionals may be less formal or more direct).",
+          "The assistant’s final advice ('Don’t worry about form. The real currency here is sincerity and rhythm.') could be misinterpreted by learners as permission to be casual, when in fact the form is still essential — a slight rewording could clarify that form and sincerity are not opposites but co-dependent."
+        ],
+        "suggestions": [
+          "Include a brief note in the system prompt about cultural variation within Vietnam (e.g., urban vs. rural, generational differences) to prevent overgeneralization.",
+          "Slightly rephrase the final line to emphasize that 'sincerity' must be expressed *through* correct form: e.g., 'Don’t worry about form — because true sincerity is expressed through the right form, not in spite of it.'",
+          "Consider adding a follow-up turn where the assistant acknowledges a small misstep (e.g., a user speaking too soon) and models recovery with a culturally appropriate correction, to enhance training robustness."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 3,
+    "examples_produced": 2
+  }
+}

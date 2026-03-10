@@ -1,0 +1,107 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Ethnicity Assumptions",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "The social pitfalls of making assumptions about a person's background, nationality, or identity based on appearance",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping a new colleague from the office in Bandung set up a presentation for the Jakarta regional meeting. She’s very quiet during meetings, always speaks softly, and wears traditional Javanese-style clothes. I’m not sure how to approach her about her background—she’s been here three months and I still don’t know where she’s from."
+            },
+            {
+              "role": "assistant",
+              "content": "Her quietness and attire might suggest Javanese roots, but it’s safer not to assume. Many from across Java, Sumatra, even Sulawesi wear modest, respectful clothing in professional settings. The quietness isn’t always cultural—it could be personality. Just say, 'Anda dari mana?' and let her share on her terms."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I didn’t realize how easy it is to misread someone’s background just from how they carry themselves. I once thought someone with East Asian features and a nama yang terdengar Tionghoa was Chinese-Indonesian, but it turned out they were from Toba Batak, North Sumatra. I felt terrible after."
+            },
+            {
+              "role": "assistant",
+              "content": "That moment stings because it shows how deeply we internalize stereotypes. A nama yang terdengar Tionghoa doesn’t mean Chinese-Indonesian—many Batak, Minang, and Sundanese families have names that sound that way. It’s not about guessing. It’s about *keberagaman*, and respecting that we’re all different, even when we look similar."
+            },
+            {
+              "role": "user",
+              "content": "Yeah, I’ve learned that the hard way. I once asked a colleague from Papua if he spoke Indonesian well—just to be friendly—and he looked surprised. I didn’t mean to offend, but I realized I was projecting this idea that people from outer islands don’t speak the national language fluently. That’s not okay."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That question carries a hidden hierarchy—like fluency is earned, not a right. Many Papuan colleagues are fluent, and their Indonesian is proud, not broken. In *musyawarah*, we listen to the person, not the stereotype. Let them speak first—don’t assume they need to be 'fixed' to belong."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been thinking about how people usually respond when we get it wrong. Like, if someone says, 'Saya Batak, dari Toba, bukan Tionghoa,' is that something that would actually happen in real life?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—gently, with dignity. A colleague might say, 'Saya Batak, dari Toba, bukan Tionghoa,' or 'Saya dari Sumatra, bukan Jakarta.' It’s not about correcting you to shame you—it’s about reclaiming their identity. The real respect is in listening when they say it, without needing to explain further."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "keberagaman",
+          "musyawarah",
+          "nama yang terdengar Tionghoa",
+          "adat",
+          "Saya Batak, dari Toba, bukan Tionghoa",
+          "quietness as cultural trait vs. personality",
+          "fluent Indonesian among Papuan colleagues",
+          "assumptions based on appearance",
+          "respect through listening, not guessing"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "The danger of assuming ethnicity based on appearance in Indonesia",
+          "The cultural norm of *takut pada orang* (respecting the person) as a guiding principle",
+          "The prevalence of Javanese cultural dominance in national discourse",
+          "The sensitivity around Chinese-Indonesian identity and historical trauma",
+          "The misassumption that Papuan colleagues are non-fluent in Indonesian",
+          "The use of indirect, polite questioning like 'Anda dari mana?'",
+          "The importance of *musyawarah* (collective deliberation) and listening without assumption",
+          "The dignity in self-identification such as 'Saya Batak, dari Toba, bukan Tionghoa'",
+          "The reality that names sounding 'Tionghoa' can belong to non-Chinese ethnic groups like Batak"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'quietness' as a Javanese trait—while common, it's not exclusive and could reinforce subtle stereotypes if not contextualized further",
+          "The phrase 'nama yang terdengar Tionghoa' is slightly awkward in Indonesian; a more natural phrasing would be 'nama yang terdengar Tionghoa' or 'nama yang kayaknya Tionghoa', but the meaning is still clear and acceptable in context"
+        ],
+        "suggestions": [
+          "Add a brief mention of regional diversity in naming conventions across Indonesia to reinforce that name-based assumptions are common but flawed",
+          "Include a subtle reference to the concept of *keberagaman* (diversity) as a national value to strengthen the cultural framing",
+          "Consider having the assistant acknowledge that even well-intentioned questions can carry bias, reinforcing the idea that humility and listening are central"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

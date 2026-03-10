@@ -1,0 +1,384 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Year Format",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether years are written in full four-digit form or abbreviated two-digit form in different contexts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm helping my grandmother fill out a form for a government pension application. She's worried about writing the date correctly. The form asks for 'Ngày tháng năm' — should she write '2025' or just '25'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Your grandmother is right to be careful — in official government forms, **four-digit years are mandatory**. She must write 'năm 2025', never 'năm 25'. This is required by Decree 30/2020/ND-CP, which governs all formal documentation. Using '25' could make the form invalid or raise suspicion, even if it’s common in casual chats."
+            },
+            {
+              "role": "user",
+              "content": "But my cousin just texted me saying 'Tết 25' — isn’t that okay? Why is the rule different for forms?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a great observation — and it shows the cultural nuance perfectly. In informal settings like texting or social media, younger people often use '25' for brevity, especially in digital spaces. But government forms, legal documents, and official records are different. They reflect Confucian values of precision, hierarchy, and institutional integrity. A two-digit year like '25' could be confused with 1925 or 2125, which could cause serious delays or rejection. So while 'Tết 25' is perfectly acceptable among friends, the pension form demands full clarity."
+            },
+            {
+              "role": "user",
+              "content": "So if she writes 'Ngày 15 tháng 4 năm 2025', that’s correct?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — exactly. That’s the correct and fully compliant format. Make sure she includes the word *năm* before the year, and uses four digits. It’s not just a formality; it’s a sign of respect for the system and a way to maintain accuracy across generations. Even if she’s used to saying 'năm 25' with family, the form requires the full year. This consistency helps prevent fraud and ensures records are clear for decades."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — I’ll make sure she writes it properly. It’s nice to know the rule isn’t just random, but tied to deeper values."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re very welcome. Yes — this rule reflects more than just paperwork. It’s about dignity, clarity, and collective responsibility. In Vietnamese culture, how we write dates shows how seriously we take truth, order, and respect for authority. That’s why even in the digital age, the full year remains sacred in formal spaces."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Four-digit years are mandatory in formal government contexts",
+          "Decree 30/2020/ND-CP governs official document formatting",
+          "Use of 'năm 2025' is required; 'năm 25' is inappropriate in formal writing",
+          "Informal usage of '25' is acceptable in digital communication among youth",
+          "Generational divide in year format usage",
+          "Cultural values of precision, hierarchy, and institutional integrity underpin formal writing norms",
+          "Historical context of Gregorian calendar adoption and institutional standardization in the 1990s–2000s"
+        ],
+        "issues": [
+          "Minor: The phrase 'even in the digital age, the full year remains sacred in formal spaces' slightly elevates formality to a near-religious tone, which may overemphasize emotional weight for some contexts, though still within acceptable cultural nuance.",
+          "Slight risk of overgeneralizing 'rural elders' as uniformly resistant to informality — while accurate in general, some rural youth also use digital abbreviations, though this is not a major error"
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of regional variation in the assistant’s final response to further reflect the research note’s nuance, though not essential.",
+          "To enhance realism, the assistant could reference a specific example like 'a hospital appointment slip' or 'a university transcript' to reinforce institutional contexts.",
+          "Avoid phrases like 'sacred' in future training examples unless clearly contextualized as cultural metaphor — slightly elevated language may reduce training generalizability"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm helping my grandmother draft a formal letter to the local ward office to request a correction on her household registration. She’s been using 'năm 25' in the date, but I’m not sure if that’s acceptable in official documents. Should I change it to '2025'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—please change 'năm 25' to 'năm 2025' in the formal letter. In official Vietnamese contexts like household registration corrections, government forms, or legal submissions, four-digit years are required by law under Decree 30/2020/ND-CP. Using '25' may be understood informally among family, but it’s considered unprofessional and potentially ambiguous in formal documents. It could even raise questions about legitimacy or attention to detail."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But my younger cousin just sent me a birthday message saying 'Chúc mừng sinh nhật 25!'—is that okay in casual settings?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s perfectly fine in informal contexts. Among friends and younger generations, using '25' for 2025 is common and natural—especially in text messages, social media, or casual greetings. This reflects digital communication trends and generational comfort with brevity. However, it’s important to note that this informality doesn’t extend to official documents, academic submissions, or formal correspondence. The key is context: respect for formality in public or institutional spaces, but flexibility in private, personal exchanges."
+            },
+            {
+              "role": "user",
+              "content": "So if I’m writing an email to my professor about a thesis deadline, should I write 'ngày 15 tháng 4 năm 2025' or can I shorten it?"
+            },
+            {
+              "role": "assistant",
+              "content": "For an email to your professor—especially one about academic work—always use the full year: *ngày 15 tháng 4 năm 2025*. Academic writing in Vietnam, even in digital formats, follows formal standards. Using '25' might be interpreted as careless or disrespectful, particularly in formal or professional academic communication. The full year shows diligence, clarity, and respect for institutional norms. It’s a small detail, but one that reflects your attention to cultural and professional expectations."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.65,
+        "cultural_elements_verified": [
+          "Four-digit years (2025) are mandatory in formal contexts like government forms and legal documents",
+          "Use of 'năm 25' is acceptable only in informal, personal communication among younger generations",
+          "Decree 30/2020/ND-CP mandates full-year formatting in official documents",
+          "Generational divide in year format usage: elders favor formality, youth embrace digital brevity",
+          "Formal academic communication requires full years even in digital formats",
+          "The word 'năm' is always used in formal writing, never omitted"
+        ],
+        "issues": [
+          "Minor: The assistant's tone in the second response could be slightly more nuanced—while 'perfectly fine' is accurate, a native speaker might add a subtle note of generational awareness, e.g., 'Among peers, it’s common and natural, though older relatives might still prefer the full form.'",
+          "Slight overgeneralization in the third response: while '25' is discouraged in academic emails, some younger professors may accept it in informal academic chats—though the core rule remains correct"
+        ],
+        "suggestions": [
+          "Add a brief acknowledgment of regional variation (e.g., 'While urban youth widely use abbreviations, rural elders may still find them inappropriate'), even if minor, to reinforce cultural nuance",
+          "In the second response, include a phrase like 'This reflects how digital communication has shaped younger generations’ habits' to ground the informality in cultural evolution",
+          "Consider adding a sentence in the final response about the broader cultural value of precision and respect in formal writing, linking back to Confucian principles mentioned in the briefing"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm helping my aunt prepare her application for a government pension renewal. She's 72 and lives in Hanoi. I want to make sure everything is correct. She wrote the date as '15/03/25' in the form. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "I understand your concern—this is an important document, and accuracy matters. In official Vietnamese government forms, including pension applications, you must use the full four-digit year. Writing '25' instead of '2025' is not acceptable, even in digital submissions. It may be seen as careless or unprofessional, and could delay processing. The correct format is 'Ngày 15 tháng 3 năm 2025'."
+            },
+            {
+              "role": "user",
+              "content": "But she’s used to writing it that way—she says her old pension forms from 20 years ago had short dates. And she’s worried about making a mistake on a form she’s never filled out before."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common generational difference. Older generations, especially those who began working in the 1980s–90s, often used abbreviated years informally, but even then, official documents required full years. Since 2020, Decree 30/2020/ND-CP strictly enforces four-digit years in all public and legal paperwork. Your aunt’s past forms might have used short dates due to legacy systems, but today, consistency with current standards is essential. I’d recommend rewriting the date as '15 tháng 3 năm 2025'—it shows respect for the process and avoids any risk of rejection."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about when she sends a message to her daughter in HCMC? Can she use '25' there?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. In informal communication—like text messages, WhatsApp, or social media—using '25' is perfectly natural and widely accepted, especially among younger people. For example, she might write: 'Mẹ gửi đơn xin trợ cấp ngày 15/3/25, con giúp mẹ kiểm tra nhé.' That’s clear, friendly, and culturally appropriate. Just remember: the rule applies only to formal, official documents. The flexibility in informal settings reflects how Vietnamese people balance tradition with modern digital habits."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.75,
+        "cultural_elements_verified": [
+          "Four-digit years (2025) are mandatory in formal government documents",
+          "Decree 30/2020/ND-CP enforces full-year formatting in official contexts",
+          "Abbreviated years (e.g., '25') are inappropriate in formal submissions",
+          "Generational difference in year format usage: older generations may have used short forms historically, but current standards require full digits",
+          "Informal communication (text, WhatsApp) allows '25' as acceptable and natural",
+          "Use of 'năm' (year) in formal writing is required",
+          "Urban youth adopt digital brevity; elders and rural populations uphold formality"
+        ],
+        "issues": [
+          "Minor: The assistant uses '15 tháng 3 năm 2025' without specifying the day as 'Ngày 15 tháng 3 năm 2025' in the formal example—though this is a minor omission, it slightly reduces precision in formal phrasing. However, since the core rule (four-digit year) is correctly emphasized, it does not constitute a critical error.",
+          "Slight ambiguity in the informal example: '15/3/25' is written in a format that could be misinterpreted as day/month/year (common in Vietnam), but the assistant doesn’t explicitly clarify that this is acceptable only in informal, non-official contexts. Still, the surrounding explanation compensates for this."
+        ],
+        "suggestions": [
+          "In the formal example, explicitly include 'Ngày' at the beginning of the date for maximum authenticity: 'Ngày 15 tháng 3 năm 2025'.",
+          "Clarify in the informal example that '15/3/25' is acceptable only in casual, non-official digital messages and not in any semi-formal or public-facing communication.",
+          "Consider adding a brief note about the Gregorian calendar’s dominance in official contexts, even when referencing lunar events, to reinforce the cultural nuance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal letter to apply for a residency permit at the local People's Committee in Hanoi. I need to write the date at the top. Should I use '05/04/25' or '05/04/2025'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal application to a government office like the People's Committee in Hanoi, you must use the full four-digit year. The correct format is: *Ngày 05 tháng 4 năm 2025*. Using '25' is considered unprofessional and could raise concerns about accuracy, especially in official documents."
+            },
+            {
+              "role": "user",
+              "content": "But I’ve seen many people in online forums write '25' in their messages. Isn’t that acceptable in practice?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a common observation, but it’s important to distinguish context. In casual online conversations—like social media posts or messages with friends—using '25' is widely accepted, especially among younger urban users. However, in any official, legal, or formal document, even digital submissions to government portals, the full year is required by law under Decree 30/2020/ND-CP. The use of '25' in such contexts may be seen as careless or disrespectful to institutional standards."
+            },
+            {
+              "role": "user",
+              "content": "I’m sending this via email to the immigration office. Is it still formal enough to require the full year?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Even digital communications sent to government agencies—such as the Department of Immigration or local People’s Committees—are treated as formal documents. Using '2025' instead of '25' ensures clarity, prevents ambiguity (e.g., between 1925, 2025, or 2125), and reflects respect for the process. In Vietnam, precision in dates is not just a formatting rule—it’s a cultural norm tied to integrity and hierarchy in official matters."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So for my diploma copy and my employment contract, I should also use the full year?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Both academic records and employment contracts fall under formal institutional documentation. You’ll see the full year used in university transcripts, official letters from employers, and legal agreements. For example: *Ngày 12 tháng 1 năm 2025*. This consistency across all formal domains reinforces trust and legitimacy—values deeply rooted in Vietnamese administrative culture."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Formal context requires four-digit year (e.g., 2025) in government, legal, and academic documents",
+          "Two-digit years (e.g., 25) are acceptable only in informal, digital, or youth-oriented communication",
+          "Decree 30/2020/ND-CP mandates full-year formatting in official documentation",
+          "Generational divide: younger users use abbreviations informally; elders and professionals uphold full formatting",
+          "Use of 'năm' (year) is mandatory in formal writing (e.g., năm 2025)",
+          "Cultural value of precision and institutional integrity underpins year formatting norms",
+          "Digital submissions to government agencies are treated as formal documents",
+          "Ambiguity avoidance (e.g., 1925 vs. 2025) is a key reason for full-year use"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.78,
+        "cultural_elements_verified": [
+          "Four-digit years are mandatory in formal, institutional, and legal contexts in Vietnam",
+          "Decree 30/2020/ND-CP governs official document formatting and enforces full-year use",
+          "Use of '25' is acceptable only in informal digital communication among peers",
+          "Generational divide in year format usage: youth use abbreviations casually, elders and institutions maintain formality",
+          "Digital formal submissions (e.g., email to government offices) are treated as official documents requiring full years",
+          "Consistency in full-year usage across diplomas, contracts, and government forms reinforces institutional integrity",
+          "The word 'năm' is always used in formal writing (e.g., 'năm 2025')"
+        ],
+        "issues": [
+          "Minor: The assistant uses English numerals in the example (e.g., '05/04/2025') without specifying that the Vietnamese script would write it as 'Ngày 05 tháng 4 năm 2025'—though this is implied by context, it could be more explicitly anchored in Vietnamese orthography.",
+          "Slight overgeneralization in the term 'urban youth'—while accurate, it could be nuanced further to reflect that rural youth increasingly adopt digital informality, though elders still resist it."
+        ],
+        "suggestions": [
+          "Explicitly include the Vietnamese script in the example response (e.g., 'Ngày 05 tháng 4 năm 2025') to reinforce linguistic authenticity and cultural grounding.",
+          "Add a brief mention of how even digital forms on government websites (e.g., e-portal) require full-year input to prevent ambiguity.",
+          "Clarify that while '25' may appear in informal digital spaces, it is never used in any official digital submission—regardless of platform."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm preparing a formal letter to apply for a government job in Hanoi. I need to write the date at the top. Should I write '05/04/25' or '05/04/2025'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal Vietnamese government correspondence, you must use the full four-digit year. Always write '05 tháng 4 năm 2025' or '05/04/2025' in numerical format. Using '25' is considered unprofessional and could raise concerns about accuracy, especially in official documents. This standard is enforced by Decree 30/2020/ND-CP, which applies to all public sector applications."
+            },
+            {
+              "role": "user",
+              "content": "But I saw many younger people on Facebook using '25' in posts. Isn’t that acceptable in digital communication?"
+            },
+            {
+              "role": "assistant",
+              "content": "You're right that younger generations often use '25' in informal digital spaces—like social media or text messages—where brevity is common. However, this informality doesn’t extend to formal or professional contexts. Even in digital applications, if you're sending a document to a government agency, university, or legal office, you must use '2025'. The difference reflects a cultural respect for clarity, hierarchy, and institutional integrity."
+            },
+            {
+              "role": "user",
+              "content": "I’m sending this via email to a civil servant. Should I still use the full year?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Even in email communication with government officials, the full year is required. For example, write: 'Ngày 05 tháng 4 năm 2025'. This isn’t just a formality—it shows respect for the system and ensures your application isn’t flagged for procedural issues. In Vietnam, precision in dates is tied to trust in authority and record-keeping."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So even if I’m writing to a friend about a birthday party, I should still use '2025' if I’m sending it through a formal platform like a school announcement?"
+            },
+            {
+              "role": "assistant",
+              "content": "Excellent question. The key is context. If the message is part of a public or institutional notice—like a school event posted on a bulletin board, a university notice, or a formal invitation from a community center—use 'năm 2025'. But in private messages to friends or family, '25' is acceptable, especially among younger people. The cultural norm is about preserving formality where legitimacy matters most."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Formal context requires full four-digit years (e.g., 2025) in government, academic, and legal documents",
+          "Informal contexts (texting, social media) allow two-digit years (e.g., 25) among younger generations",
+          "Decree 30/2020/ND-CP enforces four-digit year usage in official documentation",
+          "Generational divide: elders and rural populations uphold strict formalism; urban youth embrace digital brevity",
+          "Use of 'năm' (year) is mandatory in formal writing (e.g., 'năm 2025')",
+          "Context determines formality: public announcements and digital official platforms require full years",
+          "Cultural value of precision, clarity, and respect for authority underpins year formatting norms"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Four-digit years are mandatory in formal, institutional, and government contexts",
+          "Decree 30/2020/ND-CP mandates full-year formatting in official documents",
+          "Informal digital communication (e.g., social media, texting) allows two-digit years",
+          "Generational divide in year format usage: youth use abbreviations informally, elders and institutions uphold formality",
+          "Context determines appropriateness: public announcements and formal emails require '2025'",
+          "Use of 'năm' (year) in formal writing is required and not omitted",
+          "Cultural values of precision, hierarchy, and institutional integrity underlie formal year formatting",
+          "Even digital formal communication (e.g., email to civil servants) must use full years"
+        ],
+        "issues": [
+          "Minor: The assistant uses '05/04/2025' in the first response, which is acceptable in Vietnamese numerically formatted dates, but the standard written form in formal documents is 'Ngày 05 tháng 4 năm 2025'. While the numerical format is widely accepted in practice, the full written form is more culturally authentic in strict formal contexts.",
+          "Slight overgeneralization: The assistant does not explicitly mention that the Gregorian calendar is used in official contexts even when referencing lunar events (e.g., Tết), though this is not directly relevant to the Year Format dimension."
+        ],
+        "suggestions": [
+          "In future examples, include the full Vietnamese date format ('Ngày 05 tháng 4 năm 2025') as the primary recommendation in formal contexts to reinforce authentic linguistic practice.",
+          "Clarify that while '05/04/2025' is acceptable in digital forms, the written form with 'năm' is preferred in official documents, especially in government and academic settings.",
+          "Add a brief mention of the historical context (e.g., 1954 Gregorian shift, 2020 decree) in one response to deepen cultural grounding without overloading."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

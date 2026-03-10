@@ -1,0 +1,403 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Year Format",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether years are written in full four-digit form or abbreviated two-digit form in different contexts",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to write a formal email to my boss about the annual review meeting next month. Should I write '2024' or just '24' in the subject line?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a formal email to your boss, always use the full four-digit year—2024. It’s standard in professional settings, especially when it’s about official documentation or performance reviews. Using '24' might seem too casual, and in corporate environments, clarity and precision are expected."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But my teammate just sent a group chat saying '24년 회의'—should I follow that style too, or is that okay because it’s informal?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s totally fine in a group chat—especially if everyone’s in the same generation and the tone is relaxed. In internal messaging, using '24년' is common and natural. Just keep in mind that if the conversation ever gets archived or shared with senior management, it’s better to switch to '2024년' for consistency and professionalism."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’m also drafting a presentation for the team meeting, and I’m thinking of putting the date on the cover slide. Should I write '2024' or '24' there?"
+            },
+            {
+              "role": "assistant",
+              "content": "On a presentation slide—especially one meant for internal or cross-departmental sharing—use '2024'. Even if it’s not a formal report, visuals like slides are often saved and referenced later. Using the full year avoids confusion, especially if someone reviews it a year from now or shares it with someone outside the team."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—my younger cousin is making a birthday invite on Instagram, and they wrote '24년 생일 파티'. Is that okay for a social media post?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely—on Instagram, that’s not just okay, it’s actually expected. Using '24년' there gives it a fresh, youthful vibe. It’s part of how younger Koreans communicate casually online. The platform’s culture values brevity and style, so the shorthand works perfectly in that context."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of four-digit years (2024) in formal/professional contexts like emails, presentations, and official documentation",
+          "Acceptance of two-digit years (24) in informal digital communication (e.g., group chats, social media)",
+          "Awareness of generational differences in year format preference",
+          "Contextual sensitivity regarding archiving, cross-generational communication, and potential ambiguity",
+          "Hybrid usage patterns in media and public signage (e.g., full year on official documents, abbreviated on social media)"
+        ],
+        "issues": [
+          "Minor inconsistency in Korean script usage: The assistant uses '24년' in responses, but the user’s message uses '24' in English. While this reflects the user’s bilingual context, the assistant should maintain consistent linguistic framing—either using Korean script throughout when discussing Korean-specific examples, or translating all references clearly. However, since the user’s input is in English and the assistant responds in English while referencing Korean conventions, this is acceptable as a realistic bilingual context.",
+          "Slight overgeneralization in the final response: 'it’s actually expected' on Instagram may be slightly overstated—while common, not all younger Koreans use '24년' in social posts; some may still write '2024년' for clarity. However, this is a minor nuance and does not undermine the overall accuracy."
+        ],
+        "suggestions": [
+          "Explicitly mention that '24년' in Korean text is equivalent to '24' in English—this reinforces the linguistic bridge for non-Korean speakers while maintaining authenticity.",
+          "Include a brief note about how even in informal contexts, the year is often written in Korean script (e.g., '24년') rather than Arabic numerals, which adds depth to the cultural nuance.",
+          "Consider adding a subtle reminder that while two-digit years are acceptable informally, they are never used in official documents, legal contracts, or government forms—reinforcing the institutional preference for four-digit clarity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to write a formal email to my company’s HR department about my annual leave request. The policy says I need to submit it by the 15th of this month, but I’m not sure how to write the year in the subject line. Should I use 24 or 2024?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use 2024 in the subject line—especially for formal internal communications like this. HR will expect the full four-digit format to avoid any confusion, especially since documents are archived and referenced across departments."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But I just sent a quick message to my team group chat earlier saying I’d be out next month—should I have used 2025 or 25? I wrote '25' because it felt natural."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s totally fine for the group chat—using '25' there is common and expected among colleagues. Since everyone knows it’s 2025 and you’re just being casual, it’s clear and natural. Just keep the full year for anything official."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I also need to update my resume for a job application. Should I write '2023–2024' or '23–24' for my internship?"
+            },
+            {
+              "role": "assistant",
+              "content": "For your resume, go with '2023–2024'. It’s a formal document, and even if it’s not official government paperwork, using the full years shows attention to detail. Recruiters expect that level of precision, especially in professional contexts."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this helps a lot. I was also thinking about posting a photo from my graduation last year on Instagram. Should I write '2023' or '23' in the caption?"
+            },
+            {
+              "role": "assistant",
+              "content": "Go with '23' in the caption—on Instagram, that’s the norm. It feels nostalgic and casual, which fits the tone of personal posts. People will get it instantly, especially if you’re tagging your university or using a throwback filter."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of four-digit year format (2024) in formal workplace communication with HR",
+          "Acceptance of two-digit format (24) in informal internal group chats among colleagues",
+          "Contextual switching between full and abbreviated year formats based on communication channel",
+          "Expectation of precision in formal documents like resumes despite digital informality in other spaces",
+          "Natural use of '23' in social media captions to evoke nostalgia and fit platform norms",
+          "Implicit understanding of generational and situational norms without explicit explanation",
+          "Cultural prioritization of clarity and professionalism in archival or cross-generational contexts",
+          "Unspoken shared knowledge about appropriate year formatting across different domains (work, personal, digital)"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of four-digit years (2024) in formal contexts like HR emails and resumes",
+          "Acceptance of two-digit years (25, 23) in informal digital spaces like group chats and Instagram",
+          "Awareness of ambiguity risks with two-digit years in cross-generational or archival contexts",
+          "Generational and contextual nuance in year format usage",
+          "Hybrid usage patterns in media and public signage (e.g., 2024 on TV, 24 in social media clips)"
+        ],
+        "issues": [
+          "Minor: The assistant’s phrasing 'go with 2023–2024' could be slightly more natural—native speakers might say 'use 2023–2024' or 'write it as 2023–2024' for smoother flow.",
+          "Slight overgeneralization in the Instagram example: while '23' is common, some older users or international audiences might misinterpret it—though this is a minor point given the context"
+        ],
+        "suggestions": [
+          "Refine assistant responses to sound more conversational, e.g., 'Use 2023–2024—standard for resumes, shows you’re detail-oriented.'",
+          "Add a brief nod to the generational divide in the final response (e.g., 'Younger folks use 23 all the time on Instagram, but older colleagues might still prefer 2023 in formal posts') to deepen nuance",
+          "Ensure all examples reflect the shared cultural understanding without over-explaining—already strong, but subtle improvements in phrasing can enhance authenticity"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to draft a formal email to my company’s HR department about my leave request for next year. Should I write 25 or 2025 in the subject line?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use 2025. HR documents in Korea always use the full four-digit year—especially for official requests like leave. Even if you’re writing casually to a friend, 25 is fine, but for anything formal, 2025 is the standard. It’s just how it’s done."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But I saw some older colleagues in our team use '25 in their internal messages. Is that okay for informal chats?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely—among colleagues who know each other well, using '25 in internal Slack or KakaoTalk is totally natural. It’s common in digital chats, especially if you’re all in the same generation. But if you’re sending something to a senior manager or archiving it, better to write 2025 to be safe."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’m also helping my mom update her tax documents—she’s used to writing '98 for 1998, but I think the form wants 1998. Should I correct her?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, you should gently suggest 1998. Tax forms and official documents in Korea require full years—no exceptions. Even if she’s been writing '98 for decades, the system now requires four digits to avoid confusion. It’s not about being strict—it’s about accuracy, especially for records that last decades."
+            },
+            {
+              "role": "user",
+              "content": "That’s what I thought. I just wanted to make sure I wasn’t overthinking it. She’s used to the old way, but I know she’d hate to get flagged for a small mistake."
+            },
+            {
+              "role": "assistant",
+              "content": "Totally understandable. She’s not wrong—many people still use two-digit years in daily life—but when it’s about government forms, the system demands clarity. You’re being thoughtful by double-checking. That’s the kind of care Koreans value in formal matters."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of four-digit year format (2025) in formal professional communication with HR",
+          "Use of two-digit year format ('25) in informal internal workplace messaging among peers",
+          "Generational difference in year formatting preferences, with older users favoring two-digit forms in daily life",
+          "Cultural emphasis on precision and clarity in official documentation (e.g., tax forms, government records)",
+          "Context-dependent year formatting: full digits in archival, legal, and intergenerational contexts; abbreviated in casual digital communication",
+          "Implicit cultural norm that formal correctness is a sign of respect and responsibility, especially in institutional settings",
+          "Natural integration of Korean workplace norms and digital communication habits without explicit cultural framing",
+          "Assistant response reflects shared cultural understanding—no explanation of norms, just assumed knowledge"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Four-digit years (2025, 1998) are standard in formal, official, and archival contexts like HR requests and tax documents",
+          "Two-digit years (25, 98) are acceptable in informal digital communication among peers",
+          "Generational differences in year format usage are acknowledged (younger colleagues vs. older professionals)",
+          "Ambiguity avoidance is a core cultural driver for using full years in official documents",
+          "Cultural value placed on precision and respect for formal standards in institutional settings",
+          "Informal use of two-digit years is normalized in internal digital platforms like KakaoTalk and Slack"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant's final response: 'You’re being thoughtful by double-checking. That’s the kind of care Koreans value...' — while plausible, it slightly anthropomorphizes a cultural norm. A more natural phrasing would be 'It’s good to be careful with official documents—accuracy matters in Korea.'",
+          "The user’s statement 'I just wanted to make sure I wasn’t overthinking it' is slightly more self-conscious than typical for a native speaker in this context; a more authentic version might be 'I wasn’t sure if I was being too strict.'"
+        ],
+        "suggestions": [
+          "Refine the final assistant response to avoid meta-commentary on cultural values; instead, reinforce the norm through practical reasoning: 'Better to use 1998 on tax forms—there’s no risk of confusion, and it’s what the system expects.'",
+          "Slightly adjust the user’s phrasing in the last turn to sound more naturally self-deprecating and less explicitly reflective: e.g., 'I wasn’t sure if I was being too picky.'",
+          "Consider adding a brief mention of how digital systems (like government portals) auto-validate four-digit years, reinforcing the institutional preference without explanation"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to write a formal email to my professor about submitting my thesis draft. Should I write '2024' or '24' in the subject line? I saw some older students use '24' in their emails, but I’m not sure if it’s okay for something this official."
+            },
+            {
+              "role": "assistant",
+              "content": "For a thesis submission to a professor, always use the full four-digit year—2024. Even if it feels a bit formal, it’s expected in academic settings. Using '24' might seem too casual, especially if the professor is from an older generation. Better to err on the side of precision."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll use 2024. But I was also thinking about the deadline—should I mention the month and year in the body, like 'by May 2024'? Or is that redundant?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, include the full year in the body too—'by May 2024' is perfect. It makes the timeline clear, especially if this email gets archived or shared later. Professors appreciate that level of detail, especially when it comes to deadlines."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I just sent a draft to my friend in a chat group and wrote '24년에 제출할게요'—is that okay in a casual group chat?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely—'24년에 제출할게요' is totally natural in a group chat with friends. That’s exactly how younger Koreans talk informally. Just make sure the context is clear, like if you’re all discussing the same timeline. No one would think you meant 1924!"
+            },
+            {
+              "role": "user",
+              "content": "Good to know. I was worried I’d look unprofessional if I used '24' in the email, but it’s fine in chat. So the key is just knowing when formality matters?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. It’s not about being strict—it’s about respect for context. In formal spaces like emails, documents, or official submissions, full years show care and clarity. In casual chats, brevity is part of the rhythm. The difference is subtle, but everyone understands it."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of four-digit years (2024) in formal academic contexts like thesis submissions",
+          "Acceptance of two-digit years (24) in casual digital communication among peers",
+          "Awareness of generational differences in year format preference",
+          "Emphasis on clarity and precision in archival or official documents",
+          "Contextual awareness as the key determinant of year format usage",
+          "Natural integration of Korean linguistic patterns (e.g., '24년에 제출할게요') in informal settings"
+        ],
+        "issues": [
+          "Minor inconsistency in the use of English '24' vs. Korean '24년'—the example mixes languages without clarifying that the user is writing in Korean in the chat, which could confuse learners about code-switching norms. However, this is not a major error given the overall context.",
+          "The assistant’s final response, while accurate, could be slightly more nuanced by acknowledging that even in informal chats, some older Koreans might still prefer full years—though this is rare and not expected."
+        ],
+        "suggestions": [
+          "Clarify that the user is writing in Korean in the chat group (e.g., by using '24년' consistently in the user’s message) to better reflect authentic multilingual context in Korean digital communication.",
+          "Add a brief mention of how the use of '24년' in informal settings is so normalized that it rarely causes confusion, even across generations, due to shared temporal context.",
+          "Include a subtle nod to the fact that in some Korean digital platforms (like KakaoTalk), users often auto-expand '24' to '2024' in formal contexts, reinforcing the cultural preference for clarity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I'm trying to draft an email to my professor about the research paper deadline. Should I write '2024' or just '24' in the subject line? The paper is due in December, and I want to make sure it looks professional."
+            },
+            {
+              "role": "assistant",
+              "content": "For an email to a professor, especially one about a formal academic deadline, always use the full four-digit year—2024. It’s standard in academic settings here, and using just '24' might come across as too casual, even if it’s common in texts with friends."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I was just checking because I saw some of my classmates writing '24' in their group chat. I didn’t want to stand out by being too formal, but I also don’t want to seem careless."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a smart instinct—balancing respect with peer norms. In group chats, '24' is totally fine and even expected. But when communicating with professors, senior colleagues, or submitting anything official, 2024 is the right choice. It shows you’re attentive to formality, which matters here."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’m also thinking about the title of the paper. Should I write '2024년 연구 보고서' or just '24년 연구 보고서'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For the paper title, especially if it’s being submitted to a department or published in a university journal, use '2024년 연구 보고서'. Even if it’s a draft, the full year keeps it clear and professional. You’ll see this in official documents, thesis titles, and faculty publications—consistency matters."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure to use 2024 everywhere except my group chat. I just remembered my older cousin once told me that using '98' for 1998 was confusing when he was reviewing old records—so I guess it’s safer to always go full digits."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s why institutions like the National Tax Service and the Ministry of Education require four-digit years—no exceptions. Even if it’s just a personal note, using 2024 avoids any chance of misreading, especially if it’s archived or shared later. It’s not about being overly strict—it’s about respect for clarity and continuity."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of four-digit year format (2024) in formal academic communication with professors",
+          "Acceptance of two-digit format (24) in informal peer group chats",
+          "Generational awareness of year format differences—older relatives emphasizing full digits for clarity",
+          "Institutional preference for four-digit years in official, archival, or legally relevant documents",
+          "Cultural value placed on precision and avoiding ambiguity in written communication",
+          "Implicit understanding that context determines formality level without explicit cultural framing",
+          "Natural integration of Korean-specific references (e.g., National Tax Service, university submissions) without explanation",
+          "Assistant’s tone reflects shared cultural norms—no need to justify or explain cultural choices"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of four-digit years (2024) in formal academic and official contexts",
+          "Acceptance of two-digit years (24) in informal digital communication like group chats",
+          "Awareness of ambiguity risk with two-digit years (e.g., 98 could mean 1998 or 2098)",
+          "Institutional preference for four-digit years in government, education, and archival settings",
+          "Generational and contextual variation in year format usage",
+          "Cultural value placed on clarity, precision, and formality in professional communication"
+        ],
+        "issues": [
+          "Minor: The assistant's final response uses 'it’s not about being overly strict—it’s about respect for clarity and continuity'—slightly abstract phrasing that could feel overly didactic; a more natural Korean cultural framing might emphasize 'harmony' or 'avoiding confusion in shared history' rather than 'respect for continuity'.",
+          "The user mentions 'my older cousin'—this is a small narrative device, but slightly less natural than a more implicit reference (e.g., 'I heard from someone who reviewed old records')—though not a major issue."
+        ],
+        "suggestions": [
+          "Refine the final assistant response to use more culturally resonant phrasing, such as 'In Korea, we avoid any chance of confusion—especially when records are kept for decades—so full years are the norm even in drafts.'",
+          "Consider having the user reference a shared experience (e.g., 'I once saw a form that used 24 and got confused') instead of a family member, to better reflect insider cultural storytelling patterns.",
+          "Add a subtle nod to the visual design context (e.g., 'Even posters or event flyers use 2024 if they’re official, though some casual ones might shorten it') to reinforce the hybrid nature of public signage, as noted in the research."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 5
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Patriarchal Structures",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Household Structures",
+    "description": "The extent to which male authority dominates family, household, and community decision-making",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning the engagement for my younger sister in Enugu, and the family wants to do the Igbo *Igba Nkwu* properly. But she’s been working in Lagos for two years now, and her boss says she’s handling the office accounts. I’m not sure how to explain to the elders that she’s independent, but still wants the traditional ceremony. Should I tell the elders she’s earning her own money?"
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t lead with her salary. That can backfire—some elders see it as challenging the old order. Instead, let her presence speak. When the elders ask about her future, say she’s confident in her career and values family. That’s enough. They’ll notice how she carries herself—calm, clear, grounded. Respect is earned through demeanor, not declarations."
+            },
+            {
+              "role": "user",
+              "content": "But what if the groom’s father insists on discussing the *Ibo-Idi* with me instead of her? She’s the one who’s been saving for her own dowry, and she wants to contribute to the wedding fund."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s the norm—the groom’s father leads the *Ibo-Idi*. But you can suggest she brings the *ogwu* herself during the procession. A well-arranged basket with kola nuts, cloth, and symbolic items speaks louder than words. If elders push back, remind them gently that many young women in Enugu now manage their own finances. This isn’t defiance—it’s responsibility. And if they’re still resistant, let her family know: she’s not asking to replace tradition, just to be part of it."
+            },
+            {
+              "role": "user",
+              "content": "And after the wedding? She wants to stay in Lagos with her job, but the family says she’ll move to the husband’s village in Nsukka. I don’t want her to feel trapped."
+            },
+            {
+              "role": "assistant",
+              "content": "This is not easy. In Nsukka, especially, the expectation is clear: she’ll move. But it doesn’t have to be all or nothing. You can prepare for pushback—some elders may say she’s ‘untraditional’ or ‘ungrateful’ for wanting to stay. That’s real. So the family must be ready to stand by her. Suggest a compromise: she visits the village during *New Yam Festival*, *Iri Ji*, and *Igwe*—key times when family ties are renewed. If the husband agrees to let her keep her job and return home on weekends, that’s a win. But it won’t come overnight. You’ll need patience, and a trusted female elder—like an aunt or mother of the groom’s family—to mediate. They’ve done it before. It’s not common, but it’s not impossible. The key is showing that her independence doesn’t mean disrespect—just strength."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "The role of male elders in decision-making during traditional engagements",
+          "The significance of *Igba Nkwu* and *Ibo-Idi* in Igbo culture",
+          "The expectation of women moving to the husband's village post-marriage in Nsukka",
+          "The symbolic importance of *ogwu* and kola nuts in ceremonial contexts",
+          "The use of female elders as mediators in sensitive family matters",
+          "The social pressure on women to conform to traditional roles despite economic independence",
+          "The gradual emergence of compromise in urban, educated households",
+          "The cultural preference for indirect communication and respect through demeanor over direct assertion"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes a monolithic Igbo cultural response, but Igbo communities are diverse—some urban families in Enugu may be more flexible than rural ones in Nsukka. However, this is a nuanced portrayal, not a stereotype.",
+          "The term 'Ibo-Idi' is used, but it's more commonly referred to as *Ibo-Idi* or *Ibo-Idi* in formal discourse; while not incorrect, it's less commonly used than *Igba Nkwu* or *Igwe* in public discourse. Still, acceptable in context."
+        ],
+        "suggestions": [
+          "Include a subtle reference to regional variation—e.g., 'In Enugu, things are changing faster than in Nsukka'—to reinforce that cultural norms are not uniform.",
+          "Consider adding a brief mention of how Christian vs. traditional Igbo families might differ in their interpretation of *Igba Nkwu* and dowry, to reflect religious diversity.",
+          "Use more localized idioms or proverbs (e.g., 'A woman’s voice is soft, but her footprints are deep') to enhance linguistic authenticity without overdoing it."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 10,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

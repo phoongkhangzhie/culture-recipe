@@ -1,0 +1,114 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Social Interaction Within Households",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Household Structures",
+    "description": "Patterns of socializing within and between households, including who is welcomed into the home and under what conditions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my future in-laws for the first time next week. I want to do things right—no missteps. Should I bring anything? I’ve heard about sanghwajip, but I’m not sure if it’s still common."
+            },
+            {
+              "role": "assistant",
+              "content": "A sanghwajip is still meaningful, especially in families that value tradition. It’s typically a basket with sweet rice cakes, dried persimmons, and a bottle of soju—simple, thoughtful, and symbolic. Even if you don’t bring one, a high-quality tea set or premium dried fruit works beautifully. The key is intention. They’ll see the care behind it, not just the contents."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. And about the entrance—should I take off my shoes right away, or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—remove your shoes the moment you step in. If slippers are provided, wear them. If not, place your shoes neatly in a row, soles facing outward. Clean, orderly entry shows respect. Once inside, sit on the edge of the mat, back straight. Don’t cross your legs or point your feet toward elders. It’s not performance—it’s the quiet dignity of being present."
+            },
+            {
+              "role": "user",
+              "content": "I’m nervous about dinner. I know elders eat first, but what if they offer me food before they’ve started? Should I just say no?"
+            },
+            {
+              "role": "assistant",
+              "content": "Never eat before elders. If they offer, say, ‘I’ll wait for you to start,’ and bow slightly. If they insist, take a small portion with both hands and say ‘juseyo.’ Don’t eat right away—wait until they’ve taken their first bite. Being served last isn’t a slight; it’s a sign of honor. The family observes quietly through actions and silence. They notice how you wait, not just what you eat."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about talking? I don’t want to be too quiet or too loud. How much should I say?"
+            },
+            {
+              "role": "assistant",
+              "content": "Listen more than you speak. Nod, say ‘Yes, I see,’ or ‘That sounds nice.’ Wait for elders to finish before responding. If you need to ask something, use polite language: ‘Excuse me, could I ask…?’ Keep it light—weather, the meal, the kids. Avoid personal opinions or controversial topics. They’ll judge your character by how you listen, not what you say."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—tea. I’ve heard you’re supposed to accept it three times. But what if I’m full?"
+            },
+            {
+              "role": "assistant",
+              "content": "They don’t expect you to drink it all, but refusing too quickly feels abrupt. Accept the second offer with both hands, take a small sip, and say, ‘I’m full, thank you,’ with a slight bow. If they press again, hold the cup with both hands and let them see you’re being respectful—even if you don’t finish. A little sip goes a long way. And if you decline, use the palm-up gesture. It’s not just tea—it’s *jeong*, the quiet care behind the gesture."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been told that how I behave is noticed even if no one says anything. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes. The family observes quietly through actions and silence. Even in younger families, the core respect remains—though the expressions may be softer. *Jeong* isn’t taught in lectures; it’s passed down in the way elders serve tea, how children bow, how guests are received. It’s not about perfection—it’s about presence. Your behavior reflects not just you, but your family’s values. Trust isn’t given overnight. It’s built in small, quiet moments. You’re not expected to be flawless—just mindful, respectful, and grounded in *jeong*."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The importance of removing shoes upon entering a home and arranging them neatly",
+          "The use of slippers and proper seating etiquette based on age and status",
+          "The practice of elders eating first and younger members waiting to be served",
+          "The significance of using both hands when receiving or offering items",
+          "The ritual of accepting tea three times and the respectful refusal with a bow",
+          "The emphasis on listening over speaking, especially in the presence of elders",
+          "The concept of *jeong* as quiet emotional care embedded in gestures and presence",
+          "The expectation of bringing a gift (e.g., sanghwajip, tea, dried fruit) for first visits",
+          "The cultural weight placed on subtle, non-verbal cues and observation",
+          "The idea that respect is demonstrated through behavior, not words"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all Korean families observe traditional norms strictly, which may not reflect urban or younger generations’ more relaxed practices. However, since the context is a first visit to in-laws, this level of formality is appropriate and culturally accurate.",
+          "The phrase 'clean, orderly entry shows respect' could be slightly rephrased to emphasize *intentionality* over literal cleanliness, as the core is about ritual and mindfulness rather than hygiene."
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of regional variation (e.g., Seoul vs. rural areas) to acknowledge cultural diversity within Korea, while maintaining the core norms.",
+          "In the tea response, slightly soften 'They don’t expect you to drink it all' to 'They don’t expect you to finish it' to better reflect the nuance that the act of accepting is more important than consumption.",
+          "To further enhance authenticity, include a subtle reference to the host’s quiet observation—e.g., 'You’ll notice how they watch your hands, your posture—those are the moments that matter.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 11
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

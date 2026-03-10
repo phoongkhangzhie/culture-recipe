@@ -1,0 +1,98 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Informality Norms",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "Contexts in which informal speech, behavior, and dress are appropriate or considered disrespectful",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to a friend’s house in Bangkok for a casual dinner this weekend. We’ve known each other for about two years, and she’s a bit older than me—maybe 30. She invited me over with no formalities, and we’ve been texting in Thai using casual language like 'kha' and 'khrap'. Should I wear something really relaxed, like shorts and a T-shirt, or should I dress up a little?"
+            },
+            {
+              "role": "assistant",
+              "content": "Since you’ve built a friendly rapport over two years and she’s using casual Thai with you, that’s a strong sign she’s comfortable with informality. If she’s the kind who wears relaxed clothes at home—like a simple cotton t-shirt and jeans—then it’s safe to mirror that. A clean, neat t-shirt (no holes or slogans), well-fitted jeans or chinos, and closed shoes are perfect. Shorts are still best avoided unless you see her wearing them. The key is being put-together without trying too hard—like you’d dress for a relaxed dinner with a close colleague or a senior friend you’re close to."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what about behavior? I’ve seen her hang out with her younger cousins and sometimes they joke around and even touch each other’s shoulders. Can I do that with her, or is that too forward?"
+            },
+            {
+              "role": "assistant",
+              "content": "Only if she’s clearly initiating that kind of warmth. If she’s laughing, teasing her cousins with a smile, and uses playful, affectionate language, you can gently mirror it—like a light shoulder tap or a joking comment. But always watch her cues. If she keeps her distance, uses formal speech, or stays reserved, keep your gestures neutral. Never point with your foot, and always sit with your legs crossed at the ankle—never feet pointing at someone, especially an elder. This reflects *kreng jai*—being sensitive to others’ comfort."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what if I want to bring a small gift? Is that expected? What kind of thing would be appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—bringing a small gift is a thoughtful way to show *wan khrum*. A box of local sweets, a bottle of good tea, or a small fruit basket works perfectly. Avoid anything too expensive or flashy—it can make her feel uneasy. Present it with both hands and a slight bow. This bow isn’t just a formality—it’s a visible expression of respect. Even a simple note in Thai, like 'ขอบคุณครับ/ค่ะ' (Thank you), is highly valued and shows genuine effort. If you include English, adding just that one Thai phrase makes a big difference in cultural authenticity. The gesture matters more than perfection."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Long-standing friendships between age-mixed peers can be very relaxed, especially if mutual comfort and shared history are present.",
+          "Casual dress like a clean cotton t-shirt and jeans is acceptable among close friends in Bangkok, even when visiting an older friend’s home.",
+          "Informality should be mirrored only when the other person initiates it—reciprocity is key in Thai social dynamics.",
+          "Physical contact like light shoulder taps is acceptable only in warm, playful contexts and must be matched to the other person’s cues.",
+          "Presenting gifts with both hands and a slight bow is a meaningful expression of respect, even in casual settings.",
+          "Using polite particles like 'kha' and 'khrap' in casual texting signals a friendly, respectful tone without formality.",
+          "Avoiding foot-pointing and sitting with legs crossed at the ankle reflects *kreng jai*—sensitivity to others’ comfort.",
+          "Small, modest gifts (sweets, tea, fruit) are appreciated; overly expensive items can create discomfort."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Informality is context-dependent and based on relationship, age, and hierarchy",
+          "Use of 'kha' and 'khrap' as polite particles in casual peer interactions",
+          "Mirroring the host’s dress style as a sign of appropriate informality",
+          "Avoiding shorts and tank tops in informal but still respectful settings",
+          "Respecting personal space and reading social cues before physical contact",
+          "Prohibition of pointing with feet and proper leg positioning (ankle-crossed, not feet pointing)",
+          "Importance of *wan khrum* (respect) through small gestures like gift-giving",
+          "Presenting gifts with both hands and a slight bow as a sign of respect",
+          "Value of including even one Thai phrase in communication to show effort"
+        ],
+        "issues": [
+          "Minor omission of the nuance that even in informal peer settings, Thai women may still use 'kha' and men 'khrap' as a default politeness marker, not just for elders—this is correctly implied but could be clarified",
+          "Slight risk of overgeneralizing 'you can mirror playful behavior' without emphasizing that even among peers, physical touch like shoulder-tapping should only be done if the host has initiated it first, and even then, with caution"
+        ],
+        "suggestions": [
+          "Clarify that 'kha' and 'khrap' are used by both genders in informal peer contexts, not just as elder markers, to reinforce their widespread use in friendly, non-hierarchical settings",
+          "Add a brief note about the importance of observing the host’s body language—e.g., if she sits cross-legged and relaxed, you may do so too, but if she maintains a more upright posture, mirror that formality",
+          "Consider mentioning that in Thai homes, guests often wait to be told where to sit, even with close friends, to reflect *kreng jai* and social awareness"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

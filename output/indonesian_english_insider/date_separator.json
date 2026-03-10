@@ -1,0 +1,184 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Date and Number Separator",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Characters used to separate date or number components, such as slashes, hyphens, periods, or commas",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Aku lagi bikin kontrak kerja sama dengan teman dari Bandung buat usaha kopi kecil di Jakarta. Dia bilang tanggal mulai kerja adalah 10/03/2024. Aku agak ragu, soalnya di Jakarta biasanya 10/03 itu tanggal 10 Maret, tapi di Bandung kadang orang bilang 3/10. Bisa bantu cek ini aman nggak? Aku takut salah waktu nanti."
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, ini emang sering jadi jebakan karena format tanggal bisa ambigu tergantung konteks. Di Jakarta dan semua dokumen resmi, format DD/MM/YYYY itu standar—jadi 10/03/2024 berarti 10 Maret 2024. Tapi di beberapa lingkungan informal, terutama di daerah Jawa Barat, format ini kadang bisa menimbulkan kesalahpahaman karena pembacaan yang berbeda—misalnya 10/03 bisa dibaca sebagai 3 Oktober. Jadi, buat kontrak yang penting, lebih aman pakai tanggal lengkap: 10 Maret 2024. Biar nggak ada salah paham, apalagi kalau soal gaji atau deadline."
+            },
+            {
+              "role": "user",
+              "content": "Oke, nanti aku tulis di kontraknya pakai tanggal lengkap. Tapi di bagian gaji, dia mau tulis angka 5.000.000,00. Aku lihat di aplikasi pembayaran digital, kadang formatnya jadi 5,000,000.00. Apa ini salah? Aku bingung, soalnya dulu di sekolah diajarin pakai titik buat ribuan, koma buat koma."
+            },
+            {
+              "role": "assistant",
+              "content": "Format yang kamu lihat di aplikasi—5,000,000.00—itu bukan standar lokal, tapi hasil dari default software global seperti Excel atau Google Sheets yang pakai bahasa Inggris. Di Indonesia, format baku untuk uang tetap pakai titik (.) untuk ribuan dan koma (,) untuk desimal: jadi 5.000.000,00 itu benar. Ini yang umumnya diajarkan di sekolah dan dipakai di dokumen resmi, bank, dan faktur. Jadi nggak salah, tapi lebih baik pakai format lokal buat kontrak atau invoice supaya tetap sesuai konteks Indonesia."
+            },
+            {
+              "role": "user",
+              "content": "Makasih, baru sadar ternyata ini bisa bikin salah paham besar. Aku juga mau tanya, kalau kita ngobrol di WhatsApp, boleh nggak pakai format pendek seperti 15/4/24 atau 3.500.000? Aku khawatir kelihatan nggak profesional."
+            },
+            {
+              "role": "assistant",
+              "content": "Di WhatsApp, format pendek itu justru wajar banget—banyak orang di Jakarta, Bandung, Surabaya, bahkan di daerah lain juga pakai 15/4/24 atau 3.500.000 buat ngobrol santai. Ini udah jadi kebiasaan sehari-hari, nggak cuma di satu kota. Tapi kalau itu buat kontrak, invoice, atau email ke klien resmi, lebih baik pakai format lengkap: 15 April 2024 atau 3.500.000,00. Intinya, kita nggak kaku—tapi kita pilih yang paling jelas sesuai konteks. Yang penting, nggak salah paham, bukan kelihatan serius atau nggak."
+            },
+            {
+              "role": "user",
+              "content": "Wah, jadi lebih tenang sekarang. Aku juga perhatiin, anak muda sekarang kadang pakai format campuran—misalnya 15/04/24 tapi tulis gaji 5,000,000.00. Apa itu biasa?"
+            },
+            {
+              "role": "assistant",
+              "content": "Iya, itu beneran sering banget dilihat—terutama di kalangan profesional muda atau yang sering ngobrol dengan rekan internasional. Mereka udah nyatuin dua gaya: pakai format lokal buat konteks lokal, tapi adaptif ke format internasional kalau perlu. Jadi nggak ada yang salah—tapi yang penting, mereka tahu kapan harus pakai yang mana. Kalau di grup kerja lokal, tetap pakai 15 April 2024 dan 5.000.000,00. Kalau ngobrol dengan rekan internasional, format campuran itu bisa jadi pilihan praktis. Yang utama: jelas, tidak membingungkan, dan sesuai konteks. Itu juga bentuk literasi digital yang tinggi—nggak kaku, tapi tetap akurat."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "DD/MM/YYYY is the standard date format in formal and official contexts in Indonesia",
+          "Regional ambiguity exists in informal settings, particularly in West Java (e.g., Bandung) where MM/DD/YYYY may be used",
+          "Indonesian number format uses period (.) as thousands separator and comma (,) as decimal separator (e.g., Rp5.000.000,00)",
+          "Informal communication often omits separators (e.g., 'lima juta' instead of 5.000.000)",
+          "Digital platforms may default to Western formatting (e.g., 5,000,000.00), which differs from local standards",
+          "Use of full dates (e.g., 10 Maret 2024) is recommended in formal documents to avoid ambiguity",
+          "Contextual adaptation of format is common and accepted—formal vs. informal settings differ",
+          "Bilingual or hybrid formatting (e.g., 15/04/24 and 5,000,000.00) is observed among young professionals, especially in digital communication"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the assistant’s statement about Bandung: while some informal use of MM/DD is noted, the example implies it’s widespread. However, this is a nuanced issue and not a factual error—contextual ambiguity is accurately represented.",
+          "The assistant uses 'nggak' and 'banget' frequently, which is authentic, but in a few instances the tone slightly leans toward hyper-localized Javanese-influenced slang (e.g., 'udah jadi kebiasaan sehari-hari'). While still acceptable, a more neutral urban Indonesian register might be slightly more representative across Java and beyond."
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of how schools teach the standard format to reinforce institutional legitimacy of the local convention.",
+          "To further strengthen training quality, include a turn where the assistant subtly corrects a user’s incorrect format in a real-world document (e.g., a bank receipt or invoice) without overt explanation—reinforcing implicit cultural knowledge.",
+          "In future examples, consider a scenario involving rural or non-urban users to reflect the full spectrum of regional variation, including oral communication patterns."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m finalizing my rental agreement in Jakarta and need to confirm the date format. The landlord wants the first payment on the 10th of this month. Should I write 10/04/2024 or 04/10/2024 on the form?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use 10/04/2024 — that’s DD/MM/YYYY, which is standard for official forms here. Banks, e-KTP portals, and platforms like Bank Mandiri or Tokopedia all use this format. It’s what you’ll see in any formal *formulir* or *buku kas*."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And the rent is Rp3.500.000,00 — is that the right way to write it? I’ve seen some apps use 3,500,000.00, which confused me."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — Rp3.500.000,00 is correct. Period for thousands, comma for decimals. That’s how it’s enforced in digital systems like Gojek, Tokopedia, and e-banking. Even in *buku kas* entries, this format is expected to avoid mix-ups."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I once saw a contract where someone wrote 5.000,00 and the other party thought it was five thousand instead of five thousand rupiah. It caused a whole misunderstanding. So I should always be careful with the separators."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That kind of confusion happens more than you’d think — especially with international partners or old documents. In formal settings, always use the full format. If you're unsure, write the month out: '10 April 2024' — no risk there."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I also noticed some apps use hyphens — like 10-04-2024. Is that acceptable?"
+            },
+            {
+              "role": "assistant",
+              "content": "Fine for WhatsApp or mobile input, but for official documents, stick to slashes. Government and bank systems expect DD/MM/YYYY — consistency avoids delays."
+            },
+            {
+              "role": "user",
+              "content": "One last thing — I’ve heard that some older or non-digital systems still use MM/DD/YYYY. Is that true, and should I worry about it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — some older or non-digital systems, especially in rural administrative offices or legacy paperwork, still use MM/DD/YYYY. But for new agreements, especially with digital platforms like Gojek, Tokopedia, or Bank Mandiri, DD/MM/YYYY is the norm. If you’re dealing with an old *formulir* or a local *kantor desa*, double-check — but for anything formal, go with DD/MM/YYYY to be safe."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "DD/MM/YYYY is the standard for official documents, bank forms, and digital platforms like Bank Mandiri, Tokopedia, and Gojek",
+          "RpX.XXX.XXX,XX is the correct format for currency: period for thousands, comma for decimals",
+          "The format is taught in schools and enforced in government portals like e-KTP and e-Banking",
+          "Older or non-digital systems, particularly in rural administrative offices or legacy *formulir*, may still use MM/DD/YYYY",
+          "In formal contexts like *buku kas* or rental agreements, clarity through full formatting or spelled-out months is expected",
+          "Oral communication often omits separators (e.g., 'lima ratus ribu'), but written documents require precision",
+          "Hyphens (e.g., 10-04-2024) are acceptable for casual input but not for official submissions"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "DD/MM/YYYY is the standard date format for formal and official documents in Jakarta",
+          "Period (.) is used as a thousands separator and comma (,) as a decimal separator in financial amounts (e.g., Rp3.500.000,00)",
+          "Regional variation exists, particularly in rural or older administrative systems using MM/DD/YYYY",
+          "Use of full month names (e.g., '10 April 2024') to avoid ambiguity in formal contexts",
+          "Digital platforms (Gojek, Tokopedia, Bank Mandiri) enforce standardized formatting",
+          "Informal or legacy systems may still use inconsistent or outdated formats",
+          "Hyphens (e.g., 10-04-2024) are acceptable in casual digital communication but not preferred in official documents"
+        ],
+        "issues": [
+          "Minor: The assistant’s use of 'buku kas' and 'formulir' is accurate but slightly technical; however, this is appropriate given the context of formal documentation and is not over-explained.",
+          "Slight risk of overgeneralization: The statement about 'older or non-digital systems' using MM/DD/YYYY could imply it's widespread, when in reality, it's more limited to specific local or legacy contexts. However, the assistant correctly qualifies this with 'especially in rural administrative offices or legacy paperwork.'"
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of spoken language practices (e.g., saying 'tanggal sepuluh empat dua ribu dua puluh empat' instead of writing the date) to further enrich cultural nuance.",
+          "In future examples, include a scenario where a user writes a date in a way that reflects a regional interpretation (e.g., 03/04/2024) and the assistant gently corrects it with context, reinforcing cultural awareness without explanation.",
+          "Use more natural Indonesian loanwords in context (e.g., 'kantor desa', 'formulir') as they appear in authentic user interactions, which the current example already does well."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 19,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

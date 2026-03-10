@@ -1,0 +1,107 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Gender Social Compliance",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Gender Roles",
+    "description": "Social pressures to conform to culturally expected gender behaviors, roles, and presentations",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m prepping for the team meeting with the new client tomorrow. I’ve been asked to lead the presentation, but I’m nervous—last time, when I started talking during the strategy session, Mr. Kim cut me off right away. He said, 'Let me clarify this,' and took over. I used 'jeo' like always, but still felt like I wasn’t heard. I even noticed he didn’t call me by name—just ‘you’—like I was invisible. Should I just stay quiet this time?"
+            },
+            {
+              "role": "assistant",
+              "content": "You don’t have to stay quiet. But remember—after the meeting, they’ll go to the bar. That’s where decisions are really made. If you’re not there, you’re not part of the conversation, even if you led the slides."
+            },
+            {
+              "role": "user",
+              "content": "That’s exactly it. I don’t want to go. I don’t drink, and I’ve been told I’d ‘throw off the rhythm’ if I showed up. But I don’t want to be left out. I’ve seen male colleagues get praised for saying the same things I did—but with less polish. It’s exhausting, especially when I’m already doing the work to be polite."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not you. It’s the rhythm—the unspoken code. They don’t expect women to speak, so when you do, even with perfect politeness, it’s heard as ‘not quite right.’ You’re not failing. You’re just in a space built for others."
+            },
+            {
+              "role": "user",
+              "content": "I tried that last time. He just nodded, smiled, and then said, ‘I see what you mean,’ and moved on. I felt like I’d said nothing. I keep thinking—should I use ‘na’ instead of ‘jeo’? I’ve seen some women do it, but it feels… risky."
+            },
+            {
+              "role": "assistant",
+              "content": "Using ‘na’ isn’t just a word—it’s a quiet act of claiming space. Some rooms see it as bold. Others respond with silence. But you’re not alone. There are women—older, quieter ones—who’ve walked this path. And there are younger ones now, like Ji-hyun in Marketing, who don’t shout, but show up with calm certainty. They don’t break the code. They just shift it."
+            },
+            {
+              "role": "user",
+              "content": "I just wish someone would say it out loud—this isn’t about confidence. It’s about being allowed to be seen. I’ve been doing everything right, and still… I’m not heard."
+            },
+            {
+              "role": "assistant",
+              "content": "They may not hear your words, but they’ll feel your presence. That matters. There are women in the office—some still do—whose quiet strength has changed things without a single raised voice. You’re not alone. And one day, you’ll be the one who makes space for the next person."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Confucian hierarchy and gender roles in family and workplace",
+          "Patrilineal inheritance and ancestral rites (Jesa) as symbolic gender division",
+          "After-work soju sessions as male-dominated ritual spaces",
+          "Use of honorifics and speech levels (jeo vs. na) as gendered linguistic performance",
+          "Unspoken social codes around women’s participation in informal settings",
+          "The cultural weight of 'jeong' (emotional connection) in indirect solidarity",
+          "Subtle resistance through quiet confidence, especially among MZ-generation women",
+          "Women’s labor in unpaid domestic and caregiving work despite dual-income status",
+          "Symbolic erasure of women’s lineage through name change at marriage",
+          "Gendered expectations of modesty, emotional restraint, and silence in public"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Patriarchal workplace hierarchy with male dominance in leadership and decision-making",
+          "After-work soju drinking sessions as informal decision-making spaces",
+          "Gendered expectations around speech—women using deferential forms like 'jeo' versus men using 'na'",
+          "The performative nature of politeness as a marker of femininity",
+          "Male colleagues receiving credit for ideas even when women express them first",
+          "The social cost of non-conformity—e.g., women being told they 'throw off the rhythm' for not drinking",
+          "Quiet resistance through presence and consistency, not overt confrontation",
+          "Generational shift among younger women who subtly challenge norms without breaking them"
+        ],
+        "issues": [
+          "Minor risk in framing 'using na' as a 'quiet act of claiming space'—while accurate in spirit, it may oversimplify the social backlash some women face when using 'na' in formal settings; however, this is contextually appropriate as it reflects the nuanced reality of strategic resistance",
+          "The mention of 'Ji-hyun in Marketing' as a role model is slightly generic but acceptable as a narrative device to illustrate internal cultural variation"
+        ],
+        "suggestions": [
+          "Consider adding a subtle reference to the gendered division of labor in meetings (e.g., women expected to take notes or serve tea) to further ground the scene in everyday workplace dynamics",
+          "In future examples, include a moment where the user reflects on the emotional labor of maintaining politeness despite systemic erasure—this would deepen the portrayal of internalized compliance",
+          "Avoid any implication that the assistant is giving advice to 'fix' the system; instead, affirm the legitimacy of the user’s frustration while validating quiet resistance as a form of agency"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 8
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 22,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

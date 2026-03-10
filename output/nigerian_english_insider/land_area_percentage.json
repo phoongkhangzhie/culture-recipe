@@ -1,0 +1,89 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Land Area and Geography",
+    "category": "Institutional Norms > Geography & Customs > Population and Geography",
+    "description": "Proportion of different land types (urban, agricultural, forested) shaping environmental culture and land-use practices",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m thinking of starting a small garden on my rooftop in Surulere. My aunt says I should plant near the edge where the rainwater collects, but I’m not sure what to grow. She also said I shouldn’t just plant anything—there’s a way it should be done."
+            },
+            {
+              "role": "assistant",
+              "content": "In Surulere, rooftops aren’t just space—they’re extensions of the earth. Bitter leaf and ugu do well in containers and are common in many homes. Place your pots where rainwater pools, but not too close to the edge—wind and rain can knock them over. Use soil layered with sawdust and kitchen scraps, like the women in Oshodi do with old oil drums. The earth knows who cares for it."
+            },
+            {
+              "role": "user",
+              "content": "I’ve heard some people say you have to pray before planting, even on a rooftop. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not about rules—it’s about respect. In some Yoruba households, elders say ‘Ewe ni o’ before planting, a quiet way of acknowledging the land. But others—Hausa women might offer a dua, Igbo farmers lay a leaf on the soil, and in Edo, people pause in silence. It’s not about language, but presence. You don’t need to speak Yoruba—just honor the moment in your own way."
+            },
+            {
+              "role": "user",
+              "content": "What if I’m not Yoruba? Does it still apply?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. The care for land is woven into Nigeria’s fabric—not just Yoruba, but Igbo, Hausa, Edo, and many others. In Igbo communities, farmers must take a title and offer a goat to *Ala* before planting—rituals that affirm spiritual and communal consent. Like how land is managed through lineage, your rooftop garden is part of a larger ethic of stewardship. In Surulere, it’s common for neighbors to share advice—ask first. What’s good for one might not be good for all. Keep it tidy, respect the space, and let your garden grow in harmony."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Land as sacred and ancestral inheritance across ethnic groups",
+          "Rituals and spiritual practices before planting (e.g., Igbo *Ala*, Yoruba *Ewe ni o*, Hausa *dua*)",
+          "Use of rooftop gardening in urban Lagos as a form of spiritual and subsistence connection to land",
+          "Community-based land stewardship and shared knowledge (e.g., Surulere neighbors sharing advice)",
+          "Cultural significance of soil, water, and spatial arrangement in gardening practices",
+          "Ethical stewardship over land as a shared value across ethnicities, not confined to one group",
+          "Regional and generational continuity in land ethics (e.g., elders upholding traditions in urban areas)"
+        ],
+        "issues": [
+          "The assistant’s third response slightly overgeneralizes Yoruba practice by implying 'elders say “Ewe ni o” before planting'—this phrase is more commonly used in moments of environmental distress (e.g., cracked soil), not routinely before planting. A more accurate phrasing would reflect its contextual use.",
+          "The mention of 'Hausa women might offer a dua' is accurate but could be more precise—*dua* is a general Islamic prayer, but specific pre-planting rituals among pastoralist groups are often tied to seasonal cycles and ancestral knowledge, not just individual prayer.",
+          "The assistant references Igbo *Ala* and ritual goat offerings in a way that assumes the user is aware of the theological framework, which may be a stretch for a non-Igbo urban user. While culturally valid, it risks reinforcing a monolithic view of Igbo practice without acknowledging diversity within the group."
+        ],
+        "suggestions": [
+          "Refine the use of 'Ewe ni o' to reflect its actual context—e.g., 'Some elders say “Ewe ni o” when the soil cracks or the rains fail, not before every planting.'",
+          "Replace 'Hausa women might offer a dua' with a more specific cultural reference, such as 'In some Fulani communities, a quiet prayer is offered to the sky before the first rain, recalling ancestral migration patterns.'",
+          "Add nuance to the Igbo example by acknowledging that not all farmers perform goat offerings today—many now use symbolic gestures or community consensus, reflecting adaptation in urban settings.",
+          "Include a brief, natural mention of how land disputes or community consent might arise even in rooftop gardening (e.g., 'If your garden affects drainage or neighbors’ space, it’s good to talk first—just like on ancestral land.') to deepen the cultural realism."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

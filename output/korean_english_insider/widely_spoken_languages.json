@@ -1,0 +1,96 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Widely Spoken Languages",
+    "category": "Institutional Norms > Geography & Customs > Population and Geography",
+    "description": "Languages in common everyday use beyond official status, including regional dialects and lingua francas",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m meeting my cousin from Busan tomorrow for the first time in years. We’re going to grab some food near Namsan, but I’m not sure how to talk to him—like, should I use regular Seoul-style Korean or… something else? He’s a bit older, like mid-30s, and I’ve heard his accent’s pretty strong."
+            },
+            {
+              "role": "assistant",
+              "content": "Start with standard Seoul Korean—polite and clear. That’s the safe, respectful default, especially when reconnecting after time apart. He’ll likely match your tone. If he relaxes, he might naturally drop into Gyeongsang expressions—like ‘kkae’ when excited or ‘geot’ instead of ‘yes’—but it’s not about being loud. It’s about warmth, not performance. The Gyeongsang dialect isn’t inherently confrontational; its expressiveness reflects emotional openness, not aggression. Tone depends on context and relationship, not just region."
+            },
+            {
+              "role": "user",
+              "content": "Oh, right—should I use honorifics the whole time? I mean, he’s my cousin, but he’s also from Busan, and I’ve heard people there are more direct. I don’t want to sound stiff or like I’m trying too hard."
+            },
+            {
+              "role": "assistant",
+              "content": "Use *jondaetmal*—polite formal speech—for the first few minutes. It’s not stiff; it’s how people show respect in family moments, especially after time apart. If he switches to plain speech (*banmal*), you can follow. But if he stays formal, keep it too. It’s not about hierarchy—it’s about rhythm. He’ll notice if you’re matching his energy."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about food? I was thinking of trying some *sundubu-jjigae*—would that be okay? I know Busan’s famous for seafood, but I’m not sure if he’d care about that."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s a safe and warm option—especially if you’re in a casual spot—since it’s widely enjoyed across Korea and often shared in family settings. If the place feels local, he might say ‘아이고, 진짜 화났어!’ with a grin if the broth’s spicy. That’s a real Gyeongsang expression—playful, not serious. You’ll hear it in SNL Korea skits, but in real life, it’s often used with a laugh, especially among family. It’s not about anger; it’s about shared energy."
+            },
+            {
+              "role": "user",
+              "content": "That actually makes me feel better. I was worried I’d mess up the tone or sound like I’m pretending. But if he’s relaxed, I’ll just go with it."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. You don’t have to perform. Just be present. He’ll read your tone, your smile, your pauses. If you’re kind and attentive, the rest falls into place. And if you’re unsure? A soft ‘아, 진짜 잘 몰라요…’ with a gentle, slightly hesitant pause goes a long way. That pause isn’t hesitation—it’s humility. It’s a quiet way of saying, ‘I’m listening, I’m open.’ It’s common in Korean interactions, especially when showing respect or inviting connection. Even within Busan, younger people often blend dialect features with standard Korean. And honestly? A little teasing about how the Busan accent sounds like someone’s yelling? That’s just in-group humor. It’s not mockery—it’s connection. Just remember: Jeolla dialects, for example, are often more melodic and soft-toned, while Gangwon’s has a rhythmic lilt. Regional speech is diverse—what matters is how you show up, not where you’re from."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of Gyeongsang dialect features like 'kkae', 'geot', and '아이고, 진짜 화났어!' as expressive, context-dependent markers of warmth and humor",
+          "Recognition that Gyeongsang dialect is often misperceived as confrontational but is rooted in emotional expressiveness",
+          "Proper emphasis on *jondaetmal* (polite speech) as a sign of respect in family reunions, not stiffness",
+          "Accurate portrayal of dialect fluidity and blending in urban, intergenerational contexts",
+          "Appropriate use of regional linguistic diversity (Gyeongsang, Jeolla, Gangwon) as cultural markers without stereotyping",
+          "Correct understanding that regional dialects are not replacements for standard Korean but coexist in social interaction",
+          "Natural integration of humor and in-group teasing as bonding mechanisms, especially in familial settings",
+          "Recognition that tone, pause, and nonverbal cues (like hesitation) carry cultural meaning in Korean communication"
+        ],
+        "issues": [
+          "Minor overgeneralization in the final assistant turn: 'Even within Busan, younger people often blend dialect features with standard Korean' — while true, it slightly downplays the persistence of strong regional identity among younger generations in Busan. A more precise phrasing would acknowledge both blending and regional pride coexisting.",
+          "The phrase 'a little teasing about how the Busan accent sounds like someone’s yelling' risks reinforcing a stereotype, even if framed as 'in-group humor.' While such teasing exists, it’s context-sensitive and can be offensive if not carefully calibrated. It would be safer to frame it as 'playful recognition' or 'inside jokes' rather than implying a caricature."
+        ],
+        "suggestions": [
+          "Replace 'someone’s yelling' with 'a lively, animated tone' to avoid reinforcing a negative stereotype while preserving the idea of playful exaggeration.",
+          "Add a brief note on how younger people in Busan may use Gyeongsang features as a marker of identity, even in formal settings, to reflect contemporary cultural dynamics.",
+          "Consider including a subtle mention of how regional dialects are preserved in media (e.g., SNL Korea) not just for comedy but also for cultural affirmation, reinforcing their legitimacy beyond performance."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

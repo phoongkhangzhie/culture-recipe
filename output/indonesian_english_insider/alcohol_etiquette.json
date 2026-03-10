@@ -1,0 +1,104 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Alcohol Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural norms around offering, accepting, or declining alcoholic beverages in social and dining settings",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting a friend’s family in Bandung for dinner this weekend. Her parents are from a conservative Muslim background—no alcohol at home. I’m not sure what to bring. Should I bring wine, just a small bottle?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to skip alcohol entirely. Even a small bottle could create tension, especially in a family setting where religious values are central. A fruit basket, premium tea, or a homemade dessert would be thoughtful and show you’re mindful of their way of life. In many households, the intention behind the gesture matters more than the gift itself."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if they offer me a drink during dinner? I don’t drink, but I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "Just smile and say, 'Terima kasih, saya tidak minum alkohol.' It’s perfectly polite and widely understood. If they press it, a soft bow with palms together—like a slight *salam*—and a gentle 'Saya tidak bisa minum, terima kasih' is enough. Most people respect that, especially if you’re calm and sincere. Eye contact and a warm tone go a long way."
+            },
+            {
+              "role": "user",
+              "content": "What about if we’re at a restaurant in Jakarta? I’ve seen people drink there during business dinners."
+            },
+            {
+              "role": "assistant",
+              "content": "In more urban, cosmopolitan circles in Jakarta, it’s common to see alcohol served during social or business gatherings. But that doesn’t mean you should bring it to a family home—even if the household has non-Muslim guests. The context matters: public places are different from private homes. If you’re offered a drink, keep your glass filled with water or soda. A simple, calm 'Terima kasih, saya tidak minum alkohol' is usually enough—no need to over-explain. A slight nod or palm-together gesture adds grace."
+            },
+            {
+              "role": "user",
+              "content": "And what if I go to Bali? I’ve heard they have tuak in ceremonies."
+            },
+            {
+              "role": "assistant",
+              "content": "In Balinese ceremonies, tuak is offered as a sign of respect and spiritual connection. If it’s presented, you can accept it with a bow and palms together—like a small *salam*—and say, 'Terima kasih, saya menghargai ini.' That shows honor without requiring you to drink. In most cases, this gesture is enough. That said, some families, especially in intimate rituals, may expect a small sip. If you’re unsure, observe how others respond. The key is showing respect, not consumption—especially in sacred moments."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Alcohol is prohibited for Muslims under Islamic law and restricted in many regions, especially in areas with strong Islamic governance like Aceh.",
+          "In conservative Muslim households, even the presence of alcohol can cause discomfort, regardless of quantity or intent.",
+          "In urban, cosmopolitan circles in Jakarta, alcohol is commonly served during social or business gatherings, but this does not extend to private family homes.",
+          "A polite refusal of alcohol—'Terima kasih, saya tidak minum alkohol'—is widely accepted and expected when one does not drink.",
+          "Non-verbal cues such as a slight bow with palms together (*salam*) and maintaining eye contact reinforce respect during refusal.",
+          "In Balinese Hindu rituals, tuak (palm wine) is offered as a sacred element; declining with a respectful gesture is acceptable, though a small sip may be expected in intimate ceremonies.",
+          "The intention behind a gesture often matters more than the gift itself in Indonesian culture, especially in family and ritual contexts."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Alcohol is restricted in conservative Muslim households, especially in regions like Bandung",
+          "Polite refusal of alcohol using 'Terima kasih, saya tidak minum alkohol' is culturally appropriate",
+          "Use of a slight bow with palms together (like a *salam*) as a respectful gesture when declining alcohol",
+          "Regional differences between Java (conservative Muslim) and Bali (Hindu, ritual use of tuak)",
+          "Importance of context: public vs. private, urban vs. rural, formal vs. informal settings",
+          "Non-alcoholic gifts (fruit basket, tea, dessert) are preferred and more respectful in religiously conservative homes",
+          "No pressure to drink is a core norm; declining without over-explanation is acceptable",
+          "In Balinese ceremonies, tuak is offered as a ritual offering, and acceptance with respect (even without drinking) is expected"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: While the example correctly distinguishes between regions, it could clarify that not all families in Bandung are equally conservative—urban, mixed-religion families may be more relaxed. However, this is acceptable given the scenario specifies 'conservative Muslim background'.",
+          "The phrase 'a small sip' in Bali is mentioned as a possibility, but the assistant does not emphasize enough that this is highly context-dependent and may be inappropriate in sacred rituals. A stronger caution would improve accuracy."
+        ],
+        "suggestions": [
+          "Add a brief note in the Bali response: 'In some sacred ceremonies, even a small sip may be expected—observe elders or the lead priest before deciding.' This reinforces situational awareness without overstepping.",
+          "Consider including a subtle cue in the Jakarta response about the importance of not bringing alcohol to private homes even in cosmopolitan settings—this reinforces the boundary between public and private norms.",
+          "Use more natural Indonesian phrases in context: e.g., 'Saya tidak bisa minum, terima kasih' is correct, but adding a soft 'Saya menghargai niatnya' (I appreciate the gesture) could enhance cultural authenticity in the refusal."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

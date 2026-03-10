@@ -1,0 +1,113 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Gestures in Communication",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Communication Style",
+    "description": "The meaning and use of hand gestures, facial expressions, and body language in everyday communication",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m presenting the quarterly review to my team lead in the office tomorrow. I’ve been told to be careful with how I hand over the printed report—what’s the right way to do it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use both hands—right hand supporting the bottom, left hand gently cradling the side. Never use just your left hand, especially with seniors. Offer it with a slight bow, about 10 degrees. Keep your posture straight, and don’t reach across the desk. It’s not about the gesture—it’s about moving in harmony with the moment: quiet, seamless."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And during the presentation, I noticed I kept pointing at the screen with my finger. I’ve been told that’s not ideal. What should I do instead?"
+            },
+            {
+              "role": "assistant",
+              "content": "Avoid pointing with your finger. Use your open palm, fingers together, guiding gently—like the hand is part of the space, not commanding it. If you need to highlight something, hover just above the screen. The attention should follow the idea, not the hand."
+            },
+            {
+              "role": "user",
+              "content": "And my expression—should I keep it neutral? I don’t want to seem too intense, but I also don’t want to look disengaged."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—neutral is best. A small, natural smile is okay if it comes, but don’t force it. In a setting like this, stillness speaks. Let the silence settle after a point. That pause? It’s not empty—it’s full of listening."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. One last thing—eye contact. I’ve heard not to stare, but I don’t want to look away too much either. How do people usually handle that?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s about rhythm, not rigidity. Let your gaze move as if you’re truly listening—brief glances toward the speaker’s eyes, then a soft shift, like you’re absorbing what’s being said. If you’re nervous, focus just below their eyes, but don’t fixate. The natural flow of attention is more important than any rule."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I also noticed younger colleagues adjust their posture subtly when speaking to seniors—like sitting a bit straighter or lowering their voice slightly. Is that expected?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes. You’ll notice how people sit a little straighter, like they’re drawing themselves into the moment—back straight, shoulders relaxed, breath slower. Voices often drop just a little, not because they’re quiet, but because they’re listening deeply. It’s not about performance—it’s about being in tune. Everyone seems to settle in their seats, as if the space itself has shifted. It’s a quiet sense of mutual respect, a shared understanding."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Using both hands when handing over documents to seniors",
+          "Avoiding finger-pointing; using open palm instead",
+          "Maintaining neutral facial expressions in formal settings",
+          "Using brief, natural eye contact with rhythmic shifts",
+          "Subtle posture adjustments—sitting straighter, breathing slower—when speaking to seniors",
+          "Lowering voice volume slightly in the presence of superiors",
+          "Pausing after key points to allow space for reflection"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Using both hands when offering documents to seniors",
+          "Avoiding finger-pointing; using open palm instead",
+          "Maintaining neutral facial expressions in formal settings",
+          "Subtle, non-intrusive eye contact patterns (brief glances, avoiding fixation)",
+          "Postural adjustments (straight back, relaxed shoulders) as sign of respect",
+          "Lowering voice volume slightly in hierarchical interactions",
+          "The cultural value of silence and stillness as communicative space",
+          "Use of bowing (implied in 'slight bow' and posture) in formal exchanges",
+          "Emphasis on harmony, subtlety, and mutual attunement over directness"
+        ],
+        "issues": [
+          "The assistant’s use of 'you’ll notice how people sit a little straighter' could be slightly overgeneralized—while common, not all individuals exhibit this uniformly; however, this is a minor nuance and does not undermine accuracy.",
+          "The phrase 'as if the space itself has shifted' is poetic but risks being overly metaphorical; while culturally resonant, it may confuse models trained on literal, rule-based data. Still, within the context of implicit cultural understanding, it’s acceptable as a stylistic choice."
+        ],
+        "suggestions": [
+          "Consider adding a brief, subtle reference to the concept of 'jeong' (deep emotional connection) or 'hyeong' (hierarchical respect) in the final response to deepen cultural grounding without explicit explanation.",
+          "Slight refinement of the eye contact advice to emphasize that brief glances are often directed toward the lower face or neck area, not just 'below the eyes,' which is a more precise cultural detail.",
+          "Avoid overuse of poetic phrasing in training data that may lead to hallucination—balance metaphor with concrete behavioral cues."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

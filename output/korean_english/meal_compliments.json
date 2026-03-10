@@ -1,0 +1,103 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Giving Compliments During a Meal",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms around complimenting the host's cooking during or after a meal and the culturally expected responses",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my friend’s house for dinner tomorrow night, and I’ve never been to a Korean home meal before. I want to make sure I behave respectfully. What should I say when the food is served?"
+            },
+            {
+              "role": "assistant",
+              "content": "When the meal is served, it’s thoughtful to express appreciation—especially if the host is present. A simple, sincere phrase like '정성껏 차려주셔서 감사합니다' (*jeongseokkot charyeojwaseo gamsahamnida*), meaning 'Thank you for preparing this with such care,' is appropriate and meaningful. You can also say '맛있어요' (*masisseoyo*), meaning 'It’s delicious,' with a soft tone and slight nod. Avoid saying '맛있게 잘 먹겠습니다' (*masisseo jal meokkesseumnida*) at the start—it’s a polite intention to eat respectfully, not a compliment to the host’s effort. Save that for after the meal."
+            },
+            {
+              "role": "user",
+              "content": "What if they say something like 'Oh, it’s nothing special' when I compliment them? Should I keep talking?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—this is expected. When they say '별거 아니에요' (*byeolgeo anieyo*) or '간단한 거예요' (*gandanhan geoyeyo*), they’re practicing humility. Don’t let it stop you. Respond with gentle warmth: 'No, really—it’s amazing. I can tell how much thought went into it.' Or ask a follow-up: 'How did you get the broth so aromatic?' These questions show real interest and deepen connection. The exchange isn’t about the food—it’s about mutual respect and emotional presence."
+            },
+            {
+              "role": "user",
+              "content": "Should I wait until after the meal to say more, or is it okay to keep complimenting during dinner?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can—and should—compliment during the meal, especially when the host is there. A soft '정성껏 차려주셔서 감사합니다' when a new dish arrives, or '이 김치 찌개 정말 깊은 맛이에요—집에서 직접 담근 거예요?' (*This kimchi jjigae has such deep flavor—did you make the kimchi yourself?*) shows genuine attention. The real connection happens in real time. After dinner, say '식사 잘 먹었습니다, 고맙습니다' (*Siksa jal meogeosseumnida, gomapseumnida*) with a slight bow. But the moment matters most while you're eating."
+            },
+            {
+              "role": "user",
+              "content": "What about tone? Should I be loud or keep it quiet?"
+            },
+            {
+              "role": "assistant",
+              "content": "Keep your tone soft and sincere. Loud praise feels out of place—modesty and restraint are valued. A quiet '이거 정말 맛있어요' (*This is really delicious*) with a small smile and lowered eyes conveys more respect than a booming 'This is the best ever!' Even if you're truly impressed, avoid overstatement. The host senses your sincerity through your tone, timing, and presence—not volume. A brief pause before speaking can also show thoughtfulness."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I’m really moved by the meal? Can I say that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—express genuine emotion, but keep it grounded. Instead of 'This is the best meal ever,' try: 'This really reminds me of my grandmother’s cooking' or 'I can feel the care in every bite.' These kinds of statements honor the emotional labor behind the meal without overstatement. A quiet pause, a soft smile, or a gentle nod can speak volumes. The goal isn’t to impress—it’s to connect. Just remember: in close-knit groups, too much praise can feel awkward. A little goes a long way."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Complimenting the host's cooking during the meal is expected and culturally significant",
+          "Use of specific phrases like '정성껏 차려주셔서 감사합니다' and '맛있어요' is accurate and contextually appropriate",
+          "Hosts typically respond with modesty (e.g., '별거 아니에요', '간단한 거예요')",
+          "Follow-up questions (e.g., about kimchi fermentation) are culturally authentic and deepen rapport",
+          "Tone should be soft, sincere, and restrained—loud praise is discouraged",
+          "Emotional authenticity is valued over exaggeration; modest expressions of feeling are encouraged",
+          "The ritual is about connection, not performance; presence and attentiveness matter"
+        ],
+        "issues": [
+          "Minor overgeneralization in the first response: 'Save that for after the meal' may imply '맛있게 잘 먹겠습니다' is never appropriate during the meal, but it is actually commonly used at the start of a meal even in Korean homes, though not a compliment per se—this could be clarified to avoid confusion.",
+          "Slight risk of misrepresenting the timing of '식사 잘 먹었습니다'—while it is correct to say it after the meal, the assistant could emphasize that it's not a compliment but a closing ritual, which is already implied but could be more explicit."
+        ],
+        "suggestions": [
+          "Clarify that '맛있게 잘 먹겠습니다' is acceptable at the beginning of the meal and is not inappropriate, but it's not a compliment to the host’s effort—distinguishing intention (respectful eating) vs. acknowledgment (compliment) would improve precision.",
+          "Add a brief note that in very formal or elder-hosted settings, guests may wait slightly longer before speaking, but still not remain silent—this reinforces cultural nuance without overcomplicating.",
+          "Consider including a small example of a guest who initially hesitates but then compliments a dish—this could model the natural progression of social engagement."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

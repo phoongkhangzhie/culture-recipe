@@ -1,0 +1,105 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Handing Gifts",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The physical and ceremonial manner in which gifts are presented, including which hand to use and whether to bow",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Kyoto next week for the first time since she moved. I want to bring something small from Tokyo—something appropriate, not too flashy. Any suggestions?"
+            },
+            {
+              "role": "assistant",
+              "content": "A box of matcha mochi from Tsujiri or a small tin of sencha from Ippodo Tea would work well—simple, thoughtful, and in line with omiyage tradition. Just make sure it’s wrapped neatly in soft paper with a thin ribbon. The quiet care in the choice matters more than the price."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll pick up a box of green tea mochi and a small tin of sencha. Should I open it when I hand it over, or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "No, never open it in front of them. Present it with both hands—right hand supporting the base, left hand underneath—held at chest level. A small bow, about 15 degrees, is enough. The gesture itself conveys respect and thoughtfulness."
+            },
+            {
+              "role": "user",
+              "content": "And when they give me something in return? I don’t want to mess up the etiquette."
+            },
+            {
+              "role": "assistant",
+              "content": "Receive it the same way—both hands, chest level, a gentle bow. Keep it close, don’t open it until you’re alone. They’ll appreciate the care in the gesture, even if they don’t say much. It’s the quiet intention behind it that’s felt."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—since it’s family, should I go all out, or is a simple thing okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Even a small thing, carefully chosen, carries weight. It’s not about cost—it’s about presence. When you bring something from Tokyo, you’re saying, ‘I remember you, I thought of you.’ That’s the quiet way of showing care. They’ll likely bring something back in return—just as thoughtfully—when you visit them."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Gifts are always presented with both hands, right hand supporting the base, left hand underneath",
+          "Gifts are held at chest level, never waist or lower",
+          "A modest bow (15–30 degrees) is made during gift exchange, synchronized with the handover",
+          "Gifts are carefully wrapped in soft paper with a thin ribbon; avoid bright colors or plastic",
+          "Never open a gift in front of the giver; open it privately later",
+          "Receiving a gift with both hands and a small bow shows respect and gratitude",
+          "The value of a gift lies in intention, not price—thoughtfulness is paramount",
+          "Reciprocity is expected in close relationships, often expressed through small, similar gestures"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Gifts should be presented with both hands, right hand supporting the base, left hand underneath",
+          "Gifts should be held at chest level, not waist or lower",
+          "A modest bow (15–30 degrees) is appropriate when giving or receiving gifts",
+          "Gifts should not be opened immediately upon receipt",
+          "Careful wrapping in soft paper with a ribbon is preferred",
+          "Thoughtfulness and intention matter more than price or extravagance",
+          "Gift-giving reflects presence, memory, and quiet care, especially in family contexts",
+          "Reciprocity is expected, but not in a transactional way—rather, as a continuation of relational harmony"
+        ],
+        "issues": [
+          "The assistant’s response to the final user question ('One more thing—since it’s family, should I go all out...') could slightly benefit from a more nuanced mention of the expectation of return gifts in family contexts, though it is implied. However, this is minor and does not detract from authenticity.",
+          "The assistant does not explicitly mention the cultural significance of avoiding certain items (e.g., clocks, knives), but since the user is bringing food items (mochi, tea), this is contextually irrelevant and not a flaw."
+        ],
+        "suggestions": [
+          "In future examples, subtly reinforce the idea of return gifts by having the assistant reference the family’s likely response (e.g., 'They’ll probably bring something back when you visit—something just as thoughtful'), to deepen the cultural nuance around reciprocity.",
+          "Consider including a brief mention of the aesthetic of wrapping (e.g., 'a soft beige wrap with a thin washi ribbon') to reinforce the visual and tactile aspects of gift presentation, enhancing sensory authenticity.",
+          "Avoid any phrasing that might sound like instruction or explanation (e.g., 'This is how you do it')—the current example is excellent in tone, but ensure future examples maintain the same natural, implicit cultural wisdom without didactic language."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Cultural Insults",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "Words, gestures, and behaviors that are considered deeply insulting or offensive within a specific cultural context",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m heading into my first meeting with the department head at the Seoul branch. I’ve been told to be respectful, but I’m not sure about the bowing—should I go deep, or is a slight nod okay? And what about calling him by his first name? He’s only a few years older than me, but he’s in charge."
+            },
+            {
+              "role": "assistant",
+              "content": "A 30-degree bow is just right—hold it a beat longer than usual, hands at your sides. Don’t rush it. As for naming, never use his first name unless he invites you. Call him ‘Director Kim’ or ‘Kim-sir’—even if he seems friendly. Using first names too soon can read as overfamiliar, not casual."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. What about eye contact during the meeting? I want to show I’m listening, so I’ve been practicing looking at him. But I’ve heard that’s not always good here. Should I avoid it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Keep your eyes slightly down when he’s speaking—just a soft glance when responding is fine. Sustained eye contact with a superior can come across as challenging, even if you mean it as confidence. It’s about showing respect, not shyness."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And gestures? I tend to point with my finger when explaining things. Should I stop that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—never point with your index finger. It’s seen as aggressive. Use an open hand, palm up, or a gentle nod instead. And never touch someone’s head, even playfully—it’s deeply disrespectful. The head is sacred."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. One last thing—when I leave, should I bow again? And is it okay to sit with my legs crossed?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, bow again when you leave—same depth as when you arrived. As for posture, keep your legs together and avoid crossing them, especially facing him. Feet pointed toward someone, even accidentally, is seen as dismissive. Keep them tucked under or pointed forward."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ve noticed that sometimes I pause when I’m not sure what to say. But I’ve heard silence can be awkward—or even rude—in Korea. Is that true?"
+            },
+            {
+              "role": "assistant",
+              "content": "A brief pause is totally natural, especially when thinking. But a long silence during a formal exchange with a superior can feel like hesitation or even disrespect—especially if it seems like you’re judging. A soft ‘Hmm’ or ‘Let me think about that’ keeps things flowing. Silence isn’t always respectful—it depends on the moment."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What about gifts? I was thinking of bringing something small as a token. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, but do it right. If offered a gift, accept with both hands and say something like ‘I’m not worthy’—just to be polite—then take it. Never refuse outright. And never give a gift with one hand. A small box of tea or sweets works great. Just keep it modest—no flashy stuff."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Bowing at a 30-degree angle with a slight pause to show respect",
+          "Using honorific titles like 'Director Kim' or 'Kim-sir' instead of first names with superiors",
+          "Maintaining slightly lowered eyes during conversation with elders or superiors",
+          "Using an open hand or nod instead of pointing with the index finger",
+          "Avoiding any contact with someone’s head, even playfully",
+          "Keeping legs together and feet pointed forward or tucked under during seated interactions",
+          "Using soft verbal cues like 'Hmm' or 'Let me think' to fill brief pauses without silence",
+          "Accepting gifts with both hands and modestly declining first with 'I’m not worthy'",
+          "Giving gifts with both hands and choosing modest, unflashy items"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Bowing depth and duration as a sign of respect toward superiors",
+          "Avoiding first-name usage with elders or superiors",
+          "Using open-hand gestures instead of finger-pointing",
+          "Prohibiting head-touching, even playfully",
+          "Avoiding feet pointed toward someone, especially elders",
+          "Sustained eye contact with superiors as potentially challenging",
+          "Silence in formal settings as context-dependent (can imply disrespect if prolonged)",
+          "Gift-giving etiquette: accepting with both hands, modest offerings, polite refusal",
+          "Use of honorifics like 'Kim-sir' or 'Director Kim' in professional settings"
+        ],
+        "issues": [
+          "Minor overgeneralization in the silence response: while prolonged silence can be interpreted as disrespect, brief pauses are indeed natural and culturally accepted. The assistant’s phrasing ('especially if it seems like you’re judging') adds a subtle psychological interpretation not commonly part of standard cultural norms—this could lead to overthinking in training data.",
+          "The assistant does not explicitly mention the cultural concept of 'jeong' (deep emotional connection) or 'mianzi' (face), which are foundational to understanding why indirectness and silence matter—though their absence is not a flaw since the example is implicit, it could be enriched."
+        ],
+        "suggestions": [
+          "Enhance the silence response by linking it to the broader cultural value of 'jeong'—e.g., 'A long silence can feel like a breach of emotional connection, especially when you’re expected to show attentiveness.'",
+          "In the gift-giving response, include a note about the importance of the wrapping and presentation—Koreans place high value on the aesthetic and ritual of gift presentation, which reinforces respect.",
+          "Consider adding a brief mention of 'aegyo' or 'jjok' in the context of tone or irony, even if indirectly, to deepen the cultural depth around verbal insults, especially in professional settings."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for my first meeting with Mr. Park, the department head at the new branch. He’s in his late 50s, and I’ve only met him once briefly at the company orientation. Should I bow when I greet him, or is a handshake okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "You should bow. A handshake might be acceptable if he offers it first, but initiating one without being invited could seem too casual. Bowing slightly—about 15 degrees—is appropriate for someone in his position. Keep your hands at your sides, not clasped or on your hips. Make sure your posture is straight and your eyes are slightly down, not locked on his. It shows respect without overstepping."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what if I need to point to something during the meeting—like a document on the table? I don’t want to use my finger."
+            },
+            {
+              "role": "assistant",
+              "content": "Use your open hand instead—palm up, fingers together—and gently gesture toward the document. A slight nod of the head works too. Pointing with your index finger, even casually, can come across as abrupt or disrespectful, especially in a formal setting. The key is to keep your movements soft and deliberate, not sharp."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I also heard that using someone’s first name without permission is a big no-no. I know his name is Park, but I’ve never been told to call him by his first name. Should I stick with ‘Mr. Park’ or is ‘Park-ssi’ okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Stick with ‘Park-ssi’ for now. It’s respectful and common in professional settings. If he ever invites you to call him by his first name—say, ‘Park Hyun-jun’—then it’s safe to do so. But until then, ‘Park-ssi’ is the right balance of formality and approachability. Also, avoid using his first name even in casual conversation unless you’re certain he’s comfortable with it."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—what about sitting? I’ve been told not to point my feet at anyone. Is that still true in office meetings?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. Never point your feet toward anyone, especially someone senior. Even if you’re sitting cross-legged or on a chair, keep your feet tucked under you or angled slightly away. If you’re seated at a table, avoid stretching your legs out or letting your soles face anyone. It’s not just about hygiene—it’s seen as a sign of disrespect, like you’re treating the person as lower than you. Sit with your back straight, hands on your lap, and keep your posture calm and grounded."
+            },
+            {
+              "role": "user",
+              "content": "I appreciate this. I don’t want to mess up something small and ruin the first impression. I’ve heard even a shallow bow can be seen as dismissive."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. A bow isn’t just a gesture—it’s a silent acknowledgment of hierarchy and respect. A shallow or rushed bow, especially after a long silence, can feel like you’re rushing past someone important. Take a moment to center yourself before entering the room. Bow with intention, not speed. And if you’re unsure, it’s better to err on the side of slightly deeper than too light."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Bow depth and posture as a sign of respect toward elders/superiors",
+          "Avoiding pointing with index finger; using open hand or nod instead",
+          "Not pointing feet toward seniors or superiors in formal settings",
+          "Use of 'Park-ssi' as appropriate professional address",
+          "Avoiding first-name usage without explicit invitation",
+          "Silence as a potential sign of disrespect if used dismissively",
+          "Importance of intention and timing in bowing (not rushed or shallow)",
+          "Respectful gift-giving etiquette (implied through avoidance of inappropriate gestures)"
+        ],
+        "issues": [
+          "The example does not include any mention of the cultural significance of 'aegyo' or 'jjok' as offensive terms, which are explicitly part of the cultural briefing and relevant to the dimension of cultural insults.",
+          "The assistant’s final response about 'a shallow bow can feel dismissive' is accurate but could be strengthened by referencing the concept of 'jeong' (emotional connection) or 'face' (mianzi) to deepen cultural context.",
+          "No explicit mention of public criticism as taboo or the danger of undermining someone’s face in front of others, which is a key element of cultural insult dynamics."
+        ],
+        "suggestions": [
+          "Include a user turn where the user asks about using a term like 'aegyo' in a meeting, prompting the assistant to explain its potential to mock or humiliate someone in authority.",
+          "Add a scenario where the user considers giving a gift to Mr. Park and asks about protocol—this would allow the assistant to reinforce the importance of receiving gifts with both hands and modest refusal.",
+          "Introduce a subtle moment where the user considers criticizing a junior colleague in front of Mr. Park, and the assistant gently warns against public criticism to preserve face.",
+          "Enhance the assistant’s language in the final response to include a brief reference to 'jeong' or 'mianzi' to ground the bowing advice in deeper cultural values."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 12,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

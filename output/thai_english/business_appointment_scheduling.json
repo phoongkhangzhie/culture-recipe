@@ -1,0 +1,181 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Business Appointment Scheduling",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Expectations around how far in advance meetings should be arranged and the etiquette of confirming appointments",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m trying to schedule a meeting with Mr. Somsak from Bangkok Tech Solutions for next week. I sent him an email on Monday proposing Thursday at 10 a.m., but I haven’t heard back. Should I follow up? And is Thursday still a good day?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, it’s wise to follow up—especially in Thai business culture, where responses may be delayed not out of neglect, but due to respect for hierarchy. Mr. Somsak might be waiting for a personal confirmation before committing, especially if he perceives you as a junior or foreign contact. Thursday at 10 a.m. is still a strong choice—mornings are preferred for serious discussions, and it avoids the late afternoon lull. I’d recommend calling him by Wednesday noon to confirm, as that shows initiative while maintaining harmony."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll call him tomorrow. But what should I say exactly? Should I mention the email? And how should I address him?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use 'Khun Somsak'—that’s the standard respectful form in professional settings. Gently reference the email: 'Khun Somsak, I hope you’re well. I sent a brief message earlier this week about meeting on Thursday at 10 a.m.—just wanted to check if that’s still convenient for you?' Keep your tone soft and open-ended. Avoid direct questions like 'Can we confirm?' Instead, frame it as a gentle check-in. This respects the cultural preference for indirectness and avoids putting pressure on the other person."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll do that. What if he says he’s busy? Should I suggest another time right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "If he says he’s busy, respond with warmth and humility. Say: 'Of course, Khun Somsak—I completely understand. Please let me know a time that works better for you, and I’ll be happy to adjust.' Don’t offer alternatives immediately. Let him lead. Thai professionals value patience and deference, especially when seniority is involved. Pushing options can seem abrupt or presumptuous. Wait for his suggestion—this builds trust and shows you respect his authority."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I’m running late? I’ve heard that a few minutes are okay, but how late is too late?"
+            },
+            {
+              "role": "assistant",
+              "content": "A 10–15 minute delay is generally acceptable, especially if there’s a valid reason. But being more than 20 minutes late without notice is seen as disrespectful. If you’re delayed, call ahead and apologize sincerely: 'Khun Somsak, I’m so sorry—I’ve been held up by traffic and will be about 15 minutes late. Thank you for your understanding.' That small gesture preserves harmony and shows you value his time."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Appointment scheduling should be done 1–2 weeks in advance",
+          "Morning meetings (9 a.m.–12 p.m.) are preferred",
+          "Phone call confirmation is preferred over email",
+          "Use of 'Khun' as respectful form of address",
+          "Indirect communication style (soft phrasing, open-ended questions)",
+          "Respect for hierarchy and seniority in decision-making",
+          "Acceptance of 10–15 minute delays with apology",
+          "Avoiding pushiness when rescheduling",
+          "Importance of harmony and relationship-building in business interactions"
+        ],
+        "issues": [
+          "Minor omission of the cultural sensitivity around Friday scheduling (though not directly relevant to this specific scenario, it's a key nuance in Thai business culture)",
+          "Slight underemphasis on the potential for email to be overlooked due to high volume or hierarchical filtering—could be strengthened by mentioning that Thai professionals may not always check emails promptly, especially from foreign contacts"
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant’s response about avoiding Friday meetings, especially near month-end, to reinforce cultural awareness of timing preferences",
+          "Enhance the confirmation advice by noting that even if an email is sent, it should be followed up with a phone call because Thai professionals may not perceive email as a formal confirmation",
+          "Consider including a phrase like 'I hope this message finds you well' as part of the call script to align with common Thai polite openings"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m preparing for a meeting with a Thai business partner in Bangkok next week. I sent an email last Thursday confirming the appointment for Tuesday at 10 a.m., but I haven’t heard back. Should I be worried? I don’t want to seem pushy, but I also don’t want to appear disinterested."
+            },
+            {
+              "role": "assistant",
+              "content": "I understand your concern—this is a common situation that reflects a subtle but important cultural nuance. In Thai business culture, an email confirmation alone isn’t considered sufficient. While you did the right thing by sending a message, the expectation is to follow up with a personal phone call within 24–48 hours of agreeing to a meeting. Since it’s been over a week and you haven’t heard back, it’s possible your Thai counterpart didn’t see the email or assumed the meeting wasn’t confirmed due to lack of personal contact. In Thailand, relationships are built through direct, warm interaction—not just digital correspondence."
+            },
+            {
+              "role": "user",
+              "content": "Oh, I see. So what should I do now? I don’t want to offend them, but I also need to make sure we’re still on for Tuesday. Should I call them right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, calling is the right next step—but with care and respect. Choose a time between 9 a.m. and 11 a.m. on Monday or Tuesday, as late afternoons are less ideal, and Fridays are generally avoided for formal meetings. When you call, begin with a polite greeting and use 'Khun' before the name—e.g., 'Hello, Khun Somsak, I hope you’re well.' Then gently confirm: 'I’m just calling to kindly confirm our meeting scheduled for Tuesday at 10 a.m. I want to make sure everything is still clear on your end.' This shows attentiveness without pressure. And remember, keep your tone warm and unhurried—this reflects the value of 'sanuk' (enjoyment) and 'wan chai' (harmony) in Thai interactions."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll do that. Also, I’ve been thinking—should I have scheduled this meeting earlier? I only booked it last week, but I’ve heard some people say you shouldn’t book too far in advance either."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re very observant. In Thai business culture, timing is a balance. Scheduling a meeting one to two weeks in advance is ideal—especially for formal or high-level discussions. Booking more than a month ahead can seem overly rigid or impersonal, as it may suggest you’re treating the relationship like a transaction rather than a partnership. On the other hand, scheduling less than a week ahead—especially last-minute—can be seen as disrespectful, unless there’s a genuine emergency. Since you booked it just over a week out, you’re right on the mark. The issue isn’t the timing, but the lack of follow-up, which is where the cultural expectation lies."
+            },
+            {
+              "role": "user",
+              "content": "Thank you so much. One last thing—what if Khun Somsak is late? I’ve heard Thai meetings often start a bit late. Should I wait for him, or should I begin on time?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful question. It’s common for meetings to begin 10–15 minutes after the scheduled time, especially if the senior person is arriving from another engagement. If Khun Somsak is late, it’s appropriate to wait—starting on time might be seen as abrupt or impatient, which could affect the harmony of the interaction. However, don’t wait more than 20 minutes. If he’s significantly delayed, a polite note or quick message like, 'I hope everything is alright, Khun Somsak—please let me know when you’re ready to begin,' maintains respect while keeping things moving. The key is patience, not rigidity."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Thai names typically place the given name first (e.g., Somsak), followed by a title or surname.",
+          "The honorific 'Khun' (คุณ) is the standard polite form used before a name in formal professional settings.",
+          "The word 'khrup' (ครับ) is a gender-neutral speech particle used at the end of sentences to convey politeness, not a title or form of address.",
+          "In Thai business culture, confirming appointments via a personal phone call is preferred over email, reflecting the value of personal connection and relationship-building.",
+          "Meetings are ideally scheduled one to two weeks in advance—too early may seem impersonal, too late may seem disrespectful.",
+          "Morning hours (9 a.m.–12 p.m.) are preferred for formal meetings, while late afternoons and Fridays are generally avoided.",
+          "A 10–15 minute delay in meeting start time is common and expected; waiting up to 20 minutes is appropriate to maintain harmony.",
+          "Maintaining a warm, pleasant tone during interactions reflects the cultural values of 'sanuk' (enjoyment) and 'wan chai' (harmony)."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Appointment scheduling should be done 1–2 weeks in advance",
+          "Email confirmation alone is insufficient; a follow-up phone call is expected within 24–48 hours",
+          "Phone calls are preferred over email/text for confirmation to demonstrate respect and personal connection",
+          "Use of 'Khun' as a polite honorific in business settings",
+          "Morning time slots (9 a.m.–12 p.m.) are preferred for meetings",
+          "Avoid scheduling meetings on Fridays, especially near month-end",
+          "Slight delays (10–15 minutes) are acceptable, particularly if due to seniority",
+          "Waiting up to 20 minutes for a late arrival is appropriate; excessive waiting may be seen as rigid",
+          "Maintaining harmony ('wan chai') and enjoyment ('sanuk') in interactions is culturally valued",
+          "Overly early scheduling (>1 month) is seen as impersonal; last-minute scheduling is disrespectful unless urgent"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the phrase 'it’s common for meetings to begin 10–15 minutes after the scheduled time'—while accurate in many cases, this should be framed as a norm rather than a universal rule, as some Thai professionals are punctual and expect others to be too.",
+          "The example assumes the user is a foreigner without explicitly acknowledging that cultural expectations may vary slightly between urban professionals and more traditional or rural settings, though this is a minor limitation given the context."
+        ],
+        "suggestions": [
+          "Add a brief note in the assistant's response to acknowledge that while 10–15 minute delays are common, some Thai professionals in international firms may expect punctuality—this reinforces cultural nuance rather than treating it as a monolithic rule.",
+          "Consider including a subtle reminder that tone and demeanor matter as much as timing: even a perfectly timed call can be perceived as pushy if delivered with urgency or impatience.",
+          "In the final response, consider adding a small cultural tip about body language or seating etiquette (e.g., not sitting until invited), though this may be outside the scope of appointment scheduling. If included, it would enhance depth without overstepping."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 12,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

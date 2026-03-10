@@ -1,0 +1,104 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Political Criticism Norms",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "The social and legal boundaries around publicly criticizing political leaders, government policies, or the state",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m helping a friend draft a post for the neighborhood KakaoTalk group. She wants to share her concerns about the new housing policy but doesn’t want to sound too harsh. Any suggestions on how to phrase it without causing trouble?"
+            },
+            {
+              "role": "assistant",
+              "content": "Start with a soft opener—like, ‘Some residents have been wondering if the new rental subsidies are reaching those who need them most. It feels like young families are still struggling with high deposits.’ Keep it vague: no names, no direct criticism. Just ‘some residents’ and ‘it feels like.’"
+            },
+            {
+              "role": "user",
+              "content": "Good idea. Maybe add a line about how the current situation makes it hard for people to plan long-term? Like, it’s not just about money—it’s about stability."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—try: ‘It’s hard to plan for the future when the rules keep changing. Signing a lease feels like saving for a down payment, but with no real certainty. Feels like we’re just waiting, without a clear direction.’ That kind of phrasing lands well—quiet, but meaningful."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should we include a meme? I saw one going around with a boat on shaky water and the caption ‘The ship is drifting with no one at the wheel.’"
+            },
+            {
+              "role": "assistant",
+              "content": "That one’s popular—especially in Seoul and among younger renters. But be aware: even light satire can get flagged or removed by moderators. Some groups report it quietly, especially if it’s seen as too pointed. And even if it’s shared, it’s not safe to assume it’ll stay up. Best to keep the tone light, like a shared joke with a quiet edge."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll send her that version. She’s worried about backlash, but I think this way she can speak up without risking her job or reputation."
+            },
+            {
+              "role": "assistant",
+              "content": "In places where people value harmony, it’s common to read between the lines—what’s said quietly often carries more weight than what’s shouted. It’s not about being against the system, but about caring enough to want it to work better. And sometimes, the quietest voices are the ones that stay heard longest."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Indirect expression of concern through vague, collective language ('some residents', 'it feels like')",
+          "Use of metaphor and coded phrasing (e.g., 'the ship is drifting') to convey critique without direct confrontation",
+          "Awareness of digital platforms as primary spaces for dissent, especially among younger generations",
+          "Recognition of social and professional risks associated with public criticism, particularly in chaebol or family-run workplaces",
+          "Cultural emphasis on *jeong* (emotional bonds) shaping how criticism is received—careful not to disrupt relational harmony",
+          "The dignity of silence as a strategic form of respect and restraint, especially in hierarchical or senior-dominated settings",
+          "Contextual sensitivity: tone and form vary significantly across generations, urban vs. rural areas, and institutional environments"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of indirect language ('some residents', 'it feels like') to express concern without direct criticism",
+          "Emphasis on avoiding names and direct blame, consistent with Confucian values of harmony and respect",
+          "Recognition of social and professional risks associated with public criticism",
+          "Digital platforms (KakaoTalk) as primary venues for informal political discussion",
+          "Use of metaphorical expressions ('the ship is drifting') as a culturally appropriate form of critique",
+          "Awareness of content moderation risks on social platforms, even for satirical or meme-based content",
+          "Nuanced understanding of generational differences in political expression (younger urban Koreans vs. older generations)",
+          "Tone of quiet resolve and care for the system rather than overt opposition"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing the 'quiet but meaningful' tone as universally applicable—some highly politicized online communities may use more direct language, though this is not a major flaw in context",
+          "The assistant's final line, while poetic, slightly idealizes the 'quietest voices' as always being heard, which may understate the real suppression risks in some contexts (e.g., workplace retaliation). However, this is a subtle nuance and does not undermine authenticity"
+        ],
+        "suggestions": [
+          "Consider adding a brief acknowledgment of regional variation—e.g., rural vs. Seoul-based users may differ in expression styles",
+          "In future examples, include a variation where a user expresses frustration in a formal setting (e.g., workplace meeting) to further illustrate the contrast between public restraint and private concern",
+          "Introduce a subtle reference to honorifics in speech or writing (e.g., using '대통령님' even in informal digital spaces) to reinforce linguistic authenticity"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

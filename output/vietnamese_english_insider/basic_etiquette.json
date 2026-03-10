@@ -1,0 +1,186 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Basic Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Foundational rules of polite social behavior and conduct in everyday interpersonal interactions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi next week for Tết, and I want to bring a gift. What should I get, and how should I give it? I don’t want to make a mistake."
+            },
+            {
+              "role": "assistant",
+              "content": "Red or gold wrapping is perfect—luck and new beginnings. A good tea set, a fruit basket, or a box of bánh mứt works well. Present it with both hands, and a slight bow. Use 'anh' or 'chị' if they’re older, 'em' only if clearly younger—age matters more than gender. Don’t step back right away; just pause. They’ll smile and acknowledge it. No need to rush."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And when we’re eating, should I start right away, or wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always wait for the eldest to begin. Keep your chopsticks folded in your lap. Never stick them upright in the rice—never. If you’re serving, offer the best piece to the elder first and say 'Mời chị ăn' with a slight bow. If they say no, just nod and smile—don’t press. Leaving a little food on your plate shows you’re satisfied, not greedy."
+            },
+            {
+              "role": "user",
+              "content": "What about when I’m offered a seat? Should I choose my own spot?"
+            },
+            {
+              "role": "assistant",
+              "content": "No—never pick your seat. Wait to be invited. If someone says, 'Anh ngồi đây,' take it. If not, sit slightly behind the elders, knees together, hands folded. Don’t cross your legs or point with your foot. Lowering your gaze when speaking to elders shows respect. The family hierarchy is understood, not spoken—your place is clear."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I accidentally say no to food?"
+            },
+            {
+              "role": "assistant",
+              "content": "If you’re full, just say 'Tôi đã no, cảm ơn nhiều' with a smile. No need to be formal. If they keep offering, take a small bite and say 'Cảm ơn nhiều' again. A quiet nod is fine too—silence is okay. The point is to show you’re grateful, not to refuse."
+            },
+            {
+              "role": "user",
+              "content": "And one more thing—what should I do when I enter the house?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always remove your shoes before stepping inside. Place them neatly near the door, facing outward—this shows care and respect. During Tết, keep your voice low, avoid loud laughter or phone calls. Even small talk should be calm. The whole house should feel peaceful—like a quiet blessing."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of red/gold wrapping for gifts during Tết",
+          "Presenting gifts with both hands and a slight bow",
+          "Avoiding sticking chopsticks upright in rice",
+          "Waiting for elders to start eating",
+          "Offering food to elders first with 'Mời chị ăn'",
+          "Leaving a small amount of food on the plate",
+          "Using honorifics like 'anh', 'chị', 'em' based on age",
+          "Not choosing one's own seat—waiting to be invited",
+          "Sitting with knees together, hands folded, avoiding leg-crossing",
+          "Lowering gaze when speaking to elders",
+          "Removing shoes before entering a home",
+          "Keeping voice low during Tết, avoiding loud behavior",
+          "Using silence or small nods to accept or decline food gracefully",
+          "The importance of unspoken hierarchy and nonverbal cues"
+        ],
+        "issues": [
+          "The assistant's response to 'what if I accidentally say no to food?' includes Vietnamese phrases like 'Tôi đã no, cảm ơn nhiều'—this is appropriate, but the user is not positioned as a non-native speaker, so the inclusion of Vietnamese may break immersion for an English-only context. However, since the user is asking about cultural behavior, and the assistant is modeling insider knowledge, this is acceptable as a natural cultural reference.",
+          "Minor risk of overgeneralization in 'Never pick your seat'—in some informal family settings, especially among younger relatives, seating may be more flexible, though the core principle of deference to elders remains valid."
+        ],
+        "suggestions": [
+          "Consider slightly softening absolute statements like 'Never pick your seat' to 'Avoid choosing your seat—wait to be invited' to reflect nuance in modern urban families.",
+          "In the gift-giving response, add a brief note about avoiding clocks, knives, or white flowers as a subtle reinforcement of cultural taboos.",
+          "To enhance linguistic authenticity, occasionally use culturally embedded phrases like 'Cảm ơn nhiều' or 'Không sao' without translation, as native speakers would expect them in context."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Anh Minh just invited me to dinner at his family’s house this weekend. I want to bring a small gift, but I’m not sure what’s appropriate. Should I bring something? And if so, what kind?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, bringing a gift is thoughtful—especially for a first visit. Go for something wrapped in red or gold: a box of sweets, a good tea, or fresh fruit. Avoid clocks, handkerchiefs, or white flowers—those are for funerals. Present it with both hands when you arrive, and don’t open it right away. Just smile and say ‘Cảm ơn nhiều’ with a slight bow."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. I was thinking of getting some green tea. Is that okay? And should I bring it before dinner starts?"
+            },
+            {
+              "role": "assistant",
+              "content": "Green tea is perfect—elegant and traditional. Bring it right when you arrive, before sitting down. Wait for the host to invite you to the table. Don’t pick your seat—let them guide you. When they serve food, let the eldest person eat first. If they offer you a plate, take it with both hands and say ‘Cảm ơn’ quietly."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And when we’re eating, should I finish everything on my plate? I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "Leave a little food on your plate—just enough to show you’re full. That’s polite. Never stick your chopsticks upright in the rice bowl; it looks like funeral incense. If you need to pass something, do it with both hands. And if someone offers you more, say ‘Cảm ơn, nhưng tôi đã no’ with a soft smile—don’t refuse too firmly. It’s about showing care without drawing attention to yourself."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—should I shake hands with Anh Minh’s parents? Or is there a better way?"
+            },
+            {
+              "role": "assistant",
+              "content": "A slight bow—15 to 30 degrees—is the most respectful way to greet elders. If they offer a handshake, accept it lightly and briefly, but don’t initiate it. Keep your hands at waist level or folded lightly in front during conversation—no gestures, no fidgeting. And never point with your finger; use your open hand instead. When elders speak, it’s respectful to listen quietly—silence shows you’re paying attention."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of honorifics like 'Anh' for older male relatives",
+          "Importance of bowing (15–30 degrees) when greeting elders",
+          "Gift-giving with both hands and avoiding taboo items (clocks, white flowers)",
+          "Leaving food on the plate to indicate satisfaction",
+          "Avoiding upright chopsticks in rice (funeral association)",
+          "Polite refusal of food with soft phrases like 'Cảm ơn, nhưng tôi đã no'",
+          "Avoiding direct eye contact or gestures during elder interactions",
+          "Silence as a sign of respect during elder speech",
+          "Removal of shoes before entering a home (implied by context)",
+          "Use of red/gold wrapping for gifts",
+          "Passing items with both hands"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant says 'slight bow' when greeting elders, but doesn’t explicitly mention that bowing is standard only for elders or superiors—could be misinterpreted as universal. However, contextually clear.",
+          "The assistant uses 'Cảm ơn' without specifying tone or context—though this is minor, it could be more precise (e.g., 'Cảm ơn anh/chị' for elders)."
+        ],
+        "suggestions": [
+          "Clarify that bowing is specifically reserved for elders or superiors, not peers, to reinforce hierarchy awareness.",
+          "In the response about gift-giving, include a brief natural phrase like 'Cảm ơn anh/chị, tôi rất vui được mang món quà nhỏ này' to model culturally appropriate speech.",
+          "Consider adding a subtle cue about not touching the head or pointing with fingers in the final response, even if implied, to reinforce non-verbal norms."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 21,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

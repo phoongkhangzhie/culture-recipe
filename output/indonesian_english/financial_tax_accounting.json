@@ -1,0 +1,219 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Financial Tax and Accounting Standards",
+    "category": "Institutional Norms > Regulation & Policy > Financial Market Rules",
+    "description": "Taxation of financial transactions and the accounting standards used by financial institutions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm a junior accountant at a mid-sized bank in Surabaya. We just completed a large infrastructure project with a client, and they sent us an advance payment of IDR 500 million as *uang muka*. I’ve recorded it as a liability under PSAK, but my senior manager says we should defer tax recognition until the project is delivered. Is this acceptable under Indonesian tax rules?"
+            },
+            {
+              "role": "assistant",
+              "content": "Your approach is sound from an accounting standpoint. Under PSAK and Indonesian tax regulations, *uang muka* must be recognized as income for tax purposes upon receipt. However, there is a recognized exception for long-term contracts with clear delivery milestones—provided you can demonstrate that the project is not yet substantially complete.\n\nDeferral isn’t automatic—it depends on documentation: detailed project timelines, signed contracts, proof of work in progress, and evidence of client acceptance stages. The Directorate General of Taxes (DJP) often allows this timing flexibility in practice, especially for complex infrastructure projects, but it’s not guaranteed.\n\nThis is where *konsultasi informal* comes in—many banks pre-consult with tax officers to align on interpretation. It’s not about bypassing rules, but about ensuring your case is well-supported. Just be clear: the deferral is conditional, not a standard practice for all advance payments."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I’m worried—what if we get audited and the tax officer doesn’t agree with our deferral? Also, should I mention the *santunan* gesture during the meeting? I’ve heard some teams do that."
+            },
+            {
+              "role": "assistant",
+              "content": "Let’s be clear: *santunan*—a small gift or token—is not appropriate and violates tax ethics. The DJP has actively cracked down on such practices, and they can result in penalties, audits, or reputational damage.\n\nInstead, focus on *hubungan baik* through professionalism. Bring solid documentation: project milestones, progress reports, client approvals. Frame the discussion around shared goals—accuracy, compliance, and avoiding disputes.\n\nIf you’re concerned about audit risk, schedule a pre-filing consultation (*konsultasi informal*). It’s a common and respected practice, but it’s not a guarantee. The outcome depends on your evidence, not the relationship alone."
+            },
+            {
+              "role": "user",
+              "content": "Thank you. I’ll prepare the project timeline and schedule a meeting with the tax officer. One last thing—how should I phrase the request in the meeting? Should I use direct language, or be more indirect?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Indonesia, indirect communication is key—especially with officials. Avoid direct statements like \"We want to defer.\" Instead, say:\n\n*\"Pak, kami sedang menyelesaikan proyek besar dengan klien, dan ada pembayaran muka yang cukup signifikan. Kami mempertimbangkan pengakuan pendapatan secara bertahap karena proyek belum selesai sepenuhnya. Apakah ini sesuai dengan praktik yang biasa diterima di lapangan?\"\n\nUse *Pak* or *Bu*, show humility (*mempertimbangkan*, *mungkin bisa diperbaiki*), and invite guidance. If the officer insists on immediate recognition, respond: *\"Mungkin bisa diperbaiki, Pak. Kami akan sesuaikan dengan arahan Bapak.\"\n\nThis isn’t weakness—it’s *musyawarah*. Respect and process matter more than speed."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of *uang muka* and its treatment in project finance with deferred tax recognition under specific conditions",
+          "Recognition of *konsultasi informal* as a legitimate, non-bribe practice for pre-filing clarification",
+          "Emphasis on *hubungan baik* through professionalism rather than gifts",
+          "Prohibition of *santunan* as a formal ethical violation despite informal tolerance",
+          "Hierarchical and consensus-driven decision-making reflected in senior approval culture",
+          "Indirect communication style with use of honorifics (*Pak/Bu*) and humble phrasing (*mempertimbangkan*, *mungkin bisa diperbaiki*)",
+          "Importance of documentation and evidence over personal relationships in tax compliance"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the term 'many banks'—could be more precise about institutional size or sector (e.g., state-owned vs private banks), though not a critical error",
+          "The use of 'Pak' and 'Bu' is culturally accurate but could be slightly expanded with context (e.g., mentioning that these are gendered honorifics used in formal professional settings) for deeper nuance"
+        ],
+        "suggestions": [
+          "Include a brief note in the assistant response about the role of the Indonesian Institute of Accountants (IAI) in overseeing PSAK compliance, to reinforce institutional authority",
+          "Clarify that while *konsultasi informal* is common, it is not legally binding and must be documented separately if used as a defense in audits",
+          "Add a subtle mention of how project timelines and progress reports are often reviewed by internal audit or legal teams before submission to tax authorities, reflecting the hierarchical approval culture"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm a junior accountant at a mid-sized bank in Surabaya. We just completed a project financing deal with a construction company in East Java. The client paid a 20% advance payment (*uang muka*), and I’m unsure how to account for it in our financial statements under PSAK. Should we recognize it as revenue now, or defer it until the project is delivered?"
+            },
+            {
+              "role": "assistant",
+              "content": "Under PSAK—aligned with IFRS—revenue from construction contracts is recognized over time using the percentage-of-completion method. However, for *uang muka*, the key principle is *kehati-hatian* (prudence). In practice, most banks in Java defer revenue recognition until milestones are met, not just because of accounting rules, but due to the real risk of client cancellation or project delays.\n\nDeferring ensures financial integrity. I’d recommend documenting this in a footnote: 'Advance payments totaling IDR X are deferred and recognized upon completion of project milestones.' This maintains transparency and aligns with internal governance—especially important in institutions with multi-level approval processes."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll consult with my manager. But I’m also worried about the tax side—does the advance payment trigger VAT? The client said they’re expecting an invoice with VAT, but I thought VAT only applies to completed services."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—under DJP Regulation No. 10/2023, VAT (PPn) is due at the time of receipt of advance payments, not delivery. So your invoice must include 11% VAT on the *uang muka*, even if the project isn’t complete.\n\nThis is based on the legal definition of a 'supply in progress.' While it may feel counterintuitive, it’s consistent with official guidance. For complex cases, the formal *konsultasi pajak* process through the DJP’s online system is recommended—it’s the proper channel for pre-filing clarification. Informal chats over *kopi tubruk* may happen, but they’re not a substitute for official procedures. Always document any discussion, even informal ones, to support audit readiness."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll prepare the invoice with VAT and discuss the revenue deferral with my manager. One last thing—should I mention this to the client? They might be surprised we’re charging VAT upfront."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—explain it clearly and respectfully. Use a tone of *musyawarah*: *‘Pak, berdasarkan ketentuan perpajakan DJP No. 10/2023, kami harus mengenakan PPN atas pembayaran muka, meskipun pekerjaan belum selesai. Ini untuk kepatuhan penuh, dan kami akan menyesuaikan laporan keuangan sesuai PSAK.’*\n\nThis shows professionalism and builds trust. In Indonesia, *hubungan baik* with clients matters long-term. A little transparency today prevents bigger issues tomorrow. And remember: while *santunan* (a small token) is sometimes offered in informal settings, it must never influence official decisions. It must comply with the Anti-Corruption Law (UU No. 31/1999) and KPK guidelines—no gift should be seen as a transaction. Always prioritize compliance over convenience."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of *kehati-hatian* (prudence) as a guiding principle in accounting decisions",
+          "Deferred revenue recognition for *uang muka* based on project milestones, reflecting pragmatic interpretation",
+          "Application of 11% VAT on advance payments under DJP Regulation No. 10/2023",
+          "Reference to *konsultasi pajak* as a formal pre-filing process through official channels",
+          "Recognition of informal *kopi tubruk* discussions as common but not a substitute for formal procedures",
+          "Emphasis on *musyawarah* (consensus-building) in client communication",
+          "Importance of *hubungan baik* (good relations) in long-term client management",
+          "Cultural nuance around *santunan* as a gesture of goodwill, not bribery, with clear legal boundaries under KPK and Anti-Corruption Law",
+          "Hierarchical approval processes in financial reporting, especially for adjustments"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant refers to 'PSAK' as aligned with IFRS, which is accurate, but could clarify that PSAK is the Indonesian version of IFRS (PSAK = Standar Akuntansi Keuangan), not a separate standard. This is a technical nuance that may confuse learners.",
+          "The phrase 'even informal ones' in the context of documentation may slightly overstate the expectation—while documentation is recommended, it's not always practical or common in informal *konsultasi*. A more nuanced phrasing could acknowledge that informal chats are often not formally documented but still informally acknowledged."
+        ],
+        "suggestions": [
+          "Clarify that PSAK is the Indonesian adaptation of IFRS, not a standalone standard, to improve technical accuracy for learners.",
+          "Rephrase the note on documenting informal discussions to reflect that while it’s good practice, it’s not always standard in informal settings—this would better reflect real-world behavior without undermining compliance culture.",
+          "Consider adding a brief mention of the role of internal audit or compliance officers in reviewing such transactions, as this is a key part of institutional governance in Indonesian banks."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m the finance manager at a mid-sized bank in Surabaya, and we’re preparing to report our Q3 financials. We’ve received a large advance payment—uang muka—from a client for a long-term infrastructure project. The contract says we can recognize the revenue when the work begins, but our accountant insists we should defer tax recognition until physical delivery. I’m confused—what’s the standard practice here in Indonesia?"
+            },
+            {
+              "role": "assistant",
+              "content": "In practice, many Indonesian institutions defer tax recognition of *uang muka* until substantial progress or physical delivery, even when IFRS allows earlier recognition. This reflects a strong cultural emphasis on *tingkat kehati-hatian tinggi*—high caution—and a preference for minimizing risk in uncertain or complex cases. While PSAK aligns with IFRS, local interpretation often prioritizes prudence, especially in public infrastructure projects. Documenting your rationale clearly in the financial notes—citing the *taksiran* (subjective estimate) approach—helps justify the decision during audits."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But I’ve heard some firms do informal consultations with tax officers—called *konsultasi informal*—before filing. Is that something we should consider, especially since this is a high-value project?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, *konsultasi informal* is commonly practiced, especially in Jakarta, Surabaya, and Bandung, particularly for complex or high-value cases. These conversations often happen over *kopi tubruk* or during routine visits and help clarify interpretations without formal documentation. They’re not binding, but they signal whether an approach is likely to be accepted. The key is to maintain *hubungan baik*—mutual respect and rapport—without implying any exchange of favors. A small token, like coffee or a modest gift, may be exchanged in a friendly context, but it should never be explicitly linked to outcomes. Always remember: all formal submissions must still comply with official regulations and be fully documented."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One more thing—our board is reviewing the report, and I’m not sure how much detail to include. Should I present this as a technical judgment, or should I frame it in terms of risk and consensus?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Indonesian institutional culture, decisions are rarely framed as individual technical calls. Instead, present it as a *musyawarah*—a collective, consensus-based process. Mention that the team discussed it during a meeting (*ngobrol*), that both the senior accountant and IFRS specialist reviewed it, and that the final approach balances IFRS alignment with local risk management practices. Use soft, indirect language—phrases like *‘mungkin lebih aman jika kita menunda pengakuan’* (*‘perhaps it’s safer to delay recognition’*)—to show humility and respect for hierarchy. This approach builds trust and avoids appearing confrontational. The board will value the caution and the effort to align with both standards and context."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Deferral of tax recognition for *uang muka* until physical delivery as a pragmatic, context-based practice",
+          "Use of *tingkat kehati-hatian tinggi* (high caution) as a cultural rationale for conservative accounting",
+          "Commonality of *konsultasi informal* with tax officers, especially in high-value cases",
+          "Informal consultations often occurring over *kopi tubruk* in relaxed settings",
+          "The role of *hubungan baik* (good relations) in facilitating smoother tax interactions",
+          "Acceptance of small, non-monetary tokens (*santunan*) as gestures of goodwill, not bribes",
+          "Hierarchical decision-making in financial reporting requiring multiple approvals",
+          "Preference for *musyawarah* (consensus-building) and indirect, humble language in formal presentations",
+          "Use of phrases like *‘mungkin lebih aman jika kita menunda pengakuan’* to signal caution and respect for authority"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing *konsultasi informal* as universally accepted—while common, it is not officially sanctioned and some officers may view it with caution; the example could acknowledge this nuance.",
+          "The term *taksiran* (subjective estimate) is used in the assistant's response, but it's not a standard technical term in Indonesian tax accounting; *estimasi* or *penilaian subjektif* would be more accurate."
+        ],
+        "suggestions": [
+          "Replace *taksiran* with *estimasi* or *penilaian subjektif* to improve technical accuracy while preserving the intended meaning.",
+          "Add a brief caveat: 'While *konsultasi informal* is common, it should never be relied upon as a substitute for formal compliance, and some tax officers may prefer strictly documented submissions.'",
+          "Consider including a subtle mention of the potential for regional variation—e.g., Jakarta vs. Surabaya—since *konsultasi informal* may be more prevalent in certain urban centers."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

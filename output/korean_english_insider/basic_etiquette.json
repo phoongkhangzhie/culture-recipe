@@ -1,0 +1,205 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Basic Etiquette",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Foundational rules of polite social behavior and conduct in everyday interpersonal interactions",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my uncle’s for dinner this weekend. He’s the eldest in the family, and I want to make sure I don’t mess up. Should I bring anything? And how should I act when I get there?"
+            },
+            {
+              "role": "assistant",
+              "content": "Bring a wrapped gift—fruit, tea, or a nice snack is perfect. Present it with both hands when you arrive. Don’t open it in front of him. When you enter, take off your shoes at the door and step onto the mat carefully. Slippers are usually provided."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about seating? I know elders sit at the head, but should I just pick a spot? And what if someone offers me food first?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for everyone to be seated before you sit—someone will guide you. Don’t start eating until the eldest does. If he offers you food, accept it with both hands. Even if you’re full, say ‘Jal meokkio’ and take a small bite. If someone pours your drink, always hold your glass with both hands—especially if it’s a senior."
+            },
+            {
+              "role": "user",
+              "content": "What about talking? I don’t want to sound too loud or too casual. Should I use honorifics with everyone?"
+            },
+            {
+              "role": "assistant",
+              "content": "Use 존댓말 with your uncle and any older relatives. Even if he says to be casual, keep the polite tone—it’s still respectful. Avoid direct eye contact; a slight downward glance is better. Silence isn’t awkward—just nod or say ‘Yes, uncle’ when needed. It’s about preserving harmony and showing respect."
+            },
+            {
+              "role": "user",
+              "content": "And what if I accidentally stick my chopsticks in the rice? I’ve heard that’s bad luck."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—never stick them straight into the rice. It looks like a funeral offering. Rest them across the bowl or on a chopstick rest. Use the spoon for soup, not the chopsticks. These are deeply ingrained practices—many learn them through observation and family tradition rather than explicit instruction. In some areas with stronger traditions, these practices are observed more strictly, but the core values of respect and harmony remain consistent across regions."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Gift-giving with both hands and unwrapped presentation",
+          "Shoes removed at the door, slippers used indoors",
+          "Elders sit at the head of the table; younger family members wait to be seated",
+          "Wait for the eldest to start eating before beginning",
+          "Accept food and drinks with both hands, especially from elders",
+          "Use 존댓말 (polite speech) with elders and seniors",
+          "Avoid direct eye contact with superiors; use slight downward glance",
+          "Respond to silence with subtle cues like nodding or 'Yes, uncle'",
+          "Never stick chopsticks vertically in rice",
+          "Use spoon for soup, chopsticks for solid food",
+          "Pour drinks for others before yourself, especially elders",
+          "Say 'Jal meokkio' to politely decline food",
+          "Respect for hierarchy and group harmony (hyo)",
+          "Reciprocal obligation (gwon) in social interactions",
+          "Cultural continuity across urban and rural regions"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Gift-giving with both hands and not opening in front of the giver",
+          "Removing shoes at the door and using slippers",
+          "Elders sit at the head of the table and others wait to be seated",
+          "Waiting for the eldest to start eating",
+          "Accepting food and drinks with both hands",
+          "Using 존댓말 (polite speech) with elders",
+          "Avoiding direct eye contact with seniors",
+          "Not sticking chopsticks vertically in rice",
+          "Using a spoon for soup, chopsticks for food",
+          "Preserving harmony (*hyo*) through silence and indirect communication",
+          "Regional variation in formality (Seoul vs. Jeolla/Gyeongsang)",
+          "The importance of *jusin* (hierarchy) and *gwon* (reciprocal obligation)"
+        ],
+        "issues": [
+          "Minor overgeneralization in the final assistant turn: 'In some areas with stronger traditions, these practices are observed more strictly'—while accurate, it risks implying that the core etiquette is less universal than it is. The practices are widely observed across regions, even if intensity varies.",
+          "The phrase 'even if he says to be casual, keep the polite tone' is slightly misleading—while politeness is expected, elders may genuinely invite informality, and younger relatives may respond with relaxed but still respectful speech. The model should reflect that the tone can adapt within boundaries, not rigidly maintain formality."
+        ],
+        "suggestions": [
+          "Replace 'even if he says to be casual' with 'even if he invites informality, maintain a polite tone' to better reflect the nuanced balance between respect and relational warmth.",
+          "Add a brief mention of *hwasa* (after-work drinking) or family *hyo* (face) in the context of dining to reinforce the cultural depth of social harmony, especially in extended family settings.",
+          "Consider including a subtle reference to *jeol* (bowing) in the initial greeting—e.g., 'A slight bow upon greeting'—to reinforce the physical expression of respect, which is central to Korean etiquette."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to visit my uncle’s house for Chuseok this year. He’s in his late 60s and lives in Gangwon Province. I want to make sure I do everything right—especially since my younger cousin is coming too. What should I keep in mind?"
+            },
+            {
+              "role": "assistant",
+              "content": "Bring a nice gift—something like a fruit basket or premium tea, wrapped well. Present it with both hands. Don’t open it in front of him; it’s better to let him unwrap it later so he doesn’t feel pressured to react immediately. And while four isn’t a hard rule in family settings, it’s still best to avoid gifts with exactly four of anything—especially since four is linked to funerals. It’s not about superstition, really—it’s about respect, not putting him on the spot."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I bow when I greet him? And what about the younger cousin—can she use casual speech?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, a slight bow—about 15 to 30 degrees—is appropriate. In Gangwon, elders often return it, even if just a small nod. It’s part of showing mutual respect. As for your cousin, she can speak casually with peers, but with your uncle, she should use polite speech. Never call him by his first name unless he invites you to. It’s not just politeness—it’s about maintaining *hyo*, the balance of face and harmony."
+            },
+            {
+              "role": "user",
+              "content": "What about the house? I remember hearing about shoes off—should I take mine off right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—remove your shoes as soon as you step in. Place them neatly by the door, toes facing out. Use the slippers provided, and never walk barefoot on the floor. If you’re sitting on the floor, keep your legs tucked under or cross them properly. Pointing your feet at someone—even jokingly—is considered rude."
+            },
+            {
+              "role": "user",
+              "content": "And during dinner? I’ve heard you shouldn’t start eating first, but what about pouring drinks?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for your uncle to start eating before you begin. When pouring drinks, always serve others first—especially elders. Hold the glass with both hands when receiving or offering. And never stick chopsticks vertically into rice; it’s a funeral custom. It’s not just about rules—it’s about showing that you care about the moment, not just the meal."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure to say ‘잘 먹겠습니다’ before eating and ‘잘 먹었습니다’ after. Should I say anything when I leave?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—before leaving, say ‘다음에 또 뵙겠습니다’ with a small bow. It’s also polite to thank him again, not just for the food, but for the hospitality. That’s part of *gwon*—the unspoken obligation to keep good relations. If you’re staying overnight, keep your room tidy and keep quiet after 10 p.m. It’s not about rules; it’s about showing you respect the household rhythm."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Gift-giving with both hands and not opening in front of giver",
+          "Avoiding the number four in gifts",
+          "Bowing (15–30 degrees) as a sign of respect to elders",
+          "Use of polite speech (존댓말) with elders, not first names",
+          "Removing shoes at the entrance and using provided slippers",
+          "Sitting posture on the floor with legs tucked or crossed",
+          "Not pointing feet at others",
+          "Waiting for elders to start eating",
+          "Pouring drinks for others first, especially elders",
+          "Using both hands when receiving or offering drinks",
+          "Avoiding vertical chopsticks in rice",
+          "Saying '잘 먹겠습니다' and '잘 먹었습니다' before and after meals",
+          "Saying '다음에 또 뵙겠습니다' when leaving",
+          "Expressing gratitude for hospitality as part of *gwon* (reciprocal obligation)",
+          "Keeping quiet after 10 p.m. when staying overnight",
+          "Cultural values of *hyo* (face), *jusin* (hierarchy), *gwon* (obligation), and *hyo* (harmony) as underlying principles"
+        ],
+        "issues": [
+          "The assistant mentions 'four isn’t a hard rule in family settings'—this slightly downplays the cultural sensitivity around the number four, which is widely avoided in Korean gift-giving, even in family contexts. A more accurate phrasing would emphasize that avoiding four is a strong cultural norm, not just a suggestion.",
+          "The assistant refers to 'Gangwon Province' with a brief nod to local variation but doesn’t clarify that regional customs in Gangwon may be more traditional than Seoul—this could be strengthened to reflect that Gangwon often retains stronger adherence to formal etiquette, especially in rural areas."
+        ],
+        "suggestions": [
+          "Rephrase the comment about the number four to reflect stronger cultural avoidance: e.g., 'Even in family settings, it’s best to avoid gifts with exactly four items—four is traditionally associated with funerals, and avoiding it shows deep respect.'",
+          "Add a brief contextual note about regional norms: e.g., 'In Gangwon, especially in rural areas, elders often expect even more formal behavior—so the bow, speech level, and gift presentation should be slightly more deliberate.'",
+          "Include a subtle reference to *honorifics* in the speech level explanation, such as using 'uncle' with *-nim* (e.g., '이모님' or '삼촌님') when speaking, reinforcing the linguistic layer of respect."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 20,
+    "research_rounds": 3,
+    "examples_produced": 2
+  }
+}

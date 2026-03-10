@@ -1,0 +1,199 @@
+{
+  "culture": "Japanese",
+  "dimension": {
+    "name": "Serving Etiquette During a Visit",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Norms around offering and serving food and drink to guests, including order of service, refills, and insistence",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting Akari’s place later. She said she’d serve tea, but I’m not sure how to handle the refills. Should I ask, or just wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait. She’ll refill your cup before it’s empty—no need to ask. Just keep holding it with both hands, right hand slightly higher, and don’t move it abruptly. That’s how you show you’re ready to receive."
+            },
+            {
+              "role": "user",
+              "content": "What if she offers a second round? I’m not really thirsty, but I don’t want to seem rude."
+            },
+            {
+              "role": "assistant",
+              "content": "Accept it. Even if you’re full, drinking it completely shows respect. If you truly can’t, cover the cup with your palm for a second—she’ll understand. Don’t say ‘no’ right away. A soft ‘chotto matte kudasai’ or a small bow works better than a flat refusal."
+            },
+            {
+              "role": "user",
+              "content": "And if she keeps offering? I’ve had enough, but I don’t want to seem ungrateful."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s normal. She’ll probably say ‘chotto dake’—just a little more—after you decline once. It’s not pressure; it’s part of the rhythm. Accepting a small amount after one polite refusal keeps the harmony. The key is not to push back hard. Let her offer, you accept gently, and that’s enough."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I pour my own tea if the pot’s on the table?"
+            },
+            {
+              "role": "assistant",
+              "content": "Never. The host pours for everyone—always. Even if the pot’s there, wait. If you’re unsure, keep your hands on the table, palms down. She’ll know when to serve. And remember: she drinks first from her own cup before pouring for others. That’s the quiet signal of care."
+            },
+            {
+              "role": "user",
+              "content": "One more thing—how should I sit? I don’t want to seem careless."
+            },
+            {
+              "role": "assistant",
+              "content": "Sit upright, back straight, not leaning. Hands on lap or lightly on the table. Don’t cross your legs or shift around. This posture shows respect and presence. It’s part of the unspoken rhythm—being there, quietly, with intention."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Host pours tea for guests using both hands, right hand slightly higher",
+          "Host drinks first from their own cup before pouring for others",
+          "Refills are offered proactively; guest may decline with palm-over-cup gesture",
+          "Guests accept second rounds even when not thirsty to maintain harmony",
+          "Polite refusal uses phrases like 'chotto matte kudasai' or small bow",
+          "Host may say 'chotto dake' after refusal to continue the ritual",
+          "Guests should not pour their own tea, even if pot is present",
+          "Posture during tea service: upright, hands on lap or table, no leg-crossing",
+          "Guests signal readiness by placing hands palms down on table",
+          "Drinking the full cup of second tea shows respect and acceptance"
+        ],
+        "issues": [
+          "Minor: The assistant’s use of 'she’ll understand' in the second turn slightly anthropomorphizes the host’s perception; more culturally precise phrasing would be 'she’ll recognize the gesture' or 'it’s understood as a signal'.",
+          "Slight overgeneralization: The example assumes all Japanese homes follow the exact same sequence, but regional or family variations exist. However, this is acceptable in a training example focused on core norms."
+        ],
+        "suggestions": [
+          "Replace 'she’ll understand' with 'it’s recognized as a signal' to better reflect implicit cultural understanding.",
+          "Consider adding a brief mention of *omotenashi* in the assistant’s final response to reinforce the underlying value, without explicitly naming it—e.g., 'It’s part of the quiet care that makes the visit feel warm.'",
+          "In the last turn, add a subtle cue about eye contact: 'Keep your gaze soft, not fixed—this shows attentiveness without intrusion.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Japanese culture. Represent the values and lived experience of Japanese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "They’ve just arrived, and I want to offer tea properly—before they even sit down, is that right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—present it the moment they step in. Both hands, slightly raised, and a small bow. That’s the way it’s done."
+            },
+            {
+              "role": "user",
+              "content": "And when pouring, should I refill while the cup still has tea?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’ll know when they’re ready—just keep an eye on the cup. Two-thirds full is perfect. It’s not about the tea, but showing you’re listening."
+            },
+            {
+              "role": "user",
+              "content": "What if they don’t take the refill? Should I keep offering?"
+            },
+            {
+              "role": "assistant",
+              "content": "Offer once more with ‘chotto dake’—just a little more. It’s not just about the tea; it’s how we keep the moment flowing with care."
+            },
+            {
+              "role": "user",
+              "content": "And the wagashi? Should I place one on their plate without asking?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—place one on their plate with the chopsticks pointing slightly toward the guest, or tip down if it’s delicate. No need to ask. Don’t serve yourself until everyone else has been served."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—should I drink from my cup first, to show it’s safe?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—take a sip. It’s part of the ritual: drinking first shows it’s pure and safe, and it’s a quiet way of sharing care. This isn’t just practical—it’s about *omotenashi*, the heart of hospitality."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Offering tea upon arrival with both hands and a bow",
+          "Refilling cups before they're empty as a sign of attentiveness",
+          "Using 'chotto dake' to gently insist on a refill",
+          "Placing wagashi with chopsticks pointing toward the guest or tip down depending on delicacy",
+          "Host drinking first to demonstrate purity and shared care",
+          "Anticipating needs without being asked, reflecting *omotenashi*",
+          "Maintaining harmony through subtle, unspoken cues rather than direct requests",
+          "Respecting the balance between *tatemae* (public politeness) and *honne* (true feeling) in hospitality"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Offering tea immediately upon arrival as a gesture of welcome",
+          "Presenting tea with both hands and a slight bow",
+          "Refilling tea before the cup is empty, based on subtle observation",
+          "Maintaining two-thirds full as ideal fill level",
+          "Using 'chotto dake' to offer a refill politely",
+          "Placing wagashi on the guest's plate without asking",
+          "Positioning chopsticks on the plate to indicate direction toward the guest",
+          "Not serving oneself until all guests have been served",
+          "Drinking from one’s own cup first to demonstrate safety and purity",
+          "Emphasis on *omotenashi* as the underlying spirit of hospitality"
+        ],
+        "issues": [
+          "The assistant's use of 'It’s not just about the tea, but showing you’re listening' slightly oversimplifies the cultural depth—while accurate in spirit, it risks reducing a complex ritual to a generic empathetic gesture. More precise phrasing like 'It’s about showing you’re attuned to their presence' would better reflect the nuanced attentiveness of *omotenashi*.",
+          "The phrase 'tip down if it’s delicate' for wagashi placement is ambiguous—while commonly understood, it could benefit from clearer cultural grounding (e.g., 'place the wagashi so the decorative side faces the guest, and the base is slightly lowered' for delicate sweets)."
+        ],
+        "suggestions": [
+          "Replace 'showing you’re listening' with 'showing you’re attuned to their presence' to better reflect the non-verbal, anticipatory nature of Japanese hospitality.",
+          "Clarify wagashi placement with a more precise description: 'Place the wagashi with the decorative side facing the guest, and gently tilt the base down to show respect.'",
+          "Consider adding a subtle cue about the guest’s posture (e.g., hands on the table, palms down) when discussing refills, to reinforce the non-verbal communication aspect.",
+          "Use 'honne' and 'tatemae' more explicitly in context if the conversation expands—e.g., 'It’s not about what they truly want, but how we maintain harmony in the moment.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 10
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 3,
+    "examples_produced": 2
+  }
+}

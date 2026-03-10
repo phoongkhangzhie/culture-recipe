@@ -1,0 +1,225 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Meeting Duration",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Cultural expectations around how long business meetings typically last and punctuality norms for starting and ending",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting with a Thai partner from Chiang Mai tomorrow for the first time to discuss a joint project. My team and I are arriving at 10:00 AM sharp, but I’ve heard that meetings here often start late. Should I wait outside or go in right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to prepare, Khun Nai. In Chiang Mai, especially with local or family-run businesses, meetings often begin 10 to 20 minutes late—this isn’t rude, it’s a sign of care. Arriving on time is perfectly fine, and it’s best to wait calmly in the reception area, perhaps with a cup of tea. If you go in too early, it might seem like you’re rushing, which could unintentionally create pressure. That said, if your partner works for an international firm or a tourism-related business, they may expect a more structured start—so keep an eye out for cues."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if we’re not sure when to start? The agenda is important—our team wants to cover key points efficiently. Should I bring it up right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, I understand your concern. In many Thai settings, the first 15–20 minutes are for small talk—how your journey was, the weather, family, or even a quick chat about the local temple festival. This isn’t wasted time; it’s how trust is built. If you bring up the agenda too soon, it may feel abrupt. Wait for your partner to signal readiness—perhaps they’ll say, ‘Let’s begin now,’ or shift into a more formal tone. Younger professionals in Chiang Mai, especially in cross-cultural roles, may be more time-conscious, so they might gently guide the flow."
+            },
+            {
+              "role": "user",
+              "content": "What if the meeting runs longer than expected? My team is flying out on a tight schedule. Should I gently remind them we need to wrap up?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a delicate moment. The best approach is to observe subtle cues—like a glance at their watch, a shift in posture, or a mention of lunch or family plans. You can then respond with, ‘Sabai sabai, Khun Nai—thank you for your time today.’ Then, if needed, add, ‘We’ll follow up by email.’ Avoid saying anything direct. In Thai culture, time is relational—your presence, not your precision, is what matters most. Saying ‘We’ll think about it’ later often means they’re still building trust, not rejecting the idea."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Time is relational, not rigid, in Thai business culture",
+          "10–20 minute delays in meetings are normal and not seen as disrespectful",
+          "Arriving on time is acceptable and not rude; waiting calmly is appropriate",
+          "Small talk (weather, family, local events) is essential for trust-building",
+          "Agendas are often implicit or introduced organically, not at the start",
+          "Indirect communication is preferred; direct requests or reminders are avoided",
+          "Subtle cues (glances, posture, mention of lunch) signal readiness to end",
+          "Phrases like 'Sabai sabai' and 'We’ll think about it' reflect cultural norms",
+          "Regional variation: Chiang Mai reflects more traditional, relationship-focused norms",
+          "Younger professionals may be more time-conscious, but indirectness remains key"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes Chiang Mai is uniformly traditional, though it does acknowledge variation. However, this is contextually reasonable given the user’s specific mention of Chiang Mai and family-run businesses.",
+          "The phrase 'Khun Nai' is used in the assistant's response, which is correct for a slightly formal but friendly address. However, in some contexts, especially with older or more senior partners, 'Khun' alone or 'Khun Nai' with a different tone may be less appropriate—though this is a subtle nuance and not a critical error."
+        ],
+        "suggestions": [
+          "Add a brief note about the importance of not rushing to leave, even if the team has a tight schedule—e.g., ‘It’s okay to stay for tea even if you’re pressed for time; declining politely with ‘Sabai sabai’ is acceptable.’ This reinforces the relational value over time.",
+          "Slightly emphasize that the partner may not explicitly say 'We’ll think about it'—this phrase is more common in formal or written communication; in spoken Thai, it may be softer, like 'We need to discuss with the team' or 'Let me check with my colleagues.'",
+          "Include a subtle reminder that the assistant’s tone should remain warm and non-urgent—avoiding any hint of impatience, even in the suggestion to 'follow up by email.'"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for my first business meeting with a Thai partner in Chiang Mai. My colleague said the meeting is scheduled for 10:00 AM, but I’ve heard Thai meetings often run late. Should I arrive exactly on time, or wait a bit? And how long should I expect it to last?"
+            },
+            {
+              "role": "assistant",
+              "content": "Arrive around 10:00 AM—neither too early nor too late. In Chiang Mai, especially with local or family-run businesses, arriving exactly on time is respectful, but being early by more than 5 minutes may seem anxious. It’s common for meetings to start 10–20 minutes late, and that’s perfectly normal. Don’t worry about the clock—your presence shows respect more than punctuality. Expect the meeting to last 1.5 to 3 hours, especially if it’s a first discussion. The real work happens in the small talk: asking about their family, the weather, or how their weekend was. That’s not a delay—it’s building trust. If they bring out tea or ask about your journey, take it as a sign they’re including you in the relationship, not just the agenda."
+            },
+            {
+              "role": "user",
+              "content": "What if I see the senior partner arrive late—maybe 15 minutes after 10:00? Should I say something? And if we’re still talking after lunch, how do I know when it’s time to leave?"
+            },
+            {
+              "role": "assistant",
+              "content": "If they arrive late, simply smile and say, *‘Khun nai kha, sabai sabai’*—‘Sorry, I’m late, but it’s all good.’ That’s the right response. Don’t mention the time or seem rushed. As for ending, there’s no formal signal. Watch for subtle cues: if the senior partner starts checking their watch, shifts posture, or begins talking about something casual like the temple festival, that’s your cue. They might say, *‘We’ll think about it and discuss with the team’*—which means they’re not saying no, just building consensus. Don’t push for a decision. Let the conversation flow naturally. If lunch is served, stay and enjoy it—it’s part of the ritual. The meeting ends when they’re ready, not when the clock says so."
+            },
+            {
+              "role": "user",
+              "content": "So if I try to wrap up by saying, ‘We’ve covered everything—shall we conclude?’ would that be awkward?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that could be seen as abrupt. Instead, you might gently say, *‘Tham khun, I appreciate your time and insights. I’ll follow up with a summary when I’m ready.’* Then wait. If they nod and smile, it’s okay to leave. But if they keep talking—about their nephew’s graduation or the rainy season—keep listening. That’s not small talk; it’s trust-building. In Thai culture, the process *is* the purpose. The best foreign professionals don’t rush—they show they’re present, not just efficient."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Time is relational, not rigid, in Thai business culture",
+          "Meetings often start 10–30 minutes late without being seen as disrespectful",
+          "Arriving early by more than 5 minutes may be perceived as anxious",
+          "Small talk (family, weather, weekend) is essential for trust-building",
+          "Meeting duration is fluid and purpose-driven, typically lasting 1.5–3 hours for first meetings",
+          "Tea and food are ritual elements of relationship-building",
+          "Indirect language like 'We’ll think about it' signals consideration, not rejection",
+          "Subtle nonverbal cues (posture, shifting topics) signal readiness to end",
+          "Honorifics like 'Khun nai kha' and 'Tham khun' are used appropriately",
+          "Avoiding direct 'no' and using softening phrases are culturally accurate"
+        ],
+        "issues": [
+          "The example assumes Chiang Mai is uniformly 'local or family-run'—this may overlook the presence of international firms in Chiang Mai that follow stricter schedules. A minor overgeneralization.",
+          "The assistant’s response assumes the senior partner will use Thai phrases like 'Khun nai kha'—while plausible, in mixed-language business settings, English or a mix may be used. The assumption of full Thai language use could be slightly overstated."
+        ],
+        "suggestions": [
+          "Add a brief caveat: 'In Chiang Mai, this applies especially to local or family-run businesses. In international firms, meetings may start on time and follow agendas.'",
+          "Slightly vary the language use: e.g., 'You might hear them say “Sorry, traffic” or “Sabai sabai” in Thai or English—either is fine.'",
+          "Include a note about generational differences: younger professionals in Chiang Mai may be more punctual, especially in tech or tourism sectors."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting with a Thai business partner, Mr. Chai, from a family-run company in Chiang Mai tomorrow. Our meeting is scheduled for 10:00 AM, but I’ve heard that Thai meetings often start late. Should I arrive early, on time, or wait a bit?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Chiang Mai, especially with a family-run business, it’s best to arrive around 10:10–10:15 AM. Arriving exactly at 10:00 is acceptable, but being too early—like 9:45—might make Mr. Chai feel rushed, as he may not be ready yet. A 10–15 minute delay is completely normal and expected. He’ll likely greet you with a soft *‘Sorry, I’m late, Khun Nai. Traffic, sabai sabai?’*—it’s not an apology in the Western sense, just polite ritual. Your calm response, like *‘No problem, Khun Chai. I’m ready when you are,’* will show you understand the rhythm of the relationship."
+            },
+            {
+              "role": "user",
+              "content": "What if the meeting runs longer than the 45 minutes we agreed on? I’m worried about looking unprofessional if we go past lunchtime."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s very common—and actually a sign of respect, not inefficiency. In Thai business, especially in provincial areas, meetings often stretch to 2–3 hours, with time spent on small talk: asking about his family, how his daughter’s school is going, or even the weather. These aren’t distractions—they’re trust-building. If lunch is offered, it’s a natural extension of the meeting. Don’t rush. If you see Mr. Chai checking his watch or shifting posture, that might be a cue to wrap up. But if he’s still engaged in conversation, stay present. The real goal isn’t speed—it’s connection. When he says, *‘We’ll think about it,’* it means he’s still building trust, not rejecting your proposal."
+            },
+            {
+              "role": "user",
+              "content": "So if I push for a decision or ask for a timeline, I’d be making a mistake?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, pushing too hard can unintentionally damage trust. Direct questions like *‘When can we expect your answer?’* or *‘Can we conclude today?’* may feel abrupt. Instead, use gentle, indirect language—like *‘Tham khun, if it’s convenient, I’d appreciate your thoughts when you have time.’* Let him guide the pace. Silence is also respectful—don’t fill pauses. A moment of quiet isn’t awkward; it’s part of thoughtful consideration. Your patience shows you value the relationship over deadlines."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Time is relational, not rigid in Thai business culture",
+          "10–30 minute delays are normal and expected, especially in provincial or family-run businesses",
+          "Apologies like 'Sorry, I’m late, Khun Nai. Traffic, sabai sabai?' are polite rituals, not expressions of guilt",
+          "Small talk about family, health, and weather is essential for trust-building",
+          "Meeting duration is fluid and purpose-driven; 1.5–3 hours is typical",
+          "Lunch or dinner may naturally extend the meeting as part of relationship-building",
+          "Agendas are rare; conversations unfold organically",
+          "Indirect language like 'We’ll think about it' or 'Tham khun' signals respect, not rejection",
+          "Pushing for decisions or timelines can damage trust",
+          "Silence is respectful and not awkward",
+          "Generational and regional differences in punctuality norms (urban vs. provincial)"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all family-run businesses in Chiang Mai follow the same pattern, but regional variation within Chiang Mai (e.g., tourist vs. rural) may differ. However, this is acceptable at training example level.",
+          "The assistant suggests arriving at 10:10–10:15 AM as optimal—but in some high-context family-run settings, arriving at 10:00 AM is still acceptable and not seen as 'too early' if the person is prepared to wait. The phrasing 'being too early might make Mr. Chai feel rushed' slightly overemphasizes the negative of early arrival, which is not a major cultural concern in most Thai contexts."
+        ],
+        "suggestions": [
+          "Add a brief note about the importance of non-verbal cues (e.g., body language, tone) in reading readiness to end a meeting, to enhance nuance.",
+          "Slightly rephrase the advice on early arrival to acknowledge that arriving at 10:00 AM is generally fine in Chiang Mai family-run businesses—being early is not inherently problematic, but waiting gracefully is key.",
+          "Include a subtle mention that younger or more internationally exposed Thai professionals may expect tighter schedules, even in provincial areas, to help avoid overgeneralization."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}

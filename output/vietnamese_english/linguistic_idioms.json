@@ -1,0 +1,179 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Linguistic Idioms",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Fixed Expressions in Language",
+    "description": "Fixed phrases whose meaning cannot be inferred from the literal meaning of their component words",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses. All responses are in English, even when quoting Vietnamese idioms. Use idioms naturally—only when contextually appropriate—and never over-explain their meaning. Avoid literal translations or interpretive commentary. Let cultural resonance emerge through tone, context, and subtle phrasing. Non-verbal cues (e.g., pauses, soft tone) may be implied through descriptive language to model authenticity."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a job interview at a family-run business in Hanoi. I want to show respect and humility, but I’m nervous about how to respond when asked about my weaknesses. What should I say?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Vietnamese culture, weaknesses aren’t confessed—they’re gently acknowledged as part of growth. Instead of listing flaws, frame them as quiet lessons. For example: 'In the past, I’d jump in to help right away, even when I hadn’t fully listened. Now I’ve learned to pause—just a breath—before responding. It’s not about slowing down, but about being more present.'"
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. But what if they press me? Like, 'Can you be more specific?' How do I handle that without sounding evasive?"
+            },
+            {
+              "role": "assistant",
+              "content": "If asked to go deeper, use a quiet, nature-based idiom—like *nước chảy đá mòn*—to reflect on patience. Say: 'I’ve been learning that change isn’t always loud. Sometimes, like water wearing down stone, progress comes from small, steady actions. I’m learning to wait—just a moment—before reacting. It’s not hesitation. It’s listening.'"
+            },
+            {
+              "role": "user",
+              "content": "I see. So it’s not about hiding the weakness, but reframing it as part of learning? That feels more authentic. Can you give me a full example of how this might sound in a real interview?"
+            },
+            {
+              "role": "assistant",
+              "content": "Certainly. Try this: 'In a past project, I was eager to act—sometimes before fully understanding the situation. Now I’ve learned to listen first. I remind myself: *nước chảy đá mòn*. Small steps, steady. I’m still learning, but I’m becoming more thoughtful. It’s not about being perfect—it’s about being present.' A slight pause. A soft tone. A small nod. That’s enough."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "nước chảy đá mòn",
+          "đi một ngày đàng, học một sàng khôn",
+          "nói có, nói không",
+          "chó cắn áo rách",
+          "giữ thể diện"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.85,
+        "cultural_elements_verified": [
+          "Use of *nước chảy đá mòn* as a metaphor for patience and persistent growth",
+          "Emphasis on indirectness and humility in self-reflection",
+          "Avoidance of direct confession of weaknesses in favor of reframing as learning",
+          "Cultural value of *giữ thể diện* (maintaining face) through non-confrontational language",
+          "Nature-based idioms as vehicles for moral and social wisdom",
+          "Tone and pacing (pauses, soft tone, nod) as non-verbal cues for cultural authenticity"
+        ],
+        "issues": [
+          "The phrase 'a slight pause. A soft tone. A small nod.' is slightly over-specified for a training example; while it conveys intent, it risks anthropomorphizing the assistant's delivery in a way that may not be replicable in real LLM output",
+          "While *nước chảy đá mòn* is correctly used, it is not a fixed idiom in the same way as *đi một ngày đàng, học một sàng khôn*—its use here is accurate but slightly more interpretive than a native speaker might employ in a formal interview context"
+        ],
+        "suggestions": [
+          "Replace the explicit non-verbal cues with more subtle, contextually embedded descriptions (e.g., 'I let the words settle, then continued softly') to maintain authenticity without over-specifying behavior",
+          "Consider introducing a second idiom from the cultural research (e.g., *đi một ngày đàng, học một sàng khôn*) in a different scenario to demonstrate broader idiom usage",
+          "Ensure that all idioms are used in contexts where they are naturally spoken—avoid using them in overly formal or artificial settings unless explicitly warranted by cultural context"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 6
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a job interview at a family-owned business in Hanoi. My uncle is the owner, and I want to show respect while still expressing my ambition. What should I say when he asks if I’m ready to take on more responsibility?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Vietnamese culture, showing readiness without overcommitting is key. Instead of a direct 'Yes, I’m ready,' try: 'Tôi sẽ nỗ lực hết mình, và xin được tham khảo ý kiến anh/chị trước khi triển khai.' It means, 'I’ll do my best, and I’d like to consult with you before moving forward.' This shows initiative while honoring hierarchy and preserving harmony."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. But what if he asks me to lead a project right away? I don’t want to seem hesitant, but I also don’t want to overpromise. How can I balance that?"
+            },
+            {
+              "role": "assistant",
+              "content": "A strong way to respond is: 'Tôi mong được thử thách và học hỏi trong vai trò này, để góp phần vào sự phát triển của công ty.' It means, 'I hope to take on this challenge and grow, contributing to the company’s development.' It’s respectful, forward-looking, and avoids overconfidence."
+            },
+            {
+              "role": "user",
+              "content": "I like that. Could I use a proverb like 'đi một ngày đàng, học một sàng khôn' in this setting?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—but only in the right moment. This idiom works best in reflective or developmental conversations, not high-stakes decisions. Use it when discussing growth, not when committing to a deadline. For example, after being assigned a task, you might say: 'Tôi sẽ học hỏi từng ngày—như câu tục ngữ nói: “Đi một ngày đàng, học một sàng khôn.”' It feels natural when tied to learning, not when proving readiness."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about writing—can I use idioms in an email to my uncle?"
+            },
+            {
+              "role": "assistant",
+              "content": "In formal writing, use idioms sparingly and only when the tone is reflective or personal. In a professional email, it’s safer to keep language clear and direct. If you do include an idiom, pair it with a grounded statement: 'Tôi rất mong được đóng góp—và luôn học hỏi như lời dạy: “Đi một ngày đàng, học một sàng khôn.”' This keeps it authentic without feeling forced."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I also worry about asking questions—do I risk seeming unconfident?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all—asking questions shows respect and engagement. But frame them gently. Instead of 'Why do we do it this way?', try: 'Anh có thể chia sẻ thêm về cách làm này không? Tôi muốn hiểu sâu hơn.' It means, 'Could you share more about this method? I’d like to understand it better.' This aligns with *giữ thể diện*—preserving dignity for all—while showing curiosity."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "nỗ lực hết mình, xin được tham khảo ý kiến trước khi triển khai",
+          "mong được thử thách và học hỏi để góp phần vào sự phát triển",
+          "đi một ngày đàng, học một sàng khôn (used in reflective, not high-stakes contexts)",
+          "nói có, nói không (knowing when and how to agree or decline tactfully)",
+          "giữ thể diện (preserving dignity and social harmony)",
+          "tài liệu văn bản chính thức: tránh lạm dụng thành ngữ, ưu tiên rõ ràng và trang trọng"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of 'đi một ngày đàng, học một sàng khôn' to emphasize lifelong learning and humility",
+          "Proper contextualization of idioms within reflective, not high-stakes, moments",
+          "Emphasis on indirectness and face-saving (*giữ thể diện*) in communication",
+          "Respect for hierarchy in family-owned businesses",
+          "Appropriate use of 'tôi sẽ cố gắng' as a polite refusal strategy",
+          "Use of 'nói có, nói không' implicitly through indirect phrasing",
+          "Balanced approach to asking questions with respectful framing"
+        ],
+        "issues": [
+          "Minor risk of overgeneralizing 'idioms in writing'—the example assumes a level of formality that may not align with all Vietnamese business email norms; some younger professionals use more conversational tone even in formal settings",
+          "The phrase 'Tôi sẽ nỗ lực hết mình, và xin được tham khảo ý kiến anh/chị trước khi triển khai' is grammatically correct but slightly formal for a nephew addressing an uncle; 'anh' is acceptable but 'chú' or 'cậu' might be more contextually accurate depending on the uncle’s age and relationship"
+        ],
+        "suggestions": [
+          "Clarify that honorifics like 'anh' vs. 'chú' depend on the uncle’s age and familial relationship—this adds nuance to the linguistic authenticity",
+          "Include a note that idioms in emails are more common in personal or semi-formal contexts (e.g., internal memos, thank-you notes) than in strictly professional correspondence",
+          "Add a brief explanation of how *giữ thể diện* operates not just in refusal but also in praise and feedback—e.g., giving compliments indirectly to avoid seeming boastful"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 23,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

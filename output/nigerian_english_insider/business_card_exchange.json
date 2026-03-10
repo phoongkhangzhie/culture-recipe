@@ -1,0 +1,110 @@
+{
+  "culture": "Nigerian",
+  "dimension": {
+    "name": "Business Card Exchange",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Rituals and significance of exchanging business cards, including how to give and receive them respectfully",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Nigerian culture. Represent the values and lived experience of Nigerian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting Mr. Adebayo from First Trust Bank tomorrow for the investor pitch. I’ve got my deck ready, but I’m a bit nervous about the card exchange. He’s the senior partner, and I know it’s not just about handing over a piece of paper."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not just a formality—it’s a moment of respect. Wait for him to offer his card first, especially since he’s senior. When he does, take it with both hands, even if he used just one. Read it slowly, pause to acknowledge his name and title—say something like, ‘Thank you, Mr. Adebayo,’ with a slight nod. That shows you see his position, not just the paper."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I shouldn’t just slide it across the table or toss it in my pocket right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Never place it on the table—hold it at chest level, face up, with your right hand. If you’re initiating, only do so if you’re clearly the host or lead. Even then, it’s safer to wait. And no back pockets—keep it in a front pocket or a leather case. That’s not just about neatness; it’s a sign of professionalism, especially in banking."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. I’ve seen people write notes on cards during meetings—should I avoid that too?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—never write on the card during the exchange. It’s seen as disrespectful, like defacing a personal document. If you need to jot something, do it after you’ve put it away. And if you’re printing your own, make sure the font is clean, spelling flawless, and the title accurate—anything off can signal carelessness, especially in formal sectors."
+            },
+            {
+              "role": "user",
+              "content": "I’ll double-check the design. One last thing—should I say anything in Yoruba or Hausa if we’re in a southern or northern office?"
+            },
+            {
+              "role": "assistant",
+              "content": "It depends on the moment. If Mr. Adebayo greets you with ‘Sannu’ after the handshake—common in Yoruba settings—it’s natural to respond with ‘Sannu, sir’ if you’re comfortable. In northern offices, especially in formal banking circles in Abuja or Kano, a simple ‘Salaam’ in Hausa might be expected if the other person uses it first. It shows cultural awareness and respect. But in mixed or international environments, English is still the norm. The key is to match the tone—don’t force it, but don’t ignore it either. In Lagos or Abuja startups, you’ll see a more relaxed exchange, but the underlying respect remains. It’s not about the words—it’s about the intention behind them."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Always receive a business card with both hands, even if the giver uses only one",
+          "Hold the card at chest level, face up, with the right hand during exchange",
+          "Never place the card on a table or in a back pocket",
+          "Read the card slowly and acknowledge the name and title aloud",
+          "Wait for a senior person to offer their card first in formal or hierarchical settings",
+          "Do not write on the card during or immediately after the exchange",
+          "Respond in local language (e.g., 'Sannu' or 'Salaam') if the other person initiates it, especially in regional business hubs",
+          "In formal northern Nigerian business settings, using Hausa may be expected, not optional",
+          "Use a clean, professional card design with accurate title and spelling",
+          "The card exchange is a ritual of respect and social recognition, not just transactional"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Card exchange is a ritualized act of respect and hierarchy",
+          "Receiving card with both hands, even if giver used one",
+          "Reading the card carefully and acknowledging title/name aloud",
+          "Holding card at chest level, face-up, with right hand",
+          "Avoiding placing card on table or in back pocket",
+          "Using leather case or front pocket for storage",
+          "Not writing on the card during exchange",
+          "Importance of professional card design and accurate titles",
+          "Cultural greetings like 'Sannu' (Yoruba) and 'Salaam' (Hausa) as context-sensitive gestures",
+          "Seniority determines who initiates the exchange",
+          "Cultural awareness in mixed or international environments without forced language use"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization in the final response: 'In Lagos or Abuja startups, you’ll see a more relaxed exchange'—while plausible, this could imply a binary between formal and informal that may not reflect the full spectrum of Nigerian business culture, where respect remains central even in startups.",
+          "The assistant assumes the user is male ('Mr. Adebayo') and the user is likely male—this could reinforce gendered assumptions if not contextually grounded."
+        ],
+        "suggestions": [
+          "Replace 'you’ll see a more relaxed exchange' with 'the exchange may be less formal, but respect and attention to detail remain expected' to avoid implying a loss of cultural substance.",
+          "Use gender-neutral language unless clearly indicated by context (e.g., 'Mr. Adebayo' is fine, but avoid assuming the user’s gender based on name or role).",
+          "Consider adding a brief mention of Igbo cultural norms (e.g., emphasis on clarity and directness in communication) to broaden regional inclusivity, though not required for this specific example."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 13
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 1,
+    "examples_produced": 1
+  }
+}

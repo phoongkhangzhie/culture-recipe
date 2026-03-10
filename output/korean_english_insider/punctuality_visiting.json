@@ -1,0 +1,174 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Punctuality When Visiting",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Cultural expectations around arriving on time, early, or fashionably late when visiting someone's home",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m going to my cousin’s house for dinner tomorrow—she said 7 PM. I’m a bit nervous though. I’ve heard it’s considered awkward to arrive too early—like interrupting the host’s preparation. Should I wait outside if I get there early, or is that still awkward?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait just outside, not right at the door. Arriving even five minutes early can put them in a bind—especially if they’re still getting ready. Being on time shows you respect their rhythm. No need to overthink it; just stay a few steps back and wait calmly."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if I’m late? I’m worried about the subway—what’s the right thing to do? Just show up and apologize?"
+            },
+            {
+              "role": "assistant",
+              "content": "No—call first. Even a two-minute delay needs a quick message. Say, 'Sorry, I’m running late due to the train, but I’m on my way.' Not calling leaves them wondering, and that’s worse than being late."
+            },
+            {
+              "role": "user",
+              "content": "I remember once I brought a small fruit basket. I handed it right when I walked in. Was that okay, or should I have waited?"
+            },
+            {
+              "role": "assistant",
+              "content": "Handing it at the door is perfect—just present it when they open, with a slight bow. Not inside, not before the door opens. That’s the quiet respect people notice."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure to call if I’m delayed and not arrive a second early. I don’t want to make them feel like I’m rushing them or disrespecting their time."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. On time isn’t just polite—it’s a quiet way of saying, ‘I value your time.’ Especially with family, that kind of care matters more than words. They’ll feel seen, and that’s what counts."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Arriving exactly on time is expected and shows respect for the host’s schedule",
+          "Arriving more than 5–10 minutes early is considered disruptive and puts the host in an awkward position",
+          "Waiting outside the door—just a few steps back—when arriving early is a culturally appropriate and respectful practice",
+          "Calling ahead if late, even by a few minutes, is a necessary gesture of consideration and relational care",
+          "Presenting a gift at the threshold, not inside, with a small bow, reflects proper boundary awareness and respect",
+          "Punctuality is especially important when visiting senior family members or in traditional family settings",
+          "Cultural norms around time reflect deeper values of harmony, mutual respect, and attentiveness in relationships"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Arriving exactly on time is ideal and shows respect",
+          "Arriving early (even 5–10 minutes) is considered awkward and disruptive",
+          "Calling ahead if late is essential and expected",
+          "Presenting a small gift (e.g., fruit basket) at the door with a slight bow is appropriate",
+          "Punctuality reflects relational value and mutual respect, especially in family contexts",
+          "The emphasis on not overstepping the host’s preparation space (e.g., waiting outside)"
+        ],
+        "issues": [
+          "The assistant’s response about 'not inside, not before the door opens' could be slightly ambiguous—'not before the door opens' might be misinterpreted as 'don’t give it before they answer,' which is already implied. A clearer phrasing would be 'hand it the moment they open the door, not before.'",
+          "Minor risk of overgeneralization: while the example is accurate, it doesn’t explicitly acknowledge that in *very close* family settings (e.g., siblings or cousins who are very familiar), slight flexibility may exist—though this is already subtly implied by the tone and context."
+        ],
+        "suggestions": [
+          "Refine the gift-giving instruction to: 'Hand it the moment they open the door—no earlier, no later. A small bow is enough.' This improves precision without losing naturalness.",
+          "Consider adding a brief, natural mention of how elders or senior family members make punctuality even more critical, to reinforce the hierarchical aspect of respect in Korean culture—e.g., 'Especially if it’s an older cousin or family member, being on time shows real care.'",
+          "Ensure future examples include subtle cues of formality (e.g., use of 'cousin' vs. 'older cousin') to reflect social hierarchy, which is central to the cultural norm."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m meeting my cousin’s in-laws for the first time this weekend at their place in Gangnam. They said 3 PM, but I’m worried—the subway’s been delayed a lot on weekends. Should I leave at 2:45, or is that too early?"
+            },
+            {
+              "role": "assistant",
+              "content": "Leave at 2:50. Not earlier. If you show up before 3, they might still be finishing up the table setting or changing into proper clothes—maybe even still in their home clothes. It puts them on the spot, and they’ll feel like they’re not ready to host. Better to wait outside or in the lobby until exactly 3."
+            },
+            {
+              "role": "user",
+              "content": "What if the train’s delayed again? I don’t want to be late—should I just call and say I’m running behind?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—call if you’re more than 10 minutes behind. A quick call with a sincere apology shows you care. But if it’s just 5 minutes, it’s better to wait and let them see you arrive on time. Calling for minor delays can feel like overreaction, and they’ll appreciate you not making a fuss."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And the gift—I brought some premium green tea from Jeju. Should I hand it over right when I walk in?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait until they invite you in, then hand over the tea with both hands and a slight bow. It’s part of the greeting ritual—not a rushed formality. They’ll appreciate you not rushing the moment, letting them set the tone for the visit."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll make sure to be on time, not early, and call if anything happens. I just don’t want to make them feel like I’m not respectful."
+            },
+            {
+              "role": "assistant",
+              "content": "When you show up on time and call only if significantly delayed, they’ll feel respected and welcomed. You’re showing care by being mindful—not by overcomplicating things."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Arriving exactly on time is ideal for formal or first-time visits",
+          "Arriving early (more than 5–10 minutes) is discouraged as it may put the host in an awkward situation",
+          "Being late by more than 10 minutes is seen as disrespectful",
+          "Calling ahead if significantly delayed is expected and shows respect",
+          "Gifts should be presented with both hands and a slight bow, not rushed",
+          "The host sets the tone for the visit; guests should not rush the greeting ritual",
+          "Punctuality reflects respect, consideration, and social awareness in Korean culture"
+        ],
+        "issues": [
+          "Minor nuance: The assistant’s advice to 'leave at 2:50' assumes the user can reliably reach the destination by 3:00, but doesn’t acknowledge that in practice, many Koreans would leave even earlier (e.g., 2:45) with the understanding that they’ll wait outside. The assistant’s '2:50' is technically correct but slightly rigid—some cultural flexibility exists in how early one might leave, as long as one doesn’t arrive early. However, this is a very minor point and does not undermine overall accuracy.",
+          "The assistant doesn’t explicitly mention that in elder-involved or traditional settings, punctuality is even more critical—though this is not essential in this context since the visit is with a cousin’s in-laws, which is relatively informal."
+        ],
+        "suggestions": [
+          "Slightly soften the timing advice (e.g., 'Leave around 2:45–2:50, but never before 2:45') to reflect common real-world practice where people often leave earlier but wait outside—this adds realism without compromising cultural norms.",
+          "Consider adding a brief mention of the importance of punctuality in intergenerational or senior-involved visits, even if not directly applicable here, to reinforce the broader cultural principle.",
+          "Use more natural Korean idioms or expressions in the assistant’s tone (e.g., 'They’ll feel like you’re not treating them seriously' instead of 'they’ll feel like I wasn’t important') to enhance linguistic authenticity, though the current version is already very strong."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 1,
+    "examples_produced": 2
+  }
+}

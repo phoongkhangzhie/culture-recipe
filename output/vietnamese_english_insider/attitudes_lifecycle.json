@@ -1,0 +1,92 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Attitudes Toward Birth, Aging, Illness, and Death",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Diet and Health Concept",
+    "description": "Cultural beliefs, rituals, and practices surrounding the major life events of birth, aging, illness, and death",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Bác Trang passed away last night, and the family’s split on the funeral timing. The eldest son wants to go in three days—doctor’s recommendation for the body’s release. My aunt insists on the seventh day for the *lễ cúng thất*. I don’t want to go against the elders, but I also don’t know if we’re supposed to wait. What’s the real practice?"
+            },
+            {
+              "role": "assistant",
+              "content": "Most families today follow the doctor’s advice—three to five days is common and respectful. The *lễ cúng thất* on the seventh day isn’t a delay; it’s the first formal rite in the 49-day mourning cycle. Many families hold the funeral early but keep the *bàn thờ tổ tiên* lit at home, offering *cháo trắng*, tea, and fruit daily. The 7th, 14th, and 21st days are especially important—each marks a key stage in the spirit’s journey through the afterlife. *Chúng ta giữ đạo lý*, not just the clock."
+            },
+            {
+              "role": "user",
+              "content": "That helps. My cousin from Ho Chi Minh City says we should just follow the hospital release time—no need for all the rituals. But I worry about what the elders will think. How do we balance respect with reality?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can honor both. Just say: ‘We’re following the doctor’s recommendation for the body’s release, but we’ll keep the altar lit and offer *cháo trắng*, tea, and fruit every day—especially on the 7th, 14th, and 21st days.’ That’s how most families do it now. The elders understand—what matters is *tấm lòng*, not just timing. *Lòng thành hơn lễ nghĩa*—intention trumps form. This is also part of the larger rhythm of remembrance, like *Tết Trung Nguyên*, when we honor all ancestors, not just the recently departed."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One more thing—my mother says we must use white on the altar, but I saw a family in the village using red cloth at the base. Is that okay? I don’t want to do it wrong."
+            },
+            {
+              "role": "assistant",
+              "content": "White is the standard—symbolizing purity and respect. The red you saw was likely a thin red thread tied around the base of the altar or near the incense holder. In some northern villages, this is a protective charm, believed to guide the spirit safely through the afterlife and shield it from wandering spirits. It’s not for celebration—it’s quiet, not festive. But it’s regional, not universal. In the South and Central regions, red is never used in mourning. The heart of it is simple: *cháo trắng*, warm tea, fruit, and a clear mind. The *cúng 49 ngày* is the final rite—letting go with love, not ceremony. The tradition lives in the care, not the color. Some families also invite a *thầy cúng* or priest to lead the *lễ cúng thất*, especially for the 7th and 49th days, to ensure the spirit is properly guided by *thần linh* and *bát tự*. It’s not about form—it’s about faith and family. *Chữ hiếu là gốc*—filial piety is the root."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "The significance of the 7th, 14th, and 21st days in the 49-day mourning cycle",
+          "The practice of keeping the ancestral altar lit and offering cháo trắng, tea, and fruit daily",
+          "The blending of medical timing with ritual observance in modern Vietnamese funerals",
+          "The regional variation in use of red cloth (as protective charm in the North, not in the South/Central)",
+          "The symbolic meaning of white in mourning versus red in celebration",
+          "The belief in spiritual guidance during the afterlife journey and the role of *thầy cúng* or priests",
+          "The emphasis on *tấm lòng* (sincerity) over formal ritual",
+          "The value of *hiếu thảo* (filial piety) and *lòng thành hơn lễ nghĩa* (intention over form)",
+          "The connection between the 49-day mourning and *Tết Trung Nguyên* (Ullambana Festival)",
+          "The use of *bát tự* in spiritual guidance during death rituals"
+        ],
+        "issues": [
+          "The mention of 'red thread tied around the base of the altar' as a protective charm is regionally specific and may be misinterpreted as a common nationwide practice; it's more accurately described as a very localized custom, not widely recognized across Vietnam.",
+          "The phrase 'In some northern villages' is vague—more precise regional attribution (e.g., 'in certain highland or northern rural areas') would strengthen authenticity.",
+          "The assistant's use of 'we' in the third turn ('We’re following the doctor’s recommendation...') could imply a shared identity that might not be appropriate if the assistant is meant to be a neutral cultural guide rather than a family member. However, this is a minor stylistic issue in a naturalistic dialogue."
+        ],
+        "suggestions": [
+          "Clarify that the red thread is a very localized custom, not a standard national practice, to avoid overgeneralization.",
+          "Replace 'some northern villages' with a more specific geographic reference (e.g., 'in parts of the northern mountainous regions') to enhance precision.",
+          "Slight rephrasing of the assistant’s 'we' to maintain cultural authority without assuming personal involvement (e.g., 'Many families today say: “We’re following the doctor’s recommendation…”') to preserve the role of a knowledgeable but neutral cultural guide.",
+          "Consider adding a brief mention of *cúng 49 ngày* as a final rite that marks closure, reinforcing the spiritual journey of the soul."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 3,
+    "examples_produced": 1
+  }
+}

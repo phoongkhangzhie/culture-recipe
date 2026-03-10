@@ -1,0 +1,97 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Changing Attitudes Toward Gender",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Gender Roles",
+    "description": "Evolving social norms and generational shifts in how gender roles, equality, and identity are understood",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m thinking about moving in with my boyfriend after we get engaged, but my mom keeps saying I should stay with her until we’re married. She says it’s not right for a woman to live on her own before marriage, especially since I’m not working full-time yet. I don’t know how to tell her I want my own space, but I also don’t want to hurt her feelings."
+            },
+            {
+              "role": "assistant",
+              "content": "She’s not just worried about tradition—she’s afraid of losing you. That fear comes from love, not control. You’re not leaving her; you’re learning to carry her with you, even when you’re not under the same roof."
+            },
+            {
+              "role": "user",
+              "content": "She said I’m being too Western, like I don’t understand Vietnamese values. I told her I’m not asking to live far away—just not in her house. But she still looks at me like I’ve broken some rule. What should I say to make her understand without making it a fight?"
+            },
+            {
+              "role": "assistant",
+              "content": "Try saying: 'Mẹ ơi, con vẫn luôn ở bên mẹ—con chỉ cần một chỗ riêng để lớn lên. Như chị Lan, người từng làm việc tại một tổ chức hỗ trợ thanh thiếu niên LGBTQ+ ở TP.HCM, vẫn về nhà ăn cơm mỗi tối dù sống riêng. Con vẫn sẽ chăm sóc mẹ, vẫn gọi điện mỗi ngày, và con tin là mình có thể vừa độc lập, vừa giữ trọn vẹn tình cảm gia đình.'"
+            },
+            {
+              "role": "user",
+              "content": "That actually makes sense. I think I’ll try it this weekend. I just hope she doesn’t feel like I’m rejecting her. It’s just… I want to be someone who decides for myself, not someone who’s always told what to do."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re not rejecting her—you’re becoming the kind of daughter who carries the family’s heart even when she’s not in the same room. It’s not about leaving home. It’s about growing into your own strength while keeping the roots. Like how many young women in Hanoi and Saigon now live apart from their parents but still visit every weekend, cook together, and talk every night. That’s not Western. That’s Vietnamese modernity—respectful, independent, and still deeply connected."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Daughters are expected to marry and prioritize family over career, especially among older generations",
+          "Young urban women are increasingly pursuing higher education and careers in tech, law, and entrepreneurship",
+          "Shared household responsibilities between partners are becoming more common in urban areas",
+          "Paternity leave is increasingly accepted and seen as progressive in younger professional circles",
+          "The phrase 'con gái phải lấy chồng, con trai phải lo cho gia đình' remains a cultural touchstone in traditional families",
+          "Young women in cities are navigating independence while maintaining strong emotional ties to parents",
+          "Social workers and NGO coordinators in urban centers play visible roles in supporting youth and marginalized groups",
+          "Living independently before marriage is still a sensitive topic, especially in intergenerational households",
+          "Modern Vietnamese identity blends tradition with personal agency, particularly among younger generations"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "The tension between traditional expectations (e.g., women staying with parents until marriage) and modern aspirations for independence",
+          "The use of familial love as a framing device for intergenerational conflict (e.g., 'She’s afraid of losing you')",
+          "The reference to urban Vietnamese youth living independently while maintaining strong family ties",
+          "The inclusion of a real-world example (Lan from a youth LGBTQ+ support organization in Ho Chi Minh City) that reflects actual social movements",
+          "The emphasis on respect, continuity, and emotional connection as central to modern Vietnamese family dynamics",
+          "The distinction between 'Western' and 'Vietnamese modernity' as a culturally resonant narrative"
+        ],
+        "issues": [
+          "The assistant's use of 'chị Lan' (older sister) as a specific example may be slightly misleading—while such figures exist, citing a named individual without context risks implying authenticity where none is guaranteed. This could mislead models into treating fictionalized anecdotes as factual cultural references.",
+          "The phrase 'con vẫn luôn ở bên mẹ' (you're still with mom) is emotionally accurate but slightly overgeneralized—some young Vietnamese women do not maintain daily contact with mothers after moving out, especially in high-stress work environments. The example assumes a high level of ongoing emotional availability that may not reflect all urban experiences.",
+          "The assistant’s response assumes the mother will accept the framing of 'modern Vietnamese' identity without resistance—while plausible, this could underrepresent the persistence of generational conflict, especially in more conservative families."
+        ],
+        "suggestions": [
+          "Replace the specific anecdote about 'chị Lan' with a more general reference to 'many young women in cities like Hanoi and Ho Chi Minh City' to preserve authenticity without risking the model learning a fabricated example.",
+          "Add a subtle acknowledgment of the mother’s perspective as valid within her own cultural framework, e.g., 'Mẹ cũng chỉ muốn con an toàn, con hạnh phúc theo cách của bà—và con đang tìm cách để cả hai điều đó đều có thể xảy ra.' This reinforces cultural empathy without reinforcing conflict.",
+          "Include a brief mention of how some families negotiate this transition through shared rituals (e.g., cooking together on weekends, family dinners), which grounds the modernity in lived practice rather than abstract ideals."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

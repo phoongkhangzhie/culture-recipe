@@ -1,0 +1,96 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Culturally Sensitive Topics",
+    "category": "Core Values and Social Structures > Values and Beliefs > Do's and Don'ts",
+    "description": "Subjects that are considered taboo, divisive, or inappropriate to raise in casual social conversation",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning a small dinner party for my coworkers. I want to make it welcoming, but I’m not sure what topics to bring up. One of them, Min-ji, is in her late 30s and has never talked about her personal life much. I don’t want to accidentally offend anyone."
+            },
+            {
+              "role": "assistant",
+              "content": "It’s thoughtful of you to consider this. In Korean workplace culture, harmony (*jeong*) and avoiding *p’o* (embarrassment) are deeply valued. While questions about age or marriage are common—especially for women in their 30s—they can carry unspoken pressure tied to societal expectations around marriage and family. That said, responses vary widely: some younger professionals, particularly those with more individualistic upbringings or urban exposure, may express personal choices more openly, while others—especially those from more traditional or rural backgrounds—may feel stronger familial expectations tied to *hyo* (filial piety), where family honor is closely linked to life milestones. The best approach is to focus on shared, culturally resonant experiences—like seasonal traditions, public spaces, or local events—without probing personal details."
+            },
+            {
+              "role": "user",
+              "content": "What if someone brings up marriage or age? I’ve heard it’s common, especially with women. I don’t want to seem rude, but I also don’t want to participate in something that might make someone uncomfortable."
+            },
+            {
+              "role": "assistant",
+              "content": "A gentle, indirect response works best—acknowledging the social norm without engaging deeply. Try: 'My family sometimes brings it up, but I’m content with my current path.' Or, 'They do ask, but I’m happy where I am right now.' A soft smile and a shift to a neutral topic—like a local festival or hanbok exhibition—can ease the moment. It’s not about rejecting the topic, but honoring *jeong* through quiet grace."
+            },
+            {
+              "role": "user",
+              "content": "What about politics or religion? I know those are touchy subjects. Should I just avoid them completely?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially in informal settings. Politics, particularly anything tied to North Korea or past regimes, is highly sensitive due to historical trauma. Even casual remarks can be misinterpreted. Religion is similarly private; asking about beliefs may create discomfort. The safest path is to avoid these unless they arise naturally, such as during a holiday. If someone brings it up, respond with mild neutrality: 'That’s a complex topic,' then pivot—'Speaking of traditions, have you been to any hanbok exhibitions lately? They’re becoming quite popular in Seoul.'"
+            },
+            {
+              "role": "user",
+              "content": "Got it. So the key is staying neutral, using indirect responses, and focusing on shared, positive experiences?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. In Korean culture, indirectness isn’t evasion—it’s care. By choosing light, inclusive topics and responding with quiet grace, you show respect without overstepping. It’s not about avoiding connection, but building it in a way that feels safe and warm. That’s how *jeong* grows—quietly, naturally, and with respect for *p’o* and *hyo*."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The emphasis on *jeong* (harmony) and *p’o* (embarrassment) as core cultural values in social interactions",
+          "The sensitivity around discussing age and marriage, especially for women in their 30s, and the associated societal pressure",
+          "The avoidance of direct confrontation or probing in personal matters as a sign of respect",
+          "The cultural taboo around politics, particularly North Korea and past regimes, and the risk of misinterpretation",
+          "The private nature of religion and the discomfort caused by direct questioning of beliefs",
+          "The use of indirect responses and topic shifting to maintain social grace",
+          "The importance of *hyo* (filial piety) in shaping personal choices and family expectations",
+          "The recommendation to focus on shared, positive, culturally resonant experiences like seasonal traditions and hanbok exhibitions"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the phrase 'some younger professionals... may express personal choices more openly' could be slightly rephrased to avoid implying a binary between 'traditional' and 'modern' Koreans, which may oversimplify generational and regional diversity.",
+          "The term 'quiet grace' is poetic but could be slightly ambiguous to non-native speakers; a brief contextual explanation might improve clarity without sacrificing authenticity."
+        ],
+        "suggestions": [
+          "Consider adding a brief note about regional variation (e.g., urban Seoul vs. rural areas) to further nuance the discussion of generational attitudes toward marriage and personal life.",
+          "In future examples, include a subtle reference to *an’nyong* (anonymity or discretion) in group settings to reinforce the cultural value of not drawing attention to oneself.",
+          "Use a more specific example of a local event (e.g., 'Chuseok lantern festival at Gyeongbokgung') to enhance cultural grounding and authenticity."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 4
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 14,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

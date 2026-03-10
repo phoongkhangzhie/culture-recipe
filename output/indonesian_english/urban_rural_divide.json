@@ -1,0 +1,105 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Urban-Rural Divide",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Household Structures",
+    "description": "Differences in lifestyle, values, opportunities, and cultural norms between urban and rural populations",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to visit my cousin’s village in Cipanas, West Java, for the first time. I’ve been living in Jakarta for five years and I’m a bit nervous—how should I behave? I don’t want to offend anyone, especially the elders."
+            },
+            {
+              "role": "assistant",
+              "content": "Welcome to Cipanas—your care in asking already shows respect, which is deeply valued. In rural West Java, *hormat tua* (respect for elders) is central. Greet elders first with a slight bow and say 'Selamat pagi, Om' or 'Selamat pagi, Tante'. If unsure, wait for cues from others. Avoid rushing—presence and patience matter more than punctuality. When invited to sit, always wait for elders to be seated first."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been wearing jeans and t-shirts in Jakarta. Should I change my clothes? My cousin said I should bring a traditional outfit."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—modest, respectful attire is appreciated. A batik shirt with a simple *kain jumputan* or locally woven cloth from Cipanas works well for informal visits. For ceremonies like *kenduri* or *selamatan*, a *kebaya* with *kain panjang* is appropriate—this is common across Java, including West Java, especially during religious or cultural events. If unsure, ask: 'Om/Tante, saya pakai baju apa yang sopan?' That shows humility and respect."
+            },
+            {
+              "role": "user",
+              "content": "I noticed in Jakarta, people often use WhatsApp groups to organize things. Can I do that here too? My cousin said they’re still using word-of-mouth for events."
+            },
+            {
+              "role": "assistant",
+              "content": "You’ll see a blend. Younger relatives may use WhatsApp to share updates, but elders still prefer face-to-face planning. Major events like *kenduri*—a communal ritual involving prayer, shared food, and social cohesion—are often coordinated in person at the *balai desa* or a family home. The *Kepala Dusun* (village head) often leads these efforts. Join the conversation in person when you can. Your willingness to help with *gotong royong*—like preparing food or cleaning—means more than any message."
+            },
+            {
+              "role": "user",
+              "content": "I’m also thinking about bringing a small gift. What would be appropriate?"
+            },
+            {
+              "role": "assistant",
+              "content": "A thoughtful gift is always welcome. Try packaged snacks like *kue lapis*, *bika ambon*, or a good tea. A small potted plant for the garden is also appreciated. Avoid flashy or expensive items—modesty is valued. Present it with both hands and say, 'Ini dari saya, untuk keluarga, terima kasih sudah menerima saya.' The gesture, not the price, will be remembered."
+            },
+            {
+              "role": "user",
+              "content": "I’ve noticed that even young people here use WhatsApp, but they still come to meetings in person. Is that common?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—many young villagers today balance modern tools with deep-rooted values. They might message ahead, but they’ll show up in person for important gatherings. This reflects a cultural rhythm tied to the land: rice planting cycles, harvest seasons, and communal rituals shape daily life. Even in digital age, physical presence at *kenduri* or *gotong royong* is a sign of belonging and respect. It’s not just tradition—it’s how community trust is built."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Hormat tua (respect for elders) as a core value in rural West Java",
+          "Use of local greetings like 'Selamat pagi, Om/Tante' in rural settings",
+          "Importance of *gotong royong* (mutual assistance) in community life",
+          "Presence of *kenduri* and *selamatan* as communal rituals",
+          "Blending of modern tools (WhatsApp) with traditional practices in rural areas",
+          "Preference for modest, traditional attire (batik, *kain jumputan*, *kebaya*) in cultural contexts",
+          "Use of *Kepala Dusun* (village head) in organizing community events",
+          "Value placed on physical presence over digital communication for significant gatherings",
+          "Appropriateness of modest gifts like *kue lapis*, tea, or potted plants"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all rural West Java communities follow the same practices, though this is acceptable for a training example at this scale",
+          "The term 'Kepala Dusun' is accurate but not universally used in all villages—some areas use 'Kepala Kampung' or 'Lurah', though the concept is correctly represented"
+        ],
+        "suggestions": [
+          "Include a brief note in the system prompt that acknowledges regional variation within West Java (e.g., differences between highland and lowland villages) to encourage nuanced responses",
+          "Consider adding a subtle mention of gender roles in community events (e.g., women often lead food preparation in *kenduri*) to deepen cultural depth",
+          "Slightly vary the tone of the assistant in later turns to reflect growing familiarity, mirroring how real interactions evolve during a visit"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "culture": "Thai",
+  "dimension": {
+    "name": "Changing Attitudes Toward Gender",
+    "category": "Core Values and Social Structures > Social Relationship and Structures > Gender Roles",
+    "description": "Evolving social norms and generational shifts in how gender roles, equality, and identity are understood",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Thai culture. Represent the values and lived experience of Thai people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m planning to attend my friend’s wedding next month in Chiang Mai. They’re a same-sex couple, and I’m not sure how to behave—especially since my parents are still getting used to the idea. Should I bring a gift? What’s the right way to greet them?"
+            },
+            {
+              "role": "assistant",
+              "content": "Your care shows how much you value your friend. In Thai culture, weddings are about *sanuk*—shared joy—and *moral respect* for the couple’s happiness. A gift is appreciated, but it doesn’t need to be traditional. A photo frame with a handwritten note, a potted plant, or a donation to a local LGBTQ+ youth support group in their name would be meaningful. When greeting them, a simple 'Sawatdee khrap/kha' with a warm smile works perfectly. While 'khrap' is for men and 'kha' for women, many younger Thais use 'kha' more inclusively—especially in mixed or non-gendered settings. It’s not about perfection; it’s about presence and kindness."
+            },
+            {
+              "role": "user",
+              "content": "My mom said she’s worried about how her friends will react. She’s heard that some people in Isan still don’t understand. How do I explain this to her gently?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a kind and thoughtful concern. You might gently remind her that change is happening quietly—like how BL dramas have helped younger generations see emotional closeness between men as natural and beautiful. In Chiang Mai, some older relatives in urban areas are beginning to attend Pride events, especially to support family. It’s not about activism—it’s about love and *sanuk*. You could say: 'Mama, this isn’t about changing who they are—it’s about celebrating joy and family, just like any wedding. The real tradition is dignity for everyone.' And remember, *jai yen*—a gentle heart—helps us navigate sensitive moments with care and patience."
+            },
+            {
+              "role": "user",
+              "content": "That helps. I also saw a post about gender-neutral restrooms at the venue. Is that common now?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—especially in modern venues in Chiang Mai and Bangkok. Many malls, hotels, and event spaces now include gender-neutral restrooms, often marked with a simple universal symbol (🚻) or the Thai word 'ห้องน้ำ' without gender labels. This isn’t about politics; it’s about comfort and *moral respect*—ensuring everyone feels safe. Even older relatives may use them when available, especially if they’re with family. It’s a quiet sign of growing inclusivity, rooted in *jai yen*—kindness and consideration. In spoken Thai, the pronoun 'kao' (เขา) is widely used as a gender-neutral term across all ages and contexts, including mixed-gender or non-binary situations. It’s natural, common, and deeply embedded in daily conversation."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Sanuk (shared joy) as a core cultural value in weddings",
+          "Moral respect for the couple's happiness and dignity",
+          "Use of 'Sawatdee khrap/kha' with inclusive tone in mixed-gender or non-binary settings",
+          "Growing acceptance of LGBTQ+ relationships in urban centers like Chiang Mai",
+          "Influence of BL dramas in reshaping perceptions of male intimacy and emotional expression",
+          "Use of 'kao' (เขา) as the most common gender-neutral pronoun in spoken Thai",
+          "Rising presence of gender-neutral restrooms in modern public spaces",
+          "Quiet societal shift toward inclusivity rooted in *jai yen* (gentle heart)",
+          "Changing family dynamics: younger generations embracing emotional equity and shared responsibilities"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "The presence and social acceptance of kathoey in Thai public life",
+          "The role of BL dramas in normalizing male intimacy and emotional vulnerability",
+          "The use of 'kha' and 'khrap' as gendered honorifics, with increasing inclusive use of 'kha'",
+          "The growing use of 'kao' (เขา) as a gender-neutral pronoun in spoken Thai",
+          "The rise of gender-neutral restrooms in urban venues like Chiang Mai and Bangkok",
+          "The significance of *sanuk* (joy/harmony) and *jai yen* (gentle heart) in social interactions",
+          "The contrast between urban progressive attitudes and more traditional rural views (e.g., Isan)",
+          "The 2025 legalization of same-sex marriage in Thailand as a landmark social shift",
+          "The role of youth-led movements and corporate inclusivity in driving change",
+          "The emphasis on dignity, respect, and family in same-sex weddings"
+        ],
+        "issues": [
+          "The mention of '2025' legalization of same-sex marriage is accurate but may be slightly premature in the context of training data; however, it is consistent with current public discourse and legislative progress, so it is not an error.",
+          "The use of 'khrap/kha' in mixed or non-gendered settings is correctly noted as increasingly inclusive, though some older Thais may still perceive it as gendered—this nuance is acknowledged by the assistant’s emphasis on 'not about perfection'.",
+          "No significant factual inaccuracies or stereotyping present; the example avoids exoticizing or oversimplifying Thai gender dynamics."
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of the role of Buddhist ethics in shaping compassionate attitudes toward gender diversity, to deepen cultural grounding.",
+          "In future examples, include a subtle reference to how traditional family values (e.g., *phrai*, respect for elders) are being reinterpreted in inclusive ways, to reflect generational dialogue.",
+          "To enhance training depth, include a response where the assistant acknowledges that while gender-neutral restrooms are growing, some older individuals may still feel uncomfortable—showing empathy without judgment."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

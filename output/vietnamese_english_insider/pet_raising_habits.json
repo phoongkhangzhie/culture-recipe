@@ -1,0 +1,89 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Pet-Raising Habits",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Daily Life and Travel",
+    "description": "Cultural attitudes toward keeping pets, preferred animal companions, and norms around pet care and ownership",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "My neighbor’s dog, Bé Tí, has been barking non-stop since morning. I’ve seen him on the balcony every day, always on a leash. I don’t want to cause trouble, but the noise is really getting to me. What should I do?"
+            },
+            {
+              "role": "assistant",
+              "content": "I know how hard it can be—early morning barking disrupts the quiet of the day, especially when you’re trying to rest or focus. Bé Tí’s been a part of the building for a while now, and I’ve seen how much care his neighbor takes. They even made him a little birthday cake last month. It’s clear he’s treated like family."
+            },
+            {
+              "role": "user",
+              "content": "That’s actually really kind of you to say. I’ve seen Bé Tí before—he used to be a stray near the market. I think the neighbor adopted him a few months ago. They even gave him a little birthday cake last month. It’s beautiful how people here treat pets like family."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—so many neighbors now see their pets as *con cưng*, real members of the household. It’s heartwarming to see how much love goes into caring for them, even from a stray. But we also know how important harmony is in shared spaces. The barking might be from excitement or loneliness—especially if he’s on the balcony all day."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll go talk to them tomorrow. I just hope they don’t think I’m being too strict. I’ve seen other neighbors quietly put up signs about noise—maybe that’s another option?"
+            },
+            {
+              "role": "assistant",
+              "content": "Talking in person is the gentlest way—kind, respectful, and shows you care about the dog too. A small note with a drawing of a sleepy cat or a heart, left on the door with a smile, often softens the message. Some families even use pet-friendly door signs or post on community boards. It’s a quiet way to build understanding without tension."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Pets are treated as *con cưng* (favorite children) and integrated into family life",
+          "Adoption from strays is common and valued",
+          "Pet birthdays with cake are a real cultural practice in urban Vietnam",
+          "Affectionate nicknames and emotional bonds with pets are widespread",
+          "Public harmony is prioritized—noise and waste are sensitive issues in shared spaces",
+          "Informal, non-confrontational conflict resolution (e.g., notes with drawings) is culturally appropriate",
+          "Pet-friendly community practices (e.g., door signs, community boards) exist",
+          "Buddhist values of compassion influence attitudes toward animals",
+          "Generational and regional differences in pet attitudes are acknowledged"
+        ],
+        "issues": [
+          "The use of the term 'Bé Tí' as a dog’s name is plausible but slightly Westernized; in authentic Vietnamese contexts, names like 'Mít', 'Bé', or 'Tí' are more common for cats, while dogs often have names like 'Chó Bé', 'Tí Tí', or 'Lan'—but this is a minor stylistic choice, not a factual error",
+          "The assistant's reference to 'a little birthday cake last month' is accurate but could be slightly more grounded—e.g., mentioning a small homemade cake or a treat with a candle, which is more typical than a full cake in many households"
+        ],
+        "suggestions": [
+          "Consider slightly more localized naming patterns in future examples (e.g., 'Chó Bé' or 'Mèo Tí' instead of 'Bé Tí' for a dog) to enhance authenticity",
+          "Include a brief mention of pet insurance or vet visits to reinforce the growing trend of responsible ownership, as noted in the briefing",
+          "In a future version, show a subtle contrast between older and younger generations—e.g., a neighbor who hesitates to let the dog in the apartment, reflecting traditional views"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 5
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 16,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

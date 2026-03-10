@@ -1,0 +1,106 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Pork and Dietary Taboos",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Religious, cultural, and personal attitudes toward consuming pork, including taboos and culturally accepted alternatives",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm planning a small family gathering this weekend to celebrate my grandmother’s 75th birthday. We usually do jesa at home, but this time I want to make it more festive. I’m thinking of grilling samgyeopsal and serving bulgogi, but my cousin says he’s been trying to cut down on meat lately. Should I worry about offending him?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all. In Korea, dietary choices are increasingly personal, especially among younger people. Many are reducing meat for health, environmental, or ethical reasons—but this isn’t seen as disrespecting tradition. Your cousin’s preference reflects a quiet shift, not a rejection of family values."
+            },
+            {
+              "role": "user",
+              "content": "Good to hear. I was worried it might seem like I’m ignoring his preferences. What are some good alternatives I could include that still feel festive and traditional?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. You can keep the heart of the meal—grilled samgyeopsal and bulgogi—but add a few plant-based dishes that feel authentically Korean. Try grilled king oyster mushrooms with gochujang and sesame oil; they’re popular at modern gatherings in Seoul and Busan and have a satisfying, meaty texture. Or a hearty doenjang jjigae with tofu, mushrooms, and seasonal vegetables—rich, warming, and deeply familiar."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. My grandmother actually mentioned she remembers when meat was rare during the war—she used to say pork was a luxury. I wonder if she’d be okay with a mix of meat and plant-based dishes?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a powerful moment. Her memory speaks to a real history—pork was indeed a rare treat in the 1950s and 60s. Serving both meat and plant-based dishes isn’t a break from tradition; it’s a quiet tribute to how far you’ve come. Many elders today are curious, not just nostalgic—they appreciate that younger generations are thinking about balance, health, and the planet. It’s like a family table that remembers the past and welcomes the future."
+            },
+            {
+              "role": "user",
+              "content": "I love that idea. I’ll make a little sign for the table: ‘From scarcity to choice — a feast of memory and care.’ Thanks for helping me balance tradition and modern values."
+            },
+            {
+              "role": "assistant",
+              "content": "That sign will mean a lot. In Korea, food is memory, respect, and love. While meat dishes like samgyeopsal and bulgogi remain central to most family gatherings—especially in rural areas and among older generations—plant-based options are gaining visibility in urban centers. You’ll find them in major supermarkets like Lotte Mart and Homeplus, or online via Coupang and Naver Shopping. Still, they’re not yet mainstream. The key is balance: honoring tradition while gently expanding it with care. It’s not about replacing the old—it’s about adding new layers of meaning."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Pork is a central and culturally significant ingredient in Korean cuisine, especially in family meals and ancestral rites (jesa)",
+          "There are no religious dietary prohibitions against pork in Korean culture, unlike in Islam or Judaism",
+          "Historical scarcity of meat during the Korean War (1950–1953) shaped deep cultural memories around pork as a luxury",
+          "Modern dietary shifts among younger urban Koreans—such as reducing meat for health or environmental reasons—are personal choices, not cultural taboos",
+          "Plant-based meat alternatives are growing in visibility in cities like Seoul and Busan but remain niche, especially outside urban centers",
+          "Dishes like samgyeopsal and bulgogi are often associated with celebration and male bonding rituals, though this is not universally enforced",
+          "Elders may express nostalgia for past food scarcity, which can inform their perspective on current abundance and dietary choices",
+          "Food in Korean culture carries emotional weight—symbolizing memory, respect, and intergenerational care",
+          "The presence of plant-based dishes at family events is increasingly accepted as a thoughtful, modern addition rather than a departure from tradition"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.275,
+        "cultural_elements_verified": [
+          "Pork is a staple in Korean cuisine, especially in dishes like samgyeopsal and bulgogi",
+          "There are no religious dietary prohibitions against pork in Korean culture",
+          "Dietary choices are increasingly personal, especially among younger generations",
+          "Plant-based alternatives are gaining traction in urban areas like Seoul and Busan",
+          "Historical context of meat scarcity during the Korean War influences current perceptions of pork",
+          "Elders may recall pork as a luxury, reflecting past hardship",
+          "Family meals and food are deeply tied to memory, respect, and intergenerational connection",
+          "Modern gatherings increasingly include plant-based dishes as a sign of balance and care"
+        ],
+        "issues": [
+          "The mention of 'major supermarkets like Lotte Mart and Homeplus' and 'online via Coupang and Naver Shopping' is slightly overgeneralized—while these platforms carry plant-based products, their availability and visibility vary significantly by region and demographic; a more nuanced phrasing would help avoid implying widespread mainstream adoption",
+          "The phrase 'plant-based options are gaining visibility' is accurate but could be strengthened by noting that they are still considered niche outside of specific urban, younger, or health-conscious communities"
+        ],
+        "suggestions": [
+          "Replace 'gaining visibility in urban centers' with 'gaining popularity among younger, urban, and health-conscious Koreans, though still considered a niche choice in most households'",
+          "Clarify that plant-based pork substitutes are not yet common in traditional family settings, even in cities, to avoid implying broader cultural acceptance than exists",
+          "Consider adding a brief note about the role of Buddhist temple stays or meditation retreats where meat abstinence is practiced voluntarily—this adds depth to the nuance of personal choice without implying cultural taboo"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 12
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 28,
+    "research_rounds": 2,
+    "examples_produced": 1
+  }
+}

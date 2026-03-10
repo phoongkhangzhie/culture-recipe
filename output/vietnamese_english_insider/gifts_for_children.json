@@ -1,0 +1,417 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Gifts for Children",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "Appropriate and inappropriate gift choices for children, and norms around giving gifts directly to minors",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for Tết next week. My nephew is six and loves drawing—what should I bring him as a gift? I don’t want to overstep, since I’m not a close relative."
+            },
+            {
+              "role": "assistant",
+              "content": "A nice idea—especially since he likes drawing. A small set of colored pencils or a sketchbook with a red cover would be perfect. You could also include a few simple traditional toys, like a wooden puzzle or a hand-carved animal. Just make sure to give it to his parents first, not directly to him. That’s the respectful way here."
+            },
+            {
+              "role": "user",
+              "content": "Good point—I didn’t think about that. Should I put it in a red envelope too? I’ve seen people do that during Tết."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a thoughtful touch. A small red envelope with 50,000 VND inside—just enough to feel special—would go well with the gift. It’s not just money; it’s a blessing for the new year. Keep the envelope simple, with gold or silver details, and hand it to his parents when you arrive."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about snacks? I was thinking of bringing some bánh chưng and dried mangoes."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect—those are great. Bánh chưng is traditional, and dried mangoes are sweet and popular with kids. Just avoid anything in black or white packaging. And don’t bring anything sharp, like a knife or scissors, even if it’s for a toy. That’s a hard no in Vietnamese homes."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, I’ll double-check the packaging. And should I give him a little bow when I hand the gift to his mom?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—just a small, respectful bow with both hands. It shows you’re mindful of the tradition. He’ll likely bow back when he gets his lì xì from the elders later. It’s all part of the rhythm of Tết."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Red envelopes (lì xì) with money during Tết are appropriate and meaningful",
+          "Gifts should be given through parents or elders, not directly to children",
+          "Colored pencils, sketchbooks, and traditional toys like wooden puzzles are culturally appropriate",
+          "Avoiding black/white packaging and sharp objects (knives, scissors) as taboo",
+          "Bánh chưng and dried mangoes are acceptable and traditional snacks",
+          "Small bow with both hands as a sign of respect during gift-giving",
+          "Reciprocal bowing during Tết as part of intergenerational ritual"
+        ],
+        "issues": [
+          "The mention of '50,000 VND' is accurate but could benefit from contextualizing that this is a modest amount, especially for a non-close relative—though this is implied by tone.",
+          "The assistant does not explicitly mention that lì xì is traditionally given by elders to younger family members, which reinforces the norm of indirect gift-giving; however, this is indirectly supported by the instruction to give the envelope to parents."
+        ],
+        "suggestions": [
+          "Include a brief, natural mention of the symbolic meaning of lì xì beyond just 'a blessing'—e.g., 'It’s meant to bring luck and keep bad spirits away.'",
+          "Slightly emphasize that even small gifts are meaningful when given through elders, reinforcing the cultural value of relational respect over material value.",
+          "Consider adding a subtle note about avoiding Westernized dolls with adult-like features if the user were to consider them, to reinforce the cultural preference for symbolic or traditional items."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for Tết next week and my nephew just turned six. I want to bring something nice, but I’m not sure what’s appropriate. He’s been asking about the red envelopes, but I don’t want to make a mistake."
+            },
+            {
+              "role": "assistant",
+              "content": "A lì xì is perfect—just make sure it’s in a red envelope with gold or silver details. 50,000 VND is a thoughtful amount for a six-year-old. If you’re giving it during a family visit, hand it to his parents first, then they’ll pass it to him. That’s the usual way."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Should I also bring something else? I thought about a small book or a toy, but I don’t want to offend anyone."
+            },
+            {
+              "role": "assistant",
+              "content": "A book with a traditional story or a wooden puzzle would be great—something educational and handcrafted. Avoid anything too flashy or plastic. A small basket of tangerines or a box of bánh chưng is also nice, especially if you’re visiting early in the Tết period. Just keep the colors bright—no white or black."
+            },
+            {
+              "role": "user",
+              "content": "What about a stuffed animal? I saw one with a little dragon on it at the store. It looked cute."
+            },
+            {
+              "role": "assistant",
+              "content": "A dragon is good—symbolic and meaningful. But if it’s a Western-style doll with big eyes or adult features, it might seem out of place. A simple, hand-carved wooden animal would be better. Also, don’t give it directly to the child. Hand it to the parents first, and let them decide when to give it."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’ll go with the lì xì, a book about Vietnamese folk tales, and a small wooden turtle. I’ll give them to his mom when we arrive. He’ll be happy, I think."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a thoughtful and culturally respectful choice. The turtle symbolizes longevity, which is a nice touch. And giving through his mom keeps the tradition intact. He’ll probably bow and say “cảm ơn” with both hands—just like his elders taught him."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Red envelopes (lì xì) as the primary gift during Tết",
+          "Gifts given through parents or elders, not directly to children",
+          "Use of red and gold colors in gift presentation",
+          "Preference for educational, symbolic, or traditional items (books, wooden toys)",
+          "Avoidance of taboo items (knives, clocks, black/white colors, Westernized dolls)",
+          "Emphasis on sharing and communal values over individualism",
+          "Cultural significance of tangerines and bánh chưng during Tết",
+          "Bowing and using both hands when receiving gifts as a sign of respect",
+          "Modest monetary value in lì xì (50,000 VND for a child)",
+          "Symbolism of animals like dragons and turtles in Vietnamese culture"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Lì xì in red envelopes with gold/silver details are appropriate for children during Tết",
+          "50,000 VND is a reasonable amount for a six-year-old",
+          "Gifts should be given through parents or elders, not directly to children",
+          "Educational and handcrafted items (books, wooden puzzles) are culturally valued",
+          "Tangerines and bánh chưng are appropriate Tết gifts",
+          "Bright colors are preferred; black/white items are avoided",
+          "Avoiding Western-style dolls with adult features or exaggerated designs",
+          "Symbolic meaning of animals (e.g., turtle for longevity) is recognized",
+          "Children show gratitude with a bow and ",
+          "cảm ơn",
+          "with both hands"
+        ],
+        "issues": [
+          "The assistant does not explicitly mention the taboo against clocks or sharp objects, though these are part of the cultural briefing—this is a minor omission but not critical given the context.",
+          "The suggestion of a wooden turtle is culturally accurate, but the assistant could have briefly explained its symbolic meaning to reinforce deeper understanding in training data."
+        ],
+        "suggestions": [
+          "Include a brief mention of taboo items (e.g., clocks, knives) in the assistant’s response when discussing inappropriate gifts, even if not directly asked, to reinforce cultural boundaries.",
+          "Add a subtle nod to the reciprocal nature of Tết—e.g., mentioning that children also bow to elders—when discussing the child’s expected response, to strengthen the cultural loop.",
+          "Slightly vary phrasing to avoid repetition of 'don’t give it directly'—use alternatives like 'hand it to the parent first' or 'let the elder manage the exchange' to reflect natural variation in speech."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for Tết next week and want to bring a gift for her 6-year-old daughter. I don’t want to make a mistake—what would be appropriate? She’s very into drawing and loves the color red."
+            },
+            {
+              "role": "assistant",
+              "content": "A red envelope with 50,000 VND would be perfect—simple, traditional, and meaningful. Since she likes drawing, maybe add a small pack of colored pencils or a sketchbook with a dragon motif. Avoid anything too flashy or Westernized, like plastic dolls. And don’t give it directly to her—hand it to her mom first, then she can pass it along. She’ll bow and say 'cảm ơn' with both hands, just like her mom taught her."
+            },
+            {
+              "role": "user",
+              "content": "Oh, good point—should I bring something else too? I was thinking of a fruit basket with tangerines and a pomelo. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s actually very thoughtful. Tangerines and pomelos are classic Tết gifts—symbolize prosperity and luck. You can bring one small basket, maybe with a red ribbon. Just make sure it’s not too big or flashy. The child can share it with her siblings, which is how we teach generosity. And don’t worry about the wrapping—red and gold are best."
+            },
+            {
+              "role": "user",
+              "content": "What about a small wooden puzzle? I saw one shaped like a phoenix. Would that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s excellent. Wooden puzzles are great—educational and traditional. A phoenix is especially lucky, and kids love the story behind it. Just make sure it’s not too sharp or complicated. And again, give it to her mom first. She’ll appreciate the care you took."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Red envelopes with money during Tết as a culturally significant gift",
+          "Gifts presented through a parent or elder, not directly to a child",
+          "Use of the color red to symbolize luck and joy",
+          "Preference for educational and symbolic items like books, puzzles, and traditional toys",
+          "Avoidance of taboo items such as knives, clocks, and black/white-colored gifts",
+          "Children receiving gifts with both hands and showing gratitude with a bow",
+          "Emphasis on sharing and communal values over individualism",
+          "Fruit baskets with tangerines and pomelos as auspicious Tết gifts",
+          "Cultural appropriateness of traditional motifs like dragons and phoenixes",
+          "Natural, implicit cultural references without explicit cultural signaling"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Red envelopes (lì xì) with money during Tết are appropriate and meaningful",
+          "Amounts like 50,000 VND are culturally appropriate for a 6-year-old",
+          "Gifts should be given through a parent or elder, not directly to the child",
+          "Children show gratitude with a bow and 'cảm ơn' using both hands",
+          "Tangerines and pomelos symbolize prosperity and are traditional Tết gifts",
+          "Wooden puzzles and phoenix motifs are culturally resonant and appropriate",
+          "Avoiding sharp objects, clocks, black/white items, and overly Westernized dolls",
+          "Gifts should be modest in size and not flashy, especially when given to children"
+        ],
+        "issues": [
+          "The assistant’s suggestion to 'add a small pack of colored pencils or a sketchbook with a dragon motif' is culturally appropriate but slightly generic—could be more specific about traditional art supplies (e.g., handmade paper, ink brushes) to deepen authenticity.",
+          "The phrase 'just like her mom taught her' is a minor narrative leap—while plausible, it slightly anthropomorphizes the child’s upbringing without context. Could be rephrased to reflect broader cultural expectation rather than assumed individual teaching."
+        ],
+        "suggestions": [
+          "Replace 'colored pencils' with 'traditional Vietnamese drawing paper and ink sticks' to enhance cultural specificity and authenticity.",
+          "Instead of 'just like her mom taught her,' rephrase as 'as is customary in Vietnamese households' to maintain cultural generality without over-personalizing.",
+          "Include a brief mention of the symbolic meaning of the phoenix (e.g., 'a symbol of renewal and good fortune') to enrich the cultural depth without over-explaining.",
+          "Consider adding a note about the importance of gift presentation—e.g., using red or gold wrapping with a red ribbon—when discussing the fruit basket."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for Tết next week. My niece is turning six and I want to bring her something special. I was thinking of a small toy, but I’m not sure what’s appropriate. Any advice?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a six-year-old during Tết, the most meaningful gift would be a red envelope with a modest amount—around 50,000 VND is thoughtful. It’s traditional, and she’ll receive it from elders with a bow. If you’d like to add something extra, a book with a happy story or a small hand-carved wooden animal would be perfect. Avoid anything with sharp edges or black/white colors."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. Should I give it directly to her, or hand it to her mom first?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to give it to her mom or an elder in the family. That’s the respectful way—especially since she’s still young. You can say a quiet ‘Chúc mừng năm mới’ and hand it with both hands. She’ll probably bow slightly when she gets it, and that’s how the tradition flows."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about a stuffed animal? I saw one with a dragon pattern online—would that be okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "A dragon pattern is actually good—it’s lucky and symbolic. But if it’s a Western-style doll with big eyes or a flashy outfit, it might feel out of place. A simple, traditional design with soft fabric and a red or gold accent would fit better. And definitely don’t give it with a knife or anything sharp inside the gift bag."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, I’ll skip the doll then. What about a fruit basket with tangerines? I think I’ve seen those at Tết visits."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a lovely idea—especially if you bring it with the red envelope. Tangerines mean prosperity, and kids love sharing them. Just make sure it’s not too heavy for her to carry. You can even include a small bánh chưng or some dried fruit for the family to enjoy together."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Red envelopes (lì xì) as the primary gift for children during Tết",
+          "Gift-giving through elders or parents, not directly to children",
+          "Use of both hands and respectful bow when receiving or giving gifts",
+          "Preference for symbolic, educational, or traditional items (books, wooden toys, auspicious symbols)",
+          "Avoidance of taboo items (knives, clocks, black/white colors, Westernized dolls)",
+          "Cultural significance of tangerines and fruit baskets during Tết",
+          "Emphasis on sharing and communal values over individualism",
+          "Modest monetary amounts (50,000 VND) as culturally appropriate for a child’s lì xì",
+          "Natural, implicit use of Vietnamese cultural norms without explicit cultural signaling"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Red envelopes (lì xì) are appropriate and expected gifts for children during Tết",
+          "Gifts are traditionally given through a parent or elder, not directly to the child",
+          "Children show gratitude with a bow and a quiet 'cảm ơn' or 'Chúc mừng năm mới'",
+          "Avoidance of black/white colors, knives, scissors, and clocks as gifts",
+          "Symbolic items like dragons, tangerines, and bánh chưng are culturally meaningful",
+          "Fruit baskets with tangerines symbolize prosperity and are common during Tết",
+          "Traditional toys (wooden animals) and books are valued over Westernized dolls",
+          "Gifts should be given with both hands and accompanied by respectful gestures"
+        ],
+        "issues": [
+          "The assistant mentions 'a quiet 'Chúc mừng năm mới'' without specifying that this is typically said by the elder giving the gift, not the giver to the child—could be slightly misleading in context",
+          "Minor risk of overgeneralization: implying all Western-style dolls are 'out of place' may not reflect nuanced reality, as some modern Vietnamese families accept Western toys if culturally neutral"
+        ],
+        "suggestions": [
+          "Refine the assistant's phrasing to clarify that 'Chúc mừng năm mới' is said by the elder giving the lì xì, not the gift-giver to the child",
+          "Add a subtle nuance: 'While traditional designs are preferred, a simple, tasteful Western doll with a dragon motif might be acceptable if it’s not overly flashy or adult-like'",
+          "Consider including a brief mention of the child’s age (six) in the response to reinforce why certain gifts (e.g., books, wooden toys) are age-appropriate"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m visiting my cousin’s family in Hanoi for Tết next week. My nephew just turned five and I want to bring him a gift. I was thinking of getting him a small toy car, but I’m not sure if that’s okay. Should I just hand it to him when I arrive, or is there a better way?"
+            },
+            {
+              "role": "assistant",
+              "content": "A toy car is fine, as long as it’s not too flashy or plastic-looking. Better to go with something more traditional—like a wooden puzzle or a book with Vietnamese folktales. And definitely don’t give it directly to him. Wait until his parents are around, then hand it to them first with both hands, like you’re passing it to an elder. That’s the respectful way."
+            },
+            {
+              "role": "user",
+              "content": "Oh, right—so I should give it to his mom or dad? What if they’re busy? And what about the money? I’ve heard about lì xì, but I’m not sure how much to put in."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, always give the gift through a parent or older relative. If they’re busy, just wait politely. And yes—lì xì is perfect for a five-year-old. 50,000 VND is a good amount. Put it in a red envelope with gold details, not white or black. Don’t use a plain one—this isn’t just money, it’s a blessing."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about snacks? I was thinking of bringing some dried mangoes and a small basket of tangerines. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. Tangerines are great—symbolize prosperity. Dried mangoes are sweet and safe. Just make sure the basket isn’t too big or fancy. Keep it modest, like something you’d bring to a neighbor. And when you hand it over, say ‘Chúc mừng năm mới’ and bow slightly. The child will probably want to share the tangerines with his siblings—so don’t worry if he doesn’t keep it all."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that helps a lot. I’ll make sure to avoid anything sharp or black. And I won’t give the gift directly—just to his mom with both hands. I’ll bring the red envelope and the fruit basket."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s exactly right. You’re showing respect, care, and tradition. The family will appreciate that more than any expensive toy. Tết is about blessings, not things."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "Lì xì (red envelopes with money) are appropriate for children during Tết",
+          "Gifts should be given through a parent or elder, not directly to the child",
+          "Wooden puzzles, books with folktales, and traditional toys are culturally valued",
+          "Tangerines and dried mangoes are appropriate and meaningful gifts",
+          "Red envelopes with gold details are preferred; black/white colors and sharp objects are taboo",
+          "Modesty in gift size and presentation is culturally expected",
+          "Bowing and using 'Chúc mừng năm mới' during gift-giving is appropriate",
+          "Gift-giving during Tết reflects blessings and familial respect, not material value"
+        ],
+        "issues": [
+          "The assistant’s suggestion to 'wait politely' if parents are busy could be slightly ambiguous—more precise guidance on how to handle the moment (e.g., placing the gift on a table with a bow) would enhance authenticity.",
+          "The phrase 'don’t use a plain one' is slightly informal and could be refined to 'avoid plain envelopes—use ones with red and gold accents' for greater cultural specificity.",
+          "While the assistant correctly avoids explaining culture to an outsider, the final line 'Tết is about blessings, not things' borders on didactic—slightly less natural than the rest of the dialogue, though not harmful."
+        ],
+        "suggestions": [
+          "Replace 'wait politely' with a more culturally specific action, such as 'place the envelope on the altar or table with a slight bow, then step back' to reflect actual ritual behavior.",
+          "Refine 'don’t use a plain one' to 'use a red envelope with gold or silver details—avoid plain white or black ones' for stronger cultural precision.",
+          "Consider softening the final line to something like 'They’ll feel the care behind it, not just the gift' to maintain warmth without lecturing.",
+          "Add a brief mention of the child’s response—e.g., 'He’ll likely bow back or say cảm ơn quietly'—to reinforce reciprocal respect norms."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

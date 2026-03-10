@@ -1,0 +1,271 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Meeting Duration",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Cultural expectations around how long business meetings typically last and punctuality norms for starting and ending",
+    "keywords": []
+  },
+  "params": {
+    "language": "English",
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a meeting with Director Park-ssi from Samsung Electronics tomorrow morning. The agenda is tight—just 30 minutes—but I’ve heard these sessions usually run longer. Should I plan to stay past the clock time, or push to wrap up on schedule?"
+            },
+            {
+              "role": "assistant",
+              "content": "Stay. Even if the agenda says 30 minutes, it’s standard for Director Park-ssi to extend it—especially if strategy is being discussed. The meeting won’t end until he stands. Don’t look at your watch. Wait quietly after the last point. You’ll see everyone else doing the same. When he rises, the others follow in order of seniority. Don’t be the first to leave."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about punctuality? I’m thinking of arriving at 9:55 a.m. since the meeting starts at 10:00. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Arrive by 9:50. Not 9:55. Even a five-minute delay is noticeable. Junior staff usually come early—10 minutes, sometimes more—to set up the projector, check the screen, and have documents ready. It’s not just about being on time—it’s about showing you’re prepared. And don’t start without him, even if everyone’s here. He’ll arrive when he’s ready. Let the silence sit."
+            },
+            {
+              "role": "user",
+              "content": "Understood. And if he’s delayed—say, by 15 minutes—should I still wait?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes. Wait silently. You might notice everyone sitting quietly, eyes down, not making small talk. No one speaks until he walks in. If you’re the one who set up the room, don’t adjust anything. Don’t clear your throat or shift in your seat. Let the quiet speak for you. It’s not awkward—it’s respectful."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—after the meeting, I heard there’s usually dinner. Should I expect that?"
+            },
+            {
+              "role": "assistant",
+              "content": "Almost certainly. The formal part might end at 11:30, but the real connection happens after. He’ll likely say something like, ‘Let’s continue over dinner,’ or just stand and walk out. That’s your cue. Don’t leave right away. Stay seated. Bring a small gift if you can—premium tea or fruit. Don’t dominate the conversation. Let him lead. Listen more than you speak. This is how trust is built."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Meeting duration typically exceeds scheduled time, especially with senior leaders like Director Park-ssi",
+          "Punctuality is strictly expected; arriving early (e.g., 9:50) is preferred over on-time or late arrival",
+          "Junior staff arriving early to prepare materials reflects diligence and respect",
+          "Silence during waiting periods is normative and respectful, not awkward",
+          "The leader's arrival triggers the meeting start—no one begins without them",
+          "Meeting ends only when the leader stands, and others follow in seniority order",
+          "Post-meeting dinners are common and essential for relationship-building",
+          "Gift-giving (e.g., premium tea, fruit) is appropriate and expected in post-meeting contexts",
+          "Hierarchical communication norms: listen more, speak less, let the senior lead"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: 'almost certainly' for post-dinner meetings may not apply universally across all Samsung departments or contexts, though it is highly typical",
+          "Use of 'he’ll arrive when he’s ready' could slightly reinforce a stereotype of senior authority without nuance—though it is culturally accurate in high-hierarchy settings"
+        ],
+        "suggestions": [
+          "Replace 'almost certainly' with 'very likely' or 'commonly' to reduce overgeneralization while preserving accuracy",
+          "Consider adding a subtle note about regional or departmental variation (e.g., 'in most Seoul-based divisions') to reinforce cultural nuance without undermining core norms",
+          "Ensure future examples reflect that while hierarchy is strong, younger or more progressive teams may exhibit slightly more flexibility—though still within the broader cultural framework"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for a meeting with Director Park from Samsung Electronics tomorrow morning. The agenda is set for 10:00 a.m., but I’ve been told it usually starts around 10:15. Should I arrive at 10:00 or wait until 10:10?"
+            },
+            {
+              "role": "assistant",
+              "content": "Arrive at 10:00. Being early shows respect and readiness. Junior staff often come a few minutes early to set up the projector, arrange documents, and prepare tea. If Director Park is delayed, everyone waits quietly—no one starts without him. That silence isn’t awkward; it’s part of the rhythm."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what if we finish early? I have a flight at 1:30 p.m. and don’t want to waste time. Should I suggest wrapping up?"
+            },
+            {
+              "role": "assistant",
+              "content": "Don’t suggest ending early. Wait for Director Park to signal closure—maybe he’ll pause, glance around, or say, ‘Let’s continue next week.’ Even if the discussion is done, stay until he stands up. The real connection often happens afterward, over tea or dinner."
+            },
+            {
+              "role": "user",
+              "content": "Ah, right. So I should expect the meeting to go longer than the agenda suggests, even if we’re done?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. The agenda is a guide, not a rule. The senior person sets the pace. I’ve seen meetings stay until 11:45 even after the topics were covered—everyone just waits quietly until Director Park leaves. It’s not about the content; it’s about presence and respect."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. And should I bring anything to the after-meeting dinner? I heard it’s common to have a meal after."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—bring a modest, thoughtful gift. A box of seasonal persimmons in winter or a high-grade green tea from Jeju is perfect. Not too expensive, but clearly chosen with care. Avoid anything flashy. And wear your best business attire. The conversation will start light—family, health, weather—but stay present. That’s how trust grows."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. What about during the meeting? If I have an idea, should I speak up right away?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait for a natural break. Even if you have something important, don’t interrupt. The pause after a senior member speaks is part of the respect. If you’re unsure, nod slightly or make a brief note. Your timing will show you understand the flow."
+            },
+            {
+              "role": "user",
+              "content": "And after the meeting ends? Should I leave right away, or stay behind?"
+            },
+            {
+              "role": "assistant",
+              "content": "Stay a moment. Junior staff often help clean up—putting away documents, wiping the table, or filing notes. It’s not expected to be perfect, but showing initiative without being asked is valued. Director Park will notice."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Arriving early (5–10 minutes) is expected and shows respect and preparation",
+          "Strict punctuality with a preference for on-time or early arrival",
+          "Waiting silently for senior members to arrive before starting the meeting",
+          "Meeting duration often extends beyond the agenda due to hierarchical norms",
+          "The senior leader’s signal is required to conclude the meeting",
+          "Post-meeting informal gatherings (e.g., dinner) are essential for relationship-building",
+          "Subtle gestures like cleaning up or bringing a modest gift are culturally valued",
+          "Silence during meetings is respectful, not awkward",
+          "Waiting for natural pauses before speaking, especially when senior members are present",
+          "Use of formal titles (e.g., 'Director Park') is appropriate and expected"
+        ],
+        "issues": [
+          "The mention of 'persimmons in winter' is culturally accurate but could be slightly overgeneralized—seasonal gifts vary by region and personal preference; however, this is not a critical error",
+          "The assistant’s tone is slightly didactic in the final turn ('Director Park will notice'), which may slightly overstate the expectation of being noticed—though still within acceptable bounds for natural advice"
+        ],
+        "suggestions": [
+          "Slightly vary the phrasing in the assistant’s responses to avoid repetition of 'wait' and 'silence'—e.g., use 'observe the rhythm' or 'follow the lead' to reflect cultural fluency more naturally",
+          "Include a subtle reference to the concept of 'jeong' (deep emotional connection) in the post-meeting context to deepen cultural nuance without over-explaining",
+          "Consider adding a brief mention of how time is perceived as a relational rather than transactional resource in Korean business culture, to reinforce the core dimension"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m preparing for the quarterly strategy meeting with Director Park from Samsung Electronics. The invite says 10:00 a.m., but I’ve noticed that in past meetings, we usually don’t start until 10:15 or so. Should I arrive at 9:55 or wait until 10:00?"
+            },
+            {
+              "role": "assistant",
+              "content": "Arrive at 9:55. It’s better to be early—especially for a meeting with Director Park. Junior staff often come early to set up the projector, check the seating order, and prepare the documents. It shows you’re attentive and ready. If you’re there by 9:55, you’ll have time to adjust the lighting and confirm the agenda is on the screen before anyone else arrives."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But I’m worried—what if I’m the only one there? Should I just wait quietly in the conference room?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, wait quietly. Don’t start anything. Even if you’re the first one there, don’t open your laptop or check emails. Just sit at your assigned seat, keep your hands folded, and stay calm. If you start preparing before others arrive, it might seem like you’re rushing the meeting. The silence is fine—everyone understands that the leader’s presence sets the pace."
+            },
+            {
+              "role": "user",
+              "content": "And when we do start—how long should I expect the meeting to last? I’ve heard some sessions go past 11:30, even if the agenda is done. Is that normal?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, it’s normal. Even if all the topics are covered by 10:45, the meeting will likely continue until Director Park signals it’s over. That’s how it works—no one rushes to end it. The discussion might drift into general feedback or light small talk, especially if he’s in a good mood. It’s not about efficiency; it’s about showing respect for the process and the hierarchy. If you leave early, even by five minutes, it can seem like you don’t value the time."
+            },
+            {
+              "role": "user",
+              "content": "I see. So if the meeting wraps up at 11:30, is there usually something after? I remember last time we went out for tea with the team afterward."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. After the formal meeting, there’s often a 45-minute to one-hour informal gathering—usually at a nearby café or restaurant. It’s not optional. That’s where trust is built, where people speak more freely, and where the real decisions often get shaped. Make sure you’re available after 11:30. If you’re not, it might be seen as disengagement, even if you were on time during the meeting."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Arriving 5–10 minutes early is considered courteous and shows preparation, especially for meetings with senior leaders.",
+          "Waiting silently in the conference room before the leader arrives is expected and reflects respect for hierarchy.",
+          "The meeting start time is flexible around the leader’s arrival—participants wait even if it delays the agenda.",
+          "Meetings typically last 45 minutes to 1.5 hours, and often extend beyond the agenda completion to reflect consensus-building and indirect communication.",
+          "The leader’s departure or signal dictates the end of the meeting—subordinates do not interrupt or push for closure.",
+          "Post-meeting informal gatherings (e.g., tea or dinner) are essential for relationship-building and are expected to last 1–2 hours.",
+          "Silence during waiting periods is culturally normal and not perceived as awkward.",
+          "Using formal titles (e.g., 'Director Park') and observing seniority in seating and behavior are implicit norms.",
+          "Early departure—even by a few minutes—can be interpreted as disrespect, especially if it disrupts the group’s rhythm."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Arriving 5–10 minutes early is expected and shows preparation and respect",
+          "Waiting quietly in the conference room without starting work is appropriate",
+          "Meeting start time is strictly tied to the senior leader’s arrival, not the scheduled time",
+          "Meeting duration often extends beyond the agenda completion due to hierarchy and relationship-building",
+          "Silence during waiting periods is culturally normal and expected",
+          "Post-meeting informal gatherings (e.g., tea or dinner) are essential for trust-building and are not optional",
+          "Leaving early—even by a few minutes—can be perceived as disrespectful",
+          "Use of formal titles (e.g., 'Director Park') is appropriate and expected"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes all Samsung meetings follow the same pattern, but variation exists across departments and teams. However, this is acceptable in a training example focused on core cultural norms.",
+          "No explicit mention of non-verbal cues like bowing or posture, but these are not required in a text-based chat context and are not critical for this dimension."
+        ],
+        "suggestions": [
+          "Consider adding a subtle mention of using formal language (e.g., 'Director Park') in the user’s message to reinforce linguistic authenticity in context.",
+          "In a future version, include a brief reference to how junior staff might adjust seating arrangements or prepare documents in advance—this strengthens the cultural nuance around preparation and hierarchy.",
+          "To increase realism, one user message could reflect a moment of internal hesitation or quiet observation (e.g., 'I noticed the projector wasn’t on yet, but I didn’t touch anything—just waited') to mirror authentic internal cultural navigation."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 18,
+    "research_rounds": 2,
+    "examples_produced": 3
+  }
+}
