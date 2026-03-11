@@ -22,7 +22,6 @@ for folder in "${FOLDERS[@]}"; do
     echo "Preparing: $folder"
     python main.py finetune prepare-data \
         --input-dirs "./output/$folder" \
-        --output "output/prepared/${folder}_train.jsonl" \
         --approved-only
 done
 

@@ -354,6 +354,48 @@ def write_score_log(
 
 
 # ---------------------------------------------------------------------------
+# Output path helpers
+# ---------------------------------------------------------------------------
+
+def _model_short(model_name: str) -> str:
+    """Shorten a HuggingFace model ID or local path to a filename-safe slug.
+
+    Examples:
+        "Qwen/Qwen2.5-7B-Instruct"  -> "qwen2.5-7b-instruct"
+        "/checkpoints/my_model"      -> "my_model"
+    """
+    import re
+    short = Path(model_name).name  # last path component
+    short = short.lower()
+    short = re.sub(r"[^a-z0-9._-]", "-", short)
+    short = re.sub(r"-{2,}", "-", short).strip("-")
+    return short
+
+
+def derive_stem(input_dirs: list[Path], args) -> str:
+    """Build the output filename stem from the input dir name and active flags.
+
+    Naming scheme:
+        <base>[-topk<K>-<strategy>[-<model>]]
+    where <base> is the single input dir name (or "combined" for multiple).
+
+    Examples (no topk):
+        japanese_english
+    Examples (with topk):
+        japanese_english-topk1-perplexity-qwen2.5-7b-instruct
+        japanese_english-topk1-random
+    """
+    base = input_dirs[0].name if len(input_dirs) == 1 else "combined"
+    parts = [base]
+    if getattr(args, "topk", None) is not None:
+        parts.append(f"topk{args.topk}")
+        parts.append(args.selection_strategy)
+        if args.selection_model:
+            parts.append(_model_short(args.selection_model))
+    return "-".join(parts)
+
+
+# ---------------------------------------------------------------------------
 # I/O helpers
 # ---------------------------------------------------------------------------
 
@@ -375,10 +417,12 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
         help="One or more output directories from culture-recipe runs.",
     )
     parser.add_argument(
-        "--output", required=True, metavar="FILE",
+        "--output", default=None, metavar="FILE",
         help=(
-            "Path for the output JSONL inside prepared_output/ "
-            "(e.g. prepared_output/japanese_english_train.jsonl)."
+            "Override the auto-derived output path. If omitted, the filename is "
+            "derived from the input dir and active flags and placed in prepared_output/. "
+            "Examples: prepared_output/japanese_english-train.jsonl, "
+            "prepared_output/japanese_english-topk1-perplexity-qwen2.5-7b-instruct-train.jsonl"
         ),
     )
     parser.add_argument(
@@ -458,17 +502,26 @@ def run(args: argparse.Namespace) -> None:
     def strip_meta(items):
         return [{"messages": e["messages"]} for e in items]
 
-    output_path = Path(args.output)
+    # Derive output path
+    if args.output is not None:
+        output_path = Path(args.output)
+        stem = output_path.stem
+        out_dir = output_path.parent
+    else:
+        stem = derive_stem(input_dirs, args)
+        out_dir = Path("prepared_output")
+        output_path = out_dir / f"{stem}.jsonl"
 
     if args.split is not None:
         n_train = max(1, int(len(examples) * args.split))
         train_items = examples[:n_train]
         val_items = examples[n_train:]
-        val_path = output_path.with_name(output_path.stem + "_val" + output_path.suffix)
-        write_jsonl(output_path, strip_meta(train_items))
+        train_path = out_dir / f"{stem}-train.jsonl"
+        val_path = out_dir / f"{stem}-val.jsonl"
+        write_jsonl(train_path, strip_meta(train_items))
         write_jsonl(val_path, strip_meta(val_items))
         print(
-            f"Wrote {len(train_items)} train examples → {output_path}\n"
+            f"Wrote {len(train_items)} train examples → {train_path}\n"
             f"Wrote {len(val_items)} val examples   → {val_path}"
         )
     else:
@@ -477,8 +530,8 @@ def run(args: argparse.Namespace) -> None:
 
     # Write score log into prepared_output/scores/
     if score_log:
-        scores_dir = output_path.parent / "scores"
-        score_log_path = scores_dir / (output_path.stem + "_scores.json")
+        scores_dir = out_dir / "scores"
+        score_log_path = scores_dir / f"{stem}_scores.json"
         write_score_log(
             score_log_path,
             score_log,

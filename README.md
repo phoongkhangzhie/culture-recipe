@@ -177,15 +177,36 @@ vLLM logs are written to `logs/vllm-<pid>.log` separately from the SLURM job log
 
 ### 1 — Prepare training data
 
-Flatten the generated output files into a single JSONL:
+Flatten the generated output files into a JSONL. Output files are written to
+`prepared_output/` and named automatically based on the input directory and
+active flags — no `--output` flag needed:
 
 ```bash
+# All examples, no split → prepared_output/japanese_english.jsonl
 python main.py finetune prepare-data \
-    --input-dirs ./output/japanese_english ./output/korean_english \
-    --output train.jsonl \
+    --input-dirs ./output/japanese_english \
+    --approved-only
+
+# With train/val split → prepared_output/japanese_english-train.jsonl
+#                         prepared_output/japanese_english-val.jsonl
+python main.py finetune prepare-data \
+    --input-dirs ./output/japanese_english \
     --approved-only \
-    --split 0.9        # also writes train_val.jsonl
+    --split 0.9
 ```
+
+Use [scripts/prepare_data.sh](scripts/prepare_data.sh) to run all folders in one go.
+
+**Output naming**
+
+| Flags used | Output filename |
+|---|---|
+| (none / no topk) | `prepared_output/<folder>.jsonl` |
+| `--split 0.9` | `prepared_output/<folder>-train.jsonl` + `-val.jsonl` |
+| `--topk 1 --selection-strategy random` | `prepared_output/<folder>-topk1-random[-train].jsonl` |
+| `--topk 1 --selection-strategy perplexity --selection-model <model>` | `prepared_output/<folder>-topk1-perplexity-<model>[-train].jsonl` |
+
+Pass `--output <path>` to override the auto-derived path entirely.
 
 **Top-k example selection**
 
@@ -193,13 +214,15 @@ When a dimension has more than one generated example, `--topk` keeps only the
 best K per dimension according to a scoring strategy. The default strategy
 (`perplexity`) scores each candidate by the mean NLL of its assistant turns
 under the target model — higher NLL means the model finds the example more
-surprising and therefore more valuable for training.
+surprising and therefore more valuable for training. Dimensions with only one
+example are kept as-is without scoring.
 
 ```bash
 # Keep the single hardest example per dimension (perplexity-based)
+# → prepared_output/japanese_english-topk1-perplexity-qwen2.5-7b-instruct-train.jsonl
+# → prepared_output/scores/japanese_english-topk1-perplexity-qwen2.5-7b-instruct_scores.json
 python main.py finetune prepare-data \
-    --input-dirs ./output/* \
-    --output train.jsonl \
+    --input-dirs ./output/japanese_english \
     --approved-only \
     --topk 1 \
     --selection-strategy perplexity \
@@ -208,12 +231,16 @@ python main.py finetune prepare-data \
     --split 0.9
 
 # Random baseline (no model needed)
+# → prepared_output/japanese_english-topk1-random.jsonl
 python main.py finetune prepare-data \
-    --input-dirs ./output/* \
-    --output train.jsonl \
+    --input-dirs ./output/japanese_english \
     --topk 1 \
     --selection-strategy random
 ```
+
+When `--topk` is used, a score log is written to `prepared_output/scores/<stem>_scores.json`
+with per-example scores, per-dimension summaries (mean, std, min, max), and a global summary.
+This can be used to analyse the correlation between perplexity and verification quality scores.
 
 | Flag | Default | Description |
 |---|---|---|
