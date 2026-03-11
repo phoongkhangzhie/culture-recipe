@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import random
 from collections import defaultdict
 from pathlib import Path
@@ -48,6 +49,7 @@ def _strategy_perplexity(candidates: list[dict], args) -> list[float]:
     Requires --selection-model.
 
     All candidates are scored in a single batched vLLM call for efficiency.
+    Returns (scores, n_tokens_per_example) via args._scoring_details for logging.
     """
     from vllm import LLM, SamplingParams
     from transformers import AutoTokenizer
@@ -108,10 +110,12 @@ def _strategy_perplexity(candidates: list[dict], args) -> list[float]:
     outputs = llm.generate(prompts, sampling_params)
 
     scores = []
+    n_tokens_list = []
     for output, spans in zip(outputs, assistant_spans):
         logprobs = output.prompt_logprobs  # list[None | dict[int, Logprob]]
         if logprobs is None:
             scores.append(0.0)
+            n_tokens_list.append(0)
             continue
 
         total_nll, n_tokens = 0.0, 0
@@ -126,6 +130,10 @@ def _strategy_perplexity(candidates: list[dict], args) -> list[float]:
                 n_tokens += 1
 
         scores.append(total_nll / n_tokens if n_tokens > 0 else 0.0)
+        n_tokens_list.append(n_tokens)
+
+    # Stash per-example token counts for the score logger
+    args._scoring_n_tokens = n_tokens_list
 
     return scores
 
@@ -133,7 +141,9 @@ def _strategy_perplexity(candidates: list[dict], args) -> list[float]:
 @_register("random")
 def _strategy_random(candidates: list[dict], args) -> list[float]:
     """Randomly score candidates (useful for ablations / baselines)."""
-    return [random.random() for _ in candidates]
+    scores = [random.random() for _ in candidates]
+    args._scoring_n_tokens = [None] * len(candidates)
+    return scores
 
 
 # ---------------------------------------------------------------------------
@@ -180,14 +190,23 @@ def iter_records(input_dirs: list[Path], approved_only: bool, min_score: float):
 # Top-k selection
 # ---------------------------------------------------------------------------
 
-def apply_topk(examples: list[dict], topk: int, strategy: str, args) -> list[dict]:
+def apply_topk(
+    examples: list[dict],
+    topk: int,
+    strategy: str,
+    args,
+) -> tuple[list[dict], list[dict]]:
     """
     For each source-file group with more than `topk` candidates, score them
     with `strategy` and keep the top-k highest-scoring examples.
     Groups with <= topk candidates are kept as-is.
 
-    Candidates that need scoring are batched into a single strategy call so
-    backends like vLLM can process them together.
+    Returns (selected_examples, score_log_entries) where each score_log_entry is:
+        {
+            "source_file", "culture", "dimension",
+            "verification_score", "selection_score", "n_tokens_scored",
+            "selected", "rank"
+        }
     """
     score_fn = _STRATEGIES.get(strategy)
     if score_fn is None:
@@ -202,9 +221,8 @@ def apply_topk(examples: list[dict], topk: int, strategy: str, args) -> list[dic
         groups[ex["_meta"]["source_file"]].append(ex)
 
     # Separate groups that need scoring from those that don't
-    needs_scoring: list[dict] = []   # flat list of candidates to score
-    group_slices: list[tuple[str, int, int]] = []  # (source_file, start, end)
-
+    needs_scoring: list[dict] = []
+    group_slices: list[tuple[str, int, int]] = []
     passthrough: list[dict] = []
 
     for source_file, group in groups.items():
@@ -215,8 +233,8 @@ def apply_topk(examples: list[dict], topk: int, strategy: str, args) -> list[dic
             needs_scoring.extend(group)
             group_slices.append((source_file, start, len(needs_scoring)))
 
-    # Score all candidates that need it in one batch
     selected = list(passthrough)
+    score_log: list[dict] = []
     n_reduced = 0
 
     if needs_scoring:
@@ -225,12 +243,35 @@ def apply_topk(examples: list[dict], topk: int, strategy: str, args) -> list[dic
             f"{len(group_slices)} dimension(s) with strategy='{strategy}'..."
         )
         all_scores = score_fn(needs_scoring, args)
+        n_tokens_all = getattr(args, "_scoring_n_tokens", [None] * len(needs_scoring))
 
         for source_file, start, end in group_slices:
             group = needs_scoring[start:end]
             group_scores = all_scores[start:end]
-            ranked = sorted(zip(group_scores, group), key=lambda x: x[0], reverse=True)
-            selected.extend(ex for _, ex in ranked[:topk])
+            group_n_tokens = n_tokens_all[start:end]
+
+            ranked = sorted(
+                enumerate(zip(group_scores, group, group_n_tokens)),
+                key=lambda x: x[1][0],
+                reverse=True,
+            )
+
+            selected_indices = {orig_idx for orig_idx, _ in ranked[:topk]}
+
+            for rank, (orig_idx, (score, ex, n_tok)) in enumerate(ranked):
+                meta = ex["_meta"]
+                score_log.append({
+                    "source_file": meta["source_file"],
+                    "culture": meta["culture"],
+                    "dimension": meta["dimension"],
+                    "verification_score": meta["overall_score"],
+                    "selection_score": score,
+                    "n_tokens_scored": n_tok,
+                    "rank": rank + 1,
+                    "selected": orig_idx in selected_indices,
+                })
+
+            selected.extend(ex for _, (_, ex, _) in ranked[:topk])
             n_reduced += 1
 
     if n_reduced:
@@ -239,7 +280,77 @@ def apply_topk(examples: list[dict], topk: int, strategy: str, args) -> list[dic
             f"reduced {n_reduced} dimension(s) to at most {topk} example(s) each."
         )
 
-    return selected
+    return selected, score_log
+
+
+# ---------------------------------------------------------------------------
+# Score log writer
+# ---------------------------------------------------------------------------
+
+def _dim_stats(scores: list[float]) -> dict:
+    if not scores:
+        return {}
+    mean = sum(scores) / len(scores)
+    variance = sum((s - mean) ** 2 for s in scores) / len(scores)
+    return {
+        "mean": round(mean, 6),
+        "std": round(math.sqrt(variance), 6),
+        "min": round(min(scores), 6),
+        "max": round(max(scores), 6),
+    }
+
+
+def write_score_log(
+    path: Path,
+    score_log: list[dict],
+    strategy: str,
+    model: str | None,
+    topk: int,
+) -> None:
+    """Write a JSON score log with per-example entries and per-dimension summaries."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Build per-dimension summaries
+    by_dim: dict[str, list[dict]] = defaultdict(list)
+    for entry in score_log:
+        key = f"{entry['culture']}::{entry['dimension']}"
+        by_dim[key].append(entry)
+
+    dimension_summaries = []
+    for key, entries in sorted(by_dim.items()):
+        all_scores = [e["selection_score"] for e in entries]
+        selected_scores = [e["selection_score"] for e in entries if e["selected"]]
+        culture, dimension = key.split("::", 1)
+        dimension_summaries.append({
+            "culture": culture,
+            "dimension": dimension,
+            "n_candidates": len(entries),
+            "n_selected": sum(1 for e in entries if e["selected"]),
+            "all_scores": _dim_stats(all_scores),
+            "selected_scores": _dim_stats(selected_scores),
+        })
+
+    all_sel_scores = [e["selection_score"] for e in score_log if e["selected"]]
+    all_ver_scores = [e["verification_score"] for e in score_log if e["selected"]]
+
+    log = {
+        "config": {
+            "strategy": strategy,
+            "model": model,
+            "topk": topk,
+        },
+        "global_summary": {
+            "total_candidates": len(score_log),
+            "total_selected": sum(1 for e in score_log if e["selected"]),
+            "selection_score": _dim_stats(all_sel_scores),
+            "verification_score": _dim_stats(all_ver_scores),
+        },
+        "dimension_summaries": dimension_summaries,
+        "examples": score_log,
+    }
+
+    path.write_text(json.dumps(log, indent=2, ensure_ascii=False))
+    print(f"Wrote score log ({len(score_log)} entries) → {path}")
 
 
 # ---------------------------------------------------------------------------
@@ -265,7 +376,10 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
     )
     parser.add_argument(
         "--output", required=True, metavar="FILE",
-        help="Path for the output JSONL (e.g. train.jsonl).",
+        help=(
+            "Path for the output JSONL inside prepared_output/ "
+            "(e.g. prepared_output/japanese_english_train.jsonl)."
+        ),
     )
     parser.add_argument(
         "--approved-only", action="store_true",
@@ -334,8 +448,9 @@ def run(args: argparse.Namespace) -> None:
         return
 
     # Apply top-k selection before shuffling
+    score_log = []
     if args.topk is not None:
-        examples = apply_topk(examples, args.topk, args.selection_strategy, args)
+        examples, score_log = apply_topk(examples, args.topk, args.selection_strategy, args)
 
     random.seed(args.seed)
     random.shuffle(examples)
@@ -359,6 +474,18 @@ def run(args: argparse.Namespace) -> None:
     else:
         write_jsonl(output_path, strip_meta(examples))
         print(f"Wrote {len(examples)} examples → {output_path}")
+
+    # Write score log into prepared_output/scores/
+    if score_log:
+        scores_dir = output_path.parent / "scores"
+        score_log_path = scores_dir / (output_path.stem + "_scores.json")
+        write_score_log(
+            score_log_path,
+            score_log,
+            strategy=args.selection_strategy,
+            model=args.selection_model,
+            topk=args.topk,
+        )
 
     cultures = {e["_meta"]["culture"] for e in examples}
     dims = {e["_meta"]["dimension"] for e in examples}
