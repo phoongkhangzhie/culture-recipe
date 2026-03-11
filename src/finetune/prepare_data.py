@@ -162,7 +162,7 @@ def iter_records(input_dirs: list[Path], approved_only: bool, min_score: float):
                 continue
 
             records = data.get("records", [])
-            for record in records:
+            for record_idx, record in enumerate(records):
                 verification = record.get("verification", {})
                 score = verification.get("overall_score", 0.0)
                 is_approved = verification.get("is_approved", False)
@@ -178,6 +178,7 @@ def iter_records(input_dirs: list[Path], approved_only: bool, min_score: float):
 
                 meta = {
                     "source_file": str(json_path),
+                    "record_index": record_idx,
                     "culture": data.get("culture"),
                     "dimension": data.get("dimension", {}).get("name"),
                     "overall_score": score,
@@ -262,6 +263,7 @@ def apply_topk(
                 meta = ex["_meta"]
                 score_log.append({
                     "source_file": meta["source_file"],
+                    "record_index": meta["record_index"],
                     "culture": meta["culture"],
                     "dimension": meta["dimension"],
                     "verification_score": meta["overall_score"],
@@ -316,18 +318,31 @@ def write_score_log(
         key = f"{entry['culture']}::{entry['dimension']}"
         by_dim[key].append(entry)
 
+    def _entry_summary(e: dict) -> dict:
+        return {
+            "rank": e["rank"],
+            "record_index": e["record_index"],
+            "selection_score": round(e["selection_score"], 6),
+            "verification_score": e["verification_score"],
+            "n_tokens_scored": e["n_tokens_scored"],
+            "source_file": e["source_file"],
+        }
+
     dimension_summaries = []
     for key, entries in sorted(by_dim.items()):
         all_scores = [e["selection_score"] for e in entries]
-        selected_scores = [e["selection_score"] for e in entries if e["selected"]]
         culture, dimension = key.split("::", 1)
+        ranked = sorted(entries, key=lambda e: e["rank"])
+        selected = [_entry_summary(e) for e in ranked if e["selected"]]
+        not_selected = [_entry_summary(e) for e in ranked if not e["selected"]]
         dimension_summaries.append({
             "culture": culture,
             "dimension": dimension,
             "n_candidates": len(entries),
-            "n_selected": sum(1 for e in entries if e["selected"]),
+            "n_selected": len(selected),
             "all_scores": _dim_stats(all_scores),
-            "selected_scores": _dim_stats(selected_scores),
+            "selected": selected,
+            "not_selected": not_selected,
         })
 
     all_sel_scores = [e["selection_score"] for e in score_log if e["selected"]]
