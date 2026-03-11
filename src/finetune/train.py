@@ -170,11 +170,12 @@ def run(args: argparse.Namespace) -> None:
         gradient_checkpointing=args.gradient_checkpointing,
         logging_steps=args.logging_steps,
         save_strategy="epoch",
-        evaluation_strategy="epoch" if eval_dataset else "no",
+        eval_strategy="epoch" if eval_dataset else "no",
         save_total_limit=3,
         load_best_model_at_end=eval_dataset is not None,
         report_to="none",
         dataset_text_field=None,
+        max_length=args.max_seq_length,
     )
 
     trainer = SFTTrainer(
@@ -182,9 +183,8 @@ def run(args: argparse.Namespace) -> None:
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         peft_config=peft_config,
-        max_seq_length=args.max_seq_length,
     )
 
     mode = "LoRA" if args.lora else "Full fine-tuning"
