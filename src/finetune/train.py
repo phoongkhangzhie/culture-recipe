@@ -113,7 +113,7 @@ def run(args: argparse.Namespace) -> None:
     # ---- Model ----
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
-        torch_dtype=torch.bfloat16 if args.bf16 else torch.float32,
+        dtype=torch.bfloat16 if args.bf16 else torch.float32,
         trust_remote_code=True,
     )
 
@@ -168,7 +168,6 @@ def run(args: argparse.Namespace) -> None:
         bf16=args.bf16,
         fp16=False,
         gradient_checkpointing=args.gradient_checkpointing,
-        max_seq_length=args.max_seq_length,
         logging_steps=args.logging_steps,
         save_strategy="epoch",
         evaluation_strategy="epoch" if eval_dataset else "no",
@@ -185,6 +184,7 @@ def run(args: argparse.Namespace) -> None:
         eval_dataset=eval_dataset,
         tokenizer=tokenizer,
         peft_config=peft_config,
+        max_seq_length=args.max_seq_length,
     )
 
     mode = "LoRA" if args.lora else "Full fine-tuning"
