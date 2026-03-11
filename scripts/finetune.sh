@@ -16,7 +16,7 @@
 #   BATCH_SIZE=1
 #   GRAD_ACCUM=1
 #   LR="2e-4"
-#   MAX_SEQ_LEN=4096
+#   MAX_SEQ_LEN=16384
 #   OPTIM="adamw_torch"
 #   MERGE_AFTER="false"     # "true" = merge LoRA adapter after training
 
@@ -39,7 +39,7 @@ EPOCHS="${EPOCHS:-4}"
 BATCH_SIZE="${BATCH_SIZE:-1}"
 GRAD_ACCUM="${GRAD_ACCUM:-1}"
 LR="${LR:-2e-4}"
-MAX_SEQ_LEN="${MAX_SEQ_LEN:-4096}"
+MAX_SEQ_LEN="${MAX_SEQ_LEN:-16384}"
 OPTIM="${OPTIM:-adamw_torch}"
 MERGE_AFTER="${MERGE_AFTER:-false}"
 

@@ -68,8 +68,8 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
                         help="Warmup ratio (default: 0.03).")
     parser.add_argument("--lr-scheduler", default="cosine",
                         help="LR scheduler type (default: cosine).")
-    parser.add_argument("--max-seq-length", type=int, default=4096,
-                        help="Maximum sequence length in tokens (default: 4096).")
+    parser.add_argument("--max-seq-length", type=int, default=16384,
+                        help="Maximum sequence length in tokens (default: 16384).")
     parser.add_argument("--weight-decay", type=float, default=0.01,
                         help="Weight decay (default: 0.01).")
     parser.add_argument("--optim", default="adamw_torch",
