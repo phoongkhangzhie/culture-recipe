@@ -60,7 +60,11 @@ def _strategy_perplexity(candidates: list[dict], args) -> list[float]:
     if not hasattr(args, "_selection_model_cache"):
         print(f"Loading selection model: {model_name}")
         tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
-        llm = LLM(model=model_name, trust_remote_code=True)
+        llm = LLM(
+            model=model_name,
+            trust_remote_code=True,
+            tensor_parallel_size=args.tensor_parallel_size,
+        )
         args._selection_model_cache = (llm, tokenizer)
 
     llm, tokenizer = args._selection_model_cache
@@ -307,6 +311,10 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
             "Model used for the 'perplexity' strategy (HuggingFace ID or local path). "
             "Loaded via vLLM for efficient batched scoring."
         ),
+    )
+    parser.add_argument(
+        "--tensor-parallel-size", type=int, default=1, metavar="N",
+        help="Number of GPUs to use for tensor parallelism when loading the selection model via vLLM (default: 1).",
     )
 
 

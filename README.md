@@ -204,6 +204,7 @@ python main.py finetune prepare-data \
     --topk 1 \
     --selection-strategy perplexity \
     --selection-model Qwen/Qwen2.5-7B-Instruct \
+    --tensor-parallel-size 4 \
     --split 0.9
 
 # Random baseline (no model needed)
@@ -219,6 +220,7 @@ python main.py finetune prepare-data \
 | `--topk K` | — | Keep at most K examples per dimension; omit to keep all |
 | `--selection-strategy` | `perplexity` | Scoring strategy: `perplexity` or `random` |
 | `--selection-model` | — | Model for perplexity scoring (HuggingFace ID or local path; loaded via vLLM) |
+| `--tensor-parallel-size N` | `1` | Number of GPUs for tensor parallelism when loading the selection model via vLLM |
 
 All candidates that require scoring are batched into a single vLLM call for
 efficiency. Adding a new strategy requires only registering a function with the
