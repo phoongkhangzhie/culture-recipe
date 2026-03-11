@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
 
 
 def add_arguments(parser: argparse.ArgumentParser) -> None:
@@ -29,8 +30,12 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
     # ---- Model ----
     parser.add_argument("--model", required=True, metavar="NAME_OR_PATH",
                         help="HuggingFace model ID or local path.")
-    parser.add_argument("--output-dir", required=True, metavar="DIR",
-                        help="Directory to save checkpoints and the final model.")
+    parser.add_argument("--output-dir", default=None, metavar="DIR",
+                        help=(
+                            "Directory to save checkpoints and the final model. "
+                            "If omitted, derived from --train-file: "
+                            "checkpoints/<train-file-stem> (stripping a trailing '-train')."
+                        ))
 
     # ---- Data ----
     parser.add_argument("--train-file", required=True, metavar="FILE",
@@ -90,6 +95,13 @@ def run(args: argparse.Namespace) -> None:
     from datasets import Dataset
     from transformers import AutoModelForCausalLM, AutoTokenizer
     from trl import SFTConfig, SFTTrainer
+
+    # ---- Derive output dir ----
+    if args.output_dir is None:
+        stem = Path(args.train_file).stem
+        if stem.endswith("-train"):
+            stem = stem[: -len("-train")]
+        args.output_dir = str(Path("checkpoints") / stem)
 
     # ---- Tokenizer ----
     tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)

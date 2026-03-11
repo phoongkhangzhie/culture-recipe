@@ -255,22 +255,31 @@ efficiency. Adding a new strategy requires only registering a function with the
 
 ### 2 — Fine-tune
 
+The checkpoint directory is derived automatically from the training file name — no `--output-dir` needed:
+
+| `--train-file` | Auto-derived `--output-dir` |
+|---|---|
+| `prepared_output/japanese_english-train.jsonl` | `checkpoints/japanese_english/` |
+| `prepared_output/japanese_english-topk1-perplexity-llama-3.1-8b-instruct-train.jsonl` | `checkpoints/japanese_english-topk1-perplexity-llama-3.1-8b-instruct/` |
+
+Pass `--output-dir` explicitly to override.
+
 **LoRA** (recommended — lower memory, faster):
 ```bash
 python main.py finetune train \
     --model Qwen/Qwen2.5-7B-Instruct \
-    --train-file train.jsonl \
-    --val-file   train_val.jsonl \
-    --output-dir ./checkpoints/lora \
+    --train-file prepared_output/japanese_english-train.jsonl \
+    --val-file   prepared_output/japanese_english-val.jsonl \
     --lora --lora-r 16 --lora-alpha 32
+# → checkpoints/japanese_english/
 ```
 
 **Full fine-tuning**:
 ```bash
 python main.py finetune train \
     --model Qwen/Qwen2.5-7B-Instruct \
-    --train-file train.jsonl \
-    --output-dir ./checkpoints/full
+    --train-file prepared_output/japanese_english-train.jsonl
+# → checkpoints/japanese_english/
 ```
 
 **Multi-GPU** (via `accelerate`):
