@@ -89,8 +89,6 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
 
     # ---- Logging / saving ----
     parser.add_argument("--logging-steps", type=int, default=10)
-    parser.add_argument("--save-steps", type=int, default=100)
-    parser.add_argument("--eval-steps", type=int, default=100)
 
 
 def run(args: argparse.Namespace) -> None:
@@ -172,9 +170,8 @@ def run(args: argparse.Namespace) -> None:
         gradient_checkpointing=args.gradient_checkpointing,
         max_seq_length=args.max_seq_length,
         logging_steps=args.logging_steps,
-        save_steps=args.save_steps,
-        eval_steps=args.eval_steps if eval_dataset else None,
-        evaluation_strategy="steps" if eval_dataset else "no",
+        save_strategy="epoch",
+        evaluation_strategy="epoch" if eval_dataset else "no",
         save_total_limit=3,
         load_best_model_at_end=eval_dataset is not None,
         report_to="none",
