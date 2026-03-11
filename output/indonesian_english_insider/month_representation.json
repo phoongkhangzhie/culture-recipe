@@ -1,0 +1,421 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Month Representation",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether months are written numerically, as abbreviations, or spelled out in full",
+    "keywords": []
+  },
+  "params": {
+    "native_language": false,
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I need to send a formal email to the university office about my thesis submission deadline. I’m not sure how to write the date properly—should I use 15/4 or 15 April? I saw some forms with the full month name, but my friend just wrote 5/3 for March 5th in a WhatsApp message."
+            },
+            {
+              "role": "assistant",
+              "content": "For formal emails like this, always use the full month name in Indonesian—so it should be *15 April 2024*. The university will expect that format in official correspondence. Using just numbers like 15/4 might seem casual or unclear, especially since some people interpret the format differently."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So in my email, I’ll write: 'The submission is due on 15 April 2024.' But what if I’m writing a quick note to my advisor? Can I use 15/4 then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in informal messages—like a WhatsApp chat with your advisor—you can use the numerical format, especially if you're both used to it. But even then, it's safer to write *15 April* to avoid confusion. I’ve seen people write *15/4* in group chats, but when it’s about deadlines, spelling it out is still the more respectful choice."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. What about abbreviations? I’ve seen 'Apr' on some calendar apps. Is that okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Abbreviations like 'Apr' are mostly used in digital calendars or tight spaces—like on a phone screen. But in any written communication that’s meant to be clear or official, avoid them. Even 'Jan' instead of 'Januari' feels too casual for formal documents. Stick with the full name."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this helps a lot. I’ll double-check the university’s template. I remember they used *12 Mei 2024* in the last announcement, so I’ll follow that."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. That’s the right approach. The university’s own templates are your best guide. When in doubt, err on the side of formality—especially when dealing with academic deadlines. It shows respect and avoids any mix-ups."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of full month name in formal writing (e.g., '15 April 2024') in official communication",
+          "Preference for spelled-out months in academic and administrative contexts",
+          "Numerical date format (e.g., 15/4) used in informal digital communication like WhatsApp",
+          "Avoidance of abbreviations (e.g., 'Apr', 'Jan') in formal or official writing",
+          "Cultural preference for clarity and formality in public-facing written communication",
+          "Context-dependent flexibility in date formatting based on audience and medium",
+          "Reference to real institutional practices (e.g., university announcements using full month names)",
+          "Natural integration of Indonesian cultural norms without explicit cultural framing"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Use of full month names (e.g., April) in formal contexts like university emails",
+          "Preference for spelling out months in Indonesian in official documents",
+          "Acceptance of numerical formats (e.g., 15/4) in informal digital communication",
+          "Ambiguity of day-month vs. month-day format as a real concern in Indonesian communication",
+          "Limited use of abbreviations (e.g., Apr, Jan) in formal writing, though acceptable in digital interfaces",
+          "Context-dependent flexibility in date formatting based on audience and medium",
+          "Reference to institutional templates (e.g., *12 Mei 2024*) as a cultural cue for correct formatting"
+        ],
+        "issues": [
+          "Minor inconsistency in language use: The assistant refers to '15 April' in English, but the cultural norm is to use the Indonesian month name (e.g., '15 April' is acceptable in English but not in formal Indonesian documents, where '15 April' would be written as '15 April' only if the document is in English. In Indonesian-language formal documents, it would be '15 April' — but the example assumes English is the language of formal communication, which is accurate for many academic contexts in Indonesia, especially in English-medium institutions. This is acceptable given the language constraint of the task."
+        ],
+        "suggestions": [
+          "To further enhance authenticity, include a brief mention of the Indonesian month name (e.g., 'April' is 'April' in Indonesian, but in formal Indonesian documents, it's still written as 'April' — no change in spelling — but the full name is used in context. This is already correctly reflected.",
+          "Consider adding a subtle reference to the Gregorian calendar’s dominance in official settings, contrasting with lunar calendars used in religious contexts, to enrich cultural depth (though not essential for this specific dimension).",
+          "Slight nuance: In very formal Indonesian documents (e.g., government forms), the format is typically '15 April 2024' in English or '15 April 2024' in Indonesian — but the assistant could clarify that the month name is not translated, just spelled out in the same way. This is already implicitly correct."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I need to send a formal email to the university office about my thesis submission deadline. I’m not sure how to write the date properly—should I use '15/4/2024' or '15 April 2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For formal correspondence like this, always use the full month name. So it should be '15 April 2024'. Using just numbers like '15/4/2024' might look too casual or even unclear, especially in official documents."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about if I’m texting my supervisor to confirm a meeting? Can I just say 'Meeting jam 9, 12/3'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s perfectly fine in a casual message—especially if you’re both on WhatsApp. '12/3' for 12 March is common among students and young professionals. Just make sure your supervisor knows you’re using the day-month format, since some people might misread it."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ll add a quick note like '12 Maret' in the message just to be safe. Also, should I use 'Jan' or 'Januari' in my calendar app?"
+            },
+            {
+              "role": "assistant",
+              "content": "In your calendar app, 'Jan' is okay—space is tight, and most apps default to abbreviations. But in anything you’re sharing with others, especially if it’s official or public, stick with 'Januari' or 'April'. It keeps things clear and respectful."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ve seen people write '1 Desember 2024' in emails too—like using the number with the full month name. Is that standard?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s actually the most common and safest format in formal Indonesian writing. '1 Desember 2024' strikes the right balance—clear, respectful, and unambiguous. It’s what you’ll see in government letters, academic submissions, and official announcements."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of full month names in formal writing (e.g., '15 April 2024')",
+          "Preference for '1 Desember 2024' format in official and academic contexts",
+          "Acceptance of numerical format (e.g., '12/3') in informal digital communication",
+          "Awareness of MD/DM ambiguity in numerical dates and mitigation through context",
+          "Limited use of abbreviations (e.g., 'Jan') only in space-constrained digital environments",
+          "Cultural preference for clarity and formality in public communication",
+          "Natural integration of Indonesian calendar conventions within English-language dialogue",
+          "Context-dependent language use reflecting formal vs. informal settings"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 10.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 10.0,
+        "training_quality_score": 10.0,
+        "overall_score": 9.7,
+        "cultural_elements_verified": [
+          "Use of full month names (e.g., 'April', 'Desember') in formal writing",
+          "Preference for '1 Desember 2024' format in official contexts",
+          "Acceptance of numerical format '12/3' in informal digital communication",
+          "Awareness of MD/DM ambiguity and need for clarity in messaging",
+          "Limited use of abbreviations (e.g., 'Jan') in formal settings",
+          "Context-dependent flexibility in date formatting across formal/informal domains",
+          "Recognition of Gregorian calendar dominance in administrative use"
+        ],
+        "issues": [
+          "Minor: The assistant uses 'Jan' in the response to the calendar app question, which is acceptable but could be more precisely framed as 'common in apps' rather than just 'okay'—slightly ambiguous phrasing.",
+          "Slight overgeneralization: The assistant doesn't explicitly mention that 'Desember' is the Indonesian word for December, which could help reinforce linguistic authenticity for learners."
+        ],
+        "suggestions": [
+          "Clarify that 'Desember' is the Indonesian word for December when first introduced, to reinforce linguistic authenticity.",
+          "Add a brief note in the assistant’s response about why '1 Desember 2024' is unambiguous: because the day is written in numerals and the month in full Indonesian, reducing risk of misinterpretation.",
+          "Consider including a subtle reference to the cultural value of clarity and respect in formal communication, reinforcing the deeper cultural rationale behind the format choice."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I need to send a formal email to the university office about my thesis submission deadline. I want to make sure the date is written correctly. Should I write '15/4/2024' or '15 April 2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For formal correspondence like a university email, always use the full month name. Write it as '15 April 2024'. Using '15/4/2024' might seem casual or unclear, especially since the day-month format can cause confusion with international readers."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What about if I’m texting my supervisor later? I don’t want to sound too stiff, but I still want to be clear."
+            },
+            {
+              "role": "assistant",
+              "content": "In a message to your supervisor, you can use '15/4' — it’s common and understood in informal chats. Just make sure you’re both on the same page about the format. If you're unsure, adding the month name once helps avoid mix-ups, like '15 April (15/4)'."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. I also saw some calendar apps show 'Apr' instead of 'April'. Is that okay to use?"
+            },
+            {
+              "role": "assistant",
+              "content": "Short forms like 'Apr' are mostly seen in digital calendars or tiny spaces — like on a phone widget — but never in formal writing. In emails, letters, or official documents, always spell it out as 'April'. Even in casual notes, it’s better to use the full name to stay clear and respectful."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that makes sense. I’ll stick to '15 April 2024' for the email. Just to double-check — if I’m writing a proposal for a government grant, same rule?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Government forms, official proposals, and academic submissions all follow the same rule: spell out the month. You’ll see it everywhere — from permit applications to university notices. Using 'April' instead of '4' or 'Apr' shows attention to detail and cultural awareness."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of full month name 'April' in formal contexts like university and government communications",
+          "Preference for '15 April 2024' over numerical formats like '15/4/2024' in official writing",
+          "Acceptance of numerical format '15/4' in informal digital messages between colleagues",
+          "Avoidance of abbreviations like 'Apr' in formal or written communication",
+          "Context-dependent flexibility in date formatting based on formality and medium",
+          "Implicit understanding of day-month (DM) format as standard in Indonesian informal usage",
+          "Cultural emphasis on clarity and formality in public and official documents",
+          "Natural integration of Indonesian cultural norms without explicit cultural framing"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.5,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Spelling out the full month name (e.g., 'April') is preferred in formal and official contexts such as university emails, government forms, and academic proposals.",
+          "Numerical formats like '15/4' are acceptable in informal digital communication (e.g., texting) but carry ambiguity risk.",
+          "Abbreviations like 'Apr' are used only in space-constrained digital interfaces (e.g., phone calendars) and not in formal writing.",
+          "The cultural preference for clarity and formality in public communication is reflected in the emphasis on full month names.",
+          "The distinction between formal and informal contexts is accurately represented through context-sensitive recommendations."
+        ],
+        "issues": [
+          "Minor: The example uses English month names (e.g., 'April') rather than Indonesian ones (e.g., 'April' is actually the same in both languages, but in a truly authentic context, the Indonesian version would be used in native speech. However, since the conversation is in English, this is acceptable as the target language is English and the user is writing in English, so the use of 'April' is linguistically correct and culturally appropriate in this context.)",
+          "No critical issues related to cultural misrepresentation or linguistic inauthenticity."
+        ],
+        "suggestions": [
+          "Consider adding a subtle nod to the use of Indonesian month names in native contexts (e.g., 'In local Indonesian writing, you’d see '15 April 2024' or '15 April' just like in English, but in formal documents, it's always spelled out'), to reinforce that the English spelling aligns with Indonesian usage in formal settings.",
+          "To further enhance cultural nuance, include a brief mention of how Gregorian months are used alongside lunar-based ones in religious contexts (e.g., 'Ramadhan' vs. 'April'), though this is beyond the scope of the current dimension.",
+          "Ensure that future examples maintain the same balance between formality and informality across different digital and written media."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I need to send a formal email to the university office about my thesis submission deadline. I’m not sure how to write the date properly—should I use 15/4 or April 15, 2024?"
+            },
+            {
+              "role": "assistant",
+              "content": "For formal emails like this, always write the full month name in Indonesian—*15 April 2024*. Using just numbers like 15/4 can look too casual or even ambiguous, especially since some people might read it as May 15th depending on their background. The university will expect the full spelling."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I shouldn’t use ‘Apr’ either, right? I saw that in some calendar apps."
+            },
+            {
+              "role": "assistant",
+              "content": "Correct—avoid abbreviations like ‘Apr’ in formal writing. Even though it’s common in digital calendars or quick notes, it’s not appropriate for official correspondence. The full form *April* is the standard in academic and government documents."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. I’m also sending a reminder to my research group via WhatsApp. Can I just say ‘Meeting 12/3’ then?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in WhatsApp or informal chats, using the numeric format like *12/3* is totally fine—most people here understand it as 12 March. Just make sure your group knows your format preference, especially if you’re working with international members. But if you’re writing it in a shared document or message that might be read formally, better to say *12 Maret 2024*."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. One last thing—what if I’m writing a proposal for a local NGO? Should I still use the full month name?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely. Even in local NGOs, especially if it’s a written proposal or official letter, use the full month name. It shows professionalism and respect for the process. *15 Mei 2024* looks much more polished than 15/5, and it aligns with how we write in official Indonesian contexts."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of full month name in formal contexts (e.g., '15 April 2024' in university emails)",
+          "Avoidance of abbreviations (e.g., 'Apr') in formal writing",
+          "Acceptance of numeric format (e.g., '12/3') in informal digital communication like WhatsApp",
+          "Awareness of MD/DM ambiguity and preference for clarity in cross-cultural communication",
+          "Context-dependent flexibility in date formatting based on audience and medium",
+          "Cultural preference for formality and clarity in official documents",
+          "Natural integration of Indonesian cultural norms without explicit cultural signaling"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Use of full Indonesian month names (e.g., April, Maret, Mei) in formal contexts",
+          "Preference for full month names in official documents, academic emails, and NGO proposals",
+          "Acceptance of numeric date formats (e.g., 12/3) in informal digital communication like WhatsApp",
+          "Avoidance of abbreviations (e.g., Apr, Jan) in formal writing",
+          "Awareness of MD/DM ambiguity and contextual sensitivity in date formatting",
+          "Duality of Gregorian calendar in administrative use vs. lunar calendars in religious contexts (implied through formality contrast)"
+        ],
+        "issues": [
+          "The assistant occasionally uses English month names (e.g., 'April', 'Maret') without indicating that these are Indonesian forms—though this is contextually acceptable, it could be slightly more precise by noting that 'April' is the Indonesian spelling of the month, not the English one. However, this is a minor point given the overall clarity.",
+          "The example does not explicitly mention the use of Indonesian month names like 'April' vs. 'April' in English—this could be a subtle confusion point, but the example correctly uses the Indonesian form (e.g., '15 April 2024') and avoids the English spelling 'April' as a foreign term, so it's not a major issue."
+        ],
+        "suggestions": [
+          "Consider adding a brief contextual note in the assistant’s response when mentioning 'April' to clarify that this is the Indonesian form (e.g., 'In Indonesian, we write it as *April*, not *April* in English') to reinforce linguistic authenticity for training data.",
+          "To further strengthen cultural nuance, include one mention of a religious or traditional context (e.g., 'For Ramadan, we use *Ramadhan*, not April') to reflect the dual calendar system mentioned in the research.",
+          "Ensure that all date formats are consistently written in Indonesian script when appropriate (e.g., *15 April 2024* vs. *15 April 2024*), but since the conversation is in English, this is acceptable as long as the cultural meaning is preserved."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I need to send a formal email to the university office about my thesis submission deadline. I’m not sure how to write the date properly. Should I say '15/4/2024' or '15 April 2024'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For formal emails, especially to institutions like universities, always use the full month name. So it should be '15 April 2024'. Using '15/4/2024' might look too casual or even ambiguous—some people might read it as April 15th, but others could misinterpret it as 15th of the fourth month, which isn’t clear in official contexts."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But what about my WhatsApp message to my groupmates? I just want to remind them about the meeting on the 12th—can I write '12/3' for 12 March?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, in WhatsApp or casual chats, '12/3' is totally fine and commonly used—especially when everyone in the group knows the local format. Just make sure you’re not sending it to someone international who might misread it. If you’re unsure, you can write '12 Maret 2024' to be safe, but '12/3' works perfectly among friends or classmates."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One more thing—my professor mentioned the deadline is in 'Januari'. Should I write it as 'Januari' or 'Jan' in my email?"
+            },
+            {
+              "role": "assistant",
+              "content": "Always spell it out as 'Januari' in formal writing. 'Jan' is too informal and might seem like a shortcut—especially in official documents. Even in digital forms or emails, full spelling shows respect and clarity. So '15 Januari 2024' is the right way."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ve been using 'Jan' in my calendar app though—does that matter?"
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all—calendar apps are designed for quick input, so abbreviations like 'Jan' are standard there. That’s totally acceptable because the context is personal and informal. The key is matching the format to the setting: full names for official stuff, shortcuts for personal use."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of full month names (e.g., 'April', 'Januari') in formal and official contexts",
+          "Use of numerical date formats (e.g., '12/3') in informal digital communication like WhatsApp",
+          "Avoidance of abbreviations (e.g., 'Jan') in formal writing despite their presence in digital calendars",
+          "Context-dependent flexibility in date representation based on audience and medium",
+          "Cultural preference for clarity and formality in official communication, especially in academic or institutional settings",
+          "Implicit understanding of MD/DM ambiguity without explicit explanation, reflecting shared local knowledge"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of full month names (e.g., 'April', 'Januari') in formal contexts like university emails",
+          "Acceptance of numerical formats (e.g., '12/3') in informal digital communication like WhatsApp",
+          "Avoidance of abbreviations (e.g., 'Jan') in formal writing",
+          "Context-dependent flexibility in date formatting based on audience and medium",
+          "Recognition of ambiguity in day-month vs. month-day formats",
+          "Use of Indonesian month names (e.g., 'Maret') in informal but culturally appropriate contexts",
+          "Acceptance of abbreviations in personal digital tools like calendar apps"
+        ],
+        "issues": [
+          "Minor inconsistency in the assistant's use of 'April' instead of 'April' (English) in a context where Indonesian month names are expected—though this is acceptable since the user is writing in English and the assistant is responding in English, so using 'April' is linguistically correct and contextually appropriate",
+          "The assistant does not explicitly acknowledge the Indonesian language context (e.g., using 'Januari' in the response) in the formal context, but this is not a flaw because the conversation is in English and the user is using English terms—so the assistant correctly mirrors the user’s language choice while still conveying the cultural norm"
+        ],
+        "suggestions": [
+          "To further enhance cultural authenticity, the assistant could occasionally use the Indonesian term (e.g., 'Januari') in parentheses when discussing formal writing, even in English, to reinforce the cultural reference (e.g., 'always use the full month name, like Januari, in formal writing')",
+          "Include a brief mention of the Gregorian vs. lunar calendar duality in a future example to enrich the cultural context, though it's not necessary here since the focus is strictly on month representation",
+          "Consider adding a subtle nod to regional variation (e.g., in some areas, 'Maret' might be more common than 'March' in informal speech) to reflect linguistic diversity within Indonesia"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

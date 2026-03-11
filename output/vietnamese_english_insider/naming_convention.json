@@ -1,0 +1,246 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Naming Convention",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Personal Etiquette",
+    "description": "The structure and order of personal names, including given names, family names, and the use of honorifics",
+    "keywords": []
+  },
+  "params": {
+    "native_language": false,
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m trying to write a formal email to my supervisor at work, but I’m not sure how to address her properly. Her name is Nguyễn Thị Minh Hà, and she’s in her late 40s. Should I use her full name or just her first name?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a formal work setting, you should use her honorific. Since she’s older and senior, the appropriate way to address her is *Cô Minh Hà* or simply *Cô* in conversation. Never use just 'Minh Hà'—that would be too informal and potentially disrespectful. For an email, start with 'Kính gửi Cô Nguyễn Thị Minh Hà,' and sign off with 'Trân trọng, [Your Name].' The middle name 'Thị' is traditional for women and reflects her generational and cultural background, which adds to the formality and respect in the address."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What if I’m replying to her in a follow-up and want to keep it polite but slightly more casual? Can I just say 'Cô' without the full name?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, using just *Cô* is perfectly natural and respectful in ongoing professional communication. It shows familiarity without losing politeness—common among colleagues who’ve built a working rapport. For example, you could write: 'Thank you, Cô, for your guidance.' This maintains the appropriate level of respect while allowing for smoother, more fluid interaction."
+            },
+            {
+              "role": "user",
+              "content": "Thanks—this helps a lot. One more thing: I’m also drafting a message to a new colleague who’s about my age. His name is Trần Văn Hùng. Should I call him 'Anh Hùng' or just 'Hùng'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Since you're about the same age and he's a peer, use *Anh Hùng*—not just 'Hùng.' In Vietnamese culture, even among equals, adding *Anh* (for men) or *Chị* (for women) is a sign of respect and social harmony. Calling someone by their given name alone can come across as abrupt or too casual, especially in a professional context. So *Anh Hùng* is the right choice—it’s polite, natural, and reflects the cultural norm of maintaining respectful distance even among peers."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.85,
+        "cultural_elements_verified": [
+          "Family name (họ) comes first in Vietnamese names (Nguyễn, Trần)",
+          "Middle name (tên đệm) is used and culturally significant (Thị for women, Văn for men)",
+          "Honorifics are essential for showing respect based on age and status (Anh, Chị, Cô, Bác)",
+          "Use of 'Cô' for older female colleagues in formal/professional settings",
+          "Use of 'Anh' for male peers or slightly older men, even in peer relationships",
+          "Avoiding first names alone in professional contexts, especially with seniors",
+          "Formal email structure: 'Kính gửi Cô Nguyễn Thị Minh Hà'",
+          "Natural use of honorifics in ongoing professional communication"
+        ],
+        "issues": [
+          "The assistant mentions 'Thị' as a traditional middle name for women in a way that may inadvertently reinforce gendered stereotypes (e.g., implying 'Thị' is exclusively for women or outdated), though this is not factually incorrect. A more nuanced explanation would acknowledge that while 'Thị' is historically common for women, its use is declining in urban, younger generations, and some women now omit it entirely.",
+          "In the second assistant turn, the phrase 'in conversation' is slightly ambiguous—using 'Cô' alone in a written follow-up email may be acceptable, but in spoken conversation, it's more natural to use 'Cô' with the full name or a respectful context. However, this is a minor point and not a major error."
+        ],
+        "suggestions": [
+          "Refine the explanation of 'Thị' to reflect its declining use among younger generations and note that modern Vietnamese naming is increasingly fluid, especially in urban areas.",
+          "Clarify that while 'Cô' alone is acceptable in informal written messages (e.g., internal chat), in formal written communication (emails), the full name with honorific is still preferred.",
+          "Consider adding a brief note about how younger professionals may use first names with honorifics more freely, especially in startups or creative industries, to reflect evolving norms."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I’m trying to write a formal email to my supervisor at work, but I’m not sure how to address her properly. Her name is Nguyễn Thị Linh, and she’s in her late 40s. I’ve only met her once, and I’m still getting used to the office culture here."
+            },
+            {
+              "role": "assistant",
+              "content": "For someone in her position and age, use *Cô Linh*. It’s a respectful title for older women in professional settings—no relation required. It’s not about family ties; it’s about showing proper regard. So start with: *Kính gửi Cô Linh,*"
+            },
+            {
+              "role": "user",
+              "content": "Got it. And if I need to refer to her in the body of the email, like when asking for feedback on a report? Should I keep using ‘Cô Linh’ every time?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, keep using *Cô Linh* throughout. Consistency shows respect. For polite requests, add *ạ* at the end—it softens the tone. For example: *Cô có thể góp ý cho báo cáo này được không ạ?* This little particle is common in Vietnamese emails and spoken requests; it conveys humility and courtesy."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that’s really helpful. One more thing—what if I’m writing to a male colleague who’s around my age, say 30? His name is Trần Văn Dũng. Should I call him *Anh Dũng*?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, *Anh Dũng* is perfect. Even if you’re the same age, *Anh* shows respect in professional contexts. It’s about hierarchy and harmony, not just age. Avoid using just *Dũng* unless invited. Same rule applies to women: *Chị* is used for older women, even if they’re peers."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. I’ve noticed some younger people at the office use just first names, but I’m not sure if that’s okay for me to do yet."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s common in younger, urban teams—especially startups or international firms—but it’s usually after mutual agreement. As a newcomer, it’s safer to stick with *Anh/Chị/Cô* until someone invites you to use their first name. It’s not about being formal—it’s about showing you respect the unspoken rules of the culture."
+            },
+            {
+              "role": "user",
+              "content": "Got it. One last thing—what’s the right way to close a formal email in Vietnamese style?"
+            },
+            {
+              "role": "assistant",
+              "content": "A simple and respectful closing is *Trân trọng,* followed by your name. It’s polite, professional, and widely used in Vietnamese business emails. For example: *Trân trọng, Nguyễn Minh Anh*."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of 'Cô' as a respectful title for older women in professional settings, regardless of familial relation",
+          "Consistent use of honorifics (Cô, Anh, Chị) in formal workplace communication",
+          "Polite particle 'ạ' used at the end of requests to convey humility and courtesy",
+          "Proper structure of Vietnamese names: family name first, followed by middle name and given name",
+          "Formal email closing with 'Trân trọng,' reflecting cultural norms in Vietnamese professional correspondence"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Family name comes first in Vietnamese names (e.g., Nguyễn Thị Linh)",
+          "Use of honorifics like Cô, Anh, and Chị based on age and status, not just family relation",
+          "Correct use of Cô Linh for an older female professional",
+          "Consistency in using honorifics throughout formal communication",
+          "Use of ạ to soften tone in polite requests",
+          "Preference for Anh/Chị/Cô over first names in professional settings until invited",
+          "Cultural significance of hierarchy and harmony in addressing others",
+          "Appropriate closing with Trân trọng in formal Vietnamese emails"
+        ],
+        "issues": [
+          "Minor overgeneralization in the assistant’s final response: 'That’s common in younger, urban teams'—while true, it slightly oversimplifies the cultural nuance. In many Vietnamese workplaces, even younger colleagues may use honorifics unless explicitly invited to use first names. A more precise phrasing would acknowledge that informal naming is context-dependent and often requires cues from the other person.",
+          "The use of 'Trân trọng' as a closing is accurate, but the example uses a full name (Nguyễn Minh Anh) without specifying whether this is a formal or informal context. In highly formal emails, the family name may be used only once at the beginning, and the closing may include only the given name with honorific (e.g., Minh Anh), depending on the relationship."
+        ],
+        "suggestions": [
+          "Refine the explanation about first-name usage in younger teams by emphasizing that even in informal settings, honorifics are often retained unless there is clear mutual agreement or a long-standing relationship.",
+          "Clarify that in formal emails, the full name (e.g., Nguyễn Minh Anh) is appropriate, but the use of only the given name in the signature may depend on the level of formality and the recipient’s expectations.",
+          "Include a brief mention of the declining use of 'Thị' in modern names (as noted in research), to reinforce cultural evolution—though not essential here since the example name is already current."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses. Use minimal native Vietnamese phrases only when essential for authenticity, and always prioritize clarity and natural English flow in your guidance."
+            },
+            {
+              "role": "user",
+              "content": "Hi, I need help writing a formal email to my manager at work. She’s in her late 40s, and I’ve only ever called her by her first name, Linh, because we’re in the same department. But now I’m being asked to submit a report directly to her, and I want to get the tone right. Should I use 'Chị Linh' or just 'Linh'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a formal work context like submitting a report, it’s best to use 'Chị Linh' — the honorific shows respect and acknowledges her seniority. Even if you’ve been on first-name terms, using 'Chị' maintains proper hierarchy and politeness. Start the email with 'Dạ, chị Linh,' and end with 'Trân trọng' to keep it respectful but professional."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the name on the report? I’m signing as Nguyễn Văn Minh. Should I write it in the usual order, or reverse it like in Western documents?"
+            },
+            {
+              "role": "assistant",
+              "content": "Keep the name in the traditional order: Nguyễn Văn Minh. That’s the correct format for all official Vietnamese documents. Reversing it to 'Minh Nguyễn' might seem informal or confusing, especially in internal company communications. Always use family name first, followed by middle and given names."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — that makes sense. One last thing: I’ve seen some younger colleagues use just 'Minh' in chat, even with older people. Is that okay in casual settings?"
+            },
+            {
+              "role": "assistant",
+              "content": "In casual team chats, using just the given name like 'Minh' can happen, but only if the other person has invited that level of informality. Even then, it’s still common to include an honorific — for example, 'Anh Minh, I need some help with the file.' Using 'Minh ơi' or just 'Minh' without context can come across as too casual in written communication. The honorific reinforces respect, even in informal digital exchanges. Also, note that middle names like 'Thị' are less common in modern urban Vietnamese names, especially among younger generations — so don’t worry if you don’t see it in current usage."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Family name comes first in Vietnamese names (e.g., Nguyễn Văn Minh)",
+          "Middle names are culturally significant and often reflect virtue, birth order, or tradition",
+          "Honorifics like 'Chị' and 'Anh' are essential for showing respect based on age and status",
+          "Using 'Chị Linh' instead of 'Linh' in formal written communication maintains proper hierarchy and politeness",
+          "Even in casual digital communication, honorifics are typically retained to show respect",
+          "The use of 'Thị' as a middle name is declining in modern Vietnamese naming, especially in urban areas"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Family name first in Vietnamese names (Nguyễn Văn Minh)",
+          "Use of honorifics (Chị, Anh) to show respect based on age and status",
+          "Correct use of 'Chị Linh' in formal work context",
+          "Proper naming order in official documents",
+          "Informal use of given name with honorific in casual settings (e.g., 'Anh Minh')",
+          "Decline of traditional middle names like 'Thị' in younger generations",
+          "Contextual appropriateness of honorifics in digital communication"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'Trân trọng' is correctly used, but it's more common in formal letters than emails; 'Trân trọng' might be slightly too formal for a standard internal work email. 'Trân trọng' is acceptable but could be softened with 'Cảm ơn' or 'Trân trọng lời cảm ơn' depending on tone.",
+          "The assistant’s use of 'Minh ơi' is accurate but slightly more intimate than typical in written team chats; it's more common in spoken or very close-knit relationships. A more neutral alternative like 'Anh Minh' might be more representative of standard informal digital workplace communication."
+        ],
+        "suggestions": [
+          "Replace 'Trân trọng' with 'Trân trọng lời cảm ơn' or simply 'Cảm ơn' in the email example to better reflect common Vietnamese workplace email closings.",
+          "Suggest 'Anh Minh' instead of 'Minh ơi' in the final response to reflect more typical informal digital communication among colleagues, especially in professional settings.",
+          "Clarify that while 'Thị' is less common in younger generations, it's still used in some regions and families, especially in rural or traditional contexts, to avoid implying it's universally obsolete."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 23,
+    "research_rounds": 3,
+    "examples_produced": 3
+  }
+}

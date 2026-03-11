@@ -1,0 +1,190 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Natural Language Date Expression",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "How dates are expressed conversationally in speech, including ordinal usage and word order",
+    "keywords": []
+  },
+  "params": {
+    "native_language": false,
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to figure out when Chuseok is this year. I heard it’s 음력 8월 15일 — should I be there by morning, or is early afternoon okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "This year, Chuseok falls on August 15th — that’s 음력 8월 15일, the first day of the harvest festival. 첫째 날 is especially important, and it’s best to arrive by morning, as the ancestral rites begin early. Many families still follow the lunar calendar for rituals, even if younger generations use both Gregorian and lunar dates."
+            },
+            {
+              "role": "user",
+              "content": "Got it — so it’s August 15th. My aunt always says 첫째 날 is the most important. Should I really be there by morning, or is midday okay?"
+            },
+            {
+              "role": "assistant",
+              "content": "Morning is ideal, but arriving by midday is still perfectly acceptable. The main rites happen early, but the family gathering continues through the afternoon. Your presence matters most — and you’ll be warmly welcomed."
+            },
+            {
+              "role": "user",
+              "content": "I’ve been meaning to ask — should I bring anything special? Last time I brought rice cakes, but my cousin said they weren’t the right kind."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — please bring songpyeon. These half-moon-shaped rice cakes, made with sweet red bean or pumpkin paste, are the traditional offering. Even if you make just a few at home, it shows thoughtfulness and respect. They’re not just food — they’re a symbol of gratitude and family unity."
+            },
+            {
+              "role": "user",
+              "content": "I’ll try to make some. I’ve got my grandmother’s recipe. But I’m not sure if I’ll finish them in time. What if I just show up with a small bag?"
+            },
+            {
+              "role": "assistant",
+              "content": "A small bag is absolutely fine. Just say, 'I made these with care,' and people will truly appreciate the effort. It’s not about the quantity — it’s the intention behind them that counts. That’s what makes the moment meaningful."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 8.0,
+        "training_quality_score": 8.5,
+        "overall_score": 8.575,
+        "cultural_elements_verified": [
+          "Use of 음력 8월 15일 to denote Chuseok",
+          "Emphasis on 첫째 날 (first day) as culturally significant",
+          "Correct understanding of ancestral rites beginning early in the day",
+          "Preference for lunar calendar in familial and ritual contexts",
+          "Value placed on intention over material perfection in gift-giving",
+          "Symbolic importance of songpyeon as a cultural offering",
+          "Informal but respectful tone appropriate for family context",
+          "Recognition of generational differences in calendar usage"
+        ],
+        "issues": [
+          "The user’s initial message uses 'August 15th' in English, which is acceptable, but the assistant’s response should have used Sino-Korean date format (e.g., '15일' or '8월 15일') to maintain linguistic authenticity in context, even though the conversation is in English. The assistant used 'August 15th' instead of '8월 15일' — a minor but noticeable deviation from natural Korean date expression norms in spoken English.",
+          "The assistant did not consistently use native Korean ordinal expressions (e.g., 첫째 날) in a way that reflects spoken naturalness — while it did use 첫째 날 correctly, it could have reinforced the native Korean form more naturally in the flow (e.g., 'It’s the first day, 첫째 날, so morning is best').",
+          "No explicit mention of the honorific form (존댓말) in the response, though the tone is appropriately respectful. In a real conversation, especially with elders or in ritual contexts, the use of 존댓말 would be expected even in English-embedded speech."
+        ],
+        "suggestions": [
+          "In future versions, have the assistant use Sino-Korean date formats (e.g., '8월 15일') when referring to dates, even in English, to model authentic spoken Korean date expression.",
+          "Integrate native Korean ordinal expressions more naturally in the flow (e.g., 'It’s 첫째 날, so morning is best' instead of 'the first day') to reflect how Koreans actually speak in mixed-language contexts.",
+          "Include subtle honorific markers in tone (e.g., 'It’s best to arrive by morning, as the rites begin early' → 'It would be best to arrive by morning, as the rites begin early' with more deferential phrasing) to reflect cultural expectations of politeness.",
+          "Consider adding a brief mention of the Gregorian-lunar conversion (e.g., 'This year, 음력 8월 15일 corresponds to August 15th') to reinforce cultural context without over-explaining."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 7
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to figure out when we should meet for the team lunch. I know we’re supposed to do it before the holiday, but I’m not sure what day exactly. It’s been kind of busy lately."
+            },
+            {
+              "role": "assistant",
+              "content": "This Saturday would work well — the 20th is the last day for the quarterly report, so it’s best to keep things light that day. How about noon at the café near the station?"
+            },
+            {
+              "role": "user",
+              "content": "That sounds good. But I just remembered — isn’t there something important on the 20th? I think it’s the last day for submitting the quarterly report."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, exactly — the 20th is the deadline, so we should avoid scheduling anything long that day. This Saturday is ideal; everyone can wrap up early and still make it."
+            },
+            {
+              "role": "user",
+              "content": "Perfect. And one more thing — should I mention the date in the group chat? I don’t want to sound too formal, but I also don’t want anyone to miss it."
+            },
+            {
+              "role": "assistant",
+              "content": "Just say ‘this Saturday’ — that’s clear and natural in team chats. If you want to be a bit more specific, you can add ‘around noon,’ but no need to specify the date unless someone asks."
+            },
+            {
+              "role": "user",
+              "content": "Got it. Thanks — I’ll send the message now. I was worried about being too vague, but I guess ‘this Saturday’ is actually the right way to say it."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly — in casual team settings, we rely on shared context rather than exact dates. It’s not about precision; it’s about keeping things smooth and respectful."
+            },
+            {
+              "role": "user",
+              "content": "Actually, I just saw someone in the chat write ‘12/21’ — should I correct them? I know some older colleagues prefer the full form."
+            },
+            {
+              "role": "assistant",
+              "content": "In a mixed group, it’s better to use the full date format — ‘December 21st’ — especially in work contexts. If someone uses ‘12/21,’ you can gently rephrase it as ‘December 21st, Saturday’ to maintain clarity and respect without drawing attention to the change."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of Sino-Korean date structure in spoken Korean (e.g., 'December 21st' as formal, precise, and contextually embedded)",
+          "Honorifics in workplace communication (implicit through formal register, not explicit mention)",
+          "Preference for context over explicit date specification in team chats",
+          "Avoidance of mixing languages in English-only professional conversations",
+          "Natural use of 'this Saturday' as a culturally appropriate way to reference upcoming dates",
+          "Gentle correction of informal date formats in mixed-age or hierarchical groups",
+          "Formal register in workplace coordination (e.g., 'we should avoid scheduling anything long', 'it’s best to keep things light')",
+          "Reliance on shared temporal context rather than over-explaining dates"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 7.0,
+        "linguistic_authenticity_score": 6.5,
+        "dimension_relevance_score": 8.0,
+        "training_quality_score": 7.5,
+        "overall_score": 7.35,
+        "cultural_elements_verified": [
+          "Use of 'this Saturday' as contextually appropriate in casual team communication",
+          "Recognition of mixed generational preferences in date formats (e.g., '12/21' vs. 'December 21st')",
+          "Emphasis on shared context over explicit date specification in informal work settings",
+          "Awareness of formality level depending on audience (mixed group vs. individual)",
+          "Appropriate handling of date clarity and respect in intergenerational communication"
+        ],
+        "issues": [
+          "The assistant's final response uses English date format ('December 21st') without acknowledging that in Korean contexts, even in English, the preferred natural expression would be 'the 21st of December' or 'December 21', not 'December 21st' — the '-st' suffix is an English-specific ordinal marker not used in Korean natural language expression.",
+          "The example incorrectly implies that '12/21' is a problem in Korean culture, when in fact, digital date formats like '12/21' are widely used in informal Korean digital communication (especially among youth), and the concern is more about clarity in mixed groups than cultural inauthenticity.",
+          "The assistant fails to distinguish between Sino-Korean (e.g., 12월 21일) and native Korean (e.g., 스물 한 번째 날) usage, even though this is central to the cultural dimension. The conversation avoids any mention of this key linguistic distinction.",
+          "The assistant does not model honorifics (존댓말) in any response, which is a critical requirement for professional or intergenerational settings in Korean culture, even in English-language training examples.",
+          "The conversation lacks any use of native Korean expressions (e.g., '두 번째 날', '셋째 날') or Sino-Korean terms (e.g., '12월 21일'), despite being about date expression — this undermines the authenticity of the cultural dimension being trained."
+        ],
+        "suggestions": [
+          "Replace 'December 21st' with 'the 21st of December' or 'December 21' to align with natural English usage in Korean contexts.",
+          "Include a natural example of a Sino-Korean date (e.g., '12월 21일') and a native Korean emotional expression (e.g., '내일은 두 번째 날이야!') to reflect the linguistic duality.",
+          "Incorporate a subtle honorific tone in the assistant's responses, even in English — for example, using 'we should consider' instead of 'you should', or 'it would be best to...' to reflect formality.",
+          "Add a turn where the user uses a native Korean phrase like '내일은 두 번째 날이야!' to reflect emotional or casual context, and have the assistant respond with a culturally appropriate acknowledgment.",
+          "Clarify that in Korean informal communication, '12/21' is acceptable and common, especially among younger people, and that the real issue is clarity in mixed groups, not the format itself."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 26,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

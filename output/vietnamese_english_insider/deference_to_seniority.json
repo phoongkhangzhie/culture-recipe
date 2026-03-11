@@ -1,0 +1,262 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Deference to Senior in Business",
+    "category": "Behavioral Patterns > Personal Choices & Habits > Etiquette and Courtesy",
+    "description": "Norms for showing respect to more senior or higher-ranking participants in a business meeting",
+    "keywords": []
+  },
+  "params": {
+    "native_language": false,
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Anh Minh just came back from the board meeting with Director Pham, and I’m trying to figure out how to follow up with him. He didn’t say much during the meeting—just nodded when I spoke, and even then, I waited until he looked at me before I said anything. Now I’m wondering if I should send a quick email or wait until tomorrow. Should I mention the project timeline again, or is that too forward?"
+            },
+            {
+              "role": "assistant",
+              "content": "Wait until tomorrow morning—early, but not too early. Send a short note: ‘Cảm ơn anh Pham đã dành thời gian hôm nay. Theo nhóm, chúng ta có thể xem xét lại timeline một cách linh hoạt hơn, nếu anh thấy phù hợp.’ Keep it light. Anh ấy sẽ hiểu ý em mà không cần nói rõ."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I was also thinking—should I address him as ‘Anh Pham’ in the email, or is ‘Ông Pham’ better? He’s in his late 50s, and we’ve worked together for three years, but he’s always been very formal with me."
+            },
+            {
+              "role": "assistant",
+              "content": "‘Anh Pham’ is perfect. It’s respectful but not stiff. Using ‘Ông’ would feel distant—like you’re putting a wall between you. He’ll notice the warmth in the tone, and that matters."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ll send it tomorrow morning. One last thing—should I offer to bring tea to his office before the next meeting? I know it’s not standard, but I’ve seen others do it, and it seems to build rapport."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—just bring it before the meeting. Place it on his desk with a small bow, no need to stay. Say, ‘Anh Pham, em có mang một tách trà nhẹ, nếu anh muốn.’ Simple. Thoughtful. He’ll remember. Note: In HCMC, this gesture is warmly received; in Hanoi, it might be seen as slightly informal, so adjust based on context. The key is intention—not formality."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Deference to seniors through honorifics (e.g., 'Anh' vs. 'Ông')",
+          "Use of self-deprecating self-reference ('Theo nhóm', 'Theo em')",
+          "Implicit understanding over direct communication ('Anh ấy sẽ hiểu ý em mà không cần nói rõ')",
+          "Non-verbal cues (bowing, hand gesture) as part of respect",
+          "Regional variation in gesture acceptance (HCMC vs. Hanoi)",
+          "Timing and silence as markers of respect in meetings",
+          "Subtle, indirect proposals to maintain harmony and face"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.825,
+        "cultural_elements_verified": [
+          "Use of honorifics 'Anh' and 'Ông' with appropriate nuance based on seniority and relationship",
+          "Emphasis on indirect communication and softening language in professional settings",
+          "Importance of timing and non-verbal cues (e.g., bowing, respectful gestures)",
+          "Contextual awareness of regional differences (HCMC vs Hanoi) in formality",
+          "Preference for group-based self-reference over individual assertion",
+          "Value placed on intentionality over rigid formality in gestures like offering tea",
+          "Silence and waiting for senior to speak as a sign of respect",
+          "Subtle, non-confrontational ways of proposing ideas or adjustments"
+        ],
+        "issues": [
+          "Minor inconsistency in the assistant’s final response: suggesting 'Anh Pham' is 'perfect' and 'warm' while acknowledging 'Ông' as distant, but not explicitly noting that 'Anh' is typically used for male seniors under 60–65 in professional settings—this could mislead if 'Anh' is used too casually. However, given the context (late 50s, formal relationship), it is acceptable.",
+          "The assistant introduces a regional difference (HCMC vs Hanoi) in the tea gesture, which is accurate, but the phrasing 'in HCMC, this gesture is warmly received' may slightly overgeneralize; a more nuanced version would acknowledge that while it’s common, it’s not universal and depends on company culture."
+        ],
+        "suggestions": [
+          "Refine the honorific guidance by adding a brief note: 'Use “Anh” for male seniors in their 50s–60s in most business contexts unless the relationship is very formal or in Hanoi, where “Ông” may be preferred.'",
+          "Slightly rephrase the tea gesture advice to: 'In HCMC, bringing tea before a meeting is a thoughtful gesture that signals respect and attentiveness, but in more traditional or northern offices, it may be seen as overly familiar—always gauge the environment.'",
+          "Consider including a subtle nod to non-verbal cues (e.g., avoiding prolonged eye contact during senior’s speech) in the assistant’s response to reinforce embodied cultural norms."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Anh Minh just sent me a message saying he’ll be leading the client presentation tomorrow. I’ve been working on the timeline draft, but I’m not sure if I should bring it up during the meeting. He’s been quiet so far, and I don’t want to seem pushy."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re right to be thoughtful. Since Anh Minh is leading, it’s best to wait until he invites input. If you do speak, start with ‘Anh Minh, em xin phép góp ý nhẹ về timeline…’ — soft, respectful, and only after he’s finished his point. Don’t interrupt, even if you see a gap. He’ll know you’re attentive."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And when I do speak, should I mention my name? Or just say ‘em’?"
+            },
+            {
+              "role": "assistant",
+              "content": "Just ‘em’ is fine — it’s natural and humble. Using your name can feel too direct, especially in front of him. He’ll know who you are. And if you’re referencing a group, say ‘the team thinks…’ instead of ‘I think.’ That keeps it collective, not personal."
+            },
+            {
+              "role": "user",
+              "content": "What about the seating? I noticed the senior partner always sits at the head. Should I pick a seat near the back?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — sit to the right of the most senior person, not directly opposite. If Anh Minh is at the head, take the seat just to his right. If there’s a senior partner present, even if they’re not speaking, they’ll expect to be seated at the head. Don’t assume — wait to see who takes it first."
+            },
+            {
+              "role": "user",
+              "content": "And if he asks for feedback? Should I say something like ‘maybe we could adjust the deadline’?"
+            },
+            {
+              "role": "assistant",
+              "content": "Better to say: ‘Em hiểu ý anh, nhưng có lẽ cần xem xét thêm về deadline, vì team đã gặp một vài delay ở phase 2.’ That way, you show you’re listening first, then gently offer context. No ‘maybe’ — just state it as a shared reality. He’ll respect that."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of honorifics: 'Anh Minh' and 'em' reflect respectful address and self-deprecation",
+          "Indirect disagreement: 'Em hiểu ý anh, nhưng có lẽ cần xem xét thêm...' avoids direct challenge",
+          "Seating hierarchy: guidance on positioning based on seniority and head-of-table protocol",
+          "Speech timing: emphasis on waiting for invitation to speak, not interrupting",
+          "Collective self-reference: 'the team thinks...' instead of 'I think'",
+          "Non-verbal cues implied: silence, deference, and attentiveness are modeled through behavior",
+          "Cultural realism: references to real-world business practices in Vietnamese firms",
+          "Natural language integration: Vietnamese phrases used organically within English dialogue",
+          "Tone of humility and restraint: assistant responds with measured, context-aware advice"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.95,
+        "cultural_elements_verified": [
+          "Use of honorifics (Anh Minh, em) in natural, context-appropriate ways",
+          "Preference for indirect communication and softening phrases (e.g., 'em hiểu ý anh, nhưng có lẽ cần xem xét thêm')",
+          "Emphasis on waiting for senior to speak first and not interrupting",
+          "Collective self-reference ('the team thinks...') over individual 'I'",
+          "Correct seating hierarchy: right of the most senior person, not opposite",
+          "Respect for senior’s unspoken authority in seating arrangements",
+          "Non-verbal cues implied through behavior (waiting, not assuming seat)",
+          "Cultural grounding in Confucian values: harmony, face, hierarchy"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the example assumes a fixed seating order without acknowledging that in some modern Vietnamese workplaces (especially in HCMC startups), seating may be more fluid, though this is acceptable as the default remains deference.",
+          "The assistant’s response to the seating question could be slightly more nuanced by acknowledging that in some cases, the senior partner may not yet be present, so one should observe rather than assume — though this is implied in 'wait to see who takes it first'."
+        ],
+        "suggestions": [
+          "Add a brief contextual note in the assistant’s response to acknowledge generational or regional variation (e.g., ‘In HCMC, it might be a bit more relaxed, but still best to follow the lead’), to reinforce nuance without undermining the core norm.",
+          "Consider including a subtle non-verbal cue suggestion (e.g., ‘You might also keep your hands folded lightly in your lap during his speech — it shows attentiveness’), to deepen authenticity beyond speech and seating.",
+          "Ensure that all native phrases used are properly contextualized and not overused; currently, they are well-integrated, but a future version could include one instance where the assistant uses a Vietnamese phrase only once, and the user responds in English to reinforce the English-only format."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses. Your tone is natural, context-aware, and subtly guides without over-explaining. You reflect cultural nuance, including regional variations and evolving norms, while honoring core principles of deference, harmony, and respect for seniority."
+            },
+            {
+              "role": "user",
+              "content": "I’m prepping for the board meeting tomorrow—Director Lan’s leading, and she’s been here since before I joined. I’ve got my proposal ready, but I’m unsure about when to speak. Should I jump in right away, or wait for her to open the floor?"
+            },
+            {
+              "role": "assistant",
+              "content": "You’ll notice people often wait a beat after the senior person finishes speaking—especially if she’s been talking. It’s not about silence, but about rhythm. If she pauses, that’s your cue. When you do speak, start with: ‘Chị Lan, em xin phép góp ý nhẹ về phần kế hoạch…’—soft, respectful. Keep your tone calm, eyes slightly down. She’ll hear the care behind it."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. And seating—should I be careful about where I sit? I saw the head seat is always taken by the most senior person."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—arrive early and take note. The head seat is for the most senior, usually Director Lan. If she’s not there, don’t take it. Sit to her right, then others by rank. If you’re unsure, wait for someone else to sit first. It’s better to be slightly off than to assume a position that feels too forward."
+            },
+            {
+              "role": "user",
+              "content": "Got it. What if I disagree with her on the timeline? I don’t want to sound pushy, but the numbers feel tight."
+            },
+            {
+              "role": "assistant",
+              "content": "You don’t need to say ‘I think that’s too tight.’ Instead, try: ‘Em hiểu ý chị Lan, nhưng có lẽ chúng ta nên xem xét thêm về nguồn lực thực tế…’ That shows you’re listening, not challenging. A small pause before speaking helps too—it’s not hesitation, it’s respect."
+            },
+            {
+              "role": "user",
+              "content": "Thanks. One last thing—should I bring tea before the meeting? I’ve seen people do it sometimes, especially in HCMC."
+            },
+            {
+              "role": "assistant",
+              "content": "In HCMC, bringing tea before a meeting is common—especially if the group is close-knit. But in Hanoi, it might feel a bit too forward unless you’re already part of the inner circle. If you do, keep it modest: one tray, simple cups. Don’t serve during the meeting—unless it’s very informal, it can seem performative. It’s less about the tea and more about showing you’re thoughtful."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Deference to seniors in Vietnamese business is rooted in Confucian values of respect, hierarchy, and harmony",
+          "Seating arrangements follow seniority: head seat for the most senior, others by rank (right to left from their view)",
+          "Juniors wait for seniors to finish speaking before responding, often pausing briefly to show respect",
+          "Direct disagreement is avoided; softening phrases like 'Em hiểu ý chị, nhưng có lẽ cần xem xét thêm...' are used to express differing views",
+          "Honorifics are essential: 'Chị' for senior women, 'Anh' for senior men, and titles like 'Giám đốc' or 'Cô' are always used",
+          "Self-reference is minimized: 'Theo em...' or 'Theo nhóm...' is preferred over 'I think'",
+          "Non-verbal cues such as lowered eyes, slight bowing, and hands clasped in prayer-like gesture during listening convey humility",
+          "Cultural practices vary regionally: tea gestures are more common in HCMC, less so in Hanoi unless relationships are close",
+          "Respect is expressed through intention, not formality—modesty and timing matter more than ritual"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.075,
+        "cultural_elements_verified": [
+          "Seating hierarchy based on seniority, with the most senior at the head facing the door",
+          "Use of honorifics like 'Chị Lan' and 'em' to signal respect and junior status",
+          "Softening phrases such as 'em xin phép góp ý nhẹ' and 'em hiểu ý chị Lan' to express disagreement respectfully",
+          "Non-verbal cues like lowering eyes and pausing before speaking as signs of deference",
+          "Regional variation in formality: HCMC more relaxed, Hanoi more formal",
+          "Tea serving as a subtle gesture of thoughtfulness, context-dependent and not performative",
+          "Preference for indirect communication and avoidance of direct challenge to seniors"
+        ],
+        "issues": [
+          "Minor risk in the phrase 'em xin phép góp ý nhẹ'—while natural, 'nhẹ' (light) may slightly undermine the seriousness of the input; better phrasing would be 'góp ý một cách nhẹ nhàng' or simply omitting 'nhẹ' to avoid implying insignificance",
+          "The assistant’s response to the tea question could be slightly more nuanced: it correctly notes regional differences but doesn’t emphasize that tea is often brought by juniors only after the senior has arrived and settled, reinforcing the ritual of service to the senior"
+        ],
+        "suggestions": [
+          "Replace 'góp ý nhẹ' with 'góp ý một cách nhẹ nhàng' or 'góp ý với sự trân trọng' to preserve respect without diminishing the weight of the input",
+          "Clarify that tea is typically offered *after* the senior has taken their seat, not before—this reinforces the timing of deference",
+          "Consider adding a brief mention of the use of *cảm ơn* (prayer-like hands) during listening as a non-verbal cue, even if not explicitly asked, to enrich the cultural texture",
+          "Ensure that the assistant never explains cultural practices—this example is strong in that regard, but subtle over-explanation should be avoided in future"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 21,
+    "research_rounds": 3,
+    "examples_produced": 3
+  }
+}

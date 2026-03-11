@@ -1,0 +1,203 @@
+{
+  "culture": "Indonesian",
+  "dimension": {
+    "name": "Natural Language Date Expression",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "How dates are expressed conversationally in speech, including ordinal usage and word order",
+    "keywords": []
+  },
+  "params": {
+    "native_language": false,
+    "topic": null,
+    "implicit_culture": false
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to plan a small family gathering for my aunt’s birthday. She’s turning 60 next month, and I want to make sure we don’t miss it. But I’m not sure what day exactly to pick. Can you help?"
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely—60 is a big milestone in Indonesia, often called *ulang tahun emas* (golden birthday). Weekends are ideal for family events. If you’re thinking of the end of the month, around the 25th to 30th would work well. Many families choose the last week of the month because it feels natural, especially after the month’s routines wind down."
+            },
+            {
+              "role": "user",
+              "content": "Hmm, I think she’d love it if we did it on a Sunday. But I’m not sure which Sunday that would be—this month is already almost over. Is there a good way to figure it out without checking a calendar?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—Indonesians often use flexible time markers like *‘next Sunday’* or *‘the Sunday after the full moon’* in casual talk. It’s common and polite to keep it loose. Just say, *‘Let’s meet next Sunday at four in the afternoon’*, and your family will understand. The day of the week usually gives enough context without needing exact dates."
+            },
+            {
+              "role": "user",
+              "content": "Oh, that makes sense. I remember my mom used to say things like *‘yesterday’* or *‘tomorrow’* without specifying the date. But for this, I want to be more certain. What if I say *‘the 25th’*? Is that the right way to say it?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—*‘the 25th’* is correct for calendar dates. In spoken Indonesian, people often drop *‘tanggal’* (date), so saying *‘Let’s do it on the 25th’* is perfectly natural. Just avoid *‘day 25’*—that’s used only for sequences, like *‘day 25 of the event’*. For dates, stick with *‘the 25th’* or *‘on the 25th’*."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I don’t have to be super precise. What about if I want to mention it in a message to my cousins? Should I still keep it vague?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes—keeping it soft is actually more respectful and natural. Instead of a rigid schedule like *‘January 25 at 4 PM’*, try: *‘Let’s get together next Sunday at 4 PM. I already told Uncle and Auntie, so someone’s bound to bring food.’* That gives enough info without locking things down. Being too precise can feel abrupt. It’s not about vagueness—it’s about harmony (*rukun*) and shared understanding."
+            },
+            {
+              "role": "user",
+              "content": "That’s really helpful. I’ll just say *‘next Sunday’* and add *‘the Sunday after the full moon’* for clarity. And I’ll mention it’s for my aunt’s 60th birthday—maybe that’ll help everyone remember. Thanks!"
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect—adding *‘for my aunt’s 60th birthday’* gives emotional weight and makes it feel special. That’s how many families do it: the occasion matters more than the exact date. If someone later asks, *‘What date was it?’*, you can clarify with *‘It was the 25th’*—but only if the 25th was truly yesterday. Otherwise, saying *‘Kemarin, tanggal 25’* (Yesterday, the 25th) is misleading. Always check context. Also, note: some Javanese communities use *‘Pasar’* informally to mean the 1st of the month, but it’s not widely understood outside Java and isn’t used in formal planning. Stick with clear terms like *‘the 1st’* or *‘on the 1st’* for broader clarity."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Indonesians often use relative time markers like 'next Sunday' or 'the end of the month' instead of exact dates in informal conversations.",
+          "The phrase 'Kemarin, tanggal 25' is only correct if the 25th was actually yesterday; otherwise, it’s ambiguous or misleading.",
+          "For calendar dates, use 'the 25th' or 'on the 25th'—avoid 'day 25' unless referring to a sequence (e.g., day 25 of an event).",
+          "In spoken Indonesian, 'tanggal' is often dropped, so 'Let’s meet on the 25th' is natural and commonly used.",
+          "Cultural preference for harmony (*rukun*) encourages flexible, context-based timekeeping over rigid scheduling.",
+          "Regional expressions like 'Pasar' (meaning the 1st of the month) are informal and limited to Java; not recommended for general use."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "Use of relative time markers like 'next Sunday' and 'the Sunday after the full moon' in casual conversation",
+          "Preference for flexible, context-based date expressions over rigid precision",
+          "Common omission of 'tanggal' (date) in spoken Indonesian when referring to calendar dates",
+          "Correct distinction between ordinal usage in sequences (e.g., 'day 25 of the event') vs. calendar dates ('the 25th')",
+          "Emphasis on harmony (*rukun*) and shared understanding over exact scheduling",
+          "Reference to *ulang tahun emas* for 60th birthdays as a culturally significant milestone",
+          "Acknowledgment of regional variation with *Pasar* for the 1st of the month (Javanese context), including its limited scope and informal use",
+          "Use of narrative framing (e.g., 'for my aunt’s 60th birthday') to anchor memory rather than relying on exact dates"
+        ],
+        "issues": [
+          "Minor inaccuracy: The phrase 'Kemarin, tanggal 25' (Yesterday, the 25th) is contextually misleading only if the 25th was not yesterday. However, the assistant correctly warns against this, so the issue is not in the advice but in the phrasing of the example. The warning is accurate, but the example sentence could be rephrased to avoid confusion.",
+          "Slight overgeneralization: The assistant states that 'some Javanese communities use *Pasar* informally to mean the 1st of the month'—this is accurate, but the phrase 'is not widely understood outside Java' could be slightly overstated. While *Pasar* is not standard nationwide, it is occasionally recognized in urban areas due to cultural exchange. However, this is a minor nuance and does not constitute a critical error.",
+          "The assistant uses English exclusively, which is correct per guidelines, but the inclusion of Indonesian terms like *ulang tahun emas*, *rukun*, and *Pasar* is natural and contextually appropriate. No penalty for this."
+        ],
+        "suggestions": [
+          "Rephrase the example sentence 'If the 25th was truly yesterday' to clarify the conditional: e.g., 'Only say *Kemarin, tanggal 25* if the 25th was actually yesterday—otherwise, it could cause confusion.'",
+          "Add a brief note about the use of *hari ke-15* in event contexts to reinforce the correct ordinal structure (*ke-* before the number), even if not central to this conversation, to strengthen training on the full cultural pattern.",
+          "Consider including a brief example of how *Pasar* might be used in a real conversation (e.g., 'Kita bertemu di pasar, ya?' meaning 'Let’s meet on the 1st') to ground the concept in authentic usage, while still cautioning against its limited understanding outside Java."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 3
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Indonesian culture. Represent the values and lived experience of Indonesian people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to plan a small family gathering for my aunt’s birthday. It’s been a while since we all met, and I want to make it special. Do you have any suggestions?"
+            },
+            {
+              "role": "assistant",
+              "content": "That sounds lovely—family gatherings are such a big part of Indonesian life. For something warm and meaningful, consider hosting it at home in the evening, with traditional dishes like rendang, sambal, and lontong. You could also invite her favorite cousins or neighbors from the neighborhood—those close-knit connections really matter in Indonesian culture."
+            },
+            {
+              "role": "user",
+              "content": "That’s a great idea. But I’m not sure when to do it. She’s been busy lately, and I don’t want to pick a date that doesn’t work for everyone. Any advice on how to pick the right time?"
+            },
+            {
+              "role": "assistant",
+              "content": "In Indonesian culture, we often go with the flow rather than locking in a rigid date. Instead of saying ‘Let’s do it on the 18th,’ it’s more natural to say something like ‘Let’s meet next week’—that gives people room to adjust without pressure. You could also suggest ‘the end of this month’ since many people use that as a soft deadline. It’s flexible but still gives a sense of timing."
+            },
+            {
+              "role": "user",
+              "content": "Hmm, okay. So if I say ‘next week,’ would that be clear enough? I’m worried someone might think it’s too vague."
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all—it’s actually quite common and expected. People understand that ‘next week’ is a gentle suggestion, not a strict deadline. In fact, if you were to say ‘the 18th’ with full precision, some might even feel a bit pressured. The cultural norm is to prioritize harmony over exactness. If someone can’t make it, they’ll often say ‘Later, okay?’—it’s not a no, just a soft ‘maybe.’"
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. What if I want to mention the day of the week? Like, ‘Thursday, end of this month’?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, adding the day of the week is very natural in casual speech. In English conversations with Indonesians, saying ‘Thursday, end of this month’ is common and helps people mentally place the event. But note: in actual spoken Indonesian, the structure is different—people say things like ‘Kamis, dua belas Agustus’ (Thursday, 12 August), often dropping ‘tanggal’ in casual talk. So ‘Kamis, 12 Agustus’ is the usual way to say it. The day comes first, then the date, then the month—no abbreviations like ‘Aug.’"
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the ordinal? Should I say ‘the 15th’ or ‘day 15’?"
+            },
+            {
+              "role": "assistant",
+              "content": "Great question. In English conversations with Indonesians, ‘the 15th’ is perfectly natural. But in spoken Indonesian, people don’t say ‘day 15’ at all—instead, they just say ‘15’ or ‘15 Agustus’ without ‘the’ or ‘day.’ For example, ‘Kamis, lima belas’ (Thursday, fifteenth) is common. The word ‘ke-’ (like in ‘hari ke-15’) is used only when emphasizing sequence—like ‘day 3 of the event’—not for standalone dates. So keep it simple: in English, ‘the 15th’ works fine; in Indonesian, just ‘15’ or ‘15 Agustus’ is standard."
+            },
+            {
+              "role": "user",
+              "content": "One last thing—what if I want to reference it by a memory instead of a date? Like, ‘Like last Eid’?"
+            },
+            {
+              "role": "assistant",
+              "content": "That’s actually a beautiful way to frame it. Indonesians often use shared experiences to anchor time—like ‘like during the heavy rain’ or ‘like last Eid’—because the emotion and memory matter more than the calendar. If your aunt remembers a joyful moment from last Eid, saying ‘Let’s meet like we did last Eid’ would feel warm and personal. It’s not about precision—it’s about connection. In fact, in Indonesian, you might hear ‘Kita ketemu kayak waktu Lebaran kemarin’—same feeling, same rhythm."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 9.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.075,
+        "cultural_elements_verified": [
+          "Use of relative time markers like 'next week' and 'end of this month' instead of exact dates",
+          "Preference for flexibility and harmony over rigid scheduling",
+          "Natural inclusion of day of the week in date expressions (e.g., 'Thursday, end of this month')",
+          "Spoken Indonesian structure: day first, then date, then month (e.g., 'Kamis, 12 Agustus')",
+          "Omission of 'tanggal' and 'the' in casual spoken Indonesian",
+          "Use of 'ke-' only in sequential contexts (e.g., 'hari ke-15'), not for standalone dates",
+          "Reference to time via shared experiences (e.g., 'like last Eid')",
+          "Informal use of 'Pasar' for the 1st of the month (implied through cultural context, though not explicitly mentioned)"
+        ],
+        "issues": [
+          "The example does not explicitly mention the regional variation of 'Pasar' for the 1st of the month, which is a notable cultural nuance in Java and some rural areas. While not critical, its absence slightly limits depth.",
+          "The assistant's explanation about 'hari ke-15' is accurate, but could clarify that 'ke-' is not used in standalone date expressions like '15 Agustus'—this is correctly stated, but could be more emphatic.",
+          "The assistant assumes the user is speaking English with an Indonesian speaker, but doesn't explicitly signal that the conversation is a bilingual exchange. However, this is acceptable given the format."
+        ],
+        "suggestions": [
+          "Add a brief note about 'Pasar' as a colloquial term for the 1st of the month in Javanese-influenced communities, with a disclaimer that it's informal and context-dependent.",
+          "Clarify that in spoken Indonesian, 'tanggal' is often omitted entirely in casual speech (e.g., 'Kamis, 12 Agustus' instead of 'Tanggal 12 Agustus')—this is implied but could be more explicit.",
+          "Consider including a short example in Indonesian (e.g., 'Kita ketemu kayak waktu Lebaran kemarin') to reinforce linguistic authenticity, as long as it's clearly framed as a cultural reference and not the primary language of the conversation.",
+          "Emphasize that even when using 'the 15th' in English, it's still a valid and natural way to communicate with Indonesians, as the assistant correctly notes—this point could be reinforced with a real-world example."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 2
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 19,
+    "research_rounds": 2,
+    "examples_produced": 2
+  }
+}

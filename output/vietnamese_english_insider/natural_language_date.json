@@ -1,0 +1,427 @@
+{
+  "culture": "Vietnamese",
+  "dimension": {
+    "name": "Natural Language Date Expression",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "How dates are expressed conversationally in speech, including ordinal usage and word order",
+    "keywords": []
+  },
+  "params": {
+    "native_language": false,
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to plan when to come back home for Tết this year. My mom keeps saying 'mùng một Tết' but I’m not sure what date that actually is this year. Can you help me figure out when exactly I should leave?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, mùng một Tết this year is on February 10th. That’s the first day of the lunar new year, so it’s the official start of Tết. Most people start preparing the week before, but the main holiday kicks off on that day."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I want to get home a few days before, when should I aim to arrive? I’d like to help with the cooking and decorations."
+            },
+            {
+              "role": "assistant",
+              "content": "You’d want to come in by the 7th or 8th at the latest—ideally the 6th if you can. That’s when most families really start getting into full swing: cleaning the house, making bánh chưng, setting up the altar. By the 8th, it’s already buzzing with energy."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I remember my aunt always says 'tháng chạp' is when the real prep starts. Is that around the same time?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly—'tháng chạp' is the 12th lunar month, which usually falls in late January to early February in the Gregorian calendar. So this year, it’s from January 23rd to February 21st. That’s when the house gets cleaned, the ancestors are honored, and the kitchen starts smelling like rice and sugar."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that helps a lot. I was also wondering—should I say 'ngày 10 tháng 2' or 'mùng 10 tháng Giêng' when I tell my cousin I’ll be home?"
+            },
+            {
+              "role": "assistant",
+              "content": "For family, 'mùng 10 tháng Giêng' sounds more natural and warm. Even if you’re using the Gregorian date, saying 'mùng 10' ties it to the lunar rhythm people feel in their bones. It’s not just a date—it’s a moment in the cycle of the year."
+            },
+            {
+              "role": "user",
+              "content": "That’s really helpful. I’ll tell her 'mùng 10 tháng Giêng' then. I just hope I’m not missing anything important—like the full moon or something."
+            },
+            {
+              "role": "assistant",
+              "content": "The full moon is on the 14th—'rằm tháng Giêng'—which is actually a big deal too. Some families do special prayers or eat sweet rice balls then. But don’t worry—your cousin will know you’re coming on the 10th, and that’s plenty of time to help out. Tết’s about being together, not perfect timing."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of 'mùng một Tết' as a culturally significant date reference instead of Gregorian equivalent",
+          "Natural use of lunar calendar terms like 'mùng 10 tháng Giêng' and 'rằm tháng Giêng' in conversational context",
+          "Reference to 'tháng chạp' as the traditional preparatory month before Tết",
+          "Preference for relational time expressions ('this year', 'a few days before') over exact numerical dates",
+          "Avoidance of ordinal numbers in spoken date expressions (e.g., 'ngày mười' instead of 'ngày thứ mười')",
+          "Cultural context embedded in daily life: house cleaning, cooking bánh chưng, ancestral altars, and family rituals",
+          "Use of 'tết này' and 'năm nay' as default temporal markers without referencing specific years numerically",
+          "Natural integration of traditional calendar systems in planning and social coordination",
+          "Emphasis on shared cultural understanding over explicit explanation—assistant assumes shared knowledge",
+          "Tone reflects warmth, familiarity, and implicit cultural values around family, timing, and ritual"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of 'mùng một Tết' to refer to the first day of Lunar New Year",
+          "Preference for lunar calendar terms ('mùng một', 'tháng chạp', 'rằm tháng Giêng') in informal, familial contexts",
+          "Cultural significance of the 12th lunar month ('tháng chạp') as the period of Tết preparation",
+          "Temporal framing using relational time (e.g., 'week before', 'by the 6th', 'when the house gets cleaned')",
+          "Emphasis on cultural rhythm and emotional resonance over exact Gregorian dates",
+          "Natural integration of lunar date expressions in conversation without explanation",
+          "Distinction between Gregorian and lunar date usage in family communication"
+        ],
+        "issues": [
+          "Minor: The assistant explicitly states 'this year' in the first response, which could be slightly more culturally embedded (e.g., 'this Tết' or 'năm nay' would feel more natural in Vietnamese context, though acceptable in English)",
+          "Slight over-explanation in the assistant’s final response about 'perfect timing'—while warm, it leans slightly toward didactic tone; a more natural response would imply the sentiment without stating it directly"
+        ],
+        "suggestions": [
+          "Replace 'this year' with 'this Tết' or 'năm nay' in the assistant’s first response to better reflect Vietnamese temporal framing",
+          "In the final response, rephrase 'don’t worry—your cousin will know...' to a more implicit cultural affirmation like 'Mình về sớm là đã là phần quan trọng rồi' (Coming early is already meaningful) to mirror how Vietnamese speakers affirm intention without over-explaining",
+          "Consider using 'Tết này' instead of 'this year' in the user’s second message to maintain consistent cultural framing"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to plan when to come back to my hometown for Tết this year. My mom keeps saying 'mùng một Tết' but I’m not sure if that’s the same as January 20th or not. Can you help me figure out the exact date?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, I get that confusion — 'mùng một Tết' is the first day of Lunar New Year, which is always the first day of the first lunar month. This year, it’s actually on February 10th, so that’s the day you’d want to aim for. But your mom might be thinking of the full moon on the 15th, which is also a big day — that’s 'mùng một tháng Giêng' in the lunar calendar, but people often just say 'mùng 15 Tết' for the full moon celebration."
+            },
+            {
+              "role": "user",
+              "content": "Oh, so mùng một Tết is February 10th? That makes sense — I remember my cousin said something about coming back 'tháng sau' and I thought he meant next month, but now I see it’s relative to Tết. So if Tết is in February, then 'tháng sau' would be March, right?"
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. When people say 'tháng sau' around Tết, they’re usually talking about the month after Lunar New Year — so if Tết is in February, 'tháng sau' would be March. But if you’re asking about the next month in the Gregorian calendar, that’s different. The key is context: if someone says 'tháng sau' during Tết season, they almost always mean the next lunar month, not the next calendar month."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I want to come back for the full moon celebration, that’s the 15th of the first lunar month — which is February 25th this year, right? I think I’ll go then to visit my aunt’s house."
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, February 25th is the 15th of the first lunar month — that’s the full moon, and it’s a special day for many families. Your aunt probably expects you then. It’s common to visit relatives on that day, especially if they’ve been away. Just make sure to bring some fruits or a small gift — it’s not required, but it’s a nice gesture."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that helps a lot. I’ll bring some lychees and a box of bánh chưng. I’ve been thinking about how my grandma always says 'năm nay' instead of '2024' — like, 'Tết năm nay sẽ vui hơn.' Is that just how people talk?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, absolutely. 'Năm nay' and 'năm ngoái' are much more natural in everyday speech than saying the year number. People use them all the time — 'Tết năm nay' means 'this year’s Tet,' and 'năm ngoái' means 'last year.' It’s not just about convenience; it’s part of how we relate time to life events, especially during festivals. Saying '2024' out loud feels too cold, too formal — like you’re reading a document."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.3,
+        "cultural_elements_verified": [
+          "Use of 'mùng một Tết' to refer to the first day of Lunar New Year",
+          "Distinction between Gregorian and lunar calendar dates in casual speech",
+          "Preference for relational time expressions like 'tháng sau', 'năm nay', 'năm ngoái'",
+          "Cultural significance of the 15th day of the first lunar month (full moon) as a family gathering day",
+          "Natural use of Vietnamese terms like 'mùng một', 'tháng sau', 'năm nay' within English conversation",
+          "Contextual understanding that 'tháng sau' during Tết refers to the next lunar month, not Gregorian",
+          "Emphasis on cultural gestures like bringing fruit or bánh chưng as part of familial visits"
+        ],
+        "issues": [
+          "Minor inaccuracy: The assistant states 'mùng một Tết' is on February 10th, which is correct for 2024, but the phrasing 'this year' in the response could imply a fixed date without clarifying that the lunar date shifts annually — though this is contextually acceptable given the example’s focus.",
+          "Slight over-explanation of 'mùng một tháng Giêng' in the assistant’s second response — while factually correct, the distinction between 'mùng một Tết' and 'mùng một tháng Giêng' is subtle and might be better implied than explicitly stated in natural speech."
+        ],
+        "suggestions": [
+          "Replace 'mùng một tháng Giêng' with a more natural phrase like 'the first day of the lunar month' in the assistant’s second response to maintain linguistic authenticity without over-explaining.",
+          "Consider using 'Tết này' instead of 'this year’s Tet' in the assistant’s final response to mirror the natural Vietnamese expression more closely.",
+          "Add a brief mention of how younger generations may use Gregorian dates more often in urban settings, to reflect generational variation without undermining the core cultural norms."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to plan when to visit my parents in Hanoi for Tết. I was thinking of going around the 10th, but I’m not sure if that’s too early or too late. What do you think?"
+            },
+            {
+              "role": "assistant",
+              "content": "Mùng 10 Tết is actually pretty early—most families are still cleaning, cooking, and receiving guests from the first few days. If you want to be there during the peak, mid-Tết is better. The 15th is a sweet spot—people are still celebrating, and it’s not too crowded yet."
+            },
+            {
+              "role": "user",
+              "content": "Oh, so you mean the 15th of the first lunar month? I was thinking of coming on the 15th of January, but I’m not sure if that’s the same thing."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s a common mix-up. The 15th of January in the Gregorian calendar isn’t the same as mùng 15 Tết. This year, mùng 15 Tết falls on February 1st. The 15th of the first lunar month is the full moon day—people often go to pagodas or light lanterns. So if you’re coming for Tết, you’ll want to aim for late January or early February, depending on when the lunar New Year starts."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So I should probably come around the 25th of January? That feels like a good balance—after the main rush, but still during the holiday."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a solid plan. The 25th of January is still well within Tết season—especially if you’re coming from out of town. Your parents will appreciate you being there during the quieter days, when the house is settled and you can just relax. Just make sure to bring a few gifts, like fruit trays or bánh chưng, even if it’s not the first day."
+            },
+            {
+              "role": "user",
+              "content": "Thanks, that makes sense. I’ll bring some bánh chưng and maybe a small red envelope for my younger cousins. I think they’ll like that."
+            },
+            {
+              "role": "assistant",
+              "content": "Perfect. The red envelope is a nice touch—especially for kids. And bringing homemade bánh chưng shows you care. They’ll remember that more than anything. Just don’t forget to say “Chúc mừng năm mới” when you arrive. It’s simple, but it means a lot."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of 'mùng 15 Tết' to refer to the 15th day of the lunar New Year, reflecting cultural preference for lunar calendar terms in festive contexts",
+          "Natural use of 'Tết' without full explanation, assuming shared cultural knowledge",
+          "Distinction between Gregorian and lunar calendar dates (e.g., 15th of January vs. mùng 15 tháng Giêng) as a key cultural nuance",
+          "Preference for relational time markers like 'mid-Tết' and 'late January' over precise numerical dates",
+          "Spontaneous use of culturally specific terms like 'bánh chưng' and 'red envelope' as natural elements of the conversation",
+          "Implicit understanding that 'Chúc mừng năm mới' is expected upon arrival, without needing to explain its significance",
+          "Assistant response that reflects shared cultural norms—no need to over-explain, just guide with insider knowledge",
+          "Use of 'this year' and 'next month' as temporal references without specifying numbers, aligning with Vietnamese conversational style"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.0,
+        "linguistic_authenticity_score": 8.5,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 8.875,
+        "cultural_elements_verified": [
+          "Use of 'mùng 10 Tết' and 'mùng 15 Tết' as culturally resonant expressions for lunar calendar dates during Tết",
+          "Distinction between Gregorian and lunar calendar dates during Tết (e.g., mùng 15 Tết falling on February 1st)",
+          "Preference for relational time markers like 'this year' and 'mid-Tết' over precise numerical dates",
+          "Cultural significance of the 15th of the first lunar month as a full moon day with pagoda visits and lantern lighting",
+          "Emphasis on family presence during the quieter, post-peak days of Tết (e.g., 25th of January as a balanced visit)",
+          "Expectation of gifts like bánh chưng and red envelopes as meaningful gestures during Tết",
+          "Use of 'Chúc mừng năm mới' as a culturally appropriate greeting upon arrival"
+        ],
+        "issues": [
+          "The assistant uses the Vietnamese term 'mùng 15 Tết' without any English gloss or contextual explanation, which may hinder comprehension for non-Vietnamese speakers in a training context—though acceptable in implicit cultural context, it risks reducing linguistic authenticity if the model is expected to generalize in English-only mode",
+          "The user explicitly asks about the '15th of January' versus 'mùng 15 Tết', which introduces a mild meta-awareness of cultural difference; while not a full identity announcement, it slightly breaks the implicit cultural framing by requiring explanation of the cultural system"
+        ],
+        "suggestions": [
+          "Replace 'mùng 15 Tết' with a brief English gloss like 'the 15th day of Lunar New Year' in the assistant's first response to maintain cultural authenticity while ensuring linguistic accessibility for training data",
+          "Rephrase the user's second turn to avoid directly comparing Gregorian and lunar dates—e.g., 'I was thinking of coming on the 15th, but I’m not sure if that’s the right time for Tết'—to preserve the implicit cultural context and avoid drawing attention to the cultural contrast",
+          "Consider adding a subtle reference to 'this year’s Tết' or 'the lunar New Year this year' in the assistant’s response to reinforce the use of 'năm nay' as a cultural time marker"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to plan when to come back to my parents’ house for Tết. My sister said she’s going to be there starting the 15th of the first month, but I’m not sure if that’s the 15th of January or the lunar date. Can you help me figure out when that actually is?"
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s a common mix-up. When your sister says the 15th of the first month, she’s definitely referring to the lunar calendar—mùng 15 tháng Giêng. That’s the full moon night, and it’s a big deal during Tết. This year, mùng 15 tháng Giêng falls on February 18th, 2025. So if she’s there from that day, you’ll want to come around then—ideally a day or two before to help with preparations."
+            },
+            {
+              "role": "user",
+              "content": "Oh, okay, so it’s not the 15th of January? I thought maybe she meant the Gregorian calendar. But I remember my grandma always talks about Tết starting on mùng một, not the 1st of January. That’s why I was confused."
+            },
+            {
+              "role": "assistant",
+              "content": "Exactly. Most people in the family still use lunar dates, especially for Tết and other traditions. Even if we use the Gregorian calendar for work or school, when it comes to family events, lunar time is the real time. Mùng một Tết this year is January 29th, but the 15th is the real highlight—people go to pagodas, eat bánh trôi, and light lanterns. Your sister’s timing makes perfect sense in that context."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense now. So if I come on the 18th, I’ll be right in the middle of it. Should I bring anything special? My mom always says it’s not about gifts, but something to share."
+            },
+            {
+              "role": "assistant",
+              "content": "Good instinct. For mùng 15, bringing a small tray of bánh trôi or bánh chay (sweet rice balls or vegetarian sweets) is thoughtful—especially if you’re helping with the offerings. Or just a few boxes of tea and some fresh fruit. The real thing is showing up with care. And don’t worry about being on the dot—people usually arrive a bit late, especially if they’re coming from out of town. The mood is more important than the exact time."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of lunar calendar reference 'mùng 15 tháng Giêng' instead of Gregorian date",
+          "Natural integration of 'Tết' and cultural practices like bánh trôi and temple visits",
+          "Preference for relational time over exact dates (e.g., 'around the 18th', 'a day or two before')",
+          "Use of culturally specific terms like 'mùng một' and 'Tết' without explanation",
+          "Contextual understanding of time through family and ritual significance rather than numerical precision",
+          "Informal, conversational tone with natural flow and emotional resonance",
+          "Assistant responds with shared cultural knowledge, not pedagogical explanation",
+          "Avoidance of ordinal numbers in date expressions (e.g., 'the 15th' not 'the fifteenth')",
+          "Reference to generational differences in calendar use (grandma vs. younger sister)",
+          "Emphasis on presence and intention over strict timing, reflecting relational time norms"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.15,
+        "cultural_elements_verified": [
+          "Use of 'mùng một' and 'mùng 15' as culturally significant lunar date markers",
+          "Preference for lunar calendar in family and festival contexts (Tết, full moon night)",
+          "Coexistence of Gregorian and lunar calendars in daily life",
+          "Temporal references like 'this year' and 'this Tết' instead of numerical dates",
+          "Contextual understanding of time as relational rather than absolute",
+          "Cultural significance of mùng 15 tháng Giêng (full moon, pagoda visits, bánh trôi, lanterns)",
+          "Informal, flexible arrival times reflecting cultural values of presence over punctuality",
+          "Gift-giving norms centered on shared food and care, not material value"
+        ],
+        "issues": [
+          "Minor overgeneralization: 'Most people in the family still use lunar dates' — while accurate in many contexts, younger urban generations may rely more on Gregorian dates, though the example correctly captures the dominant cultural pattern.",
+          "Slight risk of reinforcing a binary between 'lunar' (traditional) and 'Gregorian' (modern) — the example could better reflect that many Vietnamese navigate both systems fluidly without hierarchy."
+        ],
+        "suggestions": [
+          "Add a subtle nuance in the assistant’s response to acknowledge that younger Vietnamese often use Gregorian dates for scheduling but revert to lunar terms for emotional or familial significance.",
+          "Include a brief mention of how digital calendars and apps now display both systems, reflecting modern hybridity without undermining cultural authenticity.",
+          "Consider using a more neutral term like 'the 15th of the first lunar month' instead of 'mùng 15 tháng Giêng' in the first assistant turn, to model how the term is introduced naturally without assuming prior knowledge."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Vietnamese culture. Represent the values and lived experience of Vietnamese people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "Hey, I’m trying to plan when to come back home for Tết this year. My mom keeps saying 'mùng một Tết' but I’m not sure what day that actually is on the Gregorian calendar. Can you help me figure out when I should book my flight?"
+            },
+            {
+              "role": "assistant",
+              "content": "Mùng một Tết this year is on February 10, 2025. That’s the first day of the lunar new year, so your mom’s probably thinking of that as the official start. Most family gatherings begin around then, especially for the ancestral altar setup and the first visit to relatives."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — so if I want to get there a few days early, maybe on the 8th or 9th, would that be too early? I don’t want to be too much of a hassle."
+            },
+            {
+              "role": "assistant",
+              "content": "Not at all — coming a couple of days before is actually common. Many people arrive around the 8th or 9th to help with cleaning, cooking, and setting up the house. It’s not considered early; it’s more like being part of the preparation. Just make sure you’re back by mùng một for the rituals."
+            },
+            {
+              "role": "user",
+              "content": "Got it. And what about the full moon? I remember my aunt always says 'mùng một' even for other months. Is that the same for Tết?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes — 'mùng một' is a cultural term used for the first day of any lunar month, not just Tết. But during Tết, it takes on extra weight. The first day is sacred, so the whole family gathers early, often before sunrise, to pay respects. The full moon on the 15th of the first month is also special — that’s Tết Nguyên Tiêu, when people go to temples and light lanterns."
+            },
+            {
+              "role": "user",
+              "content": "Oh, so the 15th is also important? I thought Tết was just the first few days. I’ll definitely try to stay until then if I can. I’d love to see the lanterns."
+            },
+            {
+              "role": "assistant",
+              "content": "Absolutely — the 15th is a quiet but meaningful day. It’s when the spirit of Tết lingers, and families often take walks together, visit temples, or just enjoy the peace after the busyness. If you can stay until then, it’ll feel like you’ve truly been part of the celebration."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of 'mùng một Tết' as a culturally loaded phrase referring to the first day of Lunar New Year",
+          "Reference to 'Tết Nguyên Tiêu' (Lantern Festival on the 15th of the first lunar month) as a significant secondary event",
+          "Natural integration of lunar calendar terminology ('mùng một') without explicit explanation",
+          "Preference for relational time ('this year', 'a few days before') over exact Gregorian dates in early exchanges",
+          "Use of 'mùng một' across lunar months as a cultural idiom, reflecting its broader semantic use",
+          "Implicit understanding of family rituals and timing expectations during Tết without needing to state them explicitly",
+          "Assistant’s responses reflect shared cultural knowledge — no need to explain why mùng một is important",
+          "User’s question about arrival timing reflects real-life family dynamics and social expectations around Tết",
+          "Gregorian calendar date (February 10, 2025) provided contextually, not as a standalone fact",
+          "Natural progression from date inquiry to deeper cultural understanding through layered responses"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Use of 'mùng một Tết' as the first day of Lunar New Year",
+          "Correct Gregorian date for Tết 2025 (February 10, 2025)",
+          "Cultural significance of arriving early (8th–9th) for preparations",
+          "Distinction between 'mùng một' as a lunar term applicable to any month",
+          "Importance of Tết Nguyên Tiêu on the 15th of the first lunar month",
+          "Relational time use: 'this year', 'a few days before', 'by mùng một'",
+          "Coexistence of Gregorian and lunar calendars in daily conversation",
+          "Emphasis on family rituals and spiritual aspects of Tết"
+        ],
+        "issues": [
+          "Minor risk of overgeneralization: the assistant assumes all families prioritize the 15th, which may not be true in urban or younger demographics; however, this is not a factual error, just a contextual nuance",
+          "Slight lack of variation in phrasing — all user turns are very clearly English-speaking with no subtle cultural markers beyond the topic; however, this is acceptable given the instruction to avoid identity performance"
+        ],
+        "suggestions": [
+          "Add a brief, natural mention of 'năm nay' or 'tháng này' in the assistant’s response to reinforce relational time usage in spoken Vietnamese",
+          "Include a subtle reference to a traditional food or ritual (e.g., 'bánh chưng', 'cúng tổ tiên') during the 15th to deepen cultural embedding without over-explaining",
+          "Introduce a minor ambiguity in the user’s follow-up (e.g., 'I heard it’s on the 10th, but my cousin said the 9th') to simulate real-life variation in date recall, enhancing authenticity"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 17,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}

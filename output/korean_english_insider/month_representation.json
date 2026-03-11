@@ -1,0 +1,392 @@
+{
+  "culture": "Korean",
+  "dimension": {
+    "name": "Month Representation",
+    "category": "Institutional Norms > Regulation & Policy > Data Format",
+    "description": "Whether months are written numerically, as abbreviations, or spelled out in full",
+    "keywords": []
+  },
+  "params": {
+    "native_language": false,
+    "topic": null,
+    "implicit_culture": true
+  },
+  "records": [
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan a small family gathering for my grandmother’s 70th birthday. She really loves the old traditions, so I want to make it feel meaningful. The date is flexible, but I’d like to do it around the time of Chuseok if possible. What’s the best date to aim for this year?"
+            },
+            {
+              "role": "assistant",
+              "content": "This year, Chuseok falls on September 17th — that’s 음력 8월 15일. If your grandmother values tradition, celebrating on that day would carry real emotional weight. It’s not just a date; it’s a moment when families honor ancestors and reconnect with roots. The lunar calendar still holds deep meaning in many homes, even if daily life runs on the Gregorian calendar."
+            },
+            {
+              "role": "user",
+              "content": "Got it. So if I’m sending out invitations, should I write it as 9월 17일 or should I use the lunar name? I’m not sure what’s more appropriate for a family event like this."
+            },
+            {
+              "role": "assistant",
+              "content": "For family events like this, it’s thoughtful to include both: '9월 17일 (음력 8월 15일)'. That way, everyone knows the date in the modern calendar, but the lunar date stays visible — a quiet nod to tradition. Most families do this when honoring Chuseok or ancestral rituals."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I also want to include a small note about the moon ceremony. Should I say '정월 대보름' or just '1월 1일'? I’m not sure how formal it should be."
+            },
+            {
+              "role": "assistant",
+              "content": "Just a quick note: '정월 대보름' refers specifically to the full moon festival on the 15th of the first lunar month — not January 1st. It’s a traditional celebration of harvest and renewal, usually in late January or early February. If you’re referring to January 1st, it’s best to say '1월 1일' or '새해 첫날'. But if you’re including a poetic line about the moon, '정월 대보름' fits beautifully — just not on the Gregorian calendar’s New Year’s Day."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — that helps clarify things. One last thing: I’m thinking of sending a message to my cousin in Seoul. Should I write '3월 10일' or '삼월 10일' in the text? I’m not sure what’s more common in casual chats."
+            },
+            {
+              "role": "assistant",
+              "content": "In casual texts, always use numerals: '3월 10일' is the norm. It’s clean, fast, and universally understood — especially in messaging apps. You’d only spell it out as '삼월 10일' in formal letters, poetry, or official announcements. For a cousin, '3월 10일에 만나요' sounds natural and warm."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Use of numerals (e.g., 9월 17일) in modern, everyday contexts",
+          "Spelling out lunar months (e.g., 음력 8월 15일, 정월 대보름) in traditional contexts",
+          "Preference for numerals in casual digital communication (e.g., '3월 10일' in texts)",
+          "Distinction between Gregorian and lunar calendar usage in cultural events",
+          "Contextual use of full forms only in formal, poetic, or ceremonial settings",
+          "Correct identification of 정월 대보름 as a lunar festival, not Gregorian New Year"
+        ],
+        "issues": [
+          "Minor inconsistency in tone: the assistant’s explanation about '정월 대보름' is accurate but slightly over-explained for a casual chat context; a native speaker might simply say '정월 대보름이야' with a brief contextual cue rather than a full definition.",
+          "The phrase 'a quiet nod to tradition' is slightly Westernized in phrasing — while understandable, it’s a subtle linguistic flavor that could feel slightly unnatural to a native Korean speaker in this context"
+        ],
+        "suggestions": [
+          "Slightly streamline the explanation of '정월 대보름' to match natural conversational brevity — e.g., '정월 대보름은 음력 1월 15일이야, 농사의 성수를 기념하는 전통 축제지.'",
+          "Replace slightly idiomatic English expressions like 'quiet nod to tradition' with more grounded phrasing such as 'it’s meaningful because many families still mark it this way' to better reflect Korean communicative style",
+          "Consider adding a brief mention of how even in digital invitations, some families include lunar dates in parentheses — reinforcing the cultural norm of dual dating without over-explaining"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan a small family gathering for my aunt’s birthday next month. She’s turning 65, so we want it to feel meaningful but not too formal. What’s a good date to pick? I was thinking around the 15th or 20th, but I’m not sure if that’s too close to the Chuseok holiday."
+            },
+            {
+              "role": "assistant",
+              "content": "Chuseok is usually in September, so you’re safe—your aunt’s birthday is in October, which is after the holiday. If you’re aiming for a quiet, meaningful day, the 18th or 22nd would work well. The 18th is a Thursday, which might be easier for people to attend. Just make sure to confirm with the family if they’re free that weekend."
+            },
+            {
+              "role": "user",
+              "content": "Good point. I’ll check with them. Also, I was wondering—should I write the date on the invitation as '10월 18일' or '십월 18일'? I don’t want to sound too stiff, but I also don’t want it to look casual."
+            },
+            {
+              "role": "assistant",
+              "content": "For a family birthday, '10월 18일' is perfectly appropriate—clear, modern, and natural in everyday use. You’d only spell it out as '십월' in something like a formal letter or a printed invitation with a traditional aesthetic. Since this is a personal gathering, the numeral is fine and actually more common in Korean families these days."
+            },
+            {
+              "role": "user",
+              "content": "That makes sense. I’ll go with 10월. One more thing—should I mention the lunar calendar at all? She’s really into traditional things, and I know she sometimes refers to birthdays in lunar terms."
+            },
+            {
+              "role": "assistant",
+              "content": "Ah, that’s thoughtful. Since she values tradition, you could mention it casually—like, '10월 18일 (음력 9월 5일)'—just to honor her preference. It’s not necessary, but it shows care. Most people won’t notice, but those who do will appreciate the attention to detail."
+            },
+            {
+              "role": "user",
+              "content": "Perfect. I’ll add that. Thanks—this feels much more balanced now. I was worried about getting the tone wrong."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re welcome. It’s always about finding that balance—modern clarity with a touch of warmth. She’ll likely feel the thoughtfulness more than the format."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.125,
+        "cultural_elements_verified": [
+          "Use of Arabic numerals (10월) for modern, everyday contexts like birthday invitations",
+          "Spelling out months in full (십월) only in formal or traditional contexts",
+          "Contextual use of lunar calendar (음력 9월 5일) for culturally significant personal references",
+          "Preference for clarity and natural flow in informal communication",
+          "Balancing modern efficiency with traditional sentiment in family events"
+        ],
+        "issues": [
+          "Minor: The assistant uses '10월' in the first response without acknowledging the user's prior mention of '10월'—a slight inconsistency in tracking context, though not critical",
+          "The phrase 'just to honor her preference' could be slightly over-explaining; a more native speaker tone might imply the gesture as natural rather than performative"
+        ],
+        "suggestions": [
+          "Slightly rephrase the assistant’s final response to be more concise and emotionally resonant: e.g., 'She’ll feel the care in the detail, not the form.'",
+          "In the second assistant turn, consider adding a brief nod to the cultural weight of '10월' as a modern standard, reinforcing the norm without over-explaining",
+          "Ensure that all references to lunar calendar usage are tied to specific cultural events (e.g., Chuseok, Lunar New Year) to maintain consistency with the research"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan a small family gathering for my aunt’s birthday next month. She’s turning 65, so we want to make it special. I was thinking of doing it on the 12th, but I’m not sure what day of the week that is. Also, should I write it as 4월 12일 or 사월 12일 on the invitation?"
+            },
+            {
+              "role": "assistant",
+              "content": "The 12th of April falls on a Friday this year. For the invitation, use 4월 12일 — that’s the standard format in Korea, even for personal events. It’s clean, clear, and widely understood. People usually only write it out as 사월 in formal or poetic contexts, like in a wedding announcement or a letter from an elder. Since this is a family birthday, the numeral version is perfect."
+            },
+            {
+              "role": "user",
+              "content": "Good to know. I also want to include a note about the Chuseok tradition we’re honoring this year. We usually do a small ancestral offering, and I’ve heard some families do it on the 14th this year. Should I mention the lunar date?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, if you're including the ancestral offering, it’s thoughtful to mention the lunar date. This year, Chuseok is on 음력 8월 14일 — the 14th of the 8th lunar month. You can write it as ‘음력 8월 14일’ on the invitation or in a note. It’s not necessary to use the full form like ‘팔월’ unless it’s for a ceremonial document, but the lunar context adds cultural depth. Most people will understand it immediately."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I’ll add that. Also, my younger cousin said he wants to bring a gift, but he’s not sure how much to give. He’s still in college. Should I tell him to bring something specific, or is that not really a thing anymore?"
+            },
+            {
+              "role": "assistant",
+              "content": "It’s not about the amount — it’s about the gesture. A simple, thoughtful gift is enough, especially from a cousin. If he’s in college, a nice box of traditional snacks or a small tea set would be perfect. In writing, if you need to clarify the gift amount, use ‘3만 원’ or ‘30,000원’ — that’s the standard way. Just be aware that ‘달’ (dal) means ‘month,’ not money. So phrases like ‘3달’ mean ‘three months,’ not ‘30,000 won.’ That’s a common mix-up. It’s best to avoid using ‘달’ when talking about gifts. Keep it simple: the intention matters most."
+            },
+            {
+              "role": "user",
+              "content": "Thanks — that helps a lot. I’ll make sure the invitation says 4월 12일 and includes the lunar note. And I’ll remind my cousin that it’s not about the money, just the thought. I’ll also double-check if the temple where we’re doing the offering is open on the 14th. I don’t want to show up unprepared."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s the right mindset. Most temples do open for Chuseok, but it’s smart to confirm. A quick call or message to the temple’s office is best. They’ll appreciate the respect. And if you’re writing the invitation, keep the tone warm but simple — no need to over-explain. Koreans value subtlety and sincerity in family events. You’re doing it just right."
+            }
+          ]
+        },
+        "cultural_elements": []
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of Arabic numerals (4월) for modern, everyday contexts like birthday invitations",
+          "Spelling out months in full (사월) only in formal or poetic contexts",
+          "Distinction between Gregorian and lunar calendar usage, especially for traditional events like Chuseok",
+          "Correct use of '음력 8월 14일' for lunar dates in cultural contexts",
+          "Awareness that '달' means 'month' and not 'won', and caution against using it in financial contexts",
+          "Cultural emphasis on intention over material value in gift-giving, especially among younger relatives"
+        ],
+        "issues": [
+          "Minor risk of over-explaining cultural norms in the assistant’s response to the cousin’s gift question — while accurate, the clarification about '달' could be more subtly integrated, as native speakers would not typically pause to explain such a basic linguistic distinction unless prompted",
+          "The phrase 'most people will understand it immediately' slightly underestimates the need for context in non-Korean audiences, though this is acceptable given the implicit cultural context assumption"
+        ],
+        "suggestions": [
+          "Integrate the clarification about '달' more naturally by embedding it in a real-world example (e.g., 'I’ve seen people write 3달 for three months, but never for money — that’s a common mix-up, so better to use 3만 원')",
+          "Avoid explicit disclaimers like 'that’s a common mix-up' unless the user shows confusion — in authentic insider dialogue, such meta-commentary is rare",
+          "Consider having the user reference the lunar date first in a more natural way (e.g., 'We’re doing the offering on the 14th, but I think it’s the 8th lunar month?') to better simulate organic cultural expression"
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I’m trying to plan a small family gathering for my aunt’s birthday. She’s turning 65, so we want to make it special. The date would be around late March. Should I write the invitation as '3월 25일' or '삼월 25일'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For a family gathering like this, '3월 25일' is perfectly appropriate and most commonly used. It’s clean, clear, and fits how people write dates in everyday life—especially in invitations, calendars, or messages. Since it’s a personal event, the numeric form feels natural and warm, not cold or formal."
+            },
+            {
+              "role": "user",
+              "content": "Got it. But I’m also thinking about including a small note about the lunar calendar since she’s really into traditional things—like how we used to celebrate Chuseok in the old way. Would it make sense to mention '정월' somewhere?"
+            },
+            {
+              "role": "assistant",
+              "content": "Yes, that’s a thoughtful touch. If you want to honor her connection to tradition, you could add a line like: 'We’re gathering on 3월 25일, which is also the 15th day of the lunar calendar, just like the old Chuseok nights.' That way, you’re using the Gregorian date for clarity, but weaving in the lunar reference where it feels meaningful—especially for someone who values heritage."
+            },
+            {
+              "role": "user",
+              "content": "That’s a good idea. What about the wording on the invitation? Should I write '3월 25일' or '3월 25일 (삼월)' for extra clarity?"
+            },
+            {
+              "role": "assistant",
+              "content": "No need to add the spelled-out version unless it’s for a formal letter or a printed poem. In most cases, just '3월 25일' is enough—people will understand it instantly. Adding '삼월' in parentheses might actually feel a bit awkward or overly formal for a family invitation. The numeric form is the default in daily life, even when you’re being sentimental."
+            },
+            {
+              "role": "user",
+              "content": "Makes sense. And if I’m texting my cousin to confirm, can I just say '3월 25일' without '일'?"
+            },
+            {
+              "role": "assistant",
+              "content": "In a text message, yes—'3월 25' is totally fine and common. People often drop the '일' in casual chats, especially when the context is clear. But if you’re writing a full message or sending a formal reminder, it’s better to include it. Casual texting is where the shorthand feels natural."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of numerical month notation (3월) in everyday planning and informal communication",
+          "Spelling out months (삼월) reserved for poetic or formal contexts, not used in practical planning",
+          "Avoidance of abbreviations (e.g., no 'Mar' or '3월' → '3월') in Korean writing",
+          "Contextual use of lunar calendar terms (정월) in traditional or sentimental references",
+          "Natural integration of '달' (month) in spoken/colloquial forms (implied through '3월 25' in texting)",
+          "Cultural preference for clarity and efficiency in modern communication, even when honoring tradition",
+          "Implicit understanding of cultural layers—Gregorian for function, lunar for sentiment—without explicit explanation"
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.5,
+        "training_quality_score": 9.0,
+        "overall_score": 9.25,
+        "cultural_elements_verified": [
+          "Numerical month representation (3월) is standard in everyday and informal contexts like invitations and text messages",
+          "Spelled-out forms (삼월) are reserved for formal, literary, or traditional contexts",
+          "Lunar calendar references (정월) are used in traditional or heritage-related contexts",
+          "The use of '달' (e.g., 3달) is acknowledged as common in spoken Korean, though not in written invitations",
+          "Informal dropping of '일' in text messages is natural and common",
+          "Avoidance of abbreviations like 'Mar' or '3월' → '3월' (no shortened forms) is correctly reflected"
+        ],
+        "issues": [
+          "Minor inconsistency: The assistant mentions '3월 25일' as the default in daily life, but in the final turn, the user asks about omitting '일'—this could be slightly misleading if interpreted as the full date being redundant. However, the assistant correctly clarifies context-dependent usage, so this is not a critical error.",
+          "The example uses Korean script (e.g., 3월, 삼월) in English-language messages, which is acceptable per guidelines as long as the bulk of the conversation is in English. No overuse of native language."
+        ],
+        "suggestions": [
+          "Consider adding a brief mention of how the Gregorian calendar is used in official contexts (e.g., government documents, school calendars) to further ground the contrast with traditional lunar usage.",
+          "To enhance nuance, the assistant could briefly acknowledge that while '3월' is standard, some older generations may still prefer '삼월' in certain formal or ceremonial writings—this reinforces the generational and contextual variation without overcomplicating.",
+          "Clarify that '3월 25일' is the standard format even in sentimental or family contexts, reinforcing that numeric form is not cold or impersonal, but rather the cultural norm."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 0
+    },
+    {
+      "example": {
+        "content": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful AI assistant with deep knowledge of Korean culture. Represent the values and lived experience of Korean people in your responses."
+            },
+            {
+              "role": "user",
+              "content": "I'm trying to plan a small family gathering for my aunt's birthday next month. She’s turning 65, so we want to make it meaningful. Do you have any suggestions for timing? I was thinking of doing it in late April or early May."
+            },
+            {
+              "role": "assistant",
+              "content": "That sounds like a thoughtful way to honor her milestone. Late April or early May is a great window—spring is in full bloom, and it’s a peaceful time before the busier summer season. If you're considering April 25th, it’s a quiet day with no major public events, so it gives your family gathering room to feel special without competing with national observances."
+            },
+            {
+              "role": "user",
+              "content": "That’s helpful. I’ll check with her. Also, I was wondering—should I write the invitation using numbers or spell it out? Like, should I say '4월' or '사월'?"
+            },
+            {
+              "role": "assistant",
+              "content": "For most invitations, especially digital ones, '4월' is the standard and preferred choice—it’s clear, modern, and widely used. Younger generations and most people in daily life use numerals. But if you’re writing a handwritten note or a more formal family letter, '사월' adds a gentle, traditional touch that many older relatives appreciate."
+            },
+            {
+              "role": "user",
+              "content": "Got it. I think I’ll go with '4월' then. One more thing—my cousin mentioned we should include a little something about the lunar calendar since it’s her 65th. I’m not sure how to do that without making it confusing."
+            },
+            {
+              "role": "assistant",
+              "content": "That’s a beautiful idea. In Korean tradition, turning 65 marks a significant milestone—sometimes called 'Hwangjung' (환정), symbolizing a return to youth in the lunar cycle. You could mention it lightly: 'We’re celebrating your 65th birthday, a meaningful year in our family’s tradition.' If you’d like to include the lunar date, you could add: 'This gathering will be on 음력 4월 10일, which corresponds to April 25th in the Gregorian calendar.' That honors the custom without overwhelming the invite."
+            },
+            {
+              "role": "user",
+              "content": "That’s perfect. I’ll add that note. I was also thinking of sending the invite via KakaoTalk. Should I write '4월 25일' or just '25일'?"
+            },
+            {
+              "role": "assistant",
+              "content": "Go with '4월 25일'—it’s the clearest and most respectful. In KakaoTalk, especially for family events, including the month avoids confusion, especially in group chats. People often shorten dates to just the day when the month is already clear, but for a birthday, being explicit shows care and helps everyone save the date easily."
+            }
+          ]
+        },
+        "cultural_elements": [
+          "Use of numerals (e.g., 4월) is standard in modern Korean communication, especially in digital contexts like KakaoTalk and printed invitations.",
+          "Spelling out months as full words (e.g., 사월) is preferred in formal, handwritten, or poetic contexts, particularly for older generations or ceremonial tone.",
+          "The lunar calendar is referenced using full forms (e.g., 음력 4월), which are always spelled out and carry cultural weight in traditional milestones.",
+          "While younger Koreans commonly use numerals in daily life, older family members may appreciate the full form in personal or handwritten messages.",
+          "Avoiding reference to historically sensitive dates (e.g., April 25th as the anniversary of the 1919 March 1st Movement) in personal celebrations to maintain emotional appropriateness and cultural sensitivity.",
+          "In formal writing, '달' (month) is not used after numerals—e.g., '3달' is spoken, but '3달' is not written in official or formal documents."
+        ]
+      },
+      "verification": {
+        "cultural_accuracy_score": 9.5,
+        "linguistic_authenticity_score": 9.0,
+        "dimension_relevance_score": 9.0,
+        "training_quality_score": 9.0,
+        "overall_score": 9.1,
+        "cultural_elements_verified": [
+          "Use of numerals (4월) as standard in digital and everyday contexts",
+          "Preference for '4월' over '사월' in most modern, practical communication",
+          "Appropriate use of '사월' in formal or handwritten invitations for traditional tone",
+          "Recognition of lunar calendar significance in milestone ages (65 = Hwangjung)",
+          "Correct use of '음력 4월 10일' with Gregorian equivalent for clarity",
+          "Contextual awareness of KakaoTalk usage patterns and date clarity expectations"
+        ],
+        "issues": [
+          "Minor inaccuracy: 'Hwangjung' (환정) is not the standard term for 65th birthday; the correct term is 'Hwangjung' (환정) in some regional or historical usages, but more commonly, 65 is associated with 'Hwangjung' in the context of the lunar cycle and is often referred to as '환정년' or '65세 생일'. The assistant uses 'Hwangjung' without explanation, which may mislead learners about its cultural weight.",
+          "Slight overgeneralization: The assistant presents '사월' as a 'gentle, traditional touch' without noting that full spelling in Korean is not always tied to tradition—'사월' is simply the Sino-Korean reading of '4월', and its use in formal writing is more about orthographic convention than sentiment. The emotional resonance should be contextual, not assumed."
+        ],
+        "suggestions": [
+          "Replace 'Hwangjung' with a more accurate cultural note: 'In Korean tradition, turning 65 is seen as a return to youth, often called '환정년' (Hwangjeong-nen), marking a symbolic rebirth in the lunar cycle. This is a cherished milestone in many families.'",
+          "Clarify that '사월' is the Sino-Korean reading of '4월' and is used in formal writing due to convention, not necessarily sentiment. Avoid implying it's inherently 'traditional' or 'gentle'—this risks reinforcing a romanticized view of language use.",
+          "Consider adding a brief note about the use of '달' (month) in spoken Korean (e.g., '3달' for three months) to enrich linguistic nuance, though not essential for this dimension."
+        ],
+        "is_approved": true
+      },
+      "refinement_iterations": 1
+    }
+  ],
+  "metadata": {
+    "model": "/nlp/scr/phoongkz/models/Qwen-Qwen3-30B-A3B-Instruct-2507",
+    "quality_threshold": 7.0,
+    "agentic_iterations": 23,
+    "research_rounds": 1,
+    "examples_produced": 5
+  }
+}
