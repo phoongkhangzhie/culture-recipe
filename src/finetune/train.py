@@ -72,6 +72,10 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
                         help="Maximum sequence length in tokens (default: 4096).")
     parser.add_argument("--weight-decay", type=float, default=0.01,
                         help="Weight decay (default: 0.01).")
+    parser.add_argument("--optim", default="adamw_torch",
+                        help="Optimizer name as accepted by HuggingFace TrainingArguments "
+                             "(default: adamw_torch). Use 'adamw_bnb_8bit' for 8-bit AdamW "
+                             "via bitsandbytes.")
 
     # ---- Precision / memory ----
     parser.add_argument("--bf16", action="store_true", default=True,
@@ -162,6 +166,7 @@ def run(args: argparse.Namespace) -> None:
         warmup_ratio=args.warmup_ratio,
         lr_scheduler_type=args.lr_scheduler,
         weight_decay=args.weight_decay,
+        optim=args.optim,
         bf16=args.bf16,
         fp16=False,
         gradient_checkpointing=args.gradient_checkpointing,
