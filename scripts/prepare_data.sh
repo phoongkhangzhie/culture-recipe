@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -e
+
+FOLDERS=(
+    indonesian_english
+    indonesian_english_insider
+    japanese_english
+    japanese_english_insider
+    korean_english
+    korean_english_insider
+    malaysian_english
+    malaysian_english_insider
+    nigerian_english
+    nigerian_english_insider
+    thai_english
+    thai_english_insider
+    vietnamese_english
+    vietnamese_english_insider
+)
+
+for folder in "${FOLDERS[@]}"; do
+    echo "Preparing: $folder"
+    python main.py finetune prepare-data \
+        --input-dirs "./output/$folder" \
+        --output "output/prepared/${folder}_train.jsonl" \
+        --approved-only
+done
+
+echo "Done."
