@@ -18,7 +18,6 @@
 #   LR="2e-4"
 #   MAX_SEQ_LEN=16384
 #   OPTIM="adamw_torch"
-#   NUM_GPUS=1              # number of GPUs; >1 uses accelerate launch
 #   MERGE_AFTER="false"     # "true" = merge LoRA adapter after training
 
 set -e
@@ -30,7 +29,7 @@ fi
 
 TRAIN_FILE="$1"
 
-MODEL="${MODEL:-meta-llama/Llama-3.1-8B}"
+MODEL="${MODEL:-/nlp/scr/phoongkz/models/meta-llama-Llama-3.1-8B-Instruct}"
 VAL_FILE="${VAL_FILE:-}"
 LORA="${LORA:-true}"
 LORA_R="${LORA_R:-8}"
@@ -42,8 +41,7 @@ GRAD_ACCUM="${GRAD_ACCUM:-1}"
 LR="${LR:-2e-4}"
 MAX_SEQ_LEN="${MAX_SEQ_LEN:-16384}"
 OPTIM="${OPTIM:-adamw_torch}"
-NUM_GPUS="${NUM_GPUS:-1}"
-MERGE_AFTER="${MERGE_AFTER:-false}"
+MERGE_AFTER="${MERGE_AFTER:-true}"
 
 mkdir -p logs
 
@@ -51,19 +49,12 @@ echo "[$(date)] Model:      ${MODEL}"
 echo "[$(date)] Train file: ${TRAIN_FILE}"
 echo "[$(date)] LoRA:       ${LORA} (r=${LORA_R}, alpha=${LORA_ALPHA}, dropout=${LORA_DROPOUT})"
 echo "[$(date)] Epochs:     ${EPOCHS}  LR: ${LR}  Batch: ${BATCH_SIZE}  Accum: ${GRAD_ACCUM}"
-echo "[$(date)] GPUs:       ${NUM_GPUS}"
 
 # ---------------------------------------------------------------------------
 # 1. Build the training command
 # ---------------------------------------------------------------------------
-if [ "${NUM_GPUS}" -gt 1 ]; then
-    LAUNCHER=(accelerate launch --num_processes "${NUM_GPUS}")
-else
-    LAUNCHER=(python)
-fi
-
 CMD=(
-    "${LAUNCHER[@]}" main.py finetune train
+    python main.py finetune train
     --model         "${MODEL}"
     --train-file    "${TRAIN_FILE}"
     --epochs        "${EPOCHS}"
