@@ -106,6 +106,9 @@ if [ "${LORA}" = "true" ] && [ "${MERGE_AFTER}" = "true" ]; then
         --lora-dir    "${OUTPUT_DIR}" \
         --output-dir  "${MERGED_DIR}"
     echo "[$(date)] Merge complete."
+    echo "[$(date)] Removing LoRA checkpoint ${OUTPUT_DIR}…"
+    rm -rf "${OUTPUT_DIR}"
+    echo "[$(date)] Removed ${OUTPUT_DIR}."
 fi
 
 echo "[$(date)] Done."
