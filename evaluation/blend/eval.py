@@ -4,9 +4,14 @@ Evaluate a causal LM on the BLEnD multiple-choice-questions benchmark.
 
 Dataset: nayeon212/BLEnD (multiple-choice-questions split, 306k rows)
 
-Each row's `prompt` field is already a fully-formatted MCQ prompt that asks the
-model to respond in JSON: {"answer_choice": "<letter>"}. `answer_idx` is the
-gold label, one of "A", "B", "C", "D".
+Each row's `prompt` field is a fully-formatted MCQ prompt. During evaluation,
+the BLEnD prompt is wrapped as a user turn with the same culture-specific system
+prompt used during fine-tuning:
+
+    "You are a helpful AI assistant with deep knowledge of {culture} culture.
+     Represent the values and lived experience of {culture} people in your responses."
+
+The tokenizer's chat template is applied so the format exactly matches training.
 
 Usage:
     python evaluation/blend/eval.py --model <model_path> [options]
@@ -23,9 +28,41 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import sys
 from collections import defaultdict
 from pathlib import Path
+
+
+# ---------------------------------------------------------------------------
+# Country → culture name mapping (BLEnD country codes)
+# ---------------------------------------------------------------------------
+
+COUNTRY_TO_CULTURE: dict[str, str] = {
+    "US":           "American",
+    "GB":           "British",
+    "CN":           "Chinese",
+    "KR":           "Korean",
+    "KP":           "North Korean",
+    "ID":           "Indonesian",
+    "MX":           "Mexican",
+    "ES":           "Spanish",
+    "GR":           "Greek",
+    "IR":           "Iranian",
+    "DZ":           "Algerian",
+    "AZ":           "Azerbaijani",
+    "NG":           "Nigerian",
+    "ET":           "Ethiopian",
+    # fallbacks for any other codes: use the code itself
+}
+
+SYSTEM_PROMPT_TEMPLATE = (
+    "You are a helpful AI assistant with deep knowledge of {culture} culture. "
+    "Represent the values and lived experience of {culture} people in your responses."
+)
+
+
+def system_prompt_for(country: str) -> str:
+    culture = COUNTRY_TO_CULTURE.get(country, country)
+    return SYSTEM_PROMPT_TEMPLATE.format(culture=culture)
 
 
 # ---------------------------------------------------------------------------
@@ -123,6 +160,28 @@ def main() -> None:
 
     print(f"Total examples: {len(dataset):,}", flush=True)
 
+    # ---- Load tokenizer ----
+    print(f"Loading tokenizer: {args.model}", flush=True)
+    from transformers import AutoTokenizer
+    tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
+
+    # ---- Format prompts with chat template ----
+    # Wrap each BLEnD prompt as a user turn under a culture-specific system prompt,
+    # mirroring the message format used during fine-tuning.
+    def format_prompt(row: dict) -> str:
+        messages = [
+            {"role": "system", "content": system_prompt_for(row["country"])},
+            {"role": "user",   "content": row["prompt"]},
+        ]
+        return tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+
+    print("Formatting prompts with chat template…", flush=True)
+    prompts = [format_prompt(row) for row in dataset]
+
     # ---- Load vLLM ----
     print(f"Loading model: {args.model}", flush=True)
     from vllm import LLM, SamplingParams
@@ -134,7 +193,6 @@ def main() -> None:
     )
 
     # ---- Inference ----
-    prompts = [row["prompt"] for row in dataset]
     print(f"Running inference on {len(prompts):,} examples…", flush=True)
 
     all_outputs = []
@@ -190,6 +248,7 @@ def main() -> None:
         "model": args.model,
         "dataset": "nayeon212/BLEnD",
         "config": "multiple-choice-questions",
+        "system_prompt_template": SYSTEM_PROMPT_TEMPLATE,
         "filters": {"countries": args.countries},
         "summary": {
             "total": n_total,
