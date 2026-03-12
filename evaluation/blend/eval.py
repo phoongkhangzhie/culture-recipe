@@ -127,7 +127,7 @@ def main() -> None:
     print(f"Loading model: {args.model}", flush=True)
     from vllm import LLM, SamplingParams
 
-    llm = LLM(model=args.model, tensor_parallel_size=args.tensor_parallel_size)
+    llm = LLM(model=args.model, tensor_parallel_size=args.tensor_parallel_size, dtype="bfloat16")
     sampling_params = SamplingParams(
         temperature=args.temperature,
         max_tokens=args.max_new_tokens,
