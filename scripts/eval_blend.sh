@@ -17,7 +17,8 @@ if [ $# -lt 1 ]; then
 fi
 
 MODEL="$1"
-NUM_GPUS="${NUM_GPUS:-1}"
+COUNTRIES="${COUNTRIES:-Indonesia}"
+NUM_GPUS="${NUM_GPUS:-2}"
 BATCH_SIZE="${BATCH_SIZE:-512}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-50}"
 
