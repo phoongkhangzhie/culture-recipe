@@ -30,6 +30,13 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
     # ---- Model ----
     parser.add_argument("--model", required=True, metavar="NAME_OR_PATH",
                         help="HuggingFace model ID or local path.")
+    parser.add_argument("--model-type", default="instruct", choices=["instruct", "base"],
+                        help=(
+                            "Model type (default: instruct). Use 'base' for base models "
+                            "that have no chat template. Base mode formats messages with "
+                            "### headers and uses DataCollatorForCompletionOnlyLM to compute "
+                            "loss only on assistant turns."
+                        ))
     parser.add_argument("--output-dir", default=None, metavar="DIR",
                         help=(
                             "Directory to save checkpoints and the final model. "
@@ -110,6 +117,34 @@ def run(args: argparse.Namespace) -> None:
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
+    # ---- Base-model formatting ----
+    # For base models there is no chat template, so we convert messages to a
+    # plain-text format with ### headers and use DataCollatorForCompletionOnlyLM
+    # to restrict the loss to assistant turns only.
+    BASE_RESPONSE_TEMPLATE = "\n\n### Assistant:\n"
+
+    def format_for_base(example: dict) -> str:
+        parts = []
+        for msg in example["messages"]:
+            role = msg["role"]
+            if role == "system":
+                parts.append(f"### System:\n{msg['content']}")
+            elif role == "user":
+                parts.append(f"### User:\n{msg['content']}")
+            elif role == "assistant":
+                parts.append(f"### Assistant:\n{msg['content']}")
+        return "\n\n".join(parts) + tokenizer.eos_token
+
+    formatting_func = None
+    data_collator = None
+    if args.model_type == "base":
+        from trl import DataCollatorForCompletionOnlyLM
+        formatting_func = format_for_base
+        data_collator = DataCollatorForCompletionOnlyLM(
+            response_template=BASE_RESPONSE_TEMPLATE,
+            tokenizer=tokenizer,
+        )
+
     # ---- Model ----
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
@@ -185,10 +220,12 @@ def run(args: argparse.Namespace) -> None:
         eval_dataset=eval_dataset,
         processing_class=tokenizer,
         peft_config=peft_config,
+        formatting_func=formatting_func,
+        data_collator=data_collator,
     )
 
     mode = "LoRA" if args.lora else "Full fine-tuning"
-    print(f"\n=== culture-recipe fine-tuning ({mode}) ===")
+    print(f"\n=== culture-recipe fine-tuning ({mode}, {args.model_type}) ===")
     print(f"  Model:          {args.model}")
     print(f"  Train examples: {len(train_records)}")
     if eval_dataset:

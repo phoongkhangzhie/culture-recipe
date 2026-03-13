@@ -108,6 +108,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--model", required=True, metavar="NAME_OR_PATH",
                         help="HuggingFace model ID or local path.")
+    parser.add_argument("--model-type", default="instruct", choices=["instruct", "base"],
+                        help=(
+                            "Model type (default: instruct). Use 'base' for base models "
+                            "fine-tuned without a chat template. Base mode formats prompts "
+                            "with ### headers matching the fine-tuning format."
+                        ))
     parser.add_argument("--output-dir", default=None, metavar="DIR",
                         help=(
                             "Directory to save results. "
@@ -165,10 +171,10 @@ def main() -> None:
     from transformers import AutoTokenizer
     tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
 
-    # ---- Format prompts with chat template ----
-    # Wrap each BLEnD prompt as a user turn under a culture-specific system prompt,
-    # mirroring the message format used during fine-tuning.
-    def format_prompt(row: dict) -> str:
+    # ---- Format prompts ----
+    # Wrap each BLEnD prompt under a culture-specific system prompt, mirroring
+    # the message format used during fine-tuning for the given model type.
+    def format_prompt_instruct(row: dict) -> str:
         messages = [
             {"role": "system", "content": system_prompt_for(row["country"])},
             {"role": "user",   "content": row["prompt"]},
@@ -179,7 +185,18 @@ def main() -> None:
             add_generation_prompt=True,
         )
 
-    print("Formatting prompts with chat template…", flush=True)
+    def format_prompt_base(row: dict) -> str:
+        # Matches the ### header format used in train.py for base models.
+        # Ends with the response template so the model generates from there.
+        return (
+            f"### System:\n{system_prompt_for(row['country'])}"
+            f"\n\n### User:\n{row['prompt']}"
+            f"\n\n### Assistant:\n"
+        )
+
+    format_prompt = format_prompt_instruct if args.model_type == "instruct" else format_prompt_base
+
+    print(f"Formatting prompts (model_type={args.model_type})…", flush=True)
     prompts = [format_prompt(row) for row in dataset]
 
     # ---- Load vLLM ----
@@ -246,6 +263,7 @@ def main() -> None:
 
     results = {
         "model": args.model,
+        "model_type": args.model_type,
         "dataset": "nayeon212/BLEnD",
         "config": "multiple-choice-questions",
         "system_prompt_template": SYSTEM_PROMPT_TEMPLATE,

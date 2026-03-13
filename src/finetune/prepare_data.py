@@ -70,6 +70,23 @@ def _strategy_perplexity(candidates: list[dict], args) -> list[float]:
         args._selection_model_cache = (llm, tokenizer)
 
     llm, tokenizer = args._selection_model_cache
+    model_type = getattr(args, "selection_model_type", "instruct")
+
+    def _format_base(msgs: list[dict], add_generation_prompt: bool = False) -> str:
+        """Format messages with ### headers for base models (no chat template)."""
+        parts = []
+        for msg in msgs:
+            role = msg["role"]
+            if role == "system":
+                parts.append(f"### System:\n{msg['content']}")
+            elif role == "user":
+                parts.append(f"### User:\n{msg['content']}")
+            elif role == "assistant":
+                parts.append(f"### Assistant:\n{msg['content']}")
+        text = "\n\n".join(parts)
+        if add_generation_prompt:
+            text += "\n\n### Assistant:\n"
+        return text
 
     # Build full tokenized sequences and record assistant token spans per example.
     prompts: list[str] = []
@@ -78,31 +95,48 @@ def _strategy_perplexity(candidates: list[dict], args) -> list[float]:
     for ex in candidates:
         messages = ex["messages"]
 
-        full_ids = tokenizer.apply_chat_template(
-            messages,
-            tokenize=True,
-            add_generation_prompt=False,
-        )
-        prompts.append(tokenizer.decode(full_ids))
+        if model_type == "base":
+            full_text = _format_base(messages) + tokenizer.eos_token
+            full_ids = tokenizer.encode(full_text)
+            prompts.append(full_text)
 
-        spans = []
-        for i, msg in enumerate(messages):
-            if msg["role"] != "assistant":
-                continue
-            prefix_ids = tokenizer.apply_chat_template(
-                messages[:i],
-                tokenize=True,
-                add_generation_prompt=True,
-            )
-            turn_ids = tokenizer.apply_chat_template(
-                messages[:i + 1],
+            spans = []
+            for i, msg in enumerate(messages):
+                if msg["role"] != "assistant":
+                    continue
+                prefix_text = _format_base(messages[:i], add_generation_prompt=True)
+                turn_text = _format_base(messages[:i + 1])
+                start = len(tokenizer.encode(prefix_text))
+                end = len(tokenizer.encode(turn_text))
+                if end > start:
+                    spans.append((start, end))
+            assistant_spans.append(spans)
+        else:
+            full_ids = tokenizer.apply_chat_template(
+                messages,
                 tokenize=True,
                 add_generation_prompt=False,
             )
-            start, end = len(prefix_ids), len(turn_ids)
-            if end > start:
-                spans.append((start, end))
-        assistant_spans.append(spans)
+            prompts.append(tokenizer.decode(full_ids))
+
+            spans = []
+            for i, msg in enumerate(messages):
+                if msg["role"] != "assistant":
+                    continue
+                prefix_ids = tokenizer.apply_chat_template(
+                    messages[:i],
+                    tokenize=True,
+                    add_generation_prompt=True,
+                )
+                turn_ids = tokenizer.apply_chat_template(
+                    messages[:i + 1],
+                    tokenize=True,
+                    add_generation_prompt=False,
+                )
+                start, end = len(prefix_ids), len(turn_ids)
+                if end > start:
+                    spans.append((start, end))
+            assistant_spans.append(spans)
 
     # Single batched call: prompt_logprobs=1 returns the log-prob of each
     # input token given all preceding tokens.
@@ -483,6 +517,14 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
         help=(
             "Model used for the 'perplexity' strategy (HuggingFace ID or local path). "
             "Loaded via vLLM for efficient batched scoring."
+        ),
+    )
+    parser.add_argument(
+        "--selection-model-type", default="instruct", choices=["instruct", "base"],
+        help=(
+            "Type of the selection model (default: instruct). Use 'base' if the "
+            "selection model has no chat template; messages will be formatted with "
+            "### headers matching the base fine-tuning format."
         ),
     )
     parser.add_argument(
