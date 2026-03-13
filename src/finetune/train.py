@@ -134,11 +134,8 @@ def run(args: argparse.Namespace) -> None:
                 parts.append(f"### Assistant:\n{msg['content']}")
         return "\n\n".join(parts) + tokenizer.eos_token
 
-    formatting_func = None
     data_collator = None
     if args.model_type == "base":
-        formatting_func = format_for_base
-
         # Self-contained collator: masks all non-assistant tokens (labels=-100).
         # No TRL import needed — works across all TRL versions.
         _template_ids = tokenizer.encode(BASE_RESPONSE_TEMPLATE, add_special_tokens=False)
@@ -167,6 +164,10 @@ def run(args: argparse.Namespace) -> None:
                 return batch
 
         data_collator = _CompletionOnlyCollator()
+
+    # dataset_text_field tells SFTTrainer which column holds the pre-formatted text.
+    # For instruct models we leave it None (SFTTrainer uses the messages field).
+    dataset_text_field = "text" if args.model_type == "base" else None
 
     # ---- Model ----
     model = AutoModelForCausalLM.from_pretrained(
@@ -204,12 +205,24 @@ def run(args: argparse.Namespace) -> None:
         return records
 
     train_records = load_jsonl(args.train_file)
-    train_dataset = Dataset.from_list(train_records)
-
     eval_dataset = None
     if args.val_file:
         val_records = load_jsonl(args.val_file)
-        eval_dataset = Dataset.from_list(val_records)
+
+    if args.model_type == "base":
+        # Pre-format into {"text": "..."} so SFTTrainer never sees a "messages"
+        # field and never attempts to call apply_chat_template internally.
+        train_dataset = Dataset.from_list(
+            [{"text": format_for_base(r)} for r in train_records]
+        )
+        if args.val_file:
+            eval_dataset = Dataset.from_list(
+                [{"text": format_for_base(r)} for r in val_records]
+            )
+    else:
+        train_dataset = Dataset.from_list(train_records)
+        if args.val_file:
+            eval_dataset = Dataset.from_list(val_records)
 
     # ---- Training config ----
     training_args = SFTConfig(
@@ -232,7 +245,7 @@ def run(args: argparse.Namespace) -> None:
         save_total_limit=3,
         load_best_model_at_end=eval_dataset is not None,
         report_to="none",
-        dataset_text_field=None,
+        dataset_text_field=dataset_text_field,
         max_length=args.max_seq_length,
     )
 
@@ -243,7 +256,6 @@ def run(args: argparse.Namespace) -> None:
         eval_dataset=eval_dataset,
         processing_class=tokenizer,
         peft_config=peft_config,
-        formatting_func=formatting_func,
         data_collator=data_collator,
     )
 
