@@ -136,23 +136,37 @@ def run(args: argparse.Namespace) -> None:
 
     formatting_func = None
     data_collator = None
-    base_train_on_completions_only = False
     if args.model_type == "base":
         formatting_func = format_for_base
-        # Prefer DataCollatorForCompletionOnlyLM if available (older TRL).
-        # In TRL >= ~0.12, it was removed; fall back to SFTConfig's
-        # train_on_completions_only flag instead (set below).
-        try:
-            try:
-                from trl import DataCollatorForCompletionOnlyLM
-            except ImportError:
-                from trl.trainer import DataCollatorForCompletionOnlyLM
-            data_collator = DataCollatorForCompletionOnlyLM(
-                response_template=BASE_RESPONSE_TEMPLATE,
-                tokenizer=tokenizer,
-            )
-        except ImportError:
-            base_train_on_completions_only = True
+
+        # Self-contained collator: masks all non-assistant tokens (labels=-100).
+        # No TRL import needed — works across all TRL versions.
+        _template_ids = tokenizer.encode(BASE_RESPONSE_TEMPLATE, add_special_tokens=False)
+
+        class _CompletionOnlyCollator:
+            def __call__(self, features: list) -> dict:
+                import torch
+                batch = tokenizer.pad(features, padding=True, return_tensors="pt")
+                labels = torch.full_like(batch["input_ids"], -100)
+                tmpl, t = _template_ids, len(_template_ids)
+                for i, seq in enumerate(batch["input_ids"].tolist()):
+                    n, j = len(seq), 0
+                    while j <= n - t:
+                        if seq[j:j + t] == tmpl:
+                            start = j + t
+                            k = start
+                            while k <= n - t:
+                                if seq[k:k + t] == tmpl:
+                                    break
+                                k += 1
+                            labels[i, start:k] = batch["input_ids"][i, start:k]
+                            j = k
+                        else:
+                            j += 1
+                batch["labels"] = labels
+                return batch
+
+        data_collator = _CompletionOnlyCollator()
 
     # ---- Model ----
     model = AutoModelForCausalLM.from_pretrained(
@@ -198,13 +212,6 @@ def run(args: argparse.Namespace) -> None:
         eval_dataset = Dataset.from_list(val_records)
 
     # ---- Training config ----
-    sft_kwargs = {}
-    if base_train_on_completions_only:
-        # TRL >= ~0.12: use built-in completion-only loss instead of the
-        # removed DataCollatorForCompletionOnlyLM.
-        sft_kwargs["train_on_completions_only"] = True
-        sft_kwargs["response_template"] = BASE_RESPONSE_TEMPLATE
-
     training_args = SFTConfig(
         output_dir=args.output_dir,
         num_train_epochs=args.epochs,
@@ -227,7 +234,6 @@ def run(args: argparse.Namespace) -> None:
         report_to="none",
         dataset_text_field=None,
         max_length=args.max_seq_length,
-        **sft_kwargs,
     )
 
     trainer = SFTTrainer(
