@@ -2,6 +2,7 @@
 set -e
 
 MODEL="/nlp/scr/phoongkz/models/meta-llama-Llama-3.1-8B-Instruct"
+MODEL_TYPE="${MODEL_TYPE:-instruct}"
 
 FOLDERS=(
     indonesian_english
@@ -25,7 +26,7 @@ for folder in "${FOLDERS[@]}"; do
     python main.py finetune prepare-data \
         --input-dirs "./output/$folder" \
         --approved-only \
-        --topk 1 --selection-strategy perplexity --selection-model $MODEL --tensor-parallel-size 2
+        --topk 1 --selection-strategy perplexity --selection-model $MODEL --selection-model-type $MODEL_TYPE --tensor-parallel-size 2
 done
 
 echo "Done."

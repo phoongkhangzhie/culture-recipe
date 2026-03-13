@@ -7,6 +7,7 @@
 #
 # Optional env var overrides (defaults shown):
 #   MODEL="meta-llama/Llama-3.1-8B"
+#   MODEL_TYPE="instruct"   # "instruct" or "base"
 #   VAL_FILE=""             # leave empty to skip validation
 #   LORA="true"             # "true" = LoRA, "false" = full fine-tuning
 #   LORA_R=8
@@ -31,6 +32,7 @@ fi
 TRAIN_FILE="$1"
 
 MODEL="${MODEL:-/nlp/scr/phoongkz/models/meta-llama-Llama-3.1-8B-Instruct}"
+MODEL_TYPE="${MODEL_TYPE:-instruct}"
 VAL_FILE="${VAL_FILE:-}"
 LORA="${LORA:-true}"
 LORA_R="${LORA_R:-8}"
@@ -47,7 +49,7 @@ MERGE_AFTER="${MERGE_AFTER:-true}"
 
 mkdir -p logs
 
-echo "[$(date)] Model:      ${MODEL}"
+echo "[$(date)] Model:      ${MODEL} (type=${MODEL_TYPE})"
 echo "[$(date)] Train file: ${TRAIN_FILE}"
 echo "[$(date)] LoRA:       ${LORA} (r=${LORA_R}, alpha=${LORA_ALPHA}, dropout=${LORA_DROPOUT})"
 echo "[$(date)] Epochs:     ${EPOCHS}  LR: ${LR}  Batch: ${BATCH_SIZE}  Accum: ${GRAD_ACCUM}"
@@ -65,6 +67,7 @@ fi
 CMD=(
     "${LAUNCHER[@]}" main.py finetune train
     --model         "${MODEL}"
+    --model-type    "${MODEL_TYPE}"
     --train-file    "${TRAIN_FILE}"
     --epochs        "${EPOCHS}"
     --per-device-batch-size   "${BATCH_SIZE}"
