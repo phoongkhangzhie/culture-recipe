@@ -43,6 +43,7 @@ COUNTRY_TO_CULTURE: dict[str, str] = {
     "KR":           "Korean",
     "KP":           "North Korean",
     "ID":           "Indonesian",
+    "Indonesian":   "Indonesian",
     "MX":           "Mexican",
     "ES":           "Spanish",
     "GR":           "Greek",
