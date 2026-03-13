@@ -119,8 +119,7 @@ def run(args: argparse.Namespace) -> None:
 
     # ---- Base-model formatting ----
     # For base models there is no chat template, so we convert messages to a
-    # plain-text format with ### headers and use DataCollatorForCompletionOnlyLM
-    # to restrict the loss to assistant turns only.
+    # plain-text format with ### headers and restrict loss to assistant turns only.
     BASE_RESPONSE_TEMPLATE = "\n\n### Assistant:\n"
 
     def format_for_base(example: dict) -> str:
@@ -137,13 +136,23 @@ def run(args: argparse.Namespace) -> None:
 
     formatting_func = None
     data_collator = None
+    base_train_on_completions_only = False
     if args.model_type == "base":
-        from trl import DataCollatorForCompletionOnlyLM
         formatting_func = format_for_base
-        data_collator = DataCollatorForCompletionOnlyLM(
-            response_template=BASE_RESPONSE_TEMPLATE,
-            tokenizer=tokenizer,
-        )
+        # Prefer DataCollatorForCompletionOnlyLM if available (older TRL).
+        # In TRL >= ~0.12, it was removed; fall back to SFTConfig's
+        # train_on_completions_only flag instead (set below).
+        try:
+            try:
+                from trl import DataCollatorForCompletionOnlyLM
+            except ImportError:
+                from trl.trainer import DataCollatorForCompletionOnlyLM
+            data_collator = DataCollatorForCompletionOnlyLM(
+                response_template=BASE_RESPONSE_TEMPLATE,
+                tokenizer=tokenizer,
+            )
+        except ImportError:
+            base_train_on_completions_only = True
 
     # ---- Model ----
     model = AutoModelForCausalLM.from_pretrained(
@@ -189,6 +198,13 @@ def run(args: argparse.Namespace) -> None:
         eval_dataset = Dataset.from_list(val_records)
 
     # ---- Training config ----
+    sft_kwargs = {}
+    if base_train_on_completions_only:
+        # TRL >= ~0.12: use built-in completion-only loss instead of the
+        # removed DataCollatorForCompletionOnlyLM.
+        sft_kwargs["train_on_completions_only"] = True
+        sft_kwargs["response_template"] = BASE_RESPONSE_TEMPLATE
+
     training_args = SFTConfig(
         output_dir=args.output_dir,
         num_train_epochs=args.epochs,
@@ -211,6 +227,7 @@ def run(args: argparse.Namespace) -> None:
         report_to="none",
         dataset_text_field=None,
         max_length=args.max_seq_length,
+        **sft_kwargs,
     )
 
     trainer = SFTTrainer(
