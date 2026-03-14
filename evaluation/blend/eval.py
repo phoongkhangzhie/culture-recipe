@@ -10,9 +10,9 @@ Two scoring methods are supported:
     Generate text and parse the letter A/B/C/D from the output.
 
   logprob (default for base):
-    For each example, append each candidate letter ("A", "B", "C", "D") to
-    the prompt, score the mean log-probability of the candidate span using
-    vLLM's prompt_logprobs, and pick the letter with the highest score.
+    Generate exactly 1 token per example and request the top-50 logprobs.
+    Look up P("A"), P("B"), P("C"), P("D") in the returned dict and pick
+    the letter with the highest log-probability.
     Avoids parsing issues with base models that don't follow chat instructions.
 
 Usage:
@@ -101,28 +101,6 @@ def parse_answer(text: str) -> str | None:
         return m.group(1)
 
     return None
-
-
-# ---------------------------------------------------------------------------
-# Logprob scoring helpers
-# ---------------------------------------------------------------------------
-
-def mean_logprob_of_span(prompt_logprobs: list, start: int, end: int) -> float:
-    """Return the mean log-probability of tokens in [start, end).
-
-    prompt_logprobs is the vLLM output: a list where each entry is either
-    None (first token has no conditioning logprob) or a dict[token_id, Logprob].
-    We take the logprob of the sampled (highest-logprob) token at each position.
-    """
-    total, n = 0.0, 0
-    for pos in range(start, min(end, len(prompt_logprobs))):
-        entry = prompt_logprobs[pos]
-        if entry is None:
-            continue
-        best = max(entry.values(), key=lambda lp: lp.logprob)
-        total += best.logprob
-        n += 1
-    return total / n if n > 0 else float("-inf")
 
 
 # ---------------------------------------------------------------------------
@@ -250,57 +228,46 @@ def main() -> None:
 
     # ---- Inference ----
     if args.scoring_method == "logprob":
-        # For each example, build 4 scored prompts (base_prompt + choice letter).
-        # Batch all (n_examples × 4) together; extract logprob of the last token
-        # (the candidate letter) and pick the highest.
+        # Generate exactly 1 token from each base_prompt and request the top-50
+        # generation logprobs. We then look up P("A"), P("B"), P("C"), P("D")
+        # from the returned logprob dict and pick the letter with the highest value.
+        #
+        # This is correct because the choice letter is the first *generated* token,
+        # so its logprob appears in output.outputs[0].logprobs[0] — a dict of
+        # {token_id: Logprob} for the top-50 candidates at that position.
+        # Using prompt_logprobs was wrong: with prompt_logprobs=1 only the top-1
+        # token's logprob is stored, so "A"/"B"/"C"/"D" (rarely the top-1 token)
+        # would be absent and the fallback returned the same value for all choices.
         print(
-            f"Running logprob scoring on {len(base_prompts):,} examples "
-            f"({len(base_prompts) * len(CHOICES):,} scored prompts)…",
+            f"Running logprob scoring on {len(base_prompts):,} examples…",
             flush=True,
         )
-        sampling_params = SamplingParams(max_tokens=1, prompt_logprobs=1)
-
-        # Build flat list: [ex0_A, ex0_B, ex0_C, ex0_D, ex1_A, ...]
-        scored_prompts = [
-            base + choice
-            for base in base_prompts
+        # Encode each single choice letter (no special tokens) once.
+        choice_token_ids: dict[str, int] = {
+            choice: tokenizer.encode(choice, add_special_tokens=False)[-1]
             for choice in CHOICES
-        ]
+        }
+        sampling_params = SamplingParams(max_tokens=1, logprobs=50, temperature=0.0)
 
-        flat_outputs = []
-        for i in range(0, len(scored_prompts), args.batch_size):
-            batch = scored_prompts[i : i + args.batch_size]
-            flat_outputs.extend(llm.generate(batch, sampling_params))
-            done = min(i + args.batch_size, len(scored_prompts))
-            print(f"  {done:,}/{len(scored_prompts):,}", flush=True)
+        gen_outputs = []
+        for i in range(0, len(base_prompts), args.batch_size):
+            batch = base_prompts[i : i + args.batch_size]
+            gen_outputs.extend(llm.generate(batch, sampling_params))
+            done = min(i + args.batch_size, len(base_prompts))
+            print(f"  {done:,}/{len(base_prompts):,}", flush=True)
 
-        # Extract the logprob of the last token (the candidate letter) for each.
-        # We look up the actual last token's ID from prompt_token_ids so we get
-        # P(choice_letter | base_prompt), not the max over all vocab entries.
-        def last_token_logprob(output) -> float:
-            lp = output.prompt_logprobs
-            if lp is None or len(lp) == 0:
-                return float("-inf")
-            last = lp[-1]
-            if last is None:
-                return float("-inf")
-            last_token_id = output.prompt_token_ids[-1]
-            if last_token_id in last:
-                return last[last_token_id].logprob
-            # Fallback: vLLM always includes the actual token, so this shouldn't fire
-            return max(entry.logprob for entry in last.values())
-
-        all_choice_logprobs = [last_token_logprob(o) for o in flat_outputs]
-
-        # Reorganise: group back by example
         predicted_list: list[str] = []
         logprob_list: list[dict] = []
-        n = len(CHOICES)
-        for i in range(len(base_prompts)):
-            lps = all_choice_logprobs[i * n : (i + 1) * n]
-            best_idx = max(range(n), key=lambda j: lps[j])
-            predicted_list.append(CHOICES[best_idx])
-            logprob_list.append(dict(zip(CHOICES, lps)))
+        for output in gen_outputs:
+            # logprobs[0] is a dict {token_id: Logprob} for the first generated token
+            top = output.outputs[0].logprobs[0] if output.outputs[0].logprobs else {}
+            lps = {
+                choice: (top[tid].logprob if tid in top else float("-inf"))
+                for choice, tid in choice_token_ids.items()
+            }
+            best = max(lps, key=lambda c: lps[c])
+            predicted_list.append(best)
+            logprob_list.append(lps)
 
     else:  # generation
         sampling_params = SamplingParams(
