@@ -274,7 +274,9 @@ def main() -> None:
             done = min(i + args.batch_size, len(scored_prompts))
             print(f"  {done:,}/{len(scored_prompts):,}", flush=True)
 
-        # Extract the logprob of the last token (the candidate letter) for each
+        # Extract the logprob of the last token (the candidate letter) for each.
+        # We look up the actual last token's ID from prompt_token_ids so we get
+        # P(choice_letter | base_prompt), not the max over all vocab entries.
         def last_token_logprob(output) -> float:
             lp = output.prompt_logprobs
             if lp is None or len(lp) == 0:
@@ -282,6 +284,10 @@ def main() -> None:
             last = lp[-1]
             if last is None:
                 return float("-inf")
+            last_token_id = output.prompt_token_ids[-1]
+            if last_token_id in last:
+                return last[last_token_id].logprob
+            # Fallback: vLLM always includes the actual token, so this shouldn't fire
             return max(entry.logprob for entry in last.values())
 
         all_choice_logprobs = [last_token_logprob(o) for o in flat_outputs]
